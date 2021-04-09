@@ -1,0 +1,25 @@
+{
+    "entries": [
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:1",
+            "secondary": "dcs_climate:dcs_ore_stone_new:6",
+            "secondary_chance": 5,
+            "weight": 80
+        },
+        {
+            "ore": "dcs_climate:dcs_layer_stone_new:6",
+            "secondary": "minecraft:emerald_ore:0",
+            "secondary_chance": 20,
+            "weight": 30
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:6",
+            "weight": 5
+        },
+        {
+            "ore": "minecraft:clay:0",
+            "weight": 10
+        }
+    ],
+    "layer": "dcs_climate:dcs_layer_stone_new:6"
+}

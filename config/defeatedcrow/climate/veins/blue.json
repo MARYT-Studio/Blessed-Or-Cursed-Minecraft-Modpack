@@ -1,0 +1,23 @@
+{
+    "entries": [
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:2",
+            "secondary": "dcs_climate:dcs_ore_stone_new:7",
+            "secondary_chance": 5,
+            "weight": 80
+        },
+        {
+            "ore": "dcs_climate:dcs_layer_stone_new:0",
+            "weight": 40
+        },
+        {
+            "ore": "minecraft:lapis_ore:0",
+            "weight": 5
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:7",
+            "weight": 10
+        }
+    ],
+    "layer": "dcs_climate:dcs_layer_stone_new:0"
+}

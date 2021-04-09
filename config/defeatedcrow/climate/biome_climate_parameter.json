@@ -1,0 +1,7 @@
+{
+ "sampleModID:sampleBiomeName": {
+  "airflow": "NORMAL (If you set TIGHT, it will be ignored.)",
+  "temperature": "OVEN (If you set NORMAL, it will be ignored.)",
+  "humidity": "DRY (If you set NORMAL, it will be ignored.)"
+ }
+}

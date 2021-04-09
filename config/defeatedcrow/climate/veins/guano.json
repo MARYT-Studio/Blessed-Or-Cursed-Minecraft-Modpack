@@ -1,0 +1,11 @@
+{
+    "entries": [
+        {
+            "ore": "dcs_climate:dcs_layer_stone_new:2",
+            "secondary": "minecraft:gravel:0",
+            "secondary_chance": 30,
+            "weight": 80
+        }
+    ],
+    "layer": "minecraft:gravel:0"
+}

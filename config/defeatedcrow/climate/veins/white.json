@@ -1,0 +1,27 @@
+{
+    "entries": [
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:3",
+            "secondary": "dcs_climate:dcs_ore_stone_new:8",
+            "secondary_chance": 5,
+            "weight": 80
+        },
+        {
+            "ore": "dcs_climate:dcs_layer_stone_new:5",
+            "weight": 30
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:8",
+            "weight": 10
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_gemblock:6",
+            "weight": 10
+        },
+        {
+            "ore": "dcs_climate:dcs_layer_skarn_ore:8",
+            "weight": 5
+        }
+    ],
+    "layer": "dcs_climate:dcs_ore_gemblock:6"
+}

@@ -1,0 +1,29 @@
+{
+    "entries": [
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:10",
+            "secondary": "dcs_climate:dcs_ore_stone_new:11",
+            "secondary_chance": 20,
+            "weight": 40
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:12",
+            "secondary": "dcs_climate:dcs_ore_stone_new:13",
+            "secondary_chance": 20,
+            "weight": 40
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:14",
+            "weight": 20
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:11",
+            "weight": 10
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:13",
+            "weight": 10
+        }
+    ],
+    "layer": "dcs_climate:dcs_ore_stone_new:10"
+}

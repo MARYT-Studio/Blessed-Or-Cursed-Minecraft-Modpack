@@ -1,0 +1,27 @@
+{
+    "entries": [
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:4",
+            "secondary": "dcs_climate:dcs_ore_stone_new:9",
+            "secondary_chance": 5,
+            "weight": 80
+        },
+        {
+            "ore": "dcs_climate:dcs_layer_stone_new:4",
+            "weight": 30
+        },
+        {
+            "ore": "dcs_climate:dcs_ore_stone_new:9",
+            "weight": 20
+        },
+        {
+            "ore": "minecraft:redstone_ore:0",
+            "weight": 5
+        },
+        {
+            "ore": "minecraft:coal_ore:0",
+            "weight": 5
+        }
+    ],
+    "layer": "minecraft:stone:0"
+}
