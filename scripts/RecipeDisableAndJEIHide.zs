@@ -26,14 +26,14 @@ val ItemNotToHide =
     // <thaumcraft:quicksilver>; //水银
     <thaumcraft:quicksilver>| //水银
 
-// val MaterialsNotToHide = 
     //TLS会用到的IC2材料
     <ic2:crafting:1>|  //电路板
     <ic2:crafting:2>|  //高级电路板
     <ic2:crafting:3>|  //高级合金
     <ic2:plate:12>|    //致密铁板
-    <ic2:energy_crystal>|  //能量水晶
-    <ic2:lapotron_crystal>|  //兰博顿水晶
+    <ic2:plate:16>|    //致密钢板
+    <ic2:energy_crystal:*>|  //能量水晶
+    <ic2:lapotron_crystal:*>|  //满电的兰波顿水晶
     <ic2:crafting:4>|  //强化铱板
 
     //TLS会用到的神秘时代物品

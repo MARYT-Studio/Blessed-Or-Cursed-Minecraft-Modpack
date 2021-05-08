@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
 // Configuration about Killcount and Proudsoul points
-val firstKillCountNumber as int = 50;
+val firstKillCountNumber as int = 10;
 val secondKillCountNumber as int = 150;
 val thirdKillCountNumber as int = 450;
 val fourthKillCountNumber as int = 1350;
@@ -15,7 +15,7 @@ val secondProudsoulNumber as int = 1200;
 val thirdProudsoulNumber as int = 2400;
 
 val T3HammerDamage as int = 10;
-val T4HammerDamage as int = 50;
+val T4HammerDamage as int = 100;
 
 // Material variables claiming and tooltip adding
 // Killcount Tokens
