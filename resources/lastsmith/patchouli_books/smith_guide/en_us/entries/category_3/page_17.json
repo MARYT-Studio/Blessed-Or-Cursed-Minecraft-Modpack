@@ -1,0 +1,26 @@
+{
+   "name" : "Saint of Sword's Blades",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/blademaster/blademaster\",TextureName: \"named/blademaster/greenmist\"}",
+   "category" : "category_3",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "There was a less famous swordsman outside Tomihara, calling himself Saint of Sword. He left three Blades: Sacred-Green Mist, Crescent-Aqua Blaze, and MoonlightCherry-Storm Slash.$(br2)However, they are only Blades which have a bit spirit power."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.blademaster.greenmist"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.blademaster.aquablaze"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.blademaster.moonlightcherry"
+      }
+   ],
+   "advancement":"lastsmith:slashblade_white",
+   "flag":"mod:slashblade_addon",
+   "sortnum" : 16
+}

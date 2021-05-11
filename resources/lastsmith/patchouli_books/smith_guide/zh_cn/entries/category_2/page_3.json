@@ -1,0 +1,34 @@
+{
+   "name" : "竹光",
+   "icon" : "flammpfeil.slashblade:slashbladeBambooLight",
+   "category" : "category_2",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "竹光刀的技艺是苇名地区的传统工艺。$(br)苇名缺少铁矿资源，所以通常来说竹刀成了该地区最常见的刀剑了。$(br2)即便是竹，也有着锋利的刃。切裂表皮并不成问题。"
+      },
+      {
+         "type" : "crafting",
+         "flag":"！mod:tfc",
+         "recipe" : "lastsmith:blade_bamboo",
+         "recipe2" : "lastsmith:bamboo_saya"
+      },
+      {
+         "type" : "crafting",
+         "flag":"mod:tfc",
+         "recipe" : "lastsmith:blade_bamboo_tfc",
+         "recipe2" : "lastsmith:bamboo_saya_tfc"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:bamboolight",
+         "text" : "这只是最基本的工艺步骤，在后面的步骤里还有更多要处理的。"
+      },
+      {
+         "type" : "relations",
+         "entries" : ["lastsmith:category_2/page_1" , "lastsmith:category_2/page_4","lastsmith:category_2/page_6"]
+      }
+   ],
+   "advancement":"lastsmith:root",
+   "sortnum" : 2
+}

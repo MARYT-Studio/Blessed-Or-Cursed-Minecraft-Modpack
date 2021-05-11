@@ -1,0 +1,27 @@
+{
+   "name" : "银纸竹光",
+   "icon" : "flammpfeil.slashblade:slashbladeSilverBambooLight",
+   "category" : "category_2",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "竹光刀的完成品，被称为「银纸竹光」。$(br)铁箔或银箔之类的银白色金属箔用鸡蛋清贴合在刀刃上，加以涂装。$(br2)外行人在第一眼看到之前，都会认为这是钢刃，足以说明竹光刀技艺之精湛。"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:silverlight",
+         "recipe2" : "flammpfeil.slashblade:silverlight2"
+      },
+      {
+         "type" : "spotlight",
+         "item" : "flammpfeil.slashblade:slashbladeWrapper",
+          "text" : "斩断100份活物之后，断裂的刀会化作万变之鞘。$(br2)制作重要刀装具的必要之器。"
+      },
+      {
+         "type" : "relations",
+         "entries" :["lastsmith:category_2/page_1","lastsmith:category_2/page_3","lastsmith:category_2/page_5","lastsmith:category_2/page_6"]
+      }
+   ],
+   "advancement":"lastsmith:slashblade_bamboolight",
+   "sortnum" : 3
+}

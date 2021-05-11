@@ -4,7 +4,8 @@ import crafttweaker.item.IItemCondition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-// Configuration about Killcount and Proudsoul points
+// Configurations
+// Killcount and Proudsoul point number
 val firstKillCountNumber as int = 10;
 val secondKillCountNumber as int = 150;
 val thirdKillCountNumber as int = 450;
@@ -16,6 +17,17 @@ val thirdProudsoulNumber as int = 2400;
 
 val T3HammerDamage as int = 10;
 val T4HammerDamage as int = 100;
+
+// Killcount Token Base Item
+val firstKillCountTokenBase = <minecraft:iron_ingot>; // 原版铁锭
+val secondKillCountTokenBase = <dcs_climate:dcs_ingot:3>; // HAC 银锭
+val thirdKillCountTokenBase = <minecraft:iron_block>; //占位物品，有待修改
+val fourthKillCountTokenBase = <minecraft:gold_block>; //占位物品，有待修改
+
+// Proudsoul Bottle Base Item
+val firstProudSoulBottleBase = <minecraft:glass_bottle>;
+val secondProudSoulBottleBase = <minecraft:experience_bottle>;
+val thirdProudSoulBottleBase = <minecraft:diamond_block>; //占位物品，有待修改
 
 // Material variables claiming and tooltip adding
 // Killcount Tokens
@@ -55,16 +67,6 @@ val T3Hammer = <sakura:sakura_hammer>;
 
 val T1_allowed_hammers as IItemStack[] = [T1Hammer, T2Hammer, T3Hammer];
 val T2_allowed_hammers as IItemStack[] = [T2Hammer, T3Hammer];
-
-// Killcount Token Base Item
-val firstKillCountTokenBase = <minecraft:iron_ingot>;
-val secondKillCountTokenBase = <minecraft:gold_ingot>;
-val thirdKillCountTokenBase = <minecraft:iron_block>; //占位物品，有待修改
-val fourthKillCountTokenBase = <minecraft:gold_block>; //占位物品，有待修改
-// Proudsoul Bottle Base Item
-val firstProudSoulBottleBase = <minecraft:glass_bottle>;
-val secondProudSoulBottleBase = <minecraft:experience_bottle>;
-val thirdProudSoulBottleBase = <minecraft:diamond_block>; //占位物品，有待修改
 
 // Tier 1 SlashBlades
 val T1_SlashBlades = <flammpfeil.slashblade:slashbladewhite>;

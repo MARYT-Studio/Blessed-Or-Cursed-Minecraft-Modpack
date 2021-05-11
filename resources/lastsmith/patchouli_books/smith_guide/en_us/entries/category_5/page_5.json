@@ -1,0 +1,34 @@
+{
+   "name" : "Munin",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/smith/model\", TextureName: \"named/smith/texture_final\"}",
+   "category" : "category_5",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "I believe many people looked down upon me, even were hostile to me.$(br2)They will not understand that they are only confused by their immediate benefits; the only thing they are considering about must be this!$(br2)They won't know what is my creed!"
+      },
+      {
+         "type" : "text",
+         "text" : "I am ready for what I must do.$(br2)Regardless of my future, whether it is bright or gloomy, even it is fatal. It is my own choice.$(br)I have stepped into this abyss.$(br2)I will tell them, the Blade above the Tachi of the Spirit Sakura, will tell them..."
+      },
+      {
+         "type" : "text",
+         "text" : "We Tengus, we descendants of the Readers will tell them, tell them what is..."
+      },
+      {
+         "type" : "image",
+         "images" : ["lastsmith:textures/gui/smith_guide_final_page.png"]
+      },
+      {
+         "type" : "text",
+         "text" : "The Third Cycle, the year of Moon, Spring and Fire, the moon of Frost.$(br)Since he mentioned that he wanted to write a book, Zheng locked himself in a small room.$(br2)Since the bewitched Blade was found - or earlier - Zheng was gone. The bloodstain on the book should be Zheng's.$(br2)We named this Blade Munin, and give the two Amagumo Blades to the Lord Syameimaru."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.smith.final",
+         "text" : "The name Munin stands for Zheng's end. The Lord Syameimaru should be in deep grief when hearing Zheng's death, I think.$(br2)Syameimaru Zheng's friend, Midoritake."
+      }
+   ],
+   "advancement":"lastsmith:amagumo",
+   "sortnum" : 4
+}

@@ -1,3 +1,6 @@
+// Vanilla Minecraft
+<minecraft:experience_bottle>.addTooltip("除了与村民交易，还有其他的获得方法");
+
 // Energy Converter
 game.setLocalization("zh_cn", "tile.energy_producer_eu.hv.name", "能量输出端口");
 game.setLocalization("zh_cn", "tile.energy_consumer_fe.name", "能量接入端口");

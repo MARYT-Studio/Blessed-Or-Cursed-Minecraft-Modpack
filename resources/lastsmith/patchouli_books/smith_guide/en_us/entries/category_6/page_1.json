@@ -1,0 +1,17 @@
+{
+   "name" : "R_Liu's Cyanlacuight",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/arthurs/model_0\", TextureName: \"named/arthurs/texture_0\"}",
+   "category" : "category_6",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "R_Liu, leader of Mysterious Mountain Forging-Shop.$(br2)Chief modeller of this team. Important person who leads the custom SlashBlade making in China Minecraft community.$(br2)Recently he began to learn to develop SlashBlade Mod's addon. Let's cheer fo him."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.mmf.r_liu"
+      }
+   ],
+   "advancement":"lastsmith:final_blade",
+   "sortnum" : 0
+}

@@ -1,0 +1,25 @@
+{
+   "name" : "「天云」",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/smith/model\", TextureName: \"named/smith/texture_wind\"}",
+   "category" : "category_5",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "我是一名鸦天狗，更是一名「阅读者」……$(br2)拿起锻造锤的时候，我已经是合格的刀匠了……$(br2)他们只会要求更强大的力量为他们所用，只懂得互相厮杀，甚至失去本心……"
+      },
+      {
+         "type" : "text",
+         "text" : "「真理之剑」，他们原本是举起手中利刃去保护世人的力量……$(br2)他们的无理要求，让我憎恶。$(br2)这两振刀，是对抗他们的力量。为了我等天狗，更为了我等「阅读者」……"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.amagumo.wind"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.amagumo.cloud"
+      }
+   ],
+   "advancement":"lastsmith:sharpness",
+   "sortnum" : 3
+}

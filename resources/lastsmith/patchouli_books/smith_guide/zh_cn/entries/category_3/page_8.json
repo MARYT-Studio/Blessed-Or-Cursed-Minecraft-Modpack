@@ -1,0 +1,26 @@
+{
+   "name" : "斗刀「孤独」",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/namedblade/model\",TextureName: \"named/namedblade/texture_normal\"}",
+   "category" : "category_3",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "曾经有一个失去了挚爱之人的战士，挥舞着自己的最后一丝挚爱之器踏上了还乡和复仇的道路……$(br2)他后来战死，而灵魂却不愿成佛……$(br2)其手持之刃，名为斗刀，意为战斗之刀。"
+      },
+      {
+         "type" : "text",
+         "text" : "他的战斗是孤独的……只有独自一人的战斗……又名「孤独」……$(br2)其灵魂，仍旧在手持着他的利刃，寻找归乡之路……"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.kogawa_normal",
+         "recipe2" : "lastsmith:flammpfeil.slashblade.named.kogawa_rare"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.kogawa_super"
+      }
+   ],
+   "advancement":"lastsmith:slashblade_white",
+   "sortnum" : 7
+}

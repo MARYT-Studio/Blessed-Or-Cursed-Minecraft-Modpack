@@ -1,0 +1,39 @@
+{
+   "name" : "Yamazakura-Kamuy-",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/yamazakura/model\",TextureName: \"named/yamazakura/yamazakura_kamuy_tuki\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Devil-infused Yamazakura Blade eventually summoned the Devils again...$(br2)Devils devoured all the Yamazakura Blades, then killed all smiths who were there.$(br2)Though a long period, as long as a calendar cycle, had past, men of Tomihara were still difficult to defeat the Devils."
+      },
+      {
+         "type" : "text",
+         "text" : "Humans finally slayed the Devils in a severe war with new strategy.$(br2)Devils' body became ashes, and left the only one Yamazakura Blade.$(br2)It was the leap month of the Lunar Calendar. So Humans named the only Yamazakura left \"Yamazakura-Kamuy-\", which means \"Yamazakura, the Sacred Moon\". This Blade became the only hope of Yamazakura Village, and the Tomihara State."
+      },
+      {
+         "type" : "text",
+         "text" : "The War for Stealing Territory broke out.$(br2)The owner of Kamuy and the owner of Aoi, fight with the enemies together. They slayed uncountable amount of enemies with the stunt, Sakura-Space Quakke-.$(br2)As the records say, I have witnessed the real power of that stunt. When the\"Heavy Rain\" fell down, the Space was cut through."
+      },
+      {
+         "type" : "text",
+         "text" : "As I know, Yamazakura's strong Spirit Power not only because the power of Devils, but also it is made by Spirit Sakura Steel, smelt from aerosiderites.$(br2)Tomihara was overthrown down after only a decade.$(br2)Owner of Kamuy and Aoi was assassinated, and the two Blades got lost. Bewitched Blades that smithed in Tomihara disappeared since then, only historical records about them were left."
+      },
+      {
+         "type" : "text",
+         "text" : "I think the loss of Yamazakura Blades is a great pity indeed. The only thing I can do is trying to revivify the two Blades.$(br2)Though we have great power, we can hardly protect ourselves."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.yamazakura.minazuki",
+         "recipe2" : "lastsmith:flammpfeil.slashblade.named.yamazakura.fumizuki"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.yamazakura.kannazuki",
+         "recipe2" : "lastsmith:flammpfeil.slashblade.named.yamazakura.kamuy"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 7
+}

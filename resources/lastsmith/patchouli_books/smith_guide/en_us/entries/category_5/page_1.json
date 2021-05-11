@@ -1,0 +1,26 @@
+{
+   "name" : "Gokukaiken",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/smith/model\", TextureName: \"named/smith/texture_wind\"}",
+   "category" : "category_5",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "A few days ago, I was invited to the feast held in Hakugyokurou.$(br2)The former Lord of Konpaku family had lived in seclusion. A young swordswoman replaced him as the princess's guard.$(br2)Seeing the two Blades that we smithed with our lives, my tears came out."
+      },
+      {
+         "type" : "text",
+         "text" : "Before I left, I decided to enjoy the view of the Hakugyokurou.$(br2)When I wandered in the cloister, I witnessed a black shadow holding two Blades, which were so familiar to me.$(br2)Its face... was the young swordswoman's.$(br2)When she unsheathed the two Blades, a strong bewitched gust blew to me... Then she was gone."
+      },
+      {
+         "type" : "text",
+         "text" : "Why was the tachi so similar to the Tachi of Spirit Sakura...$(br2)No. It was not that tachi.$(br2)I could not feel the Spirit Sakura power from it. Its power came from the Hell.$(br2)Gokukaiken! Why is it?"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.roukan_nether",
+         "recipe2" : "lastsmith:flammpfeil.slashblade.named.hakurou_nether"
+      }
+   ],
+   "advancement":"lastsmith:sharpness",
+   "sortnum" : 0
+}

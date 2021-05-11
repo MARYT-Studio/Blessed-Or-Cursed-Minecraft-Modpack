@@ -41,7 +41,7 @@
   "patchouli": "1.0-21",
   "ic2": "2.8.170-ex112",
   "abyssalcraft": "1.10.3",
-  "dcs_climate": "3.6.2",
+  "dcs_climate": "3.6.5",
   "FML": "8.0.99.99",
   "norecipebook": "1.2.1",
   "appleskin": "1.0.14",
@@ -50,7 +50,7 @@
   "dcs_asm": "2.1.0",
   "i18nmod": "1.12.2-1.1.0",
   "tofucraft": "0.1.0.9",
-  "dcs_lib": "3.6.2",
+  "dcs_lib": "3.6.5",
   "wailaharvestability": "1.1.12",
   "base": "3.13.0"
 }

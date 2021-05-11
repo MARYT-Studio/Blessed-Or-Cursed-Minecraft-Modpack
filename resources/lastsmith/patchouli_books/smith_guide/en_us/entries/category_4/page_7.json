@@ -1,0 +1,58 @@
+{
+   "name" : "Exorcism Blades&Sakura Style",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/sakura/model\", TextureName: \"named/sakura/texture\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "The First Cycle of Lunar Calendar, The year of Sun, Summer and Fire. At that time, we Youkais have not left the Mysterious Mountain, and humans have not disturbed our peaceful lives.$(br2)A severe war broke out between Human and Devils, in Tomihara. Leader of the Devils, the owner of Shura Blade, attacked the humans' villages with his men."
+      },
+      {
+         "type" : "text",
+         "text" : "Exorcists of the humans, wielding their Exorcising Blades, fight with enemies for a long time.$(br2)It was not simply a war between Humans and Devils. According to the historical materials, some Exorcists even killed their peers with their Blades.$(br2)Though the war was not very heated, but at that time it decided the fate of the Humans."
+      },
+      {
+         "type" : "text",
+         "text" : "Historical materials mention that, among Humans, there were only two warriors left. One was the owner of Sakura Blade, the other was the owner of Ginkgo Blade.$(br)Except the two warriors, other Exorcists either joined the Devils or killed by them. They could hardly leave their names. Mikage, the girl swordman who owned the Sakura Blade, slayed many Devils on her own, and broke into the City of the Devils, killed the Devils' Leader, Shura."
+      },
+      {
+         "type" : "text",
+         "text" : "However, she committed suicide after her coming back to homeland.$(br2)I cannot know why. It is also not recorded in any materials. But after that, the power of Devils has been infusing in the Blades that have killed lifes. It is said that Devils were originated from humans.$(br)If this is true, these Blade infused with Devils' power are only \"haunted\" ones."
+      },
+      {
+         "type" : "text",
+         "text" : "Those ghosts cannot imagine the Spirit power of us Youkais.$(br2)So these Bewitched Blades are simply stronger Blades for us. Sakura Sword Style is the style how Exorcists wield their Exorcising Blades, which is also the sword style we Youkais learn for wielding our Bewitched Blades.$(br)It is mainly about how to drive the Spirit Power of the Blade to kill enemies."
+      },
+      {
+         "type" : "text",
+         "text" : "The two sword skills we learn, Sakura-Hatsu- and Sakura-Fallen Sakura-, are the basic skills of Sakura Style.$(br2)It is said that there is a skill called Sakura-Space Quakke-, which is hard to be acquired. It not only needs a skilled swordman, but also a Blade full of Spirit Power."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.sakura",
+         "text" : "I tried to imitate their original appearance according to the records, but its only an imitaion."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.ginkgo",
+         "text" : "I tried to imitate their original appearance according to the records, but its only an imitaion."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.yukikage",
+         "text" : "I tried to imitate their original appearance according to the records, but its only an imitaion."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.kataware",
+         "text" : "I tried to imitate their original appearance according to the records, but its only an imitaion."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.shura",
+         "text" : "I tried to imitate their original appearance according to the records, but its only an imitaion.$(br2)I need to know the history of Blades Above All Blades."
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 6
+}

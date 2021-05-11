@@ -1,0 +1,17 @@
+{
+   "name" : "千鶴「村正」",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/muramasa/muramasa\",TextureName: \"named/muramasa/muramasa\"}",
+   "category" : "category_3",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "冠以村正之名的刀，出自村正家的一名刀匠之手。$(br)和那振不存在的妖刀一样都是村正铭，但是却并非出自同一刀匠之手，自然也不是同一振刀。$(br2)当年，村正家是人类刀匠的一大名家，甚至是我们这些妖怪刀匠的老师之一。"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:muramasa"
+      }
+   ],
+   "advancement":"lastsmith:slashblade_white",
+   "sortnum" : 2
+}

@@ -1,0 +1,18 @@
+{
+   "name" : "Fluorescent Bar",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/fluorescentbar/fluorescentbar\",TextureName: \"named/fluorescentbar/fluorescentbar\"}",
+   "category" : "category_3",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Those swordmen, who are busying in practising their sword arts, use anything as their weapon.$(br)As far as they concern, this big stick, coming from outside world, is pretty fit for them.$(br)In fact, this stick is with so amazingly hardness that I broke my Blade when I tried to cut the stick with it.$(br2)Is it called a \"Fluorescent Bar\"? I maybe have heard about it."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.fluorescentbar"
+      }
+   ],
+   "advancement":"lastsmith:slashblade_white",
+   "flag":"mod:slashblade_addon",
+   "sortnum" : 12
+}

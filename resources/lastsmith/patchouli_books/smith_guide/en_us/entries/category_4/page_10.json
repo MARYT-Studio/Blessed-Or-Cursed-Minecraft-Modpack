@@ -1,0 +1,26 @@
+{
+   "name" : "Tale of BambooLight",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/yamato\",TextureName: \"named/bamboolight/bamboo_top\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "There were lush bamboo forests in Tomihara. One of them was even called \"Bamboo Forest of the Lost\".$(br2)So craftsmen in Tomihara made a variety of Bamboo Blades. Among these Blades, the Blades which is massively produced is the so-called BambooLight.$(br2)How many good or bad ones were among them? No one could answer."
+      },
+      {
+         "type" : "text",
+         "text" : "Excellent BambooLight Blades were quite expensive, even recently in Tomihara.$(br)It is natural. Good BambooLights can be as tough as ordinary steel Blades, sometimes even more.$(br2)Bamboo Blades are not only tough, but also sharp."
+      },
+      {
+         "type" : "text",
+         "text" : "I had heard a tale: A hermit owned a BambooLight Blade and lived in the high mountain. When his foes broke in, they would be slayed just when the BambooLight was unsheathed.$(br2)This tale is actually true, but only I know. That hermit is one of my friends.$(br2)I have witnessed his bamboo Blade emitting Spirit Power sparks."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.bamboolight_top",
+         "recipe2" : "lastsmith:flammpfeil.slashblade.named.bamboolight_recluse"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 9
+}
