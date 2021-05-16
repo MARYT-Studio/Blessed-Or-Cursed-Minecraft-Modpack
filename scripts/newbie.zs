@@ -12,9 +12,9 @@ import mods.initialinventory.InvHandler;
 // ]
 // );
 
-var GiftSword = <minecraft:diamond_sword>.withDamage(1429).withTag({display: {Name: "新手勇气之剑"}});
-var GiftAxe = <minecraft:diamond_axe>.withDamage(1429).withTag({display: {Name: "新手坚韧之斧"}});
-val GiftBread = <minecraft:bread>.withTag({display: {Name: "新手面包"}});
+var GiftSword = <minecraft:diamond_sword>.withDamage(1429).withTag({display: {Name: game.localize("item.crafttweaker.newbiesword.name")}});
+var GiftAxe = <minecraft:diamond_axe>.withDamage(1429).withTag({display: {Name: game.localize("item.crafttweaker.newbieaxe.name")}});
+val GiftBread = <minecraft:bread>.withTag({display: {Name: game.localize("item.crafttweaker.newbiebread.name")}});
 
 InvHandler.addStartingItem(GiftSword);
 InvHandler.addStartingItem(GiftAxe);

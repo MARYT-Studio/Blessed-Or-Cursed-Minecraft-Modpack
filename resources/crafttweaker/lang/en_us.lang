@@ -1,0 +1,31 @@
+crafttweaker.experience_bottle.tooltip=You can get this through other ways, not only trading with Villagers.
+crafttweaker.energy_crystal.tooltip=Fill it in MFE, so that it can be crafted into the NanoBlade.
+
+crafttweaker.useless_lapo_crystal.tooltip=§c§lUseless and Unaccessable
+
+crafttweaker.full_lapo_crystal_1.tooltip=Simply craft and get this, only for QuantumBlade's recipe
+crafttweaker.full_lapo_crystal_2.tooltip=It cannot store EU.
+
+crafttweaker.lemon_battery_1.tooltip=Any electrolyte-rich fruits can be used as battery,
+crafttweaker.lemon_battery_2.tooltip=why must it be Yuzu?
+crafttweaker.lemon_battery_3.tooltip=Craft this with Soldering Iron to charge it.
+crafttweaker.lemon_battery_4.tooltip=Or you can use this for furnace's fuel.
+crafttweaker.lemon_battery_5.tooltip=§oDedicated to the Apple Milk & Tea Mod created by defeatedcrow.
+
+item.crafttweaker.newbiesword.name=Newbie's Braveness Sword
+item.crafttweaker.newbieaxe.name=Newbie's Toughness Axe
+item.crafttweaker.newbiebread.name=Newbie's Bread
+
+crafttweaker.first_killcount_token.tooltip=锋刃初开，吐露前世的秘密。
+crafttweaker.second_killcount_token.tooltip=百斩之刃，揭开封存的故事。
+crafttweaker.third_killcount_token.tooltip=十步杀一人，千里不留行。
+crafttweaker.fourth_killcount_token.tooltip=事了拂衣去，深藏功与名。
+
+crafttweaker.first_proudsoul_bottle.tooltip=古老的荣耀之力，不甘困居于方寸之地。
+crafttweaker.second_proudsoul_bottle.tooltip=前路没有尽头，而我从不回头。
+crafttweaker.third_proudsoul_bottle_1.tooltip=我开始理解那位刀匠的孤傲。
+crafttweaker.third_proudsoul_bottle_2.tooltip=§l我们本就是同一路人。
+
+crafttweaker.first_proudsoul_bottle_shift.tooltip=§o向曾经带给我们欢乐的1.7.10拔刀剑致敬。
+crafttweaker.general_proudsoul.tooltip=§o那瓶中躁动不安的魂火，是我炽烈的青春年代。
+crafttweaker.general_tokens.tooltip=§o刀匠的心血结晶。
