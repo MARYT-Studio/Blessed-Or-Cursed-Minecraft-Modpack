@@ -16,16 +16,21 @@ item.crafttweaker.newbiesword.name=Newbie's Braveness Sword
 item.crafttweaker.newbieaxe.name=Newbie's Toughness Axe
 item.crafttweaker.newbiebread.name=Newbie's Bread
 
-crafttweaker.first_killcount_token.tooltip=锋刃初开，吐露前世的秘密。
-crafttweaker.second_killcount_token.tooltip=百斩之刃，揭开封存的故事。
-crafttweaker.third_killcount_token.tooltip=十步杀一人，千里不留行。
-crafttweaker.fourth_killcount_token.tooltip=事了拂衣去，深藏功与名。
+crafttweaker.first_killcount_token.tooltip=The firstly sharped Blade, tells you the secrets of predecessors.
+crafttweaker.second_killcount_token.tooltip=Blade killed hundreds of enemies, unconvers the hidden stories.
+crafttweaker.third_killcount_token.tooltip=Slay an enemy within ten steps, while I cover thousands of distance without being known.
+crafttweaker.fourth_killcount_token.tooltip=After everything is done I disappeared with nothing left.
 
-crafttweaker.first_proudsoul_bottle.tooltip=古老的荣耀之力，不甘困居于方寸之地。
-crafttweaker.second_proudsoul_bottle.tooltip=前路没有尽头，而我从不回头。
-crafttweaker.third_proudsoul_bottle_1.tooltip=我开始理解那位刀匠的孤傲。
-crafttweaker.third_proudsoul_bottle_2.tooltip=§l我们本就是同一路人。
+crafttweaker.first_proudsoul_bottle.tooltip=Elder power of Proud, reluctant to be confined in such a small bottle.
+crafttweaker.second_proudsoul_bottle.tooltip=Future is endless, I stride with no regret.
+crafttweaker.third_proudsoul_bottle_1.tooltip=I feel to understand the aloof of the Smith.
+crafttweaker.third_proudsoul_bottle_2.tooltip=§lWe are the same peer of people.
 
-crafttweaker.first_proudsoul_bottle_shift.tooltip=§o向曾经带给我们欢乐的1.7.10拔刀剑致敬。
-crafttweaker.general_proudsoul.tooltip=§o那瓶中躁动不安的魂火，是我炽烈的青春年代。
-crafttweaker.general_tokens.tooltip=§o刀匠的心血结晶。
+crafttweaker.first_proudsoul_bottle_shift.tooltip=§oDedicated to the SlashBlade Mod.
+crafttweaker.general_proudsoul.tooltip=§oThe unrested blazing soul fire, is my flaming youth.
+crafttweaker.general_tokens.tooltip=§oSmiths' hard works with heart.
+
+crafttweaker.soldering_iron_nouse.tooltip=This soldering iron cannot be used to solder.
+crafttweaker.soldering_iron_needcharge.tooltip=Charge soldering iron with Lemon Battery and you can use it.
+crafttweaker.soldering_iron_1.tooltip=Power left: 
+crafttweaker.soldering_iron_2.tooltip=%, is usable.

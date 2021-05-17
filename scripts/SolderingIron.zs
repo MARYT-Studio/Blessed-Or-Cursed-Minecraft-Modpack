@@ -14,17 +14,17 @@ recipes.addShaped("soldering_iron",<contenttweaker:soldering_iron>.withTag({Powe
         var solderingIronNBT as IData = item.tag;
             if(isNull(solderingIronNBT.PowerLeft))
             {
-                return "这把烙铁不能使用。";
+                return game.localize("crafttweaker.soldering_iron_nouse.tooltip");
             }
             else if(solderingIronNBT.PowerLeft.asInt() == 0)
             {
-                return "用柠檬电池充电后，烙铁才能焊接东西。";
+                return game.localize("crafttweaker.soldering_iron_needcharge.tooltip");
             }
             else
             {
                 var powerLeft as float = solderingIronNBT.PowerLeft.asFloat();
                 var displayPower as float = powerLeft * 6.25;
-                return "烙铁剩余电量: " ~ displayPower ~ "%，可以使用。";
+                return game.localize("crafttweaker.soldering_iron_1.tooltip") ~ displayPower ~ game.localize("crafttweaker.soldering_iron_2.tooltip");
             }
     }
 );

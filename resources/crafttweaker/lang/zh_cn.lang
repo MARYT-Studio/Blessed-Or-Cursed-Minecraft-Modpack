@@ -29,3 +29,8 @@ crafttweaker.third_proudsoul_bottle_2.tooltip=§l我们本就是同一路人。
 crafttweaker.first_proudsoul_bottle_shift.tooltip=§o向曾经带给我们欢乐的1.7.10拔刀剑致敬。
 crafttweaker.general_proudsoul.tooltip=§o那瓶中躁动不安的魂火，是我炽烈的青春年代。
 crafttweaker.general_tokens.tooltip=§o刀匠的心血结晶。
+
+crafttweaker.soldering_iron_nouse.tooltip=这把烙铁不能使用。
+crafttweaker.soldering_iron_needcharge.tooltip=用柠檬电池充电后，烙铁才能焊接东西。
+crafttweaker.soldering_iron_1.tooltip=烙铁剩余电量: 
+crafttweaker.soldering_iron_2.tooltip=%，可以使用。

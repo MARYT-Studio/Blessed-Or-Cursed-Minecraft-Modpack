@@ -32,33 +32,33 @@ val thirdProudSoulBottleBase = <minecraft:diamond_block>; //占位物品，有�
 // Material variables claiming and tooltip adding
 // Killcount Tokens
 val firstKillcountToken = <contenttweaker:first_killcount_token>;
-firstKillcountToken.addTooltip("锋刃初开，吐露前世的秘密。");
-firstKillcountToken.addTooltip("§o刀匠的心血结晶。");
+firstKillcountToken.addTooltip(game.localize("crafttweaker.first_killcount_token.tooltip"));
+firstKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 val secondKillcountToken = <contenttweaker:second_killcount_token>;
-secondKillcountToken.addTooltip("百斩之刃，揭开封存的故事。");
-secondKillcountToken.addTooltip("§o刀匠的心血结晶。");
+secondKillcountToken.addTooltip(game.localize("crafttweaker.second_killcount_token.tooltip"));
+secondKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 val thirdKillcountToken = <contenttweaker:third_killcount_token>;
-thirdKillcountToken.addTooltip("十步杀一人，千里不留行。");
-thirdKillcountToken.addTooltip("§o刀匠的心血结晶。");
+thirdKillcountToken.addTooltip(game.localize("crafttweaker.third_killcount_token.tooltip"));
+thirdKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 val fourthKillcountToken = <contenttweaker:fourth_killcount_token>;
-fourthKillcountToken.addTooltip("事了拂衣去，深藏功与名。");
-fourthKillcountToken.addTooltip("§o刀匠的心血结晶。");
+fourthKillcountToken.addTooltip(game.localize("crafttweaker.fourth_killcount_token.tooltip"));
+fourthKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 
 // Proudsoul Bottles
 val firstProudsoulBottle = <contenttweaker:first_proudsoul_bottle>;
-firstProudsoulBottle.addTooltip("古老的荣耀之力，不甘困居于方寸之地。");
-firstProudsoulBottle.addTooltip("§o刀匠的心血结晶。");
-firstProudsoulBottle.addShiftTooltip("§o那瓶中躁动不安的魂火，是我炽烈的青春年代。");
-firstProudsoulBottle.addShiftTooltip("§o向曾经带给我们欢乐的1.7.10拔刀剑致敬。");
+firstProudsoulBottle.addTooltip(game.localize("crafttweaker.first_proudsoul_bottle.tooltip"));
+firstProudsoulBottle.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
+firstProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.general_proudsoul.tooltip"));
+firstProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.first_proudsoul_bottle_shift.tooltip"));
 val secondProudsoulBottle = <contenttweaker:second_proudsoul_bottle>;
-secondProudsoulBottle.addTooltip("前路没有尽头，而我从不回头。");
-secondProudsoulBottle.addTooltip("§o刀匠的心血结晶。");
-secondProudsoulBottle.addShiftTooltip("§o那瓶中躁动不安的魂火，是我炽烈的青春年代。");
+secondProudsoulBottle.addTooltip(game.localize("crafttweaker.second_proudsoul_bottle.tooltip"));
+secondProudsoulBottle.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
+secondProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.general_proudsoul.tooltip"));
 val thirdProudsoulBottle = <contenttweaker:third_proudsoul_bottle>;
-thirdProudsoulBottle.addTooltip("我开始理解那位刀匠的孤傲。");
-thirdProudsoulBottle.addTooltip("§l我们本就是同一路人。");
-thirdProudsoulBottle.addTooltip("§o刀匠的心血结晶。");
-thirdProudsoulBottle.addShiftTooltip("§o那瓶中躁动不安的魂火，是我炽烈的青春年代。");
+thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.third_proudsoul_bottle_1.tooltip"));
+thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.third_proudsoul_bottle_2.tooltip"));
+thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
+thirdProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.general_proudsoul.tooltip"));
 
 // Forging Hammers variables claiming
 val T1Hammer = <sakura:stone_hammer>;
