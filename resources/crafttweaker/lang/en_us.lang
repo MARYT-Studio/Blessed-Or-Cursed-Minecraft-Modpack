@@ -34,3 +34,8 @@ crafttweaker.soldering_iron_nouse.tooltip=This soldering iron cannot be used to 
 crafttweaker.soldering_iron_needcharge.tooltip=Charge soldering iron with Lemon Battery and you can use it.
 crafttweaker.soldering_iron_1.tooltip=Power left: 
 crafttweaker.soldering_iron_2.tooltip=%, is usable.
+
+crafttweaker.soldering_iron_1.desc=Soldering Iron is used to make circuit boards.
+crafttweaker.soldering_iron_2.desc=Only those crafted from Crafting Tables can be used.
+crafttweaker.soldering_iron_3.desc=Using Soldering Iron consumes its charge.
+crafttweaker.soldering_iron_4.desc=Before using it you should charge it with Lemon Battery.

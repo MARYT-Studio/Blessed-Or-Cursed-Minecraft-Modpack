@@ -502,3 +502,42 @@ recipes.addShapeless(
     // 配方动作
     null
 );
+
+// SlashBlade Tiering Descriptions
+mods.jei.JEI.addDescription(T1_allowed_SlashBlades,
+[
+    "将此拔刀与铁锭置于工作台上，",
+    "用石锻造锤击打，",
+    "即可献上拔刀的"~firstKillCountNumber~"点斩杀数，",
+    "获取一阶斩杀之证。"
+]);
+mods.jei.JEI.addDescription(T2_allowed_SlashBlades,
+[
+    "将此拔刀与铁锭置于工作台上，",
+    "用铁锻造锤击打，",
+    "即可献上拔刀的"~secondKillCountNumber~"点斩杀数，",
+    "获取二阶斩杀之证。",
+    "若将铁锭换成玻璃瓶，",
+    "即可献上拔刀的"~firstProudsoulNumber~"点耀魂数，",
+    "获取初阶耀魂之瓶。"
+]);
+mods.jei.JEI.addDescription(T3_allowed_SlashBlades,
+[
+    "将此拔刀与铁锭置于工作台上，",
+    "用樱锻造锤击打，",
+    "即可献上拔刀的"~thirdKillCountNumber~"点斩杀数，",
+    "获取三阶斩杀之证。",
+    "若将铁锭换成玻璃瓶，",
+    "即可献上拔刀的"~secondProudsoulNumber~"点耀魂数，",
+    "获取中阶耀魂之瓶。"
+]);
+mods.jei.JEI.addDescription(T4_SlashBlades,
+[
+    "将此拔刀与铁锭置于工作台上，",
+    "用樱锻造锤击打，",
+    "即可献上拔刀的"~fourthKillCountNumber~"点斩杀数，",
+    "获取四阶斩杀之证。",
+    "若将铁锭换成玻璃瓶，",
+    "即可献上拔刀的"~thirdProudsoulNumber~"点耀魂数，",
+    "获取高阶耀魂之瓶。"
+]);
