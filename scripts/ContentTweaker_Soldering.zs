@@ -29,3 +29,12 @@ lemonBattery.creativeTab = <creativetab:dcs_climate>;
 lemonBattery.rarity = "common";
 lemonBattery.glowing = false;
 lemonBattery.register();
+
+// This Item's current texture is made by:
+// https://twitter.com/endesga/status/972683776277954561
+// Remember to credit the author ENDESGA
+var solderWire = mods.contenttweaker.VanillaFactory.createItem("solder_wire");
+solderWire.creativeTab = <creativetab:dcs_climate>;
+solderWire.rarity = "common";
+solderWire.glowing = false;
+solderWire.register();

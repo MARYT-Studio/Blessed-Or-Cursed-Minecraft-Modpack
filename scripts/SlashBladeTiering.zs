@@ -503,104 +503,27 @@ recipes.addShapeless(
     null
 );
 
-// SlashBlade Tiering Descriptions
-// Plan A
-// mods.jei.JEI.addDescription((T1_SlashBlades|T2_SlashBlades|T3_SlashBlades|T4_SlashBlades).items,
-// [
-//     "将此拔刀与铁锭置于工作台上，",
-//     "用石锻造锤击打，",
-//     "即可献上拔刀的"~firstKillCountNumber~"点斩杀数，",
-//     "获取一阶斩杀之证。"
-// ]);
-
-// mods.jei.JEI.addDescription((T2_SlashBlades|T3_SlashBlades|T4_SlashBlades).items,
-// [
-//     "将此拔刀与铁锭置于工作台上，",
-//     "用铁锻造锤击打，",
-//     "即可献上拔刀的"~secondKillCountNumber~"点斩杀数，",
-//     "获取二阶斩杀之证。",
-//     "若将铁锭换成玻璃瓶，",
-//     "即可献上拔刀的"~firstProudsoulNumber~"点耀魂数，",
-//     "获取初阶耀魂之瓶。"
-// ]);
-// mods.jei.JEI.addDescription((T3_SlashBlades|T4_SlashBlades).items,
-// [
-//     "将此拔刀与铁锭置于工作台上，",
-//     "用樱锻造锤击打，",
-//     "即可献上拔刀的"~thirdKillCountNumber~"点斩杀数，",
-//     "获取三阶斩杀之证。",
-//     "若将铁锭换成玻璃瓶，",
-//     "即可献上拔刀的"~secondProudsoulNumber~"点耀魂数，",
-//     "获取中阶耀魂之瓶。"
-// ]);
-// mods.jei.JEI.addDescription(T4_SlashBlades.items,
-// [
-//     "将此拔刀与铁锭置于工作台上，",
-//     "用樱锻造锤击打，",
-//     "即可献上拔刀的"~fourthKillCountNumber~"点斩杀数，",
-//     "获取四阶斩杀之证。",
-//     "若将铁锭换成玻璃瓶，",
-//     "即可献上拔刀的"~thirdProudsoulNumber~"点耀魂数，",
-//     "获取高阶耀魂之瓶。"
-// ]);
-
-// Plan B
-// desc values claiming
-val descTextT1 as string[] = 
-[
-    "将此拔刀与铁锭置于工作台上，",
-    "用石锻造锤击打，",
-    "即可献上拔刀的"~firstKillCountNumber~"点斩杀数，",
-    "获取一阶斩杀之证。"
-];
-val descTextT2 as string[] = 
-[
-    "将此拔刀与铁锭置于工作台上，",
-    "用铁锻造锤击打，",
-    "即可献上拔刀的"~secondKillCountNumber~"点斩杀数，",
-    "获取二阶斩杀之证。",
-    "若将铁锭换成玻璃瓶，",
-    "即可献上拔刀的"~firstProudsoulNumber~"点耀魂数，",
-    "获取初阶耀魂之瓶。"
-];
-val descTextT3 as string[] = 
-[
-    "将此拔刀与铁锭置于工作台上，",
-    "用樱锻造锤击打，",
-    "即可献上拔刀的"~thirdKillCountNumber~"点斩杀数，",
-    "获取三阶斩杀之证。",
-    "若将铁锭换成玻璃瓶，",
-    "即可献上拔刀的"~secondProudsoulNumber~"点耀魂数，",
-    "获取中阶耀魂之瓶。"
-];
-val descTextT4 as string[] = 
-[
-    "将此拔刀与铁锭置于工作台上，",
-    "用樱锻造锤击打，",
-    "即可献上拔刀的"~fourthKillCountNumber~"点斩杀数，",
-    "获取四阶斩杀之证。",
-    "若将铁锭换成玻璃瓶，",
-    "即可献上拔刀的"~thirdProudsoulNumber~"点耀魂数，",
-    "获取高阶耀魂之瓶。"
-];
-val descText as string[][] = [descTextT1, descTextT2, descTextT3, descTextT4];
-// Add the desc
-// mods.jei.JEI.addDescription(T1_SlashBlades.items, descText[0]);
-// for i in 0 to 2
-// {
-//     mods.jei.JEI.addDescription(T2_SlashBlades.items, descText[i]);
-// }
-// for i in 0 to 3
-// {
-//     mods.jei.JEI.addDescription(T3_SlashBlades.items, descText[i]);
-// }
-// for i in 0 to 4
-// {
-//     mods.jei.JEI.addDescription(T4_SlashBlades.items, descText[i]);
-// }
-// Plan C
+// Adding SlashBlades' Descriptions
+// Configurations
+// Description values claiming
+val descTextT1 as string = game.localize("crafttweaker.put_this_blade_with.desc")~firstKillCountTokenBase.displayName~game.localize("crafttweaker.on_the_craftingtable.desc")~game.localize("crafttweaker.strike_with.desc")~T1Hammer.displayName~game.localize("crafttweaker.english_neednt_this_part.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~firstKillCountNumber~game.localize("crafttweaker.points_of_killcount.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:first_killcount_token>.displayName~game.localize("crafttweaker.dot.desc");
+val descTextT2 as string = game.localize("crafttweaker.put_this_blade_with.desc")~secondKillCountTokenBase.displayName~game.localize("crafttweaker.on_the_craftingtable.desc")~game.localize("crafttweaker.strike_with.desc")~T2Hammer.displayName~game.localize("crafttweaker.english_neednt_this_part.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~secondKillCountNumber~game.localize("crafttweaker.points_of_killcount.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:second_killcount_token>.displayName~game.localize("crafttweaker.dot.desc")~game.localize("crafttweaker.if.desc")~secondKillCountTokenBase.displayName~game.localize("crafttweaker.replace_with.desc")~firstProudSoulBottleBase.displayName~game.localize("crafttweaker.comma.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~firstProudsoulNumber~game.localize("crafttweaker.points_of_proudsoul.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:first_proudsoul_bottle>.displayName~game.localize("crafttweaker.dot.desc");
+val descTextT3 as string = game.localize("crafttweaker.put_this_blade_with.desc")~thirdKillCountTokenBase.displayName~game.localize("crafttweaker.on_the_craftingtable.desc")~game.localize("crafttweaker.strike_with.desc")~T3Hammer.displayName~game.localize("crafttweaker.english_neednt_this_part.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~thirdKillCountNumber~game.localize("crafttweaker.points_of_killcount.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:third_killcount_token>.displayName~game.localize("crafttweaker.dot.desc")~game.localize("crafttweaker.if.desc")~thirdKillCountTokenBase.displayName~game.localize("crafttweaker.replace_with.desc")~secondProudSoulBottleBase.displayName~game.localize("crafttweaker.comma.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~secondProudsoulNumber~game.localize("crafttweaker.points_of_proudsoul.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:second_proudsoul_bottle>.displayName~game.localize("crafttweaker.dot.desc");
+val descTextT4 as string = game.localize("crafttweaker.put_this_blade_with.desc")~fourthKillCountTokenBase.displayName~game.localize("crafttweaker.on_the_craftingtable.desc")~game.localize("crafttweaker.strike_with.desc")~T3Hammer.displayName~game.localize("crafttweaker.english_neednt_this_part.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~fourthKillCountNumber~game.localize("crafttweaker.points_of_killcount.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:fourth_killcount_token>.displayName~game.localize("crafttweaker.dot.desc")~game.localize("crafttweaker.if.desc")~fourthKillCountTokenBase.displayName~game.localize("crafttweaker.replace_with.desc")~thirdProudSoulBottleBase.displayName~game.localize("crafttweaker.comma.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~thirdProudsoulNumber~game.localize("crafttweaker.points_of_proudsoul.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:third_proudsoul_bottle>.displayName~game.localize("crafttweaker.dot.desc");
+// Description Array
+val descText as string[] = [descTextT1, descTextT2, descTextT3, descTextT4];
+// SlashBlades Array
 val Tiered_SlashBlades as IIngredient[] = [T1_SlashBlades, T2_SlashBlades, T3_SlashBlades, T4_SlashBlades];
-for tier in 0 to 4
+// Adding the Descriptions
+var tier = Tiered_SlashBlades.length - 1;
+while tier >= 0
 {
-    mods.jei.JEI.addDescription(Tiered_SlashBlades[tier].items, descText[tier]);
+    for i in 0 to (tier + 1)
+    {
+        for SlashBlade in Tiered_SlashBlades[tier].items
+        {
+            mods.jei.JEI.addDescription(SlashBlade, descText[i]);
+        }
+    }
+    tier -= 1;
 }

@@ -39,3 +39,16 @@ crafttweaker.soldering_iron_1.desc=烙铁用于焊接电路元件，制作电路
 crafttweaker.soldering_iron_2.desc=只有工作台合成的烙铁可以正常使用，
 crafttweaker.soldering_iron_3.desc=使用会消耗烙铁存储的电量，
 crafttweaker.soldering_iron_4.desc=使用前应当先用柚子电池充能。
+
+crafttweaker.put_this_blade_with.desc=将此拔刀与
+crafttweaker.on_the_craftingtable.desc=置于工作台上，
+crafttweaker.strike_with.desc=用
+crafttweaker.english_neednt_this_part.desc=击打，
+crafttweaker.sacrifice_blade.desc=即可献上拔刀的
+crafttweaker.points_of_killcount.desc=点斩杀数，
+crafttweaker.obtain.desc=获取
+crafttweaker.dot.desc=。
+crafttweaker.if.desc=若将
+crafttweaker.replace_with.desc=换成
+crafttweaker.comma.desc=，
+crafttweaker.points_of_proudsoul.desc=点耀魂数，
