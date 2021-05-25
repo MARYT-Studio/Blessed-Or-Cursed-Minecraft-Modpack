@@ -48,8 +48,7 @@ recipes.addShapeless(
                     return item.updateTag({PowerLeft : max(0, PowerOfSolderingIron - 1)});
                 }
             }
-        )
-        ,
+        ),
         <contenttweaker:solder_wire>,
         <minecraft:redstone>,
         <minecraft:comparator>,
@@ -59,14 +58,20 @@ recipes.addShapeless(
     // 配方函数
     function(out,ins,info)
     {
+        print("recipe function has been called");
         var solderingIronNBT as IData = ins.solderingIron.tag;
         if(isNull(solderingIronNBT)||isNull(solderingIronNBT.PowerLeft))
         {
+            // Test function
+            print("This item does not have such NBTs.");
             return null;
         }
         else
         {
             var solderingIronPower as int = solderingIronNBT.PowerLeft.asInt();
+            // Test Function
+            print("This item has PowerLeft NBT.");
+            print("Powerleft is"~solderingIronPower);
             return solderingIronPower >= 1 ? out : null;
         }
     },
