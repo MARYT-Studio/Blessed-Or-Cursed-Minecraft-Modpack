@@ -14,3 +14,10 @@ item.contenttweaker.copper_chip.name=铜片
 item.contenttweaker.zinc_chip.name=锌片
 
 item.contenttweaker.solder_wire.name=焊锡丝
+
+item.contenttweaker.basic_ic.name=基本集成电路模块
+item.contenttweaker.advanced_ic.name=高级集成电路模块
+
+item.contenttweaker.tech_shard.name=科技碎片
+item.contenttweaker.nature_shard.name=自然碎片
+item.contenttweaker.magic_shard.name=魔法碎片

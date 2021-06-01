@@ -27,8 +27,10 @@ val ItemNotToHide =
     <thaumcraft:quicksilver>| //水银
 
     //TLS会用到的IC2材料
-    <ic2:crafting:1>|  //电路板
-    <ic2:crafting:2>|  //高级电路板
+    // 这两种物品被 CoT注册的物品替换了
+    // <ic2:crafting:1>|  //电路板
+    // <ic2:crafting:2>|  //高级电路板
+
     <ic2:crafting:3>|  //高级合金
     <ic2:plate:12>|    //致密铁板
     <ic2:plate:16>|    //致密钢板

@@ -14,3 +14,10 @@ item.contenttweaker.copper_chip.name=Copper Chip
 item.contenttweaker.zinc_chip.name=Zinc Chip
 
 item.contenttweaker.solder_wire.name=Solder Wire
+
+item.contenttweaker.basic_ic.name=Basic IC Module
+item.contenttweaker.advanced_ic.name=Advanced IC Module
+
+item.contenttweaker.tech_shard.name=Shard of Sci-Tech
+item.contenttweaker.nature_shard.name=Shard of Nature
+item.contenttweaker.magic_shard.name=Shard of Thaumic

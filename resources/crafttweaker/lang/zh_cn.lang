@@ -52,3 +52,5 @@ crafttweaker.if.desc=若将
 crafttweaker.replace_with.desc=换成
 crafttweaker.comma.desc=，
 crafttweaker.points_of_proudsoul.desc=点耀魂数，
+
+crafttweaker.shard_allowed_hammers.desc=铁或樱锻造锤

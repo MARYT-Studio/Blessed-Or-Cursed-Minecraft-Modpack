@@ -3,7 +3,7 @@
   "ctgui": "1.0.0",
   "treechopper": "1.2.4",
   "customskinloader": "14.11",
-  "jei": "4.16.1.301",
+  "jei": "4.16.1.302",
   "futuremc": "0.2.6",
   "incontrol": "3.9.18",
   "contenttweaker": "1.12.2-4.9.1",

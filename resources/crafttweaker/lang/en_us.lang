@@ -52,3 +52,5 @@ crafttweaker.if.desc= If you replace
 crafttweaker.replace_with.desc= with 
 crafttweaker.comma.desc=, 
 crafttweaker.points_of_proudsoul.desc= points of Proudsoul,
+
+crafttweaker.shard_allowed_hammers.desc=Iron or Sakura Forging Hammer
