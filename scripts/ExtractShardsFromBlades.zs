@@ -37,9 +37,9 @@ val allowed_hammers as IItemStack[] = [T2Hammer, T3Hammer];
 val hammerDamage as int = 10;
 
 // Blades to extract the shards
-val liangzi_taidao = <lastsmith:slashblade_eu>.withTag({ModelName: "named/nanosaber/model", ModelOnName: "named/nanosaber/model", CurrentItemName: "flammpfeil.slashblade.named.quantumsaber", TextureName: "named/nanosaber/texture_1", SpecialAttackType: 1, TextureOnName: "named/nanosaber/texture_1_on", baseAttackModifier: 21.0 as float});
-val yaosai_xuehong = <lastsmith:slashblade_crimson>.withTag({TextureName: "named/thaum/texture_crimson_update", ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.fortress.crimson.update", IsBewitchedActived: 1 as byte, baseAttackModifier: 12.0 as float});
-val yingjian = <lastsmith:.slashblade.named>.withTag({ench: [{lvl: 4 as short, id: 34 as short}, {lvl: 4 as short, id: 16 as short}], ModelName: "named/bot_roukan/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.roukan_bot", TextureName: "named/bot_roukan/texture", SpecialAttackType: 266, IsBewitchedActived: 1 as byte, baseAttackModifier: 16.0 as float, "SB.SEffect": {ManaBurst: 10, ManaPoolRepair: 1}});
+val liangzi_taidao as IItemStack = <lastsmith:slashblade_eu>.withTag({ModelName: "named/nanosaber/model", ModelOnName: "named/nanosaber/model", CurrentItemName: "flammpfeil.slashblade.named.quantumsaber", TextureName: "named/nanosaber/texture_1", SpecialAttackType: 1, TextureOnName: "named/nanosaber/texture_1_on", baseAttackModifier: 21.0 as float});
+val yaosai_xuehong as IItemStack = <lastsmith:slashblade_crimson>.withTag({TextureName: "named/thaum/texture_crimson_update", ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.fortress.crimson.update", IsBewitchedActived: 1 as byte, baseAttackModifier: 12.0 as float});
+val yingjian as IItemStack = <lastsmith:.slashblade.named>.withTag({ench: [{lvl: 4 as short, id: 34 as short}, {lvl: 4 as short, id: 16 as short}], ModelName: "named/bot_roukan/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.roukan_bot", TextureName: "named/bot_roukan/texture", SpecialAttackType: 266, IsBewitchedActived: 1 as byte, baseAttackModifier: 16.0 as float, "SB.SEffect": {ManaBurst: 10, ManaPoolRepair: 1}});
 
 val SlashBladeToExtractArray as IIngredient[] = [liangzi_taidao, yaosai_xuehong, yingjian];
 
