@@ -103,5 +103,5 @@ val descTextNature as string = game.localize("crafttweaker.put_this_blade_with.d
 val descTextMagic as string = game.localize("crafttweaker.put_this_blade_with.desc")~magicShardBase.displayName~game.localize("crafttweaker.on_the_craftingtable.desc")~game.localize("crafttweaker.strike_with.desc")~game.localize("crafttweaker.shard_allowed_hammers.desc")~game.localize("crafttweaker.english_neednt_this_part.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~magicKillCountNumber~game.localize("crafttweaker.points_of_killcount.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:magic_shard>.displayName~game.localize("crafttweaker.dot.desc");
 
 mods.jei.JEI.addDescription(liangzi_taidao, descTextTech);
-mods.jei.JEI.addDescription(yaosai_xuehong, descTextNature);
-mods.jei.JEI.addDescription(yingjian, descTextMagic);
+mods.jei.JEI.addDescription(yaosai_xuehong, descTextMagic);
+mods.jei.JEI.addDescription(yingjian, descTextNature);

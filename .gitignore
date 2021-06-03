@@ -12,3 +12,4 @@ $ cat .gitignore
 #Files
 !/.gitignore
 !/README.md
+!/PlanAndProgress.md

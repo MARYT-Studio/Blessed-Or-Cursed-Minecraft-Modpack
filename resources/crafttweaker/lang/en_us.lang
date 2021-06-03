@@ -1,3 +1,4 @@
+# Tooltips
 crafttweaker.experience_bottle.tooltip=You can get this through other ways, not only trading with Villagers.
 crafttweaker.energy_crystal.tooltip=Fill it in MFE, so that it can be crafted into the NanoBlade.
 
@@ -35,6 +36,14 @@ crafttweaker.soldering_iron_needcharge.tooltip=Charge soldering iron with Lemon 
 crafttweaker.soldering_iron_1.tooltip=Power left: 
 crafttweaker.soldering_iron_2.tooltip=%, is usable.
 
+crafttweaker.solder_wire.tooltip=Best Friend of Electronic Engineers.
+
+crafttweaker.basic_ic.tooltip=§o"Analog circuit is interesting, isn't it?"
+crafttweaker.advanced_ic_1.tooltip=§o"How can you graduate from School of Electronic Engineering,"
+crafttweaker.advanced_ic_2.tooltip=§o"and have never done any electronic experiments?"
+crafttweaker.ic_modules.tooltip=§oDedicated to my 4-year college campus life.
+
+# Descriptions
 crafttweaker.soldering_iron_1.desc=Soldering Iron is used to make circuit boards.
 crafttweaker.soldering_iron_2.desc=Only those crafted from Crafting Tables can be used.
 crafttweaker.soldering_iron_3.desc=Using Soldering Iron consumes its charge.

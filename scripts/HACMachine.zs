@@ -27,7 +27,9 @@ recipes.addShaped("hac_first_windmill",<dcs_climate:dcs_device_windmill>*4,
 );
 
 // Tier 2
-val T2Machines = <dcs_climate:dcs_device_windmill_l>|<dcs_climate:dcs_device_watermill>|<dcs_climate:dcs_device_reactor_ibc>|<dcs_climate:dcs_device_heat_exchanger>;
+// Considering we need T3 machine Dynamo to charge IC2 Blades,
+// We move Dynamo from T3 to T2.
+val T2Machines = <dcs_climate:dcs_device_windmill_l>|<dcs_climate:dcs_device_watermill>|<dcs_climate:dcs_device_reactor_ibc>|<dcs_climate:dcs_device_heat_exchanger>|<dcs_climate:dcs_device_dynamo>;
 recipes.remove(T2Machines);
 recipes.addShaped("hac_second_windmill",<dcs_climate:dcs_device_windmill_l>,
 [

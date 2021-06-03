@@ -1,3 +1,4 @@
+# Tooltips
 crafttweaker.experience_bottle.tooltip=除了与村民交易，还有其他的获得方法
 crafttweaker.energy_crystal.tooltip=将它放在MFE中充满来制作纳米太刀
 
@@ -35,6 +36,14 @@ crafttweaker.soldering_iron_needcharge.tooltip=用柠檬电池充电后，烙铁
 crafttweaker.soldering_iron_1.tooltip=烙铁剩余电量: 
 crafttweaker.soldering_iron_2.tooltip=%，可以使用。
 
+crafttweaker.solder_wire.tooltip=电子工程师最好的伙伴。
+
+crafttweaker.basic_ic.tooltip=§o“模拟电路很奇妙吧！”
+crafttweaker.advanced_ic_1.tooltip=§o“不炸几个电容、焊坏几片运放，”
+crafttweaker.advanced_ic_2.tooltip=§o“你也好意思从电子工程学院毕业？”
+crafttweaker.ic_modules.tooltip=§o谨以此纪念我的大学时光。
+
+# Descriptions
 crafttweaker.soldering_iron_1.desc=烙铁用于焊接电路元件，制作电路板。
 crafttweaker.soldering_iron_2.desc=只有工作台合成的烙铁可以正常使用，
 crafttweaker.soldering_iron_3.desc=使用会消耗烙铁存储的电量，

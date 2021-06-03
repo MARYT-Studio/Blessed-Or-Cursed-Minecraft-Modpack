@@ -5,6 +5,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 // IC2 SlashBlades Material Items
 val IronPlate = <ic2:plate:12>;
+val DenseSteelPlate = <ic2:plate:16>;
 val AdvancedAlloy = <ic2:crafting:3>;
 
 // These two circuit plates is of no use.
@@ -29,11 +30,17 @@ recipes.addShaped("iron_plate",IronPlate,
     [null,forgingHammer,null],
     [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]
 ]);
+recipes.addShaped("dense_steel_plate", DenseSteelPlate,
+[
+    [null,forgingHammer,null],
+    [<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>]
+]);
 recipes.addShaped("advanced_alloy",AdvancedAlloy,
 [
     [null,forgingHammer,null],
     [null,IronPlate,null],
     [<dcs_climate:dcs_ingot:6>,<dcs_climate:dcs_ingot:6>,<dcs_climate:dcs_ingot:6>]
+    // HAC Nickel Silver ingots
 ]);
 // Soldering recipes
 recipes.addShapeless(
