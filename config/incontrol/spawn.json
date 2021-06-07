@@ -1,1 +1,17 @@
-[]
+[
+    {
+        "mob": ["minecraft:skeleton","minecraft:zombie","minecraft:spider","minecraft:creeper","minecraft:enderman"],
+        "result": "allow",
+        "healthmultiply": 0.7,
+        "damagemultiply": 1.1
+    },
+    {
+        "dimension": 0,
+        "mob": "minecraft:spider",
+        "mincount": {
+            "amount": 60,
+            "hostile": true
+        },
+        "result": "deny"
+    }
+]
