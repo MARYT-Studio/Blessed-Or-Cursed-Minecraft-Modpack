@@ -6,6 +6,13 @@
         "damagemultiply": 1.1
     },
     {
+        "mob": ["touhou_little_maid:entity.monster.rinnosuke","sakura:samuraiillger"],
+        "result": "allow",
+        "healthmultiply": 0.8,
+        "damagemultiply": 1.2,
+        "speedmultiply": 1.1
+    },
+    {
         "dimension": 0,
         "mob": "minecraft:spider",
         "mincount": {

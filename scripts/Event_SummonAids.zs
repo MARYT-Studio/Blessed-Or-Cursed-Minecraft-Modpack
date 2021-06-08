@@ -13,8 +13,8 @@ import crafttweaker.util.IRandom;
 
 // Constants claiming
 // Mob Names Array
-static mobSummonCombat as string[] = ["Zombie", "Spider", "Creeper"];
-static mobSummonRanged as string[] = ["Skeleton", "Enderman"];
+static mobSummonCombat as string[] = ["Zombie", "Skeleton", "Creeper"];
+static mobSummonRanged as string[] = ["Spider", "Enderman"];
 // Mobs being summoned
 static combatMobs as IEntityDefinition[] = [
     <entity:touhou_little_maid:entity.monster.rinnosuke>,
