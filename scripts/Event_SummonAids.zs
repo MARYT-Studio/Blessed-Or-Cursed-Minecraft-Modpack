@@ -26,7 +26,12 @@ static rangedMobs as IEntityDefinition[] = [
 // For mobs need 7 attacks to kill, every time it is hurt,
 // this is the probability for the mob to summon an aid.
 // should not lower than 0.032f.
-static prob7time as float = 0.04f;
+// 0.04f is for Forge Server.
+// static prob7time as float = 0.04f;
+// 0.06f is for Mohist Server.
+static prob7time as float = 0.06f;
+// Only for test.
+// static prob7time as float = 1.0f;
 // Random Position Offset
 static randomOffset as float = 1.5f;
 
