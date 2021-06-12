@@ -55,7 +55,7 @@ val ItemNotToHide =
 
     //Energy Converter
     <energyconverters:energy_bridge>|  //能量桥接器
-    <energyconverters:energy_producer_fe>|  //FE输入器
+    <energyconverters:energy_consumer_fe>|  //FE输入器
     <energyconverters:energy_producer_eu:2>;  //高压EU输出器
 
 // JEI Hide and recipe removal

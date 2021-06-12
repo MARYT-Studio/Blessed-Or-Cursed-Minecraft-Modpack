@@ -8,7 +8,6 @@
   "incontrol": "3.9.18",
   "contenttweaker": "1.12.2-4.9.1",
   "initialinventory": "2.0.2",
-  "thaumicjei": "1.6.0",
   "mcp": "9.42",
   "journeymap": "1.12.2-5.5.5",
   "sakura": "1.0.7-1.12.2",
