@@ -1,0 +1,22 @@
+recipes.addShaped("soldier_helmet",<sakura:soldier_helmet>.withTag({}),
+[
+    [<ore:ingotSteel>,<ore:ingotGold>,<ore:ingotSteel>],
+    [<ore:ingotSteel>,<ore:ingotIron>,<ore:ingotSteel>]
+]);
+recipes.addShaped("soldier_chest",<sakura:soldier_chest>.withTag({}),
+[
+    [<ore:ingotSteel>,null,<ore:ingotSteel>],
+    [<ore:ingotSteel>,<ore:ingotIron>,<ore:ingotSteel>],
+    [<ore:ingotSteel>,<ore:ingotSteel>,<ore:ingotSteel>]
+]);
+recipes.addShaped("soldier_leggings",<sakura:soldier_pants>.withTag({}),
+[
+    [<ore:ingotSteel>,<ore:ingotIron>,<ore:ingotSteel>],
+    [<ore:ingotSteel>,<ore:ingotIron>,<ore:ingotSteel>],
+    [<ore:ingotIron>,null,<ore:ingotIron>]
+]);
+recipes.addShaped("soldier_shoes",<sakura:soldier_shoes>.withTag({}),
+[
+    [<ore:ingotSteel>,null,<ore:ingotSteel>],
+    [<ore:ingotSteel>,null,<ore:ingotSteel>]
+]);
