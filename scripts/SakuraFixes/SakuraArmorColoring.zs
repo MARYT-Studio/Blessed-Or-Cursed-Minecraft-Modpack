@@ -2,6 +2,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemCondition;
+import crafttweaker.data.IData;
 // Armor coloring recipes
 // Samurai Part
 val samuraiHelmet = <sakura:samurai_helmet>.anyDamage();
@@ -94,7 +95,13 @@ for armorType in 0 .. 4
             // 配方函数
             function(out,ins,info)
             {
-                return out.withDamage(ins.armorToColoring.damage);
+                var outputOriginalData as IData = out.tag;
+                var inputNBT as IData = ins.armorToColoring.tag;
+                if(!isNull(inputNBT.texture_name))
+                {
+                    inputNBT = inputNBT - "texture_name";
+                }
+                return out.withDamage(ins.armorToColoring.damage).withTag(inputNBT + outputOriginalData);
             },
             // 配方动作
             null
@@ -120,10 +127,17 @@ for armorType in 0 .. 4
             // 配方函数
             function(out,ins,info)
             {
-                return out.withDamage(ins.armorToColoring.damage);
+                var outputOriginalData as IData = out.tag;
+                var inputNBT as IData = ins.armorToColoring.tag;
+                if(!isNull(inputNBT.texture_name))
+                {
+                    inputNBT = inputNBT - "texture_name";
+                }
+                return out.withDamage(ins.armorToColoring.damage).withTag(inputNBT + outputOriginalData);
             },
             // 配方动作
             null
         );
     }
 }
+
