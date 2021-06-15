@@ -27,11 +27,13 @@ static rangedMobs as IEntityDefinition[] = [
 // this is the probability for the mob to summon an aid.
 // should not lower than 0.032f.
 // 0.04f is for Forge Server.
-// static prob7time as float = 0.04f;
+// static probEverySingleAttack as float = 0.04f;
 // 0.06f is for Mohist Server.
-static prob7time as float = 0.06f;
+// With further test we found that an enchanted vanilla sword can kill a mob in 3 attacks,
+// so we adjust prob to 0.127, and killing every 3 mob will summon 1 aid.
+static probEverySingleAttack as float = 0.127f;
 // Only for test.
-// static prob7time as float = 1.0f;
+// static probEverySingleAttack as float = 1.0f;
 // Random Position Offset
 static randomOffset as float = 1.5f;
 
@@ -46,7 +48,7 @@ events.onEntityLivingHurt(
             var mobBeingHurt = event.entityLivingBase; 
             if(mobSummonCombat has mobBeingHurt.definition.name)
             {
-                if(world.random.nextFloat() < prob7time)
+                if(world.random.nextFloat() < probEverySingleAttack)
                 {
                     var summonMobPosX = mobBeingHurt.position3f.x;
                     var summonMobPosZ = mobBeingHurt.position3f.z;
@@ -69,7 +71,7 @@ events.onEntityLivingHurt(
             }
             if(mobSummonRanged has mobBeingHurt.definition.name)
             {
-                if(world.random.nextFloat() < prob7time)
+                if(world.random.nextFloat() < probEverySingleAttack)
                 {
                     var summonMobPosX = mobBeingHurt.position3f.x;
                     var summonMobPosZ = mobBeingHurt.position3f.z;
