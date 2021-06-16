@@ -16,6 +16,7 @@ crafttweaker.lemon_battery_5.tooltip=§o向曾经带给我们欢乐的苹果奶�
 item.crafttweaker.newbiesword.name=新手勇气之剑
 item.crafttweaker.newbieaxe.name=新手坚韧之斧
 item.crafttweaker.newbiebread.name=新手面包
+item.crafttweaker.newbiehammer.name=新手锻造锤
 
 crafttweaker.first_killcount_token.tooltip=锋刃初开，吐露前世的秘密。
 crafttweaker.second_killcount_token.tooltip=百斩之刃，揭开封存的故事。
@@ -63,3 +64,10 @@ crafttweaker.comma.desc=，
 crafttweaker.points_of_proudsoul.desc=点耀魂数，
 
 crafttweaker.shard_allowed_hammers.desc=铁或樱锻造锤
+
+crafttweaker.wing_blessing_before_1=§o“浩浩乎如冯虚御风，而不知其所止。”
+crafttweaker.wing_blessing_before_2=§o“飘飘乎如遗世独立，羽化而登仙。”
+crafttweaker.wing_blessing_before_3=这瓶仙酿能让你飞行3分钟，但需要支付5-9颗心的生命值作为代价。
+crafttweaker.wing_blessing_before_4=你要继续吗？
+crafttweaker.wing_blessing_before_5=你花费了
+crafttweaker.wing_blessing_before_6=颗心。现在你可以飞了，祝你好运！

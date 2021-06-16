@@ -15,7 +15,9 @@ import mods.initialinventory.InvHandler;
 var GiftSword = <minecraft:diamond_sword>.withDamage(1429).withTag({display: {Name: game.localize("item.crafttweaker.newbiesword.name")}});
 var GiftAxe = <minecraft:diamond_axe>.withDamage(1429).withTag({display: {Name: game.localize("item.crafttweaker.newbieaxe.name")}});
 val GiftBread = <minecraft:bread>.withTag({display: {Name: game.localize("item.crafttweaker.newbiebread.name")}});
+val GiftHammer = <sakura:stone_hammer>.withTag({display:{Name: game.localize("item.crafttweaker.newbiehammer.name")}});
 
 InvHandler.addStartingItem(GiftSword);
 InvHandler.addStartingItem(GiftAxe);
 InvHandler.addStartingItem(GiftBread*32);
+InvHandler.addStartingItem(GiftHammer);

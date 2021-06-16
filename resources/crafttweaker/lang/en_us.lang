@@ -13,9 +13,10 @@ crafttweaker.lemon_battery_3.tooltip=Craft this with Soldering Iron to charge it
 crafttweaker.lemon_battery_4.tooltip=Or you can use this for furnace's fuel.
 crafttweaker.lemon_battery_5.tooltip=§oDedicated to the Apple Milk & Tea Mod created by defeatedcrow.
 
-item.crafttweaker.newbiesword.name=Newbie's Braveness Sword
-item.crafttweaker.newbieaxe.name=Newbie's Toughness Axe
+item.crafttweaker.newbiesword.name=Newbie's Sword of Braveness
+item.crafttweaker.newbieaxe.name=Newbie's Axe of Toughness
 item.crafttweaker.newbiebread.name=Newbie's Bread
+item.crafttweaker.newbiehammer.name=Newbie's Forging Hammer
 
 crafttweaker.first_killcount_token.tooltip=The firstly sharped Blade, tells you the secrets of predecessors.
 crafttweaker.second_killcount_token.tooltip=Blade killed hundreds of enemies, unconvers the hidden stories.
@@ -63,3 +64,10 @@ crafttweaker.comma.desc=,
 crafttweaker.points_of_proudsoul.desc= points of Proudsoul,
 
 crafttweaker.shard_allowed_hammers.desc=Iron or Sakura Forging Hammer
+
+crafttweaker.wing_blessing_before_1=§o"As if traversing the void we rode the winds, not knowing where we might stop."
+crafttweaker.wing_blessing_before_2=§o"We soared as if in transcending the world we stood alone, sprouting wings as if we had become immortals."
+crafttweaker.wing_blessing_before_3=This elixir will let you enjoy flying for 3 minutes, but it costs 5-9 hearts of your HP.
+crafttweaker.wing_blessing_before_4=Will you continue?
+crafttweaker.wing_blessing_before_5=You paid 
+crafttweaker.wing_blessing_before_6= hearts for flying. Enjoy!

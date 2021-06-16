@@ -1,7 +1,7 @@
 // Pack Import
 import crafttweaker.item.IIngredient;
 import mods.thaumcraft.Infusion;
-// Recipe removal
+// 4 mods' item removal
 var modidList as string[] = [
     "ic2",
     "thaumcraft",
@@ -81,3 +81,5 @@ for modid in thaumModList
         Infusion.removeRecipe(itemThaumcraft);
     }
 }
+// other removals
+// mods.jei.JEI.removeAndHide(<dcs_climate:>);
