@@ -1,5 +1,6 @@
 // Pack Import
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
 import mods.thaumcraft.Infusion;
 // 4 mods' item removal
 var modidList as string[] = [
@@ -81,5 +82,38 @@ for modid in thaumModList
         Infusion.removeRecipe(itemThaumcraft);
     }
 }
-// other removals
-// mods.jei.JEI.removeAndHide(<dcs_climate:>);
+// HAC removals
+recipes.remove(<minecraft:tipped_arrow>.withTag({Potion: "dcs_climate:dcs.bird"}));
+mods.jei.JEI.hide(<minecraft:tipped_arrow>.withTag({Potion: "dcs_climate:dcs.bird"}));
+val HACItemsToHide as IItemStack[] = [
+    <dcs_climate:dcs_magic_picture_g>,
+    <dcs_climate:dcs_color_ring2>,
+    <dcs_climate:dcs_color_ring2:1>,
+    <dcs_climate:dcs_color_pendant2:1>,
+    <dcs_climate:dcs_magic_card:6>,
+    <dcs_climate:dcs_magic_card:9>,
+    <dcs_climate:dcs_gemboots_blue>,
+    <dcs_climate:dcs_magic_picture_u>,
+    <dcs_climate:dcs_magic_card:11>,
+    <minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
+    <minecraft:lingering_potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
+    <minecraft:potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
+    <dcs_climate:dcs_magic_card_m>,
+    <dcs_climate:dcs_magic_card_m:4>
+];
+for item in HACItemsToHide
+{
+    mods.jei.JEI.removeAndHide(item);
+}
+val wingBlessingPotions as IItemStack[] = [
+    <minecraft:splash_potion>.withTag({Potion: "minecraft:awkward"}),
+    <minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}),
+    <minecraft:potion>.withTag({Potion: "minecraft:awkward"})
+];
+for potion in wingBlessingPotions
+{
+    brewing.removeRecipe(potion, <dcs_climate:dcs_color:4>);
+}
+
+// test function
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "minecraft:water"}), <minecraft:dragon_breath>);
