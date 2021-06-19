@@ -2,13 +2,9 @@
 <minecraft:experience_bottle>.addTooltip(game.localize("crafttweaker.experience_bottle.tooltip"));
 
 // Energy Converter
-game.setLocalization("zh_cn", "tile.energy_producer_eu.hv.name", "能量输出端口");
-game.setLocalization("zh_cn", "tile.energy_consumer_fe.name", "能量接入端口");
-game.setLocalization("zh_cn", "tile.energy_bridge.name", "能量转换器");
-game.setLocalization("en_us", "tile.energy_producer_eu.hv.name", "Power Output");
-game.setLocalization("en_us", "tile.energy_consumer_fe.name", "Power Input");
-game.setLocalization("en_us", "tile.energy_bridge.name", "Power Converter");
-
+game.setLocalization("tile.energy_producer_eu.hv.name", game.localize("crafttweaker.power_output.name"));
+game.setLocalization("tile.energy_consumer_fe.name", game.localize("crafttweaker.power_input.name"));
+game.setLocalization("tile.energy_bridge.name", game.localize("crafttweaker.power_converter.name"));
 // ic2
 <ic2:energy_crystal:26>.addTooltip(game.localize("crafttweaker.energy_crystal.tooltip"));
 

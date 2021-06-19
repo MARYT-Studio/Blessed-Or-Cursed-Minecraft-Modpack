@@ -1,3 +1,7 @@
+# Item Names
+crafttweaker.power_output.name=能量输出端口
+crafttweaker.power_input.name=能量接入端口
+crafttweaker.power_converter.name=能量转换器
 # Tooltips
 crafttweaker.experience_bottle.tooltip=除了与村民交易，还有其他的获得方法
 crafttweaker.energy_crystal.tooltip=将它放在MFE中充满来制作纳米太刀
