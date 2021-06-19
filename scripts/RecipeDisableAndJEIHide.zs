@@ -114,4 +114,7 @@ for potion in wingBlessingPotions
 {
     brewing.removeRecipe(potion, <dcs_climate:dcs_color:4>);
 }
+// remove recipe of splash wing blessing potion
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "dcs_climate:dcs.bird"}), <minecraft:gunpowder>);
+// remove recipe of lingering wing blessing potion
+brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs.bird"}), <minecraft:dragon_breath>);

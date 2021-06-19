@@ -46,6 +46,7 @@
   "touhou_little_maid": "1.2.4",
   "patchouli": "1.0-21",
   "ic2": "2.8.170-ex112",
+  "loottweaker": "0.3.0",
   "abyssalcraft": "1.10.3",
   "dcs_climate": "3.6.8",
   "FML": "8.0.99.99",
