@@ -15,6 +15,7 @@
   "surge": "2.0.79",
   "forgelin": "1.8.4",
   "inventorytweaks": "1.64+dev.150.7168e7a",
+  "buildinggadgets": "2.8.4",
   "waila": "1.8.26",
   "crafttweaker": "4.1.20",
   "jeresources": "0.9.2.60",

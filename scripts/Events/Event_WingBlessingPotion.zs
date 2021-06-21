@@ -21,8 +21,6 @@ val textsBeforeUse as string[] = [
     game.localize("crafttweaker.wing_blessing_before_5"),
     game.localize("crafttweaker.wing_blessing_before_6")
 ];
-// Test mark
-print("Here is reloading start.");
 // Event part
 events.onEntityLivingUseItemStart(
     function(event as Start)

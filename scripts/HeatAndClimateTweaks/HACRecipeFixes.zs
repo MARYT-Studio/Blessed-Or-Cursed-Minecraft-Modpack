@@ -55,3 +55,7 @@ recipes.addShaped("dcs_device_pottery_pot_with_brick",<dcs_climate:dcs_device_po
     [<minecraft:brick>,null,<minecraft:brick>],
     [<minecraft:brick>,<minecraft:brick>,<minecraft:brick>]
 ]);
+// Modify the Blaze Powder recipe added by HAC Magic Module.
+// This recipe allows player to craft Blaze Powder with red drop and gunpowder, which is too cheap.
+recipes.removeByRecipeName("dcs_climate:magic/dcs_blaze_powder_0");
+recipes.addShapeless("dcs_magic_new_blazepowder", <minecraft:blaze_powder>, [<dcs_climate:dcs_color:7>, <minecraft:gunpowder>]);

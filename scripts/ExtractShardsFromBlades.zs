@@ -7,15 +7,15 @@ import crafttweaker.item.IIngredient;
 // Configurations
 // Needed Killcounts
 val techKillCountNumber as int = 10;
-val natureKillCountNumber as int = 100;
+val natureKillCountNumber as int = 30;
 val magicKillCountNumber as int = 100;
 
 val KillcountArray as int[] = [techKillCountNumber, magicKillCountNumber, natureKillCountNumber];
 
 // Killcount Token Base Item
-val techShardBase = <minecraft:gold_ingot>; // 原版铁锭
-val natureShardBase = <minecraft:gold_ingot>; // HAC 银锭
-val magicShardBase = <minecraft:gold_ingot>; //占位物品，有待修改
+val techShardBase = <minecraft:gold_ingot>;
+val natureShardBase = <minecraft:gold_ingot>;
+val magicShardBase = <minecraft:gold_ingot>;
 
 val ShardBaseArray as IIngredient[] = [techShardBase, magicShardBase, natureShardBase];
 

@@ -20938,5 +20938,35 @@
     "1pair2": "{\n  \"left\": 1,\n  \"right\": 1\n}",
     "2pair2": "{\n  \"left\": 1,\n  \"right\": 2\n}",
     "3pair2": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "buildinggadgets:constructionblock_dense",
+    "meta": 0,
+    "length": 1,
+    "name0": "buildinggadgets:constructionpaste",
+    "meta0": 0,
+    "0chance0": 199.5,
+    "1chance0": 199.025,
+    "2chance0": 200.85,
+    "3chance0": 198.09999,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 3\n}"
+  },
+  {
+    "name": "buildinggadgets:constructionblock",
+    "meta": 0,
+    "length": 1,
+    "name0": "buildinggadgets:constructionpaste",
+    "meta0": 0,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 100.0,
+    "3chance0": 100.0,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}"
   }
 ]

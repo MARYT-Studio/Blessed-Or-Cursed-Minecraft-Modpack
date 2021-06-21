@@ -7,7 +7,8 @@ var modidList as string[] = [
     "ic2",
     "thaumcraft",
     "botania",
-    "energyconverters"
+    "energyconverters",
+    "base"
 ];
 val ItemNotToHide = 
     //铅系列

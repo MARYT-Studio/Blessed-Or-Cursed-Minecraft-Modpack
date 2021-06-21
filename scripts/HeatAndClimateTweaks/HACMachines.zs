@@ -47,9 +47,9 @@ recipes.addShaped("hac_second_windmill",<dcs_climate:dcs_device_windmill_l> * 2,
 ]);
 recipes.addShaped("hac_watermill",<dcs_climate:dcs_device_watermill>,
 [
-    [<contenttweaker:tech_shard>, <ic2:plate:12>, <contenttweaker:second_killcount_token>],
+    [<contenttweaker:tech_shard>, <ic2:plate:12>, <contenttweaker:nature_shard>],
     [<ic2:plate:12>, <dcs_climate:dcs_device_shaft_x_steel>, <ic2:plate:12>],
-    [<contenttweaker:second_killcount_token>, <ic2:plate:12>, <contenttweaker:tech_shard>]
+    [<contenttweaker:nature_shard>, <ic2:plate:12>, <contenttweaker:tech_shard>]
 ]);
 recipes.addShaped("hac_reactor_ibc",<dcs_climate:dcs_device_reactor_ibc>,
 [
@@ -59,9 +59,9 @@ recipes.addShaped("hac_reactor_ibc",<dcs_climate:dcs_device_reactor_ibc>,
 ]);
 recipes.addShaped("hac_heat_exchanger",<dcs_climate:dcs_device_heat_exchanger>,
 [
-    [<contenttweaker:second_killcount_token>, <futuremc:netherite_ingot>, <contenttweaker:tech_shard>],
-    [<dcs_climate:dcs_color_cube:5>, <dcs_climate:dcs_color_cube:7>, <contenttweaker:first_proudsoul_bottle>],
-    [<contenttweaker:second_killcount_token>, <futuremc:netherite_ingot>, <contenttweaker:tech_shard>]
+    [<contenttweaker:tech_shard>, <futuremc:netherite_ingot>, <futuremc:netherite_ingot>],
+    [<minecraft:ice>|<minecraft:packed_ice>|<futuremc:blue_ice>,<contenttweaker:second_killcount_token>,<dcs_climate:dcs_cont_metal:5>],
+    [<contenttweaker:magic_shard>, <futuremc:netherite_ingot>, <futuremc:netherite_ingot>]
 ]);
 recipes.addShaped("hac_dynamo",<dcs_climate:dcs_device_dynamo>,
 [
