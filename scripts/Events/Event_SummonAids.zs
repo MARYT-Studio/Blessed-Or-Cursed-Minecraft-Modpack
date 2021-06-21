@@ -21,6 +21,7 @@ import crafttweaker.potions.IPotionEffect;
 // Silverfish Counter Initial Number
 val sfCounterInit as int = 30;
 // debuff giving
+val debuffMechanismOn as bool = false;
 val timeOfDebuff1 as int = 200;
 val timeOfDebuff2 as int = 200;
 val lvlOfDebuff1 as int = 2;
@@ -80,7 +81,7 @@ events.onEntityLivingHurt(
                     truSource.update({silverfishCounter: 0});
                     truSource.sendMessage(game.localize("crafttweaker.silverfish_summoned"));
                 }
-                if(world.random.nextFloat() < probPotionEffect)
+                if(debuffMechanismOn && (world.random.nextFloat() < probPotionEffect))
                 {
                     var hunger as IPotionEffect = <potion:minecraft:hunger>.makePotionEffect(timeOfDebuff1, lvlOfDebuff1);
                     var weakness as IPotionEffect = <potion:minecraft:weakness>.makePotionEffect(timeOfDebuff2, lvlOfDebuff2);
