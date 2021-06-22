@@ -21,3 +21,8 @@ item.contenttweaker.advanced_ic.name=高级集成电路模块
 item.contenttweaker.tech_shard.name=科技碎片
 item.contenttweaker.nature_shard.name=自然碎片
 item.contenttweaker.magic_shard.name=魔法碎片
+
+item.contenttweaker.magic_infused_key.name=沾满魔力的铜钥匙
+
+contenttweaker.magic_infused_key_message_0.text=这把铜钥匙拥有开启里世界的能力。
+contenttweaker.magic_infused_key_message_1.text=将其投入花朵围绕的2x2水池打开传送门。

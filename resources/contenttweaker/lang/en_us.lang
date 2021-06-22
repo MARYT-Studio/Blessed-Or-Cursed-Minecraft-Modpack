@@ -21,3 +21,8 @@ item.contenttweaker.advanced_ic.name=Advanced IC Module
 item.contenttweaker.tech_shard.name=Shard of Sci-Tech
 item.contenttweaker.nature_shard.name=Shard of Nature
 item.contenttweaker.magic_shard.name=Shard of Thaumic
+
+item.contenttweaker.magic_infused_key.name=Magic-Infused Key
+
+contenttweaker.magic_infused_key_message_0.text=This ancient brass key can open the portal to the hidden world.
+contenttweaker.magic_infused_key_message_1.text=Toss it into a 2x2 water pool surrounded by flowers to activate its power.

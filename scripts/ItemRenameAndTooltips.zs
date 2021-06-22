@@ -41,3 +41,7 @@ wingPotion.addTooltip(game.localize("crafttweaker.bountiful_only.tooltip"));
 val sanitySoap = <thaumcraft:sanity_soap>;
 sanitySoap.addTooltip(game.localize("craftweaker.sanity_soap.tooltip"));
 sanitySoap.addTooltip(game.localize("crafttweaker.bountiful_only.tooltip"));
+
+val twilightKey = <contenttweaker:magic_infused_key>;
+twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_0.text"));
+twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_1.text"));

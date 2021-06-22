@@ -175,3 +175,27 @@ recipes.addShapeless(
         <minecraft:stone>
     ]
 );
+
+recipes.addShapeless(
+    "give_a_testing_yanmodao",
+    mojian_Yanmodao.updateTag({killCount : 700, display: {Name: "七百杀阎魔刀"}}),
+    [
+        mojian_Yanmodao,
+        <minecraft:stone>,
+        <minecraft:stone>,
+        <minecraft:stone>,
+        <minecraft:stained_glass:1>
+    ]
+);
+
+recipes.addShapeless(
+    "give_a_testing_sanhua",
+    sanhua.updateTag({killCount : 700, display: {Name: "七百杀散华"}}),
+    [
+        sanhua,
+        <minecraft:stone>,
+        <minecraft:stone>,
+        <minecraft:stone>,
+        <minecraft:stained_glass:2>
+    ]
+);

@@ -92,6 +92,7 @@ val HACItemsToHide as IItemStack[] = [
     <dcs_climate:dcs_magic_picture_g>,
     <dcs_climate:dcs_color_ring2>,
     <dcs_climate:dcs_color_ring2:1>,
+    <dcs_climate:dcs_color_pendant:1>, // Green Pendant, infinite HP restore
     <dcs_climate:dcs_color_pendant2:1>,
     <dcs_climate:dcs_magic_card:6>,
     <dcs_climate:dcs_magic_card:9>,
@@ -101,7 +102,8 @@ val HACItemsToHide as IItemStack[] = [
     <minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
     <minecraft:lingering_potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
     <dcs_climate:dcs_magic_card_m>,
-    <dcs_climate:dcs_magic_card_m:4>
+    <dcs_climate:dcs_magic_card_m:4>,
+    <dcs_climate:dcs_color_ring2:4> // White Golden Ring, it can remove bad effects
 ];
 for item in HACItemsToHide
 {

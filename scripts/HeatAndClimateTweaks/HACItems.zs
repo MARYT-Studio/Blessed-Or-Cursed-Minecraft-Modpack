@@ -41,3 +41,43 @@ for index in 0 .. HACInactiveCubes.length
         ]);
     }
 }
+
+// HAC Magic Jewels
+// HAC Rings exclude the golden ones, for T3
+val HACRings as IItemStack[] = [
+    <dcs_climate:dcs_color_ring>,
+    <dcs_climate:dcs_color_ring:1>,
+    <dcs_climate:dcs_color_ring:2>,
+    <dcs_climate:dcs_color_ring:3>,
+    <dcs_climate:dcs_color_ring:4>,
+];
+// HAC Golden Jewels, for T4
+val HACGoldenJewels as IItemStack[] = [
+    <dcs_climate:dcs_color_ring2:2>,
+    <dcs_climate:dcs_color_ring2:3>,
+    <dcs_climate:dcs_color_pendant2>,
+    <dcs_climate:dcs_color_pendant2:2>,
+    <dcs_climate:dcs_color_pendant2:3>,
+    <dcs_climate:dcs_color_pendant2:4>
+];
+// HAC Pendants, for last stage
+val HACPendants as IItemStack[] = [
+    <dcs_climate:dcs_color_pendant>,
+    <dcs_climate:dcs_color_pendant:2>,
+    <dcs_climate:dcs_color_pendant:3>,
+    <dcs_climate:dcs_color_pendant:4>
+];
+// Items only for Infinite Heart
+val InfiniteHeartItem as IItemStack[] = [
+    // 5 Badges
+    <dcs_climate:dcs_color_badge>,
+    <dcs_climate:dcs_color_badge:1>,
+    <dcs_climate:dcs_color_badge:2>,
+    <dcs_climate:dcs_color_badge:3>,
+    <dcs_climate:dcs_color_badge:4>,
+    // HAC Other final items
+    <dcs_climate:dcs_sword_toolsteel>
+];
+// remove all jewels' recipes
+val HACJewels as IItemStack[][] = [HACRings, HACGoldenJewels, HACPendants, InfiniteHeartItem];
+for jeweltype in HACJewels{for jewel in jeweltype{recipes.remove(jewel);}}

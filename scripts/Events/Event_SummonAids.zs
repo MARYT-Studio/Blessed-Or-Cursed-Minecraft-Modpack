@@ -69,7 +69,7 @@ events.onEntityLivingHurt(
                 var counter = truSource.data.silverfishCounter.asInt();
                 counter += 1;
                 truSource.update({silverfishCounter : counter});
-                truSource.sendMessage("当前蠹虫计数器数值为"~counter);
+                // truSource.sendMessage("当前蠹虫计数器数值为"~counter);
             }
             if(!world.remote && truSource.data.silverfishCounter.asInt() >= sfCounterInit)
             {
