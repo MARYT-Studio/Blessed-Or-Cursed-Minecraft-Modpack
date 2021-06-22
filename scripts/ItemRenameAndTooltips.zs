@@ -32,3 +32,12 @@ val advancedIC = <contenttweaker:advanced_ic>;
 advancedIC.addTooltip(game.localize("crafttweaker.advanced_ic_1.tooltip"));
 advancedIC.addTooltip(game.localize("crafttweaker.advanced_ic_2.tooltip"));
 advancedIC.addShiftTooltip(game.localize("crafttweaker.ic_modules.tooltip"));
+
+val wingPotion = <minecraft:potion>.withTag({Potion: "dcs_climate:dcs.bird"});
+wingPotion.addTooltip(game.localize("crafttweaker.wing_potion_1.tooltip"));
+wingPotion.addTooltip(game.localize("crafttweaker.wing_potion_2.tooltip"));
+wingPotion.addTooltip(game.localize("crafttweaker.bountiful_only.tooltip"));
+
+val sanitySoap = <thaumcraft:sanity_soap>;
+sanitySoap.addTooltip(game.localize("craftweaker.sanity_soap.tooltip"));
+sanitySoap.addTooltip(game.localize("crafttweaker.bountiful_only.tooltip"));

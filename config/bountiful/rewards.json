@@ -1,73 +1,48 @@
 [
   {
-    "content": "minecraft:gold_nugget",
-    "unitWorth": 100,
-    "weight": 100
+    "content": "contenttweaker:first_killcount_token",
+    "unitWorth": 60,
+    "weight": 300,
+    "amount": {
+      "min": 1,
+      "max": 10
+    }
   },
   {
-    "content": "minecraft:gold_ingot",
-    "unitWorth": 900,
-    "weight": 100
+    "content": "contenttweaker:second_killcount_token",
+    "unitWorth": 1260,
+    "weight": 90,
+    "amount": {
+      "min": 1,
+      "max": 1
+    }
   },
   {
-    "content": "minecraft:diamond",
-    "unitWorth": 2400,
-    "weight": 10
+    "content": "contenttweaker:lemon_battery",
+    "unitWorth": 60,
+    "weight": 240,
+    "amount": {
+      "min": 1,
+      "max": 10
+    }
   },
   {
-    "content": "minecraft:iron_sword",
+    "content": "thaumcraft:sanity_soap",
+    "unitWorth": 150,
+    "weight": 240,
+    "amount": {
+      "min": 1,
+      "max": 5
+    }
+  },
+  {
+    "content": "minecraft:potion",
     "unitWorth": 750,
-    "weight": 5,
-    "nbt_data": "{display:{Lore:[\"Sharper than Usual.\"]},ench:[{id:16,lvl:1}]}",
+    "weight": 240,
+    "nbt_data": "{Potion: \"dcs_climate:dcs.bird\"}",
     "amount": {
       "min": 1,
-      "max": 1
-    }
-  },
-  {
-    "content": "minecraft:leather_helmet",
-    "unitWorth": 500,
-    "weight": 5,
-    "amount": {
-      "min": 1,
-      "max": 1
-    }
-  },
-  {
-    "content": "minecraft:leather_boots",
-    "unitWorth": 450,
-    "weight": 5,
-    "amount": {
-      "min": 1,
-      "max": 1
-    }
-  },
-  {
-    "content": "minecraft:iron_chestplate",
-    "unitWorth": 1800,
-    "weight": 5,
-    "amount": {
-      "min": 1,
-      "max": 1
-    }
-  },
-  {
-    "content": "minecraft:golden_chestplate",
-    "unitWorth": 1200,
-    "weight": 5,
-    "amount": {
-      "min": 1,
-      "max": 1
-    }
-  },
-  {
-    "content": "minecraft:bow",
-    "unitWorth": 1300,
-    "weight": 10,
-    "nbt_data": "{ench:[{id:48,lvl:2}]}",
-    "amount": {
-      "min": 1,
-      "max": 1
+      "max": 3
     }
   }
 ]

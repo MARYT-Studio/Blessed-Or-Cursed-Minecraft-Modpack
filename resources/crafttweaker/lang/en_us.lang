@@ -47,6 +47,12 @@ crafttweaker.basic_ic.tooltip=§o"Analog circuit is interesting, isn't it?"
 crafttweaker.advanced_ic_1.tooltip=§o"How can you graduate from School of Electronic Engineering,"
 crafttweaker.advanced_ic_2.tooltip=§o"and have never done any electronic experiments?"
 crafttweaker.ic_modules.tooltip=§oDedicated to my 4-year college campus life.
+# Bountiful Only items
+crafttweaker.wing_potion_1.tooltip=Allow you to fly for 3 minutes.
+crafttweaker.wing_potion_2.tooltip=§lbut it costs HP!
+craftweaker.sanity_soap.tooltip=If you're disturbed by Warp, use this!
+crafttweaker.bountiful_only.tooltip=Only available in Bounties reward.
+
 
 # Descriptions
 crafttweaker.soldering_iron_1.desc=Soldering Iron is used to make circuit boards.

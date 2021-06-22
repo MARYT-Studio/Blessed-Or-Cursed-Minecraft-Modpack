@@ -3,5 +3,10 @@
   "airflow": "NORMAL (If you set TIGHT, it will be ignored.)",
   "temperature": "HOT (If you set NORMAL, it will be ignored.)",
   "humidity": "WET (If you set NORMAL, it will be ignored.)"
+ },
+ "futuremc:blue_ice": {
+    "airflow": "TIGHT",
+    "temperature": "COLD",
+    "humidity": "NORMAL"
  }
 }

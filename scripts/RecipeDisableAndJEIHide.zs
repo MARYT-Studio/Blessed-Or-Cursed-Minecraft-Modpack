@@ -50,6 +50,8 @@ val ItemNotToHide =
     <thaumcraft:elemental_sword>|  //风雷剑
     <thaumcraft:crimson_blade>|  //血腥之刃
     <thaumcraft:void_sword>|  //虚空剑
+    // 用于移除扭曲的祛邪肥皂
+    <thaumcraft:sanity_soap>|
     
     //需要用到的机器方块
     //IC2
@@ -98,7 +100,6 @@ val HACItemsToHide as IItemStack[] = [
     <dcs_climate:dcs_magic_card:11>,
     <minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
     <minecraft:lingering_potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
-    <minecraft:potion>.withTag({Potion: "dcs_climate:dcs.bird"}),
     <dcs_climate:dcs_magic_card_m>,
     <dcs_climate:dcs_magic_card_m:4>
 ];

@@ -47,6 +47,11 @@ crafttweaker.basic_ic.tooltip=§o“模拟电路很奇妙吧！”
 crafttweaker.advanced_ic_1.tooltip=§o“不炸几个电容、焊坏几片运放，”
 crafttweaker.advanced_ic_2.tooltip=§o“你也好意思从电子工程学院毕业？”
 crafttweaker.ic_modules.tooltip=§o谨以此纪念我的大学时光。
+# Bountiful Only items
+crafttweaker.wing_potion_1.tooltip=喝下它，你就可以飞行三分钟。
+crafttweaker.wing_potion_2.tooltip=§l但需要支付生命值作为代价！
+craftweaker.sanity_soap.tooltip=如果你受到扭曲的困扰，就用它！
+crafttweaker.bountiful_only.tooltip=只能从悬赏任务的奖励中获得。
 
 # Descriptions
 crafttweaker.soldering_iron_1.desc=烙铁用于焊接电路元件，制作电路板。
