@@ -24,5 +24,12 @@ item.contenttweaker.magic_shard.name=魔法碎片
 
 item.contenttweaker.magic_infused_key.name=沾满魔力的铜钥匙
 
+item.contenttweaker.infinite_heart_laevatain=无限之心
+
 contenttweaker.magic_infused_key_message_0.text=这把铜钥匙拥有开启里世界的能力。
 contenttweaker.magic_infused_key_message_1.text=将其投入花朵围绕的2x2水池打开传送门。
+
+contenttweaker.infinite_heart_laevatain_message_0.text=这就是你长久以来渴望得到的无限力量吗？
+contenttweaker.infinite_heart_laevatain_message_1.text=终于，它被你紧紧握在手中。打开它！
+contenttweaker.infinite_heart_laevatain_message_2.text=你成功了！你已经成为不朽者的一员。
+contenttweaker.infinite_heart_laevatain_message_3.text=这仅仅是无限力量的一部分。但或许对你来说，这个也不错？

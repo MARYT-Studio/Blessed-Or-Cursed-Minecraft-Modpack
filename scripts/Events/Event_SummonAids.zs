@@ -59,7 +59,7 @@ events.onEntityLivingHurt(
     {
         var world as IWorld = event.entity.world;
         var truSource = event.damageSource.trueSource;
-        if(truSource instanceof IPlayer)
+        if(!world.remote && truSource instanceof IPlayer)
         {
             // Regardless of the mob type, summon a silverfish when counter reaches 0.
             var truSource as IPlayer = truSource;
@@ -71,7 +71,7 @@ events.onEntityLivingHurt(
                 truSource.update({silverfishCounter : counter});
                 // truSource.sendMessage("当前蠹虫计数器数值为"~counter);
             }
-            if(!world.remote && truSource.data.silverfishCounter.asInt() >= sfCounterInit)
+            if(truSource.data.silverfishCounter.asInt() >= sfCounterInit)
             {
                 if(world.random.nextFloat() < probSilverfishSummon)
                 {

@@ -24,5 +24,12 @@ item.contenttweaker.magic_shard.name=Shard of Thaumic
 
 item.contenttweaker.magic_infused_key.name=Magic-Infused Key
 
+item.contenttweaker.infinite_heart_laevatain=Infinite Heart
+
 contenttweaker.magic_infused_key_message_0.text=This ancient brass key can open the portal to the hidden world.
 contenttweaker.magic_infused_key_message_1.text=Toss it into a 2x2 water pool surrounded by flowers to activate its power.
+
+contenttweaker.infinite_heart_laevatain_message_0.text=Is this the Infinite Power you are eager to get?
+contenttweaker.infinite_heart_laevatain_message_1.text=Finally you got it. Open it.
+contenttweaker.infinite_heart_laevatain_message_2.text=You did it! You have become one of the Immortals.
+contenttweaker.infinite_heart_laevatain_message_3.text=This is only a part of the Power. But it's good enough for you isn't it?
