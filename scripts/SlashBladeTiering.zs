@@ -8,26 +8,26 @@ import crafttweaker.item.IIngredient;
 // Killcount and Proudsoul point number
 val firstKillCountNumber as int = 10;
 val secondKillCountNumber as int = 150;
-val thirdKillCountNumber as int = 450;
-val fourthKillCountNumber as int = 1350;
+val thirdKillCountNumber as int = 200;
+val fourthKillCountNumber as int = 250;
 
 val firstProudsoulNumber as int = 600;
 val secondProudsoulNumber as int = 1200;
 val thirdProudsoulNumber as int = 2400;
 
 val T3HammerDamage as int = 10;
-val T4HammerDamage as int = 100;
+val T4HammerDamage as int = 250;
 
 // Killcount Token Base Item
 val firstKillCountTokenBase = <minecraft:iron_ingot>; // 原版铁锭
 val secondKillCountTokenBase = <dcs_climate:dcs_ingot:3>; // HAC 银锭
-val thirdKillCountTokenBase = <minecraft:iron_block>; //占位物品，有待修改
-val fourthKillCountTokenBase = <minecraft:gold_block>; //占位物品，有待修改
+val thirdKillCountTokenBase = <contenttweaker:third_killcount_token_base>; //占位物品，有待修改
+val fourthKillCountTokenBase = <contenttweaker:fourth_killcount_token_base>; //占位物品，有待修改
 
 // Proudsoul Bottle Base Item
 val firstProudSoulBottleBase = <minecraft:glass_bottle>;
 val secondProudSoulBottleBase = <minecraft:experience_bottle>;
-val thirdProudSoulBottleBase = <minecraft:diamond_block>; //占位物品，有待修改
+val thirdProudSoulBottleBase = <contenttweaker:third_proudsoul_bottle_base>; //占位物品，有待修改
 
 // Material variables claiming and tooltip adding
 // Killcount Tokens
@@ -102,6 +102,8 @@ val dao = <lastsmith:.slashblade.named>.withTag({TextureName: "wa/waA", ModelNam
 val taidao = <lastsmith:.slashblade.named>.withTag({TextureName: "wa/waB", ModelName: "wa/model", CurrentItemName: "flammpfeil.slashblade.named.wa.tachi", baseAttackModifier: 3.0 as float});
 val lidao_Cangmei = <lastsmith:.slashblade.named>.withTag({TextureName: "wa/template", SpecialAttackType: 3, ModelName: "wa/model", CurrentItemName: "SlashBladeTemplate.blue", baseAttackModifier: 7.0 as float});
 val doudao_Gudu = <lastsmith:.slashblade.named>.withTag({TextureName: "named/namedblade/texture_super", ModelName: "named/namedblade/model", CurrentItemName: "flammpfeil.slashblade.named.kogawa_super", baseAttackModifier: 7.0 as float});
+val mojian_Yanmodao = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yamato", TextureName: "named/yamato", SpecialAttackType: 0, IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
+val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.sange", TextureName: "named/sange/sange", SpecialAttackType: 7, IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
 // All T2 Blades List
 val T2_SlashBlades = 
     mingdao_Xiewan|
@@ -133,24 +135,22 @@ val T2_SlashBlades =
     dao|
     taidao|
     lidao_Cangmei|
-    doudao_Gudu;
+    doudao_Gudu|
+    mojian_Yanmodao|
+    sanhua; // Yamato and Sange are moved to T2 SlashBlades
 
 // Tier 3 SlashBlades
-val mojian_Yanmodao = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yamato", TextureName: "named/yamato", SpecialAttackType: 0, IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
 val jieyuedao_Fusang = <lastsmith:.slashblade.named>.withTag({TextureName: "named/a_tukumo", ModelName: "named/agito", CurrentItemName: "flammpfeil.slashblade.named.yuzukitukumo",SpecialAttackType: 3, baseAttackModifier: 7.0 as float, "SB.SEffect": {}});
 val lanyecha = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yasha/yasha", isDefaultBewitched: 1 as byte, IsNoStandDrop: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yasha", TextureName: "named/yasha/yasha", SpecialAttackType: 4, baseAttackModifier: 6.0 as float, });
 val hongyecha = <lastsmith:.slashblade.named>.withTag({TextureName: "named/yasha/yasha", SpecialAttackType: 5, ModelName: "named/yasha/yashaTrue", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yashatrue", baseAttackModifier: 6.0 as float});
-val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.sange", TextureName: "named/sange/sange", SpecialAttackType: 7, IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
 val kushidadao = <lastsmith:.slashblade.named>.withTag({onClick: 0 as byte, ModelName: "named/dios/dios", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.koseki",TextureName: "named/dios/koseki", SpecialAttackType: 6, isBroken: 0 as byte, baseAttackModifier: 6.0 as float, "SB.SEffect": {WitherEdge: 20}});
 val lanemen = <lastsmith:.slashblade.named>.withTag({ModelName: "named/agito", CurrentItemName: "flammpfeil.slashblade.named.agito", TextureName: "named/agito_false", SpecialAttackType: 2, isBroken: 0 as byte, baseAttackModifier: 6.0 as float, });
 val dashe_Emen = <lastsmith:.slashblade.named>.withTag({TextureName: "named/orotiagito", SpecialAttackType: 2, ModelName: "named/agito", CurrentItemName: "flammpfeil.slashblade.named.orotiagito", IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float});
 //All T3 Blades List
 val T3_SlashBlades =
-    mojian_Yanmodao|
     jieyuedao_Fusang|
     lanyecha|
     hongyecha|
-    sanhua|
     kushidadao|
     lanemen|
     dashe_Emen;

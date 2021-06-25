@@ -3,6 +3,7 @@ crafttweaker.power_output.name=Power Output
 crafttweaker.power_input.name=Power Input
 crafttweaker.power_converter.name=Power Converter
 # Tooltips
+crafttweaker.mcwfurnitures.tooltip=This Block cannot be used as a container
 crafttweaker.experience_bottle.tooltip=You can get this through other ways, not only trading with Villagers.
 crafttweaker.energy_crystal.tooltip=Fill it in MFE, so that it can be crafted into the NanoBlade.
 

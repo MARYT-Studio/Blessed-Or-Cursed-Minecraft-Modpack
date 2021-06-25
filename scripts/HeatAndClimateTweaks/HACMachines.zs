@@ -102,3 +102,39 @@ Altar.addItemCraftRecipe("ic2_mfe", 0.5,
                         <contenttweaker:tech_shard>,
                         <contenttweaker:first_proudsoul_bottle>
                         );
+
+// HAC T3 Machines
+val T3Machines = <dcs_climate:dcs_device_brewing_under>|
+<dcs_climate:dcs_device_distillator>|
+<dcs_climate:dcs_device_windmill_ex>|
+<dcs_climate:dcs_device_boiler_turbine>|
+<dcs_climate:dcs_device_gas_burner>|
+<dcs_climate:dcs_device_diesel_engine>|
+<dcs_climate:dcs_device_kinetic_motor>|
+<dcs_climate:dcs_device_reactor>|
+<dcs_climate:dcs_device_crusher>|
+<dcs_climate:dcs_device_freezer>|
+<dcs_climate:dcs_device_tankyard>|
+<dcs_climate:dcs_device_yardpart>|
+<dcs_climate:dcs_device_press_machine>|
+<dcs_climate:dcs_device_portal_manager>|
+<dcs_climate:dcs_device_player_panel>;
+recipes.remove(T3Machines);
+recipes.addShaped("brewing_under_new", <dcs_climate:dcs_device_brewing_under>, [[<ore:ingotSUS>, <ore:ingotSUS>, <ore:ingotSUS>], [<ore:ingotSUS>, <ore:bucketEmpty>, <ore:ingotSUS>], [<ore:ingotSteel>, <ore:ingotSUS>, <ore:ingotSteel>]]);
+recipes.addShaped("distillator_new", <dcs_climate:dcs_device_distillator>, [[<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>], [<ore:ingotCopper>, null, <ore:ingotCopper>], [<ore:ingotSUS>, <ore:ingotSUS>, <ore:ingotSUS>]]);
+recipes.addShaped("windmill_ex_new", <dcs_climate:dcs_device_windmill_ex>, [[<minecraft:iron_bars>, <ore:ingotStainlessSteel>, <minecraft:iron_bars>], [<ore:ingotStainlessSteel>, <dcs_climate:dcs_device_windmill_l>, <ore:ingotStainlessSteel>], [<minecraft:iron_bars>, <ore:ingotStainlessSteel>, <minecraft:iron_bars>]]);
+recipes.addShaped("boiler_turbine_new", <dcs_climate:dcs_device_boiler_turbine>, [[<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>], [<dcs_climate:dcs_device_ibc>, <ore:gearToolSteel>, <dcs_climate:dcs_device_heat_exchanger>], [<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>]]);
+recipes.addShaped("gas_burner_new", <dcs_climate:dcs_device_gas_burner>, [[<ore:ingotStainlessSteel>, null, <ore:ingotStainlessSteel>], [<ore:ingotStainlessSteel>, null, <ore:ingotStainlessSteel>], [<ore:gearToolSteel>, <minecraft:flint_and_steel>, <dcs_climate:dcs_device_ibc>]]);
+recipes.addShaped("diesel_engine_new", <dcs_climate:dcs_device_diesel_engine>, [[<minecraft:piston>, <dcs_climate:dcs_device_ibc>, <minecraft:piston>], [<minecraft:piston>, <dcs_climate:dcs_mechanical:3>, <minecraft:piston>], [<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>]]);
+recipes.addShaped("kinetic_motor_new", <dcs_climate:dcs_device_kinetic_motor>, [[<dcs_climate:dcs_device_shaft_s_sus>, <ore:gearToolSteel>, <dcs_climate:dcs_mechanical>], [<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>]]);
+// Two Recipes of Reactor
+recipes.addShaped("reactor_new_1", <dcs_climate:dcs_device_reactor>, [[<dcs_lib:dcs_checker>, <dcs_climate:dcs_device_ibc>, <dcs_climate:dcs_device_ibc>], [<dcs_climate:dcs_mechanical>, <dcs_climate:dcs_device_ibc>, <dcs_climate:dcs_device_ibc>], [<ore:ingotStainlessSteel>, <ore:gearToolSteel>, <ore:ingotStainlessSteel>]]);
+recipes.addShaped("reactor_new_2", <dcs_climate:dcs_device_reactor>, [[<dcs_lib:dcs_checker>, <dcs_climate:dcs_device_steel_pot>, <dcs_climate:dcs_device_steel_pot>], [<dcs_climate:dcs_mechanical>, <dcs_climate:dcs_device_steel_pot>, <dcs_climate:dcs_device_steel_pot>], [<ore:ingotStainlessSteel>, <ore:gearToolSteel>, <ore:ingotStainlessSteel>]]);
+recipes.addShaped("crusher_new", <dcs_climate:dcs_device_crusher>, [[null, <minecraft:hopper>, null], [<ore:gearToolSteel>, <dcs_climate:dcs_mechanical>, <ore:gearToolSteel>], [<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>]]);
+recipes.addShaped("freezer_new", <dcs_climate:dcs_device_freezer>, [[<dcs_climate:dcs_device_ibc>, <ore:bucketWater>, null], [<dcs_climate:dcs_device_ibc>, <minecraft:end_rod>, <ore:gearToolSteel>], [<ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>, <ore:ingotStainlessSteel>]]);
+// Recipes of Fluid Tank
+recipes.addShapeless("tankyard_new", <dcs_climate:dcs_device_tankyard>, [<dcs_climate:dcs_device_yardpart>, <ore:gearSteel>]);
+recipes.addShaped("yardpart_new", <dcs_climate:dcs_device_yardpart> * 8, [[null, <ore:ingotStainlessSteel>, null], [<ore:ingotStainlessSteel>, <ore:blockGlass>, <ore:ingotStainlessSteel>], [null, <ore:ingotStainlessSteel>, null]]);
+recipes.addShaped("press_machine_new", <dcs_climate:dcs_device_press_machine>, [[<ore:ingotStainlessSteel>, <ore:gearToolSteel>, <ore:ingotStainlessSteel>], [<ore:ingotStainlessSteel>, null, <ore:ingotStainlessSteel>], [<ore:ingotStainlessSteel>, <minecraft:anvil>, <ore:ingotStainlessSteel>]]);
+recipes.addShaped("portal_manager_new", <dcs_climate:dcs_device_portal_manager>, [[<ore:ingotSilver>, <dcs_climate:dcs_gemcore>, <ore:ingotSilver>], [<ore:ingotBSCCO>, <dcs_climate:dcs_mechanical>, <ore:ingotBSCCO>], [<ore:ingotSilver>, <ore:gearToolSteel>, <ore:ingotSilver>]]);
+recipes.addShaped("player_panel_new", <dcs_climate:dcs_device_player_panel>, [[<ore:blockGlass>, <ore:blockGlass>, <ore:blockGlass>], [null, <ore:gemBismuth>, null], [<ore:gemSchorl>, <dcs_climate:dcs_mechanical:6>, <ore:gemSchorl>]]);

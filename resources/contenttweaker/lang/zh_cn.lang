@@ -26,6 +26,10 @@ item.contenttweaker.magic_infused_key.name=沾满魔力的铜钥匙
 
 item.contenttweaker.infinite_heart_laevatain=无限之心
 
+item.contenttweaker.third_killcount_token_base.name=三阶斩杀之证基底
+item.contenttweaker.fourth_killcount_token_base.name=高阶斩杀之证基底
+item.contenttweaker.third_proudsoul_bottle_base.name=高阶耀魂之瓶基底
+
 contenttweaker.magic_infused_key_message_0.text=这把铜钥匙拥有开启里世界的能力。
 contenttweaker.magic_infused_key_message_1.text=将其投入花朵围绕的2x2水池打开传送门。
 

@@ -24,7 +24,11 @@ item.contenttweaker.magic_shard.name=Shard of Thaumic
 
 item.contenttweaker.magic_infused_key.name=Magic-Infused Key
 
-item.contenttweaker.infinite_heart_laevatain=Infinite Heart
+item.contenttweaker.infinite_heart_laevatain.name=Infinite Heart
+
+item.contenttweaker.third_killcount_token_base.name=Slayers' Badge III Base
+item.contenttweaker.fourth_killcount_token_base.name=Slayers' Badge IV Base
+item.contenttweaker.third_proudsoul_bottle_base.name=Proud-Soul Bottle III Base
 
 contenttweaker.magic_infused_key_message_0.text=This ancient brass key can open the portal to the hidden world.
 contenttweaker.magic_infused_key_message_1.text=Toss it into a 2x2 water pool surrounded by flowers to activate its power.
