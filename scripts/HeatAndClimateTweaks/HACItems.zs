@@ -90,3 +90,23 @@ val InfiniteHeartItem as IItemStack[] = [
 // remove all jewels' recipes
 val HACJewels as IItemStack[][] = [HACRings, HACGoldenJewels, HACPendants, InfiniteHeartItem];
 for jeweltype in HACJewels{for jewel in jeweltype{recipes.remove(jewel);}}
+val HACMagicCubes as IItemStack[] = [
+    <dcs_climate:dcs_color_cube:5>,
+    <dcs_climate:dcs_color_cube:6>,
+    <dcs_climate:dcs_color_cube:7>,
+    <dcs_climate:dcs_color_cube:8>,
+    <dcs_climate:dcs_color_cube:9>  
+];
+val fieryMaterial = <twilightforest:fiery_blood>|<twilightforest:fiery_tears>;
+var index = 0;
+for ring in HACRings
+{
+    recipes.addShaped("hac_t3_rings_recipe"~index, ring,
+        [
+            [<contenttweaker:third_killcount_token>, HACMagicCubes[index], <contenttweaker:second_proudsoul_bottle>],
+            [fieryMaterial, <twilightforest:trophy:*>, fieryMaterial],
+            [<dcs_climate:dcs_ingot:18>, <twilightforest:knightmetal_ring>, <dcs_climate:dcs_ingot:18>]
+        ]
+    );
+    index += 1;
+}

@@ -31,6 +31,7 @@ recipes.addShaped("hac_first_windmill",<dcs_climate:dcs_device_windmill>*4,
 // Considering we need T3 machine Dynamo to charge IC2 Blades,
 // We move Dynamo from T3 to T2.
 val T2Machines = <dcs_climate:dcs_device_windmill_l>|
+    <dcs_climate:dcs_device_stonemill>|
     <dcs_climate:dcs_device_watermill>|
     <dcs_climate:dcs_device_reactor_ibc>|
     <dcs_climate:dcs_device_heat_exchanger>|
@@ -39,6 +40,13 @@ val T2Machines = <dcs_climate:dcs_device_windmill_l>|
     <energyconverters:energy_consumer_fe>|
     <energyconverters:energy_producer_eu:2>; 
 recipes.remove(T2Machines);
+recipes.addShaped("hac_mill", <dcs_climate:dcs_device_stonemill>,
+    [
+        [<ore:stone>, <ore:stone>, <ore:stone>],
+        [null, <dcs_climate:dcs_spindle:2>, null],
+        [<ore:stone>, <contenttweaker:second_killcount_token>, <ore:stone>]
+    ]
+);
 recipes.addShaped("hac_second_windmill",<dcs_climate:dcs_device_windmill_l> * 2,
 [
     [<ore:itemCloth>,<dcs_climate:dcs_device_shaft_s_steel>,<ore:itemCloth>],

@@ -122,3 +122,6 @@ for potion in wingBlessingPotions
 brewing.removeRecipe(<minecraft:potion>.withTag({Potion: "dcs_climate:dcs.bird"}), <minecraft:gunpowder>);
 // remove recipe of lingering wing blessing potion
 brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs.bird"}), <minecraft:dragon_breath>);
+
+// Twilight Forest Block and Chain remove
+mods.jei.JEI.removeAndHide(<twilightforest:block_and_chain>);
