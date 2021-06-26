@@ -76,7 +76,9 @@ crafttweaker.points_of_proudsoul.desc= points of Proudsoul,
 
 crafttweaker.shard_allowed_hammers.desc=Iron or Sakura Forging Hammer
 
-crafttweaker.abyssal_ingot.desc=Perform a ritual, with 1 Mangalloy Ingot, 2 Void Metal Ingots, 3 Fiery Ingots, an Activated Magic Cube of any color and a trophy got from Hydra, Ur-Ghast or Snow Queen as your offering, you will get the Abyssal Ingot.
+crafttweaker.abyssal_ingot.desc=Perform a ritual, with 1 Mangalloy Ingot, 2 Void Metal Ingots, 3 Fiery Ingots, an Activated Magic Cube of any color and a trophy got from Hydra, Ur-Ghast or Snow Queen as your offering, then sacrifice a mob's life. Then you will get the Abyssal Ingot.
+
+crafttweaker.mazai.desc=Collect it with a Bucket, it can be used in Abyssal Rituals for summoning golden magic jewels.
 
 crafttweaker.wing_blessing_before_1=§o"As if traversing the void we rode the winds, not knowing where we might stop."
 crafttweaker.wing_blessing_before_2=§o"We soared as if in transcending the world we stood alone, sprouting wings as if we had become immortals."

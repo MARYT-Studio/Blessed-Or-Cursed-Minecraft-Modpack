@@ -125,8 +125,9 @@ brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs
 
 // Twilight Forest Block and Chain remove
 mods.jei.JEI.removeAndHide(<twilightforest:block_and_chain>);
-// AbyssalCraft ODE
+// AbyssalCraft ODE and its core
 mods.jei.JEI.removeAndHide(<abyssalcraft:odb>);
+mods.jei.JEI.removeAndHide(<abyssalcraft:odbcore>);
 
 // HAC Motor Vehicles
 val HACMotors as IItemStack[] = [

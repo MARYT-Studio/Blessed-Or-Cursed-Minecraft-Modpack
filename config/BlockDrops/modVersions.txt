@@ -55,7 +55,7 @@
   "appleskin": "1.0.14",
   "spawnercontrol": "1.6.3b",
   "mcwfurnitures": "1.0.1",
-  "zenutils": "1.8.1",
+  "zenutils": "1.8.3",
   "durabilityviewer": "1.4",
   "probe": "0.1.24",
   "dcs_asm": "2.1.0",

@@ -98,6 +98,7 @@ val HACMagicCubes as IItemStack[] = [
     <dcs_climate:dcs_color_cube:9>  
 ];
 val fieryMaterial = <twilightforest:fiery_blood>|<twilightforest:fiery_tears>;
+// HAC T3 Rings recipes
 var index = 0;
 for ring in HACRings
 {
@@ -108,5 +109,87 @@ for ring in HACRings
             [<dcs_climate:dcs_ingot:18>, <twilightforest:knightmetal_ring>, <dcs_climate:dcs_ingot:18>]
         ]
     );
+    index += 1;
+}
+// HAC T4 Golden Jewels recipes
+// Golden Pendants
+index = 0;
+val HACGoldenPendantsCubes as IItemStack[] = [
+    <dcs_climate:dcs_color_cube:5>,
+    <dcs_climate:dcs_color_cube:7>,
+    <dcs_climate:dcs_color_cube:8>,
+    <dcs_climate:dcs_color_cube:9>
+];
+val HACGoldenPendants as IItemStack[] = [
+    <dcs_climate:dcs_color_pendant2>,
+    <dcs_climate:dcs_color_pendant2:2>,
+    <dcs_climate:dcs_color_pendant2:3>,
+    <dcs_climate:dcs_color_pendant2:4>
+];
+for golden_pendant in HACGoldenPendants
+{
+    mods.abyssalcraft.CreationRitual.addRitual(
+    "golden_pendant_ritual"~index,
+    2, 2, 10000, true,
+    golden_pendant,
+    [
+        HACGoldenPendantsCubes[index],
+        <futuremc:netherite_ingot>,
+        <futuremc:netherite_ingot>,
+        <futuremc:netherite_ingot>,
+        <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
+        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+        <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
+        <contenttweaker:abyssal_ingot>
+    ]);
+    index += 1;
+}
+// Golden Rings
+index = 0;
+val HACGoldenRingsCubes as IItemStack[] = [
+    <dcs_climate:dcs_color_cube:7>,
+    <dcs_climate:dcs_color_cube:8>
+];
+val HACGoldenRings as IItemStack[] = [
+    <dcs_climate:dcs_color_ring2:2>,
+    <dcs_climate:dcs_color_ring2:3>
+];
+for golden_ring in HACGoldenRings
+{
+    mods.abyssalcraft.CreationRitual.addRitual(
+    "golden_ring_ritual"~index,
+    2, 51, 10000, true,
+    golden_ring,
+    [
+        HACGoldenRingsCubes[index],
+        <twilightforest:knightmetal_ring>,
+        <futuremc:netherite_ingot>,
+        <futuremc:netherite_ingot>,
+        <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
+        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+        <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
+        <contenttweaker:abyssal_ingot>
+    ]);
+    index += 1;
+}
+// Final Pendants
+index = 0;
+for final_pendant in HACPendants
+{
+    mods.abyssalcraft.CreationRitual.addRitual(
+    "final_pendant_ritual"~index,
+    3, 52, 10000, true,
+    final_pendant,
+    [
+        HACGoldenPendants[index],
+        <futuremc:netherite_ingot>,
+        <futuremc:netherite_ingot>,
+        <contenttweaker:fourth_killcount_token>,
+        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+        <contenttweaker:abyssal_ingot>,
+        <contenttweaker:abyssal_ingot>
+    ],
+    true);
     index += 1;
 }
