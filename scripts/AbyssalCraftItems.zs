@@ -1,0 +1,88 @@
+import crafttweaker.item.IItemStack;
+val firstAbyssBook = <abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as float});
+val secondAbyssBook = <abyssalcraft:necronomicon_cor>.withTag({PotEnergy: 0.0 as float});
+val thirdAbyssBook = <abyssalcraft:necronomicon_dre>.withTag({PotEnergy: 0.0 as float});
+val fourthAbyssBook = <abyssalcraft:necronomicon_omt>.withTag({PotEnergy: 0.0 as float});
+val finalAbyssBook = <abyssalcraft:abyssalnomicon>.withTag({PotEnergy: 0.0 as float});
+val allAbyssBooksWithoutNBT as IItemStack[] = [
+    <abyssalcraft:necronomicon>,
+    <abyssalcraft:necronomicon_cor>,
+    <abyssalcraft:necronomicon_dre>,
+    <abyssalcraft:necronomicon_omt>,
+    <abyssalcraft:abyssalnomicon>
+];
+val allAbyssBooks as IItemStack[] = [
+    firstAbyssBook, secondAbyssBook, thirdAbyssBook, fourthAbyssBook, finalAbyssBook
+];
+val inputBooks as IItemStack[] = [
+    <minecraft:book>, firstAbyssBook, secondAbyssBook, thirdAbyssBook
+];
+val inputSkins as IItemStack[] = [
+    <abyssalcraft:antiflesh>, <abyssalcraft:skin>, <abyssalcraft:skin:1>, <abyssalcraft:skin:2>
+];
+val AbyssalIngot = <contenttweaker:abyssal_ingot>;
+// Book Recipes
+for book in allAbyssBooksWithoutNBT
+{
+    recipes.remove(book);
+}
+var index = 0;
+for book in allAbyssBooks
+{
+    if(finalAbyssBook.matches(book))
+    {
+        recipes.addShaped("final_ac_book", book,
+        [
+            [<abyssalcraft:gatekeeperessence>, <abyssalcraft:eldritchscale>, <abyssalcraft:gatekeeperessence>],
+            [<abyssalcraft:eldritchscale>, fourthAbyssBook, <abyssalcraft:eldritchscale>],
+            [AbyssalIngot, <abyssalcraft:ingotblock:3>, AbyssalIngot] // Ethanxium Block
+        ]);
+    }
+    else
+    {
+        var bookMaterial = (firstAbyssBook.matches(book)) ? <twilightforest:giant_obsidian> : AbyssalIngot;
+        recipes.addShaped("ac_book_recipe_"~index, book,
+        [
+            [inputSkins[index], inputSkins[index], <contenttweaker:fourth_killcount_token>],
+            [inputSkins[index], inputBooks[index], bookMaterial],
+            [<contenttweaker:third_proudsoul_bottle>, bookMaterial, bookMaterial]
+        ]);
+    }
+    index += 1;
+}
+
+// Abyssal Ingot Ritual Recipe
+val HACCubes as IItemStack[] = [
+    <dcs_climate:dcs_color_cube:5>,
+    <dcs_climate:dcs_color_cube:6>,
+    <dcs_climate:dcs_color_cube:7>,
+    <dcs_climate:dcs_color_cube:8>,
+    <dcs_climate:dcs_color_cube:9>
+];
+val TwilightTrophys as IItemStack[] = [
+    <twilightforest:trophy:2>,
+    <twilightforest:trophy:3>,
+    <twilightforest:trophy:5>
+];
+index = 0;
+for cube in HACCubes
+{
+    for trophy in TwilightTrophys
+    {
+        mods.abyssalcraft.CreationRitual.addRitual(
+        "abyssal_ingot_ritual"~index,
+        0, -1, 300, true,
+        AbyssalIngot,
+        [
+            <dcs_climate:dcs_ingot:18>,
+            cube,
+            <twilightforest:fiery_ingot>,
+            <twilightforest:fiery_ingot>,
+            <twilightforest:fiery_ingot>,
+            <thaumcraft:ingot:1>,
+            <thaumcraft:ingot:1>,
+            trophy
+        ]);
+        index += 1;
+    }
+}

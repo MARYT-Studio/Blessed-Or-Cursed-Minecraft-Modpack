@@ -6,5 +6,10 @@ mods.jei.JEI.addDescription([<contenttweaker:soldering_iron>, <contenttweaker:le
     game.localize("crafttweaker.soldering_iron_3.desc"),
     game.localize("crafttweaker.soldering_iron_4.desc")   
 ]);
-
 // To reduce the complexity of coding, I made SlashBlades' JEI descriptions into the SlashBladeTiering.zs
+// Abyssal Ingot
+mods.jei.JEI.addDescription(<contenttweaker:abyssal_ingot>,
+    [
+        game.localize("crafttweaker.abyssal_ingot.desc")
+    ]
+);

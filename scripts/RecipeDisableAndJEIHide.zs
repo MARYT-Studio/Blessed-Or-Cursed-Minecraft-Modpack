@@ -127,3 +127,16 @@ brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs
 mods.jei.JEI.removeAndHide(<twilightforest:block_and_chain>);
 // AbyssalCraft ODE
 mods.jei.JEI.removeAndHide(<abyssalcraft:odb>);
+
+// HAC Motor Vehicles
+val HACMotors as IItemStack[] = [
+    <dcs_climate:dcs_motor_scooter>,
+    <dcs_climate:dcs_motor_scooter:1>,
+    <dcs_climate:dcs_motor_scooter:2>,
+    <dcs_climate:dcs_motor_scooter:3>,
+    <dcs_climate:dcs_magnetic_hover>
+];
+for motor in HACMotors{mods.jei.JEI.removeAndHide(motor);}
+
+// HAC Useless Manganese Ingot
+mods.jei.JEI.removeAndHide(<dcs_climate:dcs_ingot:16>);
