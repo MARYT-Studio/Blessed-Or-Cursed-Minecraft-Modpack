@@ -1,4 +1,13 @@
 import crafttweaker.item.IItemStack;
+// T3 Material Induction Motar
+recipes.remove(<dcs_climate:dcs_mechanical>);
+recipes.addShaped("induction_motor_new", <dcs_climate:dcs_mechanical> * 2,
+    [
+        [<twilightforest:knightmetal_ingot>,<contenttweaker:second_proudsoul_bottle>,<twilightforest:knightmetal_ingot>],
+        [null,<dcs_climate:dcs_device_shaft_s_sus>, null],
+        [<twilightforest:carminite>,<dcs_climate:dcs_device_shaft_s_sus>, <twilightforest:carminite>]
+    ]
+);
 // Magic Cubes
 // Variables claming
 // Outputs
