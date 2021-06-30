@@ -5,6 +5,7 @@ import mods.contenttweaker.ActionResult;
 // Necessary classes
 import crafttweaker.world.IWorld;
 import crafttweaker.player.IPlayer;
+import crafttweaker.data.IData;
 import crafttweaker.util.IRandom;
 import mods.contenttweaker.IItemRightClick;
 
@@ -30,21 +31,44 @@ val InfiniteHeartItem as IItemStack[] = [
     // HAC Other final items
     <item:dcs_climate:dcs_sword_toolsteel>
 ];
+// if set this to 3, open the 4th Infinite Heart will get the badge:2.
+val maxFailureTimes = 3;
 val infHeart = <cotItem:infinite_heart_laevatain>;
-// infHeart.itemRightClick = function(stack, world, player, hand){
-//     if(!world.remote)
-//     {
-//         (world.random.nextBoolean()) ? (player.sendMessage(message[0])) : (player.sendMessage(message[1]));
-//         return "SUCCESS";
-//     }
-//     return "PASS";
-// };
-infHeart.onItemUseFinish = function(stack, world, player){
-    if(!world.remote)
-    {
-        (world.random.nextBoolean()) ? (player.sendMessage(message[2])) : (player.sendMessage(message[3]));
-        stack.shrink(1);
-        return stack;
+infHeart.itemRightClick = function(stack, world, player, hand){
+    (world.random.nextBoolean()) ? (player.sendMessage(message[0])) : (player.sendMessage(message[1]));
+    return "SUCCESS";
+};
+infHeart.onItemUseFinish = function(stack, world, item_user){
+    if(!world.remote && item_user instanceof IPlayer)
+    {        
+        var randomIndex = world.random.nextInt(InfiniteHeartItem.length);
+        var player as IPlayer = item_user;
+        if(!(<item:dcs_climate:dcs_color_badge:1>.matches(InfiniteHeartItem[randomIndex])))
+        {
+            player.sendMessage(message[3]);
+            if(isNull(player.data.PlayerPersisted) || isNull(player.data.PlayerPersisted.infHeartFail))
+            {
+                player.update({PlayerPersisted: {infHeartFail: 1}});
+            }
+            else
+            {
+                var failedTime = player.data.PlayerPersisted.infHeartFail;
+                player.update({PlayerPersisted: {infHeartFail: failedTime + 1}});
+                if(failedTime >= maxFailureTimes)
+                {
+                    player.update({PlayerPersisted: {infHeartFail: 0}});
+                    player.sendMessage(message[2]);
+                    return <item:dcs_climate:dcs_color_badge:1>;
+                }
+            }
+            player.sendMessage("[调试信息] 你已经抽卡失败"~player.data.PlayerPersisted.infHeartFail~"次");
+        }
+        else
+        {
+            player.update({PlayerPersisted: {infHeartFail: 0}});
+            player.sendMessage(message[2]);
+        }
+        return InfiniteHeartItem[randomIndex];
     }
     return stack;
 };

@@ -141,3 +141,18 @@ for motor in HACMotors{mods.jei.JEI.removeAndHide(motor);}
 
 // HAC Useless Manganese Ingot
 mods.jei.JEI.removeAndHide(<dcs_climate:dcs_ingot:16>);
+
+// remove abyssalcraft's overpowered foods
+// fried egg is saved, because it is reasonable
+val AbyssalFoods as IItemStack[] = [
+    <abyssalcraft:mre>,
+    <abyssalcraft:ironp>,
+    <abyssalcraft:chickenp>,
+    <abyssalcraft:porkp>,
+    <abyssalcraft:beefp>,
+    <abyssalcraft:fishp>,
+    <abyssalcraft:dirtyplate>,
+    <abyssalcraft:eggp>,
+    <abyssalcraft:cloth>
+];
+for food in AbyssalFoods{mods.jei.JEI.removeAndHide(food);}

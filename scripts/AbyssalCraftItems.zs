@@ -1,4 +1,8 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
+
+val AbyssalIngotEnergy = 300;
+
 val firstAbyssBook = <abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as float});
 val secondAbyssBook = <abyssalcraft:necronomicon_cor>.withTag({PotEnergy: 0.0 as float});
 val thirdAbyssBook = <abyssalcraft:necronomicon_dre>.withTag({PotEnergy: 0.0 as float});
@@ -52,37 +56,103 @@ for book in allAbyssBooks
 }
 
 // Abyssal Ingot Ritual Recipe
-val HACCubes as IItemStack[] = [
+val HACCubesArray as IItemStack[] = [
     <dcs_climate:dcs_color_cube:5>,
     <dcs_climate:dcs_color_cube:6>,
     <dcs_climate:dcs_color_cube:7>,
     <dcs_climate:dcs_color_cube:8>,
     <dcs_climate:dcs_color_cube:9>
 ];
-val TwilightTrophys as IItemStack[] = [
+val TwilightTrophysArray as IItemStack[] = [
     <twilightforest:trophy:2>,
     <twilightforest:trophy:3>,
     <twilightforest:trophy:5>
 ];
+val HACCubes = <dcs_climate:dcs_color_cube:5>|
+    <dcs_climate:dcs_color_cube:6>|
+    <dcs_climate:dcs_color_cube:7>|
+    <dcs_climate:dcs_color_cube:8>|
+    <dcs_climate:dcs_color_cube:9>;
+val TwilightTrophys = <twilightforest:trophy:2>|
+    <twilightforest:trophy:3>|
+    <twilightforest:trophy:5>;
 index = 0;
-for cube in HACCubes
-{
-    for trophy in TwilightTrophys
+// Unused AC Ritual recipe
+// for cube in HACCubesArray
+// {
+//     for trophy in TwilightTrophysArray
+//     {
+//         mods.abyssalcraft.CreationRitual.addRitual(
+//         "abyssal_ingot_ritual"~index,
+//         0, -1, AbyssalIngotEnergy, true,
+//         AbyssalIngot,
+//         [
+//             <dcs_climate:dcs_ingot:18>,
+//             <twilightforest:fiery_ingot>,
+//             <twilightforest:fiery_ingot>,
+//             <twilightforest:fiery_ingot>,
+//             <thaumcraft:ingot:1>,
+//             <thaumcraft:ingot:1>,
+//             <thaumcraft:ingot:1>,
+//             trophy,
+//             cube
+//         ]);
+//         index += 1;
+//     }
+// }
+
+recipes.addShapeless(
+    // 配方名称
+    "abyssal_ingot",
+    // 输出物品
+    AbyssalIngot,
+    // 输入材料
+    [
+        <abyssalcraft:necronomicon>.marked("book").transformNew
+        (
+            function(item)
+            {
+                var bookNBT as IData = item.tag;
+                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                {
+                    return item;
+                }
+                else
+                {
+                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                    return item.updateTag({PotEnergy : max(0, bookEnergy - AbyssalIngotEnergy)});
+                }
+            }
+        ),
+        <dcs_climate:dcs_ingot:18>,
+        <twilightforest:fiery_ingot>,
+        <twilightforest:fiery_ingot>,
+        <twilightforest:fiery_ingot>,
+        <thaumcraft:ingot:1>,
+        <thaumcraft:ingot:1>,
+        TwilightTrophys,
+        HACCubes
+
+    ],
+    // 配方函数
+    function(out,ins,info)
     {
-        mods.abyssalcraft.CreationRitual.addRitual(
-        "abyssal_ingot_ritual"~index,
-        0, -1, 300, true,
-        AbyssalIngot,
-        [
-            <dcs_climate:dcs_ingot:18>,
-            cube,
-            <twilightforest:fiery_ingot>,
-            <twilightforest:fiery_ingot>,
-            <twilightforest:fiery_ingot>,
-            <thaumcraft:ingot:1>,
-            <thaumcraft:ingot:1>,
-            trophy
-        ]);
-        index += 1;
-    }
-}
+        var bookNBT as IData = ins.book.tag;
+        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        {
+            return null;
+        }
+        else
+        {
+            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+            if(bookPotEnergy >= AbyssalIngotEnergy){return out;}
+            else
+            {
+                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~AbyssalIngotEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                return null;
+            }
+        }
+    },
+    // 配方动作
+    null
+);

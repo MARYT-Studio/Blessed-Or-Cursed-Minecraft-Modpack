@@ -1,0 +1,211 @@
+type = menu
+
+customization-meta {
+  identifier = net.minecraft.client.gui.GuiMainMenu
+  randomgroup = 1
+  renderorder = background
+  randommode = false
+  randomonlyfirsttime = false
+}
+
+customization {
+  path = resources/fancymenu/background_new_fonts.png
+  action = texturizebackground
+}
+
+customization {
+  identifier = %id=400322%
+  orientation = top-left
+  x = 97
+  action = movebutton
+  y = 129
+}
+
+customization {
+  identifier = %id=400322%
+  width = 129
+  action = resizebutton
+  height = 23
+}
+
+customization {
+  identifier = %id=400322%
+  action = setbuttonlabel
+  value = §8§l与人同行
+}
+
+customization {
+  identifier = %id=400322%
+  action = setbuttontexture
+  backgroundhovered = resources/fancymenu/red_circle.png
+  backgroundnormal = resources/fancymenu/empty.png
+}
+
+customization {
+  identifier = %id=400322%
+  action = sethoverlabel
+  label = §c§l与人同行
+}
+
+customization {
+  identifier = %id=400382%
+  orientation = top-left
+  x = 150
+  action = movebutton
+  y = 156
+}
+
+customization {
+  identifier = %id=400382%
+  width = 64
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400382%
+  action = setbuttonlabel
+  value = §8§l选项
+}
+
+customization {
+  identifier = %id=400382%
+  action = setbuttontexture
+  backgroundhovered = resources/fancymenu/red_circle.png
+  backgroundnormal = resources/fancymenu/empty.png
+}
+
+customization {
+  identifier = %id=400382%
+  action = sethoverlabel
+  label = §c§l选项
+}
+
+customization {
+  identifier = %id=502382%
+  orientation = top-left
+  x = 115
+  action = movebutton
+  y = 180
+}
+
+customization {
+  identifier = %id=502382%
+  width = 104
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=502382%
+  action = setbuttonlabel
+  value = §8§l暂时离开
+}
+
+customization {
+  identifier = %id=502382%
+  action = setbuttontexture
+  backgroundhovered = resources/fancymenu/red_circle.png
+  backgroundnormal = resources/fancymenu/empty.png
+}
+
+customization {
+  identifier = %id=502382%
+  action = sethoverlabel
+  label = §c§l暂时离开
+}
+
+customization {
+  identifier = %id=376382%
+  orientation = top-left
+  x = 93
+  action = movebutton
+  y = 180
+}
+
+customization {
+  identifier = %id=376382%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=376382%
+  action = setbuttontexture
+  backgroundhovered = resources/fancymenu/empty.png
+  backgroundnormal = resources/fancymenu/lang.png
+}
+
+customization {
+  identifier = %id=400298%
+  orientation = top-left
+  x = 97
+  action = movebutton
+  y = 103
+}
+
+customization {
+  identifier = %id=400298%
+  width = 128
+  action = resizebutton
+  height = 23
+}
+
+customization {
+  identifier = %id=400298%
+  action = setbuttonlabel
+  value = §8§l你的旅途
+}
+
+customization {
+  identifier = %id=400298%
+  action = setbuttontexture
+  backgroundhovered = resources/fancymenu/red_circle.png
+  backgroundnormal = resources/fancymenu/empty.png
+}
+
+customization {
+  identifier = %id=400298%
+  action = sethoverlabel
+  label = §c§l你的旅途
+}
+
+customization {
+  identifier = %id=400346%
+  orientation = top-left
+  x = 91
+  action = movebutton
+  y = 156
+}
+
+customization {
+  identifier = %id=400346%
+  width = 60
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=400346%
+  action = setbuttonlabel
+  value = §8§l模组
+}
+
+customization {
+  identifier = %id=400346%
+  action = setbuttontexture
+  backgroundhovered = resources/fancymenu/red_circle.png
+  backgroundnormal = resources/fancymenu/empty.png
+}
+
+customization {
+  identifier = %id=400346%
+  action = sethoverlabel
+  label = §c§l模组
+}
+
+customization {
+  identifier = %id=502346%
+  action = hidebutton
+}
+

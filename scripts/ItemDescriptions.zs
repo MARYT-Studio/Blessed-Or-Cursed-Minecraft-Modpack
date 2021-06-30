@@ -13,7 +13,7 @@ mods.jei.JEI.addDescription(<contenttweaker:abyssal_ingot>,
         game.localize("crafttweaker.abyssal_ingot.desc")
     ]
 );
-mods.jei.JEI.addDescription(<dcs_climate:dcs_fluidblock_mazai>,
+mods.jei.JEI.addDescription(<liquid:dcs.mazai>,
     [
         game.localize("crafttweaker.mazai.desc")
     ]

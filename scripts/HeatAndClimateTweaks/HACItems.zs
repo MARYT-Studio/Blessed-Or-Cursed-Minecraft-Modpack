@@ -1,4 +1,14 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
+
+val goldenJewelEnergy = 10000;
+val finalPendantEnergy = 10000;
+
+val dimName as string[] = [
+    game.localize("crafttweaker.dim51"),
+    game.localize("crafttweaker.dim52")
+];
+
 // T3 Material Induction Motar
 recipes.remove(<dcs_climate:dcs_mechanical>);
 recipes.addShaped("induction_motor_new", <dcs_climate:dcs_mechanical> * 2,
@@ -128,20 +138,87 @@ val HACGoldenPendants as IItemStack[] = [
 ];
 for golden_pendant in HACGoldenPendants
 {
-    mods.abyssalcraft.CreationRitual.addRitual(
-    "golden_pendant_ritual"~index,
-    2, 2, 10000, true,
+    // Unused AC Ritual
+    // mods.abyssalcraft.CreationRitual.addRitual(
+    //     "golden_pendant_ritual"~index,
+    //     2, 2, 10000, true,
+    //     golden_pendant,
+    //     [
+    //         <futuremc:netherite_ingot>,
+    //         <futuremc:netherite_ingot>,
+    //         <futuremc:netherite_ingot>,
+    //         <futuremc:netherite_ingot>,
+    //         <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
+    //         <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+    //         <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
+    //         <contenttweaker:abyssal_ingot>,
+    //         HACGoldenPendantsCubes[index]
+    //     ],
+    //     true
+    // );
+    recipes.addShapeless(
+    // 配方名称
+    "golden_pendant"~index,
+    // 输出物品
     golden_pendant,
+    // 输入材料
     [
-        HACGoldenPendantsCubes[index],
+        <abyssalcraft:necronomicon_dre>.marked("book").transformNew
+        (
+            function(item)
+            {
+                var bookNBT as IData = item.tag;
+                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                {
+                    return item;
+                }
+                else
+                {
+                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                    return item.updateTag({PotEnergy : max(0, bookEnergy - goldenJewelEnergy)});
+                }
+            }
+        ),
         <futuremc:netherite_ingot>,
         <futuremc:netherite_ingot>,
         <futuremc:netherite_ingot>,
         <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
         <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
         <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
-        <contenttweaker:abyssal_ingot>
-    ]);
+        <contenttweaker:abyssal_ingot>,
+        HACGoldenPendantsCubes[index]
+
+    ],
+    // 配方函数
+    function(out,ins,info)
+    {
+        var bookNBT as IData = ins.book.tag;
+        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        {
+            return null;
+        }
+        else if(info.player.world.dimension != 51)
+        {
+            info.player.sendMessage(game.localize("crafttweaker.dim_is_incorrect")~dimName[0]);
+            return null;
+        }
+        else
+        {
+            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+            if(bookPotEnergy >= goldenJewelEnergy)
+            {
+                return out;
+            }
+            else
+            {
+                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~goldenJewelEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                return null;
+            }
+        }
+    },
+    // 配方动作
+    null
+    );
     index += 1;
 }
 // Golden Rings
@@ -156,40 +233,170 @@ val HACGoldenRings as IItemStack[] = [
 ];
 for golden_ring in HACGoldenRings
 {
-    mods.abyssalcraft.CreationRitual.addRitual(
-    "golden_ring_ritual"~index,
-    2, 51, 10000, true,
+    // Unused AC Ritual
+    // mods.abyssalcraft.CreationRitual.addRitual(
+    // "golden_ring_ritual"~index,
+    // 2, 51, 10000, true,
+    // golden_ring,
+    // [
+    //     HACGoldenRingsCubes[index],
+    //     <futuremc:netherite_ingot>,
+    //     <futuremc:netherite_ingot>,
+    //     <futuremc:netherite_ingot>,
+    //     <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
+    //     <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+    //     <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
+    //     <contenttweaker:abyssal_ingot>,
+    //     <twilightforest:knightmetal_ring>
+    // ]);
+    recipes.addShapeless(
+    // 配方名称
+    "golden_ring"~index,
+    // 输出物品
     golden_ring,
+    // 输入材料
     [
-        HACGoldenRingsCubes[index],
+        <abyssalcraft:necronomicon_dre>.marked("book").transformNew
+        (
+            function(item)
+            {
+                var bookNBT as IData = item.tag;
+                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                {
+                    return item;
+                }
+                else
+                {
+                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                    return item.updateTag({PotEnergy : max(0, bookEnergy - goldenJewelEnergy)});
+                }
+            }
+        ),
+        <futuremc:netherite_ingot>,
+        <futuremc:netherite_ingot>,
         <twilightforest:knightmetal_ring>,
-        <futuremc:netherite_ingot>,
-        <futuremc:netherite_ingot>,
         <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
         <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
         <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
-        <contenttweaker:abyssal_ingot>
-    ]);
+        <contenttweaker:abyssal_ingot>,
+        HACGoldenPendantsCubes[index]
+
+    ],
+    // 配方函数
+    function(out,ins,info)
+    {
+        var bookNBT as IData = ins.book.tag;
+        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        {
+            return null;
+        }
+        else if(info.player.world.dimension != 51)
+        {
+            info.player.sendMessage(game.localize("crafttweaker.dim_is_incorrect")~dimName[0]);
+            return null;
+        }
+        else
+        {
+            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+            if(bookPotEnergy >= goldenJewelEnergy)
+            {
+                return out;
+            }
+            else
+            {
+                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~goldenJewelEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                return null;
+            }
+        }
+    },
+    // 配方动作
+    null
+    );
     index += 1;
 }
 // Final Pendants
 index = 0;
 for final_pendant in HACPendants
 {
-    mods.abyssalcraft.CreationRitual.addRitual(
-    "final_pendant_ritual"~index,
-    3, 52, 10000, true,
+    // Unused AC Ritual
+    // mods.abyssalcraft.CreationRitual.addRitual(
+    // "final_pendant_ritual"~index,
+    // 3, 52, 10000, true,
+    // final_pendant,
+    // [
+    //     <futuremc:netherite_ingot>,
+    //     <futuremc:netherite_ingot>,
+    //     <futuremc:netherite_ingot>,
+    //     <contenttweaker:fourth_killcount_token>,
+    //     <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+    //     <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+    //     <contenttweaker:abyssal_ingot>,
+    //     <contenttweaker:abyssal_ingot>,
+    //     HACGoldenPendants[index],
+    // ],
+    // true);
+    recipes.addShapeless(
+    // 配方名称
+    "final_pendant"~index,
+    // 输出物品
     final_pendant,
+    // 输入材料
     [
-        HACGoldenPendants[index],
+        <abyssalcraft:necronomicon_omt>.marked("book").transformNew
+        (
+            function(item)
+            {
+                var bookNBT as IData = item.tag;
+                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                {
+                    return item;
+                }
+                else
+                {
+                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                    return item.updateTag({PotEnergy : max(0, bookEnergy - finalPendantEnergy)});
+                }
+            }
+        ),
         <futuremc:netherite_ingot>,
         <futuremc:netherite_ingot>,
         <contenttweaker:fourth_killcount_token>,
         <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
         <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
         <contenttweaker:abyssal_ingot>,
-        <contenttweaker:abyssal_ingot>
+        <contenttweaker:abyssal_ingot>,
+        HACGoldenPendants[index],
+
     ],
-    true);
+    // 配方函数
+    function(out,ins,info)
+    {
+        var bookNBT as IData = ins.book.tag;
+        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        {
+            return null;
+        }
+        else if(info.player.world.dimension != 52)
+        {
+            info.player.sendMessage(game.localize("crafttweaker.dim_is_incorrect")~dimName[1]);
+            return null;
+        }
+        else
+        {
+            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+            if(bookPotEnergy >= finalPendantEnergy)
+            {
+                return out;
+            }
+            else
+            {
+                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~finalPendantEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                return null;
+            }
+        }
+    },
+    // 配方动作
+    null
+    );
     index += 1;
 }
