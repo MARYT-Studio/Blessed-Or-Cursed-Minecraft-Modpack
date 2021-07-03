@@ -1,4 +1,7 @@
 import crafttweaker.data.IData;
+// For Send Messages
+import crafttweaker.text.ITextComponent;
+
 val infHeartEnergy = 50000;
 // Unused AC Ritual
 // mods.abyssalcraft.CreationRitual.addRitual(
@@ -60,7 +63,10 @@ recipes.addShapeless(
         }
         else if(info.player.world.dimension != 53)
         {
-            info.player.sendMessage(game.localize("crafttweaker.dim_is_incorrect")~game.localize("crafttweaker.dim53"));
+            info.player.sendRichTextMessage(
+                ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
+                ITextComponent.fromTranslation("crafttweaker.dim53")
+            );
             return null;
         }
         else
@@ -72,7 +78,13 @@ recipes.addShapeless(
             }
             else
             {
-                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~infHeartEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                info.player.sendRichTextMessage(
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                    ITextComponent.fromTranslation("item.abyssalnomicon.name") ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                    ITextComponent.fromString(infHeartEnergy as string) ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                );
                 return null;
             }
         }

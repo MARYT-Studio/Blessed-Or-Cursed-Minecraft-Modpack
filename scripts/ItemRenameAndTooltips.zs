@@ -1,3 +1,27 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.data.IData;
+// Newbie Items tooltip
+val SwordTooltip as string = game.localize("item.crafttweaker.newbiesword.name");
+val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
+val BreadTooltip as string = game.localize("item.crafttweaker.newbiebread.name");
+val HammerTooltip as string = game.localize("item.crafttweaker.newbiehammer.name");
+val NewbieTooltips as string[] = [SwordTooltip, AxeTooltip, BreadTooltip, HammerTooltip];
+
+// Newbie items
+val NewbieItems as IItemStack[] = [<minecraft:diamond_sword:*>, <minecraft:diamond_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
+var index as int = 0;
+for newbieitem in NewbieItems
+{
+    newbieitem.addAdvancedTooltip(
+        function(item)
+        {
+            if(!isNull(item.tag.newbie)){return NewbieTooltips[index];}else{return "";}
+        }
+    );
+    index += 1;
+}
+<patchouli:guide_book>.withTag({"patchouli:book": "lastsmith:smith_guide"}).addTooltip(game.localize("crafttweaker.tls_book.tooltip"));
+
 // Vanilla Minecraft
 <minecraft:experience_bottle>.addTooltip(game.localize("crafttweaker.experience_bottle.tooltip"));
 
@@ -45,3 +69,23 @@ sanitySoap.addTooltip(game.localize("crafttweaker.bountiful_only.tooltip"));
 val twilightKey = <contenttweaker:magic_infused_key>;
 twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_0.text"));
 twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_1.text"));
+
+val woodPack = <contenttweaker:builderpack_wood>;
+val woolPack = <contenttweaker:builderpack_wool>;
+val stonePack = <contenttweaker:builderpack_stone>;
+val concretePack = <contenttweaker:builderpack_concrete>;
+val builderPack = <contenttweaker:builderpack_all>;
+val packsTooltip as string[] = [
+    "contenttweaker.wood_pack.tooltip",
+    "contenttweaker.wool_pack.tooltip",
+    "contenttweaker.stone_pack.tooltip",
+    "contenttweaker.concrete_pack.tooltip",
+    "contenttweaker.builder_pack.tooltip"
+];
+val Packs as IItemStack[] = [woodPack, woolPack, stonePack, concretePack, builderPack];
+index = 0;
+for pack in Packs
+{
+    pack.addTooltip(game.localize(packsTooltip[index]));
+    index += 1;
+}

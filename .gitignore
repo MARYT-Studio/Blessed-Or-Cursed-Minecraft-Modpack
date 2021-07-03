@@ -1,6 +1,7 @@
 $ cat .gitignore
 #Whitelist
 /*
+/config/worldedit/schematics
 
 #Folders
 !/config/

@@ -1,13 +1,10 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+// For Send Messages
+import crafttweaker.text.ITextComponent;
 
 val goldenJewelEnergy = 10000;
 val finalPendantEnergy = 10000;
-
-val dimName as string[] = [
-    game.localize("crafttweaker.dim51"),
-    game.localize("crafttweaker.dim52")
-];
 
 // T3 Material Induction Motar
 recipes.remove(<dcs_climate:dcs_mechanical>);
@@ -199,7 +196,10 @@ for golden_pendant in HACGoldenPendants
         }
         else if(info.player.world.dimension != 51)
         {
-            info.player.sendMessage(game.localize("crafttweaker.dim_is_incorrect")~dimName[0]);
+            info.player.sendRichTextMessage(
+                ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
+                ITextComponent.fromTranslation("crafttweaker.dim51")
+            );
             return null;
         }
         else
@@ -211,7 +211,13 @@ for golden_pendant in HACGoldenPendants
             }
             else
             {
-                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~goldenJewelEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                info.player.sendRichTextMessage(
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                    ITextComponent.fromTranslation("item.necronomicon_dre.name") ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                    ITextComponent.fromString(goldenJewelEnergy as string) ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                );
                 return null;
             }
         }
@@ -292,7 +298,10 @@ for golden_ring in HACGoldenRings
         }
         else if(info.player.world.dimension != 51)
         {
-            info.player.sendMessage(game.localize("crafttweaker.dim_is_incorrect")~dimName[0]);
+            info.player.sendRichTextMessage(
+                ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
+                ITextComponent.fromTranslation("crafttweaker.dim51")
+            );
             return null;
         }
         else
@@ -304,7 +313,13 @@ for golden_ring in HACGoldenRings
             }
             else
             {
-                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~goldenJewelEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                info.player.sendRichTextMessage(
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                    ITextComponent.fromTranslation("item.necronomicon_dre.name") ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                    ITextComponent.fromString(goldenJewelEnergy as string) ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                );
                 return null;
             }
         }
@@ -378,7 +393,10 @@ for final_pendant in HACPendants
         }
         else if(info.player.world.dimension != 52)
         {
-            info.player.sendMessage(game.localize("crafttweaker.dim_is_incorrect")~dimName[1]);
+            info.player.sendRichTextMessage(
+                ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
+                ITextComponent.fromTranslation("crafttweaker.dim52")
+            );
             return null;
         }
         else
@@ -390,7 +408,13 @@ for final_pendant in HACPendants
             }
             else
             {
-                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~finalPendantEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                info.player.sendRichTextMessage(
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                    ITextComponent.fromTranslation("item.necronomicon_omt.name") ~ 
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                    ITextComponent.fromString(finalPendantEnergy as string) ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                );
                 return null;
             }
         }

@@ -17,6 +17,9 @@ import crafttweaker.util.IRandom;
 import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
 
+// For send Messages
+import crafttweaker.text.ITextComponent;
+
 // Constants claiming
 // Silverfish Counter Initial Number
 val sfCounterInit as int = 30;
@@ -69,7 +72,7 @@ events.onEntityLivingHurt(
                 var counter = truSource.data.silverfishCounter.asInt();
                 counter += 1;
                 truSource.update({silverfishCounter : counter});
-                // truSource.sendMessage("当前蠹虫计数器数值为"~counter);
+                // truSource.sendRichTextMessage("当前蠹虫计数器数值为"~counter);
             }
             if(truSource.data.silverfishCounter.asInt() >= sfCounterInit)
             {
@@ -79,14 +82,14 @@ events.onEntityLivingHurt(
                     var summonBlockPos as IBlockPos = summonPos3f.asBlockPos();
                     <entity:minecraft:silverfish>.spawnEntity(world, summonBlockPos);
                     truSource.update({silverfishCounter: 0});
-                    truSource.sendMessage(game.localize("crafttweaker.silverfish_summoned"));
+                    truSource.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.silverfish_summoned"));
                 }
                 if(debuffMechanismOn && (world.random.nextFloat() < probPotionEffect))
                 {
                     var hunger as IPotionEffect = <potion:minecraft:hunger>.makePotionEffect(timeOfDebuff1, lvlOfDebuff1);
                     var weakness as IPotionEffect = <potion:minecraft:weakness>.makePotionEffect(timeOfDebuff2, lvlOfDebuff2);
                     (world.random.nextBoolean()) ? (truSource.addPotionEffect(hunger)) : (truSource.addPotionEffect(weakness));
-                    truSource.sendMessage(game.localize("crafttweaker.potion_applied"));
+                    truSource.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.potion_applied"));
                 }
             }
             // Summon normal aid mobs for specific mob type.

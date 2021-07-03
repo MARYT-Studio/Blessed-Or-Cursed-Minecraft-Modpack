@@ -12,14 +12,10 @@ import mods.contenttweaker.IItemRightClick;
 // MutableItemStack Related Packages
 import crafttweaker.item.IItemStack;
 
+// For Send Messages
+import crafttweaker.text.ITextComponent;
+
 // Variables claiming
-// Messages
-val message as string[] = [
-    game.localize("contenttweaker.infinite_heart_laevatain_message_0.text"),
-    game.localize("contenttweaker.infinite_heart_laevatain_message_1.text"),
-    game.localize("contenttweaker.infinite_heart_laevatain_message_2.text"), // Green Badge Meessage
-    game.localize("contenttweaker.infinite_heart_laevatain_message_3.text") // Non Green Badge Meessage
-];
 // Items only for Infinite Heart
 val InfiniteHeartItem as IItemStack[] = [
     // 5 Badges
@@ -34,8 +30,11 @@ val InfiniteHeartItem as IItemStack[] = [
 // if set this to 3, open the 4th Infinite Heart will get the badge:2.
 val maxFailureTimes = 3;
 val infHeart = <cotItem:infinite_heart_laevatain>;
-infHeart.itemRightClick = function(stack, world, player, hand){
-    (world.random.nextBoolean()) ? (player.sendMessage(message[0])) : (player.sendMessage(message[1]));
+infHeart.itemRightClick = function(stack, world, player, hand)
+{
+    (world.random.nextBoolean()) ? 
+    (player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_0.text"))) :
+    (player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_1.text")));
     return "SUCCESS";
 };
 infHeart.onItemUseFinish = function(stack, world, item_user){
@@ -45,7 +44,7 @@ infHeart.onItemUseFinish = function(stack, world, item_user){
         var player as IPlayer = item_user;
         if(!(<item:dcs_climate:dcs_color_badge:1>.matches(InfiniteHeartItem[randomIndex])))
         {
-            player.sendMessage(message[3]);
+            player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_3.text"));
             if(isNull(player.data.PlayerPersisted) || isNull(player.data.PlayerPersisted.infHeartFail))
             {
                 player.update({PlayerPersisted: {infHeartFail: 1}});
@@ -57,16 +56,15 @@ infHeart.onItemUseFinish = function(stack, world, item_user){
                 if(failedTime >= maxFailureTimes)
                 {
                     player.update({PlayerPersisted: {infHeartFail: 0}});
-                    player.sendMessage(message[2]);
+                    player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_2.text"));
                     return <item:dcs_climate:dcs_color_badge:1>;
                 }
             }
-            player.sendMessage("[调试信息] 你已经抽卡失败"~player.data.PlayerPersisted.infHeartFail~"次");
         }
         else
         {
             player.update({PlayerPersisted: {infHeartFail: 0}});
-            player.sendMessage(message[2]);
+            player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_2.text"));
         }
         return InfiniteHeartItem[randomIndex];
     }

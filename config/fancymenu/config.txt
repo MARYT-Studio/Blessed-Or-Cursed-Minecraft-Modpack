@@ -52,7 +52,7 @@ S:customgameintroskiptext = '';
 ##[minecraftwindow]
 
 [A minecraft restart is required after changing this value.]
-S:customwindowtitle = 'MARYT 10th - Tour to Infinite Po';
+S:customwindowtitle = 'Tour to Infinite Power...';
 [A minecraft restart is required after changing this value.]
 B:customwindowicon = 'false';
 

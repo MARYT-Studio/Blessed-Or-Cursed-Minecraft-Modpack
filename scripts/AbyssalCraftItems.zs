@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+// For send Messages
+import crafttweaker.text.ITextComponent;
 
 val AbyssalIngotEnergy = 300;
 
@@ -148,7 +150,13 @@ recipes.addShapeless(
             if(bookPotEnergy >= AbyssalIngotEnergy){return out;}
             else
             {
-                info.player.sendMessage(game.localize("crafttweaker.energy_not_enough_0")~ins.book.displayName~game.localize("crafttweaker.energy_not_enough_1")~AbyssalIngotEnergy~game.localize("crafttweaker.energy_not_enough_2"));
+                info.player.sendRichTextMessage(
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                    ITextComponent.fromTranslation("item.necronomicon.name") ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                    ITextComponent.fromString(AbyssalIngotEnergy as string) ~
+                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                );
                 return null;
             }
         }

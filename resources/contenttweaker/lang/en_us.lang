@@ -1,3 +1,14 @@
+item.contenttweaker.builderpack_all.name=Builder's Pack
+item.contenttweaker.builderpack_wool.name=Builder's Wool Pack
+item.contenttweaker.builderpack_wood.name=Builder's Wood Pack
+item.contenttweaker.builderpack_stone.name=Builder's Stone Pack
+item.contenttweaker.builderpack_concrete.name=Builder's Concrete Pack
+item.builderpack_all.name=Builder's Pack
+item.builderpack_wool.name=Builder's Wool Pack
+item.builderpack_wood.name=Builder's Wood Pack
+item.builderpack_stone.name=Builder's Stone Pack
+item.builderpack_concrete.name=Builder's Concrete Pack
+
 item.contenttweaker.first_killcount_token.name=Slayers' Badge I
 item.contenttweaker.second_killcount_token.name=Slayers' Badge II
 item.contenttweaker.third_killcount_token.name=Slayers' Badge III
@@ -25,6 +36,7 @@ item.contenttweaker.magic_shard.name=Shard of Thaumic
 item.contenttweaker.magic_infused_key.name=Magic-Infused Key
 
 item.infinite_heart_laevatain.name=Infinite Heart
+item.contenttweaker.infinite_heart_laevatain.name=Infinite Heart
 
 item.contenttweaker.abyssal_ingot.name=Abyssal Ingot
 
@@ -39,3 +51,9 @@ contenttweaker.infinite_heart_laevatain_message_0.text=Is this the Infinite Powe
 contenttweaker.infinite_heart_laevatain_message_1.text=Finally you got it. Open it.
 contenttweaker.infinite_heart_laevatain_message_2.text=You did it! You have become one of the Immortals.
 contenttweaker.infinite_heart_laevatain_message_3.text=This is only a part of the Power. But it's good enough for you isn't it?
+
+contenttweaker.wood_pack.tooltip=§6Open to get 64 logs of a random type.
+contenttweaker.wool_pack.tooltip=§6Open to get 64 wools of a random color.
+contenttweaker.stone_pack.tooltip=§6Open to get 64 stone materials of a random type.
+contenttweaker.concrete_pack.tooltip=§6Open to get 64 concrete blocks of a random color.
+contenttweaker.builder_pack.tooltip=§6Open to get 1 building material pack of a random type.

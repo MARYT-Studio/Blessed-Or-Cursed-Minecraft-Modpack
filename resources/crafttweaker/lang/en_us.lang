@@ -18,10 +18,11 @@ crafttweaker.lemon_battery_3.tooltip=Craft this with Soldering Iron to charge it
 crafttweaker.lemon_battery_4.tooltip=Or you can use this for furnace's fuel.
 crafttweaker.lemon_battery_5.tooltip=§oDedicated to the Apple Milk & Tea Mod created by defeatedcrow.
 
-item.crafttweaker.newbiesword.name=Newbie's Sword of Braveness
-item.crafttweaker.newbieaxe.name=Newbie's Axe of Toughness
-item.crafttweaker.newbiebread.name=Newbie's Bread
-item.crafttweaker.newbiehammer.name=Newbie's Forging Hammer
+item.crafttweaker.newbiesword.name=§6Newbie's Sword of Braveness
+item.crafttweaker.newbieaxe.name=§6Newbie's Axe of Toughness
+item.crafttweaker.newbiebread.name=§6Newbie's Bread
+item.crafttweaker.newbiehammer.name=§6Newbie's Forging Hammer
+crafttweaker.tls_book.tooltip=§6Old books of the Blade Smith
 
 crafttweaker.first_killcount_token.tooltip=The firstly sharped Blade, tells you the secrets of predecessors.
 crafttweaker.second_killcount_token.tooltip=Blade killed hundreds of enemies, unconvers the hidden stories.

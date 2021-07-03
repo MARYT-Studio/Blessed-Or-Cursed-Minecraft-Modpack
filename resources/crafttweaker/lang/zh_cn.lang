@@ -18,10 +18,11 @@ crafttweaker.lemon_battery_3.tooltip=将其与烙铁合成可以给烙铁充电
 crafttweaker.lemon_battery_4.tooltip=或作为熔炉的燃料。
 crafttweaker.lemon_battery_5.tooltip=§o向曾经带给我们欢乐的苹果奶茶MOD致敬。
 
-item.crafttweaker.newbiesword.name=新手勇气之剑
-item.crafttweaker.newbieaxe.name=新手坚韧之斧
-item.crafttweaker.newbiebread.name=新手面包
-item.crafttweaker.newbiehammer.name=新手锻造锤
+item.crafttweaker.newbiesword.name=§6新手勇气之剑
+item.crafttweaker.newbieaxe.name=§6新手坚韧之斧
+item.crafttweaker.newbiebread.name=§6新手面包
+item.crafttweaker.newbiehammer.name=§6新手锻造锤
+crafttweaker.tls_book.tooltip=§6那位刀匠留下的残卷
 
 crafttweaker.first_killcount_token.tooltip=锋刃初开，吐露前世的秘密。
 crafttweaker.second_killcount_token.tooltip=百斩之刃，揭开封存的故事。

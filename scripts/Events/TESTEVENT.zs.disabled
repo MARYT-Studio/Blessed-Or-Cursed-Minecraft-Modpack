@@ -1,0 +1,13 @@
+#loader crafttweaker reloadableevents
+import crafttweaker.event.PlayerRightClickItemEvent;
+import crafttweaker.text.ITextComponent;
+
+events.onPlayerRightClickItem(
+    function(event as PlayerRightClickItemEvent)
+    {
+        var itemName = "item."~event.item.definition.owner~"."~event.item.definition.name.substring(5, event.item.definition.name.length)~".name";
+        event.player.sendMessage(
+            ITextComponent.fromTranslation(itemName).formattedText
+        );
+    }
+);
