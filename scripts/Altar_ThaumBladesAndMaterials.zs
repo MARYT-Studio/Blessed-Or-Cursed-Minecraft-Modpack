@@ -12,6 +12,8 @@ val fenglei = <lastsmith:slashblade_wind>.withTag({TextureName: "named/thaum/tex
 val xuwu = <lastsmith:slashblade_void>.withTag({TextureName: "named/thaum/texture_voidmetal", SlashBlade: {}, ModelName: "named/smith/model", CurrentItemName: "flammpfeil.slashblade.named.fortress.void", CustomMaxDamage: 50, IsFakeBlade: 1 as byte, AttackAmplifier: -5.0 as float, baseAttackModifier: 7.0 as float, "SB.SEffect": {}});
 val xuehong = <lastsmith:slashblade_crimson>.withTag({TextureName: "named/thaum/texture_crimson", SlashBlade: {}, ModelName: "named/smith/model", CurrentItemName: "flammpfeil.slashblade.named.fortress.crimson", CustomMaxDamage: 120, IsFakeBlade: 1 as byte, AttackAmplifier: -7.0 as float, baseAttackModifier: 9.0 as float, "SB.SEffect": {}});
 
+val longtaidao = <lastsmith:slashblade_wind>.withTag({ModelName: "zephyr/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.windeater", TextureName: "zephyr/tex", SpecialAttackType: 1, });
+
 // Materials part
 Altar.addItemCraftRecipe("thaum_ingot", 0.5,
                          <thaumcraft:ingot>, // Thaum Ingot
@@ -79,4 +81,14 @@ Altar.addItemCraftRecipe("crimson_slashblade", 1.5,
                          <flammpfeil.slashblade:proudsoul:2>,
                          <minecraft:experience_bottle>,
                          <minecraft:golden_apple>
+                        );
+
+Altar.addItemCraftRecipe("longtaidao", 1.5,
+                         longtaidao, 
+                         <thaumcraft:elemental_sword>.withTag({infench: [{lvl: 2 as short, id: 5 as short}]}),
+                         <lastsmith:materials:3>,
+                         <lastsmith:materials:3>,
+                         <sakura:sakura_diamond>,
+                         <thaumcraft:ingot:1>,
+                         <thaumcraft:ingot:1>
                         );
