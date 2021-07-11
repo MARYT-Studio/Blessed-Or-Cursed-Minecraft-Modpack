@@ -22,12 +22,8 @@ val builderPack as Item = <cotItem:builderpack_all>;
 val Packs as Item[] = [woodPack, woolPack, stonePack, concretePack, builderPack];
 val PackItems as IItemStack[][] = [
     [
-        <minecraft:log:0>,
-        <minecraft:log:1>,
-        <minecraft:log:2>,
-        <minecraft:log:3>,
-        <minecraft:log2:0>,
-        <minecraft:log2:1>,
+        <minecraft:log:*>,
+        <minecraft:log2:*>,
         <futuremc:stripped_acacia_log>,
         <futuremc:stripped_jungle_log>,
         <futuremc:stripped_birch_log>,
