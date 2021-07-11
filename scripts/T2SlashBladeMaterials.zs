@@ -24,7 +24,7 @@ val tofuCircuitPlate = <tofucraft:material:22>;
 val tofuCap = <tofucraft:material:21>;
 val tofuInd = <tofucraft:material:23>;
 // Recipes
-val forgingHammer = <sakura:stone_hammer>|<sakura:iron_hammer>|<sakura:sakura_hammer>;
+val forgingHammer = <sakura:stone_hammer:*>|<sakura:iron_hammer:*>|<sakura:sakura_hammer:*>;
 recipes.addShaped("iron_plate",IronPlate,
 [
     [null,forgingHammer,null],
