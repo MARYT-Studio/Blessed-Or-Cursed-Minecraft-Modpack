@@ -63,6 +63,7 @@
   "probe": "0.1.24",
   "dcs_asm": "2.1.0",
   "i18nmod": "1.12.2-1.1.0",
+  "codechickenlib": "3.2.3.358",
   "tofucraft": "0.1.0.9",
   "dcs_lib": "3.6.6",
   "wailaharvestability": "1.1.12",
