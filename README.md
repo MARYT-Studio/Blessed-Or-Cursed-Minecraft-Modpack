@@ -5,7 +5,7 @@ All Rights Reserved.
 
 本仓库用于存放 Minecraft 模组整合包
 
-Blessed or Cursed :追寻无限力量之旅 *（中文标题尚未确定）*
+祝福或诅咒 :追寻无限力量之旅
 
 的魔改文件。
 
