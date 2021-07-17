@@ -32,7 +32,7 @@ for book in allAbyssBooksWithoutNBT
 {
     recipes.remove(book);
 }
-var index = 0;
+var index as int = 0;
 for book in allAbyssBooks
 {
     if(finalAbyssBook.matches(book))
@@ -79,88 +79,69 @@ val TwilightTrophys = <twilightforest:trophy:2>|
     <twilightforest:trophy:3>|
     <twilightforest:trophy:5>;
 index = 0;
-// Unused AC Ritual recipe
-// for cube in HACCubesArray
-// {
-//     for trophy in TwilightTrophysArray
-//     {
-//         mods.abyssalcraft.CreationRitual.addRitual(
-//         "abyssal_ingot_ritual"~index,
-//         0, -1, AbyssalIngotEnergy, true,
-//         AbyssalIngot,
-//         [
-//             <dcs_climate:dcs_ingot:18>,
-//             <twilightforest:fiery_ingot>,
-//             <twilightforest:fiery_ingot>,
-//             <twilightforest:fiery_ingot>,
-//             <thaumcraft:ingot:1>,
-//             <thaumcraft:ingot:1>,
-//             <thaumcraft:ingot:1>,
-//             trophy,
-//             cube
-//         ]);
-//         index += 1;
-//     }
-// }
-
-recipes.addShapeless(
-    // 配方名称
-    "abyssal_ingot",
-    // 输出物品
-    AbyssalIngot,
-    // 输入材料
-    [
-        <abyssalcraft:necronomicon>.marked("book").transformNew
-        (
-            function(item)
-            {
-                var bookNBT as IData = item.tag;
-                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+var bookType as int = 0;
+for abyssbook in allAbyssBooksWithoutNBT
+{
+    recipes.addShapeless(
+        // 配方名称
+        "abyssal_ingot"~bookType,
+        // 输出物品
+        AbyssalIngot,
+        // 输入材料
+        [
+            abyssbook.marked("book").transformNew
+            (
+                function(item)
                 {
-                    return item;
+                    var bookNBT as IData = item.tag;
+                    if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                    {
+                        return item;
+                    }
+                    else
+                    {
+                        var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                        return item.updateTag({PotEnergy : max(0, bookEnergy - AbyssalIngotEnergy)});
+                    }
                 }
-                else
-                {
-                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
-                    return item.updateTag({PotEnergy : max(0, bookEnergy - AbyssalIngotEnergy)});
-                }
-            }
-        ),
-        <dcs_climate:dcs_ingot:18>,
-        <twilightforest:fiery_ingot>,
-        <twilightforest:fiery_ingot>,
-        <twilightforest:fiery_ingot>,
-        <thaumcraft:ingot:1>,
-        <thaumcraft:ingot:1>,
-        TwilightTrophys,
-        HACCubes
+            ),
+            <dcs_climate:dcs_ingot:18>,
+            <twilightforest:fiery_ingot>,
+            <twilightforest:fiery_ingot>,
+            <twilightforest:fiery_ingot>,
+            <thaumcraft:ingot:1>,
+            <thaumcraft:ingot:1>,
+            TwilightTrophys,
+            HACCubes
 
-    ],
-    // 配方函数
-    function(out,ins,info)
-    {
-        var bookNBT as IData = ins.book.tag;
-        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        ],
+        // 配方函数
+        function(out,ins,info)
         {
-            return null;
-        }
-        else
-        {
-            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
-            if(bookPotEnergy >= AbyssalIngotEnergy){return out;}
-            else
+            var bookNBT as IData = ins.book.tag;
+            if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
             {
-                info.player.sendRichTextMessage(
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
-                    ITextComponent.fromTranslation("item.necronomicon.name") ~
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
-                    ITextComponent.fromString(AbyssalIngotEnergy as string) ~
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
-                );
                 return null;
             }
-        }
-    },
-    // 配方动作
-    null
-);
+            else
+            {
+                var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+                if(bookPotEnergy >= AbyssalIngotEnergy){return out;}
+                else
+                {
+                    info.player.sendRichTextMessage(
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                        ITextComponent.fromTranslation("item.necronomicon.name") ~
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                        ITextComponent.fromString(AbyssalIngotEnergy as string) ~
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                    );
+                    return null;
+                }
+            }
+        },
+        // 配方动作
+        null
+    );
+    bookType += 1;
+}

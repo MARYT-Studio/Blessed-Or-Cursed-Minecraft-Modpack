@@ -121,6 +121,7 @@ for ring in HACRings
 // HAC T4 Golden Jewels recipes
 // Golden Pendants
 index = 0;
+var bookType as int = 0;
 val HACGoldenPendantsCubes as IItemStack[] = [
     <dcs_climate:dcs_color_cube:5>,
     <dcs_climate:dcs_color_cube:7>,
@@ -133,102 +134,95 @@ val HACGoldenPendants as IItemStack[] = [
     <dcs_climate:dcs_color_pendant2:3>,
     <dcs_climate:dcs_color_pendant2:4>
 ];
+
+val booksGoldenJewel as IItemStack[] = [
+    <abyssalcraft:necronomicon_dre>,
+    <abyssalcraft:necronomicon_omt>,
+    <abyssalcraft:abyssalnomicon>
+];
 for golden_pendant in HACGoldenPendants
 {
-    // Unused AC Ritual
-    // mods.abyssalcraft.CreationRitual.addRitual(
-    //     "golden_pendant_ritual"~index,
-    //     2, 2, 10000, true,
-    //     golden_pendant,
-    //     [
-    //         <futuremc:netherite_ingot>,
-    //         <futuremc:netherite_ingot>,
-    //         <futuremc:netherite_ingot>,
-    //         <futuremc:netherite_ingot>,
-    //         <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
-    //         <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-    //         <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
-    //         <contenttweaker:abyssal_ingot>,
-    //         HACGoldenPendantsCubes[index]
-    //     ],
-    //     true
-    // );
-    recipes.addShapeless(
-    // 配方名称
-    "golden_pendant"~index,
-    // 输出物品
-    golden_pendant,
-    // 输入材料
-    [
-        <abyssalcraft:necronomicon_dre>.marked("book").transformNew
-        (
-            function(item)
-            {
-                var bookNBT as IData = item.tag;
-                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
-                {
-                    return item;
-                }
-                else
-                {
-                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
-                    return item.updateTag({PotEnergy : max(0, bookEnergy - goldenJewelEnergy)});
-                }
-            }
-        ),
-        <futuremc:netherite_ingot>,
-        <futuremc:netherite_ingot>,
-        <futuremc:netherite_ingot>,
-        <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
-        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-        <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
-        <contenttweaker:abyssal_ingot>,
-        HACGoldenPendantsCubes[index]
-
-    ],
-    // 配方函数
-    function(out,ins,info)
+    for bookGoldenJewel in booksGoldenJewel
     {
-        var bookNBT as IData = ins.book.tag;
-        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        recipes.addShapeless(
+        // 配方名称
+        "golden_pendant"~index~bookType,
+        // 输出物品
+        golden_pendant,
+        // 输入材料
+        [
+            bookGoldenJewel.marked("book").transformNew
+            (
+                function(item)
+                {
+                    var bookNBT as IData = item.tag;
+                    if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                    {
+                        return item;
+                    }
+                    else
+                    {
+                        var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                        return item.updateTag({PotEnergy : max(0, bookEnergy - goldenJewelEnergy)});
+                    }
+                }
+            ),
+            <futuremc:netherite_ingot>,
+            <futuremc:netherite_ingot>,
+            <futuremc:netherite_ingot>,
+            <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
+            <contenttweaker:abyssal_ingot>,
+            HACGoldenPendantsCubes[index]
+
+        ],
+        // 配方函数
+        function(out,ins,info)
         {
-            return null;
-        }
-        else if(info.player.world.dimension != 51)
-        {
-            info.player.sendRichTextMessage(
-                ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
-                ITextComponent.fromTranslation("crafttweaker.dim51")
-            );
-            return null;
-        }
-        else
-        {
-            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
-            if(bookPotEnergy >= goldenJewelEnergy)
+            var bookNBT as IData = ins.book.tag;
+            if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
             {
-                return out;
+                return null;
             }
-            else
+            else if(info.player.world.dimension != 51)
             {
                 info.player.sendRichTextMessage(
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
-                    ITextComponent.fromTranslation("item.necronomicon_dre.name") ~
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
-                    ITextComponent.fromString(goldenJewelEnergy as string) ~
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                    ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
+                    ITextComponent.fromTranslation("crafttweaker.dim51")
                 );
                 return null;
             }
-        }
-    },
-    // 配方动作
-    null
-    );
+            else
+            {
+                var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+                if(bookPotEnergy >= goldenJewelEnergy)
+                {
+                    return out;
+                }
+                else
+                {
+                    info.player.sendRichTextMessage(
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                        ITextComponent.fromTranslation("item.necronomicon_dre.name") ~
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                        ITextComponent.fromString(goldenJewelEnergy as string) ~
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                    );
+                    return null;
+                }
+            }
+        },
+        // 配方动作
+        null
+        );
+        bookType = (bookType + 1) % (booksGoldenJewel.length);
+    }
     index += 1;
 }
 // Golden Rings
 index = 0;
+bookType = 0;
 val HACGoldenRingsCubes as IItemStack[] = [
     <dcs_climate:dcs_color_cube:7>,
     <dcs_climate:dcs_color_cube:8>
@@ -239,188 +233,168 @@ val HACGoldenRings as IItemStack[] = [
 ];
 for golden_ring in HACGoldenRings
 {
-    // Unused AC Ritual
-    // mods.abyssalcraft.CreationRitual.addRitual(
-    // "golden_ring_ritual"~index,
-    // 2, 51, 10000, true,
-    // golden_ring,
-    // [
-    //     HACGoldenRingsCubes[index],
-    //     <futuremc:netherite_ingot>,
-    //     <futuremc:netherite_ingot>,
-    //     <futuremc:netherite_ingot>,
-    //     <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
-    //     <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-    //     <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
-    //     <contenttweaker:abyssal_ingot>,
-    //     <twilightforest:knightmetal_ring>
-    // ]);
-    recipes.addShapeless(
-    // 配方名称
-    "golden_ring"~index,
-    // 输出物品
-    golden_ring,
-    // 输入材料
-    [
-        <abyssalcraft:necronomicon_dre>.marked("book").transformNew
-        (
-            function(item)
-            {
-                var bookNBT as IData = item.tag;
-                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
-                {
-                    return item;
-                }
-                else
-                {
-                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
-                    return item.updateTag({PotEnergy : max(0, bookEnergy - goldenJewelEnergy)});
-                }
-            }
-        ),
-        <futuremc:netherite_ingot>,
-        <futuremc:netherite_ingot>,
-        <twilightforest:knightmetal_ring>,
-        <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
-        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-        <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
-        <contenttweaker:abyssal_ingot>,
-        HACGoldenPendantsCubes[index]
-
-    ],
-    // 配方函数
-    function(out,ins,info)
+    for bookGoldenJewel in booksGoldenJewel
     {
-        var bookNBT as IData = ins.book.tag;
-        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        recipes.addShapeless(
+        // 配方名称
+        "golden_ring"~index~bookType,
+        // 输出物品
+        golden_ring,
+        // 输入材料
+        [
+            bookGoldenJewel.marked("book").transformNew
+            (
+                function(item)
+                {
+                    var bookNBT as IData = item.tag;
+                    if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                    {
+                        return item;
+                    }
+                    else
+                    {
+                        var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                        return item.updateTag({PotEnergy : max(0, bookEnergy - goldenJewelEnergy)});
+                    }
+                }
+            ),
+            <futuremc:netherite_ingot>,
+            <futuremc:netherite_ingot>,
+            <twilightforest:knightmetal_ring>,
+            <forge:bucketfilled>.withTag({FluidName: "liquidantimatter", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dcs.nitrogen", Amount: 1000}),
+            <contenttweaker:abyssal_ingot>,
+            HACGoldenPendantsCubes[index]
+
+        ],
+        // 配方函数
+        function(out,ins,info)
         {
-            return null;
-        }
-        else if(info.player.world.dimension != 51)
-        {
-            info.player.sendRichTextMessage(
-                ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
-                ITextComponent.fromTranslation("crafttweaker.dim51")
-            );
-            return null;
-        }
-        else
-        {
-            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
-            if(bookPotEnergy >= goldenJewelEnergy)
+            var bookNBT as IData = ins.book.tag;
+            if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
             {
-                return out;
+                return null;
             }
-            else
+            else if(info.player.world.dimension != 51)
             {
                 info.player.sendRichTextMessage(
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
-                    ITextComponent.fromTranslation("item.necronomicon_dre.name") ~
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
-                    ITextComponent.fromString(goldenJewelEnergy as string) ~
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                    ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
+                    ITextComponent.fromTranslation("crafttweaker.dim51")
                 );
                 return null;
             }
-        }
-    },
-    // 配方动作
-    null
-    );
+            else
+            {
+                var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+                if(bookPotEnergy >= goldenJewelEnergy)
+                {
+                    return out;
+                }
+                else
+                {
+                    info.player.sendRichTextMessage(
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                        ITextComponent.fromTranslation("item.necronomicon_dre.name") ~
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                        ITextComponent.fromString(goldenJewelEnergy as string) ~
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                    );
+                    return null;
+                }
+            }
+        },
+        // 配方动作
+        null
+        );
+        bookType = (bookType + 1) % (booksGoldenJewel.length);
+    }
     index += 1;
 }
 // Final Pendants
 index = 0;
+bookType = 0;
+val booksFinalPendant as IItemStack[] = [
+    <abyssalcraft:necronomicon_omt>,
+    <abyssalcraft:abyssalnomicon>
+];
 for final_pendant in HACPendants
 {
-    // Unused AC Ritual
-    // mods.abyssalcraft.CreationRitual.addRitual(
-    // "final_pendant_ritual"~index,
-    // 3, 52, 10000, true,
-    // final_pendant,
-    // [
-    //     <futuremc:netherite_ingot>,
-    //     <futuremc:netherite_ingot>,
-    //     <futuremc:netherite_ingot>,
-    //     <contenttweaker:fourth_killcount_token>,
-    //     <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-    //     <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-    //     <contenttweaker:abyssal_ingot>,
-    //     <contenttweaker:abyssal_ingot>,
-    //     HACGoldenPendants[index],
-    // ],
-    // true);
-    recipes.addShapeless(
-    // 配方名称
-    "final_pendant"~index,
-    // 输出物品
-    final_pendant,
-    // 输入材料
-    [
-        <abyssalcraft:necronomicon_omt>.marked("book").transformNew
-        (
-            function(item)
-            {
-                var bookNBT as IData = item.tag;
-                if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
-                {
-                    return item;
-                }
-                else
-                {
-                    var bookEnergy as int = bookNBT.PotEnergy.asInt();
-                    return item.updateTag({PotEnergy : max(0, bookEnergy - finalPendantEnergy)});
-                }
-            }
-        ),
-        <futuremc:netherite_ingot>,
-        <futuremc:netherite_ingot>,
-        <contenttweaker:fourth_killcount_token>,
-        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
-        <contenttweaker:abyssal_ingot>,
-        <contenttweaker:abyssal_ingot>,
-        HACGoldenPendants[index],
-
-    ],
-    // 配方函数
-    function(out,ins,info)
+    for bookFinalPendant in booksFinalPendant
     {
-        var bookNBT as IData = ins.book.tag;
-        if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+        recipes.addShapeless(
+        // 配方名称
+        "final_pendant"~index~bookType,
+        // 输出物品
+        final_pendant,
+        // 输入材料
+        [
+            bookFinalPendant.marked("book").transformNew
+            (
+                function(item)
+                {
+                    var bookNBT as IData = item.tag;
+                    if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
+                    {
+                        return item;
+                    }
+                    else
+                    {
+                        var bookEnergy as int = bookNBT.PotEnergy.asInt();
+                        return item.updateTag({PotEnergy : max(0, bookEnergy - finalPendantEnergy)});
+                    }
+                }
+            ),
+            <futuremc:netherite_ingot>,
+            <futuremc:netherite_ingot>,
+            <contenttweaker:fourth_killcount_token>,
+            <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+            <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
+            <contenttweaker:abyssal_ingot>,
+            <contenttweaker:abyssal_ingot>,
+            HACGoldenPendants[index],
+
+        ],
+        // 配方函数
+        function(out,ins,info)
         {
-            return null;
-        }
-        else if(info.player.world.dimension != 52)
-        {
-            info.player.sendRichTextMessage(
-                ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
-                ITextComponent.fromTranslation("crafttweaker.dim52")
-            );
-            return null;
-        }
-        else
-        {
-            var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
-            if(bookPotEnergy >= finalPendantEnergy)
+            var bookNBT as IData = ins.book.tag;
+            if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
             {
-                return out;
+                return null;
             }
-            else
+            else if(info.player.world.dimension != 52)
             {
                 info.player.sendRichTextMessage(
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
-                    ITextComponent.fromTranslation("item.necronomicon_omt.name") ~ 
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
-                    ITextComponent.fromString(finalPendantEnergy as string) ~
-                    ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                    ITextComponent.fromTranslation("crafttweaker.dim_is_incorrect") ~
+                    ITextComponent.fromTranslation("crafttweaker.dim52")
                 );
                 return null;
             }
-        }
-    },
-    // 配方动作
-    null
-    );
+            else
+            {
+                var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
+                if(bookPotEnergy >= finalPendantEnergy)
+                {
+                    return out;
+                }
+                else
+                {
+                    info.player.sendRichTextMessage(
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
+                        ITextComponent.fromTranslation("item.necronomicon_omt.name") ~ 
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_1") ~
+                        ITextComponent.fromString(finalPendantEnergy as string) ~
+                        ITextComponent.fromTranslation("crafttweaker.energy_not_enough_2")
+                    );
+                    return null;
+                }
+            }
+        },
+        // 配方动作
+        null
+        );
+        bookType = (bookType + 1) % (booksFinalPendant.length);
+    }
     index += 1;
 }

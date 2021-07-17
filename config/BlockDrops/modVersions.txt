@@ -12,6 +12,7 @@
   "mcp": "9.42",
   "journeymap": "1.12.2-5.5.5",
   "sakura": "1.0.7-1.12.2",
+  "itemrender": "@VERSION@",
   "surge": "2.0.79",
   "forgelin": "1.8.4",
   "inventorytweaks": "1.64+dev.150.7168e7a",
