@@ -13,6 +13,9 @@ import crafttweaker.event.EntityLivingHurtEvent;
 // Packages for math utilities
 import crafttweaker.util.IRandom;
 
+// For random Teleporting
+import crafttweaker.util.Position3f;
+
 // Packages for Potion function
 import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
@@ -22,13 +25,15 @@ import crafttweaker.text.ITextComponent;
 
 // Constants claiming
 // Silverfish Counter Initial Number
-val sfCounterInit as int = 30;
+val sfCounterInit as int = 10;
+val clearSfCounter as int = 20;
 // debuff giving
 val debuffMechanismOn as bool = false;
 val timeOfDebuff1 as int = 200;
 val timeOfDebuff2 as int = 200;
 val lvlOfDebuff1 as int = 2;
 val lvlOfDebuff2 as int = 2;
+val distance as float = 0.5f;
 // Mob Names Array
 static mobSummonCombat as string[] = ["Zombie", "Skeleton", "Creeper"];
 static mobSummonRanged as string[] = ["Spider", "Enderman"];
@@ -66,13 +71,53 @@ events.onEntityLivingHurt(
         {
             // Regardless of the mob type, summon a silverfish when counter reaches 0.
             var truSource as IPlayer = truSource;
+            // Initialize a player's position.
+            if(isNull(truSource.data.last_attack_xpos)){truSource.update({last_attack_xpos: 0.5f});}
+            if(isNull(truSource.data.last_attack_zpos)){truSource.update({last_attack_zpos: 0.5f});}
+            var lastAttackXpos as float = truSource.data.last_attack_xpos.asFloat();
+            var lastAttackZpos as float = truSource.data.last_attack_zpos.asFloat();
+            
+            // Test Print
+            // truSource.sendMessage("你上次攻击怪物时的坐标为x: "~lastAttackXpos~", z: "~lastAttackZpos);
+            
+            var playerXCoordNow as float = truSource.position3f.x as float;
+            var playerZCoordNow as float = truSource.position3f.z as float;
+            
+            // Test Print
+            // truSource.sendMessage("你本次攻击怪物时的坐标为x: "~playerXCoordNow~", z: "~playerZCoordNow);
+            
+            // If player's x or z coordinates changed more than const distance,
+            // This player is considered "moved".
+            var playerMovedFlag as bool = 
+                ((playerXCoordNow - lastAttackXpos) > distance) ||
+                ((playerZCoordNow - lastAttackZpos) > distance) ||
+                ((playerXCoordNow - lastAttackXpos) < (0.0f - distance)) ||
+                ((playerZCoordNow - lastAttackZpos) < (0.0f - distance));
+            
+            // Test Print
+            // truSource.sendMessage("你本次攻击时，比起上次攻击移动了："~playerMovedFlag);
+            
+            // Update player's attack position
+            truSource.update({last_attack_xpos: playerXCoordNow, last_attack_zpos: playerZCoordNow});
             if(isNull(truSource.data.silverfishCounter)){truSource.update({silverfishCounter: 0});}
+            if(isNull(truSource.data.playerMovedCounter)){truSource.update({playerMovedCounter: 0});}
             else
             {
-                var counter = truSource.data.silverfishCounter.asInt();
-                counter += 1;
-                truSource.update({silverfishCounter : counter});
-                // truSource.sendRichTextMessage("当前蠹虫计数器数值为"~counter);
+                var noMoveCounter = truSource.data.silverfishCounter.asInt();
+                var movedCounter = truSource.data.playerMovedCounter.asInt();
+                // If player is not considered "moved", his silverfish noMoveCounter will add one point.
+                (playerMovedFlag) ? (movedCounter += 1) : (noMoveCounter += 1);
+                truSource.update({silverfishCounter : noMoveCounter, playerMovedCounter: movedCounter});
+                // Test Print
+                // truSource.sendMessage("当前蠹虫计数器数值为"~noMoveCounter);
+            }
+            if(truSource.data.playerMovedCounter.asInt() >= clearSfCounter)
+            {
+                // Test Print
+                // truSource.sendMessage("检测到你没有在挂机，蠹虫计数器归零。");
+
+                truSource.update({silverfishCounter: 0});
+                truSource.update({playerMovedCounter: 0});
             }
             if(truSource.data.silverfishCounter.asInt() >= sfCounterInit)
             {
