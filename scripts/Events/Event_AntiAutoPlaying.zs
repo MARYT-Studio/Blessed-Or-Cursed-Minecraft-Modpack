@@ -25,10 +25,11 @@ import crafttweaker.text.ITextComponent;
 
 // Constants claiming
 // Silverfish Counter Initial Number
+val silverfishSummoningOn as bool = true;
 val autoplayingThreshold as int = 20;
 val noAutoThreshold as int = 7;
 // The distance a player should move to avoid being regarded as auto-playing
-val distance as float = 0.5f;
+val distance as float = 3.0f;
 // Probability of Randomly Penalty, to prevent players calculate a fixed period of penalty.
 static penaltyProbability as float = 0.33f;
 
@@ -70,10 +71,9 @@ events.onEntityLivingDeath(
             // If player's x or z coordinates changed more than const distance,
             // This player is considered "moved".
             var playerMovedFlag as bool = 
-                ((playerXCoordNow - lastAttackXpos) > distance) ||
-                ((playerZCoordNow - lastAttackZpos) > distance) ||
-                ((playerXCoordNow - lastAttackXpos) < (0.0f - distance)) ||
-                ((playerZCoordNow - lastAttackZpos) < (0.0f - distance));
+                (
+                    (pow((playerXCoordNow - lastAttackXpos), 2.0f) + pow((playerZCoordNow - lastAttackZpos), 2.0f)) > pow(distance, 2.0f)
+                );
             
             // Test Print
             player.sendMessage("你本次杀死怪物时，比起上次杀死怪物移动了："~playerMovedFlag);
@@ -105,11 +105,11 @@ events.onEntityLivingDeath(
             {
                 if(world.random.nextFloat() < penaltyProbability)
                 {
-                    if(!world.remote)
+                    if(!world.remote && silverfishSummoningOn)
                     {
                         var summonPos3f = crafttweaker.util.Position3f.create(player.x, (player.y + 1), player.z);
                         var summonBlockPos as IBlockPos = summonPos3f.asBlockPos();
-                        <entity:minecraft:silverfish>.spawnEntity(world, summonBlockPos);
+                        <entity:minecraft:endermite>.spawnEntity(world, summonBlockPos);
                         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.silverfish_summoned"));
                     }
                     // Give player debuff
