@@ -11,6 +11,8 @@ var modidList as string[] = [
     "base"
 ];
 val ItemNotToHide = 
+    // 工业扳手
+    <ic2:wrench>|
     //铅系列
     <ic2:resource:2>| //铅矿石
     <ic2:dust:10>|    //铅粉
