@@ -76,7 +76,7 @@ events.onEntityLivingDeath(
                 );
             
             // Test Print
-            player.sendMessage("你本次杀死怪物时，比起上次杀死怪物移动了："~playerMovedFlag);
+            // player.sendMessage("你本次杀死怪物时，比起上次杀死怪物移动了："~playerMovedFlag);
             
             // Update player's attack position
             player.update({last_attack_xpos: playerXCoordNow, last_attack_zpos: playerZCoordNow});
