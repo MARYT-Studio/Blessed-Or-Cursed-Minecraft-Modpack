@@ -90,13 +90,13 @@ events.onEntityLivingDeath(
                 (playerMovedFlag) ? (movedCounter += 1) : (noMoveCounter += 1);
                 player.update({silverfishCounter : noMoveCounter, playerMovedCounter: movedCounter});
                 // Test Print
-                player.sendMessage("当前蠹虫计数器数值为"~noMoveCounter);
-                player.sendMessage("当前移动计数器数值为"~movedCounter);
+                // player.sendMessage("当前蠹虫计数器数值为"~noMoveCounter);
+                // player.sendMessage("当前移动计数器数值为"~movedCounter);
             }
             if(player.data.playerMovedCounter.asInt() >= noAutoThreshold)
             {
                 // Test Print
-                player.sendMessage("检测到你没有在挂机，蠹虫计数器归零。");
+                // player.sendMessage("检测到你没有在挂机，蠹虫计数器归零。");
 
                 player.update({silverfishCounter: 0});
                 player.update({playerMovedCounter: 0});
