@@ -89,3 +89,6 @@ for pack in Packs
     pack.addTooltip(game.localize(packsTooltip[index]));
     index += 1;
 }
+
+// Diamond cannot open Twilight Forest Portal
+<minecraft:diamond>.addTooltip(game.localize("crafttweaker.diamond_cannot_open_tf_portal.tooltip"));

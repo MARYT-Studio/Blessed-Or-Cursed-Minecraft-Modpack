@@ -1,3 +1,4 @@
+import crafttweaker.item.IIngredient;
 // Soldering Iron and Lemon Battery
 mods.jei.JEI.addDescription([<contenttweaker:soldering_iron>, <contenttweaker:lemon_battery>],
 [
@@ -18,3 +19,25 @@ mods.jei.JEI.addDescription(<liquid:dcs.mazai>,
         game.localize("crafttweaker.mazai.desc")
     ]
 );
+val mojian_Yanmodao = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yamato", TextureName: "named/yamato", SpecialAttackType: 0, IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
+val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.sange", TextureName: "named/sange/sange", SpecialAttackType: 7, IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
+val twilightItems as IIngredient[] = [
+    <contenttweaker:nature_shard>,
+    <contenttweaker:magic_shard>,
+    <contenttweaker:magic_infused_key>,
+    mojian_Yanmodao,
+    sanhua
+];
+mods.jei.JEI.addDescription(twilightItems, ["crafttweaker.twilight_items.desc"]);
+
+val warpItems as IIngredient[] = [
+    <thaumcraft:sanity_checker>,
+    <thaumcraft:sanity_soap>,
+    <abyssalcraft:shoggothflesh>,
+    <abyssalcraft:shoggothflesh:1>,
+    <abyssalcraft:shoggothflesh:2>,
+    <abyssalcraft:shoggothflesh:3>,
+    <abyssalcraft:shoggothflesh:4>,
+    <dcs_climate:dcs_food_antibiotic:7>
+];
+mods.jei.JEI.addDescription(warpItems, ["crafttweaker.warp_items.desc"]);

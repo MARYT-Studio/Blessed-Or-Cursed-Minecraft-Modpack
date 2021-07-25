@@ -55,7 +55,6 @@ crafttweaker.wing_potion_2.tooltip=§lbut it costs HP!
 craftweaker.sanity_soap.tooltip=If you're disturbed by Warp, use this!
 crafttweaker.bountiful_only.tooltip=Only available in Bounties reward.
 
-
 # Descriptions
 crafttweaker.soldering_iron_1.desc=Soldering Iron is used to make circuit boards.
 crafttweaker.soldering_iron_2.desc=Only those crafted from Crafting Tables can be used.
@@ -98,3 +97,11 @@ crafttweaker.dim_is_incorrect=This Ritual should be performed in
 crafttweaker.dim51=Dreadland.
 crafttweaker.dim52=Omothol.
 crafttweaker.dim53=The Dark Realm.
+
+# Tips for Twilight Forest
+crafttweaker.diamond_cannot_open_tf_portal.tooltip=Diamond cannot be used to build Twilight Forest Portal, use Magic-Infused Key instead.
+crafttweaker.twilight_items.desc=Combine Nature and Magic Shards with 300 Killcounts from Yamato and Sange, you will get Magic-Infused Key. Throwing it, instead of a diamond, into 2x2 water pool surrounded by flowers will open the portal to Twilight Forest.
+
+# Warps
+crafttweaker.warp_removed=By performing this ritual, some amount of your warp is washed off.
+crafttweaker.warp_items.desc=Interact with monsters from the Abyss will give you warp. With Sanity Checker you can see the Warp you have. Sanity Soap remove your all Temporary Warp, but only remove 1 point of Normal Warp. Use Mana Dust to purify a Shoggoth Flesh will remove your Normal Warp, the higher the Shoggoth Flesh's tier, the more Warp will be removed.

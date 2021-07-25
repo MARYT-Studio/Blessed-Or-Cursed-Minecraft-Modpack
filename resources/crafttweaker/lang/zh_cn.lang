@@ -97,3 +97,11 @@ crafttweaker.dim_is_incorrect=该仪式需要在
 crafttweaker.dim51=恐惧之地进行。
 crafttweaker.dim52=奥穆索进行。
 crafttweaker.dim53=黑暗领域进行。
+
+# Tips for Twilight Forest
+crafttweaker.diamond_cannot_open_tf_portal.tooltip=钻石不能打开暮色森林传送门，请改用沾满魔力的铜钥匙。
+crafttweaker.twilight_items.desc=将自然碎片和魔法碎片结合，并献上阎魔刀与散华的各300点杀敌数，可以得到沾满魔力的铜钥匙，用它代替钻石投入花朵围绕的水池中，即可打开通往暮色森林的传送门。
+
+# Warps
+crafttweaker.warp_removed=经过这一仪式，你的一些扭曲被洗去了。
+crafttweaker.warp_items.desc=与来自深渊的怪物互动会使你的扭曲增加。神智检测仪可以帮助你检查自己所带的扭曲。祛邪肥皂能清除你的所有临时扭曲和1点普通扭曲。用魔力粉尘净化修格斯腐肉的仪式可以清除你身上的一部分普通扭曲，使用的修格斯腐肉等级越高，清除的普通扭曲就越多。

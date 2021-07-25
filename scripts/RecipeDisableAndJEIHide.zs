@@ -54,6 +54,8 @@ val ItemNotToHide =
     <thaumcraft:void_sword>|  //虚空剑
     // 用于移除扭曲的祛邪肥皂
     <thaumcraft:sanity_soap>|
+    // 用于检测扭曲的神智检测仪
+    <thaumcraft:sanity_checker>|
     
     //需要用到的机器方块
     //IC2
