@@ -1,0 +1,38 @@
+{
+   "name" : "Basic Blade Skills",
+   "icon" : "lastsmith:scroll",
+   "category" : "category_1",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Welcome to the world of SlashBlades. As a Blade smith, I have seen many freshman to Blade skills feeling confused when they are holding their brand new Blade, not knowing how to weild it.$(br2)So before I teach you how to forge a Blade, I would like to teach you how to use a Blade at first."
+      },
+      {
+         "type" : "text",
+         "title" : "Right-Clicks",
+         "text" : "Different from other ordinary weapons, The most useful skill of SlashBlades is $(bold)right-clicks$(). By doing so you will make a sweeping attack, deal damage to all enemies in front of you."
+      },
+      {
+         "type" : "text",
+         "title" : "Left-Clicks",
+         "text" : "Left-click of SlashBlades also has its differences from normal weapons. When you left-click at an enemy, if it is standing on the ground, you will throw it into the air, making it paralyzed for a very short moment. If it is in the air, your left-click attack will knock it to the ground."
+      },
+      {
+         "type" : "text",
+         "title" : "Left-Clicks",
+         "text" : "In short, left-click attack is more tactical. Use it properly, combinining it with right-click attacks, and you will find it easy to slay enemies in the blink of an eye."
+      },
+      {
+         "type" : "text",
+         "title" : "Sneaking Button",
+         "text" : "By pressing down Sneaking Button(\"SHIFT\" as default), you will target at the nearest enemy. You will automatically turn to it.$(br)If you Right-click with a Blade in your main hand when you are sneaking, you will make a long dash attack. You will sprint forward and damage all enemies passing by."
+      },
+      {
+         "type" : "text",
+         "title" : "Attack Combo Rank",
+         "text" : "The more enemies you attack in the shorter time interval, the higher your attack combo rank will be. This rank will be displayed on the right side of your screen, from D, the lowest, to SSS, the highest rank. The higher your rank is, the more damage your every single attack will deal. So in fierce combats, you should manage your attack skill, wisely combine them to keep your rank at a high level."
+      }
+   ],
+   "advancement":"lastsmith:root",
+   "sortnum" : 0
+}
