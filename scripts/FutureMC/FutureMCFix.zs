@@ -35,7 +35,8 @@ recipes.addShaped("soul_lantern",<futuremc:soul_fire_lantern>,
 game.setLocalization("zh_cn","tile.sandStone.smooth.name","切制砂岩");
 game.setLocalization("zh_cn","tile.redSandStone.smooth.name","切制红砂岩");
 
-// Let Stripped Logs can be crafted into 4 planks.
+// Stripped Logs can be crafted into 4 planks, but stripped WOODS cannot.
+// Let them can be crafted into planks.
 val planksArray as IItemStack[] = [
     <minecraft:planks:0>, // Oak
     <minecraft:planks:1>,// Spruce
@@ -44,12 +45,12 @@ val planksArray as IItemStack[] = [
     <minecraft:planks:4>, // Acacia
     <minecraft:planks:5> // Dark Oak
 ];
-val strippedLogArray as IItemStack[] = [
-    <futuremc:stripped_oak_log>,
-    <futuremc:stripped_spruce_log>,
-    <futuremc:stripped_birch_log>,
-    <futuremc:stripped_jungle_log>,
-    <futuremc:stripped_acacia_log>,
-    <futuremc:stripped_dark_oak_log>
+val strippedWoodArray as IItemStack[] = [
+    <futuremc:stripped_oak_wood>,
+    <futuremc:stripped_spruce_wood>,
+    <futuremc:stripped_birch_wood>,
+    <futuremc:stripped_jungle_wood>,
+    <futuremc:stripped_acacia_wood>,
+    <futuremc:stripped_dark_oak_wood>
 ];
-for i in 0 .. (planksArray.length - 1){recipes.addShapeless("stripped_log_to_plank" ~ i, planksArray[i] * 4, [strippedLogArray[i]]);}
+for i in 0 .. (planksArray.length - 1){recipes.addShapeless("stripped_wood_to_plank" ~ i, planksArray[i] * 4, [strippedWoodArray[i]]);}
