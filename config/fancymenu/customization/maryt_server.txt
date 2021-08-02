@@ -31,7 +31,7 @@ customization {
 customization {
   identifier = %id=400322%
   action = setbuttonlabel
-  value = §8§l与人同行
+  value = §8§l与人同行 - Servers
 }
 
 customization {
@@ -44,7 +44,7 @@ customization {
 customization {
   identifier = %id=400322%
   action = sethoverlabel
-  label = §c§l与人同行
+  label = §c§l与人同行 - Servers
 }
 
 customization {
@@ -65,7 +65,7 @@ customization {
 customization {
   identifier = %id=400382%
   action = setbuttonlabel
-  value = §8§l选项
+  value = §8§l选项 - Options
 }
 
 customization {
@@ -78,7 +78,7 @@ customization {
 customization {
   identifier = %id=400382%
   action = sethoverlabel
-  label = §c§l选项
+  label = §c§l选项 - Options
 }
 
 customization {
@@ -99,7 +99,7 @@ customization {
 customization {
   identifier = %id=502382%
   action = setbuttonlabel
-  value = §8§l暂时离开
+  value = §8§l暂时离开 - Exit
 }
 
 customization {
@@ -112,7 +112,7 @@ customization {
 customization {
   identifier = %id=502382%
   action = sethoverlabel
-  label = §c§l暂时离开
+  label = §c§l暂时离开 - Exit
 }
 
 customization {
@@ -154,7 +154,7 @@ customization {
 customization {
   identifier = %id=400298%
   action = setbuttonlabel
-  value = §8§l你的旅途
+  value = §8§l你的旅途 - SinglePlayer
 }
 
 customization {
@@ -167,7 +167,7 @@ customization {
 customization {
   identifier = %id=400298%
   action = sethoverlabel
-  label = §c§l你的旅途
+  label = §c§l你的旅途 - SinglePlayer
 }
 
 customization {
@@ -188,7 +188,7 @@ customization {
 customization {
   identifier = %id=400346%
   action = setbuttonlabel
-  value = §8§l模组
+  value = §8§l模组 - Mods
 }
 
 customization {
@@ -201,7 +201,7 @@ customization {
 customization {
   identifier = %id=400346%
   action = sethoverlabel
-  label = §c§l模组
+  label = §c§l模组 - Mods
 }
 
 customization {
