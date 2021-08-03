@@ -2,6 +2,7 @@ $ cat .gitignore
 #Whitelist
 /*
 /config/worldedit/schematics
+/scripts/.zsrc
 
 #Folders
 !/config/
