@@ -131,7 +131,9 @@ brewing.removeRecipe(<minecraft:splash_potion>.withTag({Potion: "dcs_climate:dcs
 mods.jei.JEI.removeAndHide(<twilightforest:block_and_chain>);
 // AbyssalCraft ODE and its core
 mods.jei.JEI.removeAndHide(<abyssalcraft:odb>);
-mods.jei.JEI.removeAndHide(<abyssalcraft:odbcore>);
+// ODB Core is needed to perform Boss summon ritual,
+// Because its explosion is disabled, so it is safe to unban it.
+// mods.jei.JEI.removeAndHide(<abyssalcraft:odbcore>);
 
 // HAC Motor Vehicles
 val HACMotors as IItemStack[] = [
