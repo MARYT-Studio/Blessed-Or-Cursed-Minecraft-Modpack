@@ -1,0 +1,1 @@
+recipes.addShapeless("blue_steel_to_void",<lastsmith:blade:32>,[<lastsmith:blade:22>]);
