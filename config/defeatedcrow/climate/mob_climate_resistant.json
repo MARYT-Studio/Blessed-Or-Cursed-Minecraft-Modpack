@@ -1,146 +1,154 @@
 {
- "minecraft:polar_bear": {
-  "suitableTemp": "COLD",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:villager_golem": {
-  "suitableTemp": "COLD",
-  "resistanceValue_Temp": 6.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:pig": {
-  "suitableTemp": "WARM",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:llama": {
-  "suitableTemp": "COOL",
-  "resistanceValue_Temp": 4.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:husk": {
-  "suitableTemp": "NORMAL",
-  "resistanceValue_Temp": 2.0,
-  "suitableHum": "DRY",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "NORMAL",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:sheep": {
-  "suitableTemp": "COOL",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:ender_dragon": {
-  "suitableTemp": "COLD",
-  "resistanceValue_Temp": 4.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:shulker": {
-  "suitableTemp": "COLD",
-  "resistanceValue_Temp": 4.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:villager": {
-  "suitableTemp": "NORMAL",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:ocelot": {
-  "suitableTemp": "WARM",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:cow": {
-  "suitableTemp": "COOL",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:enderman": {
-  "suitableTemp": "COLD",
-  "resistanceValue_Temp": 8.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:snowman": {
-  "suitableTemp": "FROSTBITE",
-  "resistanceValue_Temp": 4.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:chicken": {
-  "suitableTemp": "NORMAL",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:wolf": {
-  "suitableTemp": "COOL",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:wither": {
-  "suitableTemp": "OVEN",
-  "resistanceValue_Temp": 4.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:horse": {
-  "suitableTemp": "COOL",
-  "resistanceValue_Temp": 3.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- },
- "minecraft:rabbit": {
-  "suitableTemp": "COOL",
-  "resistanceValue_Temp": 2.0,
-  "suitableHum": "NORMAL",
-  "resistanceValue_Hum": 2.0,
-  "suitableAir": "FLOW",
-  "resistanceValue_Air": 2.0
- }
+    "minecraft:polar_bear": {
+        "suitableTemp": "COLD",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:villager_golem": {
+        "suitableTemp": "COLD",
+        "resistanceValue_Temp": 6,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:pig": {
+        "suitableTemp": "WARM",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:llama": {
+        "suitableTemp": "COOL",
+        "resistanceValue_Temp": 4,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:husk": {
+        "suitableTemp": "NORMAL",
+        "resistanceValue_Temp": 2,
+        "suitableHum": "DRY",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "NORMAL",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:sheep": {
+        "suitableTemp": "COOL",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:ender_dragon": {
+        "suitableTemp": "COLD",
+        "resistanceValue_Temp": 4,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:shulker": {
+        "suitableTemp": "COLD",
+        "resistanceValue_Temp": 4,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:villager": {
+        "suitableTemp": "NORMAL",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:ocelot": {
+        "suitableTemp": "WARM",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:cow": {
+        "suitableTemp": "COOL",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:enderman": {
+        "suitableTemp": "COLD",
+        "resistanceValue_Temp": 8,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:snowman": {
+        "suitableTemp": "FROSTBITE",
+        "resistanceValue_Temp": 4,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:chicken": {
+        "suitableTemp": "NORMAL",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:wolf": {
+        "suitableTemp": "COOL",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:wither": {
+        "suitableTemp": "OVEN",
+        "resistanceValue_Temp": 4,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:horse": {
+        "suitableTemp": "COOL",
+        "resistanceValue_Temp": 3,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:rabbit": {
+        "suitableTemp": "COOL",
+        "resistanceValue_Temp": 2,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    },
+    "minecraft:zombie_pigman": {
+        "suitableTemp": "KILN",
+        "resistanceValue_Temp": 4,
+        "suitableHum": "NORMAL",
+        "resistanceValue_Hum": 2,
+        "suitableAir": "FLOW",
+        "resistanceValue_Air": 2
+    }
 }
