@@ -92,3 +92,6 @@ for pack in Packs
 
 // Diamond cannot open Twilight Forest Portal
 <minecraft:diamond>.addTooltip(game.localize("crafttweaker.diamond_cannot_open_tf_portal.tooltip"));
+
+// Blue Steel Blades are useless
+<lastsmith:blade:22>.addTooltip(game.localize("crafttweaker.blue_steel_blade_is_useless.tooltip"));
