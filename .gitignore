@@ -15,3 +15,4 @@ $ cat .gitignore
 !/.gitignore
 !/README.md
 !/PlanAndProgress.md
+scripts/.VSCodeCounter/

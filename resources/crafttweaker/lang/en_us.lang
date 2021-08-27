@@ -108,3 +108,6 @@ crafttweaker.warp_items.desc=Interact with monsters from the Abyss will give you
 
 # Blue Steel Blade bug
 crafttweaker.blue_steel_blade_is_useless.tooltip=§c§lThis item is useless, Please craft it into Void Metal Blade(5/5).
+
+# Grinding Stone bug
+crafttweaker.grindstone_is_temporarily_banned.tooltip=§c§lDue to a serious bug, we temporarily ban the Grind Stones.

@@ -108,3 +108,6 @@ crafttweaker.warp_items.desc=与来自深渊的怪物互动会使你的扭曲增
 
 # Blue Steel Blade bug
 crafttweaker.blue_steel_blade_is_useless.tooltip=§c§l这个物品没有用处，请将它合成为未完成虚空刀条(5/5)。
+
+# Grinding Stone bug
+crafttweaker.grindstone_is_temporarily_banned.tooltip=§c§l由于一个严重的问题，我们暂时禁用了砂轮。
