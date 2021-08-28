@@ -95,3 +95,8 @@ for pack in Packs
 
 // Blue Steel Blades are useless
 <lastsmith:blade:22>.addTooltip(game.localize("crafttweaker.blue_steel_blade_is_useless.tooltip"));
+
+// Access to Hunting Dim
+<huntingdim:frame>.withTag({BaseBlock: {id: "abyssalcraft:dltlog", Count: 1 as byte, Damage: 0 as short}}).addTooltip(game.localize("crafttweaker.craft_it_for_hd.tooltip"));
+<contenttweaker:inner_shard>.addTooltip(game.localize("contenttweaker.inner_shard.tooltip"));
+<contenttweaker:inner_gem>.addTooltip(game.localize("contenttweaker.inner_gem.tooltip"));

@@ -57,3 +57,9 @@ contenttweaker.wool_pack.tooltip=§6打开以获得64个随机颜色的羊毛。
 contenttweaker.stone_pack.tooltip=§6打开以获得64个随机种类的石材。
 contenttweaker.concrete_pack.tooltip=§6打开以获得64个随机颜色的混凝土。
 contenttweaker.builder_pack.tooltip=§6打开以获得1个随机种类的建材包。
+
+item.contenttweaker.inner_shard.name=深层晶片
+item.contenttweaker.inner_gem.name=深层魔晶
+
+contenttweaker.inner_shard.tooltip=从§l狩猎世界中的§r深渊僵尸和深渊食尸鬼处掉落。
+contenttweaker.inner_gem.tooltip=蕴含揭示深渊本质的强大力量。

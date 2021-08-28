@@ -111,3 +111,8 @@ crafttweaker.blue_steel_blade_is_useless.tooltip=§c§lThis item is useless, Ple
 
 # Grinding Stone bug
 crafttweaker.grindstone_is_temporarily_banned.tooltip=§c§lDue to a serious bug, we temporarily ban the Grind Stones.
+
+# Hunting Dim
+crafttweaker.craft_it_for_hd.tooltip=§lCraft it, then you will be permitted to go deeper.
+crafttweaker.has_access_to_hd=You get the portal frame, now you have access to the deeper World.
+crafttweaker.cannot_go_to_hd=You have not conquered the Twilight Forest, so you are not permitted to go to the deeper world.

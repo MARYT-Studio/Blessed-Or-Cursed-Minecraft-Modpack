@@ -57,3 +57,9 @@ contenttweaker.wool_pack.tooltip=§6Open to get 64 wools of a random color.
 contenttweaker.stone_pack.tooltip=§6Open to get 64 stone materials of a random type.
 contenttweaker.concrete_pack.tooltip=§6Open to get 64 concrete blocks of a random color.
 contenttweaker.builder_pack.tooltip=§6Open to get 1 building material pack of a random type.
+
+item.contenttweaker.inner_shard.name=Shard of Deeper Realm
+item.contenttweaker.inner_gem.name=Gem of Deeper Realm
+
+contenttweaker.inner_shard.tooltip=Drops from Abyssal Zombies and Depth Ghouls §lin the Hunting Dimension§r.
+contenttweaker.inner_gem.tooltip=Contains the power to reveal the nature of the Abyss.

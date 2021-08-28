@@ -24,7 +24,7 @@ val inputBooks as IItemStack[] = [
     <minecraft:book>, firstAbyssBook, secondAbyssBook, thirdAbyssBook
 ];
 val inputSkins as IItemStack[] = [
-    <abyssalcraft:antiflesh>, <abyssalcraft:skin>, <abyssalcraft:skin:1>, <abyssalcraft:skin:2>
+    <contenttweaker:inner_gem>, <abyssalcraft:skin>, <abyssalcraft:skin:1>, <abyssalcraft:skin:2>
 ];
 val AbyssalIngot = <contenttweaker:abyssal_ingot>;
 // Book Recipes

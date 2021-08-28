@@ -16,6 +16,8 @@
   "sakura": "1.0.7-1.12.2",
   "surge": "2.0.79",
   "forgelin": "1.8.4",
+  "bookshelf": "2.3.590",
+  "huntingdim": "1.0.42",
   "inventorytweaks": "1.64+dev.150.7168e7a",
   "buildinggadgets": "2.8.4",
   "waila": "1.8.26",
@@ -68,5 +70,5 @@
   "tofucraft": "0.1.0.9",
   "dcs_lib": "3.7.0",
   "wailaharvestability": "1.1.12",
-  "base": "3.13.0"
+  "base": "3.14.0"
 }

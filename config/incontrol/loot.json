@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "mob": ["abyssalcraft:abyssalzombie", "abyssalcraft:depthsghoul"],
+        "dimension": 28885,
+        "player": true,
+        "item": "contenttweaker:inner_shard",
+        "itemcount": "0-1/0-1/0-1"
+    }
+]
