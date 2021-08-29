@@ -16,3 +16,4 @@ $ cat .gitignore
 !/README.md
 !/PlanAndProgress.md
 scripts/.VSCodeCounter/
+resources/crafttweaker/lang/.VSCodeCounter/

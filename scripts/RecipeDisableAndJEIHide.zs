@@ -64,7 +64,11 @@ val ItemNotToHide =
     //Energy Converter
     <energyconverters:energy_bridge>|  //能量桥接器
     <energyconverters:energy_consumer_fe>|  //FE输入器
-    <energyconverters:energy_producer_eu:2>;  //高压EU输出器
+    <energyconverters:energy_producer_eu:2>|  //高压EU输出器
+    
+    // 作为砂轮的替代品，植物魔法的封印之布
+    // 属于 TempFixes 的一部分
+    <botania:spellcloth>;  
 
 // JEI Hide and recipe removal
 for modid in modidList
