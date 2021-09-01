@@ -116,3 +116,10 @@ crafttweaker.grindstone_is_temporarily_banned.tooltip=§c§l由于一个严重�
 crafttweaker.craft_it_for_hd.tooltip=§l合成它，你才会被允许前往更深的世界。
 crafttweaker.has_access_to_hd=你得到了传送门框架，现在你可以去往更深层的世界。
 crafttweaker.cannot_go_to_hd=你尚未征服暮色森林，没有资格前往深层的世界。
+# Hunting Altar
+crafttweaker.hunting_altar_access_deny_0=魔晶！深层魔晶！我需要它！
+crafttweaker.hunting_altar_access_deny_1=不给我祭品，我也不给你你想要的东西！
+crafttweaker.hunting_altar_access_deny_2=没有祭品？那我什么也不做。
+crafttweaker.hunting_altar_access_ok_0=以屠杀孱弱的生命为乐，啧啧啧。
+crafttweaker.hunting_altar_access_ok_1=这样的敌人，如何？
+crafttweaker.hunting_altar_access_ok_2=哈哈！我喜欢的游戏开始了！

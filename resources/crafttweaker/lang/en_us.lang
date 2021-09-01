@@ -116,3 +116,10 @@ crafttweaker.grindstone_is_temporarily_banned.tooltip=§c§lDue to a serious bug
 crafttweaker.craft_it_for_hd.tooltip=§lCraft it, then you will be permitted to go deeper.
 crafttweaker.has_access_to_hd=You get the portal frame, now you have access to the deeper World.
 crafttweaker.cannot_go_to_hd=You have not conquered the Twilight Forest, so you are not permitted to go to the deeper world.
+# Hunting Altar
+crafttweaker.hunting_altar_access_deny_0=Gem! Gem of Deeper Realm! I need it!
+crafttweaker.hunting_altar_access_deny_1=No offering, no grace for you!
+crafttweaker.hunting_altar_access_deny_2=Have not got any offering? I will do nothing.
+crafttweaker.hunting_altar_access_ok_0=Always killing such boring weak creatures. Tut-tut.
+crafttweaker.hunting_altar_access_ok_1=How about these opponents for you?
+crafttweaker.hunting_altar_access_ok_2=Haha my favorite game starts!
