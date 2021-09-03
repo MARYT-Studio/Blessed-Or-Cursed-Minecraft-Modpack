@@ -10,8 +10,9 @@ import crafttweaker.util.Position3f;
 import crafttweaker.world.IBlockPos;
 
 // Configurations
-static distanceOfNormalMobs as int = 3;
-static distanceOfBosses as int = 7;
+static numberOfNormalMobs as int = 4;
+static distanceOfNormalMobs as int = 2;
+static distanceOfBosses as int = 3;
 
 static okayStrings as string[] = [
     "crafttweaker.hunting_altar_access_ok_0",
@@ -37,11 +38,12 @@ events.onPlayerInteractBlock(
                 var z = event.z;
                 // Particle command: /particle flame ~ ~ ~ 3 0 3 0 50 normal
                 server.commandManager.executeCommand(server, "particle flame ~"~x~" ~"~y~" ~"~z~" 3 0 3 0 50 normal "~player.name);
-                if(<contenttweaker:inner_gem> has item) {                  
+                if(<contenttweaker:inner_shard> has item) {                  
                     // Move player to other place
                     server.commandManager.executeCommand(server, "tp "~player.name~" ~ ~10 ~");
                     // Summon mobs
-                    if(world.random.nextFloat() < 0.3f) {
+                    var prob = world.random.nextFloat();
+                    if(prob < 0.4f) {
                         player.sendRichTextMessage(ITextComponent.fromTranslation(okayStrings[0]));
                         // At least 49 Magma cubes
                         for xOffset in 0 .. 7 {
@@ -51,27 +53,37 @@ events.onPlayerInteractBlock(
                             }
                         }
                     }
-                    else if(world.random.nextFloat() > 0.9f) {
+                    else if(prob > 0.8f) {
                         player.sendRichTextMessage(ITextComponent.fromTranslation(okayStrings[2]));
-                        for xOffset in 0 .. 2 {
-                            for zOffset in 0 .. 2 {
-                                var summonBlockPos as IBlockPos = Position3f.create(
-                                    (x - distanceOfBosses + distanceOfBosses * xOffset),
-                                    y + 2,
-                                    (z - distanceOfBosses + distanceOfBosses * zOffset)
-                                ).asBlockPos();
-                                <entity:abyssalcraft:shadowbeast>.spawnEntity(world, summonBlockPos);
-                            }
-                        }
+                        // Algorithms for summoning more than 1.
+                        // Currently unused.
+                        // for xOffset in 0 .. 2 {
+                        //     for zOffset in 0 .. 2 {
+                        //         var summonBlockPos as IBlockPos = Position3f.create(
+                        //             (x - distanceOfBosses + distanceOfBosses * xOffset),
+                        //             y + 2,
+                        //             (z - distanceOfBosses + distanceOfBosses * zOffset)
+                        //         ).asBlockPos();
+                        //         <entity:abyssalcraft:shadowbeast>.spawnEntity(world, summonBlockPos);
+                        //     }
+                        // }
+
+                        // Now we only summon 1 shadow beast.
+                        var xOffset as int = world.random.nextBoolean() ? distanceOfBosses :(0 - distanceOfBosses);
+                        var zOffset as int = world.random.nextBoolean() ? distanceOfBosses :(0 - distanceOfBosses);
+                        var summonBlockPos as IBlockPos = Position3f.create((x + xOffset), y, (z + zOffset)).asBlockPos();
+                        <entity:abyssalcraft:shadowbeast>.spawnEntity(world, summonBlockPos);
                     }
                     else {
                         player.sendRichTextMessage(ITextComponent.fromTranslation(okayStrings[1]));
-                        for xOffset in 0 .. 3 {
-                            for zOffset in 0 .. 3 {
+                        for xOffset in 0 .. numberOfNormalMobs {
+                            for zOffset in 0 .. numberOfNormalMobs {
                                 var summonBlockPos as IBlockPos = Position3f.create(
-                                    (x - distanceOfNormalMobs + distanceOfNormalMobs * xOffset),
-                                    y + 2,
-                                    (z - distanceOfNormalMobs + distanceOfNormalMobs * zOffset)
+                                    // 3 here should be replaced by an expression
+                                    (x - 3 + distanceOfNormalMobs * xOffset),
+                                    y,
+                                    // So should 3 here be
+                                    (z - 3 + distanceOfNormalMobs * zOffset)
                                 ).asBlockPos();
                                 <entity:sakura:samuraiillger>.spawnEntity(world, summonBlockPos);
                             }
