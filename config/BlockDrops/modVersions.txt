@@ -28,7 +28,6 @@
   "thaumcraft": "6.1.BETA26",
   "forge": "14.23.5.2855",
   "acintegration": "1.11.2",
-  "ruins": "17.2",
   "absentbydesign": "1.12.2-1.0.4",
   "slashblade_addon": "1.6.0",
   "twilightforest": "3.10.1013",
@@ -59,7 +58,7 @@
   "loottweaker": "0.3.0",
   "abyssalcraft": "1.10.3",
   "gravestone": "1.10.3",
-  "dcs_climate": "3.7.1",
+  "dcs_climate": "3.7.2",
   "FML": "8.0.99.99",
   "fancymenu": "2.1.0",
   "norecipebook": "1.2.1",
@@ -72,7 +71,7 @@
   "probe": "0.1.24",
   "dcs_asm": "2.1.0",
   "tofucraft": "0.1.0.9",
-  "dcs_lib": "3.7.0",
+  "dcs_lib": "3.7.1",
   "wailaharvestability": "1.1.12",
   "base": "3.14.0"
 }
