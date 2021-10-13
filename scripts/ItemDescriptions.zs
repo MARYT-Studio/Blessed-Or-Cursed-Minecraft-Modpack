@@ -1,4 +1,6 @@
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
 // Soldering Iron and Lemon Battery
 mods.jei.JEI.addDescription([<contenttweaker:soldering_iron>, <contenttweaker:lemon_battery>],
 [
@@ -33,11 +35,13 @@ mods.jei.JEI.addDescription(twilightItems, ["crafttweaker.twilight_items.desc"])
 val warpItems as IIngredient[] = [
     <thaumcraft:sanity_checker>,
     <thaumcraft:sanity_soap>,
-    <abyssalcraft:shoggothflesh>,
-    <abyssalcraft:shoggothflesh:1>,
-    <abyssalcraft:shoggothflesh:2>,
-    <abyssalcraft:shoggothflesh:3>,
-    <abyssalcraft:shoggothflesh:4>,
     <dcs_climate:dcs_food_antibiotic:7>
 ];
 mods.jei.JEI.addDescription(warpItems, ["crafttweaker.warp_items.desc"]);
+
+var i as int = 1;
+for flesh in <abyssalcraft:shoggothflesh>.definition.subItems
+{
+    mods.jei.JEI.addDescription(flesh, game.localize("crafttweaker.warp_items.desc") ~ flesh.displayName ~ game.localize("crafttweaker.warp_items_1.desc") ~ (i * 10) ~ game.localize("crafttweaker.warp_items_2.desc"));
+    i += 1;
+}

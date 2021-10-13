@@ -12,18 +12,12 @@ recipes.addShaped("sanchecker", <thaumcraft:sanity_checker>,
 );
 
 // Normal Warp removal ritual
-val shoggothFlesh as IItemStack[] = [
-    <abyssalcraft:shoggothflesh>,
-    <abyssalcraft:shoggothflesh:1>,
-    <abyssalcraft:shoggothflesh:2>,
-    <abyssalcraft:shoggothflesh:3>,
-    <abyssalcraft:shoggothflesh:4>
-];
-for i in 0 .. (shoggothFlesh.length - 1)
+var i as int = 1;
+for flesh in <abyssalcraft:shoggothflesh>.definition.subItems
 {
     recipes.addShapeless("wash_your_normal_warp" ~ i, <minecraft:rotten_flesh>,
     [
-        <dcs_climate:dcs_food_antibiotic:7>, shoggothFlesh[i]
+        <dcs_climate:dcs_food_antibiotic:7>, flesh
     ],
     function(out, ins, info){return out;},
     function(out,info,player)
@@ -32,9 +26,10 @@ for i in 0 .. (shoggothFlesh.length - 1)
         {
             server.commandManager.executeCommand(
                 server,
-                "thaum warp "~player.name~" add "~ (0 - (i + 1) * 5)
+                "thaum warp "~player.name~" add "~ (0 - i * 10)
             );
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.warp_removed"));
         }
     });
+    i += 1;
 }
