@@ -74,5 +74,10 @@ function(out,ins,info)
     }
 },
 // 配方动作
-null
-);
+function(out,info,player)
+{
+    if(!player.world.remote)
+    {
+        player.update({PlayerPersisted: {higherAutoPlayingThreshold : 1}});
+    }
+});

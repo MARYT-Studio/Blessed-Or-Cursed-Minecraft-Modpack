@@ -52,7 +52,18 @@ for book in allAbyssBooks
             [inputSkins[index], inputSkins[index], <contenttweaker:fourth_killcount_token>],
             [inputSkins[index], inputBooks[index], bookMaterial],
             [<contenttweaker:third_proudsoul_bottle>, bookMaterial, bookMaterial]
-        ]);
+        ],
+        function (out, ins, info) {return out;},
+        function (out, info, player)
+        {
+            if(firstAbyssBook.matches(book))
+            {
+                if(!player.world.remote)
+                {
+                    player.update({PlayerPersisted: {higherAutoPlayingThreshold : 2}});
+                }
+            }
+        });
     }
     index += 1;
 }
