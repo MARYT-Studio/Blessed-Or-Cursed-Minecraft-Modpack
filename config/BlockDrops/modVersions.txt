@@ -1,4 +1,5 @@
 {
+  "kiwi": "0.5.3.32",
   "blockdrops": "1.4.0",
   "ctgui": "1.0.0",
   "treechopper": "1.2.4",
@@ -62,6 +63,7 @@
   "FML": "8.0.99.99",
   "fancymenu": "2.2.2",
   "norecipebook": "1.2.1",
+  "cuisine": "0.5.22-build929",
   "appleskin": "1.0.14",
   "spawnercontrol": "1.6.3b",
   "chargers": "1.2.0.5",
