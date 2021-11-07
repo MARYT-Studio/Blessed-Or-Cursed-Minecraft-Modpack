@@ -78,6 +78,8 @@ function(out,info,player)
 {
     if(!player.world.remote)
     {
+        player.update({PlayerPersisted: {HasCraftedInfusedKey: 1}});
         player.update({PlayerPersisted: {higherAutoPlayingThreshold : 1}});
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.has_access_to_tf"));
     }
 });
