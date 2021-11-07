@@ -59,7 +59,7 @@ crafttweaker.bountiful_only.tooltip=只能从悬赏任务的奖励中获得。
 crafttweaker.soldering_iron_1.desc=烙铁用于焊接电路元件，制作电路板。
 crafttweaker.soldering_iron_2.desc=只有工作台合成的烙铁可以正常使用，
 crafttweaker.soldering_iron_3.desc=使用会消耗烙铁存储的电量，
-crafttweaker.soldering_iron_4.desc=使用前应当先用柚子电池充能。
+crafttweaker.soldering_iron_4.desc=使用前应当先用柠檬电池充能。
 
 crafttweaker.put_this_blade_with.desc=将此拔刀与
 crafttweaker.on_the_craftingtable.desc=置于工作台上，
