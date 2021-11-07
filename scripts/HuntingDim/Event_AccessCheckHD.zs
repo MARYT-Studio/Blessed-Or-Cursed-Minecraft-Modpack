@@ -1,8 +1,19 @@
 #loader crafttweaker reloadableevents
+import crafttweaker.event.PlayerPickupItemEvent;
 import crafttweaker.event.EntityTravelToDimensionEvent;
+
 import crafttweaker.player.IPlayer;
 import crafttweaker.text.ITextComponent;
-
+// Gain access by picking up the Infused Key
+events.onPlayerPickupItem(function(event as PlayerPickupItemEvent){
+    for value in kachingMap{
+        if(event.item.item.definition.id == "huntingdim:frame")
+        {
+            event.player.update({PlayerPersisted: {HasCraftedHDPortal: 1}});
+        }
+    }
+});
+// Access Checker
 events.onEntityTravelToDimension(
     function(event as EntityTravelToDimensionEvent) {
         // IEntity convert to IPlayer

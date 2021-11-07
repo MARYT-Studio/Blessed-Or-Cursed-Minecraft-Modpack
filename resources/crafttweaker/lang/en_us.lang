@@ -100,7 +100,7 @@ crafttweaker.dim53=The Dark Realm.
 
 # Tips for Twilight Forest
 crafttweaker.diamond_cannot_open_tf_portal.tooltip=Diamond cannot be used to build Twilight Forest Portal, use Magic-Infused Key instead.
-crafttweaker.twilight_items.desc=Combine Nature and Magic Shards with 300 Killcounts from Yamato and Sange, you will get Magic-Infused Key. Throwing it, instead of a diamond, into 2x2 water pool surrounded by flowers will open the portal to Twilight Forest.
+crafttweaker.twilight_items.desc=Combine Nature and Magic Shards with 300 Killcounts from Yamato and Sange, you will get Magic-Infused Key. Throwing it, instead of a diamond, into 2x2 water pool surrounded by flowers will open the portal to Twilight Forest. Only after you have crafted it or picked it up, can you pass the Twilight Forest Portal.
 
 # Warps
 crafttweaker.warp_removed=By performing this ritual, some amount of your warp is washed off.
@@ -115,7 +115,7 @@ crafttweaker.blue_steel_blade_is_useless.tooltip=§c§lThis item is useless, Ple
 crafttweaker.grindstone_is_temporarily_banned.tooltip=§c§lDue to a serious bug, we temporarily ban the Grind Stones.
 
 # Hunting Dim
-crafttweaker.craft_it_for_hd.tooltip=§lCraft it, then you will be permitted to go deeper.
+crafttweaker.craft_it_for_hd.tooltip=§lCraft it or pick it up, then you will be permitted to go deeper.
 crafttweaker.has_access_to_hd=You get the portal frame, now you have access to the deeper World.
 crafttweaker.cannot_go_to_hd=You have not conquered the Twilight Forest, so you are not permitted to go to the deeper world.
 # Hunting Altar
@@ -125,3 +125,7 @@ crafttweaker.hunting_altar_access_deny_2=Have not got any offering? I will do no
 crafttweaker.hunting_altar_access_ok_0=Always killing such boring weak creatures. Tut-tut.
 crafttweaker.hunting_altar_access_ok_1=How about these opponents for you?
 crafttweaker.hunting_altar_access_ok_2=Haha my favorite game starts!
+
+# Twilight Forest
+crafttweaker.has_access_to_hd=You get the Infused Key, now you have access to the deeper World.
+crafttweaker.cannot_go_to_tf=Only the person chosen by the Infused Key is permitted to see the darkness of Twilight Forest.
