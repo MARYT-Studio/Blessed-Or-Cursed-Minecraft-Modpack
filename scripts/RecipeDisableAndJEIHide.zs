@@ -68,18 +68,7 @@ val ItemNotToHide =
     
     // 作为砂轮的替代品，植物魔法的封印之布
     // 属于 TempFixes 的一部分
-    <botania:spellcloth>|
-    
-    // 玩家雅儿洁 Ayanami 喜欢的植魔草地
-    // 蕴魔土
-    <botania:enchantedsoil>|
-    // 颜色草地
-    <botania:altgrass:0>|
-    <botania:altgrass:1>|
-    <botania:altgrass:2>|
-    <botania:altgrass:3>|
-    <botania:altgrass:4>|
-    <botania:altgrass:5>;
+    <botania:spellcloth>;  
 
 // JEI Hide and recipe removal
 for modid in modidList
