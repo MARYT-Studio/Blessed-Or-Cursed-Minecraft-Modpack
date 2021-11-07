@@ -2,6 +2,8 @@
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemCondition;
 
+import crafttweaker.text.ITextComponent;
+
 // Variables claiming
 val killCountForTwilightKey as int = 300;
 
