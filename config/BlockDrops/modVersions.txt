@@ -28,7 +28,6 @@
   "thaumcraft": "6.1.BETA26",
   "forge": "14.23.5.2855",
   "acintegration": "1.11.2",
-  "ruins": "17.2",
   "absentbydesign": "1.12.2-1.0.4",
   "slashblade_addon": "1.6.0",
   "twilightforest": "3.10.1013",
