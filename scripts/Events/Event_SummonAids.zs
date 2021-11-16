@@ -44,8 +44,8 @@ events.onEntityLivingHurt(
         if(!world.remote && truSource instanceof IPlayer)
         {
             var truSource as IPlayer = truSource;
-            var mobBeingHurt = event.entityLivingBase; 
-            if(!world.remote && mobSummonCombat has mobBeingHurt.definition.name)
+            var mobBeingHurt = event.entityLivingBase;
+            if(!world.remote && !(mobBeingHurt instanceof IPlayer) && mobSummonCombat has mobBeingHurt.definition.name)
             {
                 if(world.random.nextFloat() < probEverySingleAttack)
                 {
@@ -68,7 +68,7 @@ events.onEntityLivingHurt(
                     combatMobs[typeNumber].spawnEntity(world, summonBlockPos);
                 }
             }
-            if(!world.remote && mobSummonRanged has mobBeingHurt.definition.name)
+            if(!world.remote && !(mobBeingHurt instanceof IPlayer) && mobSummonRanged has mobBeingHurt.definition.name)
             {
                 if(world.random.nextFloat() < probEverySingleAttack)
                 {

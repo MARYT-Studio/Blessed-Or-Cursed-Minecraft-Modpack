@@ -11,6 +11,9 @@ item.builderpack_wood.name=建筑师原木袋
 item.builderpack_stone.name=建筑师石材袋
 item.builderpack_concrete.name=建筑师混凝土袋
 
+item.contenttweaker.cuisine_sapling_pack.name=料理工艺树苗袋
+item.cuisine_sapling_pack.name=料理工艺树苗袋
+
 item.contenttweaker.first_killcount_token.name=初阶斩杀之证
 item.contenttweaker.second_killcount_token.name=二阶斩杀之证
 item.contenttweaker.third_killcount_token.name=三阶斩杀之证

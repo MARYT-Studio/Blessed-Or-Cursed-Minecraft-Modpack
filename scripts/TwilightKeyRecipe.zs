@@ -2,6 +2,8 @@
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemCondition;
 
+import crafttweaker.text.ITextComponent;
+
 // Variables claiming
 val killCountForTwilightKey as int = 300;
 
@@ -74,5 +76,12 @@ function(out,ins,info)
     }
 },
 // 配方动作
-null
-);
+function(out,info,player)
+{
+    if(!player.world.remote)
+    {
+        player.update({PlayerPersisted: {HasCraftedInfusedKey: 1}});
+        player.update({PlayerPersisted: {higherAutoPlayingThreshold : 1}});
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.has_access_to_tf"));
+    }
+});

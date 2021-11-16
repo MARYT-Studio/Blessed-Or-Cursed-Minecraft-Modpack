@@ -10,7 +10,7 @@ events.onBlockHarvestDrops(
             if((block.definition.id == "minecraft:leaves") || (block.definition.id == "minecraft:leaves2"))
             {
                 var player = event.player;
-                if(player.currentItem.name == "item.paper")
+                if(!isNull(player.currentItem) && player.currentItem.name == "item.paper")
                 {
                     player.currentItem.mutable().shrink(1);
                     player.give(<dcs_climate:dcs_silkworm>);

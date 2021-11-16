@@ -26,7 +26,6 @@ import crafttweaker.text.ITextComponent;
 // Constants claiming
 // Silverfish Counter Initial Number
 val silverfishSummoningOn as bool = true;
-val autoplayingThreshold as int = 20;
 val noAutoThreshold as int = 7;
 // The distance a player should move to avoid being regarded as auto-playing
 val distance as float = 3.0f;
@@ -50,12 +49,19 @@ events.onEntityLivingDeath(
     {
         var world as IWorld = event.entity.world;
         var dmgsource = event.damageSource.trueSource;
+        // This number will be changed in codes below,
+        // so it should be a var
+        var autoplayingThreshold as int = 15;
         if(dmgsource instanceof IPlayer)
         {
             var player as IPlayer = dmgsource;
             // Initialize a player's position.
             if(isNull(player.data.last_attack_xpos)){player.update({last_attack_xpos: 0.0f});}
             if(isNull(player.data.last_attack_zpos)){player.update({last_attack_zpos: 0.0f});}
+            if(!isNull(player.data.PlayerPersisted) && !isNull(player.data.PlayerPersisted.higherAutoPlayingThreshold))
+            {
+                autoplayingThreshold = player.data.PlayerPersisted.higherAutoPlayingThreshold.asInt() == 1 ? 30 : 45;
+            }
             var lastAttackXpos as float = player.data.last_attack_xpos.asFloat();
             var lastAttackZpos as float = player.data.last_attack_zpos.asFloat();
             
@@ -96,8 +102,6 @@ events.onEntityLivingDeath(
             if(player.data.playerMovedCounter.asInt() >= noAutoThreshold)
             {
                 // Test Print
-                // player.sendMessage("检测到你没有在挂机，蠹虫计数器归零。");
-
                 player.update({silverfishCounter: 0});
                 player.update({playerMovedCounter: 0});
             }
