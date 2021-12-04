@@ -17,3 +17,4 @@ $ cat .gitignore
 !/PlanAndProgress.md
 scripts/.VSCodeCounter/
 resources/crafttweaker/lang/.VSCodeCounter/
+scripts/MARYT_SERVER/
