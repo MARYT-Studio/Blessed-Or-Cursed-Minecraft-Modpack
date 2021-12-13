@@ -1,0 +1,21 @@
+{
+    "SampleRecipeID1 (Any string.)": {
+        "recipe_type": "ADD",
+        "output_fluid": {
+            "amount": 900,
+            "fluid": "sample_fluid_output"
+        },
+        "input_fluid": {
+            "amount": 1000,
+            "fluid": "sample_fluid_input"
+        },
+        "number_of_days": 30
+    },
+    "SampleRecipeID2": {
+        "recipe_type": "REMOVE",
+        "input_fluid": {
+            "amount": 500,
+            "fluid": "sample_fluid_input"
+        }
+    }
+}

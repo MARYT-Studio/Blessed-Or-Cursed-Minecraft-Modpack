@@ -1,0 +1,21 @@
+{
+    "SampleRecipeID1 (Any string.)": {
+        "recipe_type": "ADD",
+        "output_primary": {
+            "item": "samplemod:sample_output:metadata"
+        },
+        "output_secondary": {
+            "item": "samplemod:sample_secondary:0 (removable)",
+            "chance": 0.15
+        },
+        "input": {
+            "ore_dict": "ore_dict name is acceptable as input."
+        }
+    },
+    "SampleRecipeID2": {
+        "recipe_type": "REMOVE",
+        "input": {
+            "item": "samplemod:remove_input:0"
+        }
+    }
+}

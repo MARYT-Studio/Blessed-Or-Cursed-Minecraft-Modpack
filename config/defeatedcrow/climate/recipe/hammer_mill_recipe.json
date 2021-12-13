@@ -1,0 +1,32 @@
+{
+    "SampleRecipeID1 (Any string.)": {
+        "recipe_type": "ADD",
+        "output_primary": {
+            "item": "samplemod:sample_output:metadata"
+        },
+        "output_secondary": {
+            "item": "samplemod:sample_secondary:0 (removable)",
+            "chance": 0.15
+        },
+        "output_tertiary": {
+            "item": "samplemod:sample_tertiary:0 (removable)",
+            "chance": 0.15
+        },
+        "catalyst": {
+            "item": "samplemod:sample_catalyst:0"
+        },
+        "output_fluid": {
+            "amount": 500,
+            "fluid": "sample_fluidID (removable)"
+        },
+        "input": {
+            "ore_dict": "ore_dict name is acceptable as input."
+        }
+    },
+    "SampleRecipeID2": {
+        "recipe_type": "REMOVE",
+        "input": {
+            "item": "samplemod:remove_input:0"
+        }
+    }
+}

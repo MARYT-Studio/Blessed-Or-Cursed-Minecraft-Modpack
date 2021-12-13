@@ -1,0 +1,19 @@
+{
+    "SampleRecipeID1 (Any string.)": {
+        "recipe_type": "ADD",
+        "output": {
+            "item": "samplemod:sample_output:metadata",
+            "count": 4
+        },
+        "input": {
+            "count": 2,
+            "ore_dict": "ore_dict name is acceptable as input."
+        }
+    },
+    "SampleRecipeID2": {
+        "recipe_type": "REMOVE",
+        "input": {
+            "item": "samplemod:remove_input:0"
+        }
+    }
+}

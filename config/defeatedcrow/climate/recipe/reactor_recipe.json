@@ -1,0 +1,54 @@
+{
+    "SampleRecipeID1 (Any string.)": {
+        "recipe_type": "ADD",
+        "output_primary": {
+            "item": "samplemod:sample_output:metadata (removable)"
+        },
+        "output_secondary": {
+            "item": "samplemod:sample_secondary:0 (removable)",
+            "chance": 0.5
+        },
+        "output_fluid_primary": {
+            "amount": 1000,
+            "fluid": "sample_fluid_output (removable)"
+        },
+        "output_fluid_secondary": {
+            "amount": 100,
+            "fluid": "sample_fluid_output_secondary (removable)"
+        },
+        "climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
+        "input_fluid_primary": {
+            "amount": 1000,
+            "fluid": "sample_fluid_input (removable)"
+        },
+        "input_fluid_secondary": {
+            "amount": 500,
+            "fluid": "sample_fluid_input_secondary (removable)"
+        },
+        "catalyst": {
+            "item": "samplemod:sample_catalyst:0"
+        },
+        "input": [
+            "samplemod:sample_output:0",
+            "ore_dict name is acceptable as input.",
+            "Up to 6 inputs can be added."
+        ],
+        "comment": "At a minimum, either an item or a fluid is required for input."
+    },
+    "SampleRecipeID2": {
+        "recipe_type": "REMOVE",
+        "input": {
+            "item": "samplemod:remove_input:0 (removable)"
+        },
+        "input_fluid_primary": {
+            "amount": 1000,
+            "fluid": "sample_fluid_input (removable)"
+        },
+        "input_fluid_secondary": {
+            "amount": 200,
+            "fluid": "sample_fluid_input_secondary (removable)"
+        },
+        "climate_temperature": "KILN (If this is removed, it will be forced to NORMAL.)",
+        "comment": "At a minimum, either an item or a fluid is required for input."
+    }
+}
