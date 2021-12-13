@@ -70,25 +70,25 @@ val twilightKey = <contenttweaker:magic_infused_key>;
 twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_0.text"));
 twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_1.text"));
 
-val woodPack = <contenttweaker:builderpack_wood>;
-val woolPack = <contenttweaker:builderpack_wool>;
-val stonePack = <contenttweaker:builderpack_stone>;
-val concretePack = <contenttweaker:builderpack_concrete>;
-val builderPack = <contenttweaker:builderpack_all>;
-val packsTooltip as string[] = [
-    "contenttweaker.wood_pack.tooltip",
-    "contenttweaker.wool_pack.tooltip",
-    "contenttweaker.stone_pack.tooltip",
-    "contenttweaker.concrete_pack.tooltip",
-    "contenttweaker.builder_pack.tooltip"
-];
-val Packs as IItemStack[] = [woodPack, woolPack, stonePack, concretePack, builderPack];
-index = 0;
-for pack in Packs
-{
-    pack.addTooltip(game.localize(packsTooltip[index]));
-    index += 1;
-}
+// val woodPack = <contenttweaker:builderpack_wood>;
+// val woolPack = <contenttweaker:builderpack_wool>;
+// val stonePack = <contenttweaker:builderpack_stone>;
+// val concretePack = <contenttweaker:builderpack_concrete>;
+// val builderPack = <contenttweaker:builderpack_all>;
+// val packsTooltip as string[] = [
+//     "contenttweaker.wood_pack.tooltip",
+//     "contenttweaker.wool_pack.tooltip",
+//     "contenttweaker.stone_pack.tooltip",
+//     "contenttweaker.concrete_pack.tooltip",
+//     "contenttweaker.builder_pack.tooltip"
+// ];
+// val Packs as IItemStack[] = [woodPack, woolPack, stonePack, concretePack, builderPack];
+// index = 0;
+// for pack in Packs
+// {
+//     pack.addTooltip(game.localize(packsTooltip[index]));
+//     index += 1;
+// }
 
 // Diamond cannot open Twilight Forest Portal
 <minecraft:diamond>.addTooltip(game.localize("crafttweaker.diamond_cannot_open_tf_portal.tooltip"));
