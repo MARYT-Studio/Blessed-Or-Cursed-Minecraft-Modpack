@@ -100,3 +100,6 @@ twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_1
 <huntingdim:frame>.withTag({BaseBlock: {id: "abyssalcraft:dltlog", Count: 1 as byte, Damage: 0 as short}}).addTooltip(game.localize("crafttweaker.craft_it_for_hd.tooltip"));
 <contenttweaker:inner_shard>.addTooltip(game.localize("contenttweaker.inner_shard.tooltip"));
 <contenttweaker:inner_gem>.addTooltip(game.localize("contenttweaker.inner_gem.tooltip"));
+
+<contenttweaker:humiliation_from_jzahar>.addTooltip(game.localize("contenttweaker.humiliation_from_jzahar_1.tooltip"));
+<contenttweaker:humiliation_from_jzahar>.addTooltip(game.localize("contenttweaker.humiliation_from_jzahar_2.tooltip"));

@@ -14,7 +14,6 @@ item.builderpack_concrete.name=Builder's Concrete Pack
 item.contenttweaker.cuisine_sapling_pack.name=Cuisine Sapling Pack
 item.cuisine_sapling_pack.name=Cuisine Sapling Pack
 
-
 item.contenttweaker.first_killcount_token.name=Slayers' Badge I
 item.contenttweaker.second_killcount_token.name=Slayers' Badge II
 item.contenttweaker.third_killcount_token.name=Slayers' Badge III
@@ -69,3 +68,8 @@ item.contenttweaker.inner_gem.name=Gem of Deeper Realm
 
 contenttweaker.inner_shard.tooltip=Drops from Abyssal Zombies and Depth Ghouls §lin the Hunting Dimension§r.
 contenttweaker.inner_gem.tooltip=Contains the power to reveal the nature of the Abyss.
+
+item.contenttweaker.humiliation_from_jzahar.name=Taking the Jzahary
+item.humiliation_from_jzahar.name=Taking the Jzahary
+contenttweaker.humiliation_from_jzahar_1.tooltip=§e§lAll right, all right, you crying baby!
+contenttweaker.humiliation_from_jzahar_2.tooltip=§e§lEat this and your exp will back.

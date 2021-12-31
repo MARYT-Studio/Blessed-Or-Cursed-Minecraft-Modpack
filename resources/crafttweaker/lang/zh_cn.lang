@@ -129,3 +129,13 @@ crafttweaker.hunting_altar_access_ok_2=哈哈！我喜欢的游戏开始了！
 # Twilight Forest
 crafttweaker.has_access_to_tf=你得到了沾满魔力的铜钥匙，现在你可以去往更深层的世界。
 crafttweaker.cannot_go_to_tf=只有沾满魔力的铜钥匙选中之人，可以得见深邃黑暗的暮色森林。
+
+# Special Bosses
+crafttweaker.jzahar_boss_warning=警告
+crafttweaker.jzahar_boss_type_1=经验吞噬者扎哈尔 - 贪
+crafttweaker.exp_devourer_attacking=§c哈哈哈哈哈！孱弱的凡人，我要夺走你最后一点力量！
+crafttweaker.exp_devourer_attacking_not_enough=§c§l再也站不起来了吗？那我们下次再见！
+crafttweaker.exp_devourer_hurt=§6即使是碰到我你也要付出代价，你逃不出我的手掌心！
+crafttweaker.exp_devourer_hurt_not_enough=§6§l已经没有东西供我榨取了吗？那我就不在你身上浪费时间了！
+crafttweaker.exp_devourer_player_killed=§e§l在直面我之间，你本该更加强大。
+crafttweaker.exp_devourer_jzahar_killed=§e§l我相信我们很快就会再见面，哈哈哈哈哈！

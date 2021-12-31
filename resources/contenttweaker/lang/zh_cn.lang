@@ -68,3 +68,8 @@ item.contenttweaker.inner_gem.name=深层魔晶
 
 contenttweaker.inner_shard.tooltip=从§l狩猎世界中的§r深渊僵尸和深渊食尸鬼处掉落。
 contenttweaker.inner_gem.tooltip=蕴含揭示深渊本质的强大力量。
+
+item.contenttweaker.humiliation_from_jzahar.name=扎哈尔的羞辱
+item.humiliation_from_jzahar.name=扎哈尔的羞辱
+contenttweaker.humiliation_from_jzahar_1.tooltip=§e§l好啦，好啦，哭鼻子的小孩！
+contenttweaker.humiliation_from_jzahar_2.tooltip=§e§l把这个吃下去，你的经验值就回来啦。

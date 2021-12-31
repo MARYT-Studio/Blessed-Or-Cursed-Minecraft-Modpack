@@ -129,3 +129,13 @@ crafttweaker.hunting_altar_access_ok_2=Haha my favorite game starts!
 # Twilight Forest
 crafttweaker.has_access_to_tf=You get the Infused Key, now you have access to the deeper World.
 crafttweaker.cannot_go_to_tf=Only the person chosen by the Infused Key is permitted to see the darkness of Twilight Forest.
+
+# Special Bosses
+crafttweaker.jzahar_boss_warning=Warning
+crafttweaker.jzahar_boss_type_1=Exp Devourer Jzahar - Greed
+crafttweaker.exp_devourer_attacking=§cMwahahahah! You weak mortal, I will absorb your last strength!
+crafttweaker.exp_devourer_attacking_not_enough=§c§lCan't stand up anymore? See you next time!
+crafttweaker.exp_devourer_hurt=§6Touching me is dangerous, you can't escape from my power!
+crafttweaker.exp_devourer_hurt_not_enough=§6§lLeaving nothing else for me? I won't waste my time on you!
+crafttweaker.exp_devourer_player_killed=§e§lYou should have been more stronger to stand in front of me.
+crafttweaker.exp_devourer_jzahar_killed=§e§lI believe we will meet next time soon, Mwahahahah!

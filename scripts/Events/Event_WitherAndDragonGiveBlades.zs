@@ -3,6 +3,7 @@
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingDeathEvent;
 import crafttweaker.player.IPlayer;
+import crafttweaker.data.IData;
 
 // Other needed packages
 import crafttweaker.item.IItemStack;
@@ -16,11 +17,14 @@ events.onEntityLivingDeath(
         if(!event.entity.world.remote && (event.damageSource.trueSource instanceof IPlayer)) {
             var player as IPlayer = event.damageSource.trueSource;
             if(!(event.entity instanceof IPlayer)) {
-                if("WitherBoss" has event.entity.definition.name) {
-                    player.give(sanhua);   
+                var data as IData = player.data;
+                if("WitherBoss" has event.entity.definition.name && isNull(data.PlayerPersisted.hasWitherBlade)) {
+                    player.give(sanhua);
+                    player.update({PlayerPersisted: {hasWitherBlade: 1}});
                 }
-                else if("EnderDragon" has event.entity.definition.name) {
+                else if("EnderDragon" has event.entity.definition.name && isNull(data.PlayerPersisted.hasDragonBlade)) {
                     player.give(yanmodao);
+                    player.update({PlayerPersisted: {hasDragonBlade: 1}});
                 }
             }
         }

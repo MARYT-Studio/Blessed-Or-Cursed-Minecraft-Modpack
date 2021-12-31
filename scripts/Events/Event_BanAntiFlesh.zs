@@ -10,7 +10,6 @@ events.onPlayerRightClickItem(
                 event.cancel();
             }
         }
-        // if(antiFood has event.item){event.cancel();}
         if(<abyssalcraft:anticorbone> has event.item) {
             event.item.mutable().shrink(1);
             event.player.give(<abyssalcraft:antibone>);
