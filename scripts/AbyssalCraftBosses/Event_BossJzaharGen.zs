@@ -12,7 +12,7 @@ events.onEntityJoinWorld(
     function(event as EntityJoinWorldEvent) {
         if(!event.world.remote) {
             if(!event.entity instanceof IPlayer && event.entity.definition.id == "abyssalcraft:jzahar") { // if a Jzahar is generated
-                if(true || event.world.random.nextInt(3) == 0) { // 1/3 Jzahar is boss
+                if(event.world.random.nextInt(3) == 0) { // 1/3 Jzahar is boss
                     var jzahar as IEntityLivingBase = event.entity;
 
                     jzahar.getAttribute("generic.maxHealth").setBaseValue(600.0f); // Set its HP higher
