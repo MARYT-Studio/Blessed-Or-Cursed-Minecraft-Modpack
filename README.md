@@ -1,5 +1,5 @@
 # Blessed-Or-Cursed-Minecraft-Modpack
-Repo for all resources of Blessed or Cursed: Tour to Infinite Power, a Minecraft Modpack.
+Repo for all resources of Blessed or Cursed: Expedition to Infinite Force, a Minecraft Modpack.
 
 This modpack contains opensource font resources:
 
@@ -9,11 +9,7 @@ The 2 font files are **not included** in this repo, they are redistributed with 
 
 All Rights Reserved.
 
-本仓库用于存放 Minecraft 模组整合包
-
-祝福或诅咒：追寻无限力量之旅
-
-的魔改文件。
+本仓库用于存放 Minecraft 模组整合包《祝福或诅咒：无限力量之征》的魔改文件。
 
 本整合包嵌入了开源字体 [Source Sans 3 Light](https://github.com/adobe-fonts/source-sans/blob/release/LICENSE.md) 和 [Source Han Sans VF](https://github.com/adobe-fonts/source-han-sans/blob/master/LICENSE.txt)，点击链接查看开源协议。
 
