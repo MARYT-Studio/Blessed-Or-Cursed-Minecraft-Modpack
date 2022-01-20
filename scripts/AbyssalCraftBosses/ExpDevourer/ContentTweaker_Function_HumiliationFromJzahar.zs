@@ -27,9 +27,11 @@ humiliation.onItemUseFinish = function(stack, world, item_user){
     if(!world.remote && item_user instanceof IPlayer)
     {        
         var player as IPlayer = item_user;
-        player.xp = player.data.PlayerPersisted.CurrentXP.asInt();
-        player.update({PlayerPersisted: {CurrentXP: -1}});
-        return <item:minecraft:egg>;
+        if(!(isNull(player.data)) && !(isNull(player.data.PlayerPersisted)) && !(isNull(player.data.PlayerPersisted.CurrentXP))) {
+            player.xp = player.data.PlayerPersisted.CurrentXP.asInt();
+            player.update({PlayerPersisted: {CurrentXP: -1}});
+            return <item:minecraft:egg>;
+        }        
     }
     return stack;
 };
