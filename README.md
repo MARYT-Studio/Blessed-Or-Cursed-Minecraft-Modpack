@@ -7,7 +7,7 @@ This modpack contains opensource font resources:
 
 The 2 font files are **not included** in this repo, they are redistributed with CurseForge modpack.
 
-All Rights Reserved.
+This project is an open-source project under the MIT License.
 
 本仓库用于存放 Minecraft 模组整合包《祝福或诅咒：无限力量之征》的魔改文件。
 
@@ -15,4 +15,4 @@ All Rights Reserved.
 
 本仓库 **并不包含** 这两个字体文件，字体文件仅随 CurseForge 整合包分发。
 
-本仓库下的所有文件均保留所有权利。
+本仓库依照 MIT 协议开源。
