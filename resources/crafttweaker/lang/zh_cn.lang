@@ -139,3 +139,6 @@ crafttweaker.exp_devourer_hurt=§6即使是碰到我你也要付出代价，你�
 crafttweaker.exp_devourer_hurt_not_enough=§6§l已经没有东西供我榨取了吗？那我就不在你身上浪费时间了！
 crafttweaker.exp_devourer_player_killed=§e§l在直面我之间，你本该更加强大。
 crafttweaker.exp_devourer_jzahar_killed=§e§l我相信我们很快就会再见面，哈哈哈哈哈！
+
+# SlashBlade Death Info fix
+death.attack.sharpness_blade=锋利的剑斩断了它的敌人。

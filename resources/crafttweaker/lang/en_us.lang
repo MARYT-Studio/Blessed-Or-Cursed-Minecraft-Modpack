@@ -139,3 +139,6 @@ crafttweaker.exp_devourer_hurt=§6Touching me is dangerous, you can't escape fro
 crafttweaker.exp_devourer_hurt_not_enough=§6§lLeaving nothing else for me? I won't waste my time on you!
 crafttweaker.exp_devourer_player_killed=§e§lYou should have been more stronger to stand in front of me.
 crafttweaker.exp_devourer_jzahar_killed=§e§lI believe we will meet next time soon, Mwahahahah!
+
+# SlashBlade Death Info fix
+death.attack.sharpness_blade=Sharp Blade has killed its enemy.
