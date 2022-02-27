@@ -70,26 +70,6 @@ val twilightKey = <contenttweaker:magic_infused_key>;
 twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_0.text"));
 twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_1.text"));
 
-// val woodPack = <contenttweaker:builderpack_wood>;
-// val woolPack = <contenttweaker:builderpack_wool>;
-// val stonePack = <contenttweaker:builderpack_stone>;
-// val concretePack = <contenttweaker:builderpack_concrete>;
-// val builderPack = <contenttweaker:builderpack_all>;
-// val packsTooltip as string[] = [
-//     "contenttweaker.wood_pack.tooltip",
-//     "contenttweaker.wool_pack.tooltip",
-//     "contenttweaker.stone_pack.tooltip",
-//     "contenttweaker.concrete_pack.tooltip",
-//     "contenttweaker.builder_pack.tooltip"
-// ];
-// val Packs as IItemStack[] = [woodPack, woolPack, stonePack, concretePack, builderPack];
-// index = 0;
-// for pack in Packs
-// {
-//     pack.addTooltip(game.localize(packsTooltip[index]));
-//     index += 1;
-// }
-
 // Diamond cannot open Twilight Forest Portal
 <minecraft:diamond>.addTooltip(game.localize("crafttweaker.diamond_cannot_open_tf_portal.tooltip"));
 
@@ -103,3 +83,18 @@ twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_1
 
 <contenttweaker:humiliation_from_jzahar>.addTooltip(game.localize("contenttweaker.humiliation_from_jzahar_1.tooltip"));
 <contenttweaker:humiliation_from_jzahar>.addTooltip(game.localize("contenttweaker.humiliation_from_jzahar_2.tooltip"));
+
+val ic2_armor as IItemStack[] = [<ic2:nano_boots:*>,
+    <ic2:nano_chestplate:*>,
+    <ic2:nano_helmet:*>,
+    <ic2:nano_leggings:*>,
+    <ic2:quantum_boots:*>,
+    <ic2:quantum_chestplate:*>,
+    <ic2:quantum_helmet:*>,
+    <ic2:quantum_leggings:*>];
+for armor in ic2_armor {
+    armor.addTooltip(game.localize("crafttweaker.ic2_armor_1.tooltip"));
+    armor.addTooltip(game.localize("crafttweaker.ic2_armor_2.tooltip"));
+    armor.addTooltip(game.localize("crafttweaker.ic2_armor_3.tooltip"));
+    armor.addTooltip(game.localize("crafttweaker.ic2_armor_4.tooltip"));
+}

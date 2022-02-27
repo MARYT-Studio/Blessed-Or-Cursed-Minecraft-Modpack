@@ -142,3 +142,9 @@ crafttweaker.exp_devourer_jzahar_killed=§e§lI believe we will meet next time s
 
 # SlashBlade Death Info fix
 death.attack.sharpness_blade=Sharp Blade has killed its enemy.
+
+# IC2 Armor
+crafttweaker.ic2_armor_1.tooltip=Brought by alien mobs that only come to the Earth on §6Halloween§l.
+crafttweaker.ic2_armor_2.tooltip=I have no idea about how to craft it,
+crafttweaker.ic2_armor_3.tooltip=But I have a vague feeling that
+crafttweaker.ic2_armor_4.tooltip=it can be repaired with the power of the §c§lAbyss§r.

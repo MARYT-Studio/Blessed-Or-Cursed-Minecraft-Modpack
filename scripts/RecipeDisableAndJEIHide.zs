@@ -17,6 +17,16 @@ val ItemNotToHide =
     <ic2:resource:2>| //铅矿石
     <ic2:dust:10>|    //铅粉
     <ic2:ingot:3>|    //铅锭
+
+    // 可以在万圣节获得的工业护甲套装
+    <ic2:nano_boots:*>|
+    <ic2:nano_chestplate:*>|
+    <ic2:nano_helmet:*>|
+    <ic2:nano_leggings:*>|
+    <ic2:quantum_boots:*>|
+    <ic2:quantum_chestplate:*>|
+    <ic2:quantum_helmet:*>|
+    <ic2:quantum_leggings:*>|
     
     //琥珀系列
     <thaumcraft:amber>| 

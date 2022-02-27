@@ -142,3 +142,9 @@ crafttweaker.exp_devourer_jzahar_killed=§e§l我相信我们很快就会再见�
 
 # SlashBlade Death Info fix
 death.attack.sharpness_blade=锋利的剑斩断了它的敌人。
+
+# IC2 Armor
+crafttweaker.ic2_armor_1.tooltip=只在§6万圣节§7期间造访地球的外星怪物留下的东西。
+crafttweaker.ic2_armor_2.tooltip=我并不知道如何制作一件这样的东西；
+crafttweaker.ic2_armor_3.tooltip=但我隐约感觉到，
+crafttweaker.ic2_armor_4.tooltip=借助来自§c§l深渊§7的力量，可以修复它。
