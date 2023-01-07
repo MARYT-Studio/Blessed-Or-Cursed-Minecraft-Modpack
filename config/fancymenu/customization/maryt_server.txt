@@ -15,10 +15,10 @@ customization {
 
 customization {
   identifier = %id=400322%
-  orientation = top-left
-  x = 97
+  orientation = mid-centered
+  x = -128
   action = movebutton
-  y = 129
+  y = 9
 }
 
 customization {
@@ -49,10 +49,10 @@ customization {
 
 customization {
   identifier = %id=400382%
-  orientation = top-left
-  x = 150
+  orientation = mid-centered
+  x = -54
   action = movebutton
-  y = 156
+  y = 36
 }
 
 customization {
@@ -83,10 +83,10 @@ customization {
 
 customization {
   identifier = %id=502382%
-  orientation = top-left
-  x = 115
+  orientation = mid-centered
+  x = -96
   action = movebutton
-  y = 180
+  y = 62
 }
 
 customization {
@@ -117,10 +117,10 @@ customization {
 
 customization {
   identifier = %id=376382%
-  orientation = top-left
-  x = 93
+  orientation = mid-centered
+  x = -118
   action = movebutton
-  y = 180
+  y = 62
 }
 
 customization {
@@ -138,10 +138,10 @@ customization {
 
 customization {
   identifier = %id=400298%
-  orientation = top-left
-  x = 97
+  orientation = mid-centered
+  x = -129
   action = movebutton
-  y = 103
+  y = -13
 }
 
 customization {
@@ -172,10 +172,10 @@ customization {
 
 customization {
   identifier = %id=400346%
-  orientation = top-left
-  x = 91
+  orientation = mid-centered
+  x = -134
   action = movebutton
-  y = 156
+  y = 36
 }
 
 customization {
