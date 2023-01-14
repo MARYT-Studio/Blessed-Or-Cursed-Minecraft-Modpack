@@ -94,11 +94,11 @@ var bookType as int = 0;
 for abyssbook in allAbyssBooksWithoutNBT
 {
     recipes.addShapeless(
-        // 配方名称
+        // \u914D\u65B9\u540D\u79F0
         "abyssal_ingot"~bookType,
-        // 输出物品
+        // \u8F93\u51FA\u7269\u54C1
         AbyssalIngot,
-        // 输入材料
+        // \u8F93\u5165\u6750\u6599
         [
             abyssbook.marked("book").transformNew
             (
@@ -126,7 +126,7 @@ for abyssbook in allAbyssBooksWithoutNBT
             HACCubes
 
         ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info)
         {
             var bookNBT as IData = ins.book.tag;
@@ -151,7 +151,7 @@ for abyssbook in allAbyssBooksWithoutNBT
                 }
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
     );
     bookType += 1;

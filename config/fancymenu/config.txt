@@ -16,6 +16,7 @@ I:defaultguiscale = '-1';
 
 ##[customization]
 
+B:advancedmode = 'false';
 B:showcustomizationbuttons = 'false';
 
 
@@ -46,6 +47,7 @@ B:allowgameintroskip = 'true';
 S:loadinganimationcolor = '#E22837';
 B:showanimationloadingstatus = 'true';
 S:gameintroanimation = '';
+B:preloadanimations = 'true';
 S:customgameintroskiptext = '';
 
 
