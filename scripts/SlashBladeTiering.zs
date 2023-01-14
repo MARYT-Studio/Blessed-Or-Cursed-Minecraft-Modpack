@@ -19,15 +19,15 @@ val T3HammerDamage as int = 10;
 val T4HammerDamage as int = 250;
 
 // Killcount Token Base Item
-val firstKillCountTokenBase = <minecraft:iron_ingot>; // 原版铁锭
-val secondKillCountTokenBase = <dcs_climate:dcs_ingot:3>; // HAC 银锭
-val thirdKillCountTokenBase = <contenttweaker:third_killcount_token_base>; //占位物品，有待修改
-val fourthKillCountTokenBase = <contenttweaker:fourth_killcount_token_base>; //占位物品，有待修改
+val firstKillCountTokenBase = <minecraft:iron_ingot>; // \u539F\u7248\u94C1\u952D
+val secondKillCountTokenBase = <dcs_climate:dcs_ingot:3>; // HAC \u94F6\u952D
+val thirdKillCountTokenBase = <contenttweaker:third_killcount_token_base>; //\u5360\u4F4D\u7269\u54C1\uFF0C\u6709\u5F85\u4FEE\u6539
+val fourthKillCountTokenBase = <contenttweaker:fourth_killcount_token_base>; //\u5360\u4F4D\u7269\u54C1\uFF0C\u6709\u5F85\u4FEE\u6539
 
 // Proudsoul Bottle Base Item
 val firstProudSoulBottleBase = <minecraft:glass_bottle>;
 val secondProudSoulBottleBase = <minecraft:experience_bottle>;
-val thirdProudSoulBottleBase = <contenttweaker:third_proudsoul_bottle_base>; //占位物品，有待修改
+val thirdProudSoulBottleBase = <contenttweaker:third_proudsoul_bottle_base>; //\u5360\u4F4D\u7269\u54C1\uFF0C\u6709\u5F85\u4FEE\u6539
 
 // Material variables claiming and tooltip adding
 // Killcount Tokens
@@ -192,11 +192,11 @@ for SlashBladeTier in T1_allowed_SlashBlades
     for hammer in T1_allowed_hammers
     {
         recipes.addShapeless(
-        // 配方名称
+        // \u914D\u65B9\u540D\u79F0
         "T1_killcount_extracting"~T1recipeNumber,
-        // 输出物品
+        // \u8F93\u51FA\u7269\u54C1
         firstKillcountToken,
-        // 输入材料
+        // \u8F93\u5165\u6750\u6599
         [
             SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew
             (
@@ -217,7 +217,7 @@ for SlashBladeTier in T1_allowed_SlashBlades
             hammer.anyDamage().transformDamage(),
             firstKillCountTokenBase
         ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info)
         {
             var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
@@ -231,7 +231,7 @@ for SlashBladeTier in T1_allowed_SlashBlades
                 return slashBladeKillCount >= firstKillCountNumber ? out : null;
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
         );
     T1recipeNumber = T1recipeNumber + 1; 
@@ -246,11 +246,11 @@ for SlashBladeTier in T2_allowed_SlashBlades{
 for hammer in T2_allowed_hammers
 {
     recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T2_killcount_extracting"~T2recipeNumber,
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     secondKillcountToken,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
     SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew
     (
@@ -271,7 +271,7 @@ for hammer in T2_allowed_hammers
     hammer.anyDamage().transformDamage(),
     secondKillCountTokenBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info)
     {
     var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
@@ -285,17 +285,17 @@ for hammer in T2_allowed_hammers
         return slashBladeKillCount >= secondKillCountNumber ? out : null;
     }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
     );
 
     // First Proudsoul Extracting
     recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T2_proudsoul_extracting"~T2recipeNumber,
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     firstProudsoulBottle,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
     SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew
     (
@@ -316,7 +316,7 @@ for hammer in T2_allowed_hammers
     hammer.anyDamage().transformDamage(),
     firstProudSoulBottleBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info)
     {
     var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
@@ -330,7 +330,7 @@ for hammer in T2_allowed_hammers
         return slashBladeProudSoul >= firstProudsoulNumber ? out : null;
     }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
     );
     T2recipeNumber = T2recipeNumber + 1;
@@ -341,11 +341,11 @@ for hammer in T2_allowed_hammers
 var T3recipeNumber as int = 1;
 for SlashBladeTier in T3_allowed_SlashBlades{
 recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T3_killcount_extracting"~T3recipeNumber,
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     thirdKillcountToken,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew
         (
@@ -366,7 +366,7 @@ recipes.addShapeless(
         T3Hammer.anyDamage().transformDamage(T3HammerDamage),
         thirdKillCountTokenBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info)
     {
         var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
@@ -380,17 +380,17 @@ recipes.addShapeless(
             return slashBladeKillCount >= thirdKillCountNumber ? out : null;
         }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
 );
 
 // Second Proudsoul Extracting
 recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T3_proudsoul_extracting"~T3recipeNumber,
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     secondProudsoulBottle,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew
         (
@@ -411,7 +411,7 @@ recipes.addShapeless(
         T3Hammer.anyDamage().transformDamage(T3HammerDamage),
         secondProudSoulBottleBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info)
     {
         var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
@@ -425,7 +425,7 @@ recipes.addShapeless(
             return slashBladeProudSoul >= secondProudsoulNumber ? out : null;
         }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
 );
 T3recipeNumber = T3recipeNumber + 1;
@@ -433,11 +433,11 @@ T3recipeNumber = T3recipeNumber + 1;
 // Tier 4 extracting
 // Fourth Killcount Extracting
 recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T4_killcount_extracting",
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     fourthKillcountToken,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         T4_SlashBlades.marked("SlashbladeToExtractKillcount").transformNew
         (
@@ -458,7 +458,7 @@ recipes.addShapeless(
         T3Hammer.anyDamage().transformDamage(T4HammerDamage),
         fourthKillCountTokenBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info)
     {
         var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
@@ -472,17 +472,17 @@ recipes.addShapeless(
             return slashBladeKillCount >= fourthKillCountNumber ? out : null;
         }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
 );
 
 // Third Proudsoul Extracting
 recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T4_proudsoul_extracting",
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     thirdProudsoulBottle,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         T4_SlashBlades.marked("SlashbladeToExtractProudSoul").transformNew
         (
@@ -503,7 +503,7 @@ recipes.addShapeless(
         T3Hammer.anyDamage().transformDamage(T4HammerDamage),
         thirdProudSoulBottleBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info)
     {
         var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
@@ -517,7 +517,7 @@ recipes.addShapeless(
             return slashBladeProudSoul >= thirdProudsoulNumber ? out : null;
         }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
 );
 
