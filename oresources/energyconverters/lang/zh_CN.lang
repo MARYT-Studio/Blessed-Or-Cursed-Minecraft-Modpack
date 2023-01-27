@@ -1,0 +1,5 @@
+tile.energy_bridge.name=EU转换器
+tile.energy_producer_eu.hv.name=EU输出端口
+tile.energy_consumer_fe.name=FE/RF输入端口
+
+energyconverters.fe_hint=如需将发电机产出的FE/RF能量转化为EU，将它接在发电机上，再依次接上EU转换器与EU输出端口。

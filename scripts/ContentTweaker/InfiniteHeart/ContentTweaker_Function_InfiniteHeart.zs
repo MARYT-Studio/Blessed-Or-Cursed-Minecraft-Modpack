@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 // Packages
 import mods.contenttweaker.ActionResult;
 

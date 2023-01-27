@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 import crafttweaker.event.PlayerPickupItemEvent;
 import crafttweaker.event.EntityTravelToDimensionEvent;
 

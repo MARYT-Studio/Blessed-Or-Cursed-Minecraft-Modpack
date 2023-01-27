@@ -11,14 +11,14 @@ var modidList as string[] = [
     "base"
 ];
 val ItemNotToHide = 
-    // 工业扳手
+    // \u5DE5\u4E1A\u6273\u624B
     <ic2:wrench>|
-    //铅系列
-    <ic2:resource:2>| //铅矿石
-    <ic2:dust:10>|    //铅粉
-    <ic2:ingot:3>|    //铅锭
+    //\u94C5\u7CFB\u5217
+    <ic2:resource:2>| //\u94C5\u77FF\u77F3
+    <ic2:dust:10>|    //\u94C5\u7C89
+    <ic2:ingot:3>|    //\u94C5\u952D
 
-    // 可以在万圣节获得的工业护甲套装
+    // \u53EF\u4EE5\u5728\u4E07\u5723\u8282\u83B7\u5F97\u7684\u5DE5\u4E1A\u62A4\u7532\u5957\u88C5
     <ic2:nano_boots:*>|
     <ic2:nano_chestplate:*>|
     <ic2:nano_helmet:*>|
@@ -28,56 +28,56 @@ val ItemNotToHide =
     <ic2:quantum_helmet:*>|
     <ic2:quantum_leggings:*>|
     
-    //琥珀系列
+    //\u7425\u73C0\u7CFB\u5217
     <thaumcraft:amber>| 
     <thaumcraft:amber_block>|
     <thaumcraft:amber_brick>|
     <thaumcraft:ore_amber>|
     
-    //朱砂系列
+    //\u6731\u7802\u7CFB\u5217
     <thaumcraft:ore_cinnabar>|
-    <thaumcraft:cluster:6>|   //朱砂原矿簇
-    // <thaumcraft:quicksilver>; //水银
-    <thaumcraft:quicksilver>| //水银
+    <thaumcraft:cluster:6>|   //\u6731\u7802\u539F\u77FF\u7C07
+    // <thaumcraft:quicksilver>; //\u6C34\u94F6
+    <thaumcraft:quicksilver>| //\u6C34\u94F6
 
-    //TLS会用到的IC2材料
-    // 这两种物品被 CoT注册的物品替换了
-    // <ic2:crafting:1>|  //电路板
-    // <ic2:crafting:2>|  //高级电路板
+    //TLS\u4F1A\u7528\u5230\u7684IC2\u6750\u6599
+    // \u8FD9\u4E24\u79CD\u7269\u54C1\u88AB CoT\u6CE8\u518C\u7684\u7269\u54C1\u66FF\u6362\u4E86
+    // <ic2:crafting:1>|  //\u7535\u8DEF\u677F
+    // <ic2:crafting:2>|  //\u9AD8\u7EA7\u7535\u8DEF\u677F
 
-    <ic2:crafting:3>|  //高级合金
-    <ic2:plate:12>|    //致密铁板
-    <ic2:plate:16>|    //致密钢板
-    <ic2:energy_crystal:*>|  //能量水晶
-    <ic2:lapotron_crystal:*>|  //满电的兰波顿水晶
-    <ic2:crafting:4>|  //强化铱板
+    <ic2:crafting:3>|  //\u9AD8\u7EA7\u5408\u91D1
+    <ic2:plate:12>|    //\u81F4\u5BC6\u94C1\u677F
+    <ic2:plate:16>|    //\u81F4\u5BC6\u94A2\u677F
+    <ic2:energy_crystal:*>|  //\u80FD\u91CF\u6C34\u6676
+    <ic2:lapotron_crystal:*>|  //\u6EE1\u7535\u7684\u5170\u6CE2\u987F\u6C34\u6676
+    <ic2:crafting:4>|  //\u5F3A\u5316\u94F1\u677F
 
-    //TLS会用到的神秘时代物品
-    <thaumcraft:ingot>|  //神秘锭
-    <thaumcraft:ingot:1>|  //虚空金属锭
-    <thaumcraft:metal_thaumium>|  //神秘块
-    <thaumcraft:metal_void>|  //虚空金属块
-    //四把神秘拔刀剑的合成材料
-    <thaumcraft:thaumium_sword>|  //神秘剑
-    <thaumcraft:elemental_sword>|  //风雷剑
-    <thaumcraft:crimson_blade>|  //血腥之刃
-    <thaumcraft:void_sword>|  //虚空剑
-    // 用于移除扭曲的祛邪肥皂
+    //TLS\u4F1A\u7528\u5230\u7684\u795E\u79D8\u65F6\u4EE3\u7269\u54C1
+    <thaumcraft:ingot>|  //\u795E\u79D8\u952D
+    <thaumcraft:ingot:1>|  //\u865A\u7A7A\u91D1\u5C5E\u952D
+    <thaumcraft:metal_thaumium>|  //\u795E\u79D8\u5757
+    <thaumcraft:metal_void>|  //\u865A\u7A7A\u91D1\u5C5E\u5757
+    //\u56DB\u628A\u795E\u79D8\u62D4\u5200\u5251\u7684\u5408\u6210\u6750\u6599
+    <thaumcraft:thaumium_sword>|  //\u795E\u79D8\u5251
+    <thaumcraft:elemental_sword>|  //\u98CE\u96F7\u5251
+    <thaumcraft:crimson_blade>|  //\u8840\u8165\u4E4B\u5203
+    <thaumcraft:void_sword>|  //\u865A\u7A7A\u5251
+    // \u7528\u4E8E\u79FB\u9664\u626D\u66F2\u7684\u795B\u90AA\u80A5\u7682
     <thaumcraft:sanity_soap>|
-    // 用于检测扭曲的神智检测仪
+    // \u7528\u4E8E\u68C0\u6D4B\u626D\u66F2\u7684\u795E\u667A\u68C0\u6D4B\u4EEA
     <thaumcraft:sanity_checker>|
     
-    //需要用到的机器方块
+    //\u9700\u8981\u7528\u5230\u7684\u673A\u5668\u65B9\u5757
     //IC2
-    <ic2:te:70>| //MFE充电座
+    <ic2:te:70>| //MFE\u5145\u7535\u5EA7
 
     //Energy Converter
-    <energyconverters:energy_bridge>|  //能量桥接器
-    <energyconverters:energy_consumer_fe>|  //FE输入器
-    <energyconverters:energy_producer_eu:2>|  //高压EU输出器
+    <energyconverters:energy_bridge>|  //\u80FD\u91CF\u6865\u63A5\u5668
+    <energyconverters:energy_consumer_fe>|  //FE\u8F93\u5165\u5668
+    <energyconverters:energy_producer_eu:2>|  //\u9AD8\u538BEU\u8F93\u51FA\u5668
     
-    // 作为砂轮的替代品，植物魔法的封印之布
-    // 属于 TempFixes 的一部分
+    // \u4F5C\u4E3A\u7802\u8F6E\u7684\u66FF\u4EE3\u54C1\uFF0C\u690D\u7269\u9B54\u6CD5\u7684\u5C01\u5370\u4E4B\u5E03
+    // \u5C5E\u4E8E TempFixes \u7684\u4E00\u90E8\u5206
     <botania:spellcloth>;  
 
 // JEI Hide and recipe removal
@@ -176,3 +176,6 @@ val AbyssalFoods as IItemStack[] = [
     <abyssalcraft:cloth>
 ];
 for food in AbyssalFoods{mods.jei.JEI.removeAndHide(food);}
+
+// Hide the dummy infinite item
+mods.jei.JEI.hide(<contenttweaker:dummy_infinite_item>);

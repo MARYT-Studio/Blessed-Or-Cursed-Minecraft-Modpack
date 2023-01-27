@@ -1,7 +1,3 @@
-# Item Names
-crafttweaker.power_output.name=能量输出端口
-crafttweaker.power_input.name=能量接入端口
-crafttweaker.power_converter.name=能量转换器
 # Tooltips
 crafttweaker.mcwfurnitures.tooltip=这个方块没有装东西的功能
 crafttweaker.experience_bottle.tooltip=除了与村民交易，还有其他的获得方法
@@ -49,11 +45,23 @@ crafttweaker.basic_ic.tooltip=§o“模拟电路很奇妙吧！”
 crafttweaker.advanced_ic_1.tooltip=§o“不炸几个电容、焊坏几片运放，”
 crafttweaker.advanced_ic_2.tooltip=§o“你也好意思从电子工程学院毕业？”
 crafttweaker.ic_modules.tooltip=§o谨以此纪念我的大学时光。
+
 # Bountiful Only items
 crafttweaker.wing_potion_1.tooltip=喝下它，你就可以飞行三分钟。
 crafttweaker.wing_potion_2.tooltip=§l但需要支付生命值作为代价！
 craftweaker.sanity_soap.tooltip=如果你受到扭曲的困扰，就用它！
 crafttweaker.bountiful_only.tooltip=只能从悬赏任务的奖励中获得。
+
+# Immortal Item
+crafttweaker.immortal_item_1.tooltip=将任意物品与一个无限之心合成。
+crafttweaker.immortal_item_2.tooltip=当你从工作台中再次取出它，它已经变得§6永远无法毁坏§r。
+
+# Toolsteel Sword
+crafttweaker.toolsteelsword_1.tooltip=传说，千年前那位天狗匠人，为寻觅一方宝地建造工坊，
+crafttweaker.toolsteelsword_2.tooltip=初次登上妖怪之山时，曾用此刀斩断荆棘开路。
+crafttweaker.toolsteelsword_3.tooltip=历经漫长岁月，其上铭文依旧如新、熠熠生辉：
+crafttweaker.toolsteelsword_4.tooltip=§6§l“若热忱灼如烈阳，若极目可至远方”
+crafttweaker.toolsteelsword_5.tooltip=§6§l“又何惧风刀霜剑，又何惧前路茫茫”
 
 # Descriptions
 crafttweaker.soldering_iron_1.desc=烙铁用于焊接电路元件，制作电路板。
@@ -77,9 +85,11 @@ crafttweaker.points_of_proudsoul.desc=点耀魂数，
 crafttweaker.shard_allowed_hammers.desc=铁或樱锻造锤
 
 crafttweaker.abyssal_ingot.desc=在工作台上献上1个锰钢锭、2个虚空金属锭、3个炽铁锭、一个任意颜色的激活魔方和一个从九头蛇、暮色恶魂或冰雪女王处斩获的战利品，消耗死灵之书的300点位能即可获得深渊锭。
-
 crafttweaker.mazai.desc=用桶收集这种液体，它可以被用于召唤金色魔法首饰的深渊仪式。
 
+crafttweaker.infinity_items.desc=当你打开无限之心，它的无限力量将具现化为这几件神器之一。它们分别是：代表攻坚克难之勇气的斩棘开山刀、代表能屈能伸之忍耐的黑夜徽章、代表越挫越强之韧性的阳光徽章、代表始终不渝之初心的海洋徽章、代表雄心勃勃之进取的飞龙徽章，以及代表无限之生命意志，赋予佩戴者不朽之力的藤蔓徽章。
+
+# Chats
 crafttweaker.wing_blessing_before_1=§o“浩浩乎如冯虚御风，而不知其所止。”
 crafttweaker.wing_blessing_before_2=§o“飘飘乎如遗世独立，羽化而登仙。”
 crafttweaker.wing_blessing_before_3=这瓶仙酿能让你飞行3分钟，但需要支付5-9颗心的生命值作为代价。

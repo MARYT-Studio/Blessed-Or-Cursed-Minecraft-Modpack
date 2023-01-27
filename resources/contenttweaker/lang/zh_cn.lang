@@ -1,19 +1,5 @@
 tile.contenttweaker.hunting_altar.name=狩猎祭坛
 
-item.contenttweaker.builderpack_all.name=建筑师建材袋
-item.contenttweaker.builderpack_wool.name=建筑师羊毛袋
-item.contenttweaker.builderpack_wood.name=建筑师原木袋
-item.contenttweaker.builderpack_stone.name=建筑师石材袋
-item.contenttweaker.builderpack_concrete.name=建筑师混凝土袋
-item.builderpack_all.name=建筑师建材袋
-item.builderpack_wool.name=建筑师羊毛袋
-item.builderpack_wood.name=建筑师原木袋
-item.builderpack_stone.name=建筑师石材袋
-item.builderpack_concrete.name=建筑师混凝土袋
-
-item.contenttweaker.cuisine_sapling_pack.name=料理工艺树苗袋
-item.cuisine_sapling_pack.name=料理工艺树苗袋
-
 item.contenttweaker.first_killcount_token.name=初阶斩杀之证
 item.contenttweaker.second_killcount_token.name=二阶斩杀之证
 item.contenttweaker.third_killcount_token.name=三阶斩杀之证
@@ -42,6 +28,8 @@ item.contenttweaker.magic_infused_key.name=沾满魔力的铜钥匙
 
 item.infinite_heart_laevatain.name=无限之心
 item.contenttweaker.infinite_heart_laevatain.name=无限之心
+
+item.contenttweaker.dummy_infinite_item.name=不朽之物
 
 item.contenttweaker.abyssal_ingot.name=深渊锭
 

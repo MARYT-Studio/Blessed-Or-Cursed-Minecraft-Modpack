@@ -19,17 +19,15 @@ val shoggothFlesh as IItemStack[] = [
     <abyssalcraft:shoggothflesh:3>,
     <abyssalcraft:shoggothflesh:4>
 ];
-for i in 0 .. (shoggothFlesh.length)
-{
+for i in 0 .. (shoggothFlesh.length) {
     recipes.addShapeless("wash_your_normal_warp" ~ i, <minecraft:rotten_flesh>,
     [
         <dcs_climate:dcs_food_antibiotic:7>, shoggothFlesh[i]
     ],
-    function(out, ins, info){return out;},
+    function(out, ins, info) {return out;},
     function(out,info,player)
     {
-        if(!player.world.remote)
-        {
+        if (!player.world.remote) {
             server.commandManager.executeCommand(
                 server,
                 "thaum warp "~player.name~" add "~ (0 - (i + 1) * 10)

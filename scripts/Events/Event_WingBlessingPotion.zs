@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 // Package importing
 // Event base
 import crafttweaker.events.IEventManager;

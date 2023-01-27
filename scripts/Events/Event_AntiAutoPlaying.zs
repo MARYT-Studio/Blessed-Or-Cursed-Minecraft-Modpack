@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 // Packages for needed ZenClasses
 import crafttweaker.player.IPlayer;
 import crafttweaker.world.IWorld;
@@ -52,81 +52,59 @@ events.onEntityLivingDeath(
         // This number will be changed in codes below,
         // so it should be a var
         var autoplayingThreshold as int = 15;
-        if(dmgsource instanceof IPlayer)
-        {
+        if(dmgsource instanceof IPlayer) {
             var player as IPlayer = dmgsource;
             // Initialize a player's position.
-            if(isNull(player.data.last_attack_xpos)){player.update({last_attack_xpos: 0.0f});}
-            if(isNull(player.data.last_attack_zpos)){player.update({last_attack_zpos: 0.0f});}
-            if(!isNull(player.data.PlayerPersisted) && !isNull(player.data.PlayerPersisted.higherAutoPlayingThreshold))
-            {
+            if (isNull(player.data.last_attack_xpos)) {player.update({last_attack_xpos: 0.0f});}
+            if (isNull(player.data.last_attack_zpos)) {player.update({last_attack_zpos: 0.0f});}
+            if (!isNull(player.data.PlayerPersisted) && !isNull(player.data.PlayerPersisted.higherAutoPlayingThreshold)) {
                 autoplayingThreshold = player.data.PlayerPersisted.higherAutoPlayingThreshold.asInt() == 1 ? 30 : 45;
             }
             var lastAttackXpos as float = player.data.last_attack_xpos.asFloat();
             var lastAttackZpos as float = player.data.last_attack_zpos.asFloat();
             
-            // Test Print
-            // player.sendMessage("你上次杀死怪物时的坐标为x: "~lastAttackXpos~", z: "~lastAttackZpos);
-            
             var playerXCoordNow as float = player.position3f.x as float;
             var playerZCoordNow as float = player.position3f.z as float;
             
-            // Test Print
-            // player.sendMessage("你本次杀死怪物时的坐标为x: "~playerXCoordNow~", z: "~playerZCoordNow);
-            
             // If player's x or z coordinates changed more than const distance,
             // This player is considered "moved".
-            var playerMovedFlag as bool = 
-                (
+            var playerMovedFlag as bool = (
                     (pow((playerXCoordNow - lastAttackXpos), 2.0f) + pow((playerZCoordNow - lastAttackZpos), 2.0f)) > pow(distance, 2.0f)
                 );
             
-            // Test Print
-            // player.sendMessage("你本次杀死怪物时，比起上次杀死怪物移动了："~playerMovedFlag);
-            
             // Update player's attack position
             player.update({last_attack_xpos: playerXCoordNow, last_attack_zpos: playerZCoordNow});
-            if(isNull(player.data.silverfishCounter)){player.update({silverfishCounter: 0});}
-            if(isNull(player.data.playerMovedCounter)){player.update({playerMovedCounter: 0});}
-            else
-            {
+            if (isNull(player.data.silverfishCounter)) {player.update({silverfishCounter: 0});}
+            if (isNull(player.data.playerMovedCounter)) {player.update({playerMovedCounter: 0});}
+            else {
                 var noMoveCounter = player.data.silverfishCounter.asInt();
                 var movedCounter = player.data.playerMovedCounter.asInt();
                 // If player is not considered "moved", his silverfish noMoveCounter will add one point.
                 (playerMovedFlag) ? (movedCounter += 1) : (noMoveCounter += 1);
                 player.update({silverfishCounter : noMoveCounter, playerMovedCounter: movedCounter});
-                // Test Print
-                // player.sendMessage("当前蠹虫计数器数值为"~noMoveCounter);
-                // player.sendMessage("当前移动计数器数值为"~movedCounter);
             }
-            if(player.data.playerMovedCounter.asInt() >= noAutoThreshold)
-            {
+            if (player.data.playerMovedCounter.asInt() >= noAutoThreshold) {
                 // Test Print
                 player.update({silverfishCounter: 0});
                 player.update({playerMovedCounter: 0});
             }
-            if(player.data.silverfishCounter.asInt() >= autoplayingThreshold)
-            {
-                if(world.random.nextFloat() < penaltyProbability)
-                {
-                    if(!world.remote && silverfishSummoningOn)
-                    {
+            if(player.data.silverfishCounter.asInt() >= autoplayingThreshold) {
+                if(world.random.nextFloat() < penaltyProbability) {
+                    if(!world.remote && silverfishSummoningOn) {
                         var summonPos3f = crafttweaker.util.Position3f.create(player.x, (player.y + 1), player.z);
                         var summonBlockPos as IBlockPos = summonPos3f.asBlockPos();
                         <entity:minecraft:endermite>.spawnEntity(world, summonBlockPos);
                         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.silverfish_summoned"));
                     }
                     // Give player debuff
-                    if(debuffMechanismOn)
-                    {
+                    if(debuffMechanismOn) {
                         var hunger as IPotionEffect = <potion:minecraft:hunger>.makePotionEffect(timeOfDebuff1, lvlOfDebuff1);
                         var weakness as IPotionEffect = <potion:minecraft:weakness>.makePotionEffect(timeOfDebuff2, lvlOfDebuff2);
                         (world.random.nextBoolean()) ? (player.addPotionEffect(hunger)) : (player.addPotionEffect(weakness));
                         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.potion_applied"));
                     }
                     // Randomly teleporting player
-                    if(randomTeleportingOn)
-                    {
+                    if(randomTeleportingOn) {
                         // Test Print
                         var offsetX = world.random.nextBoolean() ? offset : (0 - offset);
                         var offsetZ = world.random.nextBoolean() ? offset : (0 - offset);

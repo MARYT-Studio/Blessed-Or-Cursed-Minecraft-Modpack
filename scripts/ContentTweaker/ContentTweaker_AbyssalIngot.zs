@@ -1,7 +1,6 @@
 #loader contenttweaker
 //Pack Imports
 import mods.contenttweaker.VanillaFactory;
-// import crafttweaker.item.IMutableItemStack;
 var abyssIngot = mods.contenttweaker.VanillaFactory.createItem("abyssal_ingot");
 abyssIngot.creativeTab = <creativetab:acitems>;
 abyssIngot.rarity = "epic";

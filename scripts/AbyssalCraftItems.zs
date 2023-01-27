@@ -5,48 +5,35 @@ import crafttweaker.text.ITextComponent;
 
 val AbyssalIngotEnergy = 300;
 
-val firstAbyssBook = <abyssalcraft:necronomicon>.withTag({PotEnergy: 0.0 as float});
-val secondAbyssBook = <abyssalcraft:necronomicon_cor>.withTag({PotEnergy: 0.0 as float});
-val thirdAbyssBook = <abyssalcraft:necronomicon_dre>.withTag({PotEnergy: 0.0 as float});
-val fourthAbyssBook = <abyssalcraft:necronomicon_omt>.withTag({PotEnergy: 0.0 as float});
-val finalAbyssBook = <abyssalcraft:abyssalnomicon>.withTag({PotEnergy: 0.0 as float});
-val allAbyssBooksWithoutNBT as IItemStack[] = [
-    <abyssalcraft:necronomicon>,
-    <abyssalcraft:necronomicon_cor>,
-    <abyssalcraft:necronomicon_dre>,
-    <abyssalcraft:necronomicon_omt>,
-    <abyssalcraft:abyssalnomicon>
-];
-val allAbyssBooks as IItemStack[] = [
-    firstAbyssBook, secondAbyssBook, thirdAbyssBook, fourthAbyssBook, finalAbyssBook
+val abyssBooks as IItemStack[] = [
+    <abyssalcraft:necronomicon:*>,
+    <abyssalcraft:necronomicon_cor:*>,
+    <abyssalcraft:necronomicon_dre:*>,
+    <abyssalcraft:necronomicon_omt:*>,
+    <abyssalcraft:abyssalnomicon:*>
 ];
 val inputBooks as IItemStack[] = [
-    <minecraft:book>, firstAbyssBook, secondAbyssBook, thirdAbyssBook
+    <minecraft:book>, abyssBooks[0], abyssBooks[1], abyssBooks[2]
 ];
 val inputSkins as IItemStack[] = [
     <contenttweaker:inner_gem>, <abyssalcraft:skin>, <abyssalcraft:skin:1>, <abyssalcraft:skin:2>
 ];
 val AbyssalIngot = <contenttweaker:abyssal_ingot>;
 // Book Recipes
-for book in allAbyssBooksWithoutNBT
-{
+for book in abyssBooks {
     recipes.remove(book);
 }
 var index as int = 0;
-for book in allAbyssBooks
-{
-    if(finalAbyssBook.matches(book))
-    {
+for book in abyssBooks {
+    if (index == 4) {
         recipes.addShaped("final_ac_book", book,
         [
             [<abyssalcraft:gatekeeperessence>, <abyssalcraft:eldritchscale>, <abyssalcraft:gatekeeperessence>],
-            [<abyssalcraft:eldritchscale>, fourthAbyssBook, <abyssalcraft:eldritchscale>],
+            [<abyssalcraft:eldritchscale>, abyssBooks[3], <abyssalcraft:eldritchscale>],
             [AbyssalIngot, <abyssalcraft:ingotblock:3>, AbyssalIngot] // Ethanxium Block
         ]);
-    }
-    else
-    {
-        var bookMaterial = (firstAbyssBook.matches(book)) ? <twilightforest:giant_obsidian> : AbyssalIngot;
+    } else {
+        var bookMaterial = (index == 0 ? <twilightforest:giant_obsidian> : AbyssalIngot);
         recipes.addShaped("ac_book_recipe_"~index, book,
         [
             [inputSkins[index], inputSkins[index], <contenttweaker:fourth_killcount_token>],
@@ -54,12 +41,9 @@ for book in allAbyssBooks
             [<contenttweaker:third_proudsoul_bottle>, bookMaterial, bookMaterial]
         ],
         function (out, ins, info) {return out;},
-        function (out, info, player)
-        {
-            if(firstAbyssBook.matches(book))
-            {
-                if(!player.world.remote)
-                {
+        function (out, info, player) {
+            if(abyssBooks[0].matches(book)) {
+                if(!player.world.remote) {
                     player.update({PlayerPersisted: {higherAutoPlayingThreshold : 2}});
                 }
             }
@@ -89,10 +73,9 @@ val HACCubes = <dcs_climate:dcs_color_cube:5>|
 val TwilightTrophys = <twilightforest:trophy:2>|
     <twilightforest:trophy:3>|
     <twilightforest:trophy:5>;
-index = 0;
+
 var bookType as int = 0;
-for abyssbook in allAbyssBooksWithoutNBT
-{
+for book in abyssBooks {
     recipes.addShapeless(
         // \u914D\u65B9\u540D\u79F0
         "abyssal_ingot"~bookType,
@@ -100,17 +83,12 @@ for abyssbook in allAbyssBooksWithoutNBT
         AbyssalIngot,
         // \u8F93\u5165\u6750\u6599
         [
-            abyssbook.marked("book").transformNew
-            (
-                function(item)
-                {
+            book.marked("book").transformNew(
+                function(item) {
                     var bookNBT as IData = item.tag;
-                    if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
-                    {
+                    if (isNull(bookNBT) || isNull(bookNBT.PotEnergy)) {
                         return item;
-                    }
-                    else
-                    {
+                    } else {
                         var bookEnergy as int = bookNBT.PotEnergy.asInt();
                         return item.updateTag({PotEnergy : max(0, bookEnergy - AbyssalIngotEnergy)});
                     }
@@ -127,19 +105,17 @@ for abyssbook in allAbyssBooksWithoutNBT
 
         ],
         // \u914D\u65B9\u51FD\u6570
-        function(out,ins,info)
-        {
+        function(out,ins,info) {
             var bookNBT as IData = ins.book.tag;
-            if(isNull(bookNBT)||isNull(bookNBT.PotEnergy))
-            {
+            if (isNull(bookNBT)||isNull(bookNBT.PotEnergy)) {
+                // debug
+                if (isNull(bookNBT)) {print("bookNBT is null");}
+                if (isNull(bookNBT.PotEnergy)) {print("PotEnergy is null");}
                 return null;
-            }
-            else
-            {
+            } else {
                 var bookPotEnergy as int = bookNBT.PotEnergy.asInt();
-                if(bookPotEnergy >= AbyssalIngotEnergy){return out;}
-                else
-                {
+                if (bookPotEnergy >= AbyssalIngotEnergy) {return out;}
+                else {
                     info.player.sendRichTextMessage(
                         ITextComponent.fromTranslation("crafttweaker.energy_not_enough_0") ~
                         ITextComponent.fromTranslation("item.necronomicon.name") ~

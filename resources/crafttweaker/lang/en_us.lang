@@ -1,7 +1,3 @@
-# Item Names
-crafttweaker.power_output.name=Power Output
-crafttweaker.power_input.name=Power Input
-crafttweaker.power_converter.name=Power Converter
 # Tooltips
 crafttweaker.mcwfurnitures.tooltip=This Block cannot be used as a container
 crafttweaker.experience_bottle.tooltip=You can get this through other ways, not only trading with Villagers.
@@ -49,11 +45,24 @@ crafttweaker.basic_ic.tooltip=§o"Analog circuit is interesting, isn't it?"
 crafttweaker.advanced_ic_1.tooltip=§o"How can you graduate from School of Electronic Engineering,"
 crafttweaker.advanced_ic_2.tooltip=§o"and have never done any electronic experiments?"
 crafttweaker.ic_modules.tooltip=§oDedicated to my 4-year college campus life.
+
 # Bountiful Only items
 crafttweaker.wing_potion_1.tooltip=Allow you to fly for 3 minutes.
 crafttweaker.wing_potion_2.tooltip=§lbut it costs HP!
 craftweaker.sanity_soap.tooltip=If you're disturbed by Warp, use this!
 crafttweaker.bountiful_only.tooltip=Only available in Bounties reward.
+
+# Immortal Item
+crafttweaker.immortal_item_1.tooltip=Combine any item with an Infinite Heart.
+crafttweaker.immortal_item_2.tooltip=When you take it out of the crafting table again, it becomes §6forever unbreakable§r.
+
+# Toolsteel Sword
+crafttweaker.toolsteelsword_1.tooltip=Legend has it that a thousand years ago, when that Tengu Smith first climbed the Mysterious Mountain,
+crafttweaker.toolsteelsword_2.tooltip=in search of a blessed piece of land to build his workshop, he used this to cut through thorns to make his way.
+crafttweaker.toolsteelsword_3.tooltip=Long time has flown, but the inscription of it is still shining as new: 
+crafttweaker.toolsteelsword_4.tooltip=§6§l“If enthusiasm burns like the blazing sun, if my eyes can reach far away;”
+crafttweaker.toolsteelsword_5.tooltip=§6§l“Why fear the cutting wind and biting frost, and why fear the road ahead?”
+
 
 # Descriptions
 crafttweaker.soldering_iron_1.desc=Soldering Iron is used to make circuit boards.
@@ -77,9 +86,11 @@ crafttweaker.points_of_proudsoul.desc= points of Proudsoul,
 crafttweaker.shard_allowed_hammers.desc=Iron or Sakura Forging Hammer
 
 crafttweaker.abyssal_ingot.desc=Craft it with 1 Mangalloy Ingot, 2 Void Metal Ingots, 3 Fiery Ingots, an Activated Magic Cube of any color and a trophy got from Hydra, Ur-Ghast or Snow Queen. Besides, it needs 300 points of PE of your Necronomicon.
-
 crafttweaker.mazai.desc=Collect it with a Bucket, it can be used in Abyssal Rituals for summoning golden magic jewels.
 
+crafttweaker.infinity_items.desc=When it is opened, Infinite Heart manifest its power as one of these extraordinary artifacts. They are: Machete of Invincible Willness, which represents the courage to overcome difficulties; the Darknight Badge, which represents the patience to be able to bend and stretch; the Sunlight Badge, which represents the resilience to be stronger after every failure; the Deepsea Badge, which represents the original aspiration that always remains true; the Wyvern Badge, which represents the ambitious progress; and the Ivy Badge, which represents the infinite willness of Life and gives the power of Immortality.
+
+# Chats
 crafttweaker.wing_blessing_before_1=§o"As if traversing the void we rode the winds, not knowing where we might stop."
 crafttweaker.wing_blessing_before_2=§o"We soared as if in transcending the world we stood alone, sprouting wings as if we had become immortals."
 crafttweaker.wing_blessing_before_3=This elixir will let you enjoy flying for 3 minutes, but it costs 5-9 hearts of your HP.

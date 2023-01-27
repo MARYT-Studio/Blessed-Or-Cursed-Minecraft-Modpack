@@ -8,6 +8,7 @@ $ cat .gitignore
 !/config/
 !/patchouli_books
 !/resources
+!/oresources
 !/scripts
 !/structures
 
@@ -15,6 +16,9 @@ $ cat .gitignore
 !/.gitignore
 !/README.md
 !/PlanAndProgress.md
+
+# This is a part of the modpack!
+!/Title.txt
+
 scripts/.VSCodeCounter/
 resources/crafttweaker/lang/.VSCodeCounter/
-scripts/MARYT_SERVER/

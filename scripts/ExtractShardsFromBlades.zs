@@ -37,9 +37,9 @@ val allowed_hammers as IItemStack[] = [T2Hammer, T3Hammer];
 val hammerDamage as int = 10;
 
 // Blades to extract the shards
-val liangzi_taidao as IItemStack = <lastsmith:slashblade_eu>.withTag({ModelName: "named/nanosaber/model", ModelOnName: "named/nanosaber/model", CurrentItemName: "flammpfeil.slashblade.named.quantumsaber", TextureName: "named/nanosaber/texture_1", SpecialAttackType: 1, TextureOnName: "named/nanosaber/texture_1_on", baseAttackModifier: 21.0 as float});
+val liangzi_taidao as IItemStack = <lastsmith:slashblade_eu>.withTag({ModelName: "named/nanosaber/model", ModelOnName: "named/nanosaber/model", CurrentItemName: "flammpfeil.slashblade.named.quantumsaber", TextureName: "named/nanosaber/texture_1", TextureOnName: "named/nanosaber/texture_1_on", baseAttackModifier: 21.0 as float});
 val yaosai_xuehong as IItemStack = <lastsmith:slashblade_crimson>.withTag({TextureName: "named/thaum/texture_crimson_update", ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.fortress.crimson.update", IsBewitchedActived: 1 as byte, baseAttackModifier: 12.0 as float});
-val yingjian as IItemStack = <lastsmith:.slashblade.named>.withTag({ModelName: "named/bot_roukan/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.roukan_bot", TextureName: "named/bot_roukan/texture", SpecialAttackType: 266, IsBewitchedActived: 1 as byte, baseAttackModifier: 16.0 as float, "SB.SEffect": {ManaBurst: 10, ManaPoolRepair: 1}});
+val yingjian as IItemStack = <lastsmith:.slashblade.named>.withTag({ModelName: "named/bot_roukan/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.roukan_bot", TextureName: "named/bot_roukan/texture", IsBewitchedActived: 1 as byte, baseAttackModifier: 16.0 as float});
 
 val SlashBladeToExtractArray as IIngredient[] = [liangzi_taidao, yaosai_xuehong, yingjian];
 
@@ -49,11 +49,11 @@ for hammer in allowed_hammers
     for RecipeNumber in 0 to 3
     {
         recipes.addShapeless(
-        // 配方名称
+        // \u914D\u65B9\u540D\u79F0
         "shard_extracting_"~RecipeNumber~"_"~hammer.name,
-        // 输出物品
+        // \u8F93\u51FA\u7269\u54C1
         ShardOutputArray[RecipeNumber],
-        // 输入材料
+        // \u8F93\u5165\u6750\u6599
         [
             SlashBladeToExtractArray[RecipeNumber].marked("BladeForShard").transformNew
             (
@@ -74,7 +74,7 @@ for hammer in allowed_hammers
             hammer.anyDamage().transformDamage(hammerDamage),
             ShardBaseArray[RecipeNumber]
         ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info)
         {
             var slashBladeNBT as IData = ins.BladeForShard.tag;
@@ -88,7 +88,7 @@ for hammer in allowed_hammers
                 return slashBladeKillCount >= KillcountArray[RecipeNumber] ? out : null;
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
         );
     }

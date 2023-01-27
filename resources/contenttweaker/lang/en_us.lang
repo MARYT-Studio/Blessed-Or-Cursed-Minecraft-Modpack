@@ -1,19 +1,5 @@
 tile.contenttweaker.hunting_altar.name=Hunters' Altar
 
-item.contenttweaker.builderpack_all.name=Builder's Pack
-item.contenttweaker.builderpack_wool.name=Builder's Wool Pack
-item.contenttweaker.builderpack_wood.name=Builder's Wood Pack
-item.contenttweaker.builderpack_stone.name=Builder's Stone Pack
-item.contenttweaker.builderpack_concrete.name=Builder's Concrete Pack
-item.builderpack_all.name=Builder's Pack
-item.builderpack_wool.name=Builder's Wool Pack
-item.builderpack_wood.name=Builder's Wood Pack
-item.builderpack_stone.name=Builder's Stone Pack
-item.builderpack_concrete.name=Builder's Concrete Pack
-
-item.contenttweaker.cuisine_sapling_pack.name=Cuisine Sapling Pack
-item.cuisine_sapling_pack.name=Cuisine Sapling Pack
-
 item.contenttweaker.first_killcount_token.name=Slayers' Badge I
 item.contenttweaker.second_killcount_token.name=Slayers' Badge II
 item.contenttweaker.third_killcount_token.name=Slayers' Badge III
@@ -42,6 +28,8 @@ item.contenttweaker.magic_infused_key.name=Magic-Infused Key
 
 item.infinite_heart_laevatain.name=Infinite Heart
 item.contenttweaker.infinite_heart_laevatain.name=Infinite Heart
+
+item.contenttweaker.dummy_infinite_item.name=Immortal Item
 
 item.contenttweaker.abyssal_ingot.name=Abyssal Ingot
 

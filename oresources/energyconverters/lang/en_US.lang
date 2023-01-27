@@ -1,0 +1,5 @@
+tile.energy_bridge.name=EU Converter
+tile.energy_producer_eu.hv.name=EU Output
+tile.energy_consumer_fe.name=FE/RF Input
+
+energyconverters.fe_hint=To convert FE/RF produced by Dynamo into EU, connect this to the Dynamo, then connect the EU Converter and the EU Output in turn.

@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 // Packages for needed ZenClasses
 import crafttweaker.player.IPlayer;
 import crafttweaker.world.IWorld;

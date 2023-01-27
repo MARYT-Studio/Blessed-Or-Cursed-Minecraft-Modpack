@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 import crafttweaker.event.EntityTravelToDimensionEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.text.ITextComponent;
