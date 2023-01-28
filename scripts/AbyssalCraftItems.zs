@@ -6,11 +6,11 @@ import crafttweaker.text.ITextComponent;
 val AbyssalIngotEnergy = 300;
 
 val abyssBooks as IItemStack[] = [
-    <abyssalcraft:necronomicon:*>,
-    <abyssalcraft:necronomicon_cor:*>,
-    <abyssalcraft:necronomicon_dre:*>,
-    <abyssalcraft:necronomicon_omt:*>,
-    <abyssalcraft:abyssalnomicon:*>
+    <abyssalcraft:necronomicon>,
+    <abyssalcraft:necronomicon_cor>,
+    <abyssalcraft:necronomicon_dre>,
+    <abyssalcraft:necronomicon_omt>,
+    <abyssalcraft:abyssalnomicon>
 ];
 val inputBooks as IItemStack[] = [
     <minecraft:book>, abyssBooks[0], abyssBooks[1], abyssBooks[2]
