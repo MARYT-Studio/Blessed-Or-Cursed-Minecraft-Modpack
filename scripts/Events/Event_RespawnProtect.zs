@@ -8,7 +8,6 @@ import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerRespawnEvent;
 
 // Packages for Potion function
-import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
 
 // For send Messages

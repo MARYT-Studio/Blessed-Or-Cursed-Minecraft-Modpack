@@ -1,7 +1,42 @@
 [
   {
+    "identifier": "vortex",
+    "enabled": false,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
+    "identifier": "cinder",
+    "enabled": false,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
+    "identifier": "arctic",
+    "enabled": false,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
+    "identifier": "desecrator",
+    "enabled": false,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
     "identifier": "scrapper",
     "enabled": true,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
+    "identifier": "reflecting",
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -35,6 +70,13 @@
     "tier": 1
   },
   {
+    "identifier": "adaptable",
+    "enabled": false,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
     "identifier": "infested",
     "enabled": true,
     "entityBlacklist": [],
@@ -49,8 +91,22 @@
     "tier": 1
   },
   {
+    "identifier": "shielding",
+    "enabled": false,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
     "identifier": "molten",
     "enabled": true,
+    "entityBlacklist": [],
+    "alwaysOnEntity": [],
+    "tier": 1
+  },
+  {
+    "identifier": "plagued",
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
