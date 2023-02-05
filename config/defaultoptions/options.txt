@@ -1,0 +1,3 @@
+version:1343
+resourcePacks:["Modernity-format3-v3.5.2.zip","EclecticTrove-1.12.2-1.0.1.zip"]
+forceUnicodeFont:true
