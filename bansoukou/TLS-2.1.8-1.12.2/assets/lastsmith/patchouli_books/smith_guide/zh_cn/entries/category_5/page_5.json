@@ -1,0 +1,34 @@
+{
+   "name" : "「无念」",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/smith/model\", TextureName: \"named/smith/texture_final\"}",
+   "category" : "category_5",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "我相信有着很多人对我投向的，是漠视，轻视甚至敌视……$(br2)那些人不会理解，他们的质疑声不过是被眼前利益污染的不解。他们只会渴求那点蝇头小利罢！$(br2)那种人，根本不懂得何为信念！"
+      },
+      {
+         "type" : "text",
+         "text" : "我已经做好了觉悟。这就是我必须要做的！$(br2)无论是走在光明大道还是羊肠小道，甚至一脚踏入深渊之中，都是自己所选择的道路。$(br)我已经一脚踏入这个深渊了……$(br2)我会告诉他们，这振超越了「魂樱之长刀」的存在会告诉他们……"
+      },
+      {
+         "type" : "text",
+         "text" : "我等天狗，真正的「阅读者」的后裔会告诉他们，什么叫做…………………………"
+      },
+      {
+         "type" : "image",
+         "images" : ["lastsmith:textures/gui/smith_guide_final_page.png"]
+      },
+      {
+         "type" : "text",
+         "text" : "第三轮回，月与春与火之年，霜月$(br)当他跟我说起他准备写一本书之后，政一直把自己关在一个小房子中……$(br2)自从那振妖刀被发现之日开始，或许更久之前，政消失了，而草稿的那片血迹也估计就是政本人的。$(br2)我们决定把这振妖刀取名为天云「无念」，将未受影响的两振灵刀赐给射命丸大人……"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.smith.final",
+         "text" : "「无念」，代表了他的最期……我想如果射命丸大人知道了他的死去或许会很悲痛吧……$(br2)射命丸 政的友人——青竹"
+      }
+   ],
+   "advancement":"lastsmith:amagumo",
+   "sortnum" : 4
+}

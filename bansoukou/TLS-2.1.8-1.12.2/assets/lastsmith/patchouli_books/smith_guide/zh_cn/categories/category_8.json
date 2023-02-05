@@ -1,0 +1,6 @@
+{
+   "name" : "自行锻造",
+   "description" : "这里是一名刀匠锻造自己的刀所要掌握的所有内容。$(br2)“刀锻冶协会”提供了三种标准的拵制，你也可以前去定制。",
+   "icon" : "lastsmith:handmade_white",
+   "sortnum" : 7
+}

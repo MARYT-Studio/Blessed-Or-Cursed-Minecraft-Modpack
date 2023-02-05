@@ -1,0 +1,18 @@
+{
+   "name" : "「量子太刀」",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/nanosaber/model\", TextureName: \"named/nanosaber/texture_1_on\"}",
+   "category" : "category_7",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "然后那群河童又给我看了看这个玩意。$(br2)外界的人类已经发展到量子技术这种东西了吗？量子技术又是什么？我没有搞懂。$(br2)总之听河童们说的一个劲，我一个字也听不懂就是。$(br2)说起来，这玩意还挺轻巧，而且意外的力量很大，这就是量子技术吗？"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.quantumsaber"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "flag":"mod:ic2",
+   "sortnum" : 3
+}

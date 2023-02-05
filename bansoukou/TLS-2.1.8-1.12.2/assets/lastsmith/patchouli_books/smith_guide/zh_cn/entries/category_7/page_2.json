@@ -1,0 +1,18 @@
+{
+   "name" : "「纳米太刀」",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/nanosaber/model\", TextureName: \"named/nanosaber/texture_on\"}",
+   "category" : "category_7",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "嗯？这是什么装备呢？$(br)纳米技术？纳米军刀？$(br2)我无法理解，不过河童们确实给我看了看这玩意。$(br2)好像和文始是差不多的样子，不过没有那种锋利感。$(br2)听他们说好像适合以后量产？我不敢相信。"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.nanosaber"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "flag":"mod:ic2",
+   "sortnum" : 2
+}

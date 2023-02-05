@@ -1,0 +1,7 @@
+{
+   "name" : "妖刀之卷",
+   "description" : "妖刀者，邪魔侵染之刃也。$(br2)若运用自如，则妖气也可化作力量而存。$(br2)身为妖怪的我等，自然可轻松驾驭其力，为我而用。",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/yamato\", TextureName: \"named/yamato\"}",
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 3
+}

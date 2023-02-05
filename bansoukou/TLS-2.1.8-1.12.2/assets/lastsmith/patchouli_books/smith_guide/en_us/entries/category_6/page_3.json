@@ -1,0 +1,17 @@
+{
+   "name" : "Limuness",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/arthurs/model_pear\", TextureName: \"named/arthurs/texture_pear\"}",
+   "category" : "category_6",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Limu-san, or Limuness. One of initial members of Mountain Forging-Shop.$(br2)Leader of Baidu Minecraft Bar at present, initial member of MCMOD Encyclopedia, and a significant person in China Minecraft community. The person who is most cared by Zheng besides his parents.$(br2)The person who has saved the desperate child."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.mmf.limuness"
+      }
+   ],
+   "advancement":"lastsmith:final_blade",
+   "sortnum" : 2
+}

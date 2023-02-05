@@ -5,6 +5,7 @@ $ cat .gitignore
 /scripts/.zsrc
 
 #Folders
+!/bansoukou/
 !/config/
 !/patchouli_books
 !/resources

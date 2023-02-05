@@ -1,0 +1,27 @@
+{
+   "name" : "YAMATO",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/yamato\", TextureName: \"named/yamato\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "This Blade, which is said to cut off the Space, is one of relics of Sparta.$(br2)Devoured by the Ender Dragon, it is waiting for the comeback of the Dragon Slayer.$(br2)However, it is broken now."
+      },
+      {
+         "type" : "entity",
+         "entity" : "minecraft:ender_dragon",
+         "scale" : 1.1,
+         "text" : "Above the void of The End, slay the Dragon, and you will see the broken Yamato."
+      },
+      {
+         "type" : "text",
+         "text" : "It needs enough courage to pull the broken Yamato out of the dead Dragon's remain.$(br2)Repair it with BladeSoulSphere to reveal its true inner power. It comes from the Devil..."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:yamato"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 0
+}

@@ -1,0 +1,28 @@
+{
+   "name" : "A replica of Agito",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/agito\", TextureName: \"named/agito_false\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Replica of the Orotiagito Blade.$(br2)Since the Orotiagito came into being, there have been many replicas of it.$(br2)In the tail of the great serpent Naga, you may find it."
+      },
+      {
+        "flag":"mod:twilightforest",
+         "type" : "entity",
+         "entity" : "twilightforest:naga",
+         "scale" : 1,
+         "text" : "Find Naga in the forever Twilight Forest, then slay it."
+      },
+      {
+         "type" : "text",
+         "text" : "The replica still has Spirit power, which may be due to its hiding in the Naga.$(br2)Before its rust is finally removed, you can hardly reveal its mystery."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:agito"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 3
+}

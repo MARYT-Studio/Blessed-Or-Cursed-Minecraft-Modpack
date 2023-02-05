@@ -1,0 +1,17 @@
+{
+   "name" : "结月刀「付丧」",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/agito\",TextureName: \"named/a_tukumo\"}",
+   "category" : "category_3",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "结月家的家传宝刀。在某个岛屿处被结月家家主发现。$(br2)附着火焰的利刃，与火焰一同起舞……"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:tukumo"
+      }
+   ],
+   "advancement":"lastsmith:slashblade_white",
+   "sortnum" : 4
+}

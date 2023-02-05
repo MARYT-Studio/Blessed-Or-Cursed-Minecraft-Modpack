@@ -1,0 +1,29 @@
+{
+   "name" : "-Fushigiri-",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/sekiro/fushigiri\",TextureName: \"named/sekiro/fushigiri\"}",
+   "category" : "category_4",
+   "pages" : [
+       {
+          "type" : "text",
+          "text" : "Legends say that, the Divine Dragon gave his power to some species. He gave the Immortal Power to Humans, so-called Divine Heir. While the Gust Power was given to our Tengu.$(br2)The Beginning Cycle of Lunar Calendar, The year of Origin. The Divine Dragon left quietly and create the Barrier, which separates the Humans and the Youkais. A calendar cycle past."
+       },
+       {
+          "type" : "text",
+          "text" : "According to the legends, Divine Dragon's leaving was because of Fushigiri, the Blade of Killing the Immortal.$(br2)It was said that, the Blade got its name Hairui because it got the Divine Dragon's tears.$(br2)The crimson tachi which was able to injure the Divine Dragon...$(br2)It is said that there were another Blade called Kaimon."
+       },
+       {
+          "type" : "text",
+          "text" : "Why is this power owned by Humans...$(br2)The Divine Heir's Immortal Power was so astonishing, however, he also owned the power to slay the Immortal.$(br2)I have witnessed the horrible sight after the owner of the crimson tachi committed massacre.$(br2)But now, the tachi and the Kusabimaru are both in my hand."
+       },
+       {
+         "type" : "text",
+         "text" : "Something is tempting me to unsheathe the two Blade.$(br2)But I do not."
+       },
+       {
+          "type" : "crafting",
+          "recipe" : "lastsmith:flammpfeil.slashblade.named.fushikiri"
+       }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 14
+}

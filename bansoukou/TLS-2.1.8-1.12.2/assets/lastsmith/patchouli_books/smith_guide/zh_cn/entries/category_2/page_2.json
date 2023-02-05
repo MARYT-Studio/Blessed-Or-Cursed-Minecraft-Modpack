@@ -1,0 +1,95 @@
+{
+   "name" : "「白鞘」",
+   "icon" : "flammpfeil.slashblade:slashbladeWhite",
+   "category" : "category_2",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "这里是一些量产刀剑时候所使用的廉价配方。$(br)为了战争，刀剑的需求量日益增多。我们这些刀匠的工作也繁忙于这些廉价武器的供应。$(br2)可笑的“剑士”们，只知道如何互相厮杀。"
+      },
+      {
+         "type" : "crafting",
+       "flag":"!mod:tfc",
+         "recipe" : "lastsmith:blade_unfinished",
+         "recipe2" : "lastsmith:blade_2_unfinished"
+      },
+      {
+         "type" : "crafting",
+       "flag":"!mod:tfc",
+         "recipe" : "lastsmith:blade_3_unfinished",
+         "recipe2" : "lastsmith:blade_unfinished2"
+      },
+      {
+         "type" : "crafting",
+       "flag":"!mod:tfc",
+         "recipe" : "lastsmith:blade_2_unfinished2",
+         "recipe2" : "lastsmith:blade_3_unfinished2"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:yakibatsuchi",
+         "recipe2" : "lastsmith:blade_unfinished3"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:blade_2_unfinished3",
+         "recipe2" : "lastsmith:blade_3_unfinished3"
+      },
+
+      {
+         "type" : "smelting",
+         "recipe" : "lastsmith:blade:9",
+         "recipe2" : "lastsmith:blade:10",
+          "text" : "在熔炉里烧到亮红……"
+
+      },
+      {
+         "type" : "smelting",
+         "recipe" : "lastsmith:blade:11",
+          "text" : "在熔炉里烧到亮红……"
+      },
+      {
+         "type" : "spotlight",
+         "item" : "lastsmith:heatted_blade:0",
+          "text" : "在炼药锅里右键进行冷却，会听到呲的声响。"
+      },
+      {
+         "type" : "spotlight",
+         "item" : "lastsmith:heatted_blade:1",
+          "text" : "在炼药锅里右键进行冷却，会听到呲的声响。"
+      },
+      {
+         "type" : "spotlight",
+         "item" : "lastsmith:heatted_blade:2",
+          "text" : "在炼药锅里右键进行冷却，会听到呲的声响。"
+      },
+      {
+         "type" : "crafting",
+         "flag":"！mod:tfc",
+         "recipe" : "lastsmith:blade",
+         "recipe2" : "lastsmith:blade_2"
+      },
+      {
+         "type" : "crafting",
+         "flag":"！mod:tfc",
+         "recipe" : "lastsmith:blade_3",
+         "recipe2" : "flammpfeil.slashblade:white"
+      },
+      {
+         "type" : "crafting",
+         "flag":"mod:tfc",
+         "recipe" : "flammpfeil.slashblade:white"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:white2",
+         "recipe2" : "flammpfeil.slashblade:white3"
+      },
+      {
+         "type" : "relations",
+         "entries" :["lastsmith:category_2/page_1","lastsmith:category_2/page_5","lastsmith:category_2/page_6"]
+      }
+   ],
+   "advancement":"lastsmith:root",
+   "sortnum" : 1
+}

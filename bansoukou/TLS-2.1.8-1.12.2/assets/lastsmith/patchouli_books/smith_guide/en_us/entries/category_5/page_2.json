@@ -1,0 +1,28 @@
+{
+   "name" : "Nihil",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/nihil/nihil\", TextureName: \"named/nihil/nihil_bx\"}",
+   "category" : "category_5",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Condensed from Scarlet Lotus, the Blade covered with blood.$(br2)It is desire of death, buried in the bottom of the Hell. So-called Nihil.$(br2)Not the power of our world. Can we wield such dangerous power?"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.nihil",
+         "recipe2" : "flammpfeil.slashblade:flammpfeil.slashblade.named.nihilex"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.nihilul",
+         "recipe2" : "flammpfeil.slashblade:flammpfeil.slashblade.named.crimsoncherry"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.nihilbx"
+      }
+   ],
+   "advancement":"lastsmith:sharpness",
+   "flag":"mod:slashblade_addon",
+   "sortnum" : 1
+}

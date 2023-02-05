@@ -1,0 +1,26 @@
+{
+   "name" : "-Blood Bamboo Light-",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/yamato\",TextureName: \"named/bamboolight/silverbamboo_blood\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Tomihara saw the most chaotic time when Tomihara State fell down. $(br2)Tomihara at that time is definetly different to Tomihara now. The former was battlefield filled with blood and death, the latter is peaceful paradise for us, although peace is only a representation."
+      },
+      {
+         "type" : "text",
+         "text" : "There used to be a swordman with his BambooLight, fighting with enemies to his death.$(br2)The BambooLight Blade was fully covered with blood which came from both its owners and its foes. So it is infused with Devils' Power.$(br2)Driven by Devils which were infused in it, the BambooLight unsheathed itself, then slashed all enemies' heads down."
+      },
+      {
+         "type" : "text",
+         "text" : "These BambooLight is the so-called \"Blood BambooLight\".$(br2)Metal foil on its surface was fully covered with blood, and it even became part of the Blade.$(br2)It was infused by special Devils, which gave it more Devils' Power."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.silverbamboolight_top",
+         "recipe2" : "lastsmith:flammpfeil.slashblade.named.silverbamboolight_blood"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 10
+}

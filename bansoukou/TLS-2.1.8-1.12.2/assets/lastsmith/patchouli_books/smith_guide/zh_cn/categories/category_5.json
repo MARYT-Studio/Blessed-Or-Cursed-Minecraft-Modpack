@@ -1,0 +1,6 @@
+{
+   "name" : "无上利刃之卷",
+   "description" : "稀世名器，或被雪藏，或被遗弃……$(br2)那些比妖刀更加恐怖的存在……",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/smith/model\", TextureName: \"named/smith/texture_wind\"}",
+   "sortnum" : 4
+}

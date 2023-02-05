@@ -1,0 +1,28 @@
+{
+   "name" : "Kamuy Blades",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/kamuy/kamuy\",TextureName: \"named/kamuy/fire\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Long long ago there used to be a group keeping the equilibrium of the World.$(br2)They kept three Divine Blades called Kamuy.$(br2)They were all killed at the Beginning Year of the Lunar Calendar. And the three Blades were gone."
+      },
+      {
+         "type" : "text",
+         "text" : "According to further research, the Kamuy Blades were not only three. There were many Blades which were not infused with Divine power, so-called \"naked Kamuy\".$(br2)I referred to historical records and acquired the method to smith a naked Kamuy Blade and infuse it with Divine power.$(br2)These Blades are not as good as the genuine ones which were lost."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.kamuy.base",
+         "recipe2" : "flammpfeil.slashblade:flammpfeil.slashblade.named.kamuy.fire"
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "flammpfeil.slashblade:flammpfeil.slashblade.named.kamuy.water",
+         "recipe2" : "flammpfeil.slashblade:flammpfeil.slashblade.named.kamuy.lightning"
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "flag":"mod:slashblade_addon",
+   "sortnum" : 15
+}

@@ -1,0 +1,17 @@
+{
+   "name" : "Syameimaru Zheng's Kanchi",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/smith/model\", TextureName: \"named/arthurs/texture_zheng\"}",
+   "category" : "category_6",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Syameimaru Zheng, Leader programmer of Mysterious Mountain Forging-Shop.$(br2)Initiator of Project TLS, and did program developing, some art and story design.$(br2)The real identity of TLS Mod's storyteller. So his Blade is the other form of Munin.$(br2)$(m)Making TLS Mod so hardcore is also his idea."
+      },
+      {
+         "type" : "crafting",
+         "recipe" : "lastsmith:flammpfeil.slashblade.named.mmf.zheng"
+      }
+   ],
+   "advancement":"lastsmith:final_blade",
+   "sortnum" : 1
+}

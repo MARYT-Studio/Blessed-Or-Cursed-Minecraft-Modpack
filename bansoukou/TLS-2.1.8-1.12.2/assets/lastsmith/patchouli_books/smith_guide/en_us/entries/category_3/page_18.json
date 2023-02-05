@@ -1,0 +1,17 @@
+{
+   "name" : "Anonymity-Nameless-",
+   "icon" : "lastsmith:.slashblade.named",
+   "category" : "category_3",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "Blade that lost its name and power, has become a stuff of no use."
+      },
+      {
+         "type" : "spotlight",
+         "item" : "lastsmith:.slashblade.named",
+         "text" : "If you try to repair your Blade, just like you always do to your ordinary tools, you will strip the Blade's Soul off and get this Blade.$(br2)You may try to resonate with the Soul which is in the Blade, unwilling to deprave, so that the Blade can be turned into other Blades."
+      }
+   ],
+   "sortnum" : 17
+}

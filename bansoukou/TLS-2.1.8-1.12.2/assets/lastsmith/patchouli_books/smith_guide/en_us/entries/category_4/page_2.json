@@ -1,0 +1,19 @@
+{
+   "name" : "Sange",
+   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/sange/sange\", TextureName: \"named/sange/sange\"}",
+   "category" : "category_4",
+   "pages" : [
+      {
+         "type" : "text",
+         "text" : "The excellent Blade from an uncommon smith.$(br)Its name \"Sange\" means \"Brilliance and Beauty dispersed around the world\"$(br2)It stays in the Wither, providing it with the Spirit Power.$(br2)The energy of Stars, surround the Blade."
+      },
+      {
+         "type" : "entity",
+         "entity" : "minecraft:wither",
+         "scale" : 1,
+         "text" : "Summon the Wither, then slay it."
+      }
+   ],
+   "advancement":"lastsmith:bewitched_blade",
+   "sortnum" : 1
+}
