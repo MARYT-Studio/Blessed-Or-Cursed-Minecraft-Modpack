@@ -101,11 +101,11 @@ for armor in ic2_armor {
     armor.addTooltip(game.localize("crafttweaker.ic2_armor_4.tooltip"));
 }
 
-<item:dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_1.tooltip"));
-<item:dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_2.tooltip"));
-<item:dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_3.tooltip"));
-<item:dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_4.tooltip"));
-<item:dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_5.tooltip"));
+<dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_1.tooltip"));
+<dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_2.tooltip"));
+<dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_3.tooltip"));
+<dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_4.tooltip"));
+<dcs_climate:dcs_sword_toolsteel>.addTooltip(game.localize("crafttweaker.toolsteelsword_5.tooltip"));
 
 <contenttweaker:dummy_infinite_item>.addTooltip(game.localize("crafttweaker.immortal_item_1.tooltip"));
 <contenttweaker:dummy_infinite_item>.addTooltip(game.localize("crafttweaker.immortal_item_2.tooltip"));
@@ -168,15 +168,21 @@ for flesh in shoggothFlesh {
 // Desc for Infinite Heart Items
 val InfiniteHeartItems as IItemStack[] = [
     // 5 Badges
-    <item:dcs_climate:dcs_color_badge>,
-    <item:dcs_climate:dcs_color_badge:1>,
-    <item:dcs_climate:dcs_color_badge:2>,
-    <item:dcs_climate:dcs_color_badge:3>,
-    <item:dcs_climate:dcs_color_badge:4>,
+    <dcs_climate:dcs_color_badge>,
+    <dcs_climate:dcs_color_badge:1>,
+    <dcs_climate:dcs_color_badge:2>,
+    <dcs_climate:dcs_color_badge:3>,
+    <dcs_climate:dcs_color_badge:4>,
     // HAC Other final items
-    <item:dcs_climate:dcs_sword_toolsteel>
+    <dcs_climate:dcs_sword_toolsteel>
 ];
 for infItem in InfiniteHeartItems {
     mods.jei.JEI.addDescription(infItem, game.localize("crafttweaker.infinity_items.desc"));
 }
 
+<contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_1.tooltip"));
+<contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_2.tooltip"));
+<contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_3.tooltip"));
+<contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_4.tooltip"));
+<contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_5.tooltip"));
+mods.jei.JEI.addDescription(<contenttweaker:sake_of_karma>, game.localize("crafttweaker.sake_of_karma.desc"));

@@ -44,7 +44,7 @@ crafttweaker.solder_wire.tooltip=Best Friend of Electronic Engineers.
 crafttweaker.basic_ic.tooltip=§o"Analog circuit is interesting, isn't it?"
 crafttweaker.advanced_ic_1.tooltip=§o"How can you graduate from School of Electronic Engineering,"
 crafttweaker.advanced_ic_2.tooltip=§o"and have never done any electronic experiments?"
-crafttweaker.ic_modules.tooltip=§oDedicated to my 4-year college campus life.
+crafttweaker.ic_modules.tooltip=§oDedicated to my 4-year undergraduate campus life.
 
 # Bountiful Only items
 crafttweaker.wing_potion_1.tooltip=Allow you to fly for 3 minutes.
@@ -62,7 +62,6 @@ crafttweaker.toolsteelsword_2.tooltip=in search of a blessed piece of land to bu
 crafttweaker.toolsteelsword_3.tooltip=Long time has flown, but the inscription of it is still shining as new: 
 crafttweaker.toolsteelsword_4.tooltip=§6§l“If enthusiasm burns like the blazing sun, if my eyes can reach far away;”
 crafttweaker.toolsteelsword_5.tooltip=§6§l“Why fear the cutting wind and biting frost, and why fear the road ahead?”
-
 
 # Descriptions
 crafttweaker.soldering_iron_1.desc=Soldering Iron is used to make circuit boards.
@@ -159,3 +158,12 @@ crafttweaker.ic2_armor_1.tooltip=Brought by alien mobs that only come to the Ear
 crafttweaker.ic2_armor_2.tooltip=I have no idea about how to craft it,
 crafttweaker.ic2_armor_3.tooltip=But I have a vague feeling that
 crafttweaker.ic2_armor_4.tooltip=it can be repaired with the power of the §c§lAbyss§r.
+
+# Sake of Karma
+crafttweaker.sake_of_karma_1.tooltip=§oAll the things bewild me today, are due to the Sake of Karma.
+crafttweaker.sake_of_karma_2.tooltip=§oAbandon distracting thoughts, slash the demons in your mind, 
+crafttweaker.sake_of_karma_3.tooltip=§oFinally you will reach the other shore, and reach the Infinity.
+crafttweaker.sake_of_karma_4.tooltip=Right-Click this with your Blade, devote Blade's 100 points of Proudsoul to it to activate the Ritual of Exorcism.
+crafttweaker.sake_of_karma_5.tooltip=Harvest this with Silk Touch.
+
+crafttweaker.sake_of_karma.desc=A bottle of Karma. With your blade drunk in this, the bloodthirsty aura it contains collides and mingles with karma, which become a force powerful enough to awake your demons in mind and materialize them before you in a Ritual of Exorcism. The ritual summons "Obsessions", and the more violent each attack you make on "Obsessions", the stronger and more numerous the demons it will summon will be. "Obsession" may summon "Attachment", "Aversion", and "Delusion", as known as the Three Poisons. Defeat "Attachment" will increase the exp dropped from your enemies for a while. Defeat "Aversion" will increase your attack damage for a while. Defeat "Delusion" will extend the time that "Obsession" exists by 15 seconds.

@@ -31,16 +31,16 @@ recipes.addShaped("soldering_iron",<contenttweaker:soldering_iron>.withTag({Powe
 
 // 烙铁充电模块
 recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "soldering_iron_charging",
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     <contenttweaker:soldering_iron>,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         <contenttweaker:soldering_iron>.marked("solderingIron"),
         <contenttweaker:lemon_battery>
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info)
     {
         var solderingIronNBT as IData = ins.solderingIron.tag;
@@ -54,6 +54,6 @@ recipes.addShapeless(
             return solderingIronPowerLeft < 16 ? out.updateTag({PowerLeft : solderingIronPowerLeft + 1}) : null;
         }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
 );

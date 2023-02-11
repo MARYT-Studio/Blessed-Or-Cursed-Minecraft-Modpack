@@ -187,54 +187,44 @@ val T3_allowed_SlashBlades as IIngredient[] = [T3_SlashBlades, T4_SlashBlades];
 // Tier 1 extracting
 // First Killcount Extracting
 var T1recipeNumber as int = 1;
-for SlashBladeTier in T1_allowed_SlashBlades
-{
-    for hammer in T1_allowed_hammers
-    {
+for SlashBladeTier in T1_allowed_SlashBlades {
+    for hammer in T1_allowed_hammers {
         recipes.addShapeless(
-        // \u914D\u65B9\u540D\u79F0
-        "T1_killcount_extracting"~T1recipeNumber,
-        // \u8F93\u51FA\u7269\u54C1
-        firstKillcountToken,
-        // \u8F93\u5165\u6750\u6599
-        [
-            SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew
-            (
-                function(item)
-                {
-                    var slashBladeToExtractKillcountNBT as IData = item.tag;
-                    if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount))
-                    {
-                        return item;
+            // \u914D\u65B9\u540D\u79F0
+            "T1_killcount_extracting"~T1recipeNumber,
+            // \u8F93\u51FA\u7269\u54C1
+            firstKillcountToken,
+            // \u8F93\u5165\u6750\u6599
+            [
+                SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew(
+                    function(item) {
+                        var slashBladeToExtractKillcountNBT as IData = item.tag;
+                        if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount)) {
+                            return item;
+                        } else
+                        {
+                            var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
+                            return item.updateTag({killCount : max(0, KillCountToExtract - firstKillCountNumber)});
+                        }
                     }
-                    else
-                    {
-                        var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
-                        return item.updateTag({killCount : max(0, KillCountToExtract - firstKillCountNumber)});
-                    }
+                ),
+                hammer.anyDamage().transformDamage(),
+                firstKillCountTokenBase
+            ],
+            // \u914D\u65B9\u51FD\u6570
+            function(out,ins,info) {
+                var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
+                if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
+                    return null;
+                } else {
+                    var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
+                    return slashBladeKillCount >= firstKillCountNumber ? out : null;
                 }
-            ),
-            hammer.anyDamage().transformDamage(),
-            firstKillCountTokenBase
-        ],
-        // \u914D\u65B9\u51FD\u6570
-        function(out,ins,info)
-        {
-            var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
-            if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount))
-            {
-                return null;
-            }
-            else
-            {
-                var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
-                return slashBladeKillCount >= firstKillCountNumber ? out : null;
-            }
-        },
-        // \u914D\u65B9\u52A8\u4F5C
-        null
+            },
+            // \u914D\u65B9\u52A8\u4F5C
+            null
         );
-    T1recipeNumber = T1recipeNumber + 1; 
+        T1recipeNumber = T1recipeNumber + 1; 
     }
 }
 // Tier 1 Blades are not able to extract Proudsoul.
@@ -243,50 +233,40 @@ for SlashBladeTier in T1_allowed_SlashBlades
 // Second Killcount Extracting
 var T2recipeNumber = 1; 
 for SlashBladeTier in T2_allowed_SlashBlades{
-for hammer in T2_allowed_hammers
-{
+for hammer in T2_allowed_hammers {
     recipes.addShapeless(
-    // \u914D\u65B9\u540D\u79F0
-    "T2_killcount_extracting"~T2recipeNumber,
-    // \u8F93\u51FA\u7269\u54C1
-    secondKillcountToken,
-    // \u8F93\u5165\u6750\u6599
-    [
-    SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew
-    (
-        function(item)
-        {
-        var slashBladeToExtractKillcountNBT as IData = item.tag;
-        if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount))
-        {
-            return item;
-        }
-        else
-        {
-            var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
-            return item.updateTag({killCount : max(0, KillCountToExtract - secondKillCountNumber)});
-        }
-        }
-    ),
-    hammer.anyDamage().transformDamage(),
-    secondKillCountTokenBase
-    ],
-    // \u914D\u65B9\u51FD\u6570
-    function(out,ins,info)
-    {
-    var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
-    if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount))
-    {
-        return null;
-    }
-    else
-    {
-        var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
-        return slashBladeKillCount >= secondKillCountNumber ? out : null;
-    }
-    },
-    // \u914D\u65B9\u52A8\u4F5C
-    null
+        // \u914D\u65B9\u540D\u79F0
+        "T2_killcount_extracting"~T2recipeNumber,
+        // \u8F93\u51FA\u7269\u54C1
+        secondKillcountToken,
+        // \u8F93\u5165\u6750\u6599
+        [
+            SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew (
+                function(item) {
+                    var slashBladeToExtractKillcountNBT as IData = item.tag;
+                    if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount)) {
+                        return item;
+                    } else {
+                        var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
+                        return item.updateTag({killCount : max(0, KillCountToExtract - secondKillCountNumber)});
+                    }
+                }
+            ),
+            hammer.anyDamage().transformDamage(),
+            secondKillCountTokenBase
+        ],
+        // \u914D\u65B9\u51FD\u6570
+        function(out,ins,info) {
+            var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
+            if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
+                return null;
+            } else {
+                var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
+                return slashBladeKillCount >= secondKillCountNumber ? out : null;
+            }
+        },
+        // \u914D\u65B9\u52A8\u4F5C
+        null
     );
 
     // First Proudsoul Extracting
@@ -297,41 +277,32 @@ for hammer in T2_allowed_hammers
     firstProudsoulBottle,
     // \u8F93\u5165\u6750\u6599
     [
-    SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew
-    (
-        function(item)
-        {
-        var slashBladeToExtractProudSoulNBT as IData = item.tag;
-        if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul))
-        {
-            return item;
-        }
-        else
-        {
-            var ProudSoulToExtract as int = slashBladeToExtractProudSoulNBT.ProudSoul.asInt();
-            return item.updateTag({ProudSoul : max(0, ProudSoulToExtract - firstProudsoulNumber)});
-        }
-        }
-    ),
-    hammer.anyDamage().transformDamage(),
-    firstProudSoulBottleBase
+        SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew(
+            function(item) {
+                var slashBladeToExtractProudSoulNBT as IData = item.tag;
+                if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul)) {
+                    return item;
+                } else {
+                    var ProudSoulToExtract as int = slashBladeToExtractProudSoulNBT.ProudSoul.asInt();
+                    return item.updateTag({ProudSoul : max(0, ProudSoulToExtract - firstProudsoulNumber)});
+                }
+            }
+        ),
+        hammer.anyDamage().transformDamage(),
+        firstProudSoulBottleBase
     ],
-    // \u914D\u65B9\u51FD\u6570
-    function(out,ins,info)
-    {
-    var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
-    if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul))
-    {
-        return null;
-    }
-    else
-    {
-        var slashBladeProudSoul as int = slashBladeNBT.ProudSoul.asInt();
-        return slashBladeProudSoul >= firstProudsoulNumber ? out : null;
-    }
-    },
-    // \u914D\u65B9\u52A8\u4F5C
-    null
+        // \u914D\u65B9\u51FD\u6570
+        function(out,ins,info) {
+            var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
+            if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul)) {
+                return null;
+            } else {
+                var slashBladeProudSoul as int = slashBladeNBT.ProudSoul.asInt();
+                return slashBladeProudSoul >= firstProudsoulNumber ? out : null;
+            }
+        },
+        // \u914D\u65B9\u52A8\u4F5C
+        null
     );
     T2recipeNumber = T2recipeNumber + 1;
 }
@@ -347,17 +318,12 @@ recipes.addShapeless(
     thirdKillcountToken,
     // \u8F93\u5165\u6750\u6599
     [
-        SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew
-        (
-             function(item)
-            {
+        SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew(
+             function(item) {
                 var slashBladeToExtractKillcountNBT as IData = item.tag;
-                if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount))
-                {
+                if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount)) {
                     return item;
-                }
-                else
-                {
+                } else {
                     var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
                     return item.updateTag({killCount : max(0, KillCountToExtract - thirdKillCountNumber)});
                 }
@@ -367,15 +333,11 @@ recipes.addShapeless(
         thirdKillCountTokenBase
     ],
     // \u914D\u65B9\u51FD\u6570
-    function(out,ins,info)
-    {
+    function(out,ins,info) {
         var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
-        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount))
-        {
+        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
             return null;
-        }
-        else
-        {
+        } else {
             var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
             return slashBladeKillCount >= thirdKillCountNumber ? out : null;
         }
@@ -392,17 +354,12 @@ recipes.addShapeless(
     secondProudsoulBottle,
     // \u8F93\u5165\u6750\u6599
     [
-        SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew
-        (
-            function(item)
-            {
+        SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew(
+            function(item) {
                 var slashBladeToExtractProudSoulNBT as IData = item.tag;
-                if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul))
-                {
+                if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul)) {
                     return item;
-                }
-                else
-                {
+                } else {
                     var ProudSoulToExtract as int = slashBladeToExtractProudSoulNBT.ProudSoul.asInt();
                     return item.updateTag({ProudSoul : max(0, ProudSoulToExtract - secondProudsoulNumber)});
                 }
@@ -412,15 +369,11 @@ recipes.addShapeless(
         secondProudSoulBottleBase
     ],
     // \u914D\u65B9\u51FD\u6570
-    function(out,ins,info)
-    {
+    function(out,ins,info) {
         var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
-        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul))
-        {
+        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul)) {
             return null;
-        }
-        else
-        {
+        } else {
             var slashBladeProudSoul as int = slashBladeNBT.ProudSoul.asInt();
             return slashBladeProudSoul >= secondProudsoulNumber ? out : null;
         }
@@ -439,17 +392,12 @@ recipes.addShapeless(
     fourthKillcountToken,
     // \u8F93\u5165\u6750\u6599
     [
-        T4_SlashBlades.marked("SlashbladeToExtractKillcount").transformNew
-        (
-             function(item)
-            {
+        T4_SlashBlades.marked("SlashbladeToExtractKillcount").transformNew(
+             function(item) {
                 var slashBladeToExtractKillcountNBT as IData = item.tag;
-                if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount))
-                {
+                if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount)) {
                     return item;
-                }
-                else
-                {
+                } else {
                     var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
                     return item.updateTag({killCount : max(0, KillCountToExtract - fourthKillCountNumber)});
                 }
@@ -459,15 +407,11 @@ recipes.addShapeless(
         fourthKillCountTokenBase
     ],
     // \u914D\u65B9\u51FD\u6570
-    function(out,ins,info)
-    {
+    function(out,ins,info) {
         var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
-        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount))
-        {
+        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
             return null;
-        }
-        else
-        {
+        } else {
             var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
             return slashBladeKillCount >= fourthKillCountNumber ? out : null;
         }
@@ -484,17 +428,12 @@ recipes.addShapeless(
     thirdProudsoulBottle,
     // \u8F93\u5165\u6750\u6599
     [
-        T4_SlashBlades.marked("SlashbladeToExtractProudSoul").transformNew
-        (
-            function(item)
-            {
+        T4_SlashBlades.marked("SlashbladeToExtractProudSoul").transformNew (
+            function(item) {
                 var slashBladeToExtractProudSoulNBT as IData = item.tag;
-                if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul))
-                {
+                if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul)) {
                     return item;
-                }
-                else
-                {
+                } else {
                     var ProudSoulToExtract as int = slashBladeToExtractProudSoulNBT.ProudSoul.asInt();
                     return item.updateTag({ProudSoul : max(0, ProudSoulToExtract - thirdProudsoulNumber)});
                 }
@@ -504,15 +443,11 @@ recipes.addShapeless(
         thirdProudSoulBottleBase
     ],
     // \u914D\u65B9\u51FD\u6570
-    function(out,ins,info)
-    {
+    function(out,ins,info) {
         var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
-        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul))
-        {
+        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul)) {
             return null;
-        }
-        else
-        {
+        } else {
             var slashBladeProudSoul as int = slashBladeNBT.ProudSoul.asInt();
             return slashBladeProudSoul >= thirdProudsoulNumber ? out : null;
         }
@@ -534,12 +469,9 @@ val descText as string[] = [descTextT1, descTextT2, descTextT3, descTextT4];
 val Tiered_SlashBlades as IIngredient[] = [T1_SlashBlades, T2_SlashBlades, T3_SlashBlades, T4_SlashBlades];
 // Adding the Descriptions
 var tier = Tiered_SlashBlades.length - 1;
-while tier >= 0
-{
-    for i in 0 to (tier + 1)
-    {
-        for SlashBlade in Tiered_SlashBlades[tier].items
-        {
+while tier >= 0 {
+    for i in 0 to (tier + 1) {
+        for SlashBlade in Tiered_SlashBlades[tier].items {
             mods.jei.JEI.addDescription(SlashBlade, descText[i]);
         }
     }
