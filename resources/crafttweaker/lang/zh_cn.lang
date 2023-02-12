@@ -167,3 +167,7 @@ crafttweaker.sake_of_karma_4.tooltip=以拔刀右击此物，献上100点耀魂�
 crafttweaker.sake_of_karma_5.tooltip=需要精准采集附魔的工具才能使其掉落。
 
 crafttweaker.sake_of_karma.desc=盛放业障烈酒的酒瓶。你的刀刃饮下此酒后，其沾染的肃杀之气与业障碰撞交融，这种力量足以唤醒你的心魔，并将它们在你眼前具现化，这就是斩魔仪式。仪式会首先召唤⌈执念⌋，你对⌈执念⌋的每一次攻击越是猛烈，它引出的心魔将越强大、数量也会越多。同时，⌈执念⌋会引出⌈贪⌋⌈嗔⌋⌈痴⌋三毒。击杀⌈贪⌋会使你在一段时间内杀敌获得的经验比平时更多；击杀⌈嗔⌋会使你在一段时间内的攻击伤害更高；而击杀⌈痴⌋会延长⌈执念⌋存在的时间15秒。
+
+# Corail Tombstone
+crafttweaker.only_for_deco.tooltip=仅用于装饰。
+crafttweaker.can_be_replaced.tooltip=在合成中可以用破碎的耀魂代替。

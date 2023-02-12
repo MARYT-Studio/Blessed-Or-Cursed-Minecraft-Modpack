@@ -180,6 +180,27 @@ for infItem in InfiniteHeartItems {
     mods.jei.JEI.addDescription(infItem, game.localize("crafttweaker.infinity_items.desc"));
 }
 
+val corailItems as IIngredient[] = [
+    <tombstone:decorative_grave_simple>,
+    <tombstone:decorative_grave_simple:1>,
+    <tombstone:decorative_grave_normal>,
+    <tombstone:decorative_grave_normal:1>,
+    <tombstone:decorative_grave_cross>,
+    <tombstone:decorative_grave_cross:1>,
+    <tombstone:decorative_tombstone>,
+    <tombstone:decorative_tombstone:1>,
+    <tombstone:decorative_subaraki_grave>,
+    <tombstone:decorative_subaraki_grave:1>,
+    <tombstone:decorative_grave_original>,
+    <tombstone:decorative_grave_original:1>
+];
+
+for item in corailItems {
+    item.addTooltip(game.localize("crafttweaker.only_for_deco.tooltip"));
+}
+
+<tombstone:crafting_ingredient:4>.addTooltip(game.localize("crafttweaker.can_be_replaced.tooltip"));
+
 <contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_1.tooltip"));
 <contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_2.tooltip"));
 <contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_3.tooltip"));

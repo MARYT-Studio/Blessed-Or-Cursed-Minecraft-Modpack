@@ -145,11 +145,11 @@ for golden_pendant in HACGoldenPendants
     for bookGoldenJewel in booksGoldenJewel
     {
         recipes.addShapeless(
-        // 配方名称
+        // \u914D\u65B9\u540D\u79F0
         "golden_pendant"~index~bookType,
-        // 输出物品
+        // \u8F93\u51FA\u7269\u54C1
         golden_pendant,
-        // 输入材料
+        // \u8F93\u5165\u6750\u6599
         [
             bookGoldenJewel.marked("book").transformNew
             (
@@ -177,7 +177,7 @@ for golden_pendant in HACGoldenPendants
             HACGoldenPendantsCubes[index]
 
         ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info)
         {
             var bookNBT as IData = ins.book.tag;
@@ -213,7 +213,7 @@ for golden_pendant in HACGoldenPendants
                 }
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
         );
         bookType = (bookType + 1) % (booksGoldenJewel.length);
@@ -236,11 +236,11 @@ for golden_ring in HACGoldenRings
     for bookGoldenJewel in booksGoldenJewel
     {
         recipes.addShapeless(
-        // 配方名称
+        // \u914D\u65B9\u540D\u79F0
         "golden_ring"~index~bookType,
-        // 输出物品
+        // \u8F93\u51FA\u7269\u54C1
         golden_ring,
-        // 输入材料
+        // \u8F93\u5165\u6750\u6599
         [
             bookGoldenJewel.marked("book").transformNew
             (
@@ -268,7 +268,7 @@ for golden_ring in HACGoldenRings
             HACGoldenPendantsCubes[index]
 
         ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info)
         {
             var bookNBT as IData = ins.book.tag;
@@ -304,7 +304,7 @@ for golden_ring in HACGoldenRings
                 }
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
         );
         bookType = (bookType + 1) % (booksGoldenJewel.length);
@@ -323,11 +323,11 @@ for final_pendant in HACPendants
     for bookFinalPendant in booksFinalPendant
     {
         recipes.addShapeless(
-        // 配方名称
+        // \u914D\u65B9\u540D\u79F0
         "final_pendant"~index~bookType,
-        // 输出物品
+        // \u8F93\u51FA\u7269\u54C1
         final_pendant,
-        // 输入材料
+        // \u8F93\u5165\u6750\u6599
         [
             bookFinalPendant.marked("book").transformNew
             (
@@ -355,7 +355,7 @@ for final_pendant in HACPendants
             HACGoldenPendants[index],
 
         ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info)
         {
             var bookNBT as IData = ins.book.tag;
@@ -391,7 +391,7 @@ for final_pendant in HACPendants
                 }
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
         );
         bookType = (bookType + 1) % (booksFinalPendant.length);

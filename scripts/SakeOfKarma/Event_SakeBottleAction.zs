@@ -37,7 +37,7 @@ events.onPlayerInteractBlock(
                 var player = event.player;
                 var world = player.world;
                 var item = event.item;
-                if(!("flammpfeil.slashblade" has item.definition.owner) && !("lastsmith" has item.definition.owner)) {
+                if(!(item.definition.owner == "flammpfeil.slashblade") && !(item.definition.owner == "lastsmith")) {
                     // Get the Sake Bottle's Position
                     var x = event.x;
                     var y = event.y;

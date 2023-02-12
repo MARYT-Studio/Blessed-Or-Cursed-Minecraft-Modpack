@@ -74,7 +74,7 @@
   "spawnercontrol": "1.6.3b",
   "chargers": "1.2.0.5",
   "mcwfurnitures": "1.0.1",
-  "zenutils": "1.12.3",
+  "zenutils": "1.12.7",
   "durabilityviewer": "1.4",
   "probe": "0.1.24",
   "dcs_asm": "2.1.0",

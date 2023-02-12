@@ -8,7 +8,8 @@ var modidList as string[] = [
     "thaumcraft",
     "botania",
     "energyconverters",
-    "base"
+    "base",
+    "tombstone"
 ];
 val ItemNotToHide = 
     // \u5DE5\u4E1A\u6273\u624B
@@ -78,11 +79,25 @@ val ItemNotToHide =
     
     // \u4F5C\u4E3A\u7802\u8F6E\u7684\u66FF\u4EE3\u54C1\uFF0C\u690D\u7269\u9B54\u6CD5\u7684\u5C01\u5370\u4E4B\u5E03
     // \u5C5E\u4E8E TempFixes \u7684\u4E00\u90E8\u5206
-    <botania:spellcloth>;  
+    <botania:spellcloth>|
+
+    // Corail Tombstone \u7684\u88C5\u9970\u7269\u54C1
+    <tombstone:decorative_grave_simple>|
+    <tombstone:decorative_grave_simple:1>|
+    <tombstone:decorative_grave_normal>|
+    <tombstone:decorative_grave_normal:1>|
+    <tombstone:decorative_grave_cross>|
+    <tombstone:decorative_grave_cross:1>|
+    <tombstone:decorative_tombstone>|
+    <tombstone:decorative_tombstone:1>|
+    <tombstone:decorative_subaraki_grave>|
+    <tombstone:decorative_subaraki_grave:1>|
+    <tombstone:decorative_grave_original>|
+    <tombstone:decorative_grave_original:1>|
+    <tombstone:crafting_ingredient:4>;
 
 // JEI Hide and recipe removal
-for modid in modidList
-{
+for modid in modidList {
     for itemToCheck in loadedMods[modid].items
     {
         if(!(ItemNotToHide.matches(itemToCheck)))
@@ -96,10 +111,8 @@ var thaumModList as string[] = [
     "thaumcraft",
     "lastsmith"
 ];
-for modid in thaumModList
-{
-    for itemThaumcraft in loadedMods[modid].items
-    {
+for modid in thaumModList {
+    for itemThaumcraft in loadedMods[modid].items {
         Infusion.removeRecipe(itemThaumcraft);
     }
 }
@@ -123,8 +136,7 @@ val HACItemsToHide as IItemStack[] = [
     <dcs_climate:dcs_magic_card_m:4>,
     <dcs_climate:dcs_color_ring2:4> // White Golden Ring, it can remove bad effects
 ];
-for item in HACItemsToHide
-{
+for item in HACItemsToHide {
     mods.jei.JEI.removeAndHide(item);
 }
 val wingBlessingPotions as IItemStack[] = [
@@ -132,8 +144,7 @@ val wingBlessingPotions as IItemStack[] = [
     <minecraft:lingering_potion>.withTag({Potion: "minecraft:awkward"}),
     <minecraft:potion>.withTag({Potion: "minecraft:awkward"})
 ];
-for potion in wingBlessingPotions
-{
+for potion in wingBlessingPotions {
     brewing.removeRecipe(potion, <dcs_climate:dcs_color:4>);
 }
 // remove recipe of splash wing blessing potion
@@ -179,3 +190,14 @@ for food in AbyssalFoods{mods.jei.JEI.removeAndHide(food);}
 
 // Hide the dummy infinite item
 mods.jei.JEI.hide(<contenttweaker:dummy_infinite_item>);
+
+// Corail Tombstone Specially Hide
+val corailItemsToHide as IItemStack[] = [
+    <tombstone:magic_scroll>,
+    <tombstone:tablet_of_assistance>,
+    <tombstone:gift>,
+    <tombstone:christmas_gift>
+];
+for item in corailItemsToHide {
+    mods.jei.JEI.removeAndHide(item);
+}

@@ -1,5 +1,5 @@
 import crafttweaker.item.IItemStack;
-import crafttweaker.recipes.ICraftingRecipe;
+
 val slabList = 
     <absentbydesign:slab_concrete_magenta>|
     <absentbydesign:slab_concrete_orange>|
@@ -35,16 +35,13 @@ val slabList =
     <absentbydesign:slab_concrete_gray>|
     <absentbydesign:slab_concrete_light_blue>|
     <absentbydesign:slab_concrete_lime>;
-for recipe in recipes.all
-{
-    if(recipe.resourceDomain has "absentbydesign")
-    {
+    
+for recipe in recipes.all {
+    if(recipe.resourceDomain has "absentbydesign") {
         var output = recipe.output;
         var inputs = recipe.ingredients1D;
-        for input in inputs
-        {
-            if(!isNull(input))
-            {
+        for input in inputs {
+            if(!isNull(input)) {
                 var realOutput as IItemStack = (slabList has output) ? output * 2 : output * 1;
                 var singleInput as IItemStack = input;
                 mods.futuremc.Stonecutter.addOutput(singleInput, realOutput);

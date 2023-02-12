@@ -26,14 +26,18 @@ recipes.addShaped("soul_lantern",<futuremc:soul_fire_lantern>,
         [<ore:nuggetIron>,<ore:nuggetIron>,<ore:nuggetIron>]
     ]
 );
+//Recipes for Bell
+recipes.addShaped("bell",<futuremc:bell>,
+    [
+        [<ore:stickWood>, <ore:ingotGold>, <ore:stickWood>],
+        [<ore:ingotGold>, null, <ore:ingotGold>],
+        [<ore:ingotGold>, null, <ore:ingotGold>]
+    ]
+);
 
 //FutureMC Sweet Berry Pams Compat
 <ore:listAllfruit>.add(<futuremc:sweet_berries>);
 <ore:listAllberry>.add(<futuremc:sweet_berries>);
-
-//Sandstone and Red Sandstone localization
-game.setLocalization("zh_cn","tile.sandStone.smooth.name","切制砂岩");
-game.setLocalization("zh_cn","tile.redSandStone.smooth.name","切制红砂岩");
 
 // Stripped Logs can be crafted into 4 planks, but stripped WOODS cannot.
 // Let them can be crafted into planks.
@@ -53,4 +57,6 @@ val strippedWoodArray as IItemStack[] = [
     <futuremc:stripped_acacia_wood>,
     <futuremc:stripped_dark_oak_wood>
 ];
-for i in 0 .. (planksArray.length - 1){recipes.addShapeless("stripped_wood_to_plank" ~ i, planksArray[i] * 4, [strippedWoodArray[i]]);}
+for i in 0 .. (planksArray.length - 1) {
+    recipes.addShapeless("stripped_wood_to_plank" ~ i, planksArray[i] * 4, [strippedWoodArray[i]]);
+}

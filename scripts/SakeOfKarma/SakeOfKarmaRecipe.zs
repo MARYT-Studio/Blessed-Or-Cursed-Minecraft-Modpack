@@ -10,8 +10,8 @@ val waters as IItemStack[] = [
     <forge:bucketfilled>.withTag({FluidName: "dcs.hotspring", Amount: 1000})
 ];
 
-for water in waters {
-    recipes.addShaped("sake_of_karma", <contenttweaker:sake_of_karma>,
+for index, water in waters {
+    recipes.addShaped("sake_of_karma" ~ index, <contenttweaker:sake_of_karma>,
     [
         [null, rice, null],
         [null, water, null],
