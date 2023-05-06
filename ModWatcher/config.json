@@ -1,0 +1,42 @@
+{
+  "apiKey": "",
+  "watchFolder": "./mods",
+  "stageFolder": "./ModWatcher/stage",
+  "manifest": {
+    "minecraft": {
+      "version": "1.12.2",
+      "modLoaders": [
+        {
+          "id": "forge-14.23.5.2860",
+          "primary": true
+        }
+      ]
+    },
+    "manifestType": "minecraftModpack",
+    "manifestVersion": 1,
+    "name": "Blessed-Or-Cursed-Expedition-to-Infinite-Force",
+    "version": "1.0",
+    "author": "RisingInIris2017",
+    "files": [],
+    "overrides": "overrides"
+  },
+  "minecraftFolder": "./",
+  "ignoreDirectories": [
+    "screenshots",
+    "saves",
+    "local",
+    "logs",
+    "fonts",
+    "crash-reports",
+    "caches",
+    "cache",
+    ".mixin.out",
+    "mods",
+    "ModWatcher"
+  ],
+  "ignoreFiles": [
+    "usercache.json",
+    "usernamecache.json",
+    "MinecraftModWatcher.exe"
+  ]
+}

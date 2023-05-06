@@ -12,6 +12,7 @@ $ cat .gitignore
 !/oresources
 !/scripts
 !/structures
+!/ModWatcher
 
 #Files
 !/.gitignore

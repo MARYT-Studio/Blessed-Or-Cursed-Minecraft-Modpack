@@ -2,15 +2,14 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "texture": "contenttweaker:blocks/sake_of_karma",
-      "particle": "contenttweaker:blocks/sake_of_karma"
+      "all": "contenttweaker:blocks/sake_of_karma"
     },
-    "model": "base:storage",
-    "uvlock": true,
-    "transform": "forge:default-block"
+    "model": "contenttweaker:blocks/sake_of_karma",
+    "uvlock": true
   },
   "variants": {
-    "normal": [{}],
-    "inventory": [{}]
+    "normal": [
+      { "model": "contenttweaker:blocks/sake_of_karma" }
+    ]
   }
 }

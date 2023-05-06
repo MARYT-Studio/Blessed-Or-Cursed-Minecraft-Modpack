@@ -1,7 +1,0 @@
-{
-   "name" : "名刀之卷",
-   "description" : "这一段记录了从家喻户晓的名刀到无人知晓的好刀。$(br2)虽然如此，却并非邪魔侵染之妖刀，只得称其名刀罢了。",
-   "icon" : "flammpfeil.slashblade:slashblade",
-   "advancement":"lastsmith:slashblade_white",
-   "sortnum" : 2
-}

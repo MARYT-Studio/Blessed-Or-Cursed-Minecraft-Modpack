@@ -1,7 +1,0 @@
-{
-   "name" : "科技之刀刃",
-   "description" : "这是一些玄武之泽的河童利用日本刀的技艺打造的武器。$(br2)我并不觉得有多值得称好，但确实其能力凌驾于一般的妖刀之上。",
-   "icon" : "flammpfeil.slashblade:slashbladenamed{ModelName: \"named/rf_roukan/model\", TextureName: \"named/rf_roukan/texture_on\"}",
-   "sortnum" : 6,
-   "secret" : true
-}
