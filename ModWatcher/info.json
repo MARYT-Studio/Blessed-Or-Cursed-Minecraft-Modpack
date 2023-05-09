@@ -1,1 +1,92 @@
-{}
+{
+  "419286": [
+    {
+      "fileName": "!mixinbooter-7.0.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "Hiy5j/Gnrh/5blwIs4YVBw==",
+      "fileId": 4090558
+    }
+  ],
+  "305840": [
+    {
+      "fileName": "absentbydesign-1.12.2-1.0.4.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "DFeiqWl66EZkWv2TuCwSnw==",
+      "fileId": 2748065
+    }
+  ],
+  "234851": [
+    {
+      "fileName": "AbyssalCraft Integration-1.12.2-1.11.2.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "l6vOz0uvSNWqeQ8gQGxHyA==",
+      "fileId": 2959100
+    }
+  ],
+  "53686": [
+    {
+      "fileName": "AbyssalCraft-1.12.2-1.10.3.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "0CAnq9aPbArJHS73pn5AgA==",
+      "fileId": 3087689
+    }
+  ],
+  "224472": [
+    {
+      "fileName": "AppleCore-mc1.12.2-3.4.0.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "qN1jWoH+1Zvg0YIG/Tg/bg==",
+      "fileId": 2969118
+    }
+  ],
+  "248787": [
+    {
+      "fileName": "AppleSkin-mc1.12-1.0.14.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "tDWGDVz6I7xT07jhIL6R1A==",
+      "fileId": 2987247
+    }
+  ],
+  "246996": [
+    {
+      "fileName": "base-1.12.2-3.14.0.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "XUyiQQEEuxQY95dNRMxyxw==",
+      "fileId": 3440963
+    }
+  ],
+  "227083": [
+    {
+      "fileName": "Baubles-1.12-1.5.2.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "lE3sTvP7/U1JjZSnBHryAQ==",
+      "fileId": 2518667
+    }
+  ],
+  "272515": [
+    {
+      "fileName": "BetterAdvancements-1.12.2-0.1.0.77.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "kAmk0IDK9NMeTvjtuh+Qzw==",
+      "fileId": 2685984
+    }
+  ],
+  "244181": [
+    {
+      "fileName": "blockdrops-1.12.2-1.4.0.jar",
+      "staged": false,
+      "deleted": false,
+      "md5": "qyjEovcyhtpJ8iTns//Wlg==",
+      "fileId": 2509046
+    }
+  ]
+}
