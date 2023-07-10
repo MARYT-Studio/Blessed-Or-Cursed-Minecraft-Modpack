@@ -57,6 +57,7 @@
   "reccomplex": "1.4.8.2",
   "modtweaker": "4.0.18",
   "botania": "r1.10-363",
+  "ding": "1.0.2",
   "energyconverters": "1.3.7.30",
   "corpsecomplex": "1.0.12.0",
   "resourceloader": "1.5.3",
