@@ -1,0 +1,64 @@
+server_entry.title=\u00a76\u00a7lKliknij tutaj, aby zobaczyć swój plan serwera
+server_entry.description=\u00a7eUżyj kodu promocyjnego \u00a7e\u00a7lmarytworld\u00a7e, aby otrzymać zniżkę
+
+screen.config.mod=Menu Integracji z Serwerem BisectHosting
+screen.config.save=Zapisz
+screen.config.discard=Odrzuć
+screen.config.close=Zamknij
+
+config.pack_id=ID Partnera
+config.partner_id=ID Paczki
+config.pack_edit_mode=Tryb edytowania paczki
+
+screen.config.modules.server_creator_banner.name=Baner listy serwerów
+modules.server_creator_banner.config.title=Tytuł
+modules.server_creator_banner.config.description=Opis
+modules.server_creator_banner.config.use_language_files=Użyj paczek językowych
+
+screen.config.modules.public_server_list.name=Lista publicznych serwerów
+modules.public_server_list.open_screen.tooltip=Wyświetl serwery publiczne
+modules.public_server_list.title=Publiczne serwery
+modules.public_server_list.last_played_label=Ostatnio grany serwer
+modules.public_server_list.public_servers_label=Publiczne serwery
+modules.public_server_list.loading.title=Okno ładowania publicznych serwer
+modules.public_server_list.loading.loading=Ładowanie publicznych serwerów
+modules.public_server_list.loading.failed=Nie udało się załadować serwerów publicznych
+modules.public_server_list.filter.name=Filtruj według nazwy
+modules.public_server_list.sort.player_count=Sortuj według liczby graczy
+modules.public_server_list.sort.ping=Sortuj według pingu
+
+configs.boolean.true=Tak
+configs.boolean.false=Nie
+
+server_entry.title=Potrzebujesz Serwera?
+server_entry.description=Kliknij tutaj aby stworzyć swój serwer!
+
+step.base.create_your_server=Stwórzmy twój serwer.
+step.base.back=Wróć
+
+step.loading_plans.loading=Ładowanie planów
+step.loading_plans.failed=Problem z ładowaniem planów
+
+step.player_count.question=Ilu graczy spodziewasz się na serwerze?
+step.player_count.next=Dalej
+
+step.recommended_jar.detected=Wykryliśmy, że grasz w:
+step.recommended_jar.choice=Naciśnij „Wybierz”, aby użyć tej paczki lub naciśnij „Zmień”, aby wybrać inną paczke.
+step.recommended_jar.select=Wybierz
+step.recommended_jar.change=Zmień
+
+step.select_jar.name_filter=Filtruj według nazwy
+step.select_jar.platform_filter=Filtruj według platformy
+step.select_jar.select_pack=Wybierz paczkę
+step.select_jar.select=Wybierz
+
+step.select_package.plan=Wybraliśmy idealny plan dla ciebie
+step.select_package.slider=Przesuń suwak, aby wybrać inny plan
+step.select_package.order_plan=Wybierz plan
+step.select_package.price=$%s/Miesiąc
+
+step.select_plan.choose_plan=Wybierz typ planu
+step.select_plan.choose_budget=Wybierz Budżet
+step.select_plan.choose_premium=Wybierz Premium
+step.select_plan.budget_name=Plany Budżet
+step.select_plan.premium_name=Plany Premium

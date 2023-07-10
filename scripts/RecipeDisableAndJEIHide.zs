@@ -9,7 +9,7 @@ var modidList as string[] = [
     "botania",
     "energyconverters",
     "base",
-    "tombstone"
+    "torcherino"
 ];
 val ItemNotToHide = 
     // \u5DE5\u4E1A\u6273\u624B
@@ -190,9 +190,3 @@ for food in AbyssalFoods{mods.jei.JEI.removeAndHide(food);}
 
 // Hide the dummy infinite item
 mods.jei.JEI.hide(<contenttweaker:dummy_infinite_item>);
-
-// Corail Tombstone Specially Hide
-val torcherinoToHide as IItemStack[] = [
-    
-];
-for item in torcherino {mods.jei.JEI.removeAndHide(item);}
