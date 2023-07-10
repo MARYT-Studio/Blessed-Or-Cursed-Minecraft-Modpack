@@ -192,12 +192,7 @@ for food in AbyssalFoods{mods.jei.JEI.removeAndHide(food);}
 mods.jei.JEI.hide(<contenttweaker:dummy_infinite_item>);
 
 // Corail Tombstone Specially Hide
-val corailItemsToHide as IItemStack[] = [
-    <tombstone:magic_scroll>,
-    <tombstone:tablet_of_assistance>,
-    <tombstone:gift>,
-    <tombstone:christmas_gift>
+val torcherinoToHide as IItemStack[] = [
+    
 ];
-for item in corailItemsToHide {
-    mods.jei.JEI.removeAndHide(item);
-}
+for item in torcherino {mods.jei.JEI.removeAndHide(item);}

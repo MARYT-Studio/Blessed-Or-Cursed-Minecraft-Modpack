@@ -2,7 +2,7 @@ $ cat .gitignore
 #Whitelist
 /*
 /config/worldedit/schematics
-/scripts/.zsrc
+/scripts/generated
 
 #Folders
 !/bansoukou/
