@@ -72,7 +72,7 @@
   "triumph": "3.19.2",
   "dcs_climate": "3.8.5",
   "FML": "8.0.99.99",
-  "probezs": "1.7.3",
+  "probezs": "1.6.2",
   "fancymenu": "2.2.2",
   "norecipebook": "1.2.1",
   "appleskin": "1.0.14",

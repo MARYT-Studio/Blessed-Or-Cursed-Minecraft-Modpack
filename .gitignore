@@ -24,3 +24,5 @@ $ cat .gitignore
 
 scripts/.VSCodeCounter/
 resources/crafttweaker/lang/.VSCodeCounter/
+scripts/.brackets.zs
+scripts/.d.zs
