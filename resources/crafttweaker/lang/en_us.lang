@@ -122,7 +122,8 @@ crafttweaker.warp_items_2.desc= points of normal warp.
 crafttweaker.blue_steel_blade_is_useless.tooltip=§c§lThis item is useless, Please craft it into Void Metal Blade(5/5).
 
 # Grinding Stone bug
-crafttweaker.grindstone_is_temporarily_banned.tooltip=§c§lDue to a serious bug, we temporarily ban the Grind Stones.
+crafttweaker.grindstone_is_temporarily_banned_1.tooltip=§c§lOnly for decoration. No functionality.
+crafttweaker.grindstone_is_temporarily_banned_2.tooltip=§eUse "Spellbinding Cloth" instead, craft it with the item to be disenchanted.
 
 # Hunting Dim
 crafttweaker.craft_it_for_hd.tooltip=§lCraft it or pick it up, then you will be permitted to go deeper.
@@ -167,7 +168,3 @@ crafttweaker.sake_of_karma_4.tooltip=Right-Click this with your Blade, devote Bl
 crafttweaker.sake_of_karma_5.tooltip=Harvest this with Silk Touch.
 
 crafttweaker.sake_of_karma.desc=A bottle of Karma. With your blade drunk in this, the bloodthirsty aura it contains collides and mingles with karma, which become a force powerful enough to awake your demons in mind and materialize them before you in a Ritual of Exorcism. The ritual summons "Obsessions", and the more violent each attack you make on "Obsessions", the stronger and more numerous the demons it will summon will be. "Obsession" may summon "Attachment", "Aversion", and "Delusion", as known as the Three Poisons. Defeat "Attachment" will increase the exp dropped from your enemies for a while. Defeat "Aversion" will increase your attack damage for a while. Defeat "Delusion" will extend the time that "Obsession" exists by 15 seconds.
-
-# Corail Tombstone
-crafttweaker.only_for_deco.tooltip=Only for decoration purpose.
-crafttweaker.can_be_replaced.tooltip=You may use Tiny Proudsoul instead of this item in crafting.

@@ -26,3 +26,5 @@ scripts/.VSCodeCounter/
 resources/crafttweaker/lang/.VSCodeCounter/
 scripts/.brackets.zs
 scripts/.d.zs
+config/triumph/documentation/
+config/triumph/script/triumph/example/

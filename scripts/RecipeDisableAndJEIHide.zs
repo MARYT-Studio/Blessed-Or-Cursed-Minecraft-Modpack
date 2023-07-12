@@ -79,22 +79,7 @@ val ItemNotToHide =
     
     // \u4F5C\u4E3A\u7802\u8F6E\u7684\u66FF\u4EE3\u54C1\uFF0C\u690D\u7269\u9B54\u6CD5\u7684\u5C01\u5370\u4E4B\u5E03
     // \u5C5E\u4E8E TempFixes \u7684\u4E00\u90E8\u5206
-    <botania:spellcloth>|
-
-    // Corail Tombstone \u7684\u88C5\u9970\u7269\u54C1
-    <tombstone:decorative_grave_simple>|
-    <tombstone:decorative_grave_simple:1>|
-    <tombstone:decorative_grave_normal>|
-    <tombstone:decorative_grave_normal:1>|
-    <tombstone:decorative_grave_cross>|
-    <tombstone:decorative_grave_cross:1>|
-    <tombstone:decorative_tombstone>|
-    <tombstone:decorative_tombstone:1>|
-    <tombstone:decorative_subaraki_grave>|
-    <tombstone:decorative_subaraki_grave:1>|
-    <tombstone:decorative_grave_original>|
-    <tombstone:decorative_grave_original:1>|
-    <tombstone:crafting_ingredient:4>;
+    <botania:spellcloth>;
 
 // JEI Hide and recipe removal
 for modid in modidList {

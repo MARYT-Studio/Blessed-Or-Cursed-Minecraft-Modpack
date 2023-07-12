@@ -82,7 +82,6 @@ key_invtweaks.key.sort:0:NONE
 key_key.sakura.sheath_in:47:NONE
 key_key.flammpfeil.slashblade.mode_change:47:NONE
 key_key.flammpfeil.slashblade.mode_change:47:NONE
-key_tombstone.message.knowledge_of_death:0:NONE
 key_key.journeymap.zoom_in:13:NONE
 key_key.journeymap.zoom_out:12:NONE
 key_key.journeymap.minimap_type:26:NONE
