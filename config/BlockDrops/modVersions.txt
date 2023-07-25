@@ -71,7 +71,6 @@
   "patchouli": "1.0-21",
   "abyssalcraft": "1.10.3",
   "torcherino": "7.6",
-  "triumph": "3.19.2",
   "dcs_climate": "3.8.5",
   "FML": "8.0.99.99",
   "probezs": "1.6.2",
