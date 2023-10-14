@@ -1,7 +1,7 @@
 [
   {
     "identifier": "vortex",
-    "enabled": true,
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -22,7 +22,7 @@
   },
   {
     "identifier": "desecrator",
-    "enabled": true,
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -71,7 +71,7 @@
   },
   {
     "identifier": "adaptable",
-    "enabled": true,
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -92,7 +92,7 @@
   },
   {
     "identifier": "shielding",
-    "enabled": true,
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -106,7 +106,7 @@
   },
   {
     "identifier": "plagued",
-    "enabled": true,
+    "enabled": false,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1

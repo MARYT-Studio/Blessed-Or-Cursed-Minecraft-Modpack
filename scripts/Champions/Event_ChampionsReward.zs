@@ -22,9 +22,9 @@ val proudSoulItems as IItemStack[float] = {
 val buffProbability as float = 0.5f;
 val longBuffProbability as float = 0.3f;
 
-val weakAbsorption as IPotionEffect = <potion:dcs_climate:dcs.potion.absorption_exp>.makePotionEffect(300, 0);
-val strongAbsorption as IPotionEffect = <potion:dcs_climate:dcs.potion.absorption_exp>.makePotionEffect(300, 1);
-val longAbsorption as IPotionEffect = <potion:dcs_climate:dcs.potion.absorption_exp>.makePotionEffect(600, 1);
+// val weakAbsorption as IPotionEffect = <potion:dcs_climate:dcs.potion.absorption_exp>.makePotionEffect(300, 0);
+// val strongAbsorption as IPotionEffect = <potion:dcs_climate:dcs.potion.absorption_exp>.makePotionEffect(300, 1);
+// val longAbsorption as IPotionEffect = <potion:dcs_climate:dcs.potion.absorption_exp>.makePotionEffect(600, 1);
 
 events.onEntityLivingDeathDrops(
     function(event as EntityLivingDeathDropsEvent) {
@@ -42,19 +42,19 @@ events.onEntityLivingDeathDrops(
                         var tier as int = championInfo.memberGet("tier").asInt();
                         if (tier != 0) {
                             // Reward Exp absorption buff
-                            if (tier == 1) {
-                                if (random.nextFloat() < buffProbability) {
-                                    player.addPotionEffect(weakAbsorption);   
-                                }
-                            } else if (tier == 2) {
-                                player.addPotionEffect(strongAbsorption);
-                            } else if (tier == 3) {
-                                if (random.nextFloat() < longBuffProbability) {
-                                    player.addPotionEffect(longAbsorption);
-                                } else {
-                                    player.addPotionEffect(strongAbsorption);
-                                }
-                            }
+                            // if (tier == 1) {
+                            //     if (random.nextFloat() < buffProbability) {
+                            //         player.addPotionEffect(weakAbsorption);   
+                            //     }
+                            // } else if (tier == 2) {
+                            //     player.addPotionEffect(strongAbsorption);
+                            // } else if (tier == 3) {
+                            //     if (random.nextFloat() < longBuffProbability) {
+                            //         player.addPotionEffect(longAbsorption);
+                            //     } else {
+                            //         player.addPotionEffect(strongAbsorption);
+                            //     }
+                            // }
                             // Reward proud soul items
                             for itemEntity in event.drops {
                             var item = itemEntity.item;

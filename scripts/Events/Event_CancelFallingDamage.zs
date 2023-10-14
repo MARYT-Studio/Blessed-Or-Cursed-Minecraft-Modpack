@@ -4,7 +4,7 @@
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingHurtEvent;
 
-val enable = true;
+val enable = false;
 
 if (enable) {
     events.onEntityLivingHurt(
