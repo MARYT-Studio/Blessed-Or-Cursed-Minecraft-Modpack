@@ -14,198 +14,306 @@ customization {
 }
 
 customization {
-  identifier = %id=400322%
-  orientation = mid-centered
-  x = -139
-  action = movebutton
-  y = 9
+  keepaspectratio = false
+  action = backgroundoptions
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  orientation = mid-centered
+  x = -143
+  action = movebutton
+  y = -14
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   width = 129
   action = resizebutton
-  height = 23
+  height = 18
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   action = setbuttonlabel
   value = §8§l与人同行 - Servers
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
   action = setbuttontexture
   backgroundhovered = resources/fancymenu/red_circle.png
   backgroundnormal = resources/fancymenu/empty.png
 }
 
 customization {
-  identifier = %id=400322%
+  identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   action = sethoverlabel
   label = §c§l与人同行 - Servers
 }
 
 customization {
-  identifier = %id=400382%
+  identifier = %id=604382%
   orientation = mid-centered
-  x = -72
+  x = -122
   action = movebutton
-  y = 36
+  y = 70
 }
 
 customization {
-  identifier = %id=400382%
-  width = 64
+  identifier = %id=604382%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = false
+  action = setbuttontexture
+  backgroundnormal = resources/fancymenu/empty.png
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  orientation = mid-centered
+  x = -66
+  action = movebutton
+  y = 23
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  width = 66
   action = resizebutton
-  height = 20
+  height = 18
 }
 
 customization {
-  identifier = %id=400382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   action = setbuttonlabel
   value = §8§l选项 - Options
 }
 
 customization {
-  identifier = %id=400382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
   action = setbuttontexture
   backgroundhovered = resources/fancymenu/red_circle.png
   backgroundnormal = resources/fancymenu/empty.png
 }
 
 customization {
-  identifier = %id=400382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   action = sethoverlabel
   label = §c§l选项 - Options
 }
 
 customization {
-  identifier = %id=502382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   orientation = mid-centered
-  x = -109
+  x = -143
   action = movebutton
-  y = 62
+  y = 42
 }
 
 customization {
-  identifier = %id=502382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   width = 104
   action = resizebutton
-  height = 20
+  height = 18
 }
 
 customization {
-  identifier = %id=502382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   action = setbuttonlabel
   value = §8§l暂时离开 - Exit
 }
 
 customization {
-  identifier = %id=502382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
   action = setbuttontexture
   backgroundhovered = resources/fancymenu/red_circle.png
   backgroundnormal = resources/fancymenu/empty.png
 }
 
 customization {
-  identifier = %id=502382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
   action = sethoverlabel
   label = §c§l暂时离开 - Exit
 }
 
 customization {
-  identifier = %id=376382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = mid-centered
-  x = -123
+  x = -127
   action = movebutton
-  y = 62
+  y = 4
 }
 
 customization {
-  identifier = %id=376382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  width = 78
+  action = resizebutton
+  height = 18
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   action = setbuttonlabel
-  value = 
+  value = &8&l语言 - Laguages
 }
 
 customization {
-  identifier = %id=376382%
+  identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = resources/fancymenu/empty.png
-  backgroundnormal = resources/fancymenu/lang.png
+  backgroundhovered = resources/fancymenu/red_circle.png
+  backgroundnormal = resources/fancymenu/empty.png
 }
 
 customization {
-  identifier = %id=400298%
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   orientation = mid-centered
-  x = -128
+  x = -132
   action = movebutton
-  y = -13
+  y = -33
 }
 
 customization {
-  identifier = %id=400298%
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   width = 128
   action = resizebutton
-  height = 23
+  height = 18
 }
 
 customization {
-  identifier = %id=400298%
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   action = setbuttonlabel
   value = §8§l你的旅途 - SinglePlayer
 }
 
 customization {
-  identifier = %id=400298%
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
   action = setbuttontexture
   backgroundhovered = resources/fancymenu/red_circle.png
   backgroundnormal = resources/fancymenu/empty.png
 }
 
 customization {
-  identifier = %id=400298%
+  identifier = %id=button_compatibility_id:mc_titlescreen_singleplayer_button%
   action = sethoverlabel
   label = §c§l你的旅途 - SinglePlayer
 }
 
 customization {
-  identifier = %id=400346%
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   orientation = mid-centered
-  x = -135
+  x = -129
   action = movebutton
-  y = 36
+  y = 23
 }
 
 customization {
-  identifier = %id=400346%
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   width = 60
   action = resizebutton
-  height = 20
+  height = 18
 }
 
 customization {
-  identifier = %id=400346%
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   action = setbuttonlabel
   value = §8§l模组 - Mods
 }
 
 customization {
-  identifier = %id=400346%
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
   action = setbuttontexture
   backgroundhovered = resources/fancymenu/red_circle.png
   backgroundnormal = resources/fancymenu/empty.png
 }
 
 customization {
-  identifier = %id=400346%
+  identifier = %id=button_compatibility_id:forge_titlescreen_mods_button%
   action = sethoverlabel
   label = §c§l模组 - Mods
 }
 
 customization {
-  identifier = %id=502346%
+  identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
   action = hidebutton
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 113
+  width = 200
+  action = deep_customization_element:title_screen_forge_top
+  actionid = 5ad17cd3-d07f-44fd-94a9-56934b9dfd371694925806468
+  y = 4
+  height = 19
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 2
+  width = 121
+  action = deep_customization_element:title_screen_branding
+  actionid = 81c2f03f-4228-496f-b6e9-3499adc59ee61694925806471
+  y = 291
+  height = 50
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 258
+  width = 168
+  action = deep_customization_element:title_screen_forge_copyright
+  actionid = 6a6528fc-7dfe-4379-9389-ac4b0fa0b0c21694925806471
+  y = 220
+  height = 9
+}
+
+customization {
+  orientation = top-left
+  hidden = true
+  x = 423
+  width = 13
+  action = deep_customization_element:title_screen_realms_notification
+  actionid = de63e237-7c03-42c7-8f1b-35fbe2d962071694925806471
+  y = 185
+  height = 13
+}
+
+customization {
+  orientation = top-left
+  hidden = false
+  x = 76
+  width = 274
+  action = deep_customization_element:title_screen_logo
+  actionid = 57f4602e-75ff-48ca-9879-891f8a2a6a061694925806471
+  y = 30
+  height = 52
+}
+
+customization {
+  orientation = original
+  splash_color = #ffff00
+  hidden = false
+  x = 0
+  width = 60
+  splash_rotation = -20
+  action = deep_customization_element:title_screen_splash
+  actionid = 23a08e08-99a9-4f23-a66a-d7dab320789d1694925806471
+  y = 0
+  height = 30
 }
 

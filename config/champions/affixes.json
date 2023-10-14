@@ -1,28 +1,28 @@
 [
   {
     "identifier": "vortex",
-    "enabled": false,
+    "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
   },
   {
     "identifier": "cinder",
-    "enabled": false,
+    "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
   },
   {
     "identifier": "arctic",
-    "enabled": false,
+    "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
   },
   {
     "identifier": "desecrator",
-    "enabled": false,
+    "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -71,7 +71,7 @@
   },
   {
     "identifier": "adaptable",
-    "enabled": false,
+    "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -92,7 +92,7 @@
   },
   {
     "identifier": "shielding",
-    "enabled": false,
+    "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
@@ -106,7 +106,7 @@
   },
   {
     "identifier": "plagued",
-    "enabled": false,
+    "enabled": true,
     "entityBlacklist": [],
     "alwaysOnEntity": [],
     "tier": 1
