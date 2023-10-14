@@ -14,7 +14,7 @@ events.onPlayerTick(
             } else {
                 var ticks as int = player.data.ranktest_ticks.asInt();
                 if (ticks >= 5 * seconds) {
-                    player.sendMessage("五秒已到！");
+                    player.sendMessage("\u4E94\u79D2\u5DF2\u5230\uFF01");
                     player.update({ranktest_ticks: 0});
                     return;
                 }

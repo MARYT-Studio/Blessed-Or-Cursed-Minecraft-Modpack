@@ -1,15 +1,16 @@
-// Pack Import
+#loader crafttweaker
+
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import mods.thaumcraft.Infusion;
-// 4 mods' item removal
+
+// mods removal
 var modidList as string[] = [
     "ic2",
     "thaumcraft",
     "botania",
     "energyconverters",
-    "base",
-    "torcherino"
+    "base"
 ];
 val ItemNotToHide = 
     // \u5DE5\u4E1A\u6273\u624B
@@ -38,13 +39,7 @@ val ItemNotToHide =
     //\u6731\u7802\u7CFB\u5217
     <thaumcraft:ore_cinnabar>|
     <thaumcraft:cluster:6>|   //\u6731\u7802\u539F\u77FF\u7C07
-    // <thaumcraft:quicksilver>; //\u6C34\u94F6
     <thaumcraft:quicksilver>| //\u6C34\u94F6
-
-    //TLS\u4F1A\u7528\u5230\u7684IC2\u6750\u6599
-    // \u8FD9\u4E24\u79CD\u7269\u54C1\u88AB CoT\u6CE8\u518C\u7684\u7269\u54C1\u66FF\u6362\u4E86
-    // <ic2:crafting:1>|  //\u7535\u8DEF\u677F
-    // <ic2:crafting:2>|  //\u9AD8\u7EA7\u7535\u8DEF\u677F
 
     <ic2:crafting:3>|  //\u9AD8\u7EA7\u5408\u91D1
     <ic2:plate:12>|    //\u81F4\u5BC6\u94C1\u677F
@@ -79,6 +74,8 @@ val ItemNotToHide =
     
     // \u4F5C\u4E3A\u7802\u8F6E\u7684\u66FF\u4EE3\u54C1\uFF0C\u690D\u7269\u9B54\u6CD5\u7684\u5C01\u5370\u4E4B\u5E03
     // \u5C5E\u4E8E TempFixes \u7684\u4E00\u90E8\u5206
+
+    // TODO: \u79FB\u9664\u6DF1\u6E0A\u56FD\u5EA6\uFF0C\u540C\u65F6\u79FB\u9664\u8FD9\u4E2A\uFF0C\u6362\u56DE\u7802\u8F6E
     <botania:spellcloth>;
 
 // JEI Hide and recipe removal
