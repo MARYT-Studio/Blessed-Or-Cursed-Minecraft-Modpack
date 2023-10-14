@@ -31,27 +31,41 @@ key_key.hotbar.6:7:NONE
 key_key.hotbar.7:8:NONE
 key_key.hotbar.8:9:NONE
 key_key.hotbar.9:10:NONE
-key_Change Caster Focus:0:NONE
-key_Misc Caster Toggle:0:NONE
-key_Reload Menu | CTRL + ALT + :0:NONE
-key_Toggle Customization Overlay | CTRL + ALT + :0:NONE
-key_ALT Key:0:NONE
-key_Boost Key:0:NONE
-key_Mode Switch Key:0:NONE
-key_Side Inventory Key:0:NONE
-key_Hub Expand Key:0:NONE
-key_equipmentcompare.key.showTooltips:42:NONE
+key_Change Caster Focus:33:NONE
+key_Misc Caster Toggle:34:NONE
+key_Reload Menu | CTRL + ALT + :19:NONE
+key_Toggle Customization Overlay | CTRL + ALT + :46:NONE
+key_ALT Key:56:NONE
+key_Boost Key:29:NONE
+key_Mode Switch Key:50:NONE
+key_Side Inventory Key:46:NONE
+key_Hub Expand Key:45:NONE
 key_key.staff_mode.desc:50:NONE
 key_key.use_cage.desc:49:NONE
 key_key.configurator_mode.desc:47:NONE
 key_key.configurator_filter.desc:48:NONE
 key_key.configurator_path.desc:34:NONE
-key_keybind.baublesinventory:11:NONE
-key_Key.SlashBlade.PS:76:NONE
+key_keybind.baublesinventory:48:NONE
+key_key.findme.search:21:NONE
+key_key.toggleFoVChanges:51:SHIFT
+key_key.reloadSoundSystem:66:SHIFT
+key_key.toggleTimeOfDayOverlay:0:NONE
+key_key.togglePotionParticles:66:CONTROL
+key_Toggle Raw Input:0:NONE
+key_Rescan Key:41:NONE
+key_keys.servertabinfo.show:29:NONE
+key_keys.servertabinfo.show2:157:NONE
+key_simpletextoverlay.key.toggle:0:NONE
+key_simpletextoverlay.key.cycle:0:NONE
+key_Key.SlashBlade.PS:-98:NONE
 key_Key.SlashBlade.SA:47:NONE
 key_Key.SlashBlade.LO:42:NONE
 key_Key.SlashBlade.CA:0:NONE
-key_smoothfont.key.guiOpen:0:NONE
+key_Reload Default Sound Device:41:NONE
+key_walljump.key.walljump:42:NONE
+key_nimble.keybind.frontView:62:NONE
+key_key.dismount:42:NONE
+key_key.narrator:48:CONTROL
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0:NONE
@@ -72,17 +86,45 @@ key_key.fuzzy:0:NONE
 key_key.connected_area:0:NONE
 key_key.rotate_mirror:0:NONE
 key_key.material_list:50:NONE
-key_key.duraview:0:NONE
+key_key.clienttweaks.disable_step_assist:0:NONE
+key_key.clienttweaks.hide_offhand_item:0:NONE
+key_key.craftingtweaks.rotate:0:NONE
+key_key.craftingtweaks.rotate_counter_clockwise:0:NONE
+key_key.craftingtweaks.balance:0:NONE
+key_key.craftingtweaks.spread:0:NONE
+key_key.craftingtweaks.clear:0:NONE
+key_key.craftingtweaks.force_clear:0:NONE
+key_key.craftingtweaks.toggleButtons:0:NONE
+key_key.craftingtweaks.compressOne:37:CONTROL
+key_key.craftingtweaks.compressStack:37:NONE
+key_key.craftingtweaks.compressAll:37:SHIFT
+key_key.craftingtweaks.decompressOne:0:NONE
+key_key.craftingtweaks.decompressStack:0:NONE
+key_key.craftingtweaks.decompressAll:0:NONE
+key_key.craftingtweaks.refill_last:15:NONE
+key_key.craftingtweaks.refill_last_stack:15:NONE
+key_key.duraview:35:NONE
+key_FpsReducer.key.guiOpen:207:NONE
+key_FpsReducer.key.forceIdle:197:NONE
 key_waila.keybind.wailaconfig:82:NONE
 key_waila.keybind.wailadisplay:79:NONE
 key_waila.keybind.liquid:80:NONE
 key_waila.keybind.recipe:81:NONE
 key_waila.keybind.usage:75:NONE
-key_invtweaks.key.sort:19:NONE
+key_invtweaks.key.sort:0:NONE
+key_key.jeiutilities.displayRecipe:29:NONE
+key_key.jeiutilities.pickBookmark:-98:NONE
+key_key.jeiutilities.transferRecipe:17:CONTROL
+key_key.jeiutilities.transferRecipeMax:20:CONTROL
 key_key.sakura.sheath_in:47:NONE
+key_key.screenshot_viewer.open_screenshots_screen:64:NONE
 key_key.flammpfeil.slashblade.mode_change:47:NONE
 key_key.flammpfeil.slashblade.mode_change:47:NONE
-key_tombstone.message.knowledge_of_death:0:NONE
+key_key.trashslot.toggle:20:NONE
+key_key.trashslot.delete:211:NONE
+key_key.trashslot.deleteAll:211:SHIFT
+key_key.vaultopic.view:34:NONE
+key_key.vaultopic.vice:47:NONE
 key_key.journeymap.zoom_in:13:NONE
 key_key.journeymap.zoom_out:12:NONE
 key_key.journeymap.minimap_type:26:NONE
@@ -99,3 +141,5 @@ key_key.journeymap.fullscreen.north:200:NONE
 key_key.journeymap.fullscreen.south:208:NONE
 key_key.journeymap.fullscreen.east:205:NONE
 key_key.journeymap.fullscreen.west:203:NONE
+key_rsb.keybind.find_recipe:79:NONE
+key_rsb.keybind.find_uses:80:NONE
