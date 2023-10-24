@@ -41,21 +41,6 @@ events.onEntityLivingDeathDrops(
                     if (!isNull(championInfo)) {
                         var tier as int = championInfo.memberGet("tier").asInt();
                         if (tier != 0) {
-                            // Reward Exp absorption buff
-                            // if (tier == 1) {
-                            //     if (random.nextFloat() < buffProbability) {
-                            //         player.addPotionEffect(weakAbsorption);   
-                            //     }
-                            // } else if (tier == 2) {
-                            //     player.addPotionEffect(strongAbsorption);
-                            // } else if (tier == 3) {
-                            //     if (random.nextFloat() < longBuffProbability) {
-                            //         player.addPotionEffect(longAbsorption);
-                            //     } else {
-                            //         player.addPotionEffect(strongAbsorption);
-                            //     }
-                            // }
-                            // Reward proud soul items
                             for itemEntity in event.drops {
                             var item = itemEntity.item;
                             if (<minecraft:enchanted_book> has item) {

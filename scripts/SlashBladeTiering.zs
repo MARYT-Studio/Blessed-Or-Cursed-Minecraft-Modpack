@@ -19,42 +19,42 @@ val T3HammerDamage as int = 10;
 val T4HammerDamage as int = 250;
 
 // Killcount Token Base Item
-val firstKillCountTokenBase = <minecraft:iron_ingot>; // 原版铁锭
-val secondKillCountTokenBase = <dcs_climate:dcs_ingot:3>; // HAC 银锭
-val thirdKillCountTokenBase = <contenttweaker:third_killcount_token_base>; //占位物品，有待修改
-val fourthKillCountTokenBase = <contenttweaker:fourth_killcount_token_base>; //占位物品，有待修改
+val firstKillCountTokenBase = <minecraft:iron_ingot>; // \u539F\u7248\u94C1\u952D
+val secondKillCountTokenBase = <dcs_climate:dcs_ingot:3>; // HAC \u94F6\u952D
+val thirdKillCountTokenBase = <contenttweaker:third_killcount_token_base>; //\u5360\u4F4D\u7269\u54C1\uFF0C\u6709\u5F85\u4FEE\u6539
+val fourthKillCountTokenBase = <contenttweaker:fourth_killcount_token_base>; //\u5360\u4F4D\u7269\u54C1\uFF0C\u6709\u5F85\u4FEE\u6539
 
 // Proudsoul Bottle Base Item
 val firstProudSoulBottleBase = <minecraft:glass_bottle>;
 val secondProudSoulBottleBase = <minecraft:experience_bottle>;
-val thirdProudSoulBottleBase = <contenttweaker:third_proudsoul_bottle_base>; //占位物品，有待修改
+val thirdProudSoulBottleBase = <contenttweaker:third_proudsoul_bottle_base>; //\u5360\u4F4D\u7269\u54C1\uFF0C\u6709\u5F85\u4FEE\u6539
 
 // Material variables claiming and tooltip adding
 // Killcount Tokens
-val firstKillcountToken = <contenttweaker:first_killcount_token>;
+val firstKillcountToken as IItemStack = <contenttweaker:first_killcount_token>;
 firstKillcountToken.addTooltip(game.localize("crafttweaker.first_killcount_token.tooltip"));
 firstKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
-val secondKillcountToken = <contenttweaker:second_killcount_token>;
+val secondKillcountToken as IItemStack = <contenttweaker:second_killcount_token>;
 secondKillcountToken.addTooltip(game.localize("crafttweaker.second_killcount_token.tooltip"));
 secondKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
-val thirdKillcountToken = <contenttweaker:third_killcount_token>;
+val thirdKillcountToken as IItemStack = <contenttweaker:third_killcount_token>;
 thirdKillcountToken.addTooltip(game.localize("crafttweaker.third_killcount_token.tooltip"));
 thirdKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
-val fourthKillcountToken = <contenttweaker:fourth_killcount_token>;
+val fourthKillcountToken as IItemStack = <contenttweaker:fourth_killcount_token>;
 fourthKillcountToken.addTooltip(game.localize("crafttweaker.fourth_killcount_token.tooltip"));
 fourthKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 
 // Proudsoul Bottles
-val firstProudsoulBottle = <contenttweaker:first_proudsoul_bottle>;
+val firstProudsoulBottle as IItemStack = <contenttweaker:first_proudsoul_bottle>;
 firstProudsoulBottle.addTooltip(game.localize("crafttweaker.first_proudsoul_bottle.tooltip"));
 firstProudsoulBottle.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 firstProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.general_proudsoul.tooltip"));
 firstProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.first_proudsoul_bottle_shift.tooltip"));
-val secondProudsoulBottle = <contenttweaker:second_proudsoul_bottle>;
+val secondProudsoulBottle as IItemStack = <contenttweaker:second_proudsoul_bottle>;
 secondProudsoulBottle.addTooltip(game.localize("crafttweaker.second_proudsoul_bottle.tooltip"));
 secondProudsoulBottle.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 secondProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.general_proudsoul.tooltip"));
-val thirdProudsoulBottle = <contenttweaker:third_proudsoul_bottle>;
+val thirdProudsoulBottle as IItemStack = <contenttweaker:third_proudsoul_bottle>;
 thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.third_proudsoul_bottle_1.tooltip"));
 thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.third_proudsoul_bottle_2.tooltip"));
 thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
@@ -107,13 +107,17 @@ val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sang
 // Fusang should be here
 val jieyuedao_Fusang = <lastsmith:.slashblade.named>.withTag({TextureName: "named/a_tukumo", ModelName: "named/agito", CurrentItemName: "flammpfeil.slashblade.named.yuzukitukumo", baseAttackModifier: 7.0 as float});
 // Yamazakura here
-// Because they don't need any materials which must be got from T3 (like Twilight Forest)
+// Because they do not need any materials which must be got from T3 (like Twilight Forest)
 val shanying_Shuiwuyue = <lastsmith:.slashblade.named>.withTag({TextureName: "named/yamazakura/yamazakura_minazuki", ModelName: "named/yamazakura/model_fake", CurrentItemName: "flammpfeil.slashblade.named.yamazakura.minazuki", CustomMaxDamage: 41, IsFakeBlade: 1 as byte, AttackAmplifier: 0.0 as float, baseAttackModifier: 6.0 as float, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 6.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}, {UUIDMost: -422425648963762075 as long, UUIDLeast: -5756800103171642205 as long, Amount: -2.4000000953674316, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "Weapon modifier"}]});
 val shanying_Wenyue = <lastsmith:.slashblade.named>.withTag({TextureName: "named/yamazakura/yamazakura_fumizuki", ModelName: "named/yamazakura/fumizuki", CurrentItemName: "flammpfeil.slashblade.named.yamazakura.fumizuki", CustomMaxDamage: 41, AttackAmplifier: 0.0 as float, baseAttackModifier: 7.0 as float, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 7.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}, {UUIDMost: -422425648963762075 as long, UUIDLeast: -5756800103171642205 as long, Amount: -2.4000000953674316, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "Weapon modifier"}]});
 val shanying_Shenwuyue_Feng = <lastsmith:.slashblade.named>.withTag({TextureName: "named/yamazakura/yamazakura_kannazuki_katura", ModelName: "named/yamazakura/kannazuki", CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kannazuki", CustomMaxDamage: 41, AttackAmplifier: 0.0 as float, baseAttackModifier: 8.0 as float, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 8.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}, {UUIDMost: -422425648963762075 as long, UUIDLeast: -5756800103171642205 as long, Amount: -2.4000000953674316, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "Weapon modifier"}]});
 val shanying_Shenyue = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamazakura/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kamuy", AttackAmplifier: 0.0 as float, TextureName: "named/yamazakura/yamazakura_kamuy_tuki", CustomMaxDamage: 41, IsBewitchedActived: 1 as byte, baseAttackModifier: 10.0 as float, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 10.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}, {UUIDMost: -422425648963762075 as long, UUIDLeast: -5756800103171642205 as long, Amount: -2.4000000953674316, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "Weapon modifier"}]});
 val shanying_Kui = <lastsmith:.slashblade.named>.withTag({TextureName: "named/yamazakura/yamazakura_aoi", ModelName: "named/yamazakura/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yamazakura.aoi", CustomMaxDamage: 41, IsBewitchedActived: 1 as byte, AttackAmplifier: 0.0 as float, baseAttackModifier: 9.0 as float, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 9.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}, {UUIDMost: -422425648963762075 as long, UUIDLeast: -5756800103171642205 as long, Amount: -2.4000000953674316, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "Weapon modifier"}]});
+
 // All T2 Blades List
+// Yamazakura here
+// Because they do not need any materials which must be got from T3 (like Twilight Forest)
+
 val T2_SlashBlades = 
     // Fusang should be here
     jieyuedao_Fusang|
@@ -147,8 +151,6 @@ val T2_SlashBlades =
     taidao|
     lidao_Cangmei|
     doudao_Gudu|
-    // Yamazakura here
-    // Because they don't need any materials which must be got from T3 (like Twilight Forest)
     shanying_Shuiwuyue|
     shanying_Wenyue|
     shanying_Shenwuyue_Feng|
@@ -190,11 +192,11 @@ var T1recipeNumber as int = 1;
 for SlashBladeTier in T1_allowed_SlashBlades {
     for hammer in T1_allowed_hammers {
         recipes.addShapeless(
-            // 配方名称
+            // \u914D\u65B9\u540D\u79F0
             "T1_killcount_extracting"~T1recipeNumber,
-            // 输出物品
+            // \u8F93\u51FA\u7269\u54C1
             firstKillcountToken,
-            // 输入材料
+            // \u8F93\u5165\u6750\u6599
             [
                 SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew(
                     function(item) {
@@ -211,7 +213,7 @@ for SlashBladeTier in T1_allowed_SlashBlades {
                 hammer.anyDamage().transformDamage(),
                 firstKillCountTokenBase
             ],
-            // 配方函数
+            // \u914D\u65B9\u51FD\u6570
             function(out,ins,info) {
                 var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
                 if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
@@ -221,7 +223,7 @@ for SlashBladeTier in T1_allowed_SlashBlades {
                     return slashBladeKillCount >= firstKillCountNumber ? out : null;
                 }
             },
-            // 配方动作
+            // \u914D\u65B9\u52A8\u4F5C
             null
         );
         T1recipeNumber = T1recipeNumber + 1; 
@@ -235,11 +237,11 @@ var T2recipeNumber = 1;
 for SlashBladeTier in T2_allowed_SlashBlades{
 for hammer in T2_allowed_hammers {
     recipes.addShapeless(
-        // 配方名称
+        // \u914D\u65B9\u540D\u79F0
         "T2_killcount_extracting"~T2recipeNumber,
-        // 输出物品
+        // \u8F93\u51FA\u7269\u54C1
         secondKillcountToken,
-        // 输入材料
+        // \u8F93\u5165\u6750\u6599
         [
             SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew (
                 function(item) {
@@ -255,7 +257,7 @@ for hammer in T2_allowed_hammers {
             hammer.anyDamage().transformDamage(),
             secondKillCountTokenBase
         ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info) {
             var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
             if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
@@ -265,17 +267,17 @@ for hammer in T2_allowed_hammers {
                 return slashBladeKillCount >= secondKillCountNumber ? out : null;
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
     );
 
     // First Proudsoul Extracting
     recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T2_proudsoul_extracting"~T2recipeNumber,
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     firstProudsoulBottle,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew(
             function(item) {
@@ -291,7 +293,7 @@ for hammer in T2_allowed_hammers {
         hammer.anyDamage().transformDamage(),
         firstProudSoulBottleBase
     ],
-        // 配方函数
+        // \u914D\u65B9\u51FD\u6570
         function(out,ins,info) {
             var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
             if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul)) {
@@ -301,7 +303,7 @@ for hammer in T2_allowed_hammers {
                 return slashBladeProudSoul >= firstProudsoulNumber ? out : null;
             }
         },
-        // 配方动作
+        // \u914D\u65B9\u52A8\u4F5C
         null
     );
     T2recipeNumber = T2recipeNumber + 1;
@@ -311,86 +313,87 @@ for hammer in T2_allowed_hammers {
 // Third Killcount Extracting
 var T3recipeNumber as int = 1;
 for SlashBladeTier in T3_allowed_SlashBlades{
-recipes.addShapeless(
-    // 配方名称
-    "T3_killcount_extracting"~T3recipeNumber,
-    // 输出物品
-    thirdKillcountToken,
-    // 输入材料
-    [
-        SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew(
-             function(item) {
-                var slashBladeToExtractKillcountNBT as IData = item.tag;
-                if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount)) {
-                    return item;
-                } else {
-                    var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
-                    return item.updateTag({killCount : max(0, KillCountToExtract - thirdKillCountNumber)});
+    recipes.addShapeless(
+        // \u914D\u65B9\u540D\u79F0
+        "T3_killcount_extracting"~T3recipeNumber,
+        // \u8F93\u51FA\u7269\u54C1
+        thirdKillcountToken,
+        // \u8F93\u5165\u6750\u6599
+        [
+            SlashBladeTier.marked("SlashbladeToExtractKillcount").transformNew(
+                function(item) {
+                    var slashBladeToExtractKillcountNBT as IData = item.tag;
+                    if(isNull(slashBladeToExtractKillcountNBT)||isNull(slashBladeToExtractKillcountNBT.killCount)) {
+                        return item;
+                    } else {
+                        var KillCountToExtract as int = slashBladeToExtractKillcountNBT.killCount.asInt();
+                        return item.updateTag({killCount : max(0, KillCountToExtract - thirdKillCountNumber)});
+                    }
                 }
+            ),
+            T3Hammer.anyDamage().transformDamage(T3HammerDamage),
+            thirdKillCountTokenBase
+        ],
+        // \u914D\u65B9\u51FD\u6570
+        function(out,ins,info) {
+            var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
+            if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
+                return null;
+            } else {
+                var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
+                return slashBladeKillCount >= thirdKillCountNumber ? out : null;
             }
-        ),
-        T3Hammer.anyDamage().transformDamage(T3HammerDamage),
-        thirdKillCountTokenBase
-    ],
-    // 配方函数
-    function(out,ins,info) {
-        var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
-        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
-            return null;
-        } else {
-            var slashBladeKillCount as int = slashBladeNBT.killCount.asInt();
-            return slashBladeKillCount >= thirdKillCountNumber ? out : null;
-        }
-    },
-    // 配方动作
-    null
-);
+        },
+        // \u914D\u65B9\u52A8\u4F5C
+        null
+    );
 
-// Second Proudsoul Extracting
-recipes.addShapeless(
-    // 配方名称
-    "T3_proudsoul_extracting"~T3recipeNumber,
-    // 输出物品
-    secondProudsoulBottle,
-    // 输入材料
-    [
-        SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew(
-            function(item) {
-                var slashBladeToExtractProudSoulNBT as IData = item.tag;
-                if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul)) {
-                    return item;
-                } else {
-                    var ProudSoulToExtract as int = slashBladeToExtractProudSoulNBT.ProudSoul.asInt();
-                    return item.updateTag({ProudSoul : max(0, ProudSoulToExtract - secondProudsoulNumber)});
+    // Second Proudsoul Extracting
+    recipes.addShapeless(
+        // \u914D\u65B9\u540D\u79F0
+        "T3_proudsoul_extracting"~T3recipeNumber,
+        // \u8F93\u51FA\u7269\u54C1
+        secondProudsoulBottle,
+        // \u8F93\u5165\u6750\u6599
+        [
+            SlashBladeTier.marked("SlashbladeToExtractProudSoul").transformNew(
+                function(item) {
+                    var slashBladeToExtractProudSoulNBT as IData = item.tag;
+                    if(isNull(slashBladeToExtractProudSoulNBT)||isNull(slashBladeToExtractProudSoulNBT.ProudSoul)) {
+                        return item;
+                    } else {
+                        var ProudSoulToExtract as int = slashBladeToExtractProudSoulNBT.ProudSoul.asInt();
+                        return item.updateTag({ProudSoul : max(0, ProudSoulToExtract - secondProudsoulNumber)});
+                    }
                 }
+            ),
+            T3Hammer.anyDamage().transformDamage(T3HammerDamage),
+            secondProudSoulBottleBase
+        ],
+        // \u914D\u65B9\u51FD\u6570
+        function(out,ins,info) {
+            var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
+            if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul)) {
+                return null;
+            } else {
+                var slashBladeProudSoul as int = slashBladeNBT.ProudSoul.asInt();
+                return slashBladeProudSoul >= secondProudsoulNumber ? out : null;
             }
-        ),
-        T3Hammer.anyDamage().transformDamage(T3HammerDamage),
-        secondProudSoulBottleBase
-    ],
-    // 配方函数
-    function(out,ins,info) {
-        var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
-        if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul)) {
-            return null;
-        } else {
-            var slashBladeProudSoul as int = slashBladeNBT.ProudSoul.asInt();
-            return slashBladeProudSoul >= secondProudsoulNumber ? out : null;
-        }
-    },
-    // 配方动作
-    null
-);
-T3recipeNumber = T3recipeNumber + 1;
+        },
+        // \u914D\u65B9\u52A8\u4F5C
+        null
+    );
+    T3recipeNumber = T3recipeNumber + 1;
 }
+
 // Tier 4 extracting
 // Fourth Killcount Extracting
 recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T4_killcount_extracting",
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     fourthKillcountToken,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         T4_SlashBlades.marked("SlashbladeToExtractKillcount").transformNew(
              function(item) {
@@ -406,7 +409,7 @@ recipes.addShapeless(
         T3Hammer.anyDamage().transformDamage(T4HammerDamage),
         fourthKillCountTokenBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info) {
         var slashBladeNBT as IData = ins.SlashbladeToExtractKillcount.tag;
         if(isNull(slashBladeNBT)||isNull(slashBladeNBT.killCount)) {
@@ -416,17 +419,17 @@ recipes.addShapeless(
             return slashBladeKillCount >= fourthKillCountNumber ? out : null;
         }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
 );
 
 // Third Proudsoul Extracting
 recipes.addShapeless(
-    // 配方名称
+    // \u914D\u65B9\u540D\u79F0
     "T4_proudsoul_extracting",
-    // 输出物品
+    // \u8F93\u51FA\u7269\u54C1
     thirdProudsoulBottle,
-    // 输入材料
+    // \u8F93\u5165\u6750\u6599
     [
         T4_SlashBlades.marked("SlashbladeToExtractProudSoul").transformNew (
             function(item) {
@@ -442,7 +445,7 @@ recipes.addShapeless(
         T3Hammer.anyDamage().transformDamage(T4HammerDamage),
         thirdProudSoulBottleBase
     ],
-    // 配方函数
+    // \u914D\u65B9\u51FD\u6570
     function(out,ins,info) {
         var slashBladeNBT as IData = ins.SlashbladeToExtractProudSoul.tag;
         if(isNull(slashBladeNBT)||isNull(slashBladeNBT.ProudSoul)) {
@@ -452,11 +455,12 @@ recipes.addShapeless(
             return slashBladeProudSoul >= thirdProudsoulNumber ? out : null;
         }
     },
-    // 配方动作
+    // \u914D\u65B9\u52A8\u4F5C
     null
 );
 
-// Adding SlashBlades' Descriptions
+// Adding SlashBlades Descriptions
+
 // Configurations
 // Description values claiming
 val descTextT1 as string = game.localize("crafttweaker.put_this_blade_with.desc")~firstKillCountTokenBase.displayName~game.localize("crafttweaker.on_the_craftingtable.desc")~game.localize("crafttweaker.strike_with.desc")~T1Hammer.displayName~game.localize("crafttweaker.english_neednt_this_part.desc")~game.localize("crafttweaker.sacrifice_blade.desc")~firstKillCountNumber~game.localize("crafttweaker.points_of_killcount.desc")~game.localize("crafttweaker.obtain.desc")~<contenttweaker:first_killcount_token>.displayName~game.localize("crafttweaker.dot.desc");
@@ -466,14 +470,35 @@ val descTextT4 as string = game.localize("crafttweaker.put_this_blade_with.desc"
 // Description Array
 val descText as string[] = [descTextT1, descTextT2, descTextT3, descTextT4];
 // SlashBlades Array
-val Tiered_SlashBlades as IIngredient[] = [T1_SlashBlades, T2_SlashBlades, T3_SlashBlades, T4_SlashBlades];
-// Adding the Descriptions
-var tier = Tiered_SlashBlades.length - 1;
-while tier >= 0 {
-    for i in 0 to (tier + 1) {
-        for SlashBlade in Tiered_SlashBlades[tier].items {
-            mods.jei.JEI.addDescription(SlashBlade, descText[i]);
-        }
+// val T1_allowed_SlashBlades as IIngredient[] = [T1_SlashBlades, T2_SlashBlades, T3_SlashBlades, T4_SlashBlades];
+// val T2_allowed_SlashBlades as IIngredient[] = [T2_SlashBlades, T3_SlashBlades, T4_SlashBlades];
+// val T3_allowed_SlashBlades as IIngredient[] = [T3_SlashBlades, T4_SlashBlades];
+val Blades as IIngredient[][] = [T1_allowed_SlashBlades, T2_allowed_SlashBlades, T3_allowed_SlashBlades];
+
+// Materials Array
+val killCountTokens as IItemStack[] = [firstKillcountToken, secondKillcountToken, thirdKillcountToken, fourthKillcountToken];
+val proudSoulBottles as IItemStack[] = [firstProudsoulBottle, secondProudsoulBottle, thirdProudsoulBottle];
+
+for tier in 0 to 4 {
+    
+    // Killcount Tokens
+    mods.jei.JEI.addDescription(killCountTokens[tier], descText[tier]);
+    
+    // Proudsoul Bottles
+    if (tier >= 1) {
+        mods.jei.JEI.addDescription(proudSoulBottles[tier - 1], descText[tier]); 
     }
-    tier -= 1;
+
+    // Blades
+    if (tier < 3)
+    for blade_tier in Blades[tier] {
+        for blade in blade_tier.items {
+            mods.jei.JEI.addDescription(blade, descText[tier]); 
+        }
+    } else {
+        mods.jei.JEI.addDescription(T4_SlashBlades, descText[tier]); 
+        mods.jei.JEI.addDescription(fourthKillcountToken, descText[tier]); 
+        mods.jei.JEI.addDescription(thirdProudsoulBottle, descText[tier]); 
+    }
+
 }

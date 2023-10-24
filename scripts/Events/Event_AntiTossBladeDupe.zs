@@ -1,20 +1,24 @@
-// #loader crafttweaker reloadable
-// import crafttweaker.events.IEventManager;
-// import crafttweaker.event.ItemTossEvent;
+#loader crafttweaker reloadable
+import crafttweaker.events.IEventManager;
+import crafttweaker.event.ItemTossEvent;
+import mods.zenutils.NetworkHandler;
 
-/*
+val enabled = true;
+
 events.onItemToss(
     function(event as ItemTossEvent) {
-        event.player.sendMessage("player drops an item.");
-        var itemEntity = event.item;
-        if (!isNull(itemEntity.item.tag.markdirty)) {
-            event.player.sendMessage("item is dirty.");
-            // event.cancel();
-            // event.item.mutable.shrink();
-            // event.player.give(item.removeTag("markdirty"));
+        if (enabled) {
+            var player = event.player;
+            if (!player.world.remote) {
+                var itemEntity = event.item;
+                if (!isNull(itemEntity.item.tag.markdirty)) {
+                    NetworkHandler.sendTo("clear_client_hand", player);
+                }
+            }
         }
     }
 );
-*/
 
-// TODO: This script makes Blades disappear. It's its bug. Rewrite or remove this after we know how SlashBlade mod uses its `markdirty` NBT tag.
+NetworkHandler.registerServer2ClientMessage("clear_client_hand", function(player, byteBuf) {
+    player.setItemToSlot(player.activeHand, null);
+});
