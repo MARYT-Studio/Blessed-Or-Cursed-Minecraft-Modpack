@@ -168,7 +168,25 @@ val AbyssalFoods as IItemStack[] = [
     <abyssalcraft:eggp>,
     <abyssalcraft:cloth>
 ];
-for food in AbyssalFoods{mods.jei.JEI.removeAndHide(food);}
+for food in AbyssalFoods {mods.jei.JEI.removeAndHide(food);}
 
 // Hide the dummy infinite item
 mods.jei.JEI.hide(<contenttweaker:dummy_infinite_item>);
+
+// LastSmith Unused Items Hiding
+val TlsUnusedItems as IItemStack[] = [
+    <lastsmith:blade:15>,
+    <lastsmith:blade:17>,
+    <lastsmith:blade:19>,
+    <lastsmith:blade:23>,
+    <lastsmith:blade:21>,
+    <lastsmith:heatted_blade:3>,
+    <lastsmith:blade:16>,
+    <lastsmith:blade:20>,
+    <lastsmith:blade:18>,
+    <lastsmith:blade:22>,
+    <lastsmith:blade:24>,
+    <lastsmith:heatted_blade:4>
+];
+
+for tlsUnused in TlsUnusedItems {mods.jei.JEI.removeAndHide(tlsUnused);}
