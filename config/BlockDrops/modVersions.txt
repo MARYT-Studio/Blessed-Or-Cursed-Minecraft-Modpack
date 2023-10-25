@@ -65,7 +65,7 @@
   "lpb": "1.0",
   "FML": "8.0.99.99",
   "asmc": "1.0.2",
-  "probezs": "1.17.6",
+  "probezs": "1.17.7",
   "norecipebook": "1.2.1",
   "chargers": "1.2.0.5",
   "cherishedworlds": "1.12.2-1.0.1",
