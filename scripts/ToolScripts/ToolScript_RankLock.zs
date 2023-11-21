@@ -5,7 +5,7 @@ import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.item.IItemStack;
 
 // 脚本是否启用，true 为启用，false 为关闭
-val enabled = true;
+val enabled = false;
 
 // 锁定到的目标数值
 
@@ -19,6 +19,7 @@ val starters as IItemStack[] = [
 
 events.onPlayerRightClickItem(
     function(event as PlayerRightClickItemEvent) {
+        if (!enabled) {return;}
         var player = event.player;
         if (!player.world.remote) {
             for starter in starters {
