@@ -1,0 +1,36 @@
+{
+	title: "锻冶的基本技艺",
+	x: -4.0d,
+	y: -1.0d,
+	description: "刀锻冶的基础，切断之术的基础。",
+	text: [
+		"锻造出第一把白鞘。",
+		"",
+		"为了战争，刀剑的需求量日益增多，我们这些刀匠也繁忙于供应这些廉价的量产武器。",
+		"可笑的“剑士”们，只知道如何互相厮杀。",
+		"",
+		"既是量产品，自然对刀刃材料没有多苛刻的要求，哪怕是丝毫钢材未用也可以接受。",
+		"正因如此，这也是最适合让新手刀匠深切体会所铸刀刃薄弱处的试手作，不用畏惧断刀，把这当做历练吧。",
+		"（翻译：tls中的本进度需求一把折断的白鞘，你自己把这把用断就成）"
+	],
+	dependencies: [
+		"9a0a6832"
+	],
+	hide: true,
+	tasks: [{
+		uid: "2590bfd1",
+		type: "item",
+		items: [{
+			id: "flammpfeil.slashblade:slashbladewhite",
+			tag: {
+				SlashBlade: {},
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

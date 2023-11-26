@@ -1,0 +1,55 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			CurrentItemName: "flammpfeil.slashblade.named.yamazakura.ume",
+			CustomMaxDamage: 31,
+			IsFakeBlade: 1b,
+			baseAttackModifier: 5.0f,
+			AttackAmplifier: 0.01f,
+			TextureName: "named/yamazakura/yamazakura_kisaragi_ume",
+			ModelName: "named/yamazakura/model_fake",
+			SB.SEffect: {},
+			SlashBlade: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 1.0d,
+	y: 0.0d,
+	description: "「山樱」之名的伪物。",
+	text: [
+		"故事都在手记里了。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"0e4473f6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8b10250c",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_kisaragi_ume",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/model_fake",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.ume",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "9c955fb8",
+		type: "kill",
+		entity: "minecraft:stray",
+		value: 1L
+	}]
+}

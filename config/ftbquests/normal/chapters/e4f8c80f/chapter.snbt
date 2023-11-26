@@ -1,0 +1,7 @@
+{
+	title: "最后的太刀匠人",
+	icon: "lastsmith:scroll 1 12",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

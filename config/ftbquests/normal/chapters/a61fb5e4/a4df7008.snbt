@@ -1,0 +1,17 @@
+{
+	title: "白天",
+	icon: "minecraft:clock",
+	x: -7.0d,
+	y: 1.5d,
+	can_repeat: true,
+	tasks: [{
+		uid: "6f845734",
+		type: "ftbmoney:money",
+		value: 32L
+	}],
+	rewards: [{
+		uid: "90b63df0",
+		type: "command",
+		command: "/time set day"
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 0.5d,
+	y: 2.0d,
+	shape: "pentagon",
+	tasks: [{
+		uid: "1ec2c43f",
+		type: "kill",
+		entity: "twilightforest:ur_ghast",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "6aa1801a",
+		type: "ftbmoney:money",
+		ftb_money: 256L
+	}]
+}

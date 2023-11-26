@@ -1,0 +1,36 @@
+{
+	x: -1.0d,
+	y: 0.0d,
+	description: "斗志昂扬的锈剑。",
+	text: [
+		"有名的刚剑，能切裂耕地。",
+		"切裂耕地指的是在田埂上叠砌试斩草垛，斩下时能直接插入田埂之中。",
+		"",
+		"现在只是被一些僵尸浪费的锈刀罢了，但我仍旧修复了一振赠予了犬走家的义弟。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "398d1518",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/muramasa/doutanuki",
+				SlashBlade: {},
+				ModelName: "named/muramasa/muramasa",
+				CurrentItemName: "flammpfeil.slashblade.named.doutanuki",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		consume_items: false,
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

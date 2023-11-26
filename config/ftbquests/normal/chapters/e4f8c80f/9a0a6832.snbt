@@ -1,0 +1,42 @@
+{
+	title: "锻造的基本技艺",
+	x: -5.5d,
+	y: -1.0d,
+	description: "学习日本刀构造，为锻造打下基础。",
+	text: [
+		"亲手制作一振自己的带鞘木刀。",
+		"木刀不适合用来战斗，因为非常容易折断。",
+		"注意保养，也可以作为临时护身的好用具。",
+		"",
+		"如果对刀刃的构造心存疑惑的话，不妨打开手中的书册查看吧。",
+		"抑或睁开你带进这世界的，名为“JEI”的心眼？左键目标之物就可以了。"
+	],
+	dependencies: [
+		"063fcaf1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "04188b68",
+		type: "item",
+		items: [{
+			id: "flammpfeil.slashblade:slashbladewood",
+			tag: {
+				comboSeq: 0,
+				SlashBlade: {},
+				isCharged: 0b,
+				AttackAmplifier: -2.0f,
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9435d08d",
+		type: "xp",
+		xp: 1
+	}]
+}

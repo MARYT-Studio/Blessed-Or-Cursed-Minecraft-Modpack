@@ -1,0 +1,36 @@
+{
+	title: "silingzhishu",
+	loot_size: 1,
+	rewards: [{
+		item: {
+			id: "abyssalcraft:necronomicon",
+			tag: {
+				PotEnergy: 4700.0f
+			}
+		}
+	},
+	{
+		item: {
+			id: "abyssalcraft:necronomicon_cor",
+			tag: {
+				PotEnergy: 9700.0f
+			}
+		}
+	},
+	{
+		item: {
+			id: "abyssalcraft:necronomicon_dre",
+			tag: {
+				PotEnergy: 19700.0f
+			}
+		}
+	},
+	{
+		item: {
+			id: "abyssalcraft:necronomicon_omt",
+			tag: {
+				PotEnergy: 39700.0f
+			}
+		}
+	}]
+}

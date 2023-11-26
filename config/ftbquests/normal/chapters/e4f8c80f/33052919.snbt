@@ -1,0 +1,34 @@
+{
+	x: 9.0d,
+	y: -4.5d,
+	description: "血染竹刀之传说。",
+	text: [
+		"上品「银纸竹光」之终点。",
+		"虽然沾染了主人的血液，这振刀却不是主人的灵魂，它更像是无理智的邪魔，只会在杀戮时满足。",
+		"尽管如此，此刀仍处于可控的范畴，也许是承了主人的底线？"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"b1026533"
+	],
+	hide: true,
+	tasks: [{
+		uid: "214ffeae",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/bamboolight/silverbamboo_blood",
+				SlashBlade: {},
+				ModelName: "named/yamato",
+				CurrentItemName: "flammpfeil.slashblade.named.silverbamboolight_blood",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

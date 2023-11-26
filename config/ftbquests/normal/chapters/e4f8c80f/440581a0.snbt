@@ -1,0 +1,36 @@
+{
+	x: 18.5d,
+	y: 1.5d,
+	description: "“在塔中作祟的亡灵呵......”",
+	text: [
+		"“在塔中作祟的亡灵呵......”",
+		"",
+		"“不愿离开自己的遗刃......”",
+		"",
+		"“它紧紧地握着这振刀......”",
+		"",
+		"“在塔中作祟的亡灵呵......”",
+		"",
+		"“它死后为刀不愿安息......”",
+		"",
+		"“它紧紧地握着这振刀......”"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"d82bdd05"
+	],
+	hide: true,
+	tasks: [{
+		uid: "533bd998",
+		type: "item",
+		items: [{
+			item: "lastsmith:scroll 1 7"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e3dc021d",
+		type: "ftbmoney:money",
+		ftb_money: 128L
+	}]
+}

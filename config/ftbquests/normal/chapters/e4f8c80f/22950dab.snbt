@@ -1,0 +1,36 @@
+{
+	x: 2.0d,
+	y: -2.0d,
+	description: "狂人。狂器。狂魂。",
+	text: [
+		"曾经有一个失去了挚爱之人的战士，挥舞着自己的最后一丝挚爱之器踏上了还乡和复仇的道路.......",
+		"他后来战死。灵魂却不愿成佛，其手持之刃，名为斗刀，意为战斗之刀。",
+		"",
+		"他的战斗是孤独的，只有独自一人的战斗，故名「孤独」。",
+		"其灵魂仍手持着他的利刃，寻觅归乡之路。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"0e4473f6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "13403de8",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/namedblade/texture_super",
+				SlashBlade: {},
+				ModelName: "named/namedblade/model",
+				CurrentItemName: "flammpfeil.slashblade.named.kogawa_super",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

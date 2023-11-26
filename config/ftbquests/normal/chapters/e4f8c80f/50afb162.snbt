@@ -1,0 +1,35 @@
+{
+	x: 9.5d,
+	y: 2.5d,
+	description: "山樱之刃。",
+	text: [
+		"第二步。",
+		"更多的妖力。",
+		"",
+		"还是不够，下一步换成魂樱钢锭。",
+		"不要那样看着我，你知道这是必须的。"
+	],
+	dependencies: [
+		"757fae6f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7fb9d2ce",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_fumizuki",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/fumizuki",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.fumizuki",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

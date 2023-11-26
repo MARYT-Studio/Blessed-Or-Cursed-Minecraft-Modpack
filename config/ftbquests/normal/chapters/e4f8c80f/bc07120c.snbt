@@ -1,0 +1,51 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			TextureName: "named/yamazakura/yamazakura_uzuki",
+			SlashBlade: {},
+			ModelName: "named/yamazakura/uzuki",
+			CurrentItemName: "flammpfeil.slashblade.named.yamazakura.uzuki",
+			CustomMaxDamage: 31,
+			IsFakeBlade: 1b,
+			AttackAmplifier: 0.01f,
+			baseAttackModifier: 6.0f,
+			SB.SEffect: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 8.0d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"6bd477c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6e3a6781",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_uzuki",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/uzuki",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.uzuki",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "ffb65621",
+		type: "kill",
+		entity: "minecraft:ghast",
+		value: 1L
+	}]
+}

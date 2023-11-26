@@ -1,0 +1,36 @@
+{
+	x: 3.0d,
+	y: -2.0d,
+	description: "学徒的结业作。",
+	text: [
+		"这是我刚开始学习锻刀时的作业。",
+		"事实上，「苍梅」的真品是村正家一振中等品质的刀，被存放着用于供人观摩。",
+		"现在苍梅拵被赐予呢些新刀匠第一振独立打造出的作品，通常也是学徒的结业作。",
+		"",
+		"......虽然我听不到你的声音，但我不能算是你的师傅，你的第一振刀自然也不会是苍梅。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6bd477c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "dafc59bc",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "wa/template",
+				SlashBlade: {},
+				ModelName: "wa/model",
+				CurrentItemName: "SlashBladeTemplate.blue",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

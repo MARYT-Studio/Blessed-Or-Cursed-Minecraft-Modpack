@@ -1,0 +1,34 @@
+{
+	x: 4.0d,
+	y: 2.0d,
+	description: "直死之魔眼？？？？",
+	text: [
+		"仿两仪式用过的短刃所作。",
+		"",
+		"并非看穿死线之物。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6bd477c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a43f324b",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/tboen/texture",
+				SlashBlade: {},
+				ModelName: "named/tboen/model",
+				CurrentItemName: "flammpfeil.slashblade.named.tboen",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

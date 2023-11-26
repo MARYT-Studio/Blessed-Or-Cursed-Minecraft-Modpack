@@ -1,0 +1,35 @@
+{
+	x: 19.5d,
+	y: -3.5d,
+	description: "「大蛇鄂门」的真品。",
+	text: [
+		"稀世名匠的传奇制作，自诞生之日便赢得好评。",
+		"",
+		"在为其除锈之前，无法认清其中的奥妙。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"d82bdd05"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9e265328",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/agito_true",
+				SlashBlade: {},
+				ModelName: "named/agito",
+				TrueItemName: "flammpfeil.slashblade.named.orotiagito",
+				CurrentItemName: "flammpfeil.slashblade.named.orotiagito.seald",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

@@ -1,0 +1,60 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			CurrentItemName: "flammpfeil.slashblade.named.yasha",
+			CustomMaxDamage: 70,
+			baseAttackModifier: 6.0f,
+			AttackAmplifier: 0.01f,
+			TextureName: "named/yasha/yasha",
+			ModelName: "named/yasha/yasha",
+			SpecialAttackType: 4,
+			StandbyRenderType: 2,
+			isDefaultBewitched: 1b,
+			IsNoStandDrop: 1b,
+			SB.SEffect: {},
+			SlashBlade: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 18.5d,
+	y: -2.5d,
+	description: "众星之仿刃。",
+	text: [
+		"有着微弱的众星之力的仿作。",
+		"",
+		"被米诺陶随身携带着。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"d82bdd05"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f2d9a4ba",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yasha/yasha",
+				SlashBlade: {},
+				ModelName: "named/yasha/yasha",
+				CurrentItemName: "flammpfeil.slashblade.named.yasha",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "f069c61f",
+		type: "kill",
+		entity: "twilightforest:minotaur",
+		value: 1L
+	}]
+}

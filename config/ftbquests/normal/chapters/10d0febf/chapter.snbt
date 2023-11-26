@@ -1,0 +1,7 @@
+{
+	title: "讨伐（深渊国度）",
+	icon: "abyssalcraft:stone 1 1",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: ""
+}

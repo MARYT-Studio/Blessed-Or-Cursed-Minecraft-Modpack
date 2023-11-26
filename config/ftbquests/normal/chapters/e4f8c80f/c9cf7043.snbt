@@ -1,0 +1,33 @@
+{
+	x: 3.0d,
+	y: 2.0d,
+	description: "雪之鸦羽。",
+	text: [
+		"胴田贯幻化而来。",
+		"虽说锈刃不可避免地沾染着血气，它们却仍向往着白雪的洁净。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6bd477c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e1f310b7",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/darkraven/snowcrow",
+				SlashBlade: {},
+				ModelName: "named/darkraven/snowcrow",
+				CurrentItemName: "flammpfeil.slashblade.named.snowcrow",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

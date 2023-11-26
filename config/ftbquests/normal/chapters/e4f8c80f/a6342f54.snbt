@@ -1,0 +1,34 @@
+{
+	x: 4.0d,
+	y: -1.0d,
+	description: "收集到稍有名气的名刀。",
+	text: [
+		"苍梅，和风双梅，风来刃，荧光灯管，冰狼双刃，结月，型月。",
+		"",
+		"快了，就快了。"
+	],
+	dependencies: [
+		"6bd477c4",
+		"2d3ab2e9",
+		"d7b11e84",
+		"1b007775",
+		"5936eedc",
+		"4c70ee9c",
+		"eea57b0a"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "d91a99d1",
+		type: "item",
+		items: [{
+			item: "lastsmith:scroll 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "10163487",
+		type: "ftbmoney:money",
+		ftb_money: 128L
+	}]
+}

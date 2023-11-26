@@ -1,0 +1,33 @@
+{
+	title: "豆腐世界",
+	icon: "tofucraft:tofu_material 1 1",
+	x: 7.0d,
+	y: -1.0d,
+	description: "？？？",
+	text: [
+		"尽管，我是说，我知道这个地方有着大量可以安全击杀的妖物，更是有着“钻石豆腐”这种珍贵优越的盔甲与武器锻造材料。",
+		"",
+		"但是，那什么。",
+		"",
+		"你脚踩过的豆腐真的还能吃吗",
+		"",
+		"（在不考虑刷怪塔的情况下，豆腐世界就是和狩猎世界及三个深渊维度齐名的最快刷怪效率场所。）",
+		"（后期的科技刀刃部分也会需要豆腐世界的素材）"
+	],
+	dependencies: [
+		"a6342f54"
+	],
+	hide: true,
+	tasks: [{
+		uid: "019ad871",
+		type: "dimension",
+		dim: 56
+	},
+	{
+		uid: "5eb4a7fe",
+		type: "item",
+		items: [{
+			item: "tofucraft:tofustick"
+		}]
+	}]
+}

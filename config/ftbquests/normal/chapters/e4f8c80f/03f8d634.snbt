@@ -1,0 +1,31 @@
+{
+	x: 13.5d,
+	y: -2.0d,
+	description: "神秘学与日本刀的交汇之时，灵之刀刃出炉之时.......",
+	text: [
+		""
+	],
+	dependencies: [
+		"2bc0230f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "5e87c031",
+		type: "item",
+		items: [{
+			id: "lastsmith:slashblade_void",
+			tag: {
+				TextureName: "named/thaum/texture_voidmetal",
+				SlashBlade: {},
+				ModelName: "named/smith/model",
+				CurrentItemName: "flammpfeil.slashblade.named.fortress.void",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

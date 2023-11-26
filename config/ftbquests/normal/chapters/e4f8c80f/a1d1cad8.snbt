@@ -1,0 +1,38 @@
+{
+	x: 11.5d,
+	y: -5.5d,
+	description: "樱之刃传说。",
+	text: [
+		"对当年的邪魔刃所铸的仿制品。",
+		"事实上，我想你已经发现了一些有趣的事情，不是吗？",
+		"为什么你可以如此顺利地控制这把残害人类之刃？",
+		"",
+		"继续前进吧，没必要回首展望了。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"1f9d7fb1",
+		"63d354ff",
+		"54480973"
+	],
+	hide: true,
+	tasks: [{
+		uid: "293d744f",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/sakura/texture_3",
+				SlashBlade: {},
+				ModelName: "named/sakura/model",
+				CurrentItemName: "flammpfeil.slashblade.named.kataware",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

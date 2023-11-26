@@ -1,0 +1,52 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			CurrentItemName: "flammpfeil.slashblade.named.agito",
+			CustomMaxDamage: 60,
+			baseAttackModifier: 6.0f,
+			AttackAmplifier: 0.01f,
+			TextureName: "named/agito_false",
+			ModelName: "named/agito",
+			SpecialAttackType: 2,
+			StandbyRenderType: 2,
+			SB.SEffect: {},
+			SlashBlade: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 18.5d,
+	y: -3.5d,
+	description: "「大蛇鄂门」的仿作。",
+	text: [
+		"自「大蛇鄂门」诞生以来，其仿作多如牛毛。",
+		"",
+		"在为其除锈前，无法认清其中的奥妙。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"d82bdd05"
+	],
+	hide: true,
+	tasks: [{
+		uid: "32d42094",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/agito_false",
+				SlashBlade: {},
+				ModelName: "named/agito",
+				CurrentItemName: "flammpfeil.slashblade.named.agito",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

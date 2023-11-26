@@ -1,0 +1,28 @@
+{
+	x: 13.5d,
+	y: -1.0d,
+	description: "渴求着血腥的刀刃，有着玷污生灵的力量......",
+	text: [
+		"和真正的灾难比起来，",
+		"这简直是小巫见大巫。",
+		"",
+		"为了反抗，我们必须集结所有可以利用的力量。"
+	],
+	dependencies: [
+		"50ad71e0"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1c71b374",
+		type: "item",
+		items: [{
+			item: "lastsmith:scroll 1 16"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "48afa672",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

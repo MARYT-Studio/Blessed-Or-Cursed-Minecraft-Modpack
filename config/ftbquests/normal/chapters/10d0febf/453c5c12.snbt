@@ -1,0 +1,16 @@
+{
+	x: -3.0d,
+	y: 1.5d,
+	can_repeat: true,
+	tasks: [{
+		uid: "dc200cc6",
+		type: "kill",
+		entity: "abyssalcraft:dreadguard",
+		value: 2L
+	}],
+	rewards: [{
+		uid: "64b5e0c9",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

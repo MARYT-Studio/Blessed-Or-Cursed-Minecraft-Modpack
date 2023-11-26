@@ -1,0 +1,16 @@
+{
+	x: 3.5d,
+	y: 2.0d,
+	shape: "pentagon",
+	tasks: [{
+		uid: "d41e2c90",
+		type: "kill",
+		entity: "twilightforest:snow_queen",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "fe883a70",
+		type: "ftbmoney:money",
+		ftb_money: 256L
+	}]
+}

@@ -1,0 +1,32 @@
+{
+	x: 12.5d,
+	y: -4.5d,
+	description: "樱之刃传说。",
+	text: [
+		"不过是三把不同性质的仿品罢了。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"b1026533"
+	],
+	hide: true,
+	tasks: [{
+		uid: "c0a9b435",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/sakura/texture_2",
+				SlashBlade: {},
+				ModelName: "named/sakura/model",
+				CurrentItemName: "flammpfeil.slashblade.named.yukikage",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

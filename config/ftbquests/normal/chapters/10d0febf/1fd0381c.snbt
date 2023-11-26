@@ -1,0 +1,23 @@
+{
+	x: -3.5d,
+	y: 4.0d,
+	can_repeat: true,
+	dependencies: [
+		"42c1c594"
+	],
+	hide: true,
+	tasks: [{
+		uid: "dcb26a0f",
+		type: "item",
+		items: [{
+			item: "abyssalcraft:soulreaper"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "70254295",
+		type: "ftbmoney:money",
+		ftb_money: 128L
+	}]
+}

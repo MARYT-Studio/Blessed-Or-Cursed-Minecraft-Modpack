@@ -1,0 +1,55 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			CurrentItemName: "flammpfeil.slashblade.named.yamazakura.sakura",
+			CustomMaxDamage: 31,
+			IsFakeBlade: 1b,
+			baseAttackModifier: 5.0f,
+			AttackAmplifier: 0.01f,
+			TextureName: "named/yamazakura/yamazakura_yayoi_sakura",
+			ModelName: "named/yamazakura/model_fake",
+			SB.SEffect: {},
+			SlashBlade: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 2.0d,
+	y: 0.0d,
+	description: "「山樱」之名的伪物。",
+	text: [
+		"故事都在手记里了。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"0e4473f6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "c72602b1",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_yayoi_sakura",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/model_fake",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.sakura",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "6a2300ce",
+		type: "kill",
+		entity: "minecraft:creeper",
+		value: 1L
+	}]
+}

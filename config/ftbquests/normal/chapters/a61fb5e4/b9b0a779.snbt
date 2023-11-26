@@ -1,0 +1,27 @@
+{
+	title: "拔刀剑快速教程3",
+	x: -5.5d,
+	y: 0.5d,
+	description: "思索",
+	text: [
+		"首先，tls增加了拔刀剑右键横砍的cd（已改成0.2s）",
+		"其次，tls对大部分初始为封刀的拔刀剑封锁了附魔改名妖化的途径，只有打上一颗樱之宝珠才能妖化",
+		"最后，tls有严格的进度限制，如果对应的进度没有完成，绝大多数刀会无法合成——这也意味着只需要看tls的进度（名称显示为木偶的那个）配合jei查看配方就能得到很好的引导",
+		"",
+		"天云无念的合成要求是tls全进度解锁"
+	],
+	dependencies: [
+		"29fb3883"
+	],
+	hide: true,
+	tasks: [{
+		uid: "d1450dc7",
+		type: "checkmark",
+		icon: "lastsmith:materials 1 5"
+	}],
+	rewards: [{
+		uid: "0d873638",
+		type: "xp",
+		xp: 1
+	}]
+}

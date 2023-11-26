@@ -1,0 +1,35 @@
+{
+	x: 3.0d,
+	y: 1.0d,
+	description: "「冰狼之刃」",
+	text: [
+		"承载着“极寒之冰”的日本狼灵魂的双刃。",
+		"月影里散发着耀眼的光辉.......",
+		"",
+		"这一振，名曰冻樱刃。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"6bd477c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "22313e16",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/frostwolf/frostwolfa",
+				SlashBlade: {},
+				ModelName: "named/frostwolf/frostwolfa",
+				CurrentItemName: "flammpfeil.slashblade.named.frostwolfa",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}
