@@ -17,7 +17,6 @@
   "findme": "1.1.0",
   "recipesearchbuttons": "1.0.1",
   "neat": "1.4-17",
-  "initialinventory": "2.0.2",
   "controlling": "3.0.10",
   "nolocalizationconflict": "1.3",
   "bansoukou": "4.3.1",

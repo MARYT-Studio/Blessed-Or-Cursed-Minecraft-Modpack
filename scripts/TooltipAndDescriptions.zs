@@ -1,3 +1,4 @@
+#loader crafttweaker reloadable
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
@@ -12,7 +13,7 @@ val HammerTooltip as string = game.localize("item.crafttweaker.newbiehammer.name
 val NewbieTooltips as string[] = [SwordTooltip, AxeTooltip, BreadTooltip, HammerTooltip];
 
 // Newbie items
-val NewbieItems as IItemStack[] = [<minecraft:diamond_sword:*>, <minecraft:diamond_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
+val NewbieItems as IItemStack[] = [<flammpfeil.slashblade:slashbladewood:*>, <minecraft:golden_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
 var index as int = 0;
 for newbieitem in NewbieItems {
     newbieitem.addAdvancedTooltip(
