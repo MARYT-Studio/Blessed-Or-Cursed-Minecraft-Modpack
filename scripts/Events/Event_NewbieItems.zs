@@ -8,7 +8,20 @@ val giftAxeName as string = game.localize("item.crafttweaker.newbieaxe.name");
 val giftBreadName as string = game.localize("item.crafttweaker.newbiebread.name");
 val giftHammerName as string = game.localize("item.crafttweaker.newbiehammer.name");
 
-val giftSword = <flammpfeil.slashblade:slashbladewood>.withTag({newbie: 1, ench: [{lvl: 3 as short, id: 34 as short}], display: {Name: giftSwordName}, AttackAmplifier: 11.0 as float,AttributeModifiers: [{Amount: 16, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}]});
+val giftSword = <flammpfeil.slashblade:slashbladewood>.withTag({
+    newbie: 1,
+    ench: [
+        {
+            lvl: 8 as short, id: 34 as short
+        }
+    ],
+    display: {Name: giftSwordName},
+    AttributeModifiers:[
+        {AttributeName:"generic.armor",Amount:4,Slot:"mainhand",Name:"generic.armor",UUIDLeast:328254300,UUIDMost:99},
+        {AttributeName:"generic.armorToughness",Amount:2,Slot:"mainhand",Name:"generic.armorToughness",UUIDLeast:328254400,UUIDMost:99},
+        {AttributeName:"generic.attackDamage",Amount:4,Slot:"mainhand",Name:"generic.attackDamage",UUIDLeast:328254500,UUIDMost:99}
+    ]
+});
 val giftAxe = <minecraft:golden_axe>.withTag({display: {Name: giftAxeName}, ench: [{lvl: 3 as short, id: 34 as short}], newbie: 1});
 val giftBread = <minecraft:bread>.withTag({display: {Name: giftBreadName}, newbie: 1}) * 32;
 val giftHammer = <sakura:stone_hammer>.withTag({display: {Name: giftHammerName}, newbie: 1});
