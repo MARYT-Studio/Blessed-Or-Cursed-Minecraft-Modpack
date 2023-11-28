@@ -109,6 +109,7 @@
   "ido": "1.0.6",
   "forge": "14.23.5.2860",
   "slashblade_addon": "1.6.0",
+  "ftbutilities": "5.4.1.131",
   "flammpfeil.slashblade": "mc1.12-r33",
   "wearablebackpacks": "3.2.6",
   "ironchest": "1.12.2-7.0.67.844",

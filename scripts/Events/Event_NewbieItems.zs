@@ -16,10 +16,11 @@ val giftSword = <flammpfeil.slashblade:slashbladewood>.withTag({
         }
     ],
     display: {Name: giftSwordName},
+    baseAttackModifier: 4.0 as float,
     AttributeModifiers:[
-        {AttributeName:"generic.armor",Amount:4,Slot:"mainhand",Name:"generic.armor",UUIDLeast:328254300,UUIDMost:99},
-        {AttributeName:"generic.armorToughness",Amount:2,Slot:"mainhand",Name:"generic.armorToughness",UUIDLeast:328254400,UUIDMost:99},
-        {AttributeName:"generic.attackDamage",Amount:4,Slot:"mainhand",Name:"generic.attackDamage",UUIDLeast:328254500,UUIDMost:99}
+        {AttributeName:"generic.armor",Operation:0,Amount:4,Slot:"mainhand",Name:"generic.armor"},
+        {AttributeName:"generic.armorToughness",Operation:0,Amount:2,Slot:"mainhand",Name:"generic.armorToughness"},
+        {AttributeName:"generic.attackDamage",Operation:0,Amount:4,Slot:"mainhand",Name:"generic.attackDamage"}
     ]
 });
 val giftAxe = <minecraft:golden_axe>.withTag({display: {Name: giftAxeName}, ench: [{lvl: 3 as short, id: 34 as short}], newbie: 1});
