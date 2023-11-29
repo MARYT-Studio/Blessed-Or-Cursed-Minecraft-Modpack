@@ -82,9 +82,6 @@ twilightKey.addTooltip(game.localize("contenttweaker.magic_infused_key_message_1
 <contenttweaker:inner_shard>.addTooltip(game.localize("contenttweaker.inner_shard.tooltip"));
 <contenttweaker:inner_gem>.addTooltip(game.localize("contenttweaker.inner_gem.tooltip"));
 
-<contenttweaker:humiliation_from_jzahar>.addTooltip(game.localize("contenttweaker.humiliation_from_jzahar_1.tooltip"));
-<contenttweaker:humiliation_from_jzahar>.addTooltip(game.localize("contenttweaker.humiliation_from_jzahar_2.tooltip"));
-
 val ic2_armor as IItemStack[] = [
     <ic2:nano_boots:*>,
     <ic2:nano_chestplate:*>,
