@@ -49,8 +49,7 @@ events.onEntityLivingDeath(
     {
         var world as IWorld = event.entity.world;
         var dmgsource = event.damageSource.trueSource;
-        // This number will be changed in codes below,
-        // so it should be a var
+        if (isNull(dmgsource)) return;
         var autoplayingThreshold as int = 15;
         if(dmgsource instanceof IPlayer) {
             var player as IPlayer = dmgsource;
