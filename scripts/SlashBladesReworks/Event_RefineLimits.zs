@@ -12,10 +12,10 @@ events.onPlayerRightClickItem(
             var id = item.definition.id;
             if (debug) {
                 player.sendChat(id ~
-                    ", \u662F\u5426\u662F\u62D4\u5200\u5251\uFF1A" ~
+                    ", 是否是拔刀剑：" ~
                     (
-                        ((id has "lastsmith") && (id has "slashblade")) || // \u662F TLS \u7684\u62D4\u5200\u5251
-                        ((id has "flammpfeil") && !(id has "proudsoul"))   // \u662F \u62D4\u5200\u5251\u672C\u4F53\u7684\u62D4\u5200\u5251
+                        ((id has "lastsmith") && (id has "slashblade")) || // 是 TLS 的拔刀剑
+                        ((id has "flammpfeil") && !(id has "proudsoul"))   // 是 拔刀剑本体的拔刀剑
                     )
                 );
             }
