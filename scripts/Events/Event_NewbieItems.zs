@@ -8,6 +8,8 @@ val giftAxeName as string = game.localize("item.crafttweaker.newbieaxe.name");
 val giftBreadName as string = game.localize("item.crafttweaker.newbiebread.name");
 val giftHammerName as string = game.localize("item.crafttweaker.newbiehammer.name");
 
+
+// TODO: 新手拔刀剑可能需要用模组的方式实现
 val giftSword = <flammpfeil.slashblade:slashbladewood>.withTag({
     newbie: 1,
     ench: [
