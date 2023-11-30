@@ -49,11 +49,11 @@ for hammer in allowed_hammers
     for RecipeNumber in 0 to 3
     {
         recipes.addShapeless(
-        // \u914D\u65B9\u540D\u79F0
+        // 配方名称
         "shard_extracting_"~RecipeNumber~"_"~hammer.name,
-        // \u8F93\u51FA\u7269\u54C1
+        // 输出物品
         ShardOutputArray[RecipeNumber],
-        // \u8F93\u5165\u6750\u6599
+        // 输入材料
         [
             SlashBladeToExtractArray[RecipeNumber].marked("BladeForShard").transformNew
             (
@@ -74,7 +74,7 @@ for hammer in allowed_hammers
             hammer.anyDamage().transformDamage(hammerDamage),
             ShardBaseArray[RecipeNumber]
         ],
-        // \u914D\u65B9\u51FD\u6570
+        // 配方函数
         function(out,ins,info)
         {
             var slashBladeNBT as IData = ins.BladeForShard.tag;
@@ -88,7 +88,7 @@ for hammer in allowed_hammers
                 return slashBladeKillCount >= KillcountArray[RecipeNumber] ? out : null;
             }
         },
-        // \u914D\u65B9\u52A8\u4F5C
+        // 配方动作
         null
         );
     }
