@@ -30,39 +30,32 @@ val InfiniteHeartItem as IItemStack[] = [
 // if set this to 3, open the 4th Infinite Heart will get the badge:2.
 val maxFailureTimes = 3;
 val infHeart = <cotItem:infinite_heart_laevatain>;
-infHeart.itemRightClick = function(stack, world, player, hand)
-{
+infHeart.itemRightClick = function(stack, world, player, hand) {
     (world.random.nextBoolean()) ? 
     (player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_0.text"))) :
     (player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_1.text")));
     return "SUCCESS";
 };
-infHeart.onItemUseFinish = function(stack, world, item_user){
-    if(!world.remote && item_user instanceof IPlayer)
-    {        
+infHeart.onItemUseFinish = function(stack, world, item_user) {
+    if(!world.remote && item_user instanceof IPlayer) {        
         var randomIndex = world.random.nextInt(InfiniteHeartItem.length);
         var player as IPlayer = item_user;
-        if(!(<item:dcs_climate:dcs_color_badge:1>.matches(InfiniteHeartItem[randomIndex])))
-        {
+        if(!(<item:dcs_climate:dcs_color_badge:1>.matches(InfiniteHeartItem[randomIndex]))) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_3.text"));
-            if(isNull(player.data.PlayerPersisted) || isNull(player.data.PlayerPersisted.infHeartFail))
-            {
+            if(isNull(player.data.PlayerPersisted) || isNull(player.data.PlayerPersisted.infHeartFail)) {
                 player.update({PlayerPersisted: {infHeartFail: 1}});
             }
-            else
-            {
+            else {
                 var failedTime = player.data.PlayerPersisted.infHeartFail;
                 player.update({PlayerPersisted: {infHeartFail: failedTime + 1}});
-                if(failedTime >= maxFailureTimes)
-                {
+                if(failedTime >= maxFailureTimes) {
                     player.update({PlayerPersisted: {infHeartFail: 0}});
                     player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_2.text"));
                     return <item:dcs_climate:dcs_color_badge:1>;
                 }
             }
         }
-        else
-        {
+        else {
             player.update({PlayerPersisted: {infHeartFail: 0}});
             player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.infinite_heart_laevatain_message_2.text"));
         }
