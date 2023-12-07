@@ -7,7 +7,7 @@ import crafttweaker.player.IPlayer;
 events.onEntityTravelToDimension(
     function(event as EntityTravelToDimensionEvent) {
         if(!event.entity instanceof IPlayer) {
-            if(event.entity.definition.id == "flammpfeil.slashblade:bladestand") {
+            if(event.entity.definition.id == "slashblade:bladestand") {
                 event.cancel();
             }
             else if(event.entity.definition.id == "minecraft:item") {

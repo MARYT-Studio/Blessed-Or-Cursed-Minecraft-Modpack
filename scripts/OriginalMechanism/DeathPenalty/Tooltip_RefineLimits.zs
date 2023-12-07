@@ -1,7 +1,7 @@
 import crafttweaker.item.IItemStack;
 
 val tlsItems as IItemStack[] = loadedMods["lastsmith"].items;
-val slashbladeItems as IItemStack[] = loadedMods["flammpfeil.slashblade"].items;
+val slashbladeItems as IItemStack[] = loadedMods["slashblade"].items;
 
 for item in tlsItems {
     print(item.definition.id);

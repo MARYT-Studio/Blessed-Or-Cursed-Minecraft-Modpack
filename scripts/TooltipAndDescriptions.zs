@@ -13,7 +13,7 @@ val HammerTooltip as string = game.localize("item.crafttweaker.newbiehammer.name
 val NewbieTooltips as string[] = [SwordTooltip, AxeTooltip, BreadTooltip, HammerTooltip];
 
 // Newbie items
-val NewbieItems as IItemStack[] = [<flammpfeil.slashblade:slashbladewood:*>, <minecraft:golden_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
+val NewbieItems as IItemStack[] = [<slashblade:slashbladewood:*>, <minecraft:golden_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
 var index as int = 0;
 for newbieitem in NewbieItems {
     newbieitem.addAdvancedTooltip(
@@ -132,8 +132,8 @@ mods.jei.JEI.addDescription(<liquid:dcs.mazai>,
         game.localize("crafttweaker.mazai.desc")
     ]
 );
-val mojian_Yanmodao = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yamato", TextureName: "named/yamato", IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
-val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.sange", TextureName: "named/sange/sange", IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
+val mojian_Yanmodao = <lastsmith:slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.yamato", TextureName: "named/yamato", IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
+val sanhua = <lastsmith:slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.sange", TextureName: "named/sange/sange", IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
 val twilightItems as IIngredient[] = [
     <contenttweaker:nature_shard>,
     <contenttweaker:magic_shard>,

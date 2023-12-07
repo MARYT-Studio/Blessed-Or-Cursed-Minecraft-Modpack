@@ -1,8 +1,8 @@
 import mods.touhoulittlemaid.Altar;
 // Variables claiming
-val ziduandao_Yongzhen = <lastsmith:.slashblade.named>.withTag({TextureName: "named/namedblade/texture_nagasada", ModelName: "named/namedblade/model_stright", CurrentItemName: "flammpfeil.slashblade.named.nagasada", IsFakeBlade: 1 as byte, baseAttackModifier: 6.0 as float, "SB.SEffect": {}});
-val dadizhiren = <lastsmith:.slashblade.named>.withTag({ModelName: "named/terra/terra", CurrentItemName: "flammpfeil.slashblade.named.terra", SummonedSwordColor: 3524113, TextureName: "named/terra/terra"});
-val yingjian = <lastsmith:.slashblade.named>.withTag({ench: [{lvl: 4 as short, id: 34 as short}, {lvl: 4 as short, id: 16 as short}], ModelName: "named/bot_roukan/model", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.roukan_bot", TextureName: "named/bot_roukan/texture", IsBewitchedActived: 1 as byte, baseAttackModifier: 16.0 as float});
+val ziduandao_Yongzhen = <lastsmith:slashblade.named>.withTag({TextureName: "named/namedblade/texture_nagasada", ModelName: "named/namedblade/model_stright", CurrentItemName: "slashblade.named.nagasada", IsFakeBlade: 1 as byte, baseAttackModifier: 6.0 as float, "SB.SEffect": {}});
+val dadizhiren = <lastsmith:slashblade.named>.withTag({ModelName: "named/terra/terra", CurrentItemName: "slashblade.named.terra", SummonedSwordColor: 3524113, TextureName: "named/terra/terra"});
+val yingjian = <lastsmith:slashblade.named>.withTag({ench: [{lvl: 4 as short, id: 34 as short}, {lvl: 4 as short, id: 16 as short}], ModelName: "named/bot_roukan/model", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.roukan_bot", TextureName: "named/bot_roukan/texture", IsBewitchedActived: 1 as byte, baseAttackModifier: 16.0 as float});
 Altar.addItemCraftRecipe("botania_slashblade", 2.0,
                          yingjian, 
                          ziduandao_Yongzhen,

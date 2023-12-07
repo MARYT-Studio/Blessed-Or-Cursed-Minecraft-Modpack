@@ -10,7 +10,7 @@ val giftHammerName as string = game.localize("item.crafttweaker.newbiehammer.nam
 
 
 // TODO: 新手拔刀剑可能需要用模组的方式实现
-val giftSword = <flammpfeil.slashblade:slashbladewood>.withTag({
+val giftSword = <slashblade:slashbladewood>.withTag({
     newbie: 1,
     ench: [
         {
