@@ -14,7 +14,9 @@ crafttweaker.lemon_battery_3.tooltip=Craft this with Soldering Iron to charge it
 crafttweaker.lemon_battery_4.tooltip=Or you can use this for furnace's fuel.
 crafttweaker.lemon_battery_5.tooltip=§oDedicated to the Apple Milk & Tea Mod created by defeatedcrow.
 
-item.crafttweaker.newbiesword.name=§6Newbie's Sword of Braveness
+item.crafttweaker.newbiesword_1.name=§6This is a sword that §ccannot§6 be repaired.
+item.crafttweaker.newbiesword_2.name=§6Swordsman, please remember: the sword in your hand will eventually break; 
+item.crafttweaker.newbiesword_3.name=§6But the courage in your heart is always renewed and everlasting.
 item.crafttweaker.newbieaxe.name=§6Newbie's Axe of Toughness
 item.crafttweaker.newbiebread.name=§6Newbie's Bread
 item.crafttweaker.newbiehammer.name=§6Newbie's Forging Hammer

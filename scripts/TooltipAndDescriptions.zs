@@ -1,4 +1,3 @@
-#loader crafttweaker reloadable
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
@@ -6,14 +5,17 @@ import crafttweaker.data.IData;
 // Tooltips
 
 // Newbie Items tooltip
-val SwordTooltip as string = game.localize("item.crafttweaker.newbiesword.name");
+<slashblade:slashbladenewbie>.addTooltip(game.localize("item.crafttweaker.newbiesword_1.name"));
+<slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_2.name"));
+<slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_3.name"));
+
 val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
 val BreadTooltip as string = game.localize("item.crafttweaker.newbiebread.name");
 val HammerTooltip as string = game.localize("item.crafttweaker.newbiehammer.name");
-val NewbieTooltips as string[] = [SwordTooltip, AxeTooltip, BreadTooltip, HammerTooltip];
+val NewbieTooltips as string[] = [AxeTooltip, BreadTooltip, HammerTooltip];
 
 // Newbie items
-val NewbieItems as IItemStack[] = [<slashblade:slashbladewood:*>, <minecraft:golden_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
+val NewbieItems as IItemStack[] = [<minecraft:golden_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
 var index as int = 0;
 for newbieitem in NewbieItems {
     newbieitem.addAdvancedTooltip(
@@ -28,6 +30,26 @@ for newbieitem in NewbieItems {
     index += 1;
 }
 <patchouli:guide_book>.withTag({"patchouli:book": "lastsmith:smith_guide"}).addTooltip(game.localize("crafttweaker.tls_book.tooltip"));
+
+// 锻刀上限
+for slashblade_item in loadedMods["slashblade"].items {
+    slashblade_item.addAdvancedTooltip(
+        function(item) {
+            if (isNull(item.tag.RefineLimit) || isNull(item.tag.RepairCounter)) return "";
+            var refine = item.tag.memberGet("RepairCounter");
+            var limit = item.tag.memberGet("RefineLimit");
+            if (refine < 0.5 * limit) {
+                return "§aRefine: " + refine + "/" + limit;
+            } else {
+                if (refine < 0.8 * limit) {
+                    return "§6Refine: " + refine + "/" + limit;
+                } else {
+                    return "§cRefine: " + refine + "/" + limit;
+                }
+            }
+        }
+    );
+}
 
 // Vanilla Minecraft
 <minecraft:experience_bottle>.addTooltip(game.localize("crafttweaker.experience_bottle.tooltip"));
@@ -108,8 +130,6 @@ for armor in ic2_armor {
 <contenttweaker:dummy_infinite_item>.addTooltip(game.localize("crafttweaker.immortal_item_1.tooltip"));
 <contenttweaker:dummy_infinite_item>.addTooltip(game.localize("crafttweaker.immortal_item_2.tooltip"));
 
-// ----------------------------------------------------------------
-
 // JEI Descriptions
 
 // Soldering Iron and Lemon Battery
@@ -120,7 +140,6 @@ mods.jei.JEI.addDescription([<contenttweaker:soldering_iron>, <contenttweaker:le
     game.localize("crafttweaker.soldering_iron_3.desc"),
     game.localize("crafttweaker.soldering_iron_4.desc")   
 ]);
-// To reduce the complexity of coding, I made SlashBlades' JEI descriptions into the SlashBladeTiering.zs
 // Abyssal Ingot
 mods.jei.JEI.addDescription(<contenttweaker:abyssal_ingot>,
     [
