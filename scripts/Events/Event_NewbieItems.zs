@@ -7,7 +7,7 @@ val giftAxeName as string = game.localize("item.crafttweaker.newbieaxe.name");
 val giftBreadName as string = game.localize("item.crafttweaker.newbiebread.name");
 val giftHammerName as string = game.localize("item.crafttweaker.newbiehammer.name");
 
-val giftSword = <slashblade:slashbladenewbie>.withTag({craftername: "test"});
+val giftSword = <slashblade:slashbladenewbie>;
 val giftAxe = <minecraft:golden_axe>.withTag({display: {Name: giftAxeName}, ench: [{lvl: 5 as short, id: 34 as short}], newbie: 1});
 val giftBread = <minecraft:bread>.withTag({display: {Name: giftBreadName}, newbie: 1}) * 32;
 val giftHammer = <sakura:stone_hammer>.withTag({display: {Name: giftHammerName}, newbie: 1});

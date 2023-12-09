@@ -5,5 +5,15 @@
         "player": true,
         "item": "contenttweaker:inner_shard",
         "itemcount": "0-1/0-1/0-1"
-    }
+    },
+    {
+        "mob": "minecraft:evoker",
+        "remove": "minecraft:totem_of_undying"
+    },
+    {
+        "mob": "minecraft:evocation_illager",
+        "player": true,
+        "item": "minecraft:emerald",
+        "itemcount": "1-3/2-4/3-5"
+      }
 ]

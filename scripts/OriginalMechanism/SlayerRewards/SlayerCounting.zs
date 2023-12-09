@@ -80,10 +80,10 @@ events.onEntityLivingHurt(
         var entityLiving = event.entityLivingBase;
         if (entityLiving instanceof IPlayer) {
             var player as IPlayer = entityLiving;
+            var world = player.world;
+            if (world.remote) return;
             if (!isNull(player.data) && !isNull(player.data.slayer_rewards)) {
-                var world = player.world;
-                var slayerRewards = player.data.slayer_rewards;
-                
+                var slayerRewards = player.data.slayer_rewards;                
                 // 不论如何，受伤计时器都要更新
                 player.update(
                     {
