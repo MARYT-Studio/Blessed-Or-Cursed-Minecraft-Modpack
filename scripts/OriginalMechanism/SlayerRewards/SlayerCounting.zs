@@ -31,6 +31,8 @@ import mods.zenutils.I18n;
 // For broadcasting
 import crafttweaker.server.IServer;
 
+val debug = true;
+
 // 每秒 tick 数，常量
 val seconds = 20;
 
@@ -70,7 +72,10 @@ events.onEntityLivingDeath(
                 player.update(
                     {
                         slayer_rewards :{
+                            // 击杀非特殊的怪物，增加这个计数
                             slayer_counting: (slayerCounting + slay),
+                            // 击杀任何怪物，刷新这个时间
+                            reward_world_time: world.getWorldTime(),
                         }
                     }
                 );
@@ -90,6 +95,10 @@ events.onEntityLivingDeath(
                 if (slayCountingNow == 100) {
                     broadCast("crafttweaker.slayer_counter_step.5", player, server);
                 }
+            }
+            // debug print
+            if (debug) {
+                player.sendChat("\u5DF2\u5237\u65B0reward_time\u5230\uFF1A" ~ player.data.slayer_rewards.reward_world_time.asInt());
             }
         }
     }
@@ -130,6 +139,7 @@ events.onEntityLivingHurt(
     }
 );
 
+// 奖励结算
 events.onPlayerTick(
     function (event as PlayerTickEvent) {
         var player = event.player;
@@ -142,6 +152,11 @@ events.onPlayerTick(
         var rewardTime = slayerRewards.reward_world_time;
         var time = world.getWorldTime();
         if (time - rewardTime >= REWARD_TIME) {
+            //debug print
+            if (debug) {
+                player.sendChat("\u5F53\u524D\u4E16\u754C\u65F6\u95F4\u4E3A" ~ time ~ "\uFF0C\u6700\u540E\u4E00\u6B21\u51FB\u6740\u8BA1\u65F6\u4E3A" ~ rewardTime ~ "\uFF0C\u7ED3\u7B97\u5956\u52B1\uFF0C\u5F52\u96F6\u8BA1\u6570\u5668\u3002");
+            }
+
             // 播报已积累的杀敌数，等于 0 则不报
             if (slayerCounts > 0) {
                 player.sendChat(I18n.format("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r"));

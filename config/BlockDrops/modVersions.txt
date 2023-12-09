@@ -148,6 +148,7 @@
   "dcs_asm": "2.1.0",
   "consolefilter": "1.1.1",
   "nothirium": "0.2.4-beta",
+  "illagers_plus": "1.1",
   "ic2_tweaker": "0.2.1+build.4",
   "screenshot_viewer": "1.1.1",
   "cosmeticarmorreworked": "1.12.2-v5a",
