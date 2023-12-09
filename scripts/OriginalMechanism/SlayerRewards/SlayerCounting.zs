@@ -1,7 +1,7 @@
-
 #loader crafttweaker reloadable
 // Packages for needed ZenClasses
 import crafttweaker.player.IPlayer;
+import crafttweaker.entity.IEntityMob;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IBlockPos;
 import crafttweaker.entity.IEntityDefinition;
@@ -26,6 +26,11 @@ import crafttweaker.potions.IPotionEffect;
 // For send Messages
 import crafttweaker.text.ITextComponent;
 
+// For chat format
+import mods.zenutils.I18n;
+// For broadcasting
+import crafttweaker.server.IServer;
+
 // 每秒 tick 数，常量
 val seconds = 20;
 
@@ -41,6 +46,7 @@ events.onEntityLivingDeath(
     function(event as EntityLivingDeathEvent)
     {
         var entity = event.entity;
+        if (!(entity instanceof IEntityMob)) return; // 非怪物的生物击杀不算
         var world as IWorld = entity.world;
         var source = event.damageSource.trueSource;
         
@@ -68,7 +74,22 @@ events.onEntityLivingDeath(
                         }
                     }
                 );
-                player.sendChat("\u4F60\u8FBE\u6210\u4E86"+ player.data.slayer_rewards.slayer_counting +"\u8FDE\u6740\uFF01");
+                var slayCountingNow = player.data.slayer_rewards.slayer_counting.asInt();
+                if (slayCountingNow == 5) {
+                    player.sendChat(I18n.format("crafttweaker.slayer_counter_step.1"));
+                }
+                if (slayCountingNow == 10) {
+                    player.sendChat(I18n.format("crafttweaker.slayer_counter_step.2"));
+                }
+                if (slayCountingNow == 20) {
+                    broadCast("crafttweaker.slayer_counter_step.3", player, server);
+                }
+                if (slayCountingNow == 50) {
+                    broadCast("crafttweaker.slayer_counter_step.4", player, server);
+                }
+                if (slayCountingNow == 100) {
+                    broadCast("crafttweaker.slayer_counter_step.5", player, server);
+                }
             }
         }
     }
@@ -103,9 +124,6 @@ events.onEntityLivingHurt(
                             slayer_counting: max(newSlayerCounting, 1)
                         }
                     });
-                    player.sendChat("\u5F53\u524D\u65F6\u95F4" + timeNow + "\uFF0C\u4E0A\u6B21\u53D7\u4F24\u65F6\u95F4" + hurtWorldTime + "\u3002\u8D85\u8FC7\u4E09\u79D2\u949F\uFF0C\u6263\u51CF\uFF0C\u5269\u4F59\u8FDE\u6740\u8BA1\u6570" + player.data.slayer_rewards.slayer_counting.asInt());
-                } else {
-                    player.sendChat("\u4E09\u79D2\u949F\u5185\uFF0C\u4E0D\u6263");
                 }
             }
         }
@@ -124,6 +142,10 @@ events.onPlayerTick(
         var rewardTime = slayerRewards.reward_world_time;
         var time = world.getWorldTime();
         if (time - rewardTime >= REWARD_TIME) {
+            // 播报已积累的杀敌数，等于 0 则不报
+            if (slayerCounts > 0) {
+                player.sendChat(I18n.format("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r"));
+            }
             // 奖励结算
             if (slayerCounts < 10) {
                 player.xp += slayerCounts;
@@ -141,3 +163,10 @@ events.onPlayerTick(
         }
     }
 );
+
+function broadCast(key as string, player as IPlayer, server as IServer){
+    var text as string[] = I18n.format(key, player.name).split("<br>");
+    server.commandManager.executeCommand(server, "title @a title {\"text\": " + "\"" + text[0] + "\", \"color\": \"gold\"}");
+    server.commandManager.executeCommand(server, "title @a subtitle {\"text\": " + "\"" + text[1] + "\", \"color\": \"green\"}");
+    server.commandManager.executeCommand(server, "title @a times 5 20 5");
+}
