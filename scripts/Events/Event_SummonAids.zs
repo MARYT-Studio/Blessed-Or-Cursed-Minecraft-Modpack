@@ -46,6 +46,8 @@ static probEverySingleAttack as float = 0.127f;
 static randomOffset as float = 1.5f;
 // Elites potion duration
 static duration as int = 400;
+static stepSpawnRateGrowth as int = 5;
+static stepPotionLevelGrowth as int = 10;
 
 // Event part
 events.onEntityLivingHurt(
@@ -79,12 +81,12 @@ events.onEntityLivingHurt(
                             return;
                         } else {
                             var slayCount as int = player.data.slayer_rewards.memberGet("slayer_counting").asInt();
-                            if (world.random.nextFloat() < (0.05f * (slayCount / 10))) {
+                            if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
                                 var aid as IEntityLivingBase = combatElites[typeNumber].spawnEntity(world, summonBlockPos);
                                 if (typeNumber == 0) {
-                                    aid.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(duration, (slayCount / 20)));
+                                    aid.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
                                 } else if (typeNumber == 1) {
-                                    aid.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(duration, (slayCount / 20)));
+                                    aid.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
                                 }
                             }
                         }                        
@@ -113,10 +115,10 @@ events.onEntityLivingHurt(
                             return;
                         } else {
                             var slayCount as int = player.data.slayer_rewards.memberGet("slayer_counting").asInt();
-                            if (world.random.nextFloat() < (0.05f * (slayCount / 10))) {
+                            if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
                                 var aid as IEntityLivingBase = rangedElites[typeNumber].createEntity(world);
                                 if (typeNumber == 0) {
-                                    aid.addPotionEffect(<potion:minecraft:absorption>.makePotionEffect(duration, (slayCount / 20)));
+                                    aid.addPotionEffect(<potion:minecraft:absorption>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
                                 }
                                 world.spawnEntity(aid);
                             }
