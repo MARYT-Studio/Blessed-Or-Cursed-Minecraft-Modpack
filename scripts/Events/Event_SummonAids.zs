@@ -98,7 +98,7 @@ events.onEntityLivingHurt(
                     var slayCount as int = player.data.slayer_rewards.memberGet("slayer_counting").asInt();
                     // Debug print
                     if (debug) {
-                        player.sendChat("阈值："~ (0.05f * (slayCount / stepSpawnRateGrowth)));
+                        player.sendChat("\u9608\u503C\uFF1A"~ (0.05f * (slayCount / stepSpawnRateGrowth)));
                     }
                     if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
                         var aid as IEntityLivingBase = combatElites[typeNumber].spawnEntity(world, summonBlockPos);
@@ -136,7 +136,7 @@ events.onEntityLivingHurt(
                     var slayCount as int = player.data.slayer_rewards.memberGet("slayer_counting").asInt();
                     // Debug print
                     if (debug) {
-                        player.sendChat("阈值："~ (0.05f * (slayCount / stepSpawnRateGrowth)));
+                        player.sendChat("\u9608\u503C\uFF1A"~ (0.05f * (slayCount / stepSpawnRateGrowth)));
                     }
                     if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
                         var aid as IEntityLivingBase = rangedElites[typeNumber].createEntity(world);
