@@ -74,7 +74,7 @@
   "chargers": "1.2.0.5",
   "cherishedworlds": "1.12.2-1.0.1",
   "mcwfurnitures": "1.0.1",
-  "zenutils": "1.15.3",
+  "zenutils": "1.16.1",
   "tpp": "1.0.1.1",
   "particleculling": "v1.4.1",
   "soundreloader": "1.1",
