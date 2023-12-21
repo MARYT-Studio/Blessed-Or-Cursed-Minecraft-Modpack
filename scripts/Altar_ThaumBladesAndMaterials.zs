@@ -2,12 +2,12 @@ import mods.touhoulittlemaid.Altar;
 // Variables claming
 val swordZephyr = <thaumcraft:elemental_sword>.withTag({infench: [{lvl: 2 as short, id: 5 as short}]});
 // Four Thaumic High-level Blades
-val yaosai_shenmi = <lastsmith:slashblade.named>.withTag({TextureName: "named/thaum/texture_thaumium_update", SlashBlade: {}, ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.fortress.thaumium.update", CustomMaxDamage: 600, IsBewitchedActived: 1 as byte, AttackAmplifier: -9.0 as float, baseAttackModifier: 11.0 as float, "SB.SEffect": {}});
+val yaosai_shenmi = <lastsmith:.slashblade.named>.withTag({TextureName: "named/thaum/texture_thaumium_update", SlashBlade: {}, ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.fortress.thaumium.update", CustomMaxDamage: 600, IsBewitchedActived: 1 as byte, AttackAmplifier: -9.0 as float, baseAttackModifier: 11.0 as float, "SB.SEffect": {}});
 val yaosai_fenglei = <lastsmith:slashblade_wind>.withTag({TextureName: "named/thaum/texture_elemental_update", SlashBlade: {}, ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.fortress.elemental.update", CustomMaxDamage: 1500, IsBewitchedActived: 1 as byte, AttackAmplifier: -8.0 as float, baseAttackModifier: 10.0 as float, "SB.SEffect": {}});
 val yaosai_xuwu = <lastsmith:slashblade_void>.withTag({TextureName: "named/thaum/texture_voidmetal_update", SlashBlade: {}, ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.fortress.void.update", CustomMaxDamage: 120, IsBewitchedActived: 1 as byte, AttackAmplifier: -7.0 as float, baseAttackModifier: 9.0 as float, "SB.SEffect": {}});
 val yaosai_xuehong = <lastsmith:slashblade_crimson>.withTag({TextureName: "named/thaum/texture_crimson_update", SlashBlade: {}, ModelName: "named/smith/model", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.fortress.crimson.update", CustomMaxDamage: 300, IsBewitchedActived: 1 as byte, AttackAmplifier: -10.0 as float, baseAttackModifier: 12.0 as float, "SB.SEffect": {}});
 
-val shenmi = <lastsmith:slashblade.named>.withTag({TextureName: "named/thaum/texture_thaumium", SlashBlade: {}, ModelName: "named/smith/model", CurrentItemName: "slashblade.named.fortress.thaumium", CustomMaxDamage: 400, IsFakeBlade: 1 as byte, AttackAmplifier: -8.0 as float, baseAttackModifier: 10.0 as float, "SB.SEffect": {}});
+val shenmi = <lastsmith:.slashblade.named>.withTag({TextureName: "named/thaum/texture_thaumium", SlashBlade: {}, ModelName: "named/smith/model", CurrentItemName: "slashblade.named.fortress.thaumium", CustomMaxDamage: 400, IsFakeBlade: 1 as byte, AttackAmplifier: -8.0 as float, baseAttackModifier: 10.0 as float, "SB.SEffect": {}});
 val fenglei = <lastsmith:slashblade_wind>.withTag({TextureName: "named/thaum/texture_elemental", SlashBlade: {}, ModelName: "named/smith/model", CurrentItemName: "slashblade.named.fortress.elemental", CustomMaxDamage: 1200, IsFakeBlade: 1 as byte, AttackAmplifier: -7.0 as float, baseAttackModifier: 9.0 as float, "SB.SEffect": {}});
 val xuwu = <lastsmith:slashblade_void>.withTag({TextureName: "named/thaum/texture_voidmetal", SlashBlade: {}, ModelName: "named/smith/model", CurrentItemName: "slashblade.named.fortress.void", CustomMaxDamage: 50, IsFakeBlade: 1 as byte, AttackAmplifier: -5.0 as float, baseAttackModifier: 7.0 as float, "SB.SEffect": {}});
 val xuehong = <lastsmith:slashblade_crimson>.withTag({TextureName: "named/thaum/texture_crimson", SlashBlade: {}, ModelName: "named/smith/model", CurrentItemName: "slashblade.named.fortress.crimson", CustomMaxDamage: 120, IsFakeBlade: 1 as byte, AttackAmplifier: -7.0 as float, baseAttackModifier: 9.0 as float, "SB.SEffect": {}});
@@ -51,7 +51,7 @@ Altar.addItemCraftRecipe("thaum_slashblade", 1.5,
                          shenmi,
                          <contenttweaker:first_killcount_token>,
                          <contenttweaker:first_killcount_token>,
-                         <slashblade:proudsoul:2>,
+                         <flammpfeil.slashblade:proudsoul:2>,
                          <minecraft:experience_bottle>,
                          <minecraft:golden_apple>
                         );
@@ -60,7 +60,7 @@ Altar.addItemCraftRecipe("void_slashblade", 1.5,
                          xuwu,
                          <contenttweaker:first_killcount_token>,
                          <contenttweaker:first_killcount_token>,
-                         <slashblade:proudsoul:2>,
+                         <flammpfeil.slashblade:proudsoul:2>,
                          <minecraft:experience_bottle>,
                          <minecraft:golden_apple>
                         );
@@ -69,7 +69,7 @@ Altar.addItemCraftRecipe("zephyr_slashblade", 1.5,
                          fenglei,
                          <contenttweaker:first_killcount_token>,
                          <contenttweaker:first_killcount_token>,
-                         <slashblade:proudsoul:2>,
+                         <flammpfeil.slashblade:proudsoul:2>,
                          <minecraft:experience_bottle>,
                          <minecraft:golden_apple>
                         );
@@ -78,7 +78,7 @@ Altar.addItemCraftRecipe("crimson_slashblade", 1.5,
                          xuehong,
                          <contenttweaker:first_killcount_token>,
                          <contenttweaker:first_killcount_token>,
-                         <slashblade:proudsoul:2>,
+                         <flammpfeil.slashblade:proudsoul:2>,
                          <minecraft:experience_bottle>,
                          <minecraft:golden_apple>
                         );

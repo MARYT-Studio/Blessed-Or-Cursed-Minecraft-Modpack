@@ -9,8 +9,8 @@ import crafttweaker.data.IData;
 import crafttweaker.item.IItemStack;
 
 // Two Vanilla Boss Blades
-var sanhua = <lastsmith:slashblade.named>.withTag({SlashBlade: {}, ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.sange", AttackAmplifier: -4.0 as float, TextureName: "named/sange/sange", SpecialAttackType: 7, CustomMaxDamage: 70, IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float, StandbyRenderType: 2});
-var yanmodao = <lastsmith:slashblade.named>.withTag({isSealed: 1 as byte, SlashBlade: {}, ModelName: "named/yamato", isNoScabbard: 1 as byte, CurrentItemName: "slashblade.named.yamato.broken", AttackAmplifier: -5.0 as float, TextureName: "named/yamato", SpecialAttackType: 0, TrueItemName: "slashblade.named.yamato", CustomMaxDamage: 40, isBroken: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {Limitter: 30}, StandbyRenderType: 1});
+var sanhua = <lastsmith:.slashblade.named>.withTag({SlashBlade: {}, ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.sange", AttackAmplifier: -4.0 as float, TextureName: "named/sange/sange", SpecialAttackType: 7, CustomMaxDamage: 70, IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float, StandbyRenderType: 2});
+var yanmodao = <lastsmith:.slashblade.named>.withTag({isSealed: 1 as byte, SlashBlade: {}, ModelName: "named/yamato", isNoScabbard: 1 as byte, CurrentItemName: "slashblade.named.yamato.broken", AttackAmplifier: -5.0 as float, TextureName: "named/yamato", SpecialAttackType: 0, TrueItemName: "slashblade.named.yamato", CustomMaxDamage: 40, isBroken: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {Limitter: 30}, StandbyRenderType: 1});
 
 events.onEntityLivingDeath(
     function(event as EntityLivingDeathEvent) {

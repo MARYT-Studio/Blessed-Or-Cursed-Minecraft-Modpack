@@ -13,10 +13,10 @@ import crafttweaker.world.IWorld;
 import crafttweaker.potions.IPotionEffect;
 
 val proudSoulItems as IItemStack[float] = {
-    0.05f: <slashblade:proudsoul:2>,  // Proudsoul Sphere
-    0.1f: <slashblade:proudsoul:1>, // Proudsoul Ingot
-    0.2f: <slashblade:proudsoul>,   // Proudsoul
-    0.65f: <slashblade:proudsoul:3> // Tiny Proudsoul
+    0.05f: <flammpfeil.slashblade:proudsoul:2>,  // Proudsoul Sphere
+    0.1f: <flammpfeil.slashblade:proudsoul:1>, // Proudsoul Ingot
+    0.2f: <flammpfeil.slashblade:proudsoul>,   // Proudsoul
+    0.65f: <flammpfeil.slashblade:proudsoul:3> // Tiny Proudsoul
 };
  
 val buffProbability as float = 0.5f;

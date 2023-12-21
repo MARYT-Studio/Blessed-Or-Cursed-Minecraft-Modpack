@@ -5,9 +5,9 @@ import crafttweaker.data.IData;
 // Tooltips
 
 // Newbie Items tooltip
-<slashblade:slashbladenewbie>.addTooltip(game.localize("item.crafttweaker.newbiesword_1.name"));
-<slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_2.name"));
-<slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_3.name"));
+// <flammpfeil.slashblade:slashbladenewbie>.addTooltip(game.localize("item.crafttweaker.newbiesword_1.name"));
+// <flammpfeil.slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_2.name"));
+// <flammpfeil.slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_3.name"));
 
 val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
 val BreadTooltip as string = game.localize("item.crafttweaker.newbiebread.name");
@@ -32,19 +32,37 @@ for newbieitem in NewbieItems {
 <patchouli:guide_book>.withTag({"patchouli:book": "lastsmith:smith_guide"}).addTooltip(game.localize("crafttweaker.tls_book.tooltip"));
 
 // 锻刀上限
-for slashblade_item in loadedMods["slashblade"].items {
+for slashblade_item in loadedMods["flammpfeil.slashblade"].items {
     slashblade_item.addAdvancedTooltip(
         function(item) {
             if (isNull(item.tag.RefineLimit) || isNull(item.tag.RepairCounter)) return "";
             var refine = item.tag.memberGet("RepairCounter");
             var limit = item.tag.memberGet("RefineLimit");
             if (refine < 0.5 * limit) {
-                return "§aRefine: " + refine + "/" + limit;
+                return "\u00A7aRefine: " + refine + "/" + limit;
             } else {
                 if (refine < 0.8 * limit) {
-                    return "§6Refine: " + refine + "/" + limit;
+                    return "\u00A76Refine: " + refine + "/" + limit;
                 } else {
-                    return "§cRefine: " + refine + "/" + limit;
+                    return "\u00A7cRefine: " + refine + "/" + limit;
+                }
+            }
+        }
+    );
+}
+for slashblade_item in loadedMods["lastsmith"].items {
+    slashblade_item.addAdvancedTooltip(
+        function(item) {
+            if (isNull(item.tag.RefineLimit) || isNull(item.tag.RepairCounter)) return "";
+            var refine = item.tag.memberGet("RepairCounter");
+            var limit = item.tag.memberGet("RefineLimit");
+            if (refine < 0.5 * limit) {
+                return "\u00A7aRefine: " + refine + "/" + limit;
+            } else {
+                if (refine < 0.8 * limit) {
+                    return "\u00A76Refine: " + refine + "/" + limit;
+                } else {
+                    return "\u00A7cRefine: " + refine + "/" + limit;
                 }
             }
         }
@@ -151,8 +169,8 @@ mods.jei.JEI.addDescription(<liquid:dcs.mazai>,
         game.localize("crafttweaker.mazai.desc")
     ]
 );
-val mojian_Yanmodao = <lastsmith:slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.yamato", TextureName: "named/yamato", IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
-val sanhua = <lastsmith:slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.sange", TextureName: "named/sange/sange", IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
+val mojian_Yanmodao = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.yamato", TextureName: "named/yamato", IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
+val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.sange", TextureName: "named/sange/sange", IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
 val twilightItems as IIngredient[] = [
     <contenttweaker:nature_shard>,
     <contenttweaker:magic_shard>,
