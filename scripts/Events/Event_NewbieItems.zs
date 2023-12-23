@@ -1,5 +1,4 @@
 #loader crafttweaker reloadable
-
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.item.IItemStack;
 
@@ -7,13 +6,12 @@ val giftAxeName as string = game.localize("item.crafttweaker.newbieaxe.name");
 val giftBreadName as string = game.localize("item.crafttweaker.newbiebread.name");
 val giftHammerName as string = game.localize("item.crafttweaker.newbiehammer.name");
 
-// dummy
-val giftSword = <minecraft:wooden_sword>.withTag({ench: [{lvl: 5 as short, id: 34 as short}], newbie: 1});
+val giftSword = <lastsmith:.slashblade.named>.withTag({ModelName: "custom/newbie/model", CurrentItemName: "custom_newbie", AttackAmplifier: -4.0 as float, TextureName: "custom/newbie/texture", CustomMaxDamage: 300, baseAttackModifier: 4.0 as float, AttributeModifiers: [{UUIDMost: -3801225194067177672 as long, UUIDLeast: -6586624321849018929 as long, Amount: 2.0, Slot: "mainhand", AttributeName: "generic.attackDamage", Operation: 0, Name: "Weapon modifier"}, {UUIDMost: -422425648963762075 as long, UUIDLeast: -5756800103171642205 as long, Amount: -2.4000000953674316, Slot: "mainhand", AttributeName: "generic.attackSpeed", Operation: 0, Name: "Weapon modifier"}], StandbyRenderType: 2});
 
 val giftAxe = <minecraft:golden_axe>.withTag({display: {Name: giftAxeName}, ench: [{lvl: 5 as short, id: 34 as short}], newbie: 1});
 val giftBread = <minecraft:bread>.withTag({display: {Name: giftBreadName}, newbie: 1}) * 32;
 val giftHammer = <sakura:stone_hammer>.withTag({display: {Name: giftHammerName}, newbie: 1});
-val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer];
+val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer, <contenttweaker:feadog>];
 
 events.onPlayerLoggedIn(
     function(event as PlayerLoggedInEvent) {

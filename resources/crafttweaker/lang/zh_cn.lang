@@ -167,3 +167,14 @@ crafttweaker.slayer_counter_step.2=十连杀！敌人嗅到恐惧的味道！
 crafttweaker.slayer_counter_step.3=%s达成20连杀！<br>侵掠如火动如雷震！
 crafttweaker.slayer_counter_step.4=%s达成50连杀！<br>锋刃所向无不披靡！
 crafttweaker.slayer_counter_step.5=%s达成100连杀！<br>风暴降临主宰战场！
+
+# Callable Horses
+item.crafttweaker.feadog.warning=§c§l长按右键召唤马匹，只能使用一次
+item.crafttweaker.feadog.desc_1=召唤马匹后请尽快骑乘，
+item.crafttweaker.feadog.desc_2=并在骑乘状态下按[绑定马匹]快捷键。
+item.crafttweaker.feadog.text_1=§7§o被冠以“梦”之名、来自彼之地的哨笛。
+item.crafttweaker.feadog.text_2=§7§o铜壳泛起光芒如点点星火，
+item.crafttweaker.feadog.text_3=§7§o倔强地、执着地、熊熊燃烧着。
+
+contenttweaker.feadog_message_1.text=§o似乎有一段旅程即将开始。我要不要吹响它？
+contenttweaker.feadog_message_2.text=§o乾坤未定；纵吉凶未卜，我亦启程。

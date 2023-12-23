@@ -167,3 +167,14 @@ crafttweaker.slayer_counter_step.2=10 enemies has been slain. How shocked they a
 crafttweaker.slayer_counter_step.3=%s has slain 20 enemies.<br>Fierce as fire, Unstoppable as thunder!
 crafttweaker.slayer_counter_step.4=%s has slain 50 enemies.<br>Nothing can stop the sharp blade!
 crafttweaker.slayer_counter_step.5=%s has slain 100 enemies.<br>Storm has approached! New monarch has arisen!
+
+# Callable Horses
+item.crafttweaker.feadog.warning=§c§lUse this item to summon a horse. Single use.
+item.crafttweaker.feadog.desc_1=Ride the summoned horse as soon as possible.
+item.crafttweaker.feadog.desc_2=Press the [Set Horse] key when riding.
+item.crafttweaker.feadog.text_1=§7§oNamed with "Dreams", comes from the Other World.
+item.crafttweaker.feadog.text_2=§7§oIts brass cover glows like dots of starbursts,
+item.crafttweaker.feadog.text_3=§7§oStubborn, persistent, and blazing.
+
+contenttweaker.feadog_message_1.text=§oSeems to be an expedition about to begin. Should I blow it?
+contenttweaker.feadog_message_2.text=§oEven if my destiny is not yet known, I must set out.

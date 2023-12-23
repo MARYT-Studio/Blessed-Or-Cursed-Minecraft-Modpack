@@ -2,7 +2,7 @@
 import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.item.IItemStack;
 
-val enabled = false;
+val enabled = true;
 
 if (enabled) {
     events.onPlayerRightClickItem(

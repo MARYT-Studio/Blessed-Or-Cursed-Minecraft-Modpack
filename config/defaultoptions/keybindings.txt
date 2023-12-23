@@ -19,7 +19,7 @@ key_key.smoothCamera:0:NONE
 key_key.fullscreen:87:NONE
 key_key.spectatorOutlines:0:NONE
 key_key.swapHands:33:NONE
-key_key.saveToolbarActivator:46:NONE
+key_key.saveToolbarActivator:0:NONE
 key_key.loadToolbarActivator:45:NONE
 key_key.advancements:38:NONE
 key_key.hotbar.1:2:NONE
@@ -31,14 +31,15 @@ key_key.hotbar.6:7:NONE
 key_key.hotbar.7:8:NONE
 key_key.hotbar.8:9:NONE
 key_key.hotbar.9:10:NONE
+key_of.key.zoom:46:NONE
 key_Change Caster Focus:33:NONE
 key_Misc Caster Toggle:34:NONE
 key_Reload Menu | CTRL + ALT + :19:NONE
-key_Toggle Customization Overlay | CTRL + ALT + :46:NONE
+key_Toggle Customization Overlay | CTRL + ALT + :0:NONE
 key_ALT Key:56:NONE
 key_Boost Key:29:NONE
 key_Mode Switch Key:50:NONE
-key_Side Inventory Key:46:NONE
+key_Side Inventory Key:0:NONE
 key_Hub Expand Key:45:NONE
 key_key.staff_mode.desc:50:NONE
 key_key.use_cage.desc:49:NONE
@@ -46,7 +47,14 @@ key_key.configurator_mode.desc:47:NONE
 key_key.configurator_filter.desc:48:NONE
 key_key.configurator_path.desc:34:NONE
 key_keybind.baublesinventory:48:NONE
+key_cos.key.opencosarmorinventory:0:NONE
+key_key.wearablebackpacks.open:48:NONE
 key_key.findme.search:21:NONE
+key_key.ftbutilities.nbt:49:ALT
+key_key.ftbutilities.trash:211:NONE
+key_key.ftbquests.quests:0:NONE
+key_key.ftbmoney.shop:0:NONE
+key_neat.keybind.toggle:0:NONE
 key_key.toggleFoVChanges:51:SHIFT
 key_key.reloadSoundSystem:66:SHIFT
 key_key.toggleTimeOfDayOverlay:0:NONE
@@ -57,7 +65,7 @@ key_keys.servertabinfo.show:29:NONE
 key_keys.servertabinfo.show2:157:NONE
 key_simpletextoverlay.key.toggle:0:NONE
 key_simpletextoverlay.key.cycle:0:NONE
-key_Key.SlashBlade.PS:-98:NONE
+key_Key.SlashBlade.PS:19:NONE
 key_Key.SlashBlade.SA:47:NONE
 key_Key.SlashBlade.LO:42:NONE
 key_Key.SlashBlade.CA:0:NONE
@@ -86,6 +94,9 @@ key_key.fuzzy:0:NONE
 key_key.connected_area:0:NONE
 key_key.rotate_mirror:0:NONE
 key_key.material_list:50:NONE
+key_key.sethorse.desc:25:NONE
+key_key.callhorse.desc:44:NONE
+key_key.showstats.desc:23:NONE
 key_key.clienttweaks.disable_step_assist:0:NONE
 key_key.clienttweaks.hide_offhand_item:0:NONE
 key_key.craftingtweaks.rotate:0:NONE
@@ -130,9 +141,9 @@ key_key.journeymap.zoom_out:12:NONE
 key_key.journeymap.minimap_type:26:NONE
 key_key.journeymap.minimap_preset:43:NONE
 key_key.journeymap.create_waypoint:48:NONE
-key_key.journeymap.toggle_waypoints:44:NONE
+key_key.journeymap.toggle_waypoints:0:NONE
 key_key.journeymap.fullscreen_create_waypoint:48:NONE
-key_key.journeymap.fullscreen_chat_position:46:NONE
+key_key.journeymap.fullscreen_chat_position:0:NONE
 key_key.journeymap.map_toggle_alt:36:NONE
 key_key.journeymap.fullscreen_waypoints:48:CONTROL
 key_key.journeymap.minimap_toggle_alt:36:CONTROL

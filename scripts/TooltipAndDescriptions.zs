@@ -4,10 +4,26 @@ import crafttweaker.data.IData;
 
 // Tooltips
 
-// Newbie Items tooltip
-// <flammpfeil.slashblade:slashbladenewbie>.addTooltip(game.localize("item.crafttweaker.newbiesword_1.name"));
-// <flammpfeil.slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_2.name"));
-// <flammpfeil.slashblade:slashbladenewbie>.addShiftTooltip(game.localize("item.crafttweaker.newbiesword_3.name"));
+// Callable Horses
+<contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_1"), game.localize("item.crafttweaker.feadog.warning"));
+<contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_2"), game.localize("item.crafttweaker.feadog.desc_1"));
+<contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_3"), game.localize("item.crafttweaker.feadog.desc_2"));
+
+val newbieSwordTooltips as string[] = [
+    game.localize("item.crafttweaker.newbiesword_1.name"),
+    game.localize("item.crafttweaker.newbiesword_2.name"),
+    game.localize("item.crafttweaker.newbiesword_3.name")
+];
+
+for tooltip in newbieSwordTooltips {
+    <lastsmith:.slashblade.named:*>.addAdvancedTooltip(
+        function (item) {
+            if (item.tag.CurrentItemName == "custom_newbie") {
+                return tooltip;
+            } else return null;
+        }
+    );
+}
 
 val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
 val BreadTooltip as string = game.localize("item.crafttweaker.newbiebread.name");
@@ -23,7 +39,7 @@ for newbieitem in NewbieItems {
             if (!isNull(item.tag.newbie)) {
                 return NewbieTooltips[index];
             } else {
-                return "";
+                return null;
             }
         }
     );
@@ -32,12 +48,14 @@ for newbieitem in NewbieItems {
 <patchouli:guide_book>.withTag({"patchouli:book": "lastsmith:smith_guide"}).addTooltip(game.localize("crafttweaker.tls_book.tooltip"));
 
 // 锻刀上限
-for slashblade_item in loadedMods["flammpfeil.slashblade"].items {
-    slashblade_item.addAdvancedTooltip(
+for item in itemUtils.getItemsByRegexRegistryName("flammpfeil.slashblade*") {
+    item.addAdvancedTooltip(
         function(item) {
-            if (isNull(item.tag.RefineLimit) || isNull(item.tag.RepairCounter)) return "";
-            var refine = item.tag.memberGet("RepairCounter");
-            var limit = item.tag.memberGet("RefineLimit");
+            if (isNull(item.tag)) return null;
+            var dTag = D(item.tag);
+            var refine = dTag.getInt("RepairCounter");
+            var limit = dTag.getInt("RefineLimit");
+            if (refine == 0 || limit == 0) return null;
             if (refine < 0.5 * limit) {
                 return "\u00A7aRefine: " + refine + "/" + limit;
             } else {
@@ -50,12 +68,15 @@ for slashblade_item in loadedMods["flammpfeil.slashblade"].items {
         }
     );
 }
-for slashblade_item in loadedMods["lastsmith"].items {
-    slashblade_item.addAdvancedTooltip(
+
+for item in itemUtils.getItemsByRegexRegistryName("lastsmith*") {
+    item.addAdvancedTooltip(
         function(item) {
-            if (isNull(item.tag.RefineLimit) || isNull(item.tag.RepairCounter)) return "";
-            var refine = item.tag.memberGet("RepairCounter");
-            var limit = item.tag.memberGet("RefineLimit");
+            if (isNull(item.tag)) return null;
+            var dTag = D(item.tag);
+            var refine = dTag.getInt("RepairCounter");
+            var limit = dTag.getInt("RefineLimit");
+            if (refine == 0 || limit == 0) return null;
             if (refine < 0.5 * limit) {
                 return "\u00A7aRefine: " + refine + "/" + limit;
             } else {

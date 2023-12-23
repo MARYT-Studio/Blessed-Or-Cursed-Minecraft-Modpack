@@ -57,9 +57,7 @@ item.contenttweaker.inner_gem.name=Gem of Deeper Realm
 contenttweaker.inner_shard.tooltip=Drops from Abyssal Zombies and Depth Ghouls §lin the Hunting Dimension§r.
 contenttweaker.inner_gem.tooltip=Contains the power to reveal the nature of the Abyss.
 
-item.contenttweaker.humiliation_from_jzahar.name=Taking the Jzahary
-item.humiliation_from_jzahar.name=Taking the Jzahary
-contenttweaker.humiliation_from_jzahar_1.tooltip=§e§lAll right, all right, you crying baby!
-contenttweaker.humiliation_from_jzahar_2.tooltip=§e§lEat this and your exp will back.
-
 tile.contenttweaker.sake_of_karma.name=Sake of Karma
+
+item.feadog.name=Whistle of Dreams
+item.contenttweaker.feadog.name=Whistle of Dreams
