@@ -1,19 +1,23 @@
 #loader crafttweaker reloadable
-import crafttweaker.event.PlayerRespawnEvent;
 import crafttweaker.event.EntityLivingDeathEvent;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntityMob;
 import mods.zenutils.EventPriority;
+import scripts.GlobalVars;
+import crafttweaker.util.Math;
 
 // debug 开关
 val debug = true;
-// 初始锻刀上限
-val baseRefineLimit = 10;
+// 奖励概率
+val prob = 0.1f;
 // 键为维度 ID，值为提升的锻刀上限数
 val rewardMap = {
-    "DIM0": 0,
+    // 为了调试简单使用的测试值
+    "DIM0": 10,
+    // 实际使用的数值
+    // "DIM0": 0,
     "DIM56": 5,
     "DIM-1": 10,
     "DIM1": 15,
@@ -25,7 +29,7 @@ val rewardMap = {
     "DIM53": 50
 } as IData;
 
-val blankMap = {
+val blankMap = {    
     "DIM0": 0,
     "DIM56": 0,
     "DIM-1": 0,
@@ -38,7 +42,7 @@ val blankMap = {
     "DIM53": 0
 } as IData;
 
-
+// 奖励部分，玩家杀敌概率奖励锻刀上限
 events.onEntityLivingDeath(
     function (event as EntityLivingDeathEvent) {
         if !(event.entityLivingBase instanceof IEntityMob) return;
@@ -55,13 +59,20 @@ events.onEntityLivingDeath(
             if (!(dTag.check("RefineLimitGained"))) {
                 // 初始化
                 if (debug) player.sendChat("Initializing Gained Map");
-                var initMap as IData = blankMap + {("DIM" ~ world.dimension): 1};
-                item.mutable().updateTag({"RefineLimitGained": initMap});
+                var initMap as IData = blankMap;
+                var refineLimit = dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
+                // 如果该维度可以获取锻刀上限，那么需要在初始化的同时给予此次杀敌的锻刀上限奖励
+                if (D(rewardMap).getInt("DIM" ~ world.dimension) > 0 && world.random.nextFloat() < prob) {
+                    initMap = blankMap + {("DIM" ~ world.dimension): 1};
+                    refineLimit += 1;
+                }                
+                item.mutable().updateTag({"RefineLimitGained": initMap, "RefineLimit": refineLimit});
             } else {
                 var gainedMap as IData = dTag.get("RefineLimitGained");
-                if (D(gainedMap).getInt("DIM" ~ world.dimension) <= D(rewardMap).getInt("DIM" ~ world.dimension)) {
-                    gainedMap = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
-                    item.mutable().updateTag({"RefineLimitGained": gainedMap});
+                if (D(gainedMap).getInt("DIM" ~ world.dimension) < D(rewardMap).getInt("DIM" ~ world.dimension) && world.random.nextFloat() < prob) {
+                    var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
+                    var refineLimit = 1 + dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
+                    item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
                 }
             }
         }
@@ -69,16 +80,28 @@ events.onEntityLivingDeath(
 );
 
 // TODO: 惩罚部分，修改玩家背包里的拔刀剑锻刀上限
-events.onPlayerRespawn(
-    function (event as PlayerRespawnEvent) {
-        if (event.endConquered) return;
-        var player = event.player;
-        if (player.world.remote) return;
-        for item in player.getPlayerInventoryItemHandler() {
-            if (isNull(item)) return;
-            // if (item.definition.id.contains("slashblade")) {
-            //     player.sendChat("slashblade");
-            // }   
-        }
+events.onEntityLivingDeath(
+    function (event as EntityLivingDeathEvent) {
+        if (event.entityLivingBase instanceof IPlayer) {
+            var player as IPlayer = event.entityLivingBase;
+            for index in 0 .. player.inventorySize {
+                var item = player.getInventoryStack(index);
+                if (!isNull(item) && !isNull(item.tag)) {
+                    var dTag = D(item.tag);
+                    if (dTag.check("SlashBlade")) {
+                        if (dTag.check("RefineLimitGained")) {
+                            var gainedMap as IData = dTag.get("RefineLimitGained");
+                            var refineLimitGained = dTag.getInt("RefineLimitGained.DIM" ~ player.dimension);
+                            if (refineLimitGained > 0) {
+                                var delta = 1 + (Math.ceil(0.5f * refineLimitGained));
+                                var newMap as IData = gainedMap + {("DIM" ~ player.dimension): (refineLimitGained - delta)};
+                                var newRefineLimit = max(0, (dTag.getInt("RefineLimit") - delta));
+                                item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": newRefineLimit});
+                            }
+                        }
+                    }
+                }
+            }
+        }        
     }
 );
