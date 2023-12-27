@@ -1,6 +1,8 @@
+#loader crafttweaker reloadable
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
+import scripts.GlobalVars;
 
 // Tooltips
 
@@ -48,42 +50,41 @@ for newbieitem in NewbieItems {
 <patchouli:guide_book>.withTag({"patchouli:book": "lastsmith:smith_guide"}).addTooltip(game.localize("crafttweaker.tls_book.tooltip"));
 
 // 锻刀上限
-for item in itemUtils.getItemsByRegexRegistryName("flammpfeil.slashblade*") {
-    item.addAdvancedTooltip(
+for slashBladeItem in itemUtils.getItemsByRegexRegistryName("flammpfeil.slashblade*") {
+    slashBladeItem.addAdvancedTooltip(
         function(item) {
             if (isNull(item.tag)) return null;
             var dTag = D(item.tag);
             var refine = dTag.getInt("RepairCounter");
-            var limit = dTag.getInt("RefineLimit");
-            if (refine == 0 || limit == 0) return null;
+            var limit = dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
             if (refine < 0.5 * limit) {
-                return "\u00A7aRefine: " + refine + "/" + limit;
+                return "§aRefine: " + refine + "/" + limit;
             } else {
                 if (refine < 0.8 * limit) {
-                    return "\u00A76Refine: " + refine + "/" + limit;
+                    return "§6Refine: " + refine + "/" + limit;
                 } else {
-                    return "\u00A7cRefine: " + refine + "/" + limit;
+                    return "§cRefine: " + refine + "/" + limit;
                 }
             }
         }
     );
 }
 
-for item in itemUtils.getItemsByRegexRegistryName("lastsmith*") {
-    item.addAdvancedTooltip(
+for slashBladeItem in itemUtils.getItemsByRegexRegistryName("lastsmith*") {
+    slashBladeItem.addAdvancedTooltip(
         function(item) {
             if (isNull(item.tag)) return null;
             var dTag = D(item.tag);
+            if (dTag.getString("CurrentItemName") == "custom_newbie") return "§cRefine: 0/0";
             var refine = dTag.getInt("RepairCounter");
-            var limit = dTag.getInt("RefineLimit");
-            if (refine == 0 || limit == 0) return null;
+            var limit = dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
             if (refine < 0.5 * limit) {
-                return "\u00A7aRefine: " + refine + "/" + limit;
+                return "§aRefine: " + refine + "/" + limit;
             } else {
                 if (refine < 0.8 * limit) {
-                    return "\u00A76Refine: " + refine + "/" + limit;
+                    return "§6Refine: " + refine + "/" + limit;
                 } else {
-                    return "\u00A7cRefine: " + refine + "/" + limit;
+                    return "§cRefine: " + refine + "/" + limit;
                 }
             }
         }
