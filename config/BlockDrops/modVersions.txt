@@ -84,7 +84,7 @@
   "clienttweaks": "3.1.11",
   "ctgui": "1.0.0",
   "hecharacters": "@VERSION@",
-  "mixinbooter": "8.4",
+  "mixinbooter": "8.9",
   "reachfix": "1.0.9",
   "trashslot": "8.4.10",
   "renderlib": "1.2.8",

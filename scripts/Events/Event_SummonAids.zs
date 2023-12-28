@@ -71,10 +71,12 @@ events.onEntityLivingHurt(
         if (!(truSource instanceof IPlayer)) return;
 
         var player as IPlayer = truSource;
-        
+      
         // 事件逻辑
-        if (entityMatch(mobSummonCombat, mobBeingHurt.definition.name)) {
-            if(world.random.nextFloat() < probEverySingleAttack) {
+        if (entityMatch(mobSummonCombat, mobBeingHurt.definition)) {        
+            var rand = world.random.nextFloat();
+            if (debug) player.sendChat(rand);
+            if(rand < probEverySingleAttack) {
                 var summonMobPosX = mobBeingHurt.position3f.x;
                 var summonMobPosZ = mobBeingHurt.position3f.z;
                 // Random Offset: True for +Offset, False for -Offset
@@ -90,29 +92,34 @@ events.onEntityLivingHurt(
                 var typeNumber = world.random.nextInt(combatMobs.length);
 
                 // Aid summoning
-                var baseProbability = 0.05;
-                if (isNull(player.data) || isNull(player.data.slayer_rewards) || isNull(player.data.slayer_rewards.slayer_counting)) {
+
+                if (isNull(player.data)) {
                     combatMobs[typeNumber].spawnEntity(world, summonBlockPos);
                     return;
                 } else {
-                    var slayCount as int = player.data.slayer_rewards.memberGet("slayer_counting").asInt();
-                    // Debug print
-                    if (debug) {
-                        player.sendChat("\u9608\u503C\uFF1A"~ (0.05f * (slayCount / stepSpawnRateGrowth)));
-                    }
-                    if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
-                        var aid as IEntityLivingBase = combatElites[typeNumber].spawnEntity(world, summonBlockPos);
-                        if (typeNumber == 0) {
-                            aid.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
-                        } else if (typeNumber == 1) {
-                            aid.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
+                    var dTag = D(player.data);
+                    var slayCount as int = dTag.getInt("slayer_rewards.slayer_counting");
+                    if (slayCount <= 0) {
+                        combatMobs[typeNumber].spawnEntity(world, summonBlockPos);
+                        return;
+                    } else {
+                        if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
+                            var aid as IEntityLivingBase = combatElites[typeNumber].spawnEntity(world, summonBlockPos);
+                            if (typeNumber == 0) {
+                                aid.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
+                            } else if (typeNumber == 1) {
+                                aid.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
+                            }
                         }
                     }
-                }                        
-            }
+                }       
+            }                        
         }
-        if (entityMatch(mobSummonRanged, mobBeingHurt.definition.name)) {
-            if(world.random.nextFloat() < probEverySingleAttack) {
+    
+        if (entityMatch(mobSummonRanged, mobBeingHurt.definition)) {
+            var rand = world.random.nextFloat();
+            if (debug) player.sendChat(rand);    
+            if(rand < probEverySingleAttack) {
                 var summonMobPosX = mobBeingHurt.position3f.x;
                 var summonMobPosZ = mobBeingHurt.position3f.z;
                 // Random Offset: True for +Offset, False for -Offset
@@ -128,22 +135,25 @@ events.onEntityLivingHurt(
                 var typeNumber = world.random.nextInt(rangedMobs.length);
                 
                 // Aid summoning
-                var baseProbability = 0.05;
-                if (isNull(player.data) || isNull(player.data.slayer_rewards) || isNull(player.data.slayer_rewards.slayer_counting)) {
-                    rangedMobs[typeNumber].spawnEntity(world, summonBlockPos);
+
+                if (isNull(player.data)) {
+                    combatMobs[typeNumber].spawnEntity(world, summonBlockPos);
                     return;
                 } else {
-                    var slayCount as int = player.data.slayer_rewards.memberGet("slayer_counting").asInt();
-                    // Debug print
-                    if (debug) {
-                        player.sendChat("\u9608\u503C\uFF1A"~ (0.05f * (slayCount / stepSpawnRateGrowth)));
-                    }
-                    if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
-                        var aid as IEntityLivingBase = rangedElites[typeNumber].createEntity(world);
-                        if (typeNumber == 0) {
-                            aid.addPotionEffect(<potion:minecraft:absorption>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
+                    var dTag = D(player.data);
+                    var slayCount as int = dTag.getInt("slayer_rewards.slayer_counting");
+                    if (slayCount <= 0) {
+                        combatMobs[typeNumber].spawnEntity(world, summonBlockPos);
+                        return;
+                    } else {
+                        if (world.random.nextFloat() < (0.05f * (slayCount / stepSpawnRateGrowth))) {
+                            var aid as IEntityLivingBase = rangedElites[typeNumber].spawnEntity(world, summonBlockPos);
+                            if (typeNumber == 0) {
+                                aid.addPotionEffect(<potion:minecraft:speed>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
+                            } else if (typeNumber == 1) {
+                                aid.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(duration, (slayCount / stepPotionLevelGrowth)));
+                            }
                         }
-                        world.spawnEntity(aid);
                     }
                 }
             }
@@ -151,9 +161,9 @@ events.onEntityLivingHurt(
     }
 );
 
-function entityMatch(types as string[], entityName as string) as bool {
+function entityMatch(types as string[], definition as IEntityDefinition) as bool {
     for type in types {
-        if (entityName.toLowerCase().contains(type)) return true;
+        if (definition.id.toLowerCase().contains(type)) return true;
     }
     return false;
 }
