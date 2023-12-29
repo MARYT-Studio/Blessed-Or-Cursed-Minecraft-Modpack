@@ -1,7 +1,10 @@
 #loader crafttweaker reloadable
 import crafttweaker.event.PlayerLoggedInEvent;
+import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
+import mods.zenutils.I18n;
 
+// Items
 val giftAxeName as string = game.localize("item.crafttweaker.newbieaxe.name");
 val giftBreadName as string = game.localize("item.crafttweaker.newbiebread.name");
 val giftHammerName as string = game.localize("item.crafttweaker.newbiehammer.name");
@@ -13,9 +16,11 @@ val giftBread = <minecraft:bread>.withTag({display: {Name: giftBreadName}, newbi
 val giftHammer = <sakura:stone_hammer>.withTag({display: {Name: giftHammerName}, newbie: 1});
 val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer, <contenttweaker:feadog>];
 
+// Event
 events.onPlayerLoggedIn(
     function(event as PlayerLoggedInEvent) {
         var player = event.player;
+        opening(player);
         var world = player.world;
         if (!(world.remote)) {
             var data = player.data;
@@ -35,3 +40,14 @@ events.onPlayerLoggedIn(
         }
     }
 );
+
+function opening(player as IPlayer) {
+    for i in 0 .. 10 {
+        player.sendChat("");
+    }
+    if (player.world.worldInfo.hardcoreModeEnabled) {
+        for text in I18n.format("crafttweaker.hardcore").split("<br>") {
+            player.sendChat(text);
+        }
+    }
+}

@@ -41,8 +41,7 @@ val offset = 2;
 val text as string[] = I18n.format("crafttweaker.camping_penalty").split("<br>");
 
 events.onEntityLivingDeath(
-    function(event as EntityLivingDeathEvent)
-    {
+    function(event as EntityLivingDeathEvent) {
         var world as IWorld = event.entity.world;
         var dmgsource = event.damageSource.trueSource;
         if (isNull(dmgsource)) return;
