@@ -160,6 +160,10 @@ crafttweaker.sake_of_karma_5.tooltip=需要精准采集附魔的工具才能使�
 
 crafttweaker.sake_of_karma.desc=盛放业障烈酒的酒瓶。你的刀刃饮下此酒后，其沾染的肃杀之气与业障碰撞交融，这种力量足以唤醒你的心魔，并将它们在你眼前具现化，这就是斩魔仪式。仪式会首先召唤⌈执念⌋，你对⌈执念⌋的每一次攻击越是猛烈，它引出的心魔将越强大、数量也会越多。同时，⌈执念⌋会引出⌈贪⌋⌈嗔⌋⌈痴⌋三毒。击杀⌈贪⌋会使你在一段时间内杀敌获得的经验比平时更多；击杀⌈嗔⌋会使你在一段时间内的攻击伤害更高；而击杀⌈痴⌋会延长⌈执念⌋存在的时间15秒。
 
+# Refine Limit
+crafttweaker.can_be_refined=这柄刀还可以被强化%s次。
+crafttweaker.cannot_be_refined=这柄刀暂时无法容纳更强的刀魂，它还需要在战斗中进一步磨炼。
+
 # Slayer Rewards
 crafttweaker.slayer_counter_result=本次战斗歼敌%s名。期待你重整旗鼓后的辉煌战绩！
 crafttweaker.slayer_counter_step.1=达成五连杀！手中刀魂睁开了双眼！

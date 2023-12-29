@@ -49,48 +49,6 @@ for newbieitem in NewbieItems {
 }
 <patchouli:guide_book>.withTag({"patchouli:book": "lastsmith:smith_guide"}).addTooltip(game.localize("crafttweaker.tls_book.tooltip"));
 
-// 锻刀上限
-for slashBladeItem in itemUtils.getItemsByRegexRegistryName("flammpfeil.slashblade*") {
-    slashBladeItem.addAdvancedTooltip(
-        function(item) {
-            if (isNull(item.tag)) return null;
-            var dTag = D(item.tag);
-            var refine = dTag.getInt("RepairCounter");
-            var limit = dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
-            if (refine < 0.5 * limit) {
-                return "§aRefine: " + refine + "/" + limit;
-            } else {
-                if (refine < 0.8 * limit) {
-                    return "§6Refine: " + refine + "/" + limit;
-                } else {
-                    return "§cRefine: " + refine + "/" + limit;
-                }
-            }
-        }
-    );
-}
-
-for slashBladeItem in itemUtils.getItemsByRegexRegistryName("lastsmith*") {
-    slashBladeItem.addAdvancedTooltip(
-        function(item) {
-            if (isNull(item.tag)) return null;
-            var dTag = D(item.tag);
-            if (dTag.getString("CurrentItemName") == "custom_newbie") return "§cRefine: 0/0";
-            var refine = dTag.getInt("RepairCounter");
-            var limit = dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
-            if (refine < 0.5 * limit) {
-                return "§aRefine: " + refine + "/" + limit;
-            } else {
-                if (refine < 0.8 * limit) {
-                    return "§6Refine: " + refine + "/" + limit;
-                } else {
-                    return "§cRefine: " + refine + "/" + limit;
-                }
-            }
-        }
-    );
-}
-
 // Vanilla Minecraft
 <minecraft:experience_bottle>.addTooltip(game.localize("crafttweaker.experience_bottle.tooltip"));
 

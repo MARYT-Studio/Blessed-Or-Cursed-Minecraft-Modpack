@@ -20,6 +20,8 @@ val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer, <c
 events.onPlayerLoggedIn(
     function(event as PlayerLoggedInEvent) {
         var player = event.player;
+        // 锻刀上限消息计数器初始化
+        player.update({"refine_limit_message_sent": 3});
         opening(player);
         var world = player.world;
         if (!(world.remote)) {
