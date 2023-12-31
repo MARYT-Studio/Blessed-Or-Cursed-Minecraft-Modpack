@@ -16,7 +16,6 @@ import crafttweaker.util.Math;
 // debug mode
 val debug = false;
 
-
 // Mob Names Array
 static mobSummonCombat as string[] = ["zombie", "skeleton", "creeper"];
 static mobSummonRanged as string[] = ["spider", "esnderman"];
@@ -43,7 +42,9 @@ static rangedElites as IEntityDefinition[] = [
 // 0.06f is for Mohist Server.
 // With further test we found that an enchanted vanilla sword can kill a mob in 3 attacks,
 // so we adjust prob to 0.127, and killing every 3 mob will summon 1 aid.
-static probEverySingleAttack as float = 0.127f;
+
+// 20231230 新方案：随伤害从 0-20，召唤概率从 0.13 上升到最大值 0.33
+static probEverySingleAttack as float = 0.13f;
 // Only for test.
 // static probEverySingleAttack as float = 1.0f;
 // Random Position Offset
@@ -75,8 +76,11 @@ events.onEntityLivingHurt(
         // 事件逻辑
         if (entityMatch(mobSummonCombat, mobBeingHurt.definition)) {        
             var rand = world.random.nextFloat();
-            if (debug) player.sendChat(rand);
-            if(rand < probEverySingleAttack) {
+            if (debug) {
+                player.sendChat(rand);
+                player.sendChat("damage is: " ~ event.amount ~ ", adjusted probability is: " ~ summonProb(event.amount));
+            }
+            if(rand < summonProb(event.amount)) {
                 var summonMobPosX = mobBeingHurt.position3f.x;
                 var summonMobPosZ = mobBeingHurt.position3f.z;
                 // Random Offset: True for +Offset, False for -Offset
@@ -119,7 +123,7 @@ events.onEntityLivingHurt(
         if (entityMatch(mobSummonRanged, mobBeingHurt.definition)) {
             var rand = world.random.nextFloat();
             if (debug) player.sendChat(rand);    
-            if(rand < probEverySingleAttack) {
+            if(rand < summonProb(event.amount)) {
                 var summonMobPosX = mobBeingHurt.position3f.x;
                 var summonMobPosZ = mobBeingHurt.position3f.z;
                 // Random Offset: True for +Offset, False for -Offset
@@ -166,4 +170,9 @@ function entityMatch(types as string[], definition as IEntityDefinition) as bool
         if (definition.id.toLowerCase().contains(type)) return true;
     }
     return false;
+}
+
+// 使召唤援助概率与伤害挂钩
+function summonProb (damage as float) as float {
+    return (probEverySingleAttack + 0.01f * min(Math.round(damage), 20));
 }

@@ -9,7 +9,7 @@ import scripts.GlobalVars;
 import crafttweaker.util.Math;
 
 // debug 开关
-val debug = true;
+val debug = false;
 // 奖励概率
 val prob = 0.1f;
 // 键为维度 ID，值为提升的锻刀上限数

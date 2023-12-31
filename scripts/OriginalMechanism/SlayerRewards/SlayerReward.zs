@@ -9,6 +9,8 @@ import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.util.Math;
 import scripts.Events.Event_SummonAids;
 
+val debug as bool = false;
+
 events.onEntityLivingDeath(
     function(event as EntityLivingDeathEvent) {
         var entity = event.entityLivingBase;
@@ -22,8 +24,17 @@ events.onEntityLivingDeath(
                                 mobValue(entity.definition),
                                 slayerCountingValue(player),
                                 difficultyValue(world),
-                                championTierValue(entity)
+                                championTierValue(entity),
+                                maxHealthValue(entity)
                             );
+            if (debug) {
+                player.sendChat("Calculated reward: " ~ reward);
+                player.sendChat(mobValue(entity.definition));
+                player.sendChat(slayerCountingValue(player));
+                player.sendChat(difficultyValue(world));
+                player.sendChat(championTierValue(entity));
+                player.sendChat(maxHealthValue(entity));
+            }    
             var item as IItemStack = player.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand());   
             // 过滤非拔刀剑物品
             if (isNull(item.tag)) return;
@@ -35,8 +46,8 @@ events.onEntityLivingDeath(
 );
 
 // 公式：将击杀加成最终折算成整数杀敌数
-function calcReward(mobValues as float, slayValues as float, diffValues as float, championValues as float) as int {
-    return Math.round((mobValues + slayValues) * diffValues * championValues);
+function calcReward(mobValues as float, slayValues as float, diffValues as float, championValues as float, maxHealthValues as float) as int {
+    return Math.round((mobValues + slayValues) * diffValues * championValues * maxHealthValues);
 }
 
 
@@ -87,3 +98,11 @@ function championTierValue(entity as IEntityLivingBase) as float {
     }
     return 1.0f;
 }
+
+// 工具函数：临时参数，与最大生命值挂钩的乘数因子
+function maxHealthValue (entity as IEntityLivingBase) as float {
+    return Math.max(1.0f,
+        1.0f + ((entity.maxHealth/20.0f - 1.0f) * 0.5f)
+    );
+}
+
