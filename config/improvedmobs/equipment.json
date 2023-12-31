@@ -76,11 +76,7 @@
     "minecraft:lingering_potion": 750,
     "minecraft:snowball": 900,
     "minecraft:splash_potion{Potion:\"minecraft:harming\"}": 750,
-    "minecraft:stone_axe": 600,
-    "minecraft:stone_sword": 879,
     "minecraft:tnt": 600,
-    "minecraft:wooden_axe": 676,
-    "minecraft:wooden_sword": 900,
     "nyx:meteor_axe": 424,
     "nyx:meteor_bow": 850,
     "nyx:meteor_sword": 711,
@@ -137,7 +133,7 @@
     "twilightforest:triple_bow": 850
   },
   "OFFHAND": {
-    "minecraft:ender_pearl": 600,
+    "minecraft:ender_pearl": 1850,
     "minecraft:flint_and_steel": 700,
     "minecraft:lava_bucket": 400,
     "minecraft:shield": 850,
