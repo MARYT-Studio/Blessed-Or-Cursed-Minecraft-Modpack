@@ -1,7 +1,0 @@
-{
-	title: "讨伐（暮色森林）",
-	icon: "twilightforest:miniature_structure",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: ""
-}

@@ -48,7 +48,6 @@ key_key.configurator_filter.desc:48:NONE
 key_key.configurator_path.desc:34:NONE
 key_keybind.baublesinventory:48:NONE
 key_cos.key.opencosarmorinventory:0:NONE
-key_key.wearablebackpacks.open:48:NONE
 key_key.findme.search:21:NONE
 key_key.ftbutilities.nbt:49:ALT
 key_key.ftbutilities.trash:211:NONE
@@ -71,6 +70,7 @@ key_Key.SlashBlade.LO:42:NONE
 key_Key.SlashBlade.CA:0:NONE
 key_Reload Default Sound Device:41:NONE
 key_walljump.key.walljump:42:NONE
+key_key.wearablebackpacks.open:48:NONE
 key_nimble.keybind.frontView:62:NONE
 key_key.dismount:42:NONE
 key_key.narrator:48:CONTROL

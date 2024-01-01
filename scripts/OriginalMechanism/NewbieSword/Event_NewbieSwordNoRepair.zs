@@ -4,6 +4,7 @@ import mods.zenutils.EventPriority;
 
 events.register(function (event as PlayerTickEvent) {
     var player = event.player;
+    if (player.world.remote) return;
     var item = event.player.mainHandHeldItem;
     if (isNull(item)) return;
     if (isNull(item.tag)) return;
@@ -15,7 +16,7 @@ events.register(function (event as PlayerTickEvent) {
         else {
             var newMaxDamage = dTag.getInt("CustomMaxDamage") - damage;
             if (newMaxDamage >= 1) {
-                player.setItemToSlot(player.activeHand, item.withDamage(0).withTag(tag - "CustomMaxDamage" + {CustomMaxDamage: newMaxDamage}));
+                player.setItemToSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand(), item.withDamage(0).withTag(tag - "CustomMaxDamage" + {CustomMaxDamage: newMaxDamage}));
             } else {
                 if (dTag.getBool("isBroken", false)) {
                     item.mutable().shrink(1);

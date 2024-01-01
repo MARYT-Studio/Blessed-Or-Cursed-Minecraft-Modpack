@@ -1,7 +1,0 @@
-{
-	title: "说明",
-	icon: "minecraft:double_plant",
-	always_invisible: false,
-	group: 0,
-	default_quest_shape: "circle"
-}

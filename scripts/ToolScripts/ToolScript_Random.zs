@@ -1,6 +1,5 @@
 #loader crafttweaker reloadable
 import crafttweaker.events.IEventManager;
-import crafttweaker.event.PlayerTickEvent;
 import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.item.IItemStack;
 

@@ -11,22 +11,6 @@ import scripts.GlobalVars;
 <contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_2"), game.localize("item.crafttweaker.feadog.desc_1"));
 <contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_3"), game.localize("item.crafttweaker.feadog.desc_2"));
 
-val newbieSwordTooltips as string[] = [
-    game.localize("item.crafttweaker.newbiesword_1.name"),
-    game.localize("item.crafttweaker.newbiesword_2.name"),
-    game.localize("item.crafttweaker.newbiesword_3.name")
-];
-
-for tooltip in newbieSwordTooltips {
-    <lastsmith:.slashblade.named:*>.addAdvancedTooltip(
-        function (item) {
-            if (item.tag.CurrentItemName == "custom_newbie") {
-                return tooltip;
-            } else return null;
-        }
-    );
-}
-
 val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
 val BreadTooltip as string = game.localize("item.crafttweaker.newbiebread.name");
 val HammerTooltip as string = game.localize("item.crafttweaker.newbiehammer.name");
