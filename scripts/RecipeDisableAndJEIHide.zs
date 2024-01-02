@@ -13,14 +13,14 @@ var modidList as string[] = [
     "base"
 ];
 val ItemNotToHide = 
-    // 工业扳手
+    // ��ҵ����
     <ic2:wrench>|
-    //铅系列
-    <ic2:resource:2>| //铅矿石
-    <ic2:dust:10>|    //铅粉
-    <ic2:ingot:3>|    //铅锭
+    //Ǧϵ��
+    <ic2:resource:2>| //Ǧ��ʯ
+    <ic2:dust:10>|    //Ǧ��
+    <ic2:ingot:3>|    //Ǧ��
 
-    // 可以在万圣节获得的工业护甲套装
+    // ��������ʥ�ڻ�õĹ�ҵ������װ
     <ic2:nano_boots:*>|
     <ic2:nano_chestplate:*>|
     <ic2:nano_helmet:*>|
@@ -30,52 +30,52 @@ val ItemNotToHide =
     <ic2:quantum_helmet:*>|
     <ic2:quantum_leggings:*>|
     
-    //琥珀系列
+    //����ϵ��
     <thaumcraft:amber>| 
     <thaumcraft:amber_block>|
     <thaumcraft:amber_brick>|
     <thaumcraft:ore_amber>|
     
-    //朱砂系列
+    //��ɰϵ��
     <thaumcraft:ore_cinnabar>|
-    <thaumcraft:cluster:6>|   //朱砂原矿簇
-    <thaumcraft:quicksilver>| //水银
+    <thaumcraft:cluster:6>|   //��ɰԭ���
+    <thaumcraft:quicksilver>| //ˮ��
 
-    <ic2:crafting:3>|  //高级合金
-    <ic2:plate:12>|    //致密铁板
-    <ic2:plate:16>|    //致密钢板
-    <ic2:energy_crystal:*>|  //能量水晶
-    <ic2:lapotron_crystal:*>|  //满电的兰波顿水晶
-    <ic2:crafting:4>|  //强化铱板
+    <ic2:crafting:3>|  //�߼��Ͻ�
+    <ic2:plate:12>|    //��������
+    <ic2:plate:16>|    //���ְܸ�
+    <ic2:energy_crystal:*>|  //����ˮ��
+    <ic2:lapotron_crystal:*>|  //�����������ˮ��
+    <ic2:crafting:4>|  //ǿ��ҿ��
 
-    //TLS会用到的神秘时代物品
-    <thaumcraft:ingot>|  //神秘锭
-    <thaumcraft:ingot:1>|  //虚空金属锭
-    <thaumcraft:metal_thaumium>|  //神秘块
-    <thaumcraft:metal_void>|  //虚空金属块
-    //四把神秘拔刀剑的合成材料
-    <thaumcraft:thaumium_sword>|  //神秘剑
-    <thaumcraft:elemental_sword>|  //风雷剑
-    <thaumcraft:crimson_blade>|  //血腥之刃
-    <thaumcraft:void_sword>|  //虚空剑
-    // 用于移除扭曲的祛邪肥皂
+    //TLS���õ�������ʱ����Ʒ
+    <thaumcraft:ingot>|  //���ض�
+    <thaumcraft:ingot:1>|  //��ս�����
+    <thaumcraft:metal_thaumium>|  //���ؿ�
+    <thaumcraft:metal_void>|  //��ս�����
+    //�İ����ذε����ĺϳɲ���
+    <thaumcraft:thaumium_sword>|  //���ؽ�
+    <thaumcraft:elemental_sword>|  //���׽�
+    <thaumcraft:crimson_blade>|  //Ѫ��֮��
+    <thaumcraft:void_sword>|  //��ս�
+    // �����Ƴ�Ť������а����
     <thaumcraft:sanity_soap>|
-    // 用于检测扭曲的神智检测仪
+    // ���ڼ��Ť�������Ǽ����
     <thaumcraft:sanity_checker>|
     
-    //需要用到的机器方块
+    //��Ҫ�õ��Ļ�������
     //IC2
-    <ic2:te:70>| //MFE充电座
+    <ic2:te:70>| //MFE�����
 
     //Energy Converter
-    <energyconverters:energy_bridge>|  //能量桥接器
-    <energyconverters:energy_consumer_fe>|  //FE输入器
-    <energyconverters:energy_producer_eu:2>|  //高压EU输出器
+    <energyconverters:energy_bridge>|  //�����Ž���
+    <energyconverters:energy_consumer_fe>|  //FE������
+    <energyconverters:energy_producer_eu:2>|  //��ѹEU�����
     
-    // 作为砂轮的替代品，植物魔法的封印之布
-    // 属于 TempFixes 的一部分
+    // ��Ϊɰ�ֵ����Ʒ��ֲ��ħ���ķ�ӡ֮��
+    // ���� TempFixes ��һ����
 
-    // TODO: 移除深渊国度，同时移除这个，换回砂轮
+    // TODO: �Ƴ���Ԩ���ȣ�ͬʱ�Ƴ����������ɰ��
     <botania:spellcloth>;
 
 // JEI Hide and recipe removal

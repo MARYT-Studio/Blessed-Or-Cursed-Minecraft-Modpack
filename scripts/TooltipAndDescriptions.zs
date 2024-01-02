@@ -1,23 +1,18 @@
-#loader crafttweaker reloadable
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
-import scripts.GlobalVars;
 
 // Tooltips
 
-// Callable Horses
-<contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_1"), game.localize("item.crafttweaker.feadog.warning"));
-<contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_2"), game.localize("item.crafttweaker.feadog.desc_1"));
-<contenttweaker:feadog>.addShiftTooltip(game.localize("item.crafttweaker.feadog.text_3"), game.localize("item.crafttweaker.feadog.desc_2"));
-
+// Newbie Items tooltip
+val SwordTooltip as string = game.localize("item.crafttweaker.newbiesword.name");
 val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
 val BreadTooltip as string = game.localize("item.crafttweaker.newbiebread.name");
 val HammerTooltip as string = game.localize("item.crafttweaker.newbiehammer.name");
-val NewbieTooltips as string[] = [AxeTooltip, BreadTooltip, HammerTooltip];
+val NewbieTooltips as string[] = [SwordTooltip, AxeTooltip, BreadTooltip, HammerTooltip];
 
 // Newbie items
-val NewbieItems as IItemStack[] = [<minecraft:golden_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
+val NewbieItems as IItemStack[] = [<minecraft:diamond_sword:*>, <minecraft:diamond_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
 var index as int = 0;
 for newbieitem in NewbieItems {
     newbieitem.addAdvancedTooltip(
@@ -25,7 +20,7 @@ for newbieitem in NewbieItems {
             if (!isNull(item.tag.newbie)) {
                 return NewbieTooltips[index];
             } else {
-                return null;
+                return "";
             }
         }
     );
@@ -112,6 +107,8 @@ for armor in ic2_armor {
 <contenttweaker:dummy_infinite_item>.addTooltip(game.localize("crafttweaker.immortal_item_1.tooltip"));
 <contenttweaker:dummy_infinite_item>.addTooltip(game.localize("crafttweaker.immortal_item_2.tooltip"));
 
+// ----------------------------------------------------------------
+
 // JEI Descriptions
 
 // Soldering Iron and Lemon Battery
@@ -122,6 +119,7 @@ mods.jei.JEI.addDescription([<contenttweaker:soldering_iron>, <contenttweaker:le
     game.localize("crafttweaker.soldering_iron_3.desc"),
     game.localize("crafttweaker.soldering_iron_4.desc")   
 ]);
+// To reduce the complexity of coding, I made SlashBlades' JEI descriptions into the SlashBladeTiering.zs
 // Abyssal Ingot
 mods.jei.JEI.addDescription(<contenttweaker:abyssal_ingot>,
     [
@@ -133,8 +131,8 @@ mods.jei.JEI.addDescription(<liquid:dcs.mazai>,
         game.localize("crafttweaker.mazai.desc")
     ]
 );
-val mojian_Yanmodao = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.yamato", TextureName: "named/yamato", IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
-val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "slashblade.named.sange", TextureName: "named/sange/sange", IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
+val mojian_Yanmodao = <lastsmith:.slashblade.named>.withTag({ModelName: "named/yamato", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.yamato", TextureName: "named/yamato", IsBewitchedActived: 1 as byte, baseAttackModifier: 7.0 as float, "SB.SEffect": {}, });
+val sanhua = <lastsmith:.slashblade.named>.withTag({ModelName: "named/sange/sange", isDefaultBewitched: 1 as byte, CurrentItemName: "flammpfeil.slashblade.named.sange", TextureName: "named/sange/sange", IsBewitchedActived: 1 as byte, baseAttackModifier: 6.0 as float});
 val twilightItems as IIngredient[] = [
     <contenttweaker:nature_shard>,
     <contenttweaker:magic_shard>,
