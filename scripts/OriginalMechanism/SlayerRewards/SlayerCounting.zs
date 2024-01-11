@@ -162,10 +162,13 @@ events.onPlayerTick(
             // 奖励结算
             // 玩家是否为极限模式，是则享受翻倍奖励
             var hardcoreBonus as float = world.worldInfo.hardcoreModeEnabled ? 2.0f : 1.0f;
-            if (slayerCounts < 10) {
-                player.setXpPoints(player.getXpPoints() + (hardcoreBonus * slayerCounts) as int);
-            } else {
-                player.setXpPoints(player.getXpPoints() + Math.floor(hardcoreBonus * (0.5 * slayerCounts + 0.5 * slayerCounts * slayerCounts)));
+            // 加经验，杀敌数等于 0 则不加
+            if (slayerCounts > 0) {
+                if (slayerCounts < 10) {
+                    player.setXpPoints(player.getXpPoints() + (hardcoreBonus * slayerCounts) as int);
+                } else {
+                    player.setXpPoints(player.getXpPoints() + Math.floor(hardcoreBonus * (0.5 * slayerCounts + 0.5 * slayerCounts * slayerCounts)));
+                }
             }
             // 计数归零
             // 计时器重置到当前时间
