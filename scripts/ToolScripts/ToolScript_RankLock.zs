@@ -28,11 +28,11 @@ events.onPlayerRightClickItem(
                     
                     if(isNull(player.data.PlayerPersisted.rank_lock)) {
                         player.update({PlayerPersisted: {rank_lock: true}});
-                        player.sendChat("锁定模式：开");
+                        player.sendChat("\u9501\u5B9A\u6A21\u5F0F\uFF1A\u5F00");
                     } else {
                         var invsersed_lock = !(player.data.PlayerPersisted.rank_lock.asBool());
                         player.update({PlayerPersisted: {rank_lock: invsersed_lock}});
-                        invsersed_lock ? player.sendChat("锁定模式：开") : player.sendChat("锁定模式：关");
+                        invsersed_lock ? player.sendChat("\u9501\u5B9A\u6A21\u5F0F\uFF1A\u5F00") : player.sendChat("\u9501\u5B9A\u6A21\u5F0F\uFF1A\u5173");
                     }
                 }
             }
