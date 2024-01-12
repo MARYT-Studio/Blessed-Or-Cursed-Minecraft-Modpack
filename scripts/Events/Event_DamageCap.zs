@@ -11,9 +11,10 @@ events.onEntityLivingDamage(
         if (event.entityLivingBase instanceof IPlayer) {
             var player as IPlayer = event.entityLivingBase;
             if (event.damageSource.trueSource instanceof IEntityMob) {
-                if (debug) player.sendChat("Damage before capped: " ~ event.amount);
-                event.amount = capFactor(player.world, event.amount, event.damageSource.isProjectile());
-                if (debug) player.sendChat("After capped: " ~ event.amount);
+                if (debug) player.sendChat("Damage before capped: " ~ event.amount ~ ", is projectile: " ~ event.damageSource.isProjectile());
+                var capFact = capFactor(player.world, event.amount, event.damageSource.isProjectile());
+                event.amount = capFact * event.amount;
+                if (debug) player.sendChat("After capped: " ~ event.amount ~ ", cap factor: " ~ capFact);
             }
         }
     }
@@ -22,11 +23,11 @@ events.onEntityLivingDamage(
 // 工具函数：计算减伤比例
 function capFactor (world as IWorld, amount as float, projectile as bool) as float {
     if (world.worldInfo.difficulty == "EASY") {
-        if (projectile) return 0.75f * amount;
-        else return 0.7f * amount;
+        if (projectile) return 0.75f;
+        else return 0.7f;
     } else if (world.worldInfo.difficulty == "NORMAL") {
-        if (projectile) return 0.9f * amount;
-        else return 0.85f * amount;
+        if (projectile) return 0.9f;
+        else return 0.85f;
     }
-    return amount;
+    return 1.0f;
 }
