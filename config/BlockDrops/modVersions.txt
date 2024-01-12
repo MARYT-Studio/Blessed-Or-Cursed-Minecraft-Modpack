@@ -117,7 +117,7 @@
   "ironchest": "1.12.2-7.0.67.844",
   "craftingtweaks": "9.0.1",
   "minecraft": "1.12.2",
-  "engraving": "1.0",
+  "engraving": "1.1",
   "earthworks": "1.3.4.3",
   "horsetweaks": "1.0.5",
   "pogosticks": "1.3.1",
