@@ -14,10 +14,7 @@ val debug = false;
 val prob = 0.1f;
 // 键为维度 ID，值为提升的锻刀上限数
 val rewardMap = {
-    // 为了调试简单使用的测试值
-    "DIM0": 10,
-    // 实际使用的数值
-    // "DIM0": 0,
+    "DIM0": 0,
     "DIM56": 5,
     "DIM-1": 10,
     "DIM1": 15,
@@ -65,13 +62,15 @@ events.onEntityLivingDeath(
                 if (D(rewardMap).getInt("DIM" ~ world.dimension) > 0 && world.random.nextFloat() < prob) {
                     initMap = blankMap + {("DIM" ~ world.dimension): 1};
                     refineLimit += 1;
-                }                
+                }
+                server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                 item.mutable().updateTag({"RefineLimitGained": initMap, "RefineLimit": refineLimit});
             } else {
                 var gainedMap as IData = dTag.get("RefineLimitGained");
                 if (D(gainedMap).getInt("DIM" ~ world.dimension) < D(rewardMap).getInt("DIM" ~ world.dimension) && world.random.nextFloat() < prob) {
                     var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
                     var refineLimit = 1 + dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
+                    server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                     item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
                 }
             }
