@@ -4,7 +4,7 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.world.IWorld;
 import crafttweaker.util.Math;
 
-val debug = true;
+val debug = false;
 
 events.onEntityStylishRankChange(
     function (event as EntityStylishChangeEvent) {
