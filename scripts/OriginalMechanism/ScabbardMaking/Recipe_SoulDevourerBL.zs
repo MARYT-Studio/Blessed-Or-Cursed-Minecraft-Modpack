@@ -10,5 +10,5 @@ recipes.addShaped("soul_devourer_bl", <lastsmith:.slashblade.named>, [
     [petal, proudsoul, petal],
     [yinzhi_zhuguang.marked("blade"), petal, null]
 ], function(out,ins,info) {
-    return out.withTag(ins.blade.tag + {TextureName: "custom/souldevourerbamboolight/texture", ModelName: "custom/souldevourerbamboolight/model", CurrentItemName: "custom_souldevourerbamboolight", CustomMaxDamage: 20, RepairCounter: 4 as int, baseAttackModifier: 2.0 as float});
+    return out.withTag(ins.blade.tag + {TextureName: "custom/souldevourerbamboolight/texture", ModelName: "custom/souldevourerbamboolight/model", CurrentItemName: "custom_souldevourerbamboolight", ench: [{lvl: 1, id: 48}, {lvl: 1, id: 34}, {lvl: 1, id: 16}], CustomMaxDamage: 35, RepairCounter: 4 as int, baseAttackModifier: 2.0 as float});
 }, null);
