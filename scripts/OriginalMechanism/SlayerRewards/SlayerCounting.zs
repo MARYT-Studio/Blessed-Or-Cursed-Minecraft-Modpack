@@ -89,7 +89,7 @@ events.onEntityLivingDeath(
             var slayCountingNow = player.data.slayer_rewards.slayer_counting.asInt();
             if (slayCountingNow == 5) {
                 var icon = player.mainHandHeldItem;
-                if (isNull(icon)) {
+                if (isNull(icon.tag.SlashBlade)) {
                     player.sendToast({text: textStep1[0]} as IData, {text: textStep1[1]} as IData, <minecraft:iron_sword>);
                 } else {
                     player.sendToast({text: textStep1[0]} as IData, {text: textStep1[1]} as IData, icon);
@@ -97,7 +97,7 @@ events.onEntityLivingDeath(
             }
             if (slayCountingNow == 10) {
                 var icon = player.mainHandHeldItem;
-                if (isNull(icon)) {
+                if (isNull(icon.tag.SlashBlade)) {
                     player.sendToast({text: textStep2[0]} as IData, {text: textStep2[1]} as IData, <minecraft:iron_sword>);
                 } else {
                     player.sendToast({text: textStep2[0]} as IData, {text: textStep2[1]} as IData, icon);
@@ -174,7 +174,7 @@ events.onPlayerTick(
             if (slayerCounts > 0) {
                 var text as string[] = I18n.format("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r").split("<br>");
                 var icon = player.mainHandHeldItem;
-                if (isNull(icon)) {
+                if (isNull(icon.tag.SlashBlade)) {
                     player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, <minecraft:iron_sword>);
                 } else {
                     player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, icon);

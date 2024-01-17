@@ -64,4 +64,6 @@ item.contenttweaker.feadog.name=梦之哨笛
 
 item.red_envelope_lubang.name=§c红包
 item.contenttweaker.red_envelope_lubang.name=§c红包
-contenttweaker.red_envelope_prepare.text=龙年新年礼物！<br>§l要来咯! §e§l准备好了吗！
+contenttweaker.red_envelope_prepare.text=龙年新年礼物！<br>§l找个空旷的地方对地面右击打开它。
+contenttweaker.red_envelope_open.text=§e§l游戏规则：<br>§e在三秒钟倒数过后，在空中尽可能多地连击靶子<br>§e落地时游戏结束。<br>§e游戏过程中连击评级越高，奖品越丰厚哦！
+contenttweaker.red_envelope_best_wishes.text=§6新年快乐！<br>§e吉祥如意！
