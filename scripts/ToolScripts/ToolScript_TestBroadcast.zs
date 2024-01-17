@@ -16,7 +16,7 @@ if (enabled) {
 }
 
 // 工具函数：将两行的播报文本处理成 title 标题和副标题
-function broadCast(key as string, player as IPlayer, server as IServer){
+function broadCast(key as string, player as IPlayer, server as IServer) as void {
     var text as string[] = I18n.format(key, player.name).split("<br>");
     server.commandManager.executeCommand(server, "title @a title {\"text\": " + "\"" + text[0] + "\", \"color\": \"gold\"}");
     server.commandManager.executeCommand(server, "title @a subtitle {\"text\": " + "\"" + text[1] + "\", \"color\": \"green\"}");

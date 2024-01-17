@@ -1,3 +1,4 @@
+
 #loader crafttweaker reloadable
 // Packages for needed ZenClasses
 import crafttweaker.player.IPlayer;
@@ -43,6 +44,10 @@ val REWARD_TIME = 10 * seconds;
 // 目前采用的是简单的方式，凡是这两种怪物都只刷新计时器
 val specialEntity as IEntityDefinition[] = [<entity:minecraft:silverfish>, <entity:minecraft:endermite>];
 
+// Toast 文本
+val textStep1 as string[] = I18n.format("crafttweaker.slayer_counter_step.1").split("<br>");
+val textStep2 as string[] = I18n.format("crafttweaker.slayer_counter_step.2").split("<br>");
+
 // 玩家击杀时增加计数器和刷新计时器
 events.onEntityLivingDeath(
     function(event as EntityLivingDeathEvent)
@@ -83,10 +88,20 @@ events.onEntityLivingDeath(
             // 播报部分
             var slayCountingNow = player.data.slayer_rewards.slayer_counting.asInt();
             if (slayCountingNow == 5) {
-                player.sendChat(I18n.format("crafttweaker.slayer_counter_step.1"));
+                var icon = player.mainHandHeldItem;
+                if (isNull(icon)) {
+                    player.sendToast({text: textStep1[0]} as IData, {text: textStep1[1]} as IData, <minecraft:iron_sword>);
+                } else {
+                    player.sendToast({text: textStep1[0]} as IData, {text: textStep1[1]} as IData, icon);
+                }                
             }
             if (slayCountingNow == 10) {
-                player.sendChat(I18n.format("crafttweaker.slayer_counter_step.2"));
+                var icon = player.mainHandHeldItem;
+                if (isNull(icon)) {
+                    player.sendToast({text: textStep2[0]} as IData, {text: textStep2[1]} as IData, <minecraft:iron_sword>);
+                } else {
+                    player.sendToast({text: textStep2[0]} as IData, {text: textStep2[1]} as IData, icon);
+                }                
             }
             if (slayCountingNow == 20) {
                 broadCast("crafttweaker.slayer_counter_step.3", player, server);
@@ -157,7 +172,14 @@ events.onPlayerTick(
 
             // 播报已积累的杀敌数，等于 0 则不报
             if (slayerCounts > 0) {
-                player.sendChat(I18n.format("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r"));
+                var text as string[] = I18n.format("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r").split("<br>");
+                var icon = player.mainHandHeldItem;
+                if (isNull(icon)) {
+                    player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, <minecraft:iron_sword>);
+                } else {
+                    player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, icon);
+                }                
+                
             }
             // 奖励结算
             // 玩家是否为极限模式，是则享受翻倍奖励

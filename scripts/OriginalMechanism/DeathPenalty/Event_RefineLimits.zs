@@ -2,6 +2,7 @@
 import crafttweaker.event.PlayerAnvilUpdateEvent;
 import mods.zenutils.EventPriority;
 import scripts.GlobalVars;
+import crafttweaker.data.IData;
 import mods.zenutils.I18n;
 
 // 当物品的 Refine 数值即将超过上限值时，拒绝此次锻造
@@ -17,7 +18,8 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
     if (refine >= limit) {
         if (!player.world.remote) {
             if (playerTag.getInt("refine_limit_message_sent") == 1) {
-                player.sendChat(I18n.format("crafttweaker.cannot_be_refined"));
+                var text as string[] = I18n.format("crafttweaker.cannot_be_refined").split("<br>");
+                player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
                 player.update({"refine_limit_message_sent": 3});
             } else {
                 player.update({"refine_limit_message_sent": playerTag.getInt("refine_limit_message_sent") - 1});
@@ -29,7 +31,9 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
     if (limit != 2147483647) {       
         if (!player.world.remote) {
             if (playerTag.getInt("refine_limit_message_sent") == 1) {
-                player.sendChat(I18n.format("crafttweaker.can_be_refined", "" ~ (limit - refine)));
+                var remaining as string = "" ~ (limit - refine);
+                var text as string[] = I18n.format("crafttweaker.can_be_refined", remaining).split("<br>");
+                player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
                 player.update({"refine_limit_message_sent": 3});
             } else {
                 player.update({"refine_limit_message_sent": playerTag.getInt("refine_limit_message_sent") - 1});

@@ -161,13 +161,14 @@ crafttweaker.sake_of_karma_5.tooltip=Harvest this with Silk Touch.
 crafttweaker.sake_of_karma.desc=A bottle of Karma. With your blade drunk in this, the bloodthirsty aura it contains collides and mingles with karma, which become a force powerful enough to awake your demons in mind and materialize them before you in a Ritual of Exorcism. The ritual summons "Obsessions", and the more violent each attack you make on "Obsessions", the stronger and more numerous the demons it will summon will be. "Obsession" may summon "Attachment", "Aversion", and "Delusion", as known as the Three Poisons. Defeat "Attachment" will increase the exp dropped from your enemies for a while. Defeat "Aversion" will increase your attack damage for a while. Defeat "Delusion" will extend the time that "Obsession" exists by 15 seconds.
 
 # Refine Limit
-crafttweaker.can_be_refined=This blade can be refined %s times more.
-crafttweaker.cannot_be_refined=This blade can't be refined for now. Strengthen it by more battle and blood.
+crafttweaker.can_be_refined=This blade can be refined %s times more<br>Refine it and make it more powerful
+crafttweaker.cannot_be_refined=This blade can't be refined now<br>Strengthen it first with more battle and blood
+crafttweaker.refine_limit_gained=Blade in your hand clanked!<br>§61 more time refining chance gained
 
 # Slayer Rewards
-crafttweaker.slayer_counter_result=%s enemies wiped out. Looking forward to your next glorious battle!
-crafttweaker.slayer_counter_step.1=PentaKill. Blade's Soul opens its eye!
-crafttweaker.slayer_counter_step.2=10 enemies has been slain. How shocked they are!
+crafttweaker.slayer_counter_result=%s enemies wiped out!<br>Looking forward to your next glorious battle!
+crafttweaker.slayer_counter_step.1=PentaKill.<br>Blade's Soul opens its eye!
+crafttweaker.slayer_counter_step.2=10 enemies has been slain.<br>How shocked they are!
 crafttweaker.slayer_counter_step.3=%s has slain 20 enemies.<br>Fierce as fire, Unstoppable as thunder!
 crafttweaker.slayer_counter_step.4=%s has slain 50 enemies.<br>Nothing can stop the sharp blade!
 crafttweaker.slayer_counter_step.5=%s has slain 100 enemies.<br>Storm has approached! New monarch has arisen!
