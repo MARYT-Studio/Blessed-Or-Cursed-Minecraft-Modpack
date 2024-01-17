@@ -115,7 +115,7 @@ crafttweaker.twilight_items.desc=将自然碎片和魔法碎片结合，并献�
 
 # Warps
 crafttweaker.warp_removed=经过这一仪式，你的一些扭曲被洗去了。
-crafttweaker.warp_items.desc=与来自深渊的怪物互动会使你的扭曲增加。神智检测仪可以帮助你检查自己所带的扭曲。祛邪肥皂能清除你的所有临时扭曲和1点普通扭曲。用魔力粉尘净化修格斯腐肉的仪式可以清除你身上的一部分普通扭曲，使用的修格斯腐肉等级越高，清除的普通扭曲就越多。
+crafttweaker.warp_items.desc=与来自深渊的怪物互动会使你的扭曲增加。神智检测仪可以帮助你检查自己所带的扭曲。祛邪肥皂能清除你的所有临时扭曲和1点普通扭曲。用魔力粉尘或魔法试剂，可以进行净化修格斯腐肉的仪式。该仪式可以清除你身上的一部分普通扭曲。使用的修格斯腐肉等级越高，清除的普通扭曲就越多。
 crafttweaker.warp_items_1.desc=将清除
 crafttweaker.warp_items_2.desc=点普通扭曲。
 

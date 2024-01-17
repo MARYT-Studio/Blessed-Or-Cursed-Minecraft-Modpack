@@ -115,7 +115,7 @@ crafttweaker.twilight_items.desc=Combine Nature and Magic Shards with 300 Killco
 
 # Warps
 crafttweaker.warp_removed=By performing this ritual, some amount of your warp is washed off.
-crafttweaker.warp_items.desc=Interact with monsters from the Abyss will give you warp. With Sanity Checker you can see the Warp you have. Sanity Soap remove your all Temporary Warp, but only remove 1 point of Normal Warp. Use Mana Dust to purify a Shoggoth Flesh will remove your Normal Warp, the higher the Shoggoth Flesh's tier, the more Warp will be removed.
+crafttweaker.warp_items.desc=Interact with monsters from the Abyss will give you warp. With Sanity Checker you can see the Warp you have. Sanity Soap remove your all Temporary Warp, but only remove 1 point of Normal Warp. Use Mana Dust or Absinthe to purify a Shoggoth Flesh will remove your Normal Warp, the higher the Shoggoth Flesh's tier, the more Warp will be removed.
 crafttweaker.warp_items_1.desc= will remove 
 crafttweaker.warp_items_2.desc= points of normal warp.
 

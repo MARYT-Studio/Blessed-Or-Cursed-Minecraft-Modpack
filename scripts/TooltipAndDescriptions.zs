@@ -145,7 +145,8 @@ mods.jei.JEI.addDescription(twilightItems, ["crafttweaker.twilight_items.desc"])
 val warpItems as IIngredient[] = [
     <thaumcraft:sanity_checker>,
     <thaumcraft:sanity_soap>,
-    <dcs_climate:dcs_food_antibiotic:7>
+    <dcs_climate:dcs_food_antibiotic:7>,
+    <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}),
 ];
 mods.jei.JEI.addDescription(warpItems, ["crafttweaker.warp_items.desc"]);
 

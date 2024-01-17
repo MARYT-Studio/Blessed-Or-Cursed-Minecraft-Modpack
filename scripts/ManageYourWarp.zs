@@ -35,4 +35,20 @@ for i in 0 .. (shoggothFlesh.length) {
             player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.warp_removed"));
         }
     });
+    // 简单版仪式，可以用魔法试剂桶代替
+    recipes.addShapeless("wash_your_normal_warp" ~ i, <minecraft:rotten_flesh>,
+    [
+        <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}), shoggothFlesh[i]
+    ],
+    function(out, ins, info) {return out;},
+    function(out,info,player)
+    {
+        if (!player.world.remote) {
+            server.commandManager.executeCommand(
+                server,
+                "thaum warp "~player.name~" add "~ (0 - (i + 1) * 5)
+            );
+            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.warp_removed"));
+        }
+    });
 }
