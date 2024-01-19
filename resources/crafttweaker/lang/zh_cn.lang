@@ -166,12 +166,18 @@ crafttweaker.cannot_be_refined=这柄刀暂时无法容纳更强的刀魂<br>它
 crafttweaker.refine_limit_gained=手中利刃铮铮作响！<br>§6额外锻造次数+1
 
 # Slayer Rewards
-crafttweaker.slayer_counter_result=本次战斗歼敌%s名！<br>期待你重整旗鼓后的辉煌战绩！
-crafttweaker.slayer_counter_step.1=达成五连杀！<br>手中刀魂睁开了双眼！
-crafttweaker.slayer_counter_step.2=达成十连杀！<br>敌人嗅到恐惧的味道！
-crafttweaker.slayer_counter_step.3=%s达成20连杀！<br>侵掠如火动如雷震！
-crafttweaker.slayer_counter_step.4=%s达成50连杀！<br>锋刃所向无不披靡！
-crafttweaker.slayer_counter_step.5=%s达成100连杀！<br>风暴降临主宰战场！
+crafttweaker.slayer_counter_result.1=名敌人已被歼灭！
+crafttweaker.slayer_counter_result.2=期待你重整旗鼓后的辉煌战绩！
+crafttweaker.slayer_counter_step1.1=达成五连杀！
+crafttweaker.slayer_counter_step1.2=手中刀魂睁开了双眼！
+crafttweaker.slayer_counter_step2.1=达成十连杀！
+crafttweaker.slayer_counter_step2.2=敌人嗅到恐惧的味道！
+crafttweaker.slayer_counter_step3.1=达成20连杀！
+crafttweaker.slayer_counter_step3.2=侵掠如火动如雷震！
+crafttweaker.slayer_counter_step4.1=达成50连杀！
+crafttweaker.slayer_counter_step4.2=锋刃所向无不披靡！
+crafttweaker.slayer_counter_step5.1=达成100连杀！
+crafttweaker.slayer_counter_step5.2=风暴降临主宰战场！
 
 # Callable Horses
 item.crafttweaker.feadog.warning=§c§l长按右键召唤马匹，只能使用一次
