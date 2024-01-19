@@ -1,7 +1,6 @@
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
-import mods.zenutils.I18n;
 
 // Tooltips
 
@@ -186,7 +185,7 @@ for infItem in InfiniteHeartItems {
 <contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_5.tooltip"));
 mods.jei.JEI.addDescription(<contenttweaker:sake_of_karma>, game.localize("crafttweaker.sake_of_karma.desc"));
 
-val openingMessages as string[] = I18n.format("contenttweaker.red_envelope_open.text").split("<br>");
+val openingMessages as string[] = game.localize("contenttweaker.red_envelope_open.text").split("<br>");
 for message in openingMessages {
     <contenttweaker:red_envelope_lubang>.addTooltip(message);
 }

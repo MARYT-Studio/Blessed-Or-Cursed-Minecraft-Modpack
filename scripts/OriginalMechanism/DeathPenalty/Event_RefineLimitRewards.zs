@@ -7,7 +7,6 @@ import crafttweaker.entity.IEntityMob;
 import mods.zenutils.EventPriority;
 import scripts.GlobalVars;
 import crafttweaker.util.Math;
-import mods.zenutils.I18n;
 
 // debug 开关
 val debug = false;
@@ -41,7 +40,7 @@ val blankMap = {
 } as IData;
 
 // Toast 文本
-val text as string[] = I18n.format("crafttweaker.refine_limit_gained").split("<br>");
+val text as string[] = game.localize("crafttweaker.refine_limit_gained").split("<br>");
 
 // 奖励部分，玩家杀敌概率奖励锻刀上限
 events.onEntityLivingDeath(

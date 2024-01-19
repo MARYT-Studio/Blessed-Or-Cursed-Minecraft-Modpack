@@ -21,9 +21,6 @@ import crafttweaker.util.Position3f;
 import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
 
-// For send Messages
-import mods.zenutils.I18n;
-
 // Constants claiming
 
 // debug
@@ -43,7 +40,7 @@ val lvlOfDebuff2 as int = 2;
 // Random teleporting offset
 val offset = 2;
 // Message
-val text as string[] = I18n.format("crafttweaker.camping_penalty").split("<br>");
+val text as string[] = game.localize("crafttweaker.camping_penalty").split("<br>");
 
 events.onEntityLivingDeath(
     function(event as EntityLivingDeathEvent) {

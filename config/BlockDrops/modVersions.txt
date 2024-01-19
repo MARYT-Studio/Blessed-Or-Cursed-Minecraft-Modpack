@@ -98,7 +98,6 @@
   "ivtoolkit": "1.3.3-1.12",
   "tcinventoryscan": "2.0.10",
   "mcp": "9.42",
-  "command_toast": "14.1.0.0",
   "journeymap": "1.12.2-5.7.1",
   "zen_toast": "1.0",
   "sakura": "1.0.7-1.12.2",

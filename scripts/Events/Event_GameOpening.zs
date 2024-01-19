@@ -2,7 +2,6 @@
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
-import mods.zenutils.I18n;
 
 // Items
 val giftAxeName as string = game.localize("item.crafttweaker.newbieaxe.name");
@@ -48,7 +47,7 @@ function opening(player as IPlayer) {
         player.sendChat("");
     }
     if (player.world.worldInfo.hardcoreModeEnabled) {
-        for text in I18n.format("crafttweaker.hardcore").split("<br>") {
+        for text in game.localize("crafttweaker.hardcore").split("<br>") {
             player.sendChat(text);
         }
     }

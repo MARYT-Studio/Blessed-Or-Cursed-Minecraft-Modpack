@@ -2,7 +2,6 @@
 import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.item.IItemStack;
 import crafttweaker.player.IPlayer;
-import mods.zenutils.I18n;
 import crafttweaker.server.IServer;
 
 val enabled = false;

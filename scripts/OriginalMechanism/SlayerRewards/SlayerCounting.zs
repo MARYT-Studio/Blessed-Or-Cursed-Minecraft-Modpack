@@ -27,8 +27,6 @@ import crafttweaker.potions.IPotionEffect;
 // For send Messages
 import crafttweaker.text.ITextComponent;
 
-// For chat format
-import mods.zenutils.I18n;
 // For broadcasting
 import crafttweaker.server.IServer;
 
@@ -45,8 +43,8 @@ val REWARD_TIME = 10 * seconds;
 val specialEntity as IEntityDefinition[] = [<entity:minecraft:silverfish>, <entity:minecraft:endermite>];
 
 // Toast 文本
-val textStep1 as string[] = I18n.format("crafttweaker.slayer_counter_step.1").split("<br>");
-val textStep2 as string[] = I18n.format("crafttweaker.slayer_counter_step.2").split("<br>");
+val textStep1 as string[] = game.localize("crafttweaker.slayer_counter_step.1").split("<br>");
+val textStep2 as string[] = game.localize("crafttweaker.slayer_counter_step.2").split("<br>");
 
 // 玩家击杀时增加计数器和刷新计时器
 events.onEntityLivingDeath(
@@ -172,7 +170,7 @@ events.onPlayerTick(
 
             // 播报已积累的杀敌数，等于 0 则不报
             if (slayerCounts > 0) {
-                var text as string[] = I18n.format("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r").split("<br>");
+                var text as string[] = game.localize("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r").split("<br>");
                 var icon = player.mainHandHeldItem;
                 if (isNull(icon.tag.SlashBlade)) {
                     player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, <minecraft:iron_sword>);
@@ -205,7 +203,7 @@ events.onPlayerTick(
 );
 
 function broadCast(key as string, player as IPlayer, server as IServer) as void {
-    var text as string[] = I18n.format(key, player.name).split("<br>");
+    var text as string[] = game.localize(key, player.name).split("<br>");
     server.commandManager.executeCommand(server, "title @a title {\"text\": " + "\"" + text[0] + "\", \"color\": \"gold\"}");
     server.commandManager.executeCommand(server, "title @a subtitle {\"text\": " + "\"" + text[1] + "\", \"color\": \"green\"}");
     server.commandManager.executeCommand(server, "title @a times 5 20 5");
