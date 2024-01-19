@@ -166,12 +166,18 @@ crafttweaker.cannot_be_refined=This blade can't be refined now<br>Strengthen it 
 crafttweaker.refine_limit_gained=Blade in your hand clanked!<br>§61 more time refining chance gained
 
 # Slayer Rewards
-crafttweaker.slayer_counter_result=%s enemies wiped out!<br>Looking forward to your next glorious battle!
-crafttweaker.slayer_counter_step.1=PentaKill.<br>Blade's Soul opens its eye!
-crafttweaker.slayer_counter_step.2=10 enemies has been slain.<br>How shocked they are!
-crafttweaker.slayer_counter_step.3=%s has slain 20 enemies.<br>Fierce as fire, Unstoppable as thunder!
-crafttweaker.slayer_counter_step.4=%s has slain 50 enemies.<br>Nothing can stop the sharp blade!
-crafttweaker.slayer_counter_step.5=%s has slain 100 enemies.<br>Storm has approached! New monarch has arisen!
+crafttweaker.slayer_counter_result.1=%s enemies wiped out!
+crafttweaker.slayer_counter_result.2=Looking forward to your next glorious battle!
+crafttweaker.slayer_counter_step1.1=PentaKill.
+crafttweaker.slayer_counter_step1.2=Blade's Soul opens its eye!
+crafttweaker.slayer_counter_step2.1=10 enemies has been slain.
+crafttweaker.slayer_counter_step2.2=How shocked they are!
+crafttweaker.slayer_counter_step3.1=%s has slain 20 enemies.
+crafttweaker.slayer_counter_step3.2=Fierce as fire, Unstoppable as thunder!
+crafttweaker.slayer_counter_step4.1=%s has slain 50 enemies.
+crafttweaker.slayer_counter_step4.2=Nothing can stop the sharp blade!
+crafttweaker.slayer_counter_step5.1=%s has slain 100 enemies.
+crafttweaker.slayer_counter_step5.2=Storm has approached! New monarch has arisen!
 
 # Callable Horses
 item.crafttweaker.feadog.warning=§c§lUse this item to summon a horse. Single use.

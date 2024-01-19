@@ -45,8 +45,14 @@ val REWARD_TIME = 10 * seconds;
 val specialEntity as IEntityDefinition[] = [<entity:minecraft:silverfish>, <entity:minecraft:endermite>];
 
 // Toast 文本
-val textStep1 as string[] = I18n.format("crafttweaker.slayer_counter_step.1").split("<br>");
-val textStep2 as string[] = I18n.format("crafttweaker.slayer_counter_step.2").split("<br>");
+val textStep11 = I18n.format("crafttweaker.slayer_counter_step1.1");
+val textStep12 = I18n.format("crafttweaker.slayer_counter_step1.2");
+val textStep21 = I18n.format("crafttweaker.slayer_counter_step2.1");
+val textStep22 = I18n.format("crafttweaker.slayer_counter_step2.2");
+
+
+val textStep1 as string[] = [textStep11, textStep12];
+val textStep2 as string[] = [textStep21, textStep22];
 
 // 玩家击杀时增加计数器和刷新计时器
 events.onEntityLivingDeath(
@@ -104,13 +110,13 @@ events.onEntityLivingDeath(
                 }                
             }
             if (slayCountingNow == 20) {
-                broadCast("crafttweaker.slayer_counter_step.3", player, server);
+                broadCast("crafttweaker.slayer_counter_step3", player, server);
             }
             if (slayCountingNow == 50) {
-                broadCast("crafttweaker.slayer_counter_step.4", player, server);
+                broadCast("crafttweaker.slayer_counter_step4", player, server);
             }
             if (slayCountingNow == 100) {
-                broadCast("crafttweaker.slayer_counter_step.5", player, server);
+                broadCast("crafttweaker.slayer_counter_step5", player, server);
             }
             // debug print
             if (debug) {
@@ -172,7 +178,9 @@ events.onPlayerTick(
 
             // 播报已积累的杀敌数，等于 0 则不报
             if (slayerCounts > 0) {
-                var text as string[] = I18n.format("crafttweaker.slayer_counter_result", "\u00A7e" ~ slayerCounts ~ "\u00A7r").split("<br>");
+                var text1 = I18n.format("crafttweaker.slayer_counter_result.1", "\u00A7e" ~ slayerCounts ~ "\u00A7r");
+                var text2 = I18n.format("crafttweaker.slayer_counter_result.2");
+                var text as string[] = [text1, text2];
                 var icon = player.mainHandHeldItem;
                 if (isNull(icon.tag.SlashBlade)) {
                     player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, <minecraft:iron_sword>);
@@ -205,7 +213,9 @@ events.onPlayerTick(
 );
 
 function broadCast(key as string, player as IPlayer, server as IServer) as void {
-    var text as string[] = I18n.format(key, player.name).split("<br>");
+    var text1 as string = I18n.format(key ~ ".1", player.name);
+    var text2 as string = I18n.format(key ~ ".2");
+    var text as string[] = [text1, text2];
     server.commandManager.executeCommand(server, "title @a title {\"text\": " + "\"" + text[0] + "\", \"color\": \"gold\"}");
     server.commandManager.executeCommand(server, "title @a subtitle {\"text\": " + "\"" + text[1] + "\", \"color\": \"green\"}");
     server.commandManager.executeCommand(server, "title @a times 5 20 5");
