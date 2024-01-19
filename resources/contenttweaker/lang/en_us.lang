@@ -66,4 +66,5 @@ item.red_envelope_lubang.name=§cRed Envelope
 item.contenttweaker.red_envelope_lubang.name=§cRed Envelope
 contenttweaker.red_envelope_prepare.text=Gift for the New Year of the Loong in the Lunar Calendar!<br>§lFind an open space and right click on the ground to open it.
 contenttweaker.red_envelope_open.text=§eGame Rule:<br>§eAfter the three-second countdown, hit the target as many times as possible in the air,<br>§eand the game ends when you land.<br>§eThe higher your combo rating, the more generous the prize!
-contenttweaker.red_envelope_best_wishes.text=§6Happy New Year!<br>§eBest wishes for you!
+contenttweaker.red_envelope_best_wishes.text0=§6Happy New Year!
+contenttweaker.red_envelope_best_wishes.text1=§eBest wishes for you!

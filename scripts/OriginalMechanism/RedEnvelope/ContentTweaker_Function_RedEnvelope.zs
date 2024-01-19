@@ -28,8 +28,7 @@ static creeperList as string[] = [
 
 // Chat Messages
 val prepareMessages as string[] = I18n.format("contenttweaker.red_envelope_prepare.text").split("<br>");
-val openedTexts as string[] = I18n.format("contenttweaker.red_envelope_best_wishes.text").split("<br>");
-val openedItem = <minecraft:paper>.withTag({display:{Name: openedTexts[0],Lore:[openedTexts[1]]}});
+val openedItem = <minecraft:paper>.withTag({display:{Name: I18n.format("contenttweaker.red_envelope_best_wishes.text0"),Lore:[I18n.format("contenttweaker.red_envelope_best_wishes.text1")]}});
 
 
 val redEnvelope = <cotItem:red_envelope_lubang>;
