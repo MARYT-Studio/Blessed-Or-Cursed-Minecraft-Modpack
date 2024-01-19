@@ -83,7 +83,7 @@ events.onEntityLivingDeath(
                     // If player is not considered "moved", penaltyCounter will add one point.
                     (playerMovedFlag) ? (movedCounter += 1) : (noMoveCounter += 1);
                     player.update({penaltyCounter : noMoveCounter, playerMovedCounter: movedCounter});
-                    player.sendChat("AntiAutoPlaying Counted: true, playerMovedFlag: " ~ playerMovedFlag);
+                    if (debug) player.sendChat("AntiAutoPlaying Counted: true, playerMovedFlag: " ~ playerMovedFlag);
                 }
             }
             if (player.data.playerMovedCounter.asInt() >= noAutoThreshold) {

@@ -14,7 +14,6 @@
   "incontrol": "3.9.18",
   "contenttweaker": "1.12.2-4.10.0",
   "vaultopic": "2.2",
-  "tc6aspects4jei": "0.0.2a",
   "findme": "1.1.0",
   "recipesearchbuttons": "1.0.1",
   "neat": "1.4-17",

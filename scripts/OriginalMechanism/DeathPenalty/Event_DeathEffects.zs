@@ -1,6 +1,7 @@
 #loader crafttweaker reloadable
 import crafttweaker.event.EntityLivingDeathEvent;
 import crafttweaker.event.PlayerRespawnEvent;
+import mods.zenutils.EventPriority;
 import crafttweaker.player.IPlayer;
 import crafttweaker.util.Math;
 
@@ -10,8 +11,9 @@ val keepExpRatio = 0.75f;
 val minFoodLevel = 8;
 val maxFoodLevel = 14;
 
-events.onEntityLivingDeath(
+events.register(
     function (event as EntityLivingDeathEvent) {
+        if (event.isCanceled()) return;
         if (event.entityLivingBase instanceof IPlayer) {
             var player as IPlayer = event.entityLivingBase;
             // 耐久没收
@@ -31,7 +33,7 @@ events.onEntityLivingDeath(
             // 饥饿度保持
             player.update({PlayerPersisted: {lastDeathFoodLevel : player.foodStats.foodLevel}});
         }
-    }
+    }, EventPriority.lowest(), true
 );
 
 events.onPlayerRespawn(

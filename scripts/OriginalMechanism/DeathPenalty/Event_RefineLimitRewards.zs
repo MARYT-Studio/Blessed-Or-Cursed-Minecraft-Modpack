@@ -85,8 +85,10 @@ events.onEntityLivingDeath(
 );
 
 // TODO: 惩罚部分，修改玩家背包里的拔刀剑锻刀上限
-events.onEntityLivingDeath(
+events.register(
     function (event as EntityLivingDeathEvent) {
+        // 如果死亡事件被取消，则免除惩罚（藤蔓徽章）
+        if (event.isCanceled()) return;
         if (event.entityLivingBase instanceof IPlayer) {
             var player as IPlayer = event.entityLivingBase;
             for index in 0 .. player.inventorySize {
@@ -108,5 +110,5 @@ events.onEntityLivingDeath(
                 }
             }
         }        
-    }
+    }, EventPriority.lowest(), true
 );
