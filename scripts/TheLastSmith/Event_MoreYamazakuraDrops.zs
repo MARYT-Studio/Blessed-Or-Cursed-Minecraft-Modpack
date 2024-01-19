@@ -30,7 +30,7 @@ static yamazakuraBlades as IItemStack[string] = {
     "magma_cube": shanying_Shuangyue
 };
 
-val debug = true;
+val debug = false;
 
 events.onEntityLivingDeathDrops(
     function(event as EntityLivingDeathDropsEvent) {
