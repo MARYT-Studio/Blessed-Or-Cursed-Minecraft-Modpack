@@ -84,7 +84,6 @@
   "clienttweaks": "3.1.11",
   "ctgui": "1.0.0",
   "hecharacters": "@VERSION@",
-  "zenrecipereloading": "1.2.2",
   "mixinbooter": "8.9",
   "reachfix": "1.0.9",
   "trashslot": "8.4.10",

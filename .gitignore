@@ -29,4 +29,3 @@ scripts/.d.zs
 config/triumph/documentation/
 config/triumph/script/triumph/example/
 ModWatcher/stage/*.jar.disabled
-config/jei/worldSettings.cfg
