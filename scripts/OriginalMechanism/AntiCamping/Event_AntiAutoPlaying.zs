@@ -3,6 +3,7 @@
 import crafttweaker.player.IPlayer;
 import crafttweaker.world.IWorld;
 import crafttweaker.world.IBlockPos;
+import crafttweaker.entity.IEntityLivingBase;
 import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.data.IData;
 
@@ -24,6 +25,10 @@ import crafttweaker.potions.IPotionEffect;
 import mods.zenutils.I18n;
 
 // Constants claiming
+
+// debug
+val debug as bool = false;
+
 // Silverfish Counter Initial Number
 val noAutoThreshold as int = 7;
 // The distance a player should move to avoid being regarded as auto-playing
@@ -73,9 +78,13 @@ events.onEntityLivingDeath(
             else {
                 var noMoveCounter = player.data.penaltyCounter.asInt();
                 var movedCounter = player.data.playerMovedCounter.asInt();
-                // If player is not considered "moved", penaltyCounter will add one point.
-                (playerMovedFlag) ? (movedCounter += 1) : (noMoveCounter += 1);
-                player.update({penaltyCounter : noMoveCounter, playerMovedCounter: movedCounter});
+                // 如果生物被计入反刷怪机制
+                if (targetShouldCount(event.entityLivingBase)) {
+                    // If player is not considered "moved", penaltyCounter will add one point.
+                    (playerMovedFlag) ? (movedCounter += 1) : (noMoveCounter += 1);
+                    player.update({penaltyCounter : noMoveCounter, playerMovedCounter: movedCounter});
+                    player.sendChat("AntiAutoPlaying Counted: true, playerMovedFlag: " ~ playerMovedFlag);
+                }
             }
             if (player.data.playerMovedCounter.asInt() >= noAutoThreshold) {
                 // Test Print
@@ -121,3 +130,23 @@ events.onEntityLivingDeath(
         }
     }
 );
+
+// 工具函数：求击杀怪物是否增加计数器数值
+function targetShouldCount(entity as IEntityLivingBase) as bool {
+    if (entityTypeMatch("slime", entity.definition)) {
+        if (isNull(entity.nbt) || isNull(entity.nbt.Size)) return true;
+        else {
+            var size as int = entity.nbt.Size.asInt();
+            if (size >= 3) return true;
+            if (size >= 1) return (entity.world.random.nextFloat() < 0.25f);
+            if (size >= 0) return false;
+        }
+    }
+    if (entityTypeMatch("silverfish", entity.definition)) return (entity.world.random.nextFloat() < 0.6f);
+    return true;
+}
+
+// 工具函数：生物类型匹配
+function entityTypeMatch(type as string, definition as IEntityDefinition) as bool {
+    return definition.id.toLowerCase().contains(type);
+}
