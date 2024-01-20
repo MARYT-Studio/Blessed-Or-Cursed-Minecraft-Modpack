@@ -118,7 +118,7 @@ events.onEntityLivingDeath(
             }
             // debug print
             if (debug) {
-                player.sendChat("\u5DF2\u5237\u65B0reward_time\u5230\uFF1A" ~ player.data.slayer_rewards.reward_world_time.asInt());
+                player.sendChat("已刷新reward_time到：" ~ player.data.slayer_rewards.reward_world_time.asInt());
             }
         }
     }
@@ -171,12 +171,12 @@ events.onPlayerTick(
         if (time - rewardTime >= REWARD_TIME) {
             //debug print
             if (debug) {
-                player.sendChat("\u5F53\u524D\u4E16\u754C\u65F6\u95F4\u4E3A" ~ time ~ "\uFF0C\u6700\u540E\u4E00\u6B21\u51FB\u6740\u8BA1\u65F6\u4E3A" ~ rewardTime ~ "\uFF0C\u7ED3\u7B97\u5956\u52B1\uFF0C\u5F52\u96F6\u8BA1\u6570\u5668\u3002");
+                player.sendChat("当前世界时间为" ~ time ~ "，最后一次击杀计时为" ~ rewardTime ~ "，结算奖励，归零计数器。");
             }
 
             // 播报已积累的杀敌数，等于 0 则不报
             if (slayerCounts > 0) {
-                var text1 = ITextComponent.fromTranslation("crafttweaker.slayer_counter_result.1", "\u00A7e" ~ slayerCounts ~ "\u00A7r").formattedText;
+                var text1 = ITextComponent.fromTranslation("crafttweaker.slayer_counter_result.1", "§e" ~ slayerCounts ~ "§r").formattedText;
                 var text2 = ITextComponent.fromTranslation("crafttweaker.slayer_counter_result.2").formattedText;
                 var text as string[] = [text1, text2];
                 var icon = player.mainHandHeldItem;

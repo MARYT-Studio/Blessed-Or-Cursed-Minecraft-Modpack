@@ -63,9 +63,11 @@ events.onEntityLivingDeath(
                 if (D(rewardMap).getInt("DIM" ~ world.dimension) > 0 && world.random.nextFloat() < prob) {
                     initMap = blankMap + {("DIM" ~ world.dimension): 1};
                     refineLimit += 1;
+
+                    // 因此获取锻造数时,需要播放声音和提示
+                    player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
+                    server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                 }
-                player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
-                server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                 item.mutable().updateTag({"RefineLimitGained": initMap, "RefineLimit": refineLimit});
             } else {
                 var gainedMap as IData = dTag.get("RefineLimitGained");
