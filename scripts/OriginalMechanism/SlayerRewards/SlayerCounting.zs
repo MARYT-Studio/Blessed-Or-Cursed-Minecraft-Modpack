@@ -27,8 +27,6 @@ import crafttweaker.potions.IPotionEffect;
 // For send Messages
 import crafttweaker.text.ITextComponent;
 
-// For chat format
-import mods.zenutils.I18n;
 // For broadcasting
 import crafttweaker.server.IServer;
 
@@ -45,10 +43,10 @@ val REWARD_TIME = 10 * seconds;
 val specialEntity as IEntityDefinition[] = [<entity:minecraft:silverfish>, <entity:minecraft:endermite>];
 
 // Toast 文本
-val textStep11 = I18n.format("crafttweaker.slayer_counter_step1.1");
-val textStep12 = I18n.format("crafttweaker.slayer_counter_step1.2");
-val textStep21 = I18n.format("crafttweaker.slayer_counter_step2.1");
-val textStep22 = I18n.format("crafttweaker.slayer_counter_step2.2");
+val textStep11 = "crafttweaker.slayer_counter_step1.1";
+val textStep12 = "crafttweaker.slayer_counter_step1.2";
+val textStep21 = "crafttweaker.slayer_counter_step2.1";
+val textStep22 = "crafttweaker.slayer_counter_step2.2";
 
 
 val textStep1 as string[] = [textStep11, textStep12];
@@ -96,17 +94,17 @@ events.onEntityLivingDeath(
             if (slayCountingNow == 5) {
                 var icon = player.mainHandHeldItem;
                 if (isNull(icon.tag.SlashBlade)) {
-                    player.sendToast({text: textStep1[0]} as IData, {text: textStep1[1]} as IData, <minecraft:iron_sword>);
+                    player.sendToast(textStep1[0], "", textStep1[1], "", <minecraft:iron_sword>);
                 } else {
-                    player.sendToast({text: textStep1[0]} as IData, {text: textStep1[1]} as IData, icon);
+                    player.sendToast(textStep1[0], "", textStep1[1], "", icon);
                 }                
             }
             if (slayCountingNow == 10) {
                 var icon = player.mainHandHeldItem;
                 if (isNull(icon.tag.SlashBlade)) {
-                    player.sendToast({text: textStep2[0]} as IData, {text: textStep2[1]} as IData, <minecraft:iron_sword>);
+                    player.sendToast(textStep2[0], "", textStep2[1], "", <minecraft:iron_sword>);
                 } else {
-                    player.sendToast({text: textStep2[0]} as IData, {text: textStep2[1]} as IData, icon);
+                    player.sendToast(textStep2[0], "", textStep2[1], "", icon);
                 }                
             }
             if (slayCountingNow == 20) {
@@ -178,14 +176,14 @@ events.onPlayerTick(
 
             // 播报已积累的杀敌数，等于 0 则不报
             if (slayerCounts > 0) {
-                var text1 = I18n.format("crafttweaker.slayer_counter_result.1", "\u00A7e" ~ slayerCounts ~ "\u00A7r");
-                var text2 = I18n.format("crafttweaker.slayer_counter_result.2");
+                var text1 = ITextComponent.fromTranslation("crafttweaker.slayer_counter_result.1", "\u00A7e" ~ slayerCounts ~ "\u00A7r").formattedText;
+                var text2 = ITextComponent.fromTranslation("crafttweaker.slayer_counter_result.2").formattedText;
                 var text as string[] = [text1, text2];
                 var icon = player.mainHandHeldItem;
                 if (isNull(icon.tag.SlashBlade)) {
-                    player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, <minecraft:iron_sword>);
+                    player.sendToast(text[0], "", text[1], "", <minecraft:iron_sword>);
                 } else {
-                    player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, icon);
+                    player.sendToast(text[0], "", text[1], "", icon);
                 }                
                 
             }
@@ -213,8 +211,8 @@ events.onPlayerTick(
 );
 
 function broadCast(key as string, player as IPlayer, server as IServer) as void {
-    var text1 as string = I18n.format(key ~ ".1", player.name);
-    var text2 as string = I18n.format(key ~ ".2");
+    var text1 as string = ITextComponent.fromTranslation(key ~ ".1", player.name).formattedText;
+    var text2 as string = ITextComponent.fromTranslation(key ~ ".2").formattedText;
     var text as string[] = [text1, text2];
     server.commandManager.executeCommand(server, "title @a title {\"text\": " + "\"" + text[0] + "\", \"color\": \"gold\"}");
     server.commandManager.executeCommand(server, "title @a subtitle {\"text\": " + "\"" + text[1] + "\", \"color\": \"green\"}");

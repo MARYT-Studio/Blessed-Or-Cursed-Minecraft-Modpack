@@ -40,9 +40,6 @@ val blankMap = {
     "DIM53": 0
 } as IData;
 
-// Toast 文本
-val text as string[] = I18n.format("crafttweaker.refine_limit_gained").split("<br>");
-
 // 奖励部分，玩家杀敌概率奖励锻刀上限
 events.onEntityLivingDeath(
     function (event as EntityLivingDeathEvent) {
@@ -67,7 +64,7 @@ events.onEntityLivingDeath(
                     initMap = blankMap + {("DIM" ~ world.dimension): 1};
                     refineLimit += 1;
                 }
-                player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
+                player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
                 server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                 item.mutable().updateTag({"RefineLimitGained": initMap, "RefineLimit": refineLimit});
             } else {
@@ -75,7 +72,7 @@ events.onEntityLivingDeath(
                 if (D(gainedMap).getInt("DIM" ~ world.dimension) < D(rewardMap).getInt("DIM" ~ world.dimension) && world.random.nextFloat() < prob) {
                     var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
                     var refineLimit = 1 + dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
-                    player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
+                    player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
                     server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                     item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
                 }

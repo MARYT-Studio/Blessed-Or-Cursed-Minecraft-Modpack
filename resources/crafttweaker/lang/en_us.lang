@@ -161,9 +161,12 @@ crafttweaker.sake_of_karma_5.tooltip=Harvest this with Silk Touch.
 crafttweaker.sake_of_karma.desc=A bottle of Karma. With your blade drunk in this, the bloodthirsty aura it contains collides and mingles with karma, which become a force powerful enough to awake your demons in mind and materialize them before you in a Ritual of Exorcism. The ritual summons "Obsessions", and the more violent each attack you make on "Obsessions", the stronger and more numerous the demons it will summon will be. "Obsession" may summon "Attachment", "Aversion", and "Delusion", as known as the Three Poisons. Defeat "Attachment" will increase the exp dropped from your enemies for a while. Defeat "Aversion" will increase your attack damage for a while. Defeat "Delusion" will extend the time that "Obsession" exists by 15 seconds.
 
 # Refine Limit
-crafttweaker.can_be_refined=This blade can be refined %s times more<br>Refine it and make it more powerful
-crafttweaker.cannot_be_refined=This blade can't be refined now<br>Strengthen it first with more battle and blood
-crafttweaker.refine_limit_gained=Blade in your hand clanked!<br>§61 more time refining chance gained
+crafttweaker.can_be_refined.1=This blade can be refined %s times more
+crafttweaker.can_be_refined.2=Refine it and make it more powerful
+crafttweaker.cannot_be_refined.1=This blade can't be refined now
+crafttweaker.cannot_be_refined.2=Strengthen it first with more battle and blood
+crafttweaker.refine_limit_gained.1=Blade in your hand clanked!
+crafttweaker.refine_limit_gained.2=§61 more time refining chance gained
 
 # Slayer Rewards
 crafttweaker.slayer_counter_result.1=%s enemies wiped out!
