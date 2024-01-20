@@ -175,12 +175,12 @@ crafttweaker.slayer_counter_step1.1=达成五连杀！
 crafttweaker.slayer_counter_step1.2=手中刀魂睁开了双眼！
 crafttweaker.slayer_counter_step2.1=达成十连杀！
 crafttweaker.slayer_counter_step2.2=敌人嗅到恐惧的味道！
-crafttweaker.slayer_counter_step3.1=%s达成20连杀！
-crafttweaker.slayer_counter_step3.2=侵掠如火动如雷震！
-crafttweaker.slayer_counter_step4.1=%s达成50连杀！
-crafttweaker.slayer_counter_step4.2=锋刃所向无不披靡！
-crafttweaker.slayer_counter_step5.1=%s达成100连杀！
-crafttweaker.slayer_counter_step5.2=风暴降临主宰战场！
+crafttweaker.slayer_counter_step3.1=§6%s达成20连杀！
+crafttweaker.slayer_counter_step3.2=§e侵掠如火动如雷震！
+crafttweaker.slayer_counter_step4.1=§6%s达成50连杀！
+crafttweaker.slayer_counter_step4.2=§e锋刃所向无不披靡！
+crafttweaker.slayer_counter_step5.1=§6%s达成100连杀！
+crafttweaker.slayer_counter_step5.2=§e风暴降临主宰战场！
 
 # Callable Horses
 item.crafttweaker.feadog.warning=§c§l长按右键召唤马匹，只能使用一次
