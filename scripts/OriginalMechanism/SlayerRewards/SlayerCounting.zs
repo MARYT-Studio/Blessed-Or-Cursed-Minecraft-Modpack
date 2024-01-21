@@ -108,13 +108,19 @@ events.onEntityLivingDeath(
                 }                
             }
             if (slayCountingNow == 20) {
-                broadCast("crafttweaker.slayer_counter_step3", player, server);
+                for pl in world.getAllPlayers() {
+                    pl.sendToast("crafttweaker.slayer_counter_step3.1", "\u00A76" ~ player.name, "crafttweaker.slayer_counter_step3.2", "", <minecraft:iron_sword>);
+                }
             }
             if (slayCountingNow == 50) {
-                broadCast("crafttweaker.slayer_counter_step4", player, server);
+                for pl in world.getAllPlayers() {
+                    pl.sendToast("crafttweaker.slayer_counter_step4.1", "\u00A76" ~ player.name, "crafttweaker.slayer_counter_step4.2", "", <minecraft:iron_sword>);
+                }
             }
             if (slayCountingNow == 100) {
-                broadCast("crafttweaker.slayer_counter_step5", player, server);
+                for pl in world.getAllPlayers() {
+                    pl.sendToast("crafttweaker.slayer_counter_step5.1", "\u00A76" ~ player.name, "crafttweaker.slayer_counter_step5.2", "", <minecraft:iron_sword>);
+                }
             }
             // debug print
             if (debug) {
@@ -209,12 +215,3 @@ events.onPlayerTick(
         }
     }
 );
-
-function broadCast(key as string, player as IPlayer, server as IServer) as void {
-    var text1 as string = ITextComponent.fromTranslation(key ~ ".1", player.name).formattedText;
-    var text2 as string = ITextComponent.fromTranslation(key ~ ".2").formattedText;
-    var text as string[] = [text1, text2];
-    server.commandManager.executeCommand(server, "title @a title {\"text\": " + "\"" + text[0] + "\", \"color\": \"gold\"}");
-    server.commandManager.executeCommand(server, "title @a subtitle {\"text\": " + "\"" + text[1] + "\", \"color\": \"green\"}");
-    server.commandManager.executeCommand(server, "title @a times 5 20 5");
-}
