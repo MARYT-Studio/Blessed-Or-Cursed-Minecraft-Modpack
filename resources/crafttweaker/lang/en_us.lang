@@ -99,7 +99,8 @@ crafttweaker.wing_blessing_before_4=Will you continue?
 crafttweaker.wing_blessing_before_5=You paid 
 crafttweaker.wing_blessing_before_6= hearts for flying. Enjoy!
 
-crafttweaker.camping_penalty=§oTengu in the mountains cast a disdainful glance at your bullying of the weak.<br>§oYou seem to hear them whispering, plotting something.
+crafttweaker.camping_penalty.1=§oTengu in the mountains cast a disdainful glance at your bullying of the weak.
+crafttweaker.camping_penalty.2=§oYou seem to hear them whispering, plotting something.
 
 crafttweaker.energy_not_enough_0=This Ritual Need a 
 crafttweaker.energy_not_enough_1= with 
@@ -193,4 +194,8 @@ item.crafttweaker.feadog.text_3=§7§oStubborn, persistent, and blazing.
 contenttweaker.feadog_message_1.text=§oSeems to be an expedition about to begin. Should I blow it?
 contenttweaker.feadog_message_2.text=§oEven if my destiny is not yet known, I must set out.
 
-crafttweaker.hardcore=§7§oYou, like the pioneers, have chosen this thorny path.<br>§7§oEveryone calls this blood-spattered path a curse,<br>§7§obut only you know that courage and resilience are the best blessings.<br>§e§oAll the experience rewards you gain will be doubled.<br>§7§oGood luck, brave swordsmith!
+crafttweaker.hardcore.1=§7§oYou, like the pioneers, have chosen this thorny path.
+crafttweaker.hardcore.2=§7§oEveryone calls this blood-spattered path a curse,
+crafttweaker.hardcore.3=§7§obut only you know that courage and resilience are the best blessings.
+crafttweaker.hardcore.4=§e§oAll the experience rewards you gain will be doubled.
+crafttweaker.hardcore.5=§7§oGood luck, brave swordsmith!

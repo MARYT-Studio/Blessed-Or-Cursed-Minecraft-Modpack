@@ -3,7 +3,6 @@ import crafttweaker.event.PlayerAnvilUpdateEvent;
 import mods.zenutils.EventPriority;
 import scripts.GlobalVars;
 import crafttweaker.data.IData;
-import mods.zenutils.I18n;
 
 // 当物品的 Refine 数值即将超过上限值时，拒绝此次锻造
 events.register(function (event as PlayerAnvilUpdateEvent) {

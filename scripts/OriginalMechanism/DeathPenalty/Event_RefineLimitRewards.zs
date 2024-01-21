@@ -7,7 +7,6 @@ import crafttweaker.entity.IEntityMob;
 import mods.zenutils.EventPriority;
 import scripts.GlobalVars;
 import crafttweaker.util.Math;
-import mods.zenutils.I18n;
 
 // debug 开关
 val debug = false;
