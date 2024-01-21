@@ -186,10 +186,10 @@ for infItem in InfiniteHeartItems {
 mods.jei.JEI.addDescription(<contenttweaker:sake_of_karma>, game.localize("crafttweaker.sake_of_karma.desc"));
 
 val openingMessages as string[] = [
-    "contenttweaker.red_envelope_open.text1";
-    "contenttweaker.red_envelope_open.text2";
-    "contenttweaker.red_envelope_open.text3";
-    "contenttweaker.red_envelope_open.text4";
+    "contenttweaker.red_envelope_open.text1",
+    "contenttweaker.red_envelope_open.text2",
+    "contenttweaker.red_envelope_open.text3",
+    "contenttweaker.red_envelope_open.text4"
 ];
 for message in openingMessages {
     <contenttweaker:red_envelope_lubang>.addTooltip(game.localize(message));
