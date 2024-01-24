@@ -34,9 +34,9 @@ val debug = false;
 
 events.onEntityLivingDeathDrops(
     function(event as EntityLivingDeathDropsEvent) {
-        print("remote: " ~ event.entityLivingBase.world.remote);
-        print("isMob: " ~ event.entityLivingBase instanceof IEntityMob);
-        if(!event.entityLivingBase.world.remote) {
+        var entity = event.entityLivingBase;
+        if (entity instanceof IPlayer) return;
+        if(!entity.world.remote) {
             if (event.damageSource.trueSource instanceof IPlayer) {
                 var player as IPlayer = event.damageSource.trueSource;
                 var entity = event.entityLivingBase;

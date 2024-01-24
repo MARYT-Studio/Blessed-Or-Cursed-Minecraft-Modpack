@@ -4,6 +4,7 @@ import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingDeathDropsEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntityMob;
+import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.data.IData;
 import crafttweaker.util.Math;
 
@@ -13,9 +14,14 @@ import crafttweaker.item.IItemStack;
 val debug = false;
 val petal = <lastsmith:materials:3>;
 
+// 两种不属于 IEntityMob 但是应当判定为怪物的生物
+val slime as string[] = ["slime", "magma_cube"];
+
 events.onEntityLivingDeathDrops(
     function(event as EntityLivingDeathDropsEvent) {
-        if(!event.entity.world.remote && (event.entityLivingBase instanceof IEntityMob)) {
+        var entity = event.entityLivingBase;
+        if (entity instanceof IPlayer) return; // 杀玩家不算
+        if(!entity.world.remote && ((entity instanceof IEntityMob) || entityMatch(slime, entity.definition))) {
             if (event.damageSource.trueSource instanceof IPlayer) {
                 var player as IPlayer = event.damageSource.trueSource;
                 var data as IData = player.data;
@@ -52,3 +58,11 @@ events.onEntityLivingDeathDrops(
         }
     }
 );
+
+// 工具函数：实体匹配
+function entityMatch(types as string[], definition as IEntityDefinition) as bool {
+    for type in types {
+        if (definition.id.toLowerCase().contains(type)) return true;
+    }
+    return false;
+}

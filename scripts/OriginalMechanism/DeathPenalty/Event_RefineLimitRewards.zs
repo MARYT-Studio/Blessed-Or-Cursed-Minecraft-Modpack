@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntityMob;
+import crafttweaker.entity.IEntityDefinition;
 import mods.zenutils.EventPriority;
 import scripts.GlobalVars;
 import crafttweaker.util.Math;
@@ -39,10 +40,15 @@ val blankMap = {
     "DIM53": 0
 } as IData;
 
+// 两种不属于 IEntityMob 但是应当判定为怪物的生物
+val slime as string[] = ["slime", "magma_cube"];
+
 // 奖励部分，玩家杀敌概率奖励锻刀上限
 events.onEntityLivingDeath(
     function (event as EntityLivingDeathEvent) {
-        if !(event.entityLivingBase instanceof IEntityMob) return;
+        var entity = event.entityLivingBase;
+        if (entity instanceof IPlayer) return; // 杀玩家不算
+        if (!(entity instanceof IEntityMob) && !(entityMatch(slime, entity.definition))) return; // 不是怪物不算
         var world = event.entityLivingBase.world;
         if (world.remote) return;
         if (event.damageSource.trueSource instanceof IPlayer) {
@@ -110,3 +116,11 @@ events.register(
         }        
     }, EventPriority.lowest(), true
 );
+
+// 工具函数：生物匹配
+function entityMatch(types as string[], definition as IEntityDefinition) as bool {
+    for type in types {
+        if (definition.id.toLowerCase().contains(type)) return true;
+    }
+    return false;
+}
