@@ -41,7 +41,7 @@ events.onEntityLivingDeath(
             }    
             var item as IItemStack = player.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand());   
             // 过滤非拔刀剑物品
-            if (isNull(item.tag)) return;
+            if (isNull(item) || isNull(item.tag)) return;
             var dTag = D(item.tag);
             if (!(dTag.check("SlashBlade"))) return;
             item.mutable().updateTag({"killCount": (dTag.getInt("killCount") + reward)});

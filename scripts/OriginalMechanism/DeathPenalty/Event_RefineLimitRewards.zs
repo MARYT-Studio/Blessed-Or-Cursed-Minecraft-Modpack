@@ -55,7 +55,7 @@ events.onEntityLivingDeath(
             var player as IPlayer = event.damageSource.trueSource;
             var item as IItemStack = player.getItemInSlot(crafttweaker.entity.IEntityEquipmentSlot.mainHand());
             // 过滤非拔刀剑物品
-            if (isNull(item.tag)) return;
+            if (isNull(item) || isNull(item.tag)) return;
             var dTag = D(item.tag);
             if (!(dTag.check("SlashBlade"))) return;
             // 判断是否需要初始化
