@@ -2,6 +2,7 @@
 import crafttweaker.event.PlayerLoggedInEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
+import crafttweaker.text.ITextComponent;
 
 // Items
 val giftAxeName as string = game.localize("item.crafttweaker.newbieaxe.name");
@@ -47,8 +48,10 @@ function opening(player as IPlayer) {
         player.sendChat("");
     }
     if (player.world.worldInfo.hardcoreModeEnabled) {
-        for text in game.localize("crafttweaker.hardcore").split("<br>") {
-            player.sendChat(text);
-        }
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.hardcore.1"));
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.hardcore.2"));
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.hardcore.3"));
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.hardcore.4"));
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.hardcore.5"));
     }
 }

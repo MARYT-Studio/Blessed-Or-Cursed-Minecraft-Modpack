@@ -99,7 +99,8 @@ crafttweaker.wing_blessing_before_4=你要继续吗？
 crafttweaker.wing_blessing_before_5=你花费了
 crafttweaker.wing_blessing_before_6=颗心。现在你可以飞了，祝你好运！
 
-crafttweaker.camping_penalty=§o山中的天狗们对你欺凌弱小的行径投来鄙夷的目光。<br>§o你仿佛听到他们窃窃私语，谋划着什么。
+crafttweaker.camping_penalty.1=§o山中的天狗们对你欺凌弱小的行径投来鄙夷的目光。
+crafttweaker.camping_penalty.2=§o你仿佛听到他们窃窃私语，谋划着什么。
 
 crafttweaker.energy_not_enough_0=该仪式需要
 crafttweaker.energy_not_enough_1=具有
@@ -161,23 +162,26 @@ crafttweaker.sake_of_karma_5.tooltip=需要精准采集附魔的工具才能使�
 crafttweaker.sake_of_karma.desc=盛放业障烈酒的酒瓶。你的刀刃饮下此酒后，其沾染的肃杀之气与业障碰撞交融，这种力量足以唤醒你的心魔，并将它们在你眼前具现化，这就是斩魔仪式。仪式会首先召唤⌈执念⌋，你对⌈执念⌋的每一次攻击越是猛烈，它引出的心魔将越强大、数量也会越多。同时，⌈执念⌋会引出⌈贪⌋⌈嗔⌋⌈痴⌋三毒。击杀⌈贪⌋会使你在一段时间内杀敌获得的经验比平时更多；击杀⌈嗔⌋会使你在一段时间内的攻击伤害更高；而击杀⌈痴⌋会延长⌈执念⌋存在的时间15秒。
 
 # Refine Limit
-crafttweaker.can_be_refined=这柄刀还可以被锻造%s次<br>继续强化它的刀魂吧
-crafttweaker.cannot_be_refined=这柄刀暂时无法容纳更强的刀魂<br>它还需要在战斗中进一步磨炼
-crafttweaker.refine_limit_gained=手中利刃铮铮作响！<br>§6额外锻造次数+1
+crafttweaker.can_be_refined.1=这柄刀还可以被锻造%s次
+crafttweaker.can_be_refined.2=继续强化它的刀魂吧
+crafttweaker.cannot_be_refined.1=这柄刀暂时无法容纳更强的刀魂
+crafttweaker.cannot_be_refined.2=它还需要在战斗中进一步磨炼
+crafttweaker.refine_limit_gained.1=手中利刃铮铮作响！
+crafttweaker.refine_limit_gained.2=§6额外锻造次数+1
 
 # Slayer Rewards
-crafttweaker.slayer_counter_result.1=名敌人已被歼灭！
+crafttweaker.slayer_counter_result.1=本次战斗歼敌%s名！
 crafttweaker.slayer_counter_result.2=期待你重整旗鼓后的辉煌战绩！
 crafttweaker.slayer_counter_step1.1=达成五连杀！
 crafttweaker.slayer_counter_step1.2=手中刀魂睁开了双眼！
 crafttweaker.slayer_counter_step2.1=达成十连杀！
 crafttweaker.slayer_counter_step2.2=敌人嗅到恐惧的味道！
-crafttweaker.slayer_counter_step3.1=达成20连杀！
-crafttweaker.slayer_counter_step3.2=侵掠如火动如雷震！
-crafttweaker.slayer_counter_step4.1=达成50连杀！
-crafttweaker.slayer_counter_step4.2=锋刃所向无不披靡！
-crafttweaker.slayer_counter_step5.1=达成100连杀！
-crafttweaker.slayer_counter_step5.2=风暴降临主宰战场！
+crafttweaker.slayer_counter_step3.1=%s§6达成20连杀！
+crafttweaker.slayer_counter_step3.2=§e侵掠如火动如雷震！
+crafttweaker.slayer_counter_step4.1=%s§6达成50连杀！
+crafttweaker.slayer_counter_step4.2=§e锋刃所向无不披靡！
+crafttweaker.slayer_counter_step5.1=%s§6达成100连杀！
+crafttweaker.slayer_counter_step5.2=§e风暴降临主宰战场！
 
 # Callable Horses
 item.crafttweaker.feadog.warning=§c§l长按右键召唤马匹，只能使用一次
@@ -190,4 +194,8 @@ item.crafttweaker.feadog.text_3=§7§o倔强地、执着地、熊熊燃烧着。
 contenttweaker.feadog_message_1.text=§o似乎有一段旅程即将开始。我要不要吹响它？
 contenttweaker.feadog_message_2.text=§o乾坤未定；纵吉凶未卜，我亦启程。
 
-crafttweaker.hardcore=§7§o你与先驱者Bule一样，选择了这条充满荆棘的道路。<br>§7§o人人皆称这条洒满鲜血的道路是一种诅咒，<br>§7§o但唯有你自己知道，勇气和坚韧就是最好的祝福。<br>§e§o所有你获取的经验奖励都将翻倍。<br>§7§o勇敢的匠人，祝你好运！
+crafttweaker.hardcore.1=§7§o你与先驱者Bule一样，选择了这条充满荆棘的道路。
+crafttweaker.hardcore.2=§7§o人人皆称这条洒满鲜血的道路是一种诅咒，
+crafttweaker.hardcore.3=§7§o但唯有你自己知道，勇气和坚韧就是最好的祝福。
+crafttweaker.hardcore.4=§e§o所有你获取的经验奖励都将翻倍。
+crafttweaker.hardcore.5=§7§o勇敢的匠人，祝你好运！

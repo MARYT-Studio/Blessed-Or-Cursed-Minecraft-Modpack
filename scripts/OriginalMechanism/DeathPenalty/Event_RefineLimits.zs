@@ -17,8 +17,7 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
     if (refine >= limit) {
         if (!player.world.remote) {
             if (playerTag.getInt("refine_limit_message_sent") == 1) {
-                var text as string[] = game.localize("crafttweaker.cannot_be_refined").split("<br>");
-                player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
+                player.sendToast("crafttweaker.cannot_be_refined.1", "", "crafttweaker.cannot_be_refined.2", "", item);
                 player.update({"refine_limit_message_sent": 3});
             } else {
                 player.update({"refine_limit_message_sent": playerTag.getInt("refine_limit_message_sent") - 1});
@@ -31,8 +30,7 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
         if (!player.world.remote) {
             if (playerTag.getInt("refine_limit_message_sent") == 1) {
                 var remaining as string = "" ~ (limit - refine);
-                var text as string[] = game.localize("crafttweaker.can_be_refined", remaining).split("<br>");
-                player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
+                player.sendToast("crafttweaker.can_be_refined.1", "" ~ remaining, "crafttweaker.can_be_refined.2", "", item);
                 player.update({"refine_limit_message_sent": 3});
             } else {
                 player.update({"refine_limit_message_sent": playerTag.getInt("refine_limit_message_sent") - 1});

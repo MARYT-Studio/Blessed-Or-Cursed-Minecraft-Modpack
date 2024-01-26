@@ -9,6 +9,7 @@ import mods.contenttweaker.BlockPos;
 import crafttweaker.data.IData;
 import crafttweaker.util.IRandom;
 import mods.contenttweaker.Facing;
+import crafttweaker.text.ITextComponent;
 
 // MutableItemStack Related Packages
 import crafttweaker.item.IItemStack;
@@ -24,17 +25,17 @@ static creeperList as string[] = [
 
 
 // Chat Messages
-val prepareMessages as string[] = game.localize("contenttweaker.red_envelope_prepare.text").split("<br>");
-val openedItem = <minecraft:paper>.withTag({display:{Name: game.localize("contenttweaker.red_envelope_best_wishes.text0"),Lore:[game.localize("contenttweaker.red_envelope_best_wishes.text1")]}});
+val openedItem = <minecraft:paper>.withTag({display:{Name: ITextComponent.fromTranslation("contenttweaker.red_envelope_best_wishes.text1").formattedText,Lore:[ITextComponent.fromTranslation("contenttweaker.red_envelope_best_wishes.text2").formattedText]}});
 
 
 val redEnvelope = <cotItem:red_envelope_lubang>;
 
 redEnvelope.itemRightClick = function(stack, world, player, hand) {
     if (!world.remote) {
-        for message in prepareMessages {
-            player.sendChat(message);
-        }
+        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text1").formattedText);
+        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text2").formattedText);
+        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text3").formattedText);
+        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text4").formattedText);
     }
     return "SUCCESS";
 };

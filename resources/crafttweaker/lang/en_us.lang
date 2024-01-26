@@ -99,7 +99,8 @@ crafttweaker.wing_blessing_before_4=Will you continue?
 crafttweaker.wing_blessing_before_5=You paid 
 crafttweaker.wing_blessing_before_6= hearts for flying. Enjoy!
 
-crafttweaker.camping_penalty=§oTengu in the mountains cast a disdainful glance at your bullying of the weak.<br>§oYou seem to hear them whispering, plotting something.
+crafttweaker.camping_penalty.1=§oTengu in the mountains cast a disdainful glance at your bullying of the weak.
+crafttweaker.camping_penalty.2=§oYou seem to hear them whispering, plotting something.
 
 crafttweaker.energy_not_enough_0=This Ritual Need a 
 crafttweaker.energy_not_enough_1= with 
@@ -161,23 +162,26 @@ crafttweaker.sake_of_karma_5.tooltip=Harvest this with Silk Touch.
 crafttweaker.sake_of_karma.desc=A bottle of Karma. With your blade drunk in this, the bloodthirsty aura it contains collides and mingles with karma, which become a force powerful enough to awake your demons in mind and materialize them before you in a Ritual of Exorcism. The ritual summons "Obsessions", and the more violent each attack you make on "Obsessions", the stronger and more numerous the demons it will summon will be. "Obsession" may summon "Attachment", "Aversion", and "Delusion", as known as the Three Poisons. Defeat "Attachment" will increase the exp dropped from your enemies for a while. Defeat "Aversion" will increase your attack damage for a while. Defeat "Delusion" will extend the time that "Obsession" exists by 15 seconds.
 
 # Refine Limit
-crafttweaker.can_be_refined=This blade can be refined %s times more<br>Refine it and make it more powerful
-crafttweaker.cannot_be_refined=This blade can't be refined now<br>Strengthen it first with more battle and blood
-crafttweaker.refine_limit_gained=Blade in your hand clanked!<br>§61 more time refining chance gained
+crafttweaker.can_be_refined.1=This blade can be refined %s times more
+crafttweaker.can_be_refined.2=Refine it and make it more powerful
+crafttweaker.cannot_be_refined.1=This blade can't be refined now
+crafttweaker.cannot_be_refined.2=Strengthen it first with more battle and blood
+crafttweaker.refine_limit_gained.1=Blade in your hand clanked!
+crafttweaker.refine_limit_gained.2=§61 more time refining chance gained
 
 # Slayer Rewards
-crafttweaker.slayer_counter_result.1= enemies wiped out!
+crafttweaker.slayer_counter_result.1=%s enemies wiped out!
 crafttweaker.slayer_counter_result.2=Looking forward to your next glorious battle!
 crafttweaker.slayer_counter_step1.1=PentaKill.
 crafttweaker.slayer_counter_step1.2=Blade's Soul opens its eye!
 crafttweaker.slayer_counter_step2.1=10 enemies has been slain.
 crafttweaker.slayer_counter_step2.2=How shocked they are!
-crafttweaker.slayer_counter_step3.1= has slain 20 enemies.
-crafttweaker.slayer_counter_step3.2=Fierce as fire, Unstoppable as thunder!
-crafttweaker.slayer_counter_step4.1= has slain 50 enemies.
-crafttweaker.slayer_counter_step4.2=Nothing can stop the sharp blade!
-crafttweaker.slayer_counter_step5.1= has slain 100 enemies.
-crafttweaker.slayer_counter_step5.2=Storm has approached! New monarch has arisen!
+crafttweaker.slayer_counter_step3.1=%s§6 has slain 20 enemies.
+crafttweaker.slayer_counter_step3.2=§eFierce as fire, Unstoppable as thunder!
+crafttweaker.slayer_counter_step4.1=%s§6 has slain 50 enemies.
+crafttweaker.slayer_counter_step4.2=§eNothing can stop the sharp blade!
+crafttweaker.slayer_counter_step5.1=%s§6 has slain 100 enemies.
+crafttweaker.slayer_counter_step5.2=§eStorm has approached! New monarch has arisen!
 
 # Callable Horses
 item.crafttweaker.feadog.warning=§c§lUse this item to summon a horse. Single use.
@@ -190,4 +194,8 @@ item.crafttweaker.feadog.text_3=§7§oStubborn, persistent, and blazing.
 contenttweaker.feadog_message_1.text=§oSeems to be an expedition about to begin. Should I blow it?
 contenttweaker.feadog_message_2.text=§oEven if my destiny is not yet known, I must set out.
 
-crafttweaker.hardcore=§7§oYou, like the pioneers, have chosen this thorny path.<br>§7§oEveryone calls this blood-spattered path a curse,<br>§7§obut only you know that courage and resilience are the best blessings.<br>§e§oAll the experience rewards you gain will be doubled.<br>§7§oGood luck, brave swordsmith!
+crafttweaker.hardcore.1=§7§oYou, like the pioneers, have chosen this thorny path.
+crafttweaker.hardcore.2=§7§oEveryone calls this blood-spattered path a curse,
+crafttweaker.hardcore.3=§7§obut only you know that courage and resilience are the best blessings.
+crafttweaker.hardcore.4=§e§oAll the experience rewards you gain will be doubled.
+crafttweaker.hardcore.5=§7§oGood luck, brave swordsmith!

@@ -11,10 +11,14 @@ import scripts.Events.Event_SummonAids;
 
 val debug as bool = false;
 
+// 两种不属于 IEntityMob 但是应当判定为怪物的生物
+val slime as string[] = ["slime", "magma_cube"];
+
 events.onEntityLivingDeath(
     function(event as EntityLivingDeathEvent) {
         var entity = event.entityLivingBase;
-        if (!(entity instanceof IEntityMob)) return; // 非怪物的生物击杀不算
+        if (entity instanceof IPlayer) return; // 玩家死了不算
+        if (!(entity instanceof IEntityMob) && !(entityMatch(slime, entity.definition))) return; // 非怪物的生物击杀不算
         var world = entity.world;
         var source = event.damageSource.trueSource;
         if (isNull(source)) return;
@@ -106,3 +110,9 @@ function maxHealthValue (entity as IEntityLivingBase) as float {
     );
 }
 
+function entityMatch(types as string[], definition as IEntityDefinition) as bool {
+    for type in types {
+        if (definition.id.toLowerCase().contains(type)) return true;
+    }
+    return false;
+}

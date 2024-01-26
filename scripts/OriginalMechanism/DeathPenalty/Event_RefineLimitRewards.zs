@@ -4,6 +4,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.data.IData;
 import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntityMob;
+import crafttweaker.entity.IEntityDefinition;
 import mods.zenutils.EventPriority;
 import scripts.GlobalVars;
 import crafttweaker.util.Math;
@@ -39,13 +40,15 @@ val blankMap = {
     "DIM53": 0
 } as IData;
 
-// Toast 文本
-val text as string[] = game.localize("crafttweaker.refine_limit_gained").split("<br>");
+// 两种不属于 IEntityMob 但是应当判定为怪物的生物
+val slime as string[] = ["slime", "magma_cube"];
 
 // 奖励部分，玩家杀敌概率奖励锻刀上限
 events.onEntityLivingDeath(
     function (event as EntityLivingDeathEvent) {
-        if !(event.entityLivingBase instanceof IEntityMob) return;
+        var entity = event.entityLivingBase;
+        if (entity instanceof IPlayer) return; // 杀玩家不算
+        if (!(entity instanceof IEntityMob) && !(entityMatch(slime, entity.definition))) return; // 不是怪物不算
         var world = event.entityLivingBase.world;
         if (world.remote) return;
         if (event.damageSource.trueSource instanceof IPlayer) {
@@ -65,16 +68,18 @@ events.onEntityLivingDeath(
                 if (D(rewardMap).getInt("DIM" ~ world.dimension) > 0 && world.random.nextFloat() < prob) {
                     initMap = blankMap + {("DIM" ~ world.dimension): 1};
                     refineLimit += 1;
+
+                    // 因此获取锻造数时,需要播放声音和提示
+                    player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
+                    server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                 }
-                player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
-                server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                 item.mutable().updateTag({"RefineLimitGained": initMap, "RefineLimit": refineLimit});
             } else {
                 var gainedMap as IData = dTag.get("RefineLimitGained");
                 if (D(gainedMap).getInt("DIM" ~ world.dimension) < D(rewardMap).getInt("DIM" ~ world.dimension) && world.random.nextFloat() < prob) {
                     var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
                     var refineLimit = 1 + dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
-                    player.sendToast({text: text[0]} as IData, {text: text[1]} as IData, item);
+                    player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
                     server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                     item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
                 }
@@ -111,3 +116,11 @@ events.register(
         }        
     }, EventPriority.lowest(), true
 );
+
+// 工具函数：生物匹配
+function entityMatch(types as string[], definition as IEntityDefinition) as bool {
+    for type in types {
+        if (definition.id.toLowerCase().contains(type)) return true;
+    }
+    return false;
+}

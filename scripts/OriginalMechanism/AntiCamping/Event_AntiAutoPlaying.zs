@@ -21,6 +21,9 @@ import crafttweaker.util.Position3f;
 import crafttweaker.potions.IPotion;
 import crafttweaker.potions.IPotionEffect;
 
+// For send Messages
+import crafttweaker.text.ITextComponent;
+
 // Constants claiming
 
 // debug
@@ -39,8 +42,6 @@ val lvlOfDebuff1 as int = 2;
 val lvlOfDebuff2 as int = 2;
 // Random teleporting offset
 val offset = 2;
-// Message
-val text as string[] = game.localize("crafttweaker.camping_penalty").split("<br>");
 
 events.onEntityLivingDeath(
     function(event as EntityLivingDeathEvent) {
@@ -118,8 +119,8 @@ events.onEntityLivingDeath(
                         });
 
                         // Chat Message
-                        player.sendChat(text[0]);
-                        player.sendChat(text[1]);
+                        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.camping_penalty.1"));
+                        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.camping_penalty.2"));
                     }
                     player.update({penaltyCounter: 0});
                 }
