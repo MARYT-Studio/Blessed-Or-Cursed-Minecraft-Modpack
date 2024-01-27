@@ -26,6 +26,7 @@ events.onPlayerLoggedIn(
         var world = player.world;
         if (!(world.remote)) {
             var data = player.data;
+            // 只执行一次
             if (isNull(data) ||
                 isNull(data.PlayerPersisted) ||
                 isNull(data.PlayerPersisted.initialinventory_given_items)) {
@@ -38,7 +39,9 @@ events.onPlayerLoggedIn(
                 for item in newbieItems {
                     player.give(item);
                 }
-            }            
+            }
+            // 每次启动游戏时
+            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.rescan.text"));
         }
     }
 );
