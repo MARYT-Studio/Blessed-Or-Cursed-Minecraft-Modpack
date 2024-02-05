@@ -3,6 +3,10 @@ import crafttweaker.event.PlayerAnvilUpdateEvent;
 import mods.zenutils.EventPriority;
 import scripts.GlobalVars;
 import crafttweaker.data.IData;
+import crafttweaker.player.IPlayer;
+import crafttweaker.item.IItemStack;
+import crafttweaker.text.ITextComponent;
+import scripts.OriginalMechanism.DeathPenalty.Event_RefineLimitRewards;
 
 // 当物品的 Refine 数值即将超过上限值时，拒绝此次锻造
 events.register(function (event as PlayerAnvilUpdateEvent) {
@@ -10,6 +14,7 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
     var tag = item.tag;
     if (isNull(tag)) return;
     var dTag = D(tag);
+    if (!(dTag.check("SlashBlade"))) return;
     var refine = dTag.getInt("RepairCounter");
     var limit = dTag.getInt("RefineLimit", 2147483647);
     var player = event.player;
@@ -18,6 +23,7 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
         if (!player.world.remote) {
             if (playerTag.getInt("refine_limit_message_sent") == 1) {
                 player.sendToast("crafttweaker.cannot_be_refined.1", "", "crafttweaker.cannot_be_refined.2", "", item);
+                bladeInfo(player, item);
                 player.update({"refine_limit_message_sent": 3});
             } else {
                 player.update({"refine_limit_message_sent": playerTag.getInt("refine_limit_message_sent") - 1});
@@ -52,3 +58,28 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
         }
     }
 },EventPriority.lowest(), true);
+
+// 工具函数：打印拔刀剑的锻造上限信息
+
+//  维度 ID 列表
+static dimID as string[] = ["0", "-1", "56", "1", "7", "28885", "50", "51", "52", "53"];
+
+function bladeInfo(player as IPlayer, blade as IItemStack) as void {
+    if (isNull(blade.tag)) return;
+    var dTag = D(blade.tag);
+    if (dTag.check("RefineLimitGained")) {
+        player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.refine_info.title"));
+        for id in dimID {
+            player.sendRichTextMessage(ITextComponent.fromTranslation(
+                    ("crafttweaker.refine_info.dim" ~ id),
+                    ("" ~ dTag.getInt("RefineLimitGained.DIM" ~ id) ~ "/" ~ Event_RefineLimitRewards.rewardMap.memberGet("DIM" ~ id).asInt())
+                )
+            );
+        }
+        player.sendRichTextMessage(ITextComponent.fromTranslation(
+                "crafttweaker.refine_info.sum", 
+                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+            )
+        );
+    }    
+}

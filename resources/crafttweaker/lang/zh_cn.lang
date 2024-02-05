@@ -165,9 +165,22 @@ crafttweaker.sake_of_karma.desc=盛放业障烈酒的酒瓶。你的刀刃饮下
 crafttweaker.can_be_refined.1=这柄刀还可以被锻造%s次
 crafttweaker.can_be_refined.2=继续强化它的刀魂吧
 crafttweaker.cannot_be_refined.1=这柄刀暂时无法容纳更强的刀魂
-crafttweaker.cannot_be_refined.2=它还需要在战斗中进一步磨炼
+crafttweaker.cannot_be_refined.2=请检查已获得的锻造次数
 crafttweaker.refine_limit_gained.1=手中利刃铮铮作响！
 crafttweaker.refine_limit_gained.2=§6额外锻造次数+1
+
+crafttweaker.refine_info.title=§e--- 这柄刀已斩获的锻造次数 ---§r
+crafttweaker.refine_info.dim0=主世界：§m无法获得锻造次数§r
+crafttweaker.refine_info.dim-1=§c下界：§r%s
+crafttweaker.refine_info.dim1=§d末地：§r%s
+crafttweaker.refine_info.dim56=§b豆腐世界：§r%s
+crafttweaker.refine_info.dim7=§2暮色森林：§r%s
+crafttweaker.refine_info.dim28885=§9狩猎维度：§r%s
+crafttweaker.refine_info.dim50=§5深渊秘境 - 第一层：§r%s
+crafttweaker.refine_info.dim51=§5深渊秘境 - 第二层：§r%s
+crafttweaker.refine_info.dim52=§5深渊秘境 - 第三层：§r%s
+crafttweaker.refine_info.dim53=§5深渊秘境 - 第四层：§r%s
+crafttweaker.refine_info.sum=§e这柄刀可以承载的最大锻造次数：§r%s
 
 # Slayer Rewards
 crafttweaker.slayer_counter_result.1=本次战斗歼敌%s名！

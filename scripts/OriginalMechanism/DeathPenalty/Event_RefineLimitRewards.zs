@@ -14,7 +14,7 @@ val debug = false;
 // 奖励概率
 val prob = 0.1f;
 // 键为维度 ID，值为提升的锻刀上限数
-val rewardMap = {
+static rewardMap as IData = {
     "DIM0": 0,
     "DIM56": 5,
     "DIM-1": 10,
