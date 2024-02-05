@@ -13,6 +13,9 @@ import crafttweaker.event.EntityLivingHurtEvent;
 
 import crafttweaker.util.Math;
 
+// temporarily removed, will be re-added after more tweaks
+val disabled = true;
+
 // debug mode
 val debug = false;
 
@@ -57,6 +60,9 @@ static stepPotionLevelGrowth as int = 10;
 // Event part
 events.onEntityLivingHurt(
     function(event as EntityLivingHurtEvent) {
+
+        if (disabled) return;
+
         // 受伤的是玩家，就不动作
         var mobBeingHurt = event.entityLivingBase;
         if (mobBeingHurt instanceof IPlayer) return;
