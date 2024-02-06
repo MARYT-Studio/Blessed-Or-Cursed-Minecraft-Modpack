@@ -40,6 +40,13 @@ events.onEntityLivingDeathDrops(
             if (event.damageSource.trueSource instanceof IPlayer) {
                 var player as IPlayer = event.damageSource.trueSource;
                 var entity = event.entityLivingBase;
+                
+                // 判断是否为红包怪物，是的话不会掉落山樱
+                if (!isNull(entity.nbt)) {
+                    var dTag = D(entity.nbt);
+                    if (dTag.check("ForgeData.RedEnvelope")) return;
+                }
+                
                 var matchResult = yamazakuraDrop(entity);
                 if (debug) player.sendChat(matchResult.commandString);
                 if (<minecraft:dirt>.matches(matchResult)) return;

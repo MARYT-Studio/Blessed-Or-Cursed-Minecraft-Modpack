@@ -114,7 +114,7 @@ events.onEntityLivingDeath(
                         player.update({
                             slayer_rewards :{
                                 slayer_counting: 0,
-                                reward_world_time: world.getWorldTime()
+                                reward_world_time: world.provider.getWorldTime()
                             }
                         });
 

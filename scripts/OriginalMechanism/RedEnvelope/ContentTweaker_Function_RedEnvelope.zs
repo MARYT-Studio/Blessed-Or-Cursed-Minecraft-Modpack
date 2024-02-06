@@ -6,6 +6,7 @@ import mods.contenttweaker.ActionResult;
 import crafttweaker.world.IWorld;
 import crafttweaker.player.IPlayer;
 import mods.contenttweaker.BlockPos;
+import crafttweaker.entity.IEntityDefinition;
 import crafttweaker.data.IData;
 import crafttweaker.util.IRandom;
 import mods.contenttweaker.Facing;
@@ -13,6 +14,8 @@ import crafttweaker.text.ITextComponent;
 
 // MutableItemStack Related Packages
 import crafttweaker.item.IItemStack;
+
+static debug as bool = false;
 
 static creeperList as string[] = [
     "specialmobs:specialcreeper", // 绿色
@@ -31,12 +34,6 @@ val openedItem = <minecraft:paper>.withTag({display:{Name: ITextComponent.fromTr
 val redEnvelope = <cotItem:red_envelope_lubang>;
 
 redEnvelope.itemRightClick = function(stack, world, player, hand) {
-    if (!world.remote) {
-        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text1").formattedText);
-        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text2").formattedText);
-        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text3").formattedText);
-        player.sendChat(ITextComponent.fromTranslation("contenttweaker.red_envelope_open.text4").formattedText);
-    }
     return "SUCCESS";
 };
 
@@ -44,7 +41,7 @@ redEnvelope.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     if (world.remote) return ActionResult.pass();
     var summonPos = pos.getOffset(Facing.up(), 3); // 这个是头的位置，脚离地两格高
     if (world.getBlock(summonPos).definition.canSpawnInBlock) {
-        summonTarget(world, summonPos);
+        summonTarget(player, world, summonPos);
         player.setItemToSlot(player.activeHand, openedItem);
         return ActionResult.success();
     }
@@ -52,7 +49,7 @@ redEnvelope.onItemUse = function(player, world, pos, hand, facing, blockHit) {
 };
 
 // 工具函数：随机召唤指定的靶子生物
-function summonTarget(world as IWorld, pos as BlockPos) as void {
+function summonTarget(player as IPlayer, world as IWorld, pos as BlockPos) as void {
     var creeper = "";
     var rand = world.random.nextFloat();
     if (rand <= 0.05) {
@@ -68,5 +65,8 @@ function summonTarget(world as IWorld, pos as BlockPos) as void {
     } else {
         creeper = creeperList[4];
     }
-    server.commandManager.executeCommand(server, "summon " ~ creeper ~ " " ~ pos.x ~" "~  pos.y~" "~ pos.z ~ " {NoAI: 1, NoGravity: 1}");
+    var time = world.provider.getWorldTime() + 20L;
+    if (debug) player.sendChat(time);
+    server.commandManager.executeCommand(server, "summon " ~ creeper ~ " " ~ pos.x ~" "~  pos.y~" "~ pos.z ~ " {NoAI: 1, NoGravity: 1, Invulnerable: 1, Glowing: 1, powered: 1, ForgeData: {RedEnvelope: 1, SummonerUUID: "~ player.uuid ~ ", Timer:" ~ time ~"}}");
+    world.updateCustomWorldData({RedEnvelopeGameStatus: {player.uuid: 2}});
 }
