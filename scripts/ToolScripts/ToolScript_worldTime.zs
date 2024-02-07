@@ -16,12 +16,7 @@ events.onPlayerRightClickItem(
         if (!enabled) {return;}
         var player = event.player;
         if (!player.world.remote) {
-            for starter in starters {
-                if(starter.matches(event.item)) {
-                    player.sendChat("print to log");
-                    print(player.world.getCustomWorldData());
-                }
-            }
+            player.sendChat("WorldTime is: " ~ player.world.provider.worldTime);
         }
     }
 );

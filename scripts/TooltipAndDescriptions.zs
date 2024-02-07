@@ -185,12 +185,12 @@ for infItem in InfiniteHeartItems {
 <contenttweaker:sake_of_karma>.addTooltip(game.localize("crafttweaker.sake_of_karma_5.tooltip"));
 mods.jei.JEI.addDescription(<contenttweaker:sake_of_karma>, game.localize("crafttweaker.sake_of_karma.desc"));
 
-val openingMessages as string[] = [
-    "contenttweaker.red_envelope_open.text1",
-    "contenttweaker.red_envelope_open.text2",
-    "contenttweaker.red_envelope_open.text3",
-    "contenttweaker.red_envelope_open.text4"
+val red_envelope_tooltips as string[] = [
+    "contenttweaker.red_envelope.tip",
+    "contenttweaker.red_envelope_prepare.text1",
+    "contenttweaker.red_envelope_prepare.text2"
 ];
-for message in openingMessages {
+for message in red_envelope_tooltips {
     <contenttweaker:red_envelope_lubang>.addTooltip(game.localize(message));
 }
+mods.jei.JEI.addDescription(<contenttweaker:red_envelope_lubang>, game.localize("contenttweaker.red_envelope_rule"));
