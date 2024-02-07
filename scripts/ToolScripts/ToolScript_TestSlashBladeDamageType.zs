@@ -29,6 +29,9 @@ if (enabled) {
                 return;
             }
             player.sendChat(source.damageType);
+            if (!(event.entityLivingBase instanceof IPlayer)) {
+                player.sendChat(event.entityLivingBase.definition.id);
+            }
         }, EventPriority.highest()
     );
 }

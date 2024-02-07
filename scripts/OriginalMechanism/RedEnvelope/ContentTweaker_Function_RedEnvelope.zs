@@ -54,6 +54,7 @@ function summonTarget(player as IPlayer, world as IWorld, pos as BlockPos) as vo
     var rand = world.random.nextFloat();
     if (rand <= 0.05) {
         creeper = creeperList[5];
+        player.sendRichTextMessage(ITextComponent.fromTranslation("contenttweaker.red_envelope_lucky"));
     } else if (rand <= 0.24) {
         creeper = creeperList[0];
     } else if (rand <= 0.43) {
@@ -67,6 +68,7 @@ function summonTarget(player as IPlayer, world as IWorld, pos as BlockPos) as vo
     }
     var time = world.provider.getWorldTime() + 20L;
     if (debug) player.sendChat(time);
-    server.commandManager.executeCommand(server, "summon " ~ creeper ~ " " ~ pos.x ~" "~  pos.y~" "~ pos.z ~ " {NoAI: 1, NoGravity: 1, Invulnerable: 1, Glowing: 1, powered: 1, ForgeData: {RedEnvelope: 1, SummonerUUID: "~ player.uuid ~ ", Timer:" ~ time ~"}}");
+    server.commandManager.executeCommand(server, "summon " ~ creeper ~ " " ~ pos.x ~" "~  pos.y~" "~ pos.z ~ " {NoAI: 1, NoGravity: 1, Invulnerable: 1, Glowing: 1, powered: 1, ForgeData: {RedEnvelope: 1, FreeHit: 2, SummonerUUID: "~ player.uuid ~ ", Timer:" ~ time ~"}}");
     world.updateCustomWorldData({RedEnvelopeGameStatus: {player.uuid: 2}});
+    world.updateCustomWorldData({RedEnvelopeTargetPosition: {player.uuid: {x: pos.x, y: pos.y, z: pos.z}}});
 }

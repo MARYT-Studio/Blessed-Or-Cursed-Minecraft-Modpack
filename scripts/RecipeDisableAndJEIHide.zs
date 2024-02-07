@@ -72,10 +72,6 @@ val ItemNotToHide =
     <energyconverters:energy_consumer_fe>|  //FE������
     <energyconverters:energy_producer_eu:2>|  //��ѹEU�����
     
-    // ��Ϊɰ�ֵ����Ʒ��ֲ��ħ���ķ�ӡ֮��
-    // ���� TempFixes ��һ����
-
-    // TODO: �Ƴ���Ԩ���ȣ�ͬʱ�Ƴ����������ɰ��
     <botania:spellcloth>;
 
 // JEI Hide and recipe removal

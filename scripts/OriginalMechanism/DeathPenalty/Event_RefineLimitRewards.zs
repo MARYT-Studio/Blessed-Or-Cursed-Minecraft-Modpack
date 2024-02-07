@@ -88,7 +88,6 @@ events.onEntityLivingDeath(
     }
 );
 
-// TODO: 惩罚部分，修改玩家背包里的拔刀剑锻刀上限
 events.register(
     function (event as EntityLivingDeathEvent) {
         // 如果死亡事件被取消，则免除惩罚（藤蔓徽章）
