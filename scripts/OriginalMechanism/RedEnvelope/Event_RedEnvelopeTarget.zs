@@ -137,7 +137,8 @@ events.onPlayerTick(
         var player = event.player;
         var world = player.world;
         if (world.remote) return;
-        world.updateCustomWorldData({RedEnvelopePlayerOnGround: {event.player.uuid: event.player.onGround()}});
+        // 要求玩家不但 onGround 而且在空气中，避免玩家通过梯子、藤蔓、泡在液体里等作弊
+        world.updateCustomWorldData({RedEnvelopePlayerOnGround: {event.player.uuid: stepOnGround(event.player)}});
         // 报分和游戏状态置 0
         var worldDataTag = D(world.getCustomWorldData());
         var status = worldDataTag.getInt("RedEnvelopeGameStatus." ~ player.uuid);
@@ -155,16 +156,6 @@ events.onPlayerTick(
             sendReward(player, position);
             world.updateCustomWorldData({RedEnvelopeGameStatus: {player.uuid: 0}});
             world.updateCustomWorldData({RedEnvelopeStat: {player.uuid: 0}});
-        }
-    }
-);
-
-// 阻止掉落物结合
-events.onEntityRemove(
-    function(event as EntityRemoveEvent) {
-        if (event.entity instanceof IEntityItem) {
-            var entityItem as IEntityItem = event.entity;
-            print(entityItem.item.commandString);
         }
     }
 );
@@ -537,4 +528,10 @@ function spawnRewardItem (world as IWorld, item as IItemStack, x as float, y as 
     entityItem.setMotionVector(randomVec);
     entityItem.updateNBT({Glowing: 1});
     world.spawnEntity(entityItem);
+}
+
+// 工具函数：判断是否踩在地上。代替简单的 onGround
+// 要求玩家不但 onGround 而且在空气中，避免玩家通过梯子、藤蔓、泡在液体里等作弊
+function stepOnGround(player as IPlayer) as bool {
+    return player.onGround() || !(player.world.isAirBlock(player.position));
 }
