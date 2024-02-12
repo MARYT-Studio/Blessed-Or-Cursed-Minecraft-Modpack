@@ -23,6 +23,8 @@ events.onEntityJoinWorld(
     function (event as EntityJoinWorldEvent) {
         if (event.entity instanceof IPlayer) return;
         var entity = event.entity;
+        if (isNull(entity.definition)) return;
+        if (isNull(entity.definition.id)) return;
         if (!(entity.definition.id.toLowerCase().contains("creeper"))) return;
         if (isNull(entity.nbt)) return;
         var dTag = D(entity.nbt);
@@ -145,7 +147,7 @@ events.onPlayerTick(
         var stat = worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid);
         if (status == 3) {
             player.sendRichTextMessage(
-                ITextComponent.fromTranslation("contenttweaker.red_envelope_total_score", "\u00A76\u00A7l" ~ worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid))
+                ITextComponent.fromTranslation("contenttweaker.red_envelope_total_score", "§6§l" ~ worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid))
             );
             // 拿取靶子苦力怕的位置
             var position = Position3f.create(
@@ -169,19 +171,19 @@ mods.zenutils.CatenationPersistence.registerPersistedCatenation("RedEnvelopeOpen
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606\u2606\u2606 3!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆☆☆ 3!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606\u2606 2!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆☆ 2!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606 1!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆ 1!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7e\u2606\u2606\u2606 GO!!! \u2606\u2606\u2606"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§e☆☆☆ GO!!! ☆☆☆"));
                 // 游戏开始状态，记为 1
                 if (!isNull(context.getEntity().nbt)) {
                     var dTag = D(context.getEntity().nbt);
