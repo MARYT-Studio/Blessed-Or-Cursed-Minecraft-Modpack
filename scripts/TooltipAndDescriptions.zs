@@ -5,23 +5,22 @@ import crafttweaker.data.IData;
 // Tooltips
 
 // Newbie Items tooltip
-val SwordTooltip as string = game.localize("item.crafttweaker.newbiesword.name");
 val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
 val BreadTooltip as string = game.localize("item.crafttweaker.newbiebread.name");
 val HammerTooltip as string = game.localize("item.crafttweaker.newbiehammer.name");
-val NewbieTooltips as string[] = [SwordTooltip, AxeTooltip, BreadTooltip, HammerTooltip];
+val NewbieTooltips as string[] = [AxeTooltip, BreadTooltip, HammerTooltip];
 
 // Newbie items
-val NewbieItems as IItemStack[] = [<minecraft:diamond_sword:*>, <minecraft:diamond_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
+val NewbieItems as IItemStack[] = [<minecraft:golden_axe:*>, <minecraft:bread>, <sakura:stone_hammer:*>];
 var index as int = 0;
 for newbieitem in NewbieItems {
     newbieitem.addAdvancedTooltip(
         function(item) {
-            if (!isNull(item.tag.newbie)) {
-                return NewbieTooltips[index];
-            } else {
-                return "";
+            if (!isNull(item.tag)) {
+                var dTag =  D(item.tag);
+                if dTag.check("newbie") return NewbieTooltips[index];
             }
+            return "";            
         }
     );
     index += 1;
