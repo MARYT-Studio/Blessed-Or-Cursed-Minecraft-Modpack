@@ -45,14 +45,16 @@ events.register(
     function(event as EntityLivingDamageEvent) {
         if (event.entityLivingBase instanceof IPlayer) return;
         var entity = event.entityLivingBase;
-        
-        // 伤害类型是幻影剑的 Magic 就不算
-        if (event.damageSource.damageType.toLowerCase().contains("magic")) return;
-
         if (!(entity.definition.id.toLowerCase().contains("creeper"))) return;
         if (isNull(entity.nbt)) return;
         var dTag = D(entity.nbt);
+        // 判断确实是红包靶子
         if (dTag.check("ForgeData.RedEnvelope")) {
+            // 伤害类型是幻影剑的 Magic 就不算，中毒、凋零等伤害也包含在内
+            if (event.damageSource.damageType.toLowerCase().contains("magic") || event.damageSource.damageType.toLowerCase().contains("wither")) {
+                event.cancel();
+                return;
+            }
             if (!isNull(event.damageSource.trueSource) && event.damageSource.trueSource instanceof IPlayer) {
                 var player as IPlayer = event.damageSource.trueSource;
                 // 只有召唤者的攻击有效
@@ -147,7 +149,7 @@ events.onPlayerTick(
         var stat = worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid);
         if (status == 3) {
             player.sendRichTextMessage(
-                ITextComponent.fromTranslation("contenttweaker.red_envelope_total_score", "§6§l" ~ worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid))
+                ITextComponent.fromTranslation("contenttweaker.red_envelope_total_score", "\u00A76\u00A7l" ~ worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid))
             );
             // 拿取靶子苦力怕的位置
             var position = Position3f.create(
@@ -171,19 +173,19 @@ mods.zenutils.CatenationPersistence.registerPersistedCatenation("RedEnvelopeOpen
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆☆☆ 3!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606\u2606\u2606 3!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆☆ 2!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606\u2606 2!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆ 1!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606 1!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§e☆☆☆ GO!!! ☆☆☆"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7e\u2606\u2606\u2606 GO!!! \u2606\u2606\u2606"));
                 // 游戏开始状态，记为 1
                 if (!isNull(context.getEntity().nbt)) {
                     var dTag = D(context.getEntity().nbt);
