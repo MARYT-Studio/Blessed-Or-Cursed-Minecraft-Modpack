@@ -15,6 +15,25 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
     if (isNull(tag)) return;
     var dTag = D(tag);
     if (!(dTag.check("SlashBlade"))) return;
+
+    // 拔刀剑锻造上限的纠正逻辑
+    if (GlobalVars.baseRefineLimit > dTag.getInt("RefineLimit")) {
+        item.mutable().updateTag({"RefineLimit": GlobalVars.baseRefineLimit});
+    }
+    if (dTag.check("RefineLimitGained")) {
+        var totalLimitGained = GlobalVars.baseRefineLimit;
+        var gainedMap = item.tag.RefineLimitGained.asMap();
+        for value in gainedMap.valueSet {
+            totalLimitGained += value.asInt();
+        }
+        if (totalLimitGained > dTag.getInt("RefineLimit")) {
+            print("warning: this blade's refine limit is corrected.");
+            item.mutable().updateTag({"RefineLimit": totalLimitGained});
+        } else if (totalLimitGained < dTag.getInt("RefineLimit")) {
+            print("warning: this blade's map recorded limit is less than refine limit it has.");
+        }
+    }
+
     var refine = dTag.getInt("RepairCounter");
     var limit = dTag.getInt("RefineLimit", 2147483647);
     var player = event.player;
@@ -78,7 +97,7 @@ function bladeInfo(player as IPlayer, blade as IItemStack) as void {
         }
         player.sendRichTextMessage(ITextComponent.fromTranslation(
                 "crafttweaker.refine_info.sum", 
-                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
             )
         );
     }    
