@@ -3,6 +3,7 @@ import crafttweaker.events.IEventManager;
 import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.item.IItemStack;
+import crafttweaker.world.IBlockPos;
 
 // 脚本是否启用，true 为启用，false 为关闭
 val enabled = false;
@@ -28,5 +29,20 @@ events.onPlayerRightClickItem(
 
 // 被测函数：判断是否踩在地上
 function stepOnGround(player as IPlayer) as bool {
-    return player.onGround() || !(player.world.isAirBlock(player.position));
+    var pos = player.position;
+    var minX = pos.x - 1;
+    var minY = pos.y - 1;
+    var minZ = pos.z - 1;
+    var airBlockFlag as bool = true;
+    for i in 0 .. 3 {
+        for j in 0 .. 3 {
+            for k in 0 .. 3 {
+                if (!(player.world.isAirBlock(IBlockPos.create((minX + i), (minY + j), (minZ + k))))) {
+                    airBlockFlag = false;
+                    break;
+                }
+            }
+        }
+    } 
+    return player.onGround() || !airBlockFlag;
 }
