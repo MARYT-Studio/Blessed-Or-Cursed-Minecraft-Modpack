@@ -169,7 +169,7 @@ events.onPlayerTick(
         var stat = worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid);
         if (status == 3) {
             player.sendRichTextMessage(
-                ITextComponent.fromTranslation("contenttweaker.red_envelope_total_score", "§6§l" ~ worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid))
+                ITextComponent.fromTranslation("contenttweaker.red_envelope_total_score", "\u00A76\u00A7l" ~ worldDataTag.getInt("RedEnvelopeStat." ~ player.uuid))
             );
             // 拿取靶子苦力怕的位置
             var position = Position3f.create(
@@ -193,19 +193,19 @@ mods.zenutils.CatenationPersistence.registerPersistedCatenation("RedEnvelopeOpen
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆☆☆ 3!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606\u2606\u2606 3!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆☆ 2!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606\u2606 2!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§l☆ 1!!!"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7l\u2606 1!!!"));
             })
             .sleep(20)
             .then(function(world, context) {
-                broadcastNear(context.getEntity(), ITextComponent.fromString("§6§e☆☆☆ GO!!! ☆☆☆"));
+                broadcastNear(context.getEntity(), ITextComponent.fromString("\u00A76\u00A7e\u2606\u2606\u2606 GO!!! \u2606\u2606\u2606"));
                 // 游戏开始状态，记为 1
                 if (!isNull(context.getEntity().nbt)) {
                     var dTag = D(context.getEntity().nbt);
@@ -561,16 +561,17 @@ function stepOnGround(player as IPlayer) as bool {
     var minX = pos.x - 1;
     var minY = pos.y - 1;
     var minZ = pos.z - 1;
-    var airBlockFlag as bool = true;
+    var stickyBlockFlag as bool = false;
     for i in 0 .. 3 {
         for j in 0 .. 3 {
             for k in 0 .. 3 {
-                if (!(player.world.isAirBlock(IBlockPos.create((minX + i), (minY + j), (minZ + k))))) {
-                    airBlockFlag = false;
+                var block = player.world.getBlockState(IBlockPos.create((minX + i), (minY + j), (minZ + k)));
+                if (<blockstate:minecraft:web>.matches(block)) {
+                    stickyBlockFlag = true;
                     break;
                 }
             }
         }
     } 
-    return player.onGround() || airBlockFlag;
+    return player.onGround() || player.isOnLadder || player.isElytraFlying || player.isInWater || player.isInLava || stickyBlockFlag;
 }

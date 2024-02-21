@@ -33,16 +33,17 @@ function stepOnGround(player as IPlayer) as bool {
     var minX = pos.x - 1;
     var minY = pos.y - 1;
     var minZ = pos.z - 1;
-    var airBlockFlag as bool = true;
+    var stickyBlockFlag as bool = false;
     for i in 0 .. 3 {
         for j in 0 .. 3 {
             for k in 0 .. 3 {
-                if (!(player.world.isAirBlock(IBlockPos.create((minX + i), (minY + j), (minZ + k))))) {
-                    airBlockFlag = false;
+                var block = player.world.getBlockState(IBlockPos.create((minX + i), (minY + j), (minZ + k)));
+                if (<blockstate:minecraft:web>.matches(block)) {
+                    stickyBlockFlag = true;
                     break;
                 }
             }
         }
     } 
-    return player.onGround() || !airBlockFlag;
+    return player.onGround() || player.isOnLadder || player.isElytraFlying || player.isInWater || player.isInLava || stickyBlockFlag;
 }
