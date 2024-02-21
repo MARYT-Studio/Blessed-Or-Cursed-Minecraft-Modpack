@@ -77,3 +77,5 @@ contenttweaker.red_envelope_freehit=你还有%s次免费攻击机会！
 contenttweaker.red_envelope_freehit_used=免费攻击次数已用完，如果你踩到地面游戏就会结束！
 contenttweaker.red_envelope_lucky=§6恭喜你抽中幸运红包，本次游戏奖励§e§l更丰富喔！
 contenttweaker.red_envelope.summoner_warning=§e不可以打搅别人的游戏，想玩的话要自己开个红包喔！
+
+effect.contenttweaker.tengus_scorn=天狗的蔑视

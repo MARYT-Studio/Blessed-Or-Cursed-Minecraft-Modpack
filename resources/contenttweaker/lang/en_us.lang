@@ -77,3 +77,5 @@ contenttweaker.red_envelope_freehit=You have %s "free hit" left!
 contenttweaker.red_envelope_freehit_used="Free Hits" have run out! If you step on the ground, the game will end!
 contenttweaker.red_envelope_lucky=§6Lucky! Rewards for this game are §e§lEVEN RICHER!
 contenttweaker.red_envelope.summoner_warning=§ePlease don't interrupt other people's games. Open a Red Packet yourself if you want to play!
+
+effect.contenttweaker.tengus_scorn=Scorn of Tengus
