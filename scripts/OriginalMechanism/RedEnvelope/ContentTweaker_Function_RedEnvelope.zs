@@ -42,7 +42,7 @@ redEnvelope.onItemUse = function(player, world, pos, hand, facing, blockHit) {
     var summonPos = pos.getOffset(Facing.up(), 3); // 这个是头的位置，脚离地两格高
     if (world.getBlock(summonPos).definition.canSpawnInBlock) {
         summonTarget(player, world, summonPos);
-        player.setItemToSlot(player.activeHand, openedItem);
+        player.getHeldItem(hand).mutable().shrink(1);
         return ActionResult.success();
     }
     return ActionResult.pass();

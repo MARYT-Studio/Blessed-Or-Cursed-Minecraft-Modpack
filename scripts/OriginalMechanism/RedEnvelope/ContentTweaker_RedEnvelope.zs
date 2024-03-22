@@ -6,6 +6,6 @@ var redEnvelope = mods.contenttweaker.VanillaFactory.createExpandItem("red_envel
 redEnvelope.creativeTab = <creativetab:misc>;
 redEnvelope.rarity = "epic";
 redEnvelope.glowing = false;
-redEnvelope.maxStackSize = 1;
+redEnvelope.maxStackSize = 64;
 redEnvelope.itemUseAction = "BOW";
 redEnvelope.register();
