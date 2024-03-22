@@ -1,4 +1,4 @@
-#loader crafttweaker reloadableevents
+#loader crafttweaker reloadable
 // Packages for CraftTweaker Events
 import crafttweaker.events.IEventManager;
 import crafttweaker.event.EntityLivingDeathEvent;
