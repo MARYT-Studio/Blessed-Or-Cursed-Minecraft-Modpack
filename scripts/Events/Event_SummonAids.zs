@@ -13,8 +13,8 @@ import crafttweaker.event.EntityLivingHurtEvent;
 
 import crafttweaker.util.Math;
 
-// temporarily removed, will be re-added after more tweaks
-val disabled = true;
+// Re-added now
+val disabled = false;
 
 // debug mode
 val debug = false;
@@ -28,14 +28,14 @@ static combatMobs as IEntityDefinition[] = [
     <entity:sakura:samuraiillger>
 ];
 static combatElites as IEntityDefinition[] = [
-    <entity:minecraft:stray>,
+    <entity:touhou_little_maid:entity.monster.rinnosuke>,
     <entity:minecraft:evocation_illager>
 ];
 static rangedMobs as IEntityDefinition[] = [
     <entity:touhou_little_maid:entity.monster.fairy>
 ];
 static rangedElites as IEntityDefinition[] = [
-    <entity:minecraft:vex>
+    <entity:touhou_little_maid:entity.monster.fairy>
 ];
 // For mobs need 7 attacks to kill, every time it is hurt,
 // this is the probability for the mob to summon an aid.
