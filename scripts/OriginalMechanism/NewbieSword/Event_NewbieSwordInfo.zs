@@ -3,6 +3,7 @@ import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.event.PlayerLoggedOutEvent;
 import crafttweaker.player.IPlayer;
 import crafttweaker.data.IData;
+import crafttweaker.text.ITextComponent;
 
 events.onPlayerRightClickItem(
     function(event as PlayerRightClickItemEvent) {
@@ -17,9 +18,9 @@ events.onPlayerRightClickItem(
 );
 
 static newbieSwordTexts as string[] = [
-    game.localize("item.crafttweaker.newbiesword_1.name"),
-    game.localize("item.crafttweaker.newbiesword_2.name"),
-    game.localize("item.crafttweaker.newbiesword_3.name")
+    "item.crafttweaker.newbiesword_1.name",
+    "item.crafttweaker.newbiesword_2.name",
+    "item.crafttweaker.newbiesword_3.name"
 ];
 
 events.onPlayerLoggedOut(
@@ -38,7 +39,7 @@ function sendTexts (player as IPlayer) as void {
         if (dTag.getInt("PlayerPersisted.NewbieSwordText") == 1) return;
     }
     for text in newbieSwordTexts {
-        player.sendChat(text);
+        player.sendRichTextMessage(ITextComponent.fromTranslation(text));
     }
     player.update({"PlayerPersisted": {"NewbieSwordText": 1}});
     return;
