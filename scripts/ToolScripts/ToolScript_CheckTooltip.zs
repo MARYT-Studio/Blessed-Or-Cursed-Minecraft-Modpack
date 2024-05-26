@@ -4,7 +4,7 @@ import crafttweaker.event.PlayerRightClickItemEvent;
 import crafttweaker.item.IItemStack;
 
 // 脚本是否启用，true 为启用，false 为关闭
-val enabled = true;
+val enabled = false;
 
 val SwordTooltip as string = game.localize("item.crafttweaker.newbiesword.name");
 val AxeTooltip as string = game.localize("item.crafttweaker.newbieaxe.name");
