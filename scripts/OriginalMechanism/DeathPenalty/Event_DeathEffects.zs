@@ -23,7 +23,8 @@ events.register(
                     continue;
                 }
                 if (item.isDamageable) {
-                    item.mutable().damageItem(Math.ceil(0.2f * item.maxDamage), player);
+                    // 改为没收该物品当前耐久的 20%
+                    item.mutable().damageItem(Math.ceil(0.2f * (event.item.maxDamage - event.item.damage)), player);
                 }
             }
 
