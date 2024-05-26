@@ -38,8 +38,6 @@ events.onPlayerLoggedIn(
                     player.give(item);
                 }
             }
-            // 每次启动游戏时
-            player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.rescan.text"));
         }
     }
 );
