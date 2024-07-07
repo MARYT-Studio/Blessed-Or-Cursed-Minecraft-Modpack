@@ -75,6 +75,7 @@
   "zenutils": "1.16.9",
   "tpp": "1.0.1.1",
   "particleculling": "v1.4.1",
+  "soundreloader": "1.1",
   "servertabinfo": "1.2.6",
   "tofucraft": "0.1.0.9",
   "wailaharvestability": "1.1.12",
