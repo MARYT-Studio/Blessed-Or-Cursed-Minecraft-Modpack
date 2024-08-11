@@ -1,29 +1,33 @@
 {
-	title: "我请求保护！",
+	title: "{ftbquests.chapter.df637748.title}",
 	x: 0.0d,
 	y: 0.0d,
-	description: "友善的提醒：尽量不要在没有尝试之前，先承认自己不行。",
+	description: "{ftbquests.chapter.df637748.description}",
 	text: [
-		"冒险游戏，难免地要受伤。我作为你的前辈，这一点我完全理解你，但也希望你能理解这件事。",
-		"死几次或者失败几次并不可怕，可怕的是把自己吓倒了，以至于连家门都不敢出，只是抱着好看的武器缩在房间里，这可不好。",
-		"来吧，前辈愿意出手帮帮你。当你在冒险途中重伤倒地时，",
-		"假如那些天狗还要收缴你的装备耐久和经验值作为帮忙的小费，",
-		"我一定出面把他们喝退，保你的装备毫发无损。",
-		"希望这可以让你重拾信心！加油，好孩子。"
+		"{ftbquests.chapter.df637748.text.1}",
+		"{ftbquests.chapter.df637748.text.2}",
+		"{ftbquests.chapter.df637748.text.3}",
+		"{ftbquests.chapter.df637748.text.4}",
+		"{ftbquests.chapter.df637748.text.5}",
+		"{ftbquests.chapter.df637748.text.6}"
 	],
-	tasks: [{
-		uid: "7b9d9bf8",
-		type: "checkmark",
-		title: "我请求保护！",
-		icon: "minecraft:egg",
-		disable_toast: true
-	}],
-	rewards: [{
-		uid: "ac25e765",
-		type: "command",
-		icon: "abyssalcraft:friedegg",
-		auto: "enabled",
-		command: "/gamerule IamAChicken true",
-		player_command: true
-	}]
+	tasks: [
+		{
+			uid: "7b9d9bf8",
+			type: "checkmark",
+			title: "{ftbquests.chapter.df637748.tasks.title}",
+			icon: "minecraft:egg",
+			disable_toast: "true",
+		}
+	],
+	rewards: [
+		{
+			uid: "ac25e765",
+			type: "command",
+			icon: "abyssalcraft:friedegg",
+			auto: "enabled",
+			command: "/gamerule IamAChicken true",
+			player_command: "true"
+		}
+	]
 }
