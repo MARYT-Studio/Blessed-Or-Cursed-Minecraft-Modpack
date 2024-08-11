@@ -16,15 +16,18 @@ events.register(
         if (event.isCanceled()) return;
         if (event.entityLivingBase instanceof IPlayer) {
             var player as IPlayer = event.entityLivingBase;
-            // 耐久没收
-            for index in 0 .. player.inventorySize {
-                var item = player.getInventoryStack(index);
-                if (isNull(item)) {
-                    continue;
-                }
-                if (item.isDamageable) {
-                    // 改为没收该物品当前耐久的 20%
-                    item.mutable().damageItem(Math.ceil(0.2f * (item.maxDamage - item.damage)), player);
+            // 不没收菜鸡的耐久
+            if (!(player.world.getGameRuleHelper().getBoolean("IamAChicken"))) {
+                // 耐久没收
+                for index in 0 .. player.inventorySize {
+                    var item = player.getInventoryStack(index);
+                    if (isNull(item)) {
+                        continue;
+                    }
+                    if (item.isDamageable) {
+                        // 改为没收该物品当前耐久的 20%
+                        item.mutable().damageItem(Math.ceil(0.2f * (item.maxDamage - item.damage)), player);
+                    }
                 }
             }
 
@@ -42,7 +45,12 @@ events.onPlayerRespawn(
         if (!(event.endConquered)) {
             var player = event.player;
             var dTag = D(player.data);
-            player.xpPoints = Math.round(keepExpRatio * dTag.getInt("PlayerPersisted.lastDeathXpPoints"));
+            
+            // 不没收菜鸡的经验
+            if (!(player.world.getGameRuleHelper().getBoolean("IamAChicken"))) {
+                player.xpPoints = Math.round(keepExpRatio * dTag.getInt("PlayerPersisted.lastDeathXpPoints"));
+            }
+            
             var lastDeathFoodLevel = dTag.getInt("PlayerPersisted.lastDeathFoodLevel");
             if (lastDeathFoodLevel <= minFoodLevel) {
                 player.foodStats.foodLevel = minFoodLevel;
