@@ -1,0 +1,16 @@
+{
+	x: 1.0d,
+	y: -4.0d,
+	tasks: [{
+		uid: "b63b0905",
+		type: "item",
+		items: [{
+			item: "minecraft:sapling 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "321d1b3e",
+		type: "random",
+		table: 17
+	}]
+}

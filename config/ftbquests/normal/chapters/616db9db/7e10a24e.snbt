@@ -1,0 +1,21 @@
+{
+	x: 0.0d,
+	y: -0.5d,
+	tasks: [{
+		uid: "968e886c",
+		type: "item",
+		items: [{
+			id: "minecraft:paper",
+			tag: {
+				display: {
+					Name: "第一类 等级2"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "909c99d9",
+		type: "random",
+		table: 1
+	}]
+}

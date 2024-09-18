@@ -1,0 +1,22 @@
+{
+	x: 0.0d,
+	y: 0.5d,
+	tasks: [{
+		uid: "1d09fd51",
+		type: "item",
+		items: [{
+			id: "minecraft:stone",
+			Damage: 2s,
+			tag: {
+				display: {
+					Name: "第四类2"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "26e2d8e6",
+		type: "random",
+		table: 10
+	}]
+}

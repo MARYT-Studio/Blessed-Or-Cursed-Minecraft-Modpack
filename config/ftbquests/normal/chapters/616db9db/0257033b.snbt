@@ -1,0 +1,26 @@
+{
+	x: -1.0d,
+	y: -0.5d,
+	tasks: [{
+		uid: "3f0c54a7",
+		type: "item",
+		items: [{
+			id: "minecraft:paper",
+			tag: {
+				display: {
+					Name: "第一类 等级1"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "90fe2b84",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "81cefb70",
+		type: "command",
+		command: "/say Hi, @team!"
+	}]
+}

@@ -11,23 +11,17 @@
 		"{ftbquests.chapter.df637748.text.5}",
 		"{ftbquests.chapter.df637748.text.6}"
 	],
-	tasks: [
-		{
-			uid: "7b9d9bf8",
-			type: "checkmark",
-			title: "{ftbquests.chapter.df637748.tasks.title}",
-			icon: "minecraft:egg",
-			disable_toast: "true",
-		}
-	],
-	rewards: [
-		{
-			uid: "ac25e765",
-			type: "command",
-			icon: "abyssalcraft:friedegg",
-			auto: "enabled",
-			command: "/gamerule IamAChicken true",
-			player_command: "true"
-		}
-	]
+	tasks: [{
+		uid: "7b9d9bf8",
+		type: "checkmark",
+		title: "{ftbquests.chapter.df637748.tasks.title}",
+		icon: "minecraft:egg"
+	}],
+	rewards: [{
+		uid: "ac25e765",
+		type: "command",
+		icon: "abyssalcraft:friedegg",
+		auto: "enabled",
+		command: "/gamerule IamAChicken true"
+	}]
 }

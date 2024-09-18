@@ -2,7 +2,7 @@
 //Pack Imports
 import mods.contenttweaker.VanillaFactory;
 var abyssIngot = mods.contenttweaker.VanillaFactory.createItem("abyssal_ingot");
-abyssIngot.creativeTab = <creativetab:acitems>;
+abyssIngot.creativeTab = <creativetab:acintegration>;
 abyssIngot.rarity = "epic";
 abyssIngot.glowing = true;
 abyssIngot.maxStackSize = 64;

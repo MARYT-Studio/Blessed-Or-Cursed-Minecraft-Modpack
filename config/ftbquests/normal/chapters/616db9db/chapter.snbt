@@ -1,0 +1,6 @@
+{
+	title: "技术性",
+	always_invisible: true,
+	group: 0,
+	default_quest_shape: ""
+}

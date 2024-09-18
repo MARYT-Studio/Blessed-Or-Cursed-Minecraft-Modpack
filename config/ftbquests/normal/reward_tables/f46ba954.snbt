@@ -1,0 +1,43 @@
+{
+	title: "种类随机",
+	loot_size: 1,
+	rewards: [{
+		command: "/say 你好,我吃了你的悬赏令",
+		type: "command"
+	},
+	{
+		ftb_money: 233L,
+		type: "ftbmoney:money"
+	},
+	{
+		item: {
+			id: "contenttweaker:xuanshangling",
+			tag: {
+				display: {
+					Name: "少侠请重新抽过(?)"
+				}
+			}
+		},
+		weight: 5
+	},
+	{
+		item: "contenttweaker:xuanshangling2",
+		weight: 10
+	},
+	{
+		item: "contenttweaker:xuanshangling1",
+		weight: 10
+	},
+	{
+		item: "contenttweaker:xuanshangling4",
+		weight: 10
+	},
+	{
+		item: "contenttweaker:xuanshangling3",
+		weight: 10
+	},
+	{
+		item: "contenttweaker:xuanshangling5",
+		weight: 10
+	}]
+}
