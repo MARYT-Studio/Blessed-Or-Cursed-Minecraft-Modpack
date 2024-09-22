@@ -90,7 +90,7 @@
   "reachfix": "1.0.9",
   "trashslot": "8.4.10",
   "renderlib": "1.2.8",
-  "customskinloader": "14.19.1",
+  "customskinloader": "14.20",
   "supersoundmuffler": "1.0.2.10",
   "itemfilters": "1.0.4.2",
   "jei": "4.25.1",
