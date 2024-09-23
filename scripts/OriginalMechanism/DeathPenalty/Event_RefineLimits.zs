@@ -97,7 +97,7 @@ function bladeInfo(player as IPlayer, blade as IItemStack) as void {
         }
         player.sendRichTextMessage(ITextComponent.fromTranslation(
                 "crafttweaker.refine_info.sum", 
-                ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
             )
         );
     }    

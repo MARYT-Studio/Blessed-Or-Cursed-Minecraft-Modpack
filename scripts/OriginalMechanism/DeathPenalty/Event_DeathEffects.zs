@@ -18,15 +18,31 @@ events.register(
             var player as IPlayer = event.entityLivingBase;
             // 不没收菜鸡的耐久
             if (!(player.world.getGameRuleHelper().getBoolean("IamAChicken"))) {
-                // 耐久没收
+                // 耐久没收和低耐久提示
+                var toolLowDurability as bool = false;
+                var weaponLowDurability as bool = false;
+                var armorLowDurability as bool = false;
+                var miscLowDurability as bool = false;
+                
                 for index in 0 .. player.inventorySize {
                     var item = player.getInventoryStack(index);
                     if (isNull(item)) {
                         continue;
                     }
                     if (item.isDamageable) {
-                        // 改为没收该物品当前耐久的 20%
-                        item.mutable().damageItem(Math.ceil(0.2f * (item.maxDamage - item.damage)), player);
+                        // 当前耐久小于 20% 的物品，可免扣耐久
+                        // 同时根据该物品的类别，通知玩家
+                        if (item.maxDamage - item.damage <= item.maxDamage/5) {
+                            
+                            // TODO: 这个提示需要确保每次死亡时，每种分类的物品只会有一次对应的提示
+                            if (item.definition.isWeapons(false)) {
+                                player.sendToast("crafttweaker.low_durability", "crafttweaker.low_durability.weapon", "crafttweaker.low_durability.subtitle", "", <minecraft:iron_sword>);
+                            }
+
+                        } else {
+                            // 否则没收该物品当前耐久的 20%
+                            item.mutable().damageItem(Math.ceil(0.2f * (item.maxDamage - item.damage)), player);
+                        }
                     }
                 }
             }
