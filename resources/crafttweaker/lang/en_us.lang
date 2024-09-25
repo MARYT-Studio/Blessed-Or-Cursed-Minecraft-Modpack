@@ -213,9 +213,8 @@ crafttweaker.hardcore.3=§7§obut only you know that courage and resilience are 
 crafttweaker.hardcore.4=§e§oAll the experience rewards you gain will be doubled.
 crafttweaker.hardcore.5=§7§oGood luck, brave swordsmith!
 
-crafttweaker.low_durability=Some %s you carried is about to break!
-crafttweaker.low_durability.tool=tools
-crafttweaker.low_durability.weapon=weapons
-crafttweaker.low_durability.armor=armor
-crafttweaker.low_durability.misc=thingies
+crafttweaker.low_durability.tool=Some of the tools you're carrying are about to break!
+crafttweaker.low_durability.weapon=Some of the weapons you're carrying are about to break!
+crafttweaker.low_durability.armor=Some of the armor you're carrying is about to break!
+crafttweaker.low_durability.misc=Some of the items you're carrying are about to break!
 crafttweaker.low_durability.subtitle=It's time to fix them!

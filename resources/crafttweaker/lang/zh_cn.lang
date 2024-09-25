@@ -213,9 +213,8 @@ crafttweaker.hardcore.3=§7§o但唯有你自己知道，勇气和坚韧就是�
 crafttweaker.hardcore.4=§e§o所有你获取的经验奖励都将翻倍。
 crafttweaker.hardcore.5=§7§o勇敢的匠人，祝你好运！
 
-crafttweaker.low_durability=你身上有些%s好像要坏了！
-crafttweaker.low_durability.tool=工具
-crafttweaker.low_durability.weapon=兵器
-crafttweaker.low_durability.armor=盔甲
-crafttweaker.low_durability.misc=小玩意儿
+crafttweaker.low_durability.tool=你身上有些工具好像要坏了！
+crafttweaker.low_durability.weapon=你身上有些兵器好像要坏了！
+crafttweaker.low_durability.armor=你身上有些盔甲好像要坏了！
+crafttweaker.low_durability.misc=你身上有些小玩意儿好像要坏了！
 crafttweaker.low_durability.subtitle=该修理修理啦！

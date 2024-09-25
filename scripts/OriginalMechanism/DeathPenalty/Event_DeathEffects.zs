@@ -33,17 +33,28 @@ events.register(
                         // 当前耐久小于 20% 的物品，可免扣耐久
                         // 同时根据该物品的类别，通知玩家
                         if (item.maxDamage - item.damage <= item.maxDamage/5) {
-                            
-                            // TODO: 这个提示需要确保每次死亡时，每种分类的物品只会有一次对应的提示
-                            if (item.definition.isWeapons(false)) {
-                                player.sendToast("crafttweaker.low_durability", "crafttweaker.low_durability.weapon", "crafttweaker.low_durability.subtitle", "", <minecraft:iron_sword>);
-                            }
-
+                            if (item.definition.isWeapons(false)) weaponLowDurability = true;
+                            else if (item.definition.isTools(true)) toolLowDurability = true;
+                            else if (item.definition.isArmor()) armorLowDurability = true;
+                            else miscLowDurability = true;
                         } else {
                             // 否则没收该物品当前耐久的 20%
                             item.mutable().damageItem(Math.ceil(0.2f * (item.maxDamage - item.damage)), player);
                         }
                     }
+                }
+                
+                if(toolLowDurability) {
+                    player.sendToast("crafttweaker.low_durability.tool", "", "crafttweaker.low_durability.subtitle", "", <minecraft:iron_pickaxe>);
+                }
+                if(weaponLowDurability) {
+                    player.sendToast("crafttweaker.low_durability.weapon", "", "crafttweaker.low_durability.subtitle", "", <minecraft:iron_sword>);
+                }
+                if(armorLowDurability) {
+                    player.sendToast("crafttweaker.low_durability.armor", "", "crafttweaker.low_durability.subtitle", "", <minecraft:iron_chestplate>);
+                }
+                if(miscLowDurability) {
+                    player.sendToast("crafttweaker.low_durability.misc", "", "crafttweaker.low_durability.subtitle", "", <minecraft:flint_and_steel>);
                 }
             }
 
