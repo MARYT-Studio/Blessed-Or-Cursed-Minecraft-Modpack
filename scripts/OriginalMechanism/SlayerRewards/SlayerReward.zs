@@ -11,6 +11,7 @@ import scripts.Events.Event_SummonAids;
 
 val debug as bool = false;
 
+// TODO: 把 entityMatch() 与 slime 数组提取为全局函数和变量，作为工具使用
 // 两种不属于 IEntityMob 但是应当判定为怪物的生物
 val slime as string[] = ["slime", "magma_cube"];
 

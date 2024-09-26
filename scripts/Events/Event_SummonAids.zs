@@ -171,6 +171,8 @@ events.onEntityLivingHurt(
     }
 );
 
+// TODO: 把 entityMatch() 提取为全局函数，作为工具使用；
+// 召唤援助中出现的怪物数组可暂缓提取。
 function entityMatch(types as string[], definition as IEntityDefinition) as bool {
     for type in types {
         if (definition.id.toLowerCase().contains(type)) return true;
