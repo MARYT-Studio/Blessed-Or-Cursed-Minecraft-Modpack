@@ -1,0 +1,34 @@
+{
+	x: 12.5d,
+	y: 2.5d,
+	description: "「幽冥成佛之剑」",
+	text: [
+		"可曾记得魂樱的起源？",
+		"刀匠所作所为便是给予那些沉浸互相厮杀的人类与妖怪力量，这便是所谓正义。",
+		"",
+		"......去看手记吧，孩子。"
+	],
+	dependencies: [
+		"d231ae90"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f6d048a9",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/hakurou/texture",
+				SlashBlade: {},
+				ModelName: "named/hakurou/model",
+				CurrentItemName: "flammpfeil.slashblade.named.hakurou",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

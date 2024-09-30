@@ -1,0 +1,40 @@
+{
+	x: -3.0d,
+	y: 0.0d,
+	description: "幸运之白狐。",
+	text: [
+		"曾经有一户人家，持有着两把被灵气覆盖着的红玉。",
+		"实际上，那户人家住着的本身就是妖怪，准确来说，狐妖。",
+		"",
+		"这一位狐妖是开创双长刀流派的一位剑术大师，现在已经隐居在某处了......",
+		"受她的灵力影响，红玉刃化了妖，幻作两振妖狐之刃，与她一齐隐居着。",
+		"",
+		"具有从来犯者手中夺取宝物的力量。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a37c471c",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				SlashBlade: {},
+				ModelName: "named/sange/sange",
+				CurrentItemName: "flammpfeil.slashblade.named.fox.white",
+				TextureName: "named/sange/white",
+				TrueItemName: "flammpfeil.slashblade.named.fox.white",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		consume_items: false,
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	x: 1.0d,
+	y: -1.0d,
+	description: "收集到不为人所知的名刀。",
+	text: [
+		"独自锻造一把自锻刀，再收集齐浪人之斗刀，祈愿之楔丸，以及三把流失各地的仿制山樱。",
+		"",
+		"你也该发现了吧？",
+		"使用你的感悟，它们将化作实在的妖力供你所用。",
+		"（翻译：看商店）"
+	],
+	dependencies: [
+		"20f2a312",
+		"554e814e",
+		"161197e2",
+		"121d301b",
+		"d12a2a61",
+		"eefb5257",
+		"22950dab"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "7faae45e",
+		type: "item",
+		items: [{
+			item: "lastsmith:scroll 1 1"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "ea48a160",
+		type: "ftbmoney:money",
+		ftb_money: 128L
+	}]
+}

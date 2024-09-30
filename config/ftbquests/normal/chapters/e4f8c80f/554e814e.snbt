@@ -1,0 +1,59 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kadomatsu",
+			CustomMaxDamage: 31,
+			IsFakeBlade: 1b,
+			baseAttackModifier: 5.0f,
+			AttackAmplifier: 0.01f,
+			TextureName: "named/yamazakura/yamazakura_mutsuki_kadomatsu",
+			ModelName: "named/yamazakura/model_fake",
+			SB.SEffect: {},
+			SlashBlade: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 0.0d,
+	y: 0.0d,
+	description: "「山樱」之名的伪物。",
+	text: [
+		"苇原国地区，曾有一山樱树在一无名村庄中心。",
+		"",
+		"太阴历，第二轮回，月与夏与木之年，天降陨石直击了村庄，除了那颗山樱之外没有幸存的生灵。",
+		"",
+		"第二年，一批人发现了山樱的神迹，并在周边重新建立起村庄，名曰「山樱村」。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "b74af651",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_mutsuki_kadomatsu",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/model_fake",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kadomatsu",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "d45c0483",
+		type: "kill",
+		entity: "minecraft:spider",
+		value: 1L
+	}]
+}

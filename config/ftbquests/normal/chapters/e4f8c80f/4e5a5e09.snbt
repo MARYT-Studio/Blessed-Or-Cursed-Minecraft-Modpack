@@ -1,0 +1,33 @@
+{
+	x: 6.5d,
+	y: 2.5d,
+	description: "唤樱。",
+	text: [
+		"被名为\"唤魔者\"的土著人类掌握着的伪刃。",
+		"尽管是仿作，赋予足量的魂樱之妖力，仍有足够的潜力幻化出真品。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"b1026533"
+	],
+	hide: true,
+	tasks: [{
+		uid: "76a71770",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_aoi",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/model_fake",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.aoi_fake",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

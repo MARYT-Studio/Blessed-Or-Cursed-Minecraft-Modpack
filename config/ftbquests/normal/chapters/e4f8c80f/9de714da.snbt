@@ -1,0 +1,54 @@
+{
+	title: "鞘",
+	x: 2.5d,
+	y: -7.0d,
+	description: "护刃之鞘。",
+	text: [
+		"一种奇特的用刀之法。",
+		"把刀鞘褪下，放弃挥砍，仅仅使用打磨千次的刀尖捅刺。",
+		"不得不说是种很节省的用法。",
+		"",
+		"不要经常对你的刀这么做，它们不是因为小打小闹的捅刺而生的。",
+		"（副手持鞘时，主手的刀变为原版攻击模式，但仍可使用SA，SB与幻影刃战技。）",
+		"（这种状态下左键攻击不消耗耐久，正常计算斩杀数与耀魂值。）"
+	],
+	dependencies: [
+		"0505192b"
+	],
+	tasks: [{
+		uid: "85d2fd80",
+		type: "item",
+		items: [{
+			id: "lastsmith:wooden_saya",
+			tag: {
+				SB.SEffect: {},
+				SlashBlade: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		},
+		{
+			id: "lastsmith:bamboo_saya",
+			tag: {
+				SB.SEffect: {},
+				SlashBlade: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		},
+		{
+			id: "flammpfeil.slashblade:slashbladewrapper",
+			tag: {
+				SB.SEffect: {},
+				SlashBlade: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

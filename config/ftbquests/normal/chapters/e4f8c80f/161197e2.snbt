@@ -1,0 +1,36 @@
+{
+	x: 0.0d,
+	y: -2.0d,
+	description: "青金之刃。",
+	text: [
+		"我第一自己认真设计的刀，命名「永贞」。",
+		"",
+		"我个人认为很适合新手模仿学习，尽管不是传统的日本刀，似乎也不算太值得学习的作品。",
+		"",
+		"但对于你，这是你的必经之路。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "c2449e76",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/namedblade/texture_nagasada",
+				SlashBlade: {},
+				ModelName: "named/namedblade/model_stright",
+				CurrentItemName: "flammpfeil.slashblade.named.nagasada",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

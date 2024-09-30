@@ -1,0 +1,35 @@
+{
+	x: -2.0d,
+	y: 0.0d,
+	description: "对妖刀村正的追忆。",
+	text: [
+		"冠以村正之名的刀，出自村正家的一名刀匠之手。",
+		"和传说中的那振妖刀有着同样的村正铭，但并非出自同一刀匠之手。",
+		"",
+		"当年，村正家是人类刀匠的一大名家，甚至有着令我们这些妖怪刀匠视作老师之一的名望。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "bc9e0951",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/muramasa/muramasa",
+				SlashBlade: {},
+				ModelName: "named/muramasa/muramasa",
+				CurrentItemName: "flammpfeil.slashblade.named.muramasa",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

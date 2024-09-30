@@ -1,0 +1,37 @@
+{
+	x: -2.0d,
+	y: -1.0d,
+	description: "收集到家喻户晓的名刀。",
+	text: [
+		"红玉，黑白妖狐，村正，胴田贯，付丧......",
+		"这些名刀的故事是你的感悟必不可缺的。",
+		"收集齐这六把刀，然后将它们记载在纸卷上。",
+		"",
+		"不必担心，我仍会指导你。",
+		"耐心按我说的做。"
+	],
+	dependencies: [
+		"741c871c",
+		"8a023c43",
+		"121d301b",
+		"43a4274c",
+		"3a6f9db6",
+		"4d6df6a4",
+		"4b2b2a42"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "a6863737",
+		type: "item",
+		items: [{
+			item: "lastsmith:scroll"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9337da1e",
+		type: "ftbmoney:money",
+		ftb_money: 128L
+	}]
+}

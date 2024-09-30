@@ -1,0 +1,40 @@
+{
+	x: 15.0d,
+	y: 0.0d,
+	description: "凋零之刃--其一",
+	text: [
+		"这个世界的力量。",
+		"稀世名匠锻造之名刀，散落于世间之华美，名曰「散华」。",
+		"在凋灵体内不断为其提供着灵力，众星之力缠绕其身。",
+		"由凋灵崩殂而获，是前往那个仍存世界的稳定器。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"1b3e0e86"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6463ae5e",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/sange/sange",
+				SlashBlade: {},
+				ModelName: "named/sange/sange",
+				CurrentItemName: "flammpfeil.slashblade.named.sange",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "2c8d262d",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

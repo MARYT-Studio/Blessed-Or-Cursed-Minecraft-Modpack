@@ -1,0 +1,51 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			TextureName: "named/yamazakura/yamazakura_nagatsuki_kiku",
+			SlashBlade: {},
+			ModelName: "named/yamazakura/fumizuki",
+			CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kiku",
+			CustomMaxDamage: 31,
+			IsFakeBlade: 1b,
+			AttackAmplifier: 0.01f,
+			baseAttackModifier: 6.0f,
+			SB.SEffect: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 10.0d,
+	y: 0.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"6bd477c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "aa88a503",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_nagatsuki_kiku",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/fumizuki",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kiku",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "f994dc4b",
+		type: "kill",
+		entity: "minecraft:guardian",
+		value: 1L
+	}]
+}

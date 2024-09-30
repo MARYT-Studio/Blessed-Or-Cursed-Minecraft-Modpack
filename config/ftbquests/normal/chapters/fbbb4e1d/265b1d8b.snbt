@@ -1,0 +1,39 @@
+{
+	title: "用火书写",
+	x: 1.5d,
+	y: 0.0d,
+	description: "魔法的引路鸟",
+	text: [
+		"乌鸦。",
+		"在击杀它们时偶有一把暗鸦幻化出来，就像这才是它本应的出世之法......",
+		"我不明白我为什么会这么想，明明是我在锻造雪鸦时的顺手之作......",
+		"",
+		"鸦羽和这里洞穴中随处可见的，那种永远燃烧着的浆果糅合到一起，仅仅是简单地把羽毛浸在暖烫的浆汁里便能作出一种特殊的书写工具了。",
+		"用这种墨水，似乎可以福至心灵地写出些这个世界想告诉你的东西。"
+	],
+	dependencies: [
+		"c549ffed"
+	],
+	hide: true,
+	tasks: [{
+		uid: "e37aa785",
+		type: "item",
+		items: [{
+			item: "twilightforest:raven_feather"
+		}]
+	},
+	{
+		uid: "49b368d9",
+		type: "item",
+		items: [{
+			item: "twilightforest:magic_map_focus"
+		}]
+	},
+	{
+		uid: "4a534006",
+		type: "item",
+		items: [{
+			item: "twilightforest:magic_map_empty"
+		}]
+	}]
+}

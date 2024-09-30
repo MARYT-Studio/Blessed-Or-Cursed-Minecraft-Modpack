@@ -1,0 +1,36 @@
+{
+	x: 8.5d,
+	y: 3.5d,
+	description: "山樱之刃",
+	text: [
+		"苇原国的灭亡，是在短短十几年后。",
+		"「神月」与「葵」两刃因持有者被暗杀而一同遗失，遗落至今的只是一段史料。",
+		"这不能不说是一大遗憾，好在你还有机会拿到它。",
+		"你真的很特别，你知道吗’？",
+		"",
+		"手持山樱的战士哟，去切身体会那切断空间的剑技之玄妙吧，你很快就会用上了。"
+	],
+	dependencies: [
+		"dc62f482"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6be14761",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_kamuy_tuki",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/model",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kamuy",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

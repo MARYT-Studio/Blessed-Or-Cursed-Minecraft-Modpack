@@ -1,0 +1,37 @@
+{
+	x: 4.0d,
+	y: -2.0d,
+	description: "「梅」拵之双刃。",
+	text: [
+		"在内府军的一些低级将士之中，经常能见到两种特别的刀拵。",
+		"因为刀鞘上的梅花特征，被称作「梅」。",
+		"",
+		"实际上，非常的廉价，以至于不是有地位之人看得上的东西。",
+		"",
+		".......不要用那样的眼神盯着书发呆啊，又不是我想要逼着你做这些的。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8b7a4e06",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "wa/waA",
+				SlashBlade: {},
+				ModelName: "wa/model",
+				CurrentItemName: "flammpfeil.slashblade.named.wa.katana",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

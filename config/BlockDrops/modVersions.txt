@@ -102,7 +102,7 @@
   "ivtoolkit": "1.3.3-1.12",
   "mcp": "9.42",
   "journeymap": "1.12.2-5.7.1",
-  "zen_toast": "1.1",
+  "zen_toast": "1.1-hotfix",
   "sakura": "1.0.7-1.12.2",
   "champions": "1.12.2-1.0.11.10",
   "inventorytweaks": "1.64+dev.151.822d839",

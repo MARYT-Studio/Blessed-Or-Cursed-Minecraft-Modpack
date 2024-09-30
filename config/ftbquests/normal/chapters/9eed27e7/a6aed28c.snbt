@@ -1,0 +1,16 @@
+{
+	title: "为什么我的手册内容全锁住了？",
+	x: -3.0d,
+	y: 0.5d,
+	description: "帕秋莉手册内容被锁定的解决方法",
+	text: [
+		"解决方案：",
+		"1. 解锁任意一个新的进度",
+		"2. 打开模组选项，找到Patchouli，在它的Config菜单中，把第一项disable advancement locking开启，退出设置界面，打开手册；然后回到菜单将这一项关闭。"
+	],
+	tasks: [{
+		uid: "ef330686",
+		type: "checkmark",
+		title: "已知bug及解决方式"
+	}]
+}

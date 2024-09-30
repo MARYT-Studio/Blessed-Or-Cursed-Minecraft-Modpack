@@ -1,0 +1,36 @@
+{
+	title: "结月刀「因缘」",
+	x: 5.0d,
+	y: 0.0d,
+	description: "终焉樱。",
+	text: [
+		"结月家家传宝刀的真正姿态。",
+		"名刀闪耀着微弱的光辉，铭刻着「结月 缘」之名......",
+		"",
+		"喂，它不叫付丧改啊！！"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "864fb87a",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yukari/texture",
+				SlashBlade: {},
+				ModelName: "named/yukari/model",
+				CurrentItemName: "flammpfeil.slashblade.named.yukari",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

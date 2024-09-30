@@ -1,0 +1,31 @@
+{
+	x: 9.5d,
+	y: -4.0d,
+	text: [
+		"奇怪的血肉，虽然看上去有点像蛋糕。",
+		"仍然活着，却是恰适入口的温度，口感软糯如上好的年糕，搭配鲜甜的汁水能称得上美味，如果忽略这东西是活的的话。",
+		"",
+		"可以摆在地上，摆满八块再撒上红石粉，可以让它更像蛋糕一点，吃起来的反胃感减小一点......",
+		"",
+		"",
+		"woc怎么越吃越多了"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"456774fd"
+	],
+	hide: true,
+	tasks: [{
+		uid: "814516d5",
+		type: "item",
+		items: [{
+			item: "twilightforest:experiment_115"
+		}],
+		count: 8L
+	}],
+	rewards: [{
+		uid: "e1f16bf9",
+		type: "ftbmoney:money",
+		ftb_money: 6L
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	title: "幻影骑士",
+	x: 6.0d,
+	y: 0.0d,
+	description: "衰败的骑士，故去的辉煌。",
+	text: [
+		"他们是骑士。",
+		"就仅仅因此，他们即便是死，死得尸骨无存仍死撑着那副沉重的骑士甲。",
+		"",
+		"六人共用着一个躯体......也算是骑士精神的一种体现了。"
+	],
+	dependencies: [
+		"0f411b57"
+	],
+	hide: true,
+	tasks: [{
+		uid: "b3826ac4",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 4"
+		}]
+	}]
+}

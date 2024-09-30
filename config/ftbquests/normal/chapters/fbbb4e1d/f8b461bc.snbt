@@ -1,0 +1,48 @@
+{
+	title: "巨人",
+	x: 11.5d,
+	y: 0.0d,
+	description: "你。",
+	text: [
+		"当了一回杰克，还夺了巨人的装备。",
+		"是的，我知道，它们长得和你一模一样......",
+		"相信我，比这还令人仿徨不安的还有更多......",
+		"",
+		"",
+		"我有预感接下来它不会给我们更多惊喜了......."
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"007fad43"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a72db6c0",
+		type: "kill",
+		entity: "twilightforest:giant_miner",
+		value: 1L
+	},
+	{
+		uid: "6def9257",
+		type: "item",
+		items: [{
+			item: "twilightforest:giant_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "541033bd",
+		type: "item",
+		items: [{
+			item: "twilightforest:giant_sword"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "768d6217",
+		type: "ftbmoney:money",
+		ftb_money: 0L
+	}]
+}

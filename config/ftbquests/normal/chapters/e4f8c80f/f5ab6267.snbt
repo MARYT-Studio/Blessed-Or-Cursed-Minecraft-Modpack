@@ -1,0 +1,32 @@
+{
+	x: 19.0d,
+	y: 2.5d,
+	description: "亡灵之遗刃。",
+	text: [
+		"祛锈的名刀。",
+		"伴死灵而生的未亡人。"
+	],
+	dependencies: [
+		"0ce9cd99"
+	],
+	hide: true,
+	tasks: [{
+		uid: "1b588f70",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/scorn/texture_0",
+				SlashBlade: {},
+				ModelName: "named/scorn/model",
+				CurrentItemName: "flammpfeil.slashblade.named.scorn_sealed",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

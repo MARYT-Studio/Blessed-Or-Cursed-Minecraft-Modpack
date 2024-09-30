@@ -1,0 +1,51 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			TextureName: "named/yamazakura/yamazakura_satsuki",
+			SlashBlade: {},
+			ModelName: "named/yamazakura/satsuki",
+			CurrentItemName: "flammpfeil.slashblade.named.yamazakura.satsuki",
+			CustomMaxDamage: 31,
+			IsFakeBlade: 1b,
+			AttackAmplifier: 0.01f,
+			baseAttackModifier: 6.0f,
+			SB.SEffect: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 9.0d,
+	y: 0.5d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"6bd477c4"
+	],
+	hide: true,
+	tasks: [{
+		uid: "9996aa7d",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_satsuki",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/satsuki",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.satsuki",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "9742d00a",
+		type: "kill",
+		entity: "minecraft:enderman",
+		value: 1L
+	}]
+}

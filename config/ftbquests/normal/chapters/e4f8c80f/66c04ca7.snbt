@@ -1,0 +1,43 @@
+{
+	x: 26.5d,
+	y: 0.0d,
+	description: "民之「残云」。",
+	text: [
+		"我是一名鸦天狗，更是一名「阅读者」......",
+		"拿起锻造锤之时，我便已是合格的刀匠了。",
+		"他们只会要求更强大的力量为他们所用，只懂得互相厮杀，甚至为此失去本心。",
+		"「真理之剑」，他们本是举起手中利刃去保护世人的力量......",
+		"",
+		"他们的无理要求，让我憎恶。",
+		"这两振刀，是对抗他们的力量。",
+		"现在就供你取用吧。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"0fe57577",
+		"b40ca410",
+		"39993394",
+		"58d0d20f",
+		"4fdeead1"
+	],
+	hide: true,
+	tasks: [{
+		uid: "129a9a89",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/smith/texture_cloud",
+				SlashBlade: {},
+				ModelName: "named/agito",
+				CurrentItemName: "flammpfeil.slashblade.named.amagumo.cloud",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

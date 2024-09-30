@@ -1,0 +1,38 @@
+{
+	x: 9.5d,
+	y: 3.5d,
+	description: "山樱之刃。",
+	text: [
+		"盗国之战爆发了。",
+		"「神月」与「葵」并肩作战，以绝技-樱之流「空间震」击退了千百敌兵。",
+		"",
+		"我曾见识过那一剑技的真正实力：落下“五月雨”的一刻，空间被切裂开来......",
+		"",
+		"一步之遥。",
+		"据我所知，山樱之灵力强盛，其因除了邪魔之力外，还在于其落下的陨铁炼制而成的魂樱之钢。",
+		"换上樱之宝珠吧。"
+	],
+	dependencies: [
+		"50afb162"
+	],
+	hide: true,
+	tasks: [{
+		uid: "2e8b3c77",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_kannazuki_katura",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/kannazuki",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.kannazuki",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

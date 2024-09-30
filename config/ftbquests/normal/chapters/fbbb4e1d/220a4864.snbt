@@ -1,0 +1,23 @@
+{
+	title: "九头蛇",
+	x: 7.0d,
+	y: -1.5d,
+	description: "神话中的古老大蛇，炽热的血与火。",
+	text: [
+		"虽然名为九头蛇，却只有七头七颈。",
+		"受众星之力眷顾的宠儿。",
+		"",
+		"只有这把刀才是真迹。"
+	],
+	dependencies: [
+		"d9f90468"
+	],
+	hide: true,
+	tasks: [{
+		uid: "678ef4cf",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 2"
+		}]
+	}]
+}

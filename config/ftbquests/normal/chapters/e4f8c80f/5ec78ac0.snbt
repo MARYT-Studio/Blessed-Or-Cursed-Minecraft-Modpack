@@ -1,0 +1,37 @@
+{
+	x: 7.0d,
+	y: -4.5d,
+	description: "苇名国竹刃之传说。",
+	text: [
+		"我知道，我知道，你又得肝好久魂樱和竹光的妖力了，你现在很烦很难受。",
+		"那什么，要不我给你讲个我当年的囧事，就当解解闷了......？",
+		"",
+		"当时我还是个初出茅庐的妖怪刀匠，程度大概就和你差不多。",
+		"我看着利刀无名红玉的样子，主要是樱钻在外表上和魂樱是很接近的，我就以为这振刀的刀刃同样有着魂樱那种极致的妖力亲和力，换言之我认为这振刀可以代替银纸竹光，继承不达标准的万变之鞘，直到碎刃后，有着亲和力的刀刃可以轻易地脱离刀体，把刀鞘还回来......",
+		"我因此损失了至少七把准备好的鞘。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"b1026533"
+	],
+	hide: true,
+	tasks: [{
+		uid: "96760734",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/bamboolight/bamboo_top",
+				SlashBlade: {},
+				ModelName: "named/yamato",
+				CurrentItemName: "flammpfeil.slashblade.named.bamboolight_recluse",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

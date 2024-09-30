@@ -1,0 +1,32 @@
+{
+	title: "豆腐世界",
+	icon: "tofucraft:tofu_material 1 1",
+	x: 6.0d,
+	y: -3.0d,
+	description: "？？？",
+	text: [
+		"尽管，我是说，我知道这个地方有着大量可以安全击杀的妖物，更是有着“钻石豆腐”这种珍贵优越的盔甲与武器锻造材料。",
+		"",
+		"但是，那什么。",
+		"",
+		"你脚踩过的豆腐真的还能吃吗",
+		"",
+		"（解锁‘豆腐天堂’）"
+	],
+	dependencies: [
+		"4aa123d3"
+	],
+	hide: true,
+	tasks: [{
+		uid: "019ad871",
+		type: "dimension",
+		dim: 56
+	},
+	{
+		uid: "5eb4a7fe",
+		type: "item",
+		items: [{
+			item: "tofucraft:tofustick"
+		}]
+	}]
+}

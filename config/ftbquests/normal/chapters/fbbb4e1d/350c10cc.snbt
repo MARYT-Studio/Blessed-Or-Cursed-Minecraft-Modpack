@@ -1,0 +1,24 @@
+{
+	title: "迷题羊",
+	x: 3.0d,
+	y: -1.5d,
+	description: "魔法与谜题的盘羊。",
+	text: [
+		"奇异的生物。",
+		"对你没有敌意，我也不希望主动去伤害无害的生灵。",
+		"",
+		"它似乎...有求于你？不，不是。",
+		"解开它给你的谜题吧，我想这会是值得的。"
+	],
+	dependencies: [
+		"265b1d8b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "be123ba9",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy 1 8"
+		}]
+	}]
+}

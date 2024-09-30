@@ -1,0 +1,31 @@
+{
+	x: 11.5d,
+	y: -3.5d,
+	description: "“樱之刃”--能够驱除一切邪恶的秘剑。",
+	text: [
+		"故事在手记里。",
+		"",
+		"若是邪魔真的源自于人类，那我却要对我在手记中的观念提出质疑了。",
+		"那邪魔分明与域外的邪神有着关联，若是来自人类，妖怪何来的理由与之对抗许久？",
+		"或许有别的缘由，但我想现在已经无从得知了。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"b1026533"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "39b1c16c",
+		type: "item",
+		items: [{
+			item: "lastsmith:scroll 1 5"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "8e090402",
+		type: "ftbmoney:money",
+		ftb_money: 64L
+	}]
+}

@@ -1,0 +1,30 @@
+{
+	x: 11.5d,
+	y: 1.5d,
+	description: "「魂魄家传之刃」",
+	text: [
+		"近了，近了。",
+		"我听见了，那怪物的轰鸣。",
+		"",
+		"我们没有太多时间了，你还没注意到那些魔物成倍增长的生命力吗？快些行动！"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"b1026533"
+	],
+	hide: true,
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "a88abd4f",
+		type: "item",
+		items: [{
+			item: "lastsmith:scroll 1 10"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "52244033",
+		type: "ftbmoney:money",
+		ftb_money: 128L
+	}]
+}

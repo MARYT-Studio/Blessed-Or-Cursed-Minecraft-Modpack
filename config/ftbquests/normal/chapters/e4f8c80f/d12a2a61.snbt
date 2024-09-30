@@ -1,0 +1,35 @@
+{
+	x: 1.0d,
+	y: -2.0d,
+	description: "祈愿之楔丸。",
+	text: [
+		"这一振刀是侍奉龙胤的忍者之配刀。",
+		"隐含着“即便忍者有着注定杀人的宿命，仍不可舍弃仅有的慈悲之心”的心愿。",
+		"",
+		"他曾用这振刀斩杀过我等同胞，身后是另一振赤色的大太刀......后面的故事，你自己看我的手记吧。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "a034bb12",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/sekiro/kusabimaru",
+				SlashBlade: {},
+				ModelName: "named/sekiro/kusabimaru",
+				CurrentItemName: "flammpfeil.slashblade.named.kusabimaru",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

@@ -1,0 +1,39 @@
+{
+	x: 9.5d,
+	y: 2.5d,
+	description: "山樱之刃。",
+	text: [
+		"人类使用了新的战法，在一场惨烈的战斗后斩杀了邪魔。",
+		"它化作的灰烬里，留下的是最后一把山樱刃。",
+		"",
+		"此时，是太阴历的闰月。人类因此命名其为山樱「神月」。",
+		"",
+		"那是山樱村，是苇原国的希望......",
+		"",
+		"第二步。",
+		"更多的妖力。"
+	],
+	dependencies: [
+		"757fae6f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "7fb9d2ce",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_fumizuki",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/fumizuki",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.fumizuki",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}]
+}

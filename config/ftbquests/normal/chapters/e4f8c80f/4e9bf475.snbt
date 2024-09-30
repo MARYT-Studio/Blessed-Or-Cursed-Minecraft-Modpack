@@ -1,0 +1,44 @@
+{
+	x: 22.5d,
+	y: -4.0d,
+	shape: "square",
+	description: "取得龙神之泪之刃。",
+	text: [
+		"龙胤的不死之力如此恐怖，而斩断不死的能力却掌握在持有不死之力者的手中......",
+		"",
+		"我更是亲眼看见，在赤色大太刀之下那悲惨的景象......",
+		"",
+		"我曾拥有它和「楔丸」的真品，有一股引力指引着我拔出这振刀，但我并没有这样做......"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"0be78f6d"
+	],
+	hide: true,
+	tasks: [{
+		uid: "33d53f51",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/sekiro/fushigiri",
+				SlashBlade: {},
+				ModelName: "named/sekiro/fushigiri",
+				CurrentItemName: "flammpfeil.slashblade.named.fushikiri",
+				SB.SEffect: {
+					extreme_sharpness: 10
+				}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "b9924a02",
+		type: "ftbmoney:money",
+		ftb_money: 256L
+	}]
+}

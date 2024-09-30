@@ -1,0 +1,38 @@
+{
+	x: 22.5d,
+	y: -3.0d,
+	shape: "square",
+	description: "地狱之长刀。",
+	text: [
+		"拙劣的仿作。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"b40ca410"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6b0d735f",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/hakurou/texture_tx",
+				SlashBlade: {},
+				ModelName: "named/hakurou/model",
+				CurrentItemName: "flammpfeil.slashblade.named.hakurou_nether",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	}],
+	rewards: [{
+		uid: "d110b5b6",
+		type: "ftbmoney:money",
+		ftb_money: 128L
+	}]
+}

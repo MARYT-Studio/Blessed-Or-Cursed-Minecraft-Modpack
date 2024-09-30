@@ -1,0 +1,59 @@
+{
+	icon: {
+		id: "lastsmith:.slashblade.named",
+		tag: {
+			CurrentItemName: "flammpfeil.slashblade.named.yamazakura.ume",
+			CustomMaxDamage: 31,
+			IsFakeBlade: 1b,
+			baseAttackModifier: 5.0f,
+			AttackAmplifier: 0.01f,
+			TextureName: "named/yamazakura/yamazakura_kisaragi_ume",
+			ModelName: "named/yamazakura/model_fake",
+			SB.SEffect: {},
+			SlashBlade: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 1.0d,
+	y: 0.0d,
+	description: "「山樱」之名的伪物。",
+	text: [
+		"在盗国之战前，为了苇原国的存亡，苇原仅存的刀匠聚集在一起，不顾平日里闭门造车的矜持，花费一年联合打造了十二振上品钢刀。",
+		"",
+		"过程是惨烈的：敌人不会放任他们轻易成功，超过半数的刀匠在锻造成功后被忍者杀害，更有为了增强刀的杀伐之气，不惜以刀自刎者。",
+		"",
+		"于是，事故发生了......"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"121d301b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8b10250c",
+		type: "item",
+		items: [{
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				TextureName: "named/yamazakura/yamazakura_kisaragi_ume",
+				SlashBlade: {},
+				ModelName: "named/yamazakura/model_fake",
+				CurrentItemName: "flammpfeil.slashblade.named.yamazakura.ume",
+				SB.SEffect: {}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 2b
+	},
+	{
+		uid: "9c955fb8",
+		type: "kill",
+		entity: "minecraft:stray",
+		value: 1L
+	}]
+}

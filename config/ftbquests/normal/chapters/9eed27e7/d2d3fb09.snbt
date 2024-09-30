@@ -1,0 +1,80 @@
+{
+	title: "拔刀剑快速教程5",
+	x: -5.5d,
+	y: 2.5d,
+	text: [
+		"拔刀剑能附魔几乎所有种类的魔咒，但不一定能体现出原来的效果。",
+		"一些附魔在拔刀剑上具有特殊的性质：",
+		"",
+		"耐久：作用相同，但最高等级改为V。",
+		"荆棘：潜行时的SA剑技改为防御剑技。此剑技格挡迎面飞来的一切弹射物；若你的拔刀剑是妖刀，这些弹射物会原路弹回，可以借此击中敌人。",
+		"但是你不能通过此方法格挡近身攻击。",
+		"",
+		"力量：解锁SB，提高幻影刃的伤害有关。",
+		"",
+		"火焰保护：SA蓄力状态时免疫火焰伤害。但是不能借此免疫岩浆和火本身的伤害，也不能熄灭身上的火。",
+		"",
+		"水下呼吸：手持时获得水下呼吸buff，并大幅提升水中行动的速度。",
+		"",
+		"冲击：获得如下的新剑技 - 你通过右键斩击击中弹射物时，发射出幻影刃；这些幻影刃命中目标时将目标大幅度击退。",
+		"SA为次元斩时，改为将击中的目标拉向使用者。",
+		"",
+		"时运：杀死怪物时，令其掉落身上的所有装备",
+		"",
+		"摔落保护：你右键挥刀时可以浮在空中，长按右键可以缓慢下降。缓降效果与附魔等级有关。"
+	],
+	dependencies: [
+		"b5a805c2"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ea0e238d",
+		type: "checkmark",
+		icon: {
+			id: "lastsmith:.slashblade.named",
+			tag: {
+				SpecialAttackType: 263,
+				TextureName: "named/smith/texture_final",
+				ench: [{
+					lvl: 9s,
+					id: 48s
+				},
+				{
+					lvl: 2s,
+					id: 2s
+				},
+				{
+					lvl: 3s,
+					id: 7s
+				},
+				{
+					lvl: 9s,
+					id: 16s
+				},
+				{
+					lvl: 9s,
+					id: 17s
+				},
+				{
+					lvl: 9s,
+					id: 18s
+				}],
+				SlashBlade: {},
+				ModelName: "named/smith/model",
+				isDefaultBewitched: 1b,
+				CurrentItemName: "flammpfeil.slashblade.named.smith.final",
+				CustomMaxDamage: -1,
+				IsBewitchedActived: 1b,
+				AttackAmplifier: 0.01f,
+				baseAttackModifier: 31.0f,
+				SB.SEffect: {
+					bewitched_sharpness: 40,
+					sap_slash: 30
+				}
+			},
+			ForgeCaps: {
+				Parent: {}
+			}
+		}
+	}]
+}
