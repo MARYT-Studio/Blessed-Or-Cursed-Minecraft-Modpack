@@ -1,12 +1,12 @@
 {
 	x: -1.0d,
 	y: -2.0d,
-	description: "仿制的故去。",
+	description: "{ftbquests.chapter.4d6df6a4.description}",
 	text: [
-		"以第一代锻造者--红玉为名的优质打刀，我记录了它现在的通用仿品配方。",
+		"{ftbquests.chapter.4d6df6a4.text.1}",
 		"",
-		"在美好的过去，曾是人手一振的流行品，也算是那个时代的回忆了。",
-		"因为各种原因，实际持有它的人数逐渐减少了。"
+		"{ftbquests.chapter.4d6df6a4.text.3}",
+		"{ftbquests.chapter.4d6df6a4.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

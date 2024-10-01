@@ -1,7 +1,7 @@
 {
 	x: 13.5d,
 	y: -2.0d,
-	description: "神秘学与日本刀的交汇之时，灵之刀刃出炉之时.......",
+	description: "{ftbquests.chapter.03f8d634.description}",
 	text: [
 		""
 	],

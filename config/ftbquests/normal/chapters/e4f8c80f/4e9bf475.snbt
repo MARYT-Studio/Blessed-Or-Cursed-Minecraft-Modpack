@@ -2,13 +2,13 @@
 	x: 22.5d,
 	y: -4.0d,
 	shape: "square",
-	description: "取得龙神之泪之刃。",
+	description: "{ftbquests.chapter.4e9bf475.description}",
 	text: [
-		"龙胤的不死之力如此恐怖，而斩断不死的能力却掌握在持有不死之力者的手中......",
+		"{ftbquests.chapter.4e9bf475.text.1}",
 		"",
-		"我更是亲眼看见，在赤色大太刀之下那悲惨的景象......",
+		"{ftbquests.chapter.4e9bf475.text.3}",
 		"",
-		"我曾拥有它和「楔丸」的真品，有一股引力指引着我拔出这振刀，但我并没有这样做......"
+		"{ftbquests.chapter.4e9bf475.text.5}",
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -35,10 +35,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "b9924a02",
-		type: "ftbmoney:money",
-		ftb_money: 256L
 	}]
 }

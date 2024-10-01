@@ -1,10 +1,10 @@
 {
 	x: 6.5d,
 	y: 2.5d,
-	description: "唤樱。",
+	description: "{ftbquests.chapter.4e5a5e09.description}",
 	text: [
-		"被名为\"唤魔者\"的土著人类掌握着的伪刃。",
-		"尽管是仿作，赋予足量的魂樱之妖力，仍有足够的潜力幻化出真品。"
+		"{ftbquests.chapter.4e5a5e09.text.1}",
+		"{ftbquests.chapter.4e5a5e09.text.2}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

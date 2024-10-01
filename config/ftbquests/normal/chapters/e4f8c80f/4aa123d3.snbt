@@ -1,16 +1,16 @@
 {
-	title: "初出茅庐",
+	title: "{ftbquests.chapter.4aa123d3.title}",
 	x: 5.0d,
 	y: -3.5d,
-	description: "刀装与精湛，万变之鞘的始用......",
+	description: "{ftbquests.chapter.4aa123d3.description}",
 	text: [
-		"持有白鞘还远远不够。",
-		"任何一个爱刀的人都知道：刀必须在刀装里才能发挥最大的效用。",
+		"{ftbquests.chapter.4aa123d3.text.1}",
+		"{ftbquests.chapter.4aa123d3.text.2}",
 		"",
-		"大太刀，初出茅庐的刀匠所能锻造的一把好刃，使用浸染了荣耀之火的材料重铸了刀刃，更于刀背附上了使刀刃坚韧的镀钢。",
-		"需要注意的是，所谓的“耀魂钢锭”仅仅存在于理论中，事实上纯铁是唯一能与耀魂贴合的锻刀材料，不必妄想将此用于锻造。",
-		"（翻译：合成表里一闪而过的耀魂铁锭实际上是“耀魂钢锭”，而模组仅仅为这种材料留下了接口却没留下合成方式，必须使用热量与气候的钢锭合成）",
-		"（翻译2：“优质刀条”需要使用5块耀魂铁锭合成）"
+		"{ftbquests.chapter.4aa123d3.text.4}",
+		"{ftbquests.chapter.4aa123d3.text.5}",
+		"{ftbquests.chapter.4aa123d3.text.6}",
+		"{ftbquests.chapter.4aa123d3.text.7}"
 	],
 	dependencies: [
 		"0505192b"

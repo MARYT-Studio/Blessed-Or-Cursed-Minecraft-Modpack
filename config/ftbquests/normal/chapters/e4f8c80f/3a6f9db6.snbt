@@ -1,11 +1,11 @@
 {
 	x: -2.0d,
 	y: -2.0d,
-	description: "火舞的利刃。",
+	description: "{ftbquests.chapter.3a6f9db6.description}",
 	text: [
-		"结月家的家传宝刀，在某个岛屿处被结月家家主发现。",
+		"{ftbquests.chapter.3a6f9db6.text.1}",
 		"",
-		"附着火焰的利刃，挥动时，宛如伴烈火而舞......"
+		"{ftbquests.chapter.3a6f9db6.text.3}",
 	],
 	hide_dependency_lines: true,
 	dependencies: [

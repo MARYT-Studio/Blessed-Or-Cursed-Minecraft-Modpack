@@ -1,13 +1,13 @@
 {
-	title: "结月刀「因缘」",
+	title: "{ftbquests.chapter.4c70ee9c.title}",
 	x: 5.0d,
 	y: 0.0d,
-	description: "终焉樱。",
+	description: "{ftbquests.chapter.4c70ee9c.description}",
 	text: [
-		"结月家家传宝刀的真正姿态。",
-		"名刀闪耀着微弱的光辉，铭刻着「结月 缘」之名......",
+		"{ftbquests.chapter.4c70ee9c.text.1}",
+		"{ftbquests.chapter.4c70ee9c.text.2}",
 		"",
-		"喂，它不叫付丧改啊！！"
+		"{ftbquests.chapter.4c70ee9c.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

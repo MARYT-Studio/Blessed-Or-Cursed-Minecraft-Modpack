@@ -1,14 +1,14 @@
 {
 	x: 4.0d,
 	y: -2.0d,
-	description: "「梅」拵之双刃。",
+	description: "{ftbquests.chapter.2d3ab2e9.description}",
 	text: [
-		"在内府军的一些低级将士之中，经常能见到两种特别的刀拵。",
-		"因为刀鞘上的梅花特征，被称作「梅」。",
+		"{ftbquests.chapter.2d3ab2e9.text.1}",
+		"{ftbquests.chapter.2d3ab2e9.text.2}",
 		"",
-		"实际上，非常的廉价，以至于不是有地位之人看得上的东西。",
+		"{ftbquests.chapter.2d3ab2e9.text.4}",
 		"",
-		".......不要用那样的眼神盯着书发呆啊，又不是我想要逼着你做这些的。"
+		"{ftbquests.chapter.2d3ab2e9.text.6}",
 	],
 	hide_dependency_lines: true,
 	dependencies: [
