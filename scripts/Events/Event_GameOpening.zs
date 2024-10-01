@@ -14,6 +14,12 @@ val giftBread = <minecraft:bread>.withTag({newbie: 1}) * 32;
 val giftHammer = <sakura:stone_hammer>.withTag({newbie: 1});
 val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer, <contenttweaker:feadog>];
 
+// 更新礼包
+// 由于今后可能还会在某次更新的时候发放礼品，统一安排在这个脚本当中：
+// 礼物的名称变量为 updateGift + 版本号去点，礼物的 NBT 标签名为 updateGift_v + 版本号去点
+// 发礼物的版本结束后，将旧的礼物变量注释掉
+var updateGift1192 = <contenttweaker:red_envelope_lubang> * 7;
+
 // Event
 events.onPlayerLoggedIn(
     function(event as PlayerLoggedInEvent) {
@@ -23,11 +29,9 @@ events.onPlayerLoggedIn(
         opening(player);
         var world = player.world;
         if (!(world.remote)) {
-            var data = player.data;
-            // 只执行一次
-            if (isNull(data) ||
-                isNull(data.PlayerPersisted) ||
-                isNull(data.PlayerPersisted.initialinventory_given_items)) {
+            var data = D(player.data);
+            // 新手礼包
+            if(!(data.check("PlayerPersisted.initialinventory_given_items"))) {
                 player.update(
                     {
                         PlayerPersisted: {
@@ -37,6 +41,16 @@ events.onPlayerLoggedIn(
                 for item in newbieItems {
                     player.give(item);
                 }
+            }
+            // 更新礼物
+            if(!(data.check("PlayerPersisted.updateGift_v1192"))) {
+                player.update(
+                    {
+                        PlayerPersisted: {
+                            updateGift_v1192: 1
+                        }
+                    });
+                player.give(updateGift1192);                
             }
         }
     }
