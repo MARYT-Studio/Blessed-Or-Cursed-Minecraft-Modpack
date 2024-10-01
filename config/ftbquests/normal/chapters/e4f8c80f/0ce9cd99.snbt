@@ -18,9 +18,9 @@
 	},
 	x: 18.0d,
 	y: 2.5d,
-	description: "亡灵之遗刃。",
+	description: "{ftbquests.chapter.0ce9cd99.description}",
 	text: [
-		"在永恒的暮色之森中，夺走巫妖的遗刃......"
+		"{ftbquests.chapter.0ce9cd99.text}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

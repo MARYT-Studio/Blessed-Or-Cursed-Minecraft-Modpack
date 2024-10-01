@@ -7,6 +7,9 @@
 		"大概喜欢汤泡饭的人也会喜欢这种干粮吧。"
 	],
 	hide_dependency_lines: true,
+	dependencies: [
+		"d82bdd05"
+	],
 	hide: true,
 	dependency_requirement: "one_completed",
 	tasks: [{

@@ -5,6 +5,9 @@
 		"虽然只能看着你吃，但看上去完全比得上上好的牛排。"
 	],
 	hide_dependency_lines: true,
+	dependencies: [
+		"d82bdd05"
+	],
 	hide: true,
 	tasks: [{
 		uid: "b4e6d61b",

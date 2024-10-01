@@ -1,17 +1,17 @@
 {
 	x: 21.5d,
 	y: 2.0d,
-	description: "渴望鲜血的死之欲望......",
+	description: "{ftbquests.chapter.0fe57577.description}",
 	text: [
-		"说起来，有些滑稽的是，最终蜕变为炼狱刀的，是一把大太刀。",
+		"{ftbquests.chapter.0fe57577.text.1}",
 		"",
 		"",
 		"",
 		"",
 		"",
-		"为什么啊？不是你等等我搞不懂，我好端端给你造了一把红樱一把似蛭，你吞了两把刀却对它们的荣耀与杀戮毫不感兴趣你去钻一把空白的大太刀？？？？？",
-		"我真的不明白这些刀魂都是怎么想的......"
-	],
+		"{ftbquests.chapter.0fe57577.text.7}",
+		"{ftbquests.chapter.0fe57577.text.8}"
+	]
 	dependencies: [
 		"0be78f6d"
 	],
@@ -23,10 +23,5 @@
 			item: "lastsmith:scroll 1 14"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "0f62b492",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

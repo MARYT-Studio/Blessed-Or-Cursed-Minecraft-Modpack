@@ -2,14 +2,14 @@
 	icon: "lastsmith:scroll 1 12",
 	x: 20.5d,
 	y: -1.0d,
-	description: "其被重拾再出鞘之日，血如江河。",
+	description: "{ftbquests.chapter.0be78f6d.description}",
 	text: [
-		"太好了。",
-		"你走到这一步了。",
-		"你正在获得与祂对抗的力量，正在踏上一条从未有来者的长路。",
+		"{ftbquests.chapter.0be78f6d.text.1}",
+		"{ftbquests.chapter.0be78f6d.text.2}",
+		"{ftbquests.chapter.0be78f6d.text.3}",
 		"",
-		"稀世名器，或被雪藏，或被遗弃。",
-		"其被重拾再出鞘之日，血如江河。"
+		"{ftbquests.chapter.0be78f6d.text.5}",
+		"{ftbquests.chapter.0be78f6d.text.6}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -35,10 +35,5 @@
 			item: "lastsmith:scroll 1 12"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "c2f25539",
-		type: "ftbmoney:money",
-		ftb_money: 256L
 	}]
 }

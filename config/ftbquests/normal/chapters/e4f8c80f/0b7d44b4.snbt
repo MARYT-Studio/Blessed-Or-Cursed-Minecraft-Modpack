@@ -1,15 +1,15 @@
 {
 	x: 7.0d,
 	y: -3.5d,
-	description: "隐居的浪人，以一振未经修饰的竹刀击退了侵扰他安宁的人。",
+	description: "{ftbquests.chapter.0b7d44b4.description}",
 	text: [
-		"我曾听说过一个传说：一名手持竹光的隐居者住在高山之上，当来犯他的人出现之时，竹光出鞘便斩退来犯之人......",
+		"{ftbquests.chapter.0b7d44b4.text.1}",
 		"",
-		"这个传说其实是真事，但知道内幕的人只有一个：我自己。住在山中的竹刀隐者是我的友人。",
+		"{ftbquests.chapter.0b7d44b4.text.3}",
 		"",
-		"我注意过他的竹刀，它散发着不同寻常的灵力......",
+		"{ftbquests.chapter.0b7d44b4.text.5}",
 		"",
-		"这也是我喊你做上品竹光的目的。"
+		"{ftbquests.chapter.0b7d44b4.text.7}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -25,10 +25,5 @@
 			item: "lastsmith:scroll 1 3"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "4d52d17e",
-		type: "ftbmoney:money",
-		ftb_money: 64L
 	}]
 }

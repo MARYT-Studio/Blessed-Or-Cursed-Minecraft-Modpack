@@ -8,6 +8,9 @@
 		"但是真的很顶饿。"
 	],
 	hide_dependency_lines: true,
+	dependencies: [
+		"d82bdd05"
+	],
 	hide: true,
 	tasks: [{
 		uid: "49421fb4",

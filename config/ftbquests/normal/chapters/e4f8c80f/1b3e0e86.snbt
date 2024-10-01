@@ -1,11 +1,11 @@
 {
 	x: 14.5d,
 	y: -1.0d,
-	description: "渴求着血腥的刀刃，有着玷污生灵的力量......",
+	description: "{ftbquests.chapter.1b3e0e86.description}",
 	text: [
-		"这是那个魔法世界的一切了。",
+		"{ftbquests.chapter.1b3e0e86.text.1}",
 		"",
-		"我想，这也是他们不顾一切地向我们开辟空间门的理由吧？那里已经不剩什么了。"
+		"{ftbquests.chapter.1b3e0e86.text.3}"
 	],
 	dependencies: [
 		"50ad71e0"

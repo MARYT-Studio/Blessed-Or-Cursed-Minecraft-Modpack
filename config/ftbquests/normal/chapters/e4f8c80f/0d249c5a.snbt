@@ -3,11 +3,11 @@
 	y: 2.0d,
 	shape: "diamond",
 	text: [
-		"红莲的结晶与血染的刀身......",
+		"{ftbquests.chapter.0d249c5a.text.1}",
 		"",
-		"那是在地狱之底，渴望鲜血的死之欲望，谓之炼狱刀「死念」。",
+		"{ftbquests.chapter.0d249c5a.text.3}",
 		"",
-		"尽管不是这个世界的力量，但你仍可以利用它，你也不得不去利用它达到我的感悟。"
+		"{ftbquests.chapter.0d249c5a.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -33,10 +33,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "afad2291",
-		type: "ftbmoney:money",
-		ftb_money: 512L
 	}]
 }
