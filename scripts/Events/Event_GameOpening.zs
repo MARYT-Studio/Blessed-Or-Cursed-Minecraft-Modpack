@@ -50,7 +50,8 @@ events.onPlayerLoggedIn(
                             updateGift_v1192: 1
                         }
                     });
-                player.give(updateGift1192);                
+                player.give(updateGift1192); 
+                player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.update_gift"));               
             }
         }
     }
