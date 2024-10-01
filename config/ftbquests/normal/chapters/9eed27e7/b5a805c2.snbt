@@ -1,16 +1,16 @@
 {
-	title: "拔刀剑快速教程4",
-	x: -5.5d,
-	y: 1.5d,
+	title: "{ftbquests.chapter.b5a805c2.title}",
+	x: 30.0d,
+	y: 16.5d,
 	text: [
-		"最后是一些基础教程",
-		"锻造数：拔刀剑在铁砧上修理的次数，锻造数+基础伤害+10是拔刀剑的极限伤害，但需要同样等级的经验才能生效",
-		"特殊攻击（Special Attack，SA）：长按右键释放，任意带有附魔的拔刀剑都具有此技能，造成无视护甲的伤害，发动此技能会消耗一定数量的耀魂值。",
-		"幻影刃（Special Blade，SB），鼠标中键释放，只有带有力量附魔的妖刀具有此技能，发动此技能会消耗一定数量的耀魂值。",
-		"特殊效果（Special Effect，SE）：部分拔刀剑拥有的天赋被动技能，其名称后的数字，代表当玩家的经验等级超过此数值时，此特殊效果才能激活。",
+		"{ftbquests.chapter.b5a805c2.text.1}",
+		"{ftbquests.chapter.b5a805c2.text.2}",
+		"{ftbquests.chapter.b5a805c2.text.3}",
+		"{ftbquests.chapter.b5a805c2.text.4}",
+		"{ftbquests.chapter.b5a805c2.text.5}",
 		"",
-		"把刀摆刀挂台上，手持与刀有同种附魔，且刀上的该附魔已到满级的耀魂铁锭左键，有80%概率掉落该SA的耀魂宝珠。",
-		"在刀挂台上，将带有SA的耀魂宝珠敲在拔刀剑上，可以让这柄拔刀剑获得此SA。"
+		"{ftbquests.chapter.b5a805c2.text.7}",
+		"{ftbquests.chapter.b5a805c2.text.8}"
 	],
 	dependencies: [
 		"b9b0a779"
@@ -23,8 +23,8 @@
 			id: "flammpfeil.slashblade:slashblade",
 			tag: {
 				ench: [{
-					lvl: 1s,
-					id: 20s
+					lvl: 1,
+					id: 20
 				}],
 				SlashBlade: {},
 				killCount: 1000,
@@ -34,10 +34,5 @@
 				Parent: {}
 			}
 		}
-	}],
-	rewards: [{
-		uid: "50a53583",
-		type: "xp",
-		xp: 1
 	}]
 }

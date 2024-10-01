@@ -1,5 +1,5 @@
 {
-	title: "{ftbquests.chapter.chapter.title}",
+	title: "{ftbquests.chapter.guide.title}",
 	icon: "minecraft:egg",
 	always_invisible: false,
 	group: 0,

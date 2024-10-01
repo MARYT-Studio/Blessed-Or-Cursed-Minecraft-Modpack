@@ -1,7 +1,7 @@
 {
 	title: "{ftbquests.chapter.df637748.title}",
-	x: -3.0d,
-	y: -1.5d,
+	x: 28.0d,
+	y: 13.5d,
 	description: "{ftbquests.chapter.df637748.description}",
 	text: [
 		"{ftbquests.chapter.df637748.text.1}",

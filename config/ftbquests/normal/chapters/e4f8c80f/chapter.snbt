@@ -1,5 +1,5 @@
 {
-	title: "最后的太刀匠人",
+	title: "{ftbquests.chapter.lastsmith.title}",
 	icon: "lastsmith:scroll 1 12",
 	always_invisible: false,
 	group: 0,
