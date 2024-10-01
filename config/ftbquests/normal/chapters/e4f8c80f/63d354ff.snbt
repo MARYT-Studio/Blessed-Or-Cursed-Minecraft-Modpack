@@ -1,9 +1,9 @@
 {
 	x: 10.5d,
 	y: -4.5d,
-	description: "樱之刃传说。",
+	description: "{ftbquests.chapter.63d354ff.description}",
 	text: [
-		"不过是三把不同性质的仿品罢了。"
+		"{ftbquests.chapter.63d354ff.text}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

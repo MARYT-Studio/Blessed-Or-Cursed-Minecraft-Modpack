@@ -1,14 +1,14 @@
 {
 	x: 5.0d,
 	y: 1.0d,
-	description: "银魂之刃。",
+	description: "{ftbquests.chapter.6b769c3c.description}",
 	text: [
-		"一把不知从何处而来的木刀。",
-		"无鞘，却很是坚韧，不会轻易断裂。",
+		"{ftbquests.chapter.6b769c3c.text.1}",
+		"{ftbquests.chapter.6b769c3c.text.2}",
 		"",
-		"洞爷湖，传说是一位仙人的名姓，又有种说法是一处地名.....",
-		"愿意贩卖此刀的武器匠人很是稀少，然而你是有特殊的力量的。",
-		"用你的感悟凝结一把吧。"
+		"{ftbquests.chapter.6b769c3c.text.4}",
+		"{ftbquests.chapter.6b769c3c.text.5}",
+		"{ftbquests.chapter.6b769c3c.text.6}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

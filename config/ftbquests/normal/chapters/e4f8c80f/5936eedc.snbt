@@ -1,13 +1,13 @@
 {
 	x: 4.0d,
 	y: 0.0d,
-	description: "我搞不懂。",
+	description: "{ftbquests.chapter.5936eedc.description}",
 	text: [
-		"对于那些只会研习剑术的武者来说，“万物皆可为兵刃”。",
-		"所以对于他们而言，这根来自外界的棍子大概是最适合他们的。",
+		"{ftbquests.chapter.5936eedc.text.1}",
+		"{ftbquests.chapter.5936eedc.text.2}",
 		"",
-		"实话说，我搞不懂这玩意为什么如此坚固，我用刀试斩时这玩意把我一把永贞都崩断了。",
-		"好像是叫“日光灯管”吧？我曾经听说过这个东西，外面的人都在用这种东西照明吗？"
+		"{ftbquests.chapter.5936eedc.text.4}",
+		"{ftbquests.chapter.5936eedc.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

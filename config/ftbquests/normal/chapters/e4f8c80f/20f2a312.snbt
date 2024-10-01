@@ -18,13 +18,13 @@
 	},
 	x: 1.0d,
 	y: 0.0d,
-	description: "「山樱」之名的伪物。",
+	description: "{ftbquests.chapter.20f2a312.description}",
 	text: [
-		"在盗国之战前，为了苇原国的存亡，苇原仅存的刀匠聚集在一起，不顾平日里闭门造车的矜持，花费一年联合打造了十二振上品钢刀。",
+		"{ftbquests.chapter.20f2a312.text.1}",
 		"",
-		"过程是惨烈的：敌人不会放任他们轻易成功，超过半数的刀匠在锻造成功后被忍者杀害，更有为了增强刀的杀伐之气，不惜以刀自刎者。",
+		"{ftbquests.chapter.20f2a312.text.3}",
 		"",
-		"于是，事故发生了......"
+		"{ftbquests.chapter.20f2a312.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

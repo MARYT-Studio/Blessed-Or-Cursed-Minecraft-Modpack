@@ -1,15 +1,15 @@
 {
 	x: -3.0d,
 	y: 0.0d,
-	description: "幸运之白狐。",
+	description: "{ftbquests.chapter.741c871c.description}",
 	text: [
-		"曾经有一户人家，持有着两把被灵气覆盖着的红玉。",
-		"实际上，那户人家住着的本身就是妖怪，准确来说，狐妖。",
+		"{ftbquests.chapter.741c871c.text.1}",
+		"{ftbquests.chapter.741c871c.text.2}",
 		"",
-		"这一位狐妖是开创双长刀流派的一位剑术大师，现在已经隐居在某处了......",
-		"受她的灵力影响，红玉刃化了妖，幻作两振妖狐之刃，与她一齐隐居着。",
+		"{ftbquests.chapter.741c871c.text.4}",
+		"{ftbquests.chapter.741c871c.text.5}",
 		"",
-		"具有从来犯者手中夺取宝物的力量。"
+		"{ftbquests.chapter.741c871c.text.7}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

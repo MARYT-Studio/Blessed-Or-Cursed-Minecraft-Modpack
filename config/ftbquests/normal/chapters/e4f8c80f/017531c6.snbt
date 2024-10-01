@@ -1,18 +1,18 @@
 {
 	x: 7.0d,
 	y: 1.5d,
-	description: "落下五月雨的一刻，空间被切裂开来......",
+	description: "{ftbquests.chapter.017531c6.description}",
 	text: [
-		"事实上，山樱村的陨铁曾被偷窃过。",
-		"盗取者是其他地区的刀匠，他们在苇原边境的一处地方试图打造出与山樱十二刃等同的上品钢刀，以献给苇原国的敌人--内府。",
-		"这振钢刀被打造出来，唤之曰「葵」。",
+		"{ftbquests.chapter.017531c6.text.1}",
+		"{ftbquests.chapter.017531c6.text.2}",
+		"{ftbquests.chapter.017531c6.text.3}",
 		"",
-		"刀匠毕竟只是刀匠，尽管能够锻造出上好的妖刃，却不能够与它心意相同。",
-		"察觉事态变化的苇原武者夺走了「葵」，并让它沾染了其锻造者的鲜血。",
+		"{ftbquests.chapter.017531c6.text.5}",
+		"{ftbquests.chapter.017531c6.text.6}",
 		"",
-		"尽管并非正品山樱，甚至可以称一句“伪刃”，「葵」却在山樱唤出邪魔的不远处经历了与「神月」相同的变化，与陨铁产生了共鸣，这使得它只是略逊于神月，毫无疑问也是苇原的一大战力。",
+		"{ftbquests.chapter.017531c6.text.8}",
 		"",
-		"樱之流「空间震」是你能获得的最大助力之一，放空你的心境，全身心地去体悟它。"
+		"{ftbquests.chapter.017531c6.text.10}",
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -27,10 +27,5 @@
 			item: "lastsmith:scroll 1 8"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "3ac528c1",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

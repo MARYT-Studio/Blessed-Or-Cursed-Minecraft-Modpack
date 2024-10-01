@@ -1,13 +1,13 @@
 {
 	x: 11.5d,
 	y: -3.5d,
-	description: "“樱之刃”--能够驱除一切邪恶的秘剑。",
+	description: "{ftbquests.chapter.7e012f2f.description}",
 	text: [
-		"故事在手记里。",
+		"{ftbquests.chapter.7e012f2f.text.1}",
 		"",
-		"若是邪魔真的源自于人类，那我却要对我在手记中的观念提出质疑了。",
-		"那邪魔分明与域外的邪神有着关联，若是来自人类，妖怪何来的理由与之对抗许久？",
-		"或许有别的缘由，但我想现在已经无从得知了。"
+		"{ftbquests.chapter.7e012f2f.text.3}",
+		"{ftbquests.chapter.7e012f2f.text.4}",
+		"{ftbquests.chapter.7e012f2f.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -22,10 +22,5 @@
 			item: "lastsmith:scroll 1 5"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "8e090402",
-		type: "ftbmoney:money",
-		ftb_money: 64L
 	}]
 }

@@ -1,14 +1,14 @@
 {
-	title: "高科技利刃的蓝图",
+	title: "{ftbquests.chapter.7a8938a8.title}",
 	icon: "lastsmith:scroll 1 18",
 	x: 16.0d,
 	y: -2.0d,
-	description: "结合了最新锐的纳米技术。在充能状态下保持最佳输出状态。",
+	description: "{ftbquests.chapter.7a8938a8.description}",
 	text: [
-		"新型高科技利刃的蓝图。",
+		"{ftbquests.chapter.7a8938a8.text.1}",
 		"",
-		"我实在搞不太懂这些，不过有些事不是我的意志所能左右的。",
-		"用所谓的无限能源来换吧。"
+		"{ftbquests.chapter.7a8938a8.text.3}",
+		"{ftbquests.chapter.7a8938a8.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -25,15 +25,5 @@
 		}],
 		consume_items: true,
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "f8642de0",
-		type: "item",
-		item: "lastsmith:scroll 1 18"
-	},
-	{
-		uid: "c74c6253",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

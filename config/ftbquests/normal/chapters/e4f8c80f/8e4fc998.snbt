@@ -1,17 +1,15 @@
 {
-	title: "豆腐世界",
+	title: "{ftbquests.chapter.8e4fc998.title}",
 	icon: "tofucraft:tofu_material 1 1",
 	x: 6.0d,
 	y: -3.0d,
-	description: "？？？",
+	description: "{ftbquests.chapter.8e4fc998.description}",
 	text: [
-		"尽管，我是说，我知道这个地方有着大量可以安全击杀的妖物，更是有着“钻石豆腐”这种珍贵优越的盔甲与武器锻造材料。",
+		"{ftbquests.chapter.8e4fc998.text.1}",
 		"",
-		"但是，那什么。",
+		"{ftbquests.chapter.8e4fc998.text.3}",
 		"",
-		"你脚踩过的豆腐真的还能吃吗",
-		"",
-		"（解锁‘豆腐天堂’）"
+		"{ftbquests.chapter.8e4fc998.text.5}"
 	],
 	dependencies: [
 		"4aa123d3"

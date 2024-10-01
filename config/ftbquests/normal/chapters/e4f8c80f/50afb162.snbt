@@ -1,17 +1,17 @@
 {
 	x: 9.5d,
 	y: 2.5d,
-	description: "山樱之刃。",
+	description: "{ftbquests.chapter.50afb162.description}",
 	text: [
-		"人类使用了新的战法，在一场惨烈的战斗后斩杀了邪魔。",
-		"它化作的灰烬里，留下的是最后一把山樱刃。",
+		"{ftbquests.chapter.50afb162.text.1}",
+		"{ftbquests.chapter.50afb162.text.2}",
 		"",
-		"此时，是太阴历的闰月。人类因此命名其为山樱「神月」。",
+		"{ftbquests.chapter.50afb162.text.4}",
 		"",
-		"那是山樱村，是苇原国的希望......",
+		"{ftbquests.chapter.50afb162.text.6}",
 		"",
-		"第二步。",
-		"更多的妖力。"
+		"{ftbquests.chapter.50afb162.text.8}",
+		"{ftbquests.chapter.50afb162.text.9}"
 	],
 	dependencies: [
 		"757fae6f"

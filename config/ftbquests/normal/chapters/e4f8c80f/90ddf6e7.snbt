@@ -1,13 +1,13 @@
 {
 	x: 16.0d,
 	y: -3.0d,
-	description: "科技之刀刃。",
+	description: "{ftbquests.chapter.90ddf6e7.description}",
 	text: [
-		"虽然已经震惊过了，但外界真的已经发展到这种程度了？",
-		"一直无法理解这两把刀的运作形式，甚至文始与千兆的激光技术对我更直观那么一点点。",
-		"如果忽略那些无关紧要的东西的话，效果上类似风来之械刃。",
+		"{ftbquests.chapter.90ddf6e7.text.1}",
+		"{ftbquests.chapter.90ddf6e7.text.2}",
+		"{ftbquests.chapter.90ddf6e7.text.3}",
 		"",
-		"说起来，似乎千鹤村正也有一把机械化变种来着？"
+		"{ftbquests.chapter.90ddf6e7.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

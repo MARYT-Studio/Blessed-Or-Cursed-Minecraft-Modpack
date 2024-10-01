@@ -1,14 +1,14 @@
 {
-	title: "传统竹光的技艺",
+	title: "{ftbquests.chapter.0505192b.title}",
 	x: 1.0d,
 	y: -3.5d,
-	description: "万变之鞘的原型......",
+	description: "{ftbquests.chapter.0505192b.description}",
 	text: [
-		"制作一振银纸竹光。",
+		"{ftbquests.chapter.0505192b.text.1}",
 		"",
-		"竹光刀的完成品，被称为「银纸竹光」。",
-		"铁箔或银箔之类的银白色金属用鸡蛋清贴合在刀刃上，加以涂装。",
-		"外行人，哪怕是仔细端倪，不亲手抚摸都会认为这是钢刃，足以说明竹光刀技艺之精湛。"
+		"{ftbquests.chapter.0505192b.text.3}",
+		"{ftbquests.chapter.0505192b.text.4}",
+		"{ftbquests.chapter.0505192b.text.5}"
 	],
 	dependencies: [
 		"48775faf"

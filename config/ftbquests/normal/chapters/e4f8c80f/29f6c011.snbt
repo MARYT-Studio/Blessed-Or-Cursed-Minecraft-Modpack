@@ -1,12 +1,12 @@
 {
 	x: 12.5d,
 	y: 2.5d,
-	description: "「幽冥成佛之剑」",
+	description: "{ftbquests.chapter.29f6c011.description}",
 	text: [
-		"可曾记得魂樱的起源？",
-		"刀匠所作所为便是给予那些沉浸互相厮杀的人类与妖怪力量，这便是所谓正义。",
+		"{ftbquests.chapter.29f6c011.text.1}",
+		"{ftbquests.chapter.29f6c011.text.2}",
 		"",
-		"......去看手记吧，孩子。"
+		"{ftbquests.chapter.29f6c011.text.4}"
 	],
 	dependencies: [
 		"d231ae90"

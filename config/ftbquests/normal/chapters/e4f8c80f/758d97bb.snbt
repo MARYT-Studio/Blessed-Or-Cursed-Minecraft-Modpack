@@ -2,9 +2,9 @@
 	x: 22.5d,
 	y: -3.0d,
 	shape: "square",
-	description: "地狱之长刀。",
+	description: "{ftbquests.chapter.758d97bb.description}",
 	text: [
-		"拙劣的仿作。"
+		"{ftbquests.chapter.758d97bb.text}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -29,10 +29,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "d110b5b6",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

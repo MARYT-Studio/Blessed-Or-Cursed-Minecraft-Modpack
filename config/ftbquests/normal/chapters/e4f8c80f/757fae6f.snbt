@@ -1,16 +1,16 @@
 {
 	x: 8.5d,
 	y: 2.5d,
-	description: "山樱之刃。",
+	description: "{ftbquests.chapter.757fae6f.description}",
 	text: [
-		"邪魔侵染的山樱，最终使得邪魔再度降临......",
+		"{ftbquests.chapter.757fae6f.text.1}",
 		"",
-		"邪魔吞噬了所有的山樱刀，一同被吞噬的还有在场的所有人。",
+		"{ftbquests.chapter.757fae6f.text.3}",
 		"",
-		"虽然已经过去一个轮回，对于山河破碎的苇原来说，它仍是足以雪上加霜的天灾。",
+		"{ftbquests.chapter.757fae6f.text.5}",
 		"",
-		"你需要做的，是利用魂樱代表的纯净妖力将九把山樱的仿品融合在一起，一步步借此溯源那把传说之刃。",
-		"这一步很轻松，但只是第一步。"
+		"{ftbquests.chapter.757fae6f.text.7}",
+		"{ftbquests.chapter.757fae6f.text.8}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

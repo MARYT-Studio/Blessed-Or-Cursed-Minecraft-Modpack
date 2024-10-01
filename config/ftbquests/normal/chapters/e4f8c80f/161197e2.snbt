@@ -1,13 +1,13 @@
 {
 	x: 0.0d,
 	y: -2.0d,
-	description: "青金之刃。",
+	description: "{ftbquests.chapter.161197e2.description}",
 	text: [
-		"我第一自己认真设计的刀，命名「永贞」。",
+		"{ftbquests.chapter.161197e2.text.1}",
 		"",
-		"我个人认为很适合新手模仿学习，尽管不是传统的日本刀，似乎也不算太值得学习的作品。",
+		"{ftbquests.chapter.161197e2.text.3}",
 		"",
-		"但对于你，这是你的必经之路。"
+		"{ftbquests.chapter.161197e2.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

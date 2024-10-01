@@ -1,16 +1,16 @@
 {
 	x: 26.5d,
 	y: -2.0d,
-	description: "文之「速风」。",
+	description: "{ftbquests.chapter.3025b858.description}",
 	text: [
-		"我是一名鸦天狗，更是一名「阅读者」......",
-		"拿起锻造锤之时，我便已是合格的刀匠了。",
-		"他们只会要求更强大的力量为他们所用，只懂得互相厮杀，甚至为此失去本心。",
-		"「真理之剑」，他们本是举起手中利刃去保护世人的力量......",
+		"{ftbquests.chapter.3025b858.text.1}",
+		"{ftbquests.chapter.3025b858.text.2}",
+		"{ftbquests.chapter.3025b858.text.3}",
+		"{ftbquests.chapter.3025b858.text.4}",
 		"",
-		"他们的无理要求，让我憎恶。",
-		"这两振刀，是对抗他们的力量。",
-		"现在就供你取用吧。"
+		"{ftbquests.chapter.3025b858.text.6}",
+		"{ftbquests.chapter.3025b858.text.7}",
+		"{ftbquests.chapter.3025b858.text.8}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

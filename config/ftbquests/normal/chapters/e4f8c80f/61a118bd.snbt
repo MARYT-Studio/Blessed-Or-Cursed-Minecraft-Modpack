@@ -1,12 +1,12 @@
 {
 	x: 7.5d,
 	y: 2.5d,
-	description: "手持山樱的战士哟。",
+	description: "{ftbquests.chapter.61a118bd.description}",
 	text: [
-		"你有感受到吗？",
-		"幻化的奇迹，你应该不止一次见证了。",
+		"{ftbquests.chapter.61a118bd.text.1}",
+		"{ftbquests.chapter.61a118bd.text.2}",
 		"",
-		"沉下心来，你的路还远着。"
+		"{ftbquests.chapter.61a118bd.text.4}"
 	],
 	dependencies: [
 		"4e5a5e09"

@@ -1,13 +1,13 @@
 {
 	x: 18.5d,
 	y: -1.0d,
-	description: "凋零之刃--其二。",
+	description: "{ftbquests.chapter.6e8eb8c5.description}",
 	text: [
-		"被凋灵之力侵蚀的太刀。",
-		"在耀魂铁锭构筑的刀挂台上安放无铭之刃，召唤凋灵，冲击会使刀刃的进化达成共鸣。",
-		"来自于散华和凋灵的共同作用，它有着一部分凋灵的力量。",
+		"{ftbquests.chapter.6e8eb8c5.text.1}",
+		"{ftbquests.chapter.6e8eb8c5.text.2}",
+		"{ftbquests.chapter.6e8eb8c5.text.3}",
 		"",
-		"极易反噬自身。"
+		"{ftbquests.chapter.6e8eb8c5.text.5}",
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -34,10 +34,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "9c195b10",
-		type: "ftbmoney:money",
-		ftb_money: 64L
 	}]
 }

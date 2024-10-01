@@ -1,17 +1,17 @@
 {
-	title: "竹刀的基本技艺",
+	title: "{ftbquests.chapter.48775faf.title}",
 	x: -4.0d,
 	y: -3.5d,
-	description: "古老的苇名国技艺。",
+	description: "{ftbquests.chapter.48775faf.description}",
 	text: [
-		"制作一振竹刀。",
+		"{ftbquests.chapter.48775faf.text.1}",
 		"",
-		"竹光刀的技艺是苇名地区的传统工艺。",
-		"苇名缺少铁矿资源，所以通常来说竹刀成了该地区最常见的刀剑了。",
-		"即使是竹，也有着锋利的刃，切裂表皮不成问题。",
+		"{ftbquests.chapter.48775faf.text.3}",
+		"{ftbquests.chapter.48775faf.text.4}",
+		"{ftbquests.chapter.48775faf.text.5}",
 		"",
-		"我知道你心中的焦火，但这仅仅是最基础的工艺步骤，稍安勿躁。"
-	],
+		"{ftbquests.chapter.48775faf.text.7}"
+	]
 	dependencies: [
 		"9a0a6832"
 	],
@@ -34,10 +34,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "7e78ec60",
-		type: "xp",
-		xp: 1
 	}]
 }

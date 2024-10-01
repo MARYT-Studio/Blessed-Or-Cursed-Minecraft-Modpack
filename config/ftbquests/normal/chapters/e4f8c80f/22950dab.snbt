@@ -1,13 +1,13 @@
 {
 	x: 2.0d,
 	y: -2.0d,
-	description: "狂人。狂器。狂魂。",
+	description: "{ftbquests.chapter.22950dab.description}",
 	text: [
-		"曾经有一个失去了挚爱之人的战士，挥舞着自己的最后一丝挚爱之器踏上了还乡和复仇的道路.......",
-		"他后来战死。灵魂却不愿成佛，其手持之刃，名为斗刀，意为战斗之刀。",
+		"{ftbquests.chapter.22950dab.text.1}",
+		"{ftbquests.chapter.22950dab.text.2}",
 		"",
-		"他的战斗是孤独的，只有独自一人的战斗，故名「孤独」。",
-		"其灵魂仍手持着他的利刃，寻觅归乡之路。"
+		"{ftbquests.chapter.22950dab.text.4}",
+		"{ftbquests.chapter.22950dab.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

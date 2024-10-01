@@ -18,13 +18,13 @@
 	},
 	x: 0.0d,
 	y: 0.0d,
-	description: "「山樱」之名的伪物。",
+	description: "{ftbquests.chapter.554e814e.description}",
 	text: [
-		"苇原国地区，曾有一山樱树在一无名村庄中心。",
+		"{ftbquests.chapter.554e814e.text.1}",
 		"",
-		"太阴历，第二轮回，月与夏与木之年，天降陨石直击了村庄，除了那颗山樱之外没有幸存的生灵。",
+		"{ftbquests.chapter.554e814e.text.3}",
 		"",
-		"第二年，一批人发现了山樱的神迹，并在周边重新建立起村庄，名曰「山樱村」。"
+		"{ftbquests.chapter.554e814e.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

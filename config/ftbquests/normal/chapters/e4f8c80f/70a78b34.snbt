@@ -19,11 +19,11 @@
 	},
 	x: 18.5d,
 	y: -3.5d,
-	description: "「大蛇鄂门」的仿作。",
+	description: "{ftbquests.chapter.70a78b34.description}",
 	text: [
-		"自「大蛇鄂门」诞生以来，其仿作多如牛毛。",
+		"{ftbquests.chapter.70a78b34.text.1}",
 		"",
-		"在为其除锈前，无法认清其中的奥妙。"
+		"{ftbquests.chapter.70a78b34.text.3}",
 	],
 	hide_dependency_lines: true,
 	dependencies: [

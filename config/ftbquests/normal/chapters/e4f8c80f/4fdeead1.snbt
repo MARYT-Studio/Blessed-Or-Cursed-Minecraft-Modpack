@@ -2,14 +2,14 @@
 	x: 25.0d,
 	y: -1.0d,
 	shape: "diamond",
-	description: "千兆毁灭。",
+	description: "{ftbquests.chapter.4fdeead1.description}",
 	text: [
-		"这是......我死后所诞生的刀。",
-		"我从未见过这样的刀，与无神无刃之刀又完全不同，甚至可以说几乎浑身上下半丝妖力都没有。",
-		"......",
-		"它甚至足以胜过「无念」半分，虽然损耗巨大。",
+		"{ftbquests.chapter.4fdeead1.text.1}",
+		"{ftbquests.chapter.4fdeead1.text.2}",
+		"{ftbquests.chapter.4fdeead1.text.3}",
+		"{ftbquests.chapter.4fdeead1.text.4}",
 		"",
-		"更详细的介绍，去手记里看吧，文正那家伙比我更熟悉这把刀。"
+		"{ftbquests.chapter.4fdeead1.text.6}",
 	],
 	dependencies: [
 		"ed84363a"
@@ -28,15 +28,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "1568f4dc",
-		type: "item",
-		item: "lastsmith:scroll 1 19"
-	},
-	{
-		uid: "57561071",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

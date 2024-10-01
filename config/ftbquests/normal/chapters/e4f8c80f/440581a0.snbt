@@ -1,19 +1,19 @@
 {
 	x: 18.5d,
 	y: 1.5d,
-	description: "“在塔中作祟的亡灵呵......”",
+	description: "{ftbquests.chapter.440581a0.description}",
 	text: [
-		"“在塔中作祟的亡灵呵......”",
+		"{ftbquests.chapter.440581a0.text.1}",
 		"",
-		"“不愿离开自己的遗刃......”",
+		"{ftbquests.chapter.440581a0.text.3}",
 		"",
-		"“它紧紧地握着这振刀......”",
+		"{ftbquests.chapter.440581a0.text.5}",
 		"",
-		"“在塔中作祟的亡灵呵......”",
+		"{ftbquests.chapter.440581a0.text.7}",
 		"",
-		"“它死后为刀不愿安息......”",
+		"{ftbquests.chapter.440581a0.text.9}",
 		"",
-		"“它紧紧地握着这振刀......”"
+		"{ftbquests.chapter.440581a0.text.11}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -27,10 +27,5 @@
 			item: "lastsmith:scroll 1 7"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "e3dc021d",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

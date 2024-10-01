@@ -1,7 +1,7 @@
 {
 	x: 23.5d,
 	y: 1.5d,
-	description: "渴望鲜血的死之欲望......",
+	description: "{ftbquests.chapter.472323e5.description}",
 	text: [
 		""
 	],

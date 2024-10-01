@@ -1,13 +1,13 @@
 {
 	x: 5.0d,
 	y: 2.0d,
-	description: "凋零之鸦。",
+	description: "{ftbquests.chapter.7539a883.description}",
 	text: [
-		"「雪鸦」的姊妹刀，却由永贞幻化而来。",
-		"三分之二的阴黑之核，八根纯白鸟羽，再佐以一片魂之樱。",
+		"{ftbquests.chapter.7539a883.text.1}",
+		"{ftbquests.chapter.7539a883.text.2}",
 		"",
-		"它藏着很强的力量。",
-		"（说起来，这把刀的SA是波刀龙胆你知道吗）"
+		"{ftbquests.chapter.7539a883.text.4}",
+		"{ftbquests.chapter.7539a883.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
