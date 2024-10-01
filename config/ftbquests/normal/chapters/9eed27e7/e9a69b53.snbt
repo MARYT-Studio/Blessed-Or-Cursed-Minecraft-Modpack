@@ -22,7 +22,7 @@
 	dependencies: [
 		"d2d3fb09"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "f71484b4",
 		type: "checkmark",

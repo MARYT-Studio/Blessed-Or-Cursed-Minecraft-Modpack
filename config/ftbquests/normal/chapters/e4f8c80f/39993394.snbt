@@ -2,21 +2,21 @@
 	x: 21.5d,
 	y: -7.0d,
 	shape: "rsquare",
-	description: "无形的刀刃......",
+	description: "{ftbquests.chapter.39993394.description}",
 	text: [
-		"曾在古书之中见到过这句话：",
+		"{ftbquests.chapter.39993394.text.1}",
 		"",
-		"斩千敌者，无刃亦可切碎万物......",
-		"然代价甚高，非凡夫俗子所能企及......",
+		"{ftbquests.chapter.39993394.text.3}",
+		"{ftbquests.chapter.39993394.text.4}",
 		"",
-		"这也许只有真正的武者才会理解吧，我所能做的只是借蕴含着大量荣耀与杀伐之气的万变之鞘塑造妖力刃罢了。",
-		"......这份精神，是可以转移的？",
-		"（翻译：无神无刃的全部强度都在它的SE上，敲下来移到主战刀上吧）"
+		"{ftbquests.chapter.39993394.text.6}",
+		"{ftbquests.chapter.39993394.text.7}",
+		"{ftbquests.chapter.39993394.text.8}"
 	],
 	dependencies: [
 		"0be78f6d"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "ab97c495",
 		type: "item",
@@ -37,10 +37,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "5d4af276",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

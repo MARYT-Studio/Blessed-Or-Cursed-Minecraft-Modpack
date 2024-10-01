@@ -20,7 +20,7 @@
 		"58d0d20f",
 		"4fdeead1"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "831d2cc4",
 		type: "item",

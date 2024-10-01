@@ -1,21 +1,21 @@
 {
 	x: 9.5d,
 	y: 3.5d,
-	description: "山樱之刃。",
+	description: "{ftbquests.chapter.dc62f482.description}",
 	text: [
-		"盗国之战爆发了。",
-		"「神月」与「葵」并肩作战，以绝技-樱之流「空间震」击退了千百敌兵。",
+		"{ftbquests.chapter.dc62f482.text.1}",
+		"{ftbquests.chapter.dc62f482.text.2}",
 		"",
-		"我曾见识过那一剑技的真正实力：落下“五月雨”的一刻，空间被切裂开来......",
+		"{ftbquests.chapter.dc62f482.text.4}",
 		"",
-		"一步之遥。",
-		"据我所知，山樱之灵力强盛，其因除了邪魔之力外，还在于其落下的陨铁炼制而成的魂樱之钢。",
-		"换上樱之宝珠吧。"
+		"{ftbquests.chapter.dc62f482.text.6}",
+		"{ftbquests.chapter.dc62f482.text.7}",
+		"{ftbquests.chapter.dc62f482.text.8}"
 	],
 	dependencies: [
 		"50afb162"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "2e8b3c77",
 		type: "item",

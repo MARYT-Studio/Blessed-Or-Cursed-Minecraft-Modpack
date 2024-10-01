@@ -19,7 +19,7 @@
 		"4d6df6a4",
 		"4b2b2a42"
 	],
-	hide: true,
+	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "a6863737",

@@ -2,15 +2,15 @@
 	x: 22.5d,
 	y: -2.0d,
 	shape: "rsquare",
-	description: "地狱之长刀。",
+	description: "{ftbquests.chapter.da708500.description}",
 	text: [
-		"拙劣的仿作。"
+		"{ftbquests.chapter.da708500.text}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"b40ca410"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "7ca3ecef",
 		type: "item",
@@ -31,10 +31,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "49b586fd",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

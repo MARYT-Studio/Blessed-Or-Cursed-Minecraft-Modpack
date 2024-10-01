@@ -1,17 +1,17 @@
 {
 	x: 11.0d,
 	y: 3.5d,
-	description: "魂魄家传之刃",
+	description: "{ftbquests.chapter.b3920e53.description}",
 	text: [
-		"你应该已经有经验了吧。",
-		"佐以足量魂樱，我们这些刀匠就像是有着穿越时间长河的手一般，从亘古永恒里打捞起名刀来。",
+		"{ftbquests.chapter.b3920e53.text.1}",
+		"{ftbquests.chapter.b3920e53.text.2}",
 		"",
-		"你有想过，是谁给了我们这项本领吗？"
+		"{ftbquests.chapter.b3920e53.text.4}"
 	],
 	dependencies: [
 		"a164ee45"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "c4db8ee7",
 		type: "item",

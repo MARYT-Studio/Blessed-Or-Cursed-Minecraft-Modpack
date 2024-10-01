@@ -1,18 +1,18 @@
 {
 	x: 11.5d,
 	y: 1.5d,
-	description: "「魂魄家传之刃」",
+	description: "{ftbquests.chapter.c33c673a.description}",
 	text: [
-		"近了，近了。",
-		"我听见了，那怪物的轰鸣。",
+		"{ftbquests.chapter.c33c673a.text.1}",
+		"{ftbquests.chapter.c33c673a.text.2}",
 		"",
-		"我们没有太多时间了，你还没注意到那些魔物成倍增长的生命力吗？快些行动！"
+		"{ftbquests.chapter.c33c673a.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"b1026533"
 	],
-	hide: true,
+	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "a88abd4f",
@@ -21,10 +21,5 @@
 			item: "lastsmith:scroll 1 10"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "52244033",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

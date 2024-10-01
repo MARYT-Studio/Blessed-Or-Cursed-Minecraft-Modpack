@@ -1,18 +1,18 @@
 {
 	x: 4.0d,
 	y: 1.0d,
-	description: "「冰狼之刃」",
+	description: "{ftbquests.chapter.fbd736e2.description}",
 	text: [
-		"承载着“极寒之冰”的日本狼灵魂的双刃。",
-		"月影里散发着耀眼的光辉.......",
+		"{ftbquests.chapter.fbd736e2.text.1}",
+		"{ftbquests.chapter.fbd736e2.text.2}",
 		"",
-		"这一振，名曰明兽刃。"
+		"{ftbquests.chapter.fbd736e2.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "29a9bbf0",
 		type: "item",

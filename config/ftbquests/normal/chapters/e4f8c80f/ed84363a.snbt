@@ -2,21 +2,21 @@
 	x: 22.5d,
 	y: -1.0d,
 	shape: "rsquare",
-	description: "技术实验。",
+	description: "{ftbquests.chapter.ed84363a.description}",
 	text: [
-		"山下那些河童们和我关系不错，于是我帮助他们在一振「魂樱之长刀」的复制品上搭载了TLS系统。",
-		"启动这个系统时，我感觉到强烈的冲击感。即便不太稳定，如此强力也是很值得称赞的了。",
-		"激光的力量十分强大。或许是激光不是实体的原因，这振刀变得异常锋利，轻轻一抹便能削铁断钢。",
+		"{ftbquests.chapter.ed84363a.text.1}",
+		"{ftbquests.chapter.ed84363a.text.2}",
+		"{ftbquests.chapter.ed84363a.text.3}",
 		"",
-		"「文始」，文明时代的初始。",
-		"不过文明时代，指的是那种大量使用电力，生产物品的时代吗？我不是很能理解。",
-		"说实话，对于河童们给我看的一大堆技术资料，我是一个字也看不懂。"
+		"{ftbquests.chapter.ed84363a.text.5}",
+		"{ftbquests.chapter.ed84363a.text.6}",
+		"{ftbquests.chapter.ed84363a.text.7}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"0be78f6d"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "797d969d",
 		type: "item",
@@ -31,10 +31,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "8dd8ef3f",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

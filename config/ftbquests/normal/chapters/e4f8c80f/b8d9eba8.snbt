@@ -21,17 +21,17 @@
 	},
 	x: 18.5d,
 	y: -2.5d,
-	description: "众星之仿刃。",
+	description: "{ftbquests.chapter.b8d9eba8.description}",
 	text: [
-		"有着微弱的众星之力的仿作。",
+		"{ftbquests.chapter.b8d9eba8.text.1}",
 		"",
-		"被米诺陶随身携带着。"
+		"{ftbquests.chapter.b8d9eba8.text.3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"d82bdd05"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "f2d9a4ba",
 		type: "item",

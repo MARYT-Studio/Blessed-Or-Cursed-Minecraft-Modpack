@@ -14,7 +14,7 @@
 	dependencies: [
 		"4aa123d3"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "019ad871",
 		type: "dimension",

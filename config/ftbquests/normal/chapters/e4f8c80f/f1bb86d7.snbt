@@ -1,19 +1,19 @@
 {
 	x: 24.5d,
 	y: -5.5d,
-	description: "邪魔之刃。",
+	description: "{ftbquests.chapter.f1bb86d7.description}",
 	text: [
-		"这是溯源而上，从时间长河中打捞起的邪魔之刃正体。",
-		"尽管刃体也许面目全非了，但却能保证占据它的是最本初的那缕残魂。",
+		"{ftbquests.chapter.f1bb86d7.text.1}",
+		"{ftbquests.chapter.f1bb86d7.text.2}",
 		"",
-		"美影究竟经历了什么呢？"
+		"{ftbquests.chapter.f1bb86d7.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"a1d1cad8",
 		"0be78f6d"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "ceea4f22",
 		type: "item",
@@ -32,10 +32,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "2cc20f9e",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

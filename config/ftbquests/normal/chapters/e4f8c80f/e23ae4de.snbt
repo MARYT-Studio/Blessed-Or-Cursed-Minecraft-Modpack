@@ -1,19 +1,19 @@
 {
 	x: 14.0d,
 	y: -4.5d,
-	description: "「噬铁木」。",
+	description: "{ftbquests.chapter.e23ae4de.description}",
 	text: [
-		"我之前有提到，木刀并不适合用来战斗，因为它们非常容易折断。",
-		"然而，折去苇原的竹石刃技艺不谈，有两振木刀是特别的存在：「铁刀木」与「将军木」。",
-		"此两把刃是唯二以木刀为载体的妖刀。",
-		"其作为木刀却如同钢刃一般，甚至在渴求钢铁为其修补......",
-		"这也是非常神奇的现象，因为木刀竹刀之流是不容易沾染妖气的。"
+		"{ftbquests.chapter.e23ae4de.text.1}",
+		"{ftbquests.chapter.e23ae4de.text.2}",
+		"{ftbquests.chapter.e23ae4de.text.3}",
+		"{ftbquests.chapter.e23ae4de.text.4}",
+		"{ftbquests.chapter.e23ae4de.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"b1026533"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "ab300e50",
 		type: "item",

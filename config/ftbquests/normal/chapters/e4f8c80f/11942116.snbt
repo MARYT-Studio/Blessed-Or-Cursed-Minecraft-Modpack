@@ -20,19 +20,19 @@
 	},
 	x: 19.5d,
 	y: -2.5d,
-	description: "众星之名刀。",
+	description: "{ftbquests.chapter.11942116.description}",
 	text: [
-		"拥有众星之力的名刀。",
+		"{ftbquests.chapter.11942116.text.1}",
 		"",
-		"原本的鞘已经丢失，只有其白鞘得以保存。",
+		"{ftbquests.chapter.11942116.text.3}",
 		"",
-		"直刀的大成之作，掌握在米诺菇的手里......简直是玷污。"
+		"{ftbquests.chapter.11942116.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"d82bdd05"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "b7f9a9d8",
 		type: "item",

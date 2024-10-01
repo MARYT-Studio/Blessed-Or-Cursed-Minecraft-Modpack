@@ -1,15 +1,15 @@
 {
 	x: 19.0d,
 	y: 2.5d,
-	description: "亡灵之遗刃。",
+	description: "{ftbquests.chapter.f5ab6267.description}",
 	text: [
-		"祛锈的名刀。",
-		"伴死灵而生的未亡人。"
+		"{ftbquests.chapter.f5ab6267.text.1}",
+		"{ftbquests.chapter.f5ab6267.text.2}"
 	],
 	dependencies: [
 		"0ce9cd99"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "1b588f70",
 		type: "item",

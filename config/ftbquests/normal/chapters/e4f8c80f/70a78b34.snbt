@@ -29,7 +29,7 @@
 	dependencies: [
 		"d82bdd05"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "32d42094",
 		type: "item",

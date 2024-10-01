@@ -1,11 +1,11 @@
 {
-	title: "三种世界的力量",
+	title: "{ftbquests.chapter.b45ffbba.title}",
 	x: 15.5d,
 	y: -1.0d,
-	description: "神秘时代，植物魔法，工业时代。",
+	description: "{ftbquests.chapter.b45ffbba.description}",
 	text: [
-		"这是我们所能运作的一切力量了。",
-		"孩子，前进吧。"
+		"{ftbquests.chapter.b45ffbba.text.1}",
+		"{ftbquests.chapter.b45ffbba.text.2}"
 	],
 	dependencies: [
 		"cee411f4",
@@ -14,7 +14,7 @@
 		"b2a09783",
 		"d36a7819"
 	],
-	hide: true,
+	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "27e77603",
@@ -36,15 +36,5 @@
 		items: [{
 			item: "contenttweaker:magic_shard"
 		}]
-	}],
-	rewards: [{
-		uid: "d4258035",
-		type: "item",
-		auto: "disabled",
-		item: {
-			id: "chargers:charger",
-			Damage: 2s,
-			tag: {}
-		}
 	}]
 }

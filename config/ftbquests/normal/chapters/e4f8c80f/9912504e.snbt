@@ -1,17 +1,17 @@
 {
 	x: 4.0d,
 	y: 2.0d,
-	description: "直死之魔眼？？？？",
+	description: "{ftbquests.chapter.9912504e.description}",
 	text: [
-		"仿两仪式用过的短刃所作。",
+		"{ftbquests.chapter.9912504e.text.1}",
 		"",
-		"并非看穿死线之物。"
+		"{ftbquests.chapter.9912504e.text.3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "a43f324b",
 		type: "item",

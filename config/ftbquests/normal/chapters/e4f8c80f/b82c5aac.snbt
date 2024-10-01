@@ -1,17 +1,17 @@
 {
 	x: 18.5d,
 	y: 0.5d,
-	description: "亡灵之遗刃。",
+	description: "{ftbquests.chapter.b82c5aac.description}",
 	text: [
-		"“亡灵已灭,而刃则遗留于此......”",
+		"{ftbquests.chapter.b82c5aac.text.1}",
 		"",
-		"“下一任主人哟,请为它祈求安宁......”"
+		"{ftbquests.chapter.b82c5aac.text.3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"f5ab6267"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "777a6cff",
 		type: "item",

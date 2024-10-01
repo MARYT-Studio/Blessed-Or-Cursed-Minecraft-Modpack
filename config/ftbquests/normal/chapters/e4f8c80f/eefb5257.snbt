@@ -18,23 +18,23 @@
 	},
 	x: 2.0d,
 	y: 0.0d,
-	description: "「山樱」之名的伪物。",
+	description: "{ftbquests.chapter.eefb5257.description}",
 	text: [
-		"沾染的妖气过于浓郁，这股力量溯时间而上，使得地狱里沉寂已久的邪魔死灰复燃。",
-		"它贪婪地吞噬了所有成品，苇原国全部的最后希望。",
+		"{ftbquests.chapter.eefb5257.text.1}",
+		"{ftbquests.chapter.eefb5257.text.2}",
 		"",
-		"苇原的武者用手中仅有的武器，击败了它。",
-		"随邪魔而去的，是血流成河的尸山。",
+		"{ftbquests.chapter.eefb5257.text.4}",
+		"{ftbquests.chapter.eefb5257.text.5}",
 		"",
-		"我们现在能找到的，是十二刃中的九把仿品，其原身来自于前内府统治地区。",
-		"只能算是形似，但你可以用从它们的故事中所感的那些弥补。",
-		"说远了，你现在只是需要收集这三把而已。"
+		"{ftbquests.chapter.eefb5257.text.7}",
+		"{ftbquests.chapter.eefb5257.text.8}",
+		"{ftbquests.chapter.eefb5257.text.9}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "c72602b1",
 		type: "item",

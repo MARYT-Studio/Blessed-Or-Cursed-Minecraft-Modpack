@@ -1,16 +1,16 @@
 {
 	x: 10.5d,
 	y: 2.5d,
-	description: "「斩断一切之剑」",
+	description: "{ftbquests.chapter.a60b2e00.description}",
 	text: [
-		"魂樱之长刀便是此刀。",
+		"{ftbquests.chapter.a60b2e00.text.1}",
 		"",
-		"尽情向敌人挥砍吧，这世上再没有白楼剑可饶恕之物了。"
+		"{ftbquests.chapter.a60b2e00.text.3}"
 	],
 	dependencies: [
 		"b3920e53"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "19e8412d",
 		type: "item",

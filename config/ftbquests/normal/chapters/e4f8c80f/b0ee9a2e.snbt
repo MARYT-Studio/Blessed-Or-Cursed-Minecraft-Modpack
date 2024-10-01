@@ -1,17 +1,17 @@
 {
 	x: 19.5d,
 	y: -3.5d,
-	description: "「大蛇鄂门」的真品。",
+	description: "{ftbquests.chapter.b0ee9a2e.description}",
 	text: [
-		"稀世名匠的传奇制作，自诞生之日便赢得好评。",
+		"{ftbquests.chapter.b0ee9a2e.text.1}",
 		"",
-		"在为其除锈之前，无法认清其中的奥妙。"
+		"{ftbquests.chapter.b0ee9a2e.text.3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"d82bdd05"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "9e265328",
 		type: "item",

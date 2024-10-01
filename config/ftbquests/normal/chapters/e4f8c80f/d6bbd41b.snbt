@@ -1,17 +1,17 @@
 {
 	x: 16.0d,
 	y: 0.0d,
-	description: "阎魔之刃。",
+	description: "{ftbquests.chapter.d6bbd41b.description}",
 	text: [
-		"这个世界的力量。",
-		"传说中能够斩断空间之刃。",
-		"由龙之溃败而生，借助它的力量，通往新世界的大门向我们徐徐展开。"
+		"{ftbquests.chapter.d6bbd41b.text.1}",
+		"{ftbquests.chapter.d6bbd41b.text.2}",
+		"{ftbquests.chapter.d6bbd41b.text.3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"1b3e0e86"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "e59779d9",
 		type: "item",
@@ -30,10 +30,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 2b
-	}],
-	rewards: [{
-		uid: "25ddb4f5",
-		type: "ftbmoney:money",
-		ftb_money: 64L
 	}]
 }

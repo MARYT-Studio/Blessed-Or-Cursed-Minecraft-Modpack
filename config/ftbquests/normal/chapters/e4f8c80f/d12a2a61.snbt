@@ -1,18 +1,18 @@
 {
 	x: 1.0d,
 	y: -2.0d,
-	description: "祈愿之楔丸。",
+	description: "{ftbquests.chapter.d12a2a61.description}",
 	text: [
-		"这一振刀是侍奉龙胤的忍者之配刀。",
-		"隐含着“即便忍者有着注定杀人的宿命，仍不可舍弃仅有的慈悲之心”的心愿。",
+		"{ftbquests.chapter.d12a2a61.text.1}",
+		"{ftbquests.chapter.d12a2a61.text.2}",
 		"",
-		"他曾用这振刀斩杀过我等同胞，身后是另一振赤色的大太刀......后面的故事，你自己看我的手记吧。"
+		"{ftbquests.chapter.d12a2a61.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "a034bb12",
 		type: "item",

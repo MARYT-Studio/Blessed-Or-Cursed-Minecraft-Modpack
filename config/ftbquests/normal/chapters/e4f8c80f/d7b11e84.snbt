@@ -1,18 +1,18 @@
 {
 	x: 5.0d,
 	y: -2.0d,
-	description: "「梅」拵之双刃。",
+	description: "{ftbquests.chapter.d7b11e84.description}",
 	text: [
-		"你真的觉得我喜欢把这些东西都说两遍吗？",
-		"肝不动鞘就去采集那些能批量生出妖物的那些灵魂之笼，只要小心一点，在工具上附魔精准采集便能将它搬回家了。",
+		"{ftbquests.chapter.d7b11e84.text.1}",
+		"{ftbquests.chapter.d7b11e84.text.2}",
 		"",
-		"说起来,这两把刃却是莫名地过分坚韧，也许这就是它在内府军被推崇的原因？"
+		"{ftbquests.chapter.d7b11e84.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "1d8bb4a4",
 		type: "item",

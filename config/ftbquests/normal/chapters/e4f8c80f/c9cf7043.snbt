@@ -1,16 +1,16 @@
 {
 	x: 3.0d,
 	y: 2.0d,
-	description: "雪之鸦羽。",
+	description: "{ftbquests.chapter.c9cf7043.description}",
 	text: [
-		"胴田贯幻化而来。",
-		"虽说锈刃不可避免地沾染着血气，它们却仍向往着白雪的洁净。"
+		"{ftbquests.chapter.c9cf7043.text.1}",
+		"{ftbquests.chapter.c9cf7043.text.2}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "e1f310b7",
 		type: "item",

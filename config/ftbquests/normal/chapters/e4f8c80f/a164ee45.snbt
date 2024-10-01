@@ -1,16 +1,16 @@
 {
 	x: 11.5d,
 	y: 2.5d,
-	description: "魂魄家传之刃",
+	description: "{ftbquests.chapter.a164ee45.description}",
 	text: [
-		"伪物罢了，不值一提。",
-		"但仍仿出了几分神韵。"
+		"{ftbquests.chapter.a164ee45.text.1}",
+		"{ftbquests.chapter.a164ee45.text.2}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"b1026533"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "62722c6c",
 		type: "item",

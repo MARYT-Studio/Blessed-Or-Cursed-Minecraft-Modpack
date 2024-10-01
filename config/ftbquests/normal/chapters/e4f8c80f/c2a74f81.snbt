@@ -1,12 +1,12 @@
 {
-	title: "全套EU充电装置",
+	title: "{ftbquests.chapter.c2a74f81.title}",
 	x: 17.0d,
 	y: -3.5d,
 	dependencies: [
 		"90ddf6e7",
 		"3312d1a8"
 	],
-	hide: true,
+	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "a1472ebf",
@@ -37,31 +37,5 @@
 			Damage: 70s,
 			tag: {}
 		}]
-	}],
-	rewards: [{
-		uid: "1ee36acf",
-		type: "item",
-		auto: "disabled",
-		item: {
-			id: "extrautils2:machine",
-			tag: {
-				Type: "extrautils2:generator"
-			},
-			Count: 1b
-		},
-		count: 5
-	},
-	{
-		uid: "00d879db",
-		type: "item",
-		item: {
-			id: "ic2:te",
-			Damage: 86s,
-			tag: {
-				display: {
-					Name: "无 限 能 源"
-				}
-			}
-		}
 	}]
 }

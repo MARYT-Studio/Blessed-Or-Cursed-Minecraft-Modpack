@@ -18,7 +18,7 @@
 	dependencies: [
 		"b1026533"
 	],
-	hide: true,
+	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "c180ef3a",

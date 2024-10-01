@@ -15,7 +15,7 @@
 		"1b3e0e86",
 		"3312d1a8"
 	],
-	hide: true,
+	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "8ab07a8b",

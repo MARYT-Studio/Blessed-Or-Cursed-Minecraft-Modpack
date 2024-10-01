@@ -19,7 +19,7 @@
 		"3025b858",
 		"66c04ca7"
 	],
-	hide: true,
+	hide: false,
 	size: 2.0d,
 	tasks: [{
 		uid: "9ddb961f",

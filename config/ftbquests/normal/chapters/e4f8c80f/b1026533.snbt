@@ -1,22 +1,22 @@
 {
 	x: 6.0d,
 	y: -1.0d,
-	description: "目睹妖刀的传说......",
+	description: "{ftbquests.chapter.b1026533.description}",
 	text: [
-		"妖刀者，邪魔侵染之刃也......",
-		"它们会生出灵智，斩杀的每一个生物都会聚集起一股灵魂之火，盘踞在刀刃里，只待其断裂时便倾盆而出。",
-		"它们会诞有情绪，怨恨和憎恶是妖刀的本我，刀匠和使用者需要小心应对。",
-		"它们每一振都是独一无二的个体，是与你平等的战斗伙伴。",
+		"{ftbquests.chapter.b1026533.text.1}",
+		"{ftbquests.chapter.b1026533.text.2}",
+		"{ftbquests.chapter.b1026533.text.3}",
+		"{ftbquests.chapter.b1026533.text.4}",
 		"",
-		"你知道吗，我等待这一天太久太久了。",
-		"再进一步吧，你距离真相和终点不再是遥遥无期了。"
+		"{ftbquests.chapter.b1026533.text.6}",
+		"{ftbquests.chapter.b1026533.text.7}"
 	],
 	dependencies: [
 		"a6342f54",
 		"6bd477c4",
 		"0e4473f6"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "82b1ce67",
 		type: "item",
@@ -24,10 +24,5 @@
 			item: "lastsmith:scroll 1 6"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "355b32c5",
-		type: "ftbmoney:money",
-		ftb_money: 256L
 	}]
 }

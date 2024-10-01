@@ -1,24 +1,24 @@
 {
 	x: 3.0d,
 	y: 0.0d,
-	description: "风雷之刃。",
+	description: "{ftbquests.chapter.eea57b0a.description}",
 	text: [
-		"曾经有一名浪人，在世界各处流浪冒险。",
-		"其奔赴沙漠之时所携带着的那振刀，被人所目击到的那瞬。",
+		"{ftbquests.chapter.eea57b0a.text.1}",
+		"{ftbquests.chapter.eea57b0a.text.2}",
 		"",
-		"极其尖锐的刃芒，狰狞的电蛇刺痛了目击者的双眼，然轻率的模仿者终无法窥得三分锻造的精髓。",
+		"{ftbquests.chapter.eea57b0a.text.4}",
 		"",
-		"仍在冒险的人与刃，不知现在何处......",
+		"{ftbquests.chapter.eea57b0a.text.6}",
 		"",
-		"尽管我不推崇「风来之械刃」对原刀的改动，但我必须承认它会对你帮助很大。",
-		"扭动刀镡，电蛇便与你同行。尽管借助了那些我不熟悉的偏门左道，但它却实实在在地摸到了那浪人的一分神韵。",
-		"又或许，这才是那位洒脱的浪人之刃所采用的正体？"
+		"{ftbquests.chapter.eea57b0a.text.8}",
+		"{ftbquests.chapter.eea57b0a.text.9}",
+		"{ftbquests.chapter.eea57b0a.text.10}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "8e74ea7a",
 		type: "item",

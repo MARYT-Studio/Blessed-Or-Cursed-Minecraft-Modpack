@@ -1,11 +1,11 @@
 {
 	x: 4.0d,
 	y: -1.0d,
-	description: "收集到稍有名气的名刀。",
+	description: "{ftbquests.chapter.a6342f54.description}",
 	text: [
-		"苍梅，和风双梅，风来刃，荧光灯管，冰狼双刃，结月，型月。",
+		"{ftbquests.chapter.a6342f54.text.1}",
 		"",
-		"快了，就快了。"
+		"{ftbquests.chapter.a6342f54.text.3}"
 	],
 	dependencies: [
 		"2d3ab2e9",
@@ -16,7 +16,7 @@
 		"4c70ee9c",
 		"eea57b0a"
 	],
-	hide: true,
+	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "d91a99d1",
@@ -25,10 +25,5 @@
 			item: "lastsmith:scroll 1 2"
 		}],
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "10163487",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

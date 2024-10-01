@@ -1,18 +1,18 @@
 {
 	x: 14.0d,
 	y: -3.5d,
-	description: "极！大大大大大将军！",
+	description: "{ftbquests.chapter.f5a1ea3c.description}",
 	text: [
-		"「将军木」作为冠有将军之名的木刀，有着比「铁刀木」更进一步的灵力。",
-		"神似一名在战场中的大将，是能将自己的力量发挥到极致的木刀。",
+		"{ftbquests.chapter.f5a1ea3c.text.1}",
+		"{ftbquests.chapter.f5a1ea3c.text.2}",
 		"",
-		"着实让我兴趣大增......"
+		"{ftbquests.chapter.f5a1ea3c.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"b1026533"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "8c03b1b3",
 		type: "item",
@@ -34,10 +34,5 @@
 		ignore_damage: true,
 		ignore_nbt: 2b,
 		only_from_crafting: false
-	}],
-	rewards: [{
-		uid: "4a9bb781",
-		type: "ftbmoney:money",
-		ftb_money: 128L
 	}]
 }

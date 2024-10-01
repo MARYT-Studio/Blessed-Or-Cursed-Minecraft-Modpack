@@ -1,19 +1,19 @@
 {
 	x: 12.0d,
 	y: 3.5d,
-	description: "魂魄家传之刃",
+	description: "{ftbquests.chapter.d231ae90.description}",
 	text: [
-		"不过伪物而已。",
+		"{ftbquests.chapter.d231ae90.text.1}",
 		"",
-		"比起楼观剑，白楼剑更像是它的反面。",
-		"楼观剑锋锐，白楼剑就柔韧；楼观剑能斩常不可斩之物，白楼剑就能让死灵成佛。",
-		"杀伐之刃与仁慈之刃，这是它们的关系。"
+		"{ftbquests.chapter.d231ae90.text.3}",
+		"{ftbquests.chapter.d231ae90.text.4}",
+		"{ftbquests.chapter.d231ae90.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"b1026533"
 	],
-	hide: true,
+	hide: false,
 	tasks: [{
 		uid: "53e4cf36",
 		type: "item",
