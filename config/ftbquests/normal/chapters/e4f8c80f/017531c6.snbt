@@ -12,13 +12,12 @@
 		"",
 		"{ftbquests.chapter.017531c6.text.8}",
 		"",
-		"{ftbquests.chapter.017531c6.text.10}",
+		"{ftbquests.chapter.017531c6.text.10}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"b1026533"
 	],
-	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "c180ef3a",

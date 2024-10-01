@@ -8,13 +8,12 @@
 		"",
 		"{ftbquests.chapter.2d3ab2e9.text.4}",
 		"",
-		"{ftbquests.chapter.2d3ab2e9.text.6}",
+		"{ftbquests.chapter.2d3ab2e9.text.6}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: false,
 	tasks: [{
 		uid: "8b7a4e06",
 		type: "item",

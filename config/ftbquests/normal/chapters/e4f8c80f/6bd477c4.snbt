@@ -5,7 +5,7 @@
 	text: [
 		"{ftbquests.chapter.6bd477c4.text.1}",
 		"",
-		"{ftbquests.chapter.6bd477c4.text.3}",
+		"{ftbquests.chapter.6bd477c4.text.3}"
 	],
 	dependencies: [
 		"20f2a312",
@@ -16,7 +16,6 @@
 		"eefb5257",
 		"22950dab"
 	],
-	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "7faae45e",

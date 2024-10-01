@@ -14,10 +14,6 @@
 		"{ftbquests.chapter.af937cf5.text.8}",
 		"{ftbquests.chapter.af937cf5.text.9}"
 	],
-	dependencies: [
-		"48775faf"
-	],
-	hide: false,
 	tasks: [{
 		uid: "3281f316",
 		type: "item",
