@@ -218,3 +218,5 @@ crafttweaker.low_durability.weapon=你身上有些兵器好像要坏了！
 crafttweaker.low_durability.armor=你身上有些盔甲好像要坏了！
 crafttweaker.low_durability.misc=你身上有些小玩意儿好像要坏了！
 crafttweaker.low_durability.subtitle=该修理修理啦！
+
+crafttweaker.update_gift=§6为庆祝本次版本更新，赠送你的礼物已经放入你的背包，请查收~

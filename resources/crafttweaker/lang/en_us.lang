@@ -218,3 +218,5 @@ crafttweaker.low_durability.weapon=Some of the weapons you're carrying are about
 crafttweaker.low_durability.armor=Some of the armor you're carrying is about to break!
 crafttweaker.low_durability.misc=Some of the items you're carrying are about to break!
 crafttweaker.low_durability.subtitle=It's time to fix them!
+
+crafttweaker.update_gift=§6To celebrate this update, the gift for you has been put into your inventory, please check it~
