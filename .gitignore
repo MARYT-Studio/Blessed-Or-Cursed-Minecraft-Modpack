@@ -2,6 +2,7 @@ $ cat .gitignore
 #Whitelist
 /*
 /config/worldedit/schematics
+/config/journeymap_ModInfo.cfg
 /scripts/generated
 
 #Folders
