@@ -18,7 +18,9 @@ val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer, <c
 // 由于今后可能还会在某次更新的时候发放礼品，统一安排在这个脚本当中：
 // 礼物的名称变量为 updateGift + 版本号去点，礼物的 NBT 标签名为 updateGift_v + 版本号去点
 // 发礼物的版本结束后，将旧的礼物变量注释掉
-var updateGift1192 = <contenttweaker:red_envelope_lubang> * 7;
+
+// v1.19.2 版本结束，停发该版本的更新礼物
+// var updateGift1192 = <contenttweaker:red_envelope_lubang> * 7;
 
 // Event
 events.onPlayerLoggedIn(
@@ -26,7 +28,12 @@ events.onPlayerLoggedIn(
         var player = event.player;
         // 锻刀上限消息计数器初始化
         player.update({"refine_limit_message_sent": 3});
+        
+        // 将发送聊天消息功能转移到模组中
+        // TODO: 用模组替代完毕后，将发送聊天消息有关代码删去
         opening(player);
+
+
         var world = player.world;
         if (!(world.remote)) {
             var data = D(player.data);
@@ -43,23 +50,24 @@ events.onPlayerLoggedIn(
                 }
             }
             // 更新礼物
-            if(!(data.check("PlayerPersisted.updateGift_v1192"))) {
-                player.update(
-                    {
-                        PlayerPersisted: {
-                            updateGift_v1192: 1
-                        }
-                    });
-                player.give(updateGift1192);                
-            }
+            // if(!(data.check("PlayerPersisted.updateGift_v1192"))) {
+            //     player.update(
+            //         {
+            //             PlayerPersisted: {
+            //                 updateGift_v1192: 1
+            //             }
+            //         });
+            //     player.give(updateGift1192);                
+            // }
         }
     }
 );
 
+// TODO: 用模组替代完毕后，将发送聊天消息有关代码删去
 function opening(player as IPlayer) {
-    for i in 0 .. 10 {
-        player.sendChat("");
-    }
+    // for i in 0 .. 10 {
+    //     player.sendChat("");
+    // }
     if (player.world.worldInfo.hardcoreModeEnabled) {
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.hardcore.1"));
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.hardcore.2"));
