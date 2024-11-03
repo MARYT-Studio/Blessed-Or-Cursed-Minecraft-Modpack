@@ -62,7 +62,7 @@
   "ic2": "2.8.222-ex112",
   "patchouli": "1.0-23.6",
   "abyssalcraft": "1.10.3",
-  "game_opening_for_you": "1.0.0",
+  "game_opening_for_you": "1.1.0",
   "betterbiomeblend": "1.12.2-1.1.7-forge",
   "specialai": "1.1.0_for_mc1.12.2",
   "out_of_combat": "1.12.2-1.1.0",
