@@ -71,11 +71,16 @@ events.onPlayerRespawn(
     function (event as PlayerRespawnEvent) {
         if (!(event.endConquered)) {
             var player = event.player;
+
+            if (player.world.remote) return;
+
             var dTag = D(player.data);
             
-            // 不没收菜鸡的经验
             if (!(player.world.getGameRuleHelper().getBoolean("IamAChicken"))) {
                 player.xpPoints = Math.round(keepExpRatio * dTag.getInt("PlayerPersisted.lastDeathXpPoints"));
+            } else {
+                // 不没收菜鸡的经验
+                player.xpPoints = dTag.getInt("PlayerPersisted.lastDeathXpPoints");
             }
             
             var lastDeathFoodLevel = dTag.getInt("PlayerPersisted.lastDeathFoodLevel");
