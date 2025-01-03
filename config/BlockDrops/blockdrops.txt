@@ -1543,5 +1543,20 @@
     "1pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
     "2pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}",
     "3pair0": "{\n  \"left\": 0,\n  \"right\": 1\n}"
+  },
+  {
+    "name": "scalinghealth:crystalore",
+    "meta": 0,
+    "length": 1,
+    "name0": "scalinghealth:crystalshard",
+    "meta0": 0,
+    "0chance0": 100.0,
+    "1chance0": 100.0,
+    "2chance0": 100.0,
+    "3chance0": 125.025,
+    "0pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "1pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "2pair0": "{\n  \"left\": 1,\n  \"right\": 1\n}",
+    "3pair0": "{\n  \"left\": 1,\n  \"right\": 2\n}"
   }
 ]
