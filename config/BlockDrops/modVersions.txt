@@ -109,6 +109,7 @@
   "specialmobs": "1.0.4_for_mc1.12.2",
   "no_mob_friendly_fire": "1.0",
   "walljump": "1.3.2",
+  "improved_mobs_scaling_health_integration": "1.0",
   "crafttweaker": "4.1.20",
   "sledgehammer": "1.12.2-2.0.23",
   "ido": "1.0.6",
