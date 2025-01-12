@@ -1,4 +1,3 @@
-
 #loader crafttweaker reloadable
 // Packages for needed ZenClasses
 import crafttweaker.player.IPlayer;
@@ -58,17 +57,17 @@ val textStep2 as string[] = [textStep21, textStep22];
 
 // 玩家击杀时增加计数器和刷新计时器
 events.onEntityLivingDeath(
-    function(event as EntityLivingDeathEvent)
-    {
+    function(event as EntityLivingDeathEvent) {
         var entity = event.entity;
         if (entity instanceof IPlayer) return;  // 玩家死了不算
         if (!(entity instanceof IEntityMob) && !(entityMatch(slime, entity.definition))) return; // 非怪物的生物击杀不算
-        var world as IWorld = entity.world;
         var source = event.damageSource.trueSource;
         
         if (isNull(source)) return;
         if (source instanceof IPlayer) {
             var player as IPlayer = source;
+            var world as IWorld = player.world;
+            if (world.remote) return;
             if (!isNull(player.data) && !isNull(player.data.slayer_rewards) && !isNull(player.data.slayer_rewards.slayer_counting)) {
                 var slayerCounting = player.data.slayer_rewards.slayer_counting.asInt();
                 var slay = (specialEntity has entity.definition) ? 0 : 1;
