@@ -4,12 +4,20 @@ import crafttweaker.event.PlayerRespawnEvent;
 import mods.zenutils.EventPriority;
 import crafttweaker.player.IPlayer;
 import crafttweaker.util.Math;
+import crafttweaker.item.IItemStack;
 
 // 保留经验的比例，1.0 表示 100% 保留
 val keepExpRatio = 0.75f;
 // 保留饥饿度的最小值和最大值
 val minFoodLevel = 8;
 val maxFoodLevel = 14;
+
+// 不扣耐久的物品名单
+// 主要为防止某些物品被扣了耐久（即增加 metadata）之后出现 bug，例如 HAC 的碾盘
+val noDamageList as IItemStack[] = [
+    <dcs_climate:dcs_yagen_stone>,
+    <dcs_climate:dcs_yagen_brass>
+];
 
 events.register(
     function (event as EntityLivingDeathEvent) {
@@ -29,7 +37,8 @@ events.register(
                     if (isNull(item)) {
                         continue;
                     }
-                    if (item.isDamageable) {
+                    // 白名单上的物品免扣耐久
+                    if (item.isDamageable && !isNoDamageItem(item, noDamageList)) {
                         // 当前耐久小于 20% 的物品，可免扣耐久
                         // 同时根据该物品的类别，通知玩家
                         if (item.maxDamage - item.damage <= item.maxDamage/5) {
@@ -94,3 +103,10 @@ events.onPlayerRespawn(
         }
     }
 );
+
+// 工具函数：排除免扣耐久物品名单上的物品
+function isNoDamageItem(item as IItemStack, list as IItemStack[]) as bool {
+    for noDamage in list {
+        if (noDamage.matches(item)) return true;
+    } return false;
+}
