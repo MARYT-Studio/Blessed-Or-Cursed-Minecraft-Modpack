@@ -21,6 +21,7 @@ val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer, <c
 
 // v1.19.2 版本结束，停发该版本的更新礼物
 // var updateGift1192 = <contenttweaker:red_envelope_lubang> * 7;
+var updateGift1193 = <contenttweaker:red_envelope_lubang> * 3;
 
 // Event
 events.onPlayerLoggedIn(
@@ -50,15 +51,15 @@ events.onPlayerLoggedIn(
                 }
             }
             // 更新礼物
-            // if(!(data.check("PlayerPersisted.updateGift_v1192"))) {
-            //     player.update(
-            //         {
-            //             PlayerPersisted: {
-            //                 updateGift_v1192: 1
-            //             }
-            //         });
-            //     player.give(updateGift1192);                
-            // }
+            if(!(data.check("PlayerPersisted.updateGift_v1193"))) {
+                player.update(
+                    {
+                        PlayerPersisted: {
+                            updateGift_v1193: 1
+                        }
+                    });
+                player.give(updateGift1193);                
+            }
         }
     }
 );
