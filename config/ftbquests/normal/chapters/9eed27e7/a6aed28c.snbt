@@ -1,7 +1,13 @@
 {
 	title: "{ftbquests.chapter.a6aed28c.title}",
-	x: 32.0d,
-	y: 13.5d,
+	icon: {
+		id: "patchouli:guide_book",
+		tag: {
+			"patchouli:book": "lastsmith:smith_guide"
+		}
+	},
+	x: 28.0d,
+	y: 15.0d,
 	description: "{ftbquests.chapter.a6aed28c.description}",
 	text: [
 		"{ftbquests.chapter.a6aed28c.text.1}",

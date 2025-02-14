@@ -14,13 +14,11 @@
 	],
 	hide_dependency_lines: true,
 	dependencies: [
-		"0fe57577",
 		"b40ca410",
 		"39993394",
 		"58d0d20f",
 		"4fdeead1"
 	],
-	hide: false,
 	tasks: [{
 		uid: "831d2cc4",
 		type: "item",

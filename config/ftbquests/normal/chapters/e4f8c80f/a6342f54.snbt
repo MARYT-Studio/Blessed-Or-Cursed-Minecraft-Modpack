@@ -8,15 +8,13 @@
 		"{ftbquests.chapter.a6342f54.text.3}"
 	],
 	dependencies: [
-		"2d3ab2e9",
-		"d7b11e84",
-		"1b007775",
-		"121d301b",
 		"5936eedc",
+		"2d3ab2e9",
 		"4c70ee9c",
+		"d7b11e84",
+		"121d301b",
 		"eea57b0a"
 	],
-	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "d91a99d1",

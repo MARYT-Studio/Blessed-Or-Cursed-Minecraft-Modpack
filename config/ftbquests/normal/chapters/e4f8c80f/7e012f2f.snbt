@@ -13,7 +13,6 @@
 	dependencies: [
 		"b1026533"
 	],
-	hide: false,
 	dependency_requirement: "one_completed",
 	tasks: [{
 		uid: "39b1c16c",

@@ -9,7 +9,7 @@
 		"{ftbquests.chapter.4fdeead1.text.3}",
 		"{ftbquests.chapter.4fdeead1.text.4}",
 		"",
-		"{ftbquests.chapter.4fdeead1.text.6}",
+		"{ftbquests.chapter.4fdeead1.text.6}"
 	],
 	dependencies: [
 		"ed84363a"

@@ -1,7 +1,17 @@
 {
 	title: "{ftbquests.chapter.e9a69b53.title}",
-	x: 30.0d,
-	y: 18.5d,
+	icon: {
+		id: "lastsmith:white_top",
+		tag: {
+			SB.SEffect: {},
+			SlashBlade: {}
+		},
+		ForgeCaps: {
+			Parent: {}
+		}
+	},
+	x: 32.0d,
+	y: 15.0d,
 	text: [
 		"{ftbquests.chapter.e9a69b53.text.1}",
 		"",
@@ -20,9 +30,8 @@
 		"{ftbquests.chapter.e9a69b53.text.15}"
 	],
 	dependencies: [
-		"d2d3fb09"
+		"b9b0a779"
 	],
-	hide: false,
 	tasks: [{
 		uid: "f71484b4",
 		type: "checkmark",

@@ -1,7 +1,7 @@
 {
 	title: "{ftbquests.chapter.d2d3fb09.title}",
 	x: 30.0d,
-	y: 17.5d,
+	y: 18.0d,
 	text: [
 		"{ftbquests.chapter.d2d3fb09.text.1}",
 		"{ftbquests.chapter.d2d3fb09.text.2}",
@@ -26,7 +26,6 @@
 	dependencies: [
 		"b5a805c2"
 	],
-	hide: false,
 	tasks: [{
 		uid: "ea0e238d",
 		type: "checkmark",

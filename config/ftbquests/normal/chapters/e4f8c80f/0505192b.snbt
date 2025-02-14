@@ -10,10 +10,6 @@
 		"{ftbquests.chapter.0505192b.text.4}",
 		"{ftbquests.chapter.0505192b.text.5}"
 	],
-	dependencies: [
-		"48775faf"
-	],
-	hide: false,
 	tasks: [{
 		uid: "c2a48401",
 		type: "item",

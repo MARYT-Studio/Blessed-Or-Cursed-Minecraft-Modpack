@@ -1,7 +1,7 @@
 {
 	title: "{ftbquests.chapter.f5967dd9.title}",
-	x: 30.0d,
-	y: 13.5d,
+	x: 28.0d,
+	y: 16.5d,
 	text: [
 		"{ftbquests.chapter.f5967dd9.text.1}",
 		"",
@@ -15,6 +15,9 @@
 		"",
 		"{ftbquests.chapter.f5967dd9.text.11}",
 		"{ftbquests.chapter.f5967dd9.text.12}"
+	],
+	dependencies: [
+		"b9b0a779"
 	],
 	tasks: [{
 		uid: "2fbaed1c",

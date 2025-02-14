@@ -23,13 +23,12 @@
 	text: [
 		"{ftbquests.chapter.70a78b34.text.1}",
 		"",
-		"{ftbquests.chapter.70a78b34.text.3}",
+		"{ftbquests.chapter.70a78b34.text.3}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"d82bdd05"
 	],
-	hide: false,
 	tasks: [{
 		uid: "32d42094",
 		type: "item",

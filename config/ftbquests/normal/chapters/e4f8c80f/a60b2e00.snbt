@@ -10,7 +10,6 @@
 	dependencies: [
 		"b3920e53"
 	],
-	hide: false,
 	tasks: [{
 		uid: "19e8412d",
 		type: "item",

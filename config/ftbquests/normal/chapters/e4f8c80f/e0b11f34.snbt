@@ -13,7 +13,6 @@
 	dependencies: [
 		"dc62f482"
 	],
-	hide: false,
 	tasks: [{
 		uid: "6be14761",
 		type: "item",
