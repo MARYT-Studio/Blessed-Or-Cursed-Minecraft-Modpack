@@ -16,6 +16,9 @@ import scripts.GlobalVars.rewardMap as rewardMap;
 import scripts.GlobalVars.blankMap as blankMap;
 import scripts.GlobalVars.anvilActionTime as anvilActionTime;
 
+// 锻造上限的提醒阈值，剩余锻造上限小于此值时开始发送拔刀剑的锻造上限信息
+static remindRemainingLimit as int = 2;
+
 // 当物品的 Refine 数值即将超过上限值时，拒绝此次锻造
 events.register(function (event as PlayerAnvilUpdateEvent) {
 
@@ -63,8 +66,14 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
     if (limit != 2147483647) {       
         if (!player.world.remote) {
             if (!isSameAnvilAction(player, event.getTimeStamp())) {
-                var remaining as string = "" ~ (limit - refine);
-                player.sendToast("crafttweaker.can_be_refined.1", "" ~ remaining, "crafttweaker.can_be_refined.2", "", item);
+                var remaining as int = limit - refine;
+                if (remaining <= remindRemainingLimit) {
+                    player.sendToast("crafttweaker.can_be_refined.1", "" ~ remaining, "crafttweaker.can_be_refined.2", "", item);
+                    bladeInfo(player, item);
+                    // 否则每锻造 5 次提醒 1 次
+                } else if (remaining % 5 == 0) {
+                    player.sendToast("crafttweaker.can_be_refined.1", "" ~ remaining, "crafttweaker.can_be_refined.2", "", item);
+                }
             }
         }
     }
@@ -107,7 +116,7 @@ events.onPlayerInteractEntity(function (event as PlayerInteractEntityEvent) {
                         }
                         player.sendRichTextMessage(ITextComponent.fromTranslation(
                                 "crafttweaker.refine_info.sum", 
-                                ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
                             )
                         );
                     } else {
@@ -135,7 +144,7 @@ events.onPlayerInteractEntity(function (event as PlayerInteractEntityEvent) {
                     }
                     player.sendRichTextMessage(ITextComponent.fromTranslation(
                             "crafttweaker.refine_info.sum", 
-                            ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                            ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
                         )
                     );
                 }
@@ -163,7 +172,7 @@ function bladeInfo(player as IPlayer, blade as IItemStack) as void {
         }
         player.sendRichTextMessage(ITextComponent.fromTranslation(
                 "crafttweaker.refine_info.sum", 
-                ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
             )
         );
     } else {
