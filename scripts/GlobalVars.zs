@@ -6,6 +6,10 @@ import crafttweaker.data.IData;
 // 全局调试开关
 static debug as bool = false;
 
+// 铁砧更新事件相关
+// 预估铁砧一次操作的时间
+static anvilActionTime as long = 1L;
+
 // 锻造上限相关
 // 基础锻刀上限
 static baseRefineLimit as int = 10;

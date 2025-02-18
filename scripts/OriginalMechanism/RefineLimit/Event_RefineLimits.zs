@@ -14,12 +14,14 @@ import scripts.GlobalVars.debug as debug;
 import scripts.GlobalVars.baseRefineLimit as baseRefineLimit;
 import scripts.GlobalVars.rewardMap as rewardMap;
 import scripts.GlobalVars.blankMap as blankMap;
-
-// 预估铁砧一次操作的时间
-static anvilActionTime as long = 1L;
+import scripts.GlobalVars.anvilActionTime as anvilActionTime;
 
 // 当物品的 Refine 数值即将超过上限值时，拒绝此次锻造
 events.register(function (event as PlayerAnvilUpdateEvent) {
+
+    // 事件被取消时直接返回，对应不可锻造的拔刀剑（目前是新手剑）
+    if (event.isCanceled()) return;
+
     var item = event.leftItem;
     var tag = item.tag;
     if (isNull(tag)) return;
@@ -66,7 +68,7 @@ events.register(function (event as PlayerAnvilUpdateEvent) {
             }
         }
     }
-},EventPriority.highest(), true);
+},EventPriority.high(), true);
 
 // 给拔刀剑添加锻刀上限
 events.register(function (event as PlayerAnvilUpdateEvent) {
@@ -105,7 +107,7 @@ events.onPlayerInteractEntity(function (event as PlayerInteractEntityEvent) {
                         }
                         player.sendRichTextMessage(ITextComponent.fromTranslation(
                                 "crafttweaker.refine_info.sum", 
-                                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                                ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
                             )
                         );
                     } else {
@@ -133,7 +135,7 @@ events.onPlayerInteractEntity(function (event as PlayerInteractEntityEvent) {
                     }
                     player.sendRichTextMessage(ITextComponent.fromTranslation(
                             "crafttweaker.refine_info.sum", 
-                            ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                            ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
                         )
                     );
                 }
@@ -161,7 +163,7 @@ function bladeInfo(player as IPlayer, blade as IItemStack) as void {
         }
         player.sendRichTextMessage(ITextComponent.fromTranslation(
                 "crafttweaker.refine_info.sum", 
-                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
+                ("§c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
             )
         );
     } else {
@@ -174,6 +176,7 @@ function bladeInfo(player as IPlayer, blade as IItemStack) as void {
     }    
 }
 
+// 工具函数：铁砧更新事件消抖函数
 function isSameAnvilAction(player as IPlayer, timeStamp as long) as bool {
     
     var playerTag = D(player.data);

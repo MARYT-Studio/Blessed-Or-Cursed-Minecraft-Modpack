@@ -169,6 +169,9 @@ crafttweaker.cannot_be_refined.2=See the chat for Refine Limits it has gained
 crafttweaker.refine_limit_gained.1=Blade in your hand clanked!
 crafttweaker.refine_limit_gained.2=§61 more time refining chance gained
 
+crafttweaker.nbsword_cannot_be_refined.1=This sword cannot be repaired.
+crafttweaker.nbsword_cannot_be_refined.2=Never a tangible sword prevail over a brave heart!
+
 crafttweaker.refine_info.title=§e--- Refine Limits this SlashBlade has gained ---§r
 crafttweaker.refine_info.dim0=Overworld: §mCannot get Refine Limits in this dimension§r
 crafttweaker.refine_info.dim-1=§cNether: §r%s

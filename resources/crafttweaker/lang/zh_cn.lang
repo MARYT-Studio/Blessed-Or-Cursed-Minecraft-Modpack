@@ -169,6 +169,9 @@ crafttweaker.cannot_be_refined.2=请检查已获得的锻造次数
 crafttweaker.refine_limit_gained.1=手中利刃铮铮作响！
 crafttweaker.refine_limit_gained.2=§6额外锻造次数+1
 
+crafttweaker.nbsword_cannot_be_refined.1=这是不可锻造的勇气之剑
+crafttweaker.nbsword_cannot_be_refined.2=有形的剑岂能胜过勇敢的心！
+
 crafttweaker.refine_info.title=§e--- 这柄刀已斩获的锻造次数 ---§r
 crafttweaker.refine_info.dim0=主世界：§m无法获得锻造次数§r
 crafttweaker.refine_info.dim-1=§c下界：§r%s
