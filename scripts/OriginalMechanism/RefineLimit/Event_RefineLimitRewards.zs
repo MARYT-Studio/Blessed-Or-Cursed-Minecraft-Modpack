@@ -6,39 +6,16 @@ import crafttweaker.player.IPlayer;
 import crafttweaker.entity.IEntityMob;
 import crafttweaker.entity.IEntityDefinition;
 import mods.zenutils.EventPriority;
-import scripts.GlobalVars;
 import crafttweaker.util.Math;
 
-// debug 开关
-val debug = false;
+import scripts.GlobalVars.debug as debug;
+import scripts.GlobalVars.baseRefineLimit as baseRefineLimit;
+import scripts.GlobalVars.rewardMap as rewardMap;
+import scripts.GlobalVars.blankMap as blankMap;
+
+
 // 奖励概率
 val prob = 0.1f;
-// 键为维度 ID，值为提升的锻刀上限数
-static rewardMap as IData = {
-    "DIM0": 0,
-    "DIM56": 5,
-    "DIM-1": 10,
-    "DIM1": 15,
-    "DIM7": 20,
-    "DIM28885": 10,
-    "DIM50": 20,
-    "DIM51": 30,
-    "DIM52": 40,
-    "DIM53": 50
-} as IData;
-
-val blankMap = {    
-    "DIM0": 0,
-    "DIM56": 0,
-    "DIM-1": 0,
-    "DIM1": 0,
-    "DIM7": 0,
-    "DIM28885": 0,
-    "DIM50": 0,
-    "DIM51": 0,
-    "DIM52": 0,
-    "DIM53": 0
-} as IData;
 
 // TODO: 把 entityMatch() 与 slime 数组提取为全局函数和变量，作为工具使用
 // 两种不属于 IEntityMob 但是应当判定为怪物的生物
@@ -64,7 +41,7 @@ events.onEntityLivingDeath(
                 // 初始化
                 if (debug) player.sendChat("Initializing Gained Map");
                 var initMap as IData = blankMap;
-                var refineLimit = dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
+                var refineLimit = dTag.getInt("RefineLimit", baseRefineLimit);
                 // 如果该维度可以获取锻刀上限，那么需要在初始化的同时给予此次杀敌的锻刀上限奖励
                 if (D(rewardMap).getInt("DIM" ~ world.dimension) > 0 && world.random.nextFloat() < prob) {
                     initMap = blankMap + {("DIM" ~ world.dimension): 1};
@@ -79,7 +56,7 @@ events.onEntityLivingDeath(
                 var gainedMap as IData = dTag.get("RefineLimitGained");
                 if (D(gainedMap).getInt("DIM" ~ world.dimension) < D(rewardMap).getInt("DIM" ~ world.dimension) && world.random.nextFloat() < prob) {
                     var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
-                    var refineLimit = 1 + dTag.getInt("RefineLimit", GlobalVars.baseRefineLimit);
+                    var refineLimit = 1 + dTag.getInt("RefineLimit", baseRefineLimit);
                     player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
                     server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                     item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
