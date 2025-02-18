@@ -20,7 +20,7 @@ val shoggothFlesh as IItemStack[] = [
     <abyssalcraft:shoggothflesh:4>
 ];
 for i in 0 .. (shoggothFlesh.length) {
-    recipes.addShapeless("wash_your_normal_warp" ~ i, <minecraft:rotten_flesh>,
+    recipes.addShapeless("wash_your_normal_warp_" ~ i, <minecraft:rotten_flesh>,
     [
         <dcs_climate:dcs_food_antibiotic:7>, shoggothFlesh[i]
     ],
@@ -36,7 +36,7 @@ for i in 0 .. (shoggothFlesh.length) {
         }
     });
     // 简单版仪式，可以用魔法试剂桶代替
-    recipes.addShapeless("wash_your_normal_warp" ~ i, <minecraft:rotten_flesh>,
+    recipes.addShapeless("wash_your_normal_warp_simple_" ~ i, <minecraft:rotten_flesh>,
     [
         <forge:bucketfilled>.withTag({FluidName: "dcs.mazai", Amount: 1000}), shoggothFlesh[i]
     ],
