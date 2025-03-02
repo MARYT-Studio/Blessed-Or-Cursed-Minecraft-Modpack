@@ -1,7 +1,8 @@
 {
 	title: "{ftbquests.chapter.df637748.title}",
 	x: 28.0d,
-	y: 13.5d,
+	y: 13.0d,
+	shape: "diamond",
 	description: "{ftbquests.chapter.df637748.description}",
 	text: [
 		"{ftbquests.chapter.df637748.text.1}",
@@ -11,6 +12,7 @@
 		"{ftbquests.chapter.df637748.text.5}",
 		"{ftbquests.chapter.df637748.text.6}"
 	],
+	size: 2.0d,
 	tasks: [{
 		uid: "7b9d9bf8",
 		type: "checkmark",

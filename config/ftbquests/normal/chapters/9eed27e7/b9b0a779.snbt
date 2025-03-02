@@ -12,10 +12,12 @@
 	},
 	x: 30.0d,
 	y: 15.0d,
+	description: "该学着搓连招啦。",
 	text: [
 		"{ftbquests.chapter.b9b0a779.text.1}",
 		"{ftbquests.chapter.b9b0a779.text.2}",
-		"{ftbquests.chapter.b9b0a779.text.3}"
+		"{ftbquests.chapter.b9b0a779.text.3}",
+		"{ftbquests.chapter.b9b0a779.text.4}"
 	],
 	dependencies: [
 		"a6aed28c"
