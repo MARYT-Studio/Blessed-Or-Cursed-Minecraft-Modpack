@@ -30,3 +30,8 @@ scripts/.d.zs
 config/triumph/documentation/
 config/triumph/script/triumph/example/
 ModWatcher/stage/*.jar.disabled
+
+# Unused configs
+config/jei/worldSettings.cfg
+config/splash.properties
+config/time.history
