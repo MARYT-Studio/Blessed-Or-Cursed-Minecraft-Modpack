@@ -1,0 +1,563 @@
+{
+  "topleft": [],
+  "bottomleft": [
+    [
+      {
+        "var": "mainhandicon"
+      },
+      {
+        "str": " "
+      },
+      {
+        "op": [
+          {
+            "str": "ge"
+          },
+          {
+            "pct": [
+              {
+                "var": "mainhanddamageleft"
+              },
+              {
+                "var": "mainhandmaxdamage"
+              }
+            ]
+          },
+          {
+            "num": 50
+          },
+          {
+            "num": 20
+          },
+          {
+            "num": 10
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "$e"
+          },
+          {
+            "str": "$6"
+          },
+          {
+            "str": "$c"
+          },
+          {
+            "str": "$4"
+          },
+          {
+            "str": ""
+          }
+        ]
+      },
+      {
+        "max": [
+          {
+            "var": "mainhanddamageleft"
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "{mainhanddamageleft}$f / $e{mainhandmaxdamage}"
+          },
+          {
+            "var": "mainhandname"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "var": "offhandicon"
+      },
+      {
+        "str": " "
+      },
+      {
+        "op": [
+          {
+            "str": "ge"
+          },
+          {
+            "pct": [
+              {
+                "var": "offhanddamageleft"
+              },
+              {
+                "var": "offhandmaxdamage"
+              }
+            ]
+          },
+          {
+            "num": 50
+          },
+          {
+            "num": 20
+          },
+          {
+            "num": 10
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "$e"
+          },
+          {
+            "str": "$6"
+          },
+          {
+            "str": "$c"
+          },
+          {
+            "str": "$4"
+          },
+          {
+            "str": ""
+          }
+        ]
+      },
+      {
+        "max": [
+          {
+            "var": "offhanddamageleft"
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "{offhanddamageleft}$f / $e{offhandmaxdamage}"
+          },
+          {
+            "var": "offhandname"
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "str": " "
+      }
+    ]
+  ],
+  "bottomright": [
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks0"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration0} {potionicon0}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks1"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration1} {potionicon1}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks2"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration2} {potionicon2}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks3"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration3} {potionicon3}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks4"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration4} {potionicon4}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks5"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration5} {potionicon5}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks6"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration6} {potionicon6}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks7"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration7} {potionicon7}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "max": [
+          {
+            "var": "potiondurationticks8"
+          },
+          {
+            "num": 0.5
+          },
+          {
+            "str": "{potionduration8} {potionicon8}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "str": " "
+      }
+    ],
+    [
+      {
+        "op": [
+          {
+            "str": "ge"
+          },
+          {
+            "pct": [
+              {
+                "var": "helmetdamageleft"
+              },
+              {
+                "var": "helmetmaxdamage"
+              }
+            ]
+          },
+          {
+            "num": 50
+          },
+          {
+            "num": 20
+          },
+          {
+            "num": 10
+          },
+          {
+            "str": "$e"
+          },
+          {
+            "str": "$6"
+          },
+          {
+            "str": "$c"
+          },
+          {
+            "str": "$4"
+          }
+        ]
+      },
+      {
+        "max": [
+          {
+            "var": "helmetdamageleft"
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "{helmetdamageleft}$f / $e{helmetmaxdamage}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      },
+      {
+        "str": " "
+      },
+      {
+        "var": "helmeticon"
+      }
+    ],
+    [
+      {
+        "op": [
+          {
+            "str": "ge"
+          },
+          {
+            "pct": [
+              {
+                "var": "chestplatedamageleft"
+              },
+              {
+                "var": "chestplatemaxdamage"
+              }
+            ]
+          },
+          {
+            "num": 50
+          },
+          {
+            "num": 20
+          },
+          {
+            "num": 10
+          },
+          {
+            "str": "$e"
+          },
+          {
+            "str": "$6"
+          },
+          {
+            "str": "$c"
+          },
+          {
+            "str": "$4"
+          }
+        ]
+      },
+      {
+        "max": [
+          {
+            "var": "chestplatedamageleft"
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "{chestplatedamageleft}$f / $e{chestplatemaxdamage}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      },
+      {
+        "str": " "
+      },
+      {
+        "var": "chestplateicon"
+      }
+    ],
+    [
+      {
+        "op": [
+          {
+            "str": "ge"
+          },
+          {
+            "pct": [
+              {
+                "var": "leggingsdamageleft"
+              },
+              {
+                "var": "leggingsmaxdamage"
+              }
+            ]
+          },
+          {
+            "num": 50
+          },
+          {
+            "num": 20
+          },
+          {
+            "num": 10
+          },
+          {
+            "str": "$e"
+          },
+          {
+            "str": "$6"
+          },
+          {
+            "str": "$c"
+          },
+          {
+            "str": "$4"
+          }
+        ]
+      },
+      {
+        "max": [
+          {
+            "var": "leggingsdamageleft"
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "{leggingsdamageleft}$f / $e{leggingsmaxdamage}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      },
+      {
+        "str": " "
+      },
+      {
+        "var": "leggingsicon"
+      }
+    ],
+    [
+      {
+        "op": [
+          {
+            "str": "ge"
+          },
+          {
+            "pct": [
+              {
+                "var": "bootsdamageleft"
+              },
+              {
+                "var": "bootsmaxdamage"
+              }
+            ]
+          },
+          {
+            "num": 50
+          },
+          {
+            "num": 20
+          },
+          {
+            "num": 10
+          },
+          {
+            "str": "$e"
+          },
+          {
+            "str": "$6"
+          },
+          {
+            "str": "$c"
+          },
+          {
+            "str": "$4"
+          }
+        ]
+      },
+      {
+        "max": [
+          {
+            "var": "bootsdamageleft"
+          },
+          {
+            "num": 0
+          },
+          {
+            "str": "{bootsdamageleft}$f / $e{bootsmaxdamage}"
+          },
+          {
+            "str": ""
+          }
+        ]
+      },
+      {
+        "str": " "
+      },
+      {
+        "var": "bootsicon"
+      }
+    ]
+  ]
+}
