@@ -136,6 +136,7 @@
   "vintagefix": "0.3.2",
   "ding": "1.0.2",
   "jeiutilities": "0.2.12",
+  "rmr_melee_patch": "1.0.1",
   "loottweaker": "0.3.1",
   "legendarytooltips": "1.1.9",
   "betterplacement": "1.0.0-1",

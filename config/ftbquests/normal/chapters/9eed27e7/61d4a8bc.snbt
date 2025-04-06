@@ -2,28 +2,30 @@
 	icon: "minecraft:anvil",
 	x: 34.0d,
 	y: 16.5d,
-	description: "锻造数可是会直接增加刀剑伤害的哦。",
+	description: "{ftbquests.chapter.61d4a8bc.description}",
 	text: [
-		"（压低声音）这话你最好小声说！可别给它们听见了！",
-		"哎！我这话还得再说无数次。刀剑是有灵之物！",
-		"你可别把它们当柴火棍，应付个合成材料的需要就了事了。",
+		"{ftbquests.chapter.61d4a8bc.text.1}",
+		"{ftbquests.chapter.61d4a8bc.text.2}",
+		"{ftbquests.chapter.61d4a8bc.text.3}",
 		"",
-		"我之前一定和你说过，锻造刀剑是为它注入灵力。而锻造数高、灵力丰富的刀剑，可以在每次攻击时，发挥两种被动剑技，对敌人造成额外的伤害：",
+		"{ftbquests.chapter.61d4a8bc.text.5}",
 		"",
-		"⌈白刃⌋ - 以血换血的搏命剑技，按百分比扣除敌人当前的生命值，百分比随着锻造数提升而增加。",
-		"⌈见切⌋ - 直追弱点的真实伤害，造成穿透护甲的真实伤害，伤害量随着锻造数提升而增加。",
+		"{ftbquests.chapter.61d4a8bc.text.7}",
+		"{ftbquests.chapter.61d4a8bc.text.8}",
 		"",
-		"换句话说，任何刀剑，只要多锻造，一定会变强，那个锻造数可不仅仅是个数字而已！",
+		"{ftbquests.chapter.61d4a8bc.text.10}",
 		"",
-		"还有，我再重复一次，尊重它们！",
-		"你讲它们的坏话，它们真的会听见的！"
+		"{ftbquests.chapter.61d4a8bc.text.12}",
+		"{ftbquests.chapter.61d4a8bc.text.13}"
 	],
 	dependencies: [
 		"1fd449e0"
 	],
-	tasks: [{
-		uid: "d7438c23",
-		type: "checkmark",
-		title: "好麻烦啊，我锻造它们只是为了合成新刀剑而已..."
-	}]
+	tasks: [
+		{
+			uid: "d7438c23",
+			type: "checkmark",
+			title: "{ftbquests.chapter.61d4a8bc.tasks.title}"
+		}
+	]
 }
