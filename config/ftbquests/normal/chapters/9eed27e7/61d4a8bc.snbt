@@ -21,11 +21,9 @@
 	dependencies: [
 		"1fd449e0"
 	],
-	tasks: [
-		{
-			uid: "d7438c23",
-			type: "checkmark",
-			title: "{ftbquests.chapter.61d4a8bc.tasks.title}"
-		}
-	]
+	tasks: [{
+		uid: "d7438c23",
+		type: "checkmark",
+		title: "{ftbquests.chapter.61d4a8bc.tasks.title}"
+	}]
 }

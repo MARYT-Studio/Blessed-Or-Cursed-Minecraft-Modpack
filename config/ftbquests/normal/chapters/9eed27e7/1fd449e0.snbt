@@ -20,10 +20,8 @@
 	dependencies: [
 		"29fb3883"
 	],
-	tasks: [
-		{
-			uid: "d7a4c362",
-			type: "checkmark"
-		}
-	]
+	tasks: [{
+		uid: "d7a4c362",
+		type: "checkmark"
+	}]
 }
