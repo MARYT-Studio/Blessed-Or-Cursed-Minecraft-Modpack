@@ -59,3 +59,8 @@ recipes.addShaped("dcs_device_pottery_pot_with_brick",<dcs_climate:dcs_device_po
 // This recipe allows player to craft Blaze Powder with red drop and gunpowder, which is too cheap.
 recipes.removeByRecipeName("dcs_climate:magic/dcs_blaze_powder_0");
 recipes.addShapeless("dcs_magic_new_blazepowder", <minecraft:blaze_powder>, [<dcs_climate:dcs_color:7>, <minecraft:gunpowder>]);
+
+// HAC Tofu should have tofu oredict
+<ore:listAlltofu>.add(<dcs_climate:dcs_food_noentity:3>);
+// and furnace recipe
+furnace.addRecipe(<tofucraft:tofu_food:3>, <dcs_climate:dcs_food_noentity:3>, 0.3);
