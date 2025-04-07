@@ -51,14 +51,14 @@ events.onPlayerLoggedIn(
                 }
             }
             // 更新礼物
-            if(!(data.check("PlayerPersisted.updateGift_v1193"))) {
+            if(!(data.check("PlayerPersisted.updateGift_v1194"))) {
                 player.update(
                     {
                         PlayerPersisted: {
-                            updateGift_v1193: 1
+                            updateGift_v1194: 1
                         }
                     });
-                player.give(updateGift1193);                
+                player.give(updateGift1194);                
             }
         }
     }
