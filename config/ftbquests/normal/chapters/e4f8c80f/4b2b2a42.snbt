@@ -1,4 +1,5 @@
 {
+	title: "{ftbquests.chapter.4b2b2a42.title}",
 	x: -1.0d,
 	y: 0.0d,
 	description: "{ftbquests.chapter.4b2b2a42.description}",
@@ -7,12 +8,11 @@
 		"{ftbquests.chapter.4b2b2a42.text.2}",
 		"",
 		"{ftbquests.chapter.4b2b2a42.text.4}"
-	]
+	],
 	hide_dependency_lines: true,
 	dependencies: [
 		"121d301b"
 	],
-	hide: false,
 	tasks: [{
 		uid: "398d1518",
 		type: "item",

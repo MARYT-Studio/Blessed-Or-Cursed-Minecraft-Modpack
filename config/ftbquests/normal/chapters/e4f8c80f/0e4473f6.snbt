@@ -13,9 +13,11 @@
 	dependencies: [
 		"741c871c",
 		"8a023c43",
+		"121d301b",
+		"43a4274c",
 		"3a6f9db6",
 		"4d6df6a4",
-		"121d301b"
+		"4b2b2a42"
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{
