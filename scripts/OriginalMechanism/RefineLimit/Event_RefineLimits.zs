@@ -108,16 +108,18 @@ events.onPlayerInteractEntity(function (event as PlayerInteractEntityEvent) {
                     if (dTag.check("RefineLimitGained")) {
                         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.refine_info.title"));
                         for id in dimID {
-                            player.sendRichTextMessage(ITextComponent.fromTranslation(
-                                    ("crafttweaker.refine_info.dim" ~ id),
-                                    ("" ~ dTag.getInt("RefineLimitGained.DIM" ~ id) ~ "/" ~ rewardMap.memberGet("DIM" ~ id).asInt())
-                                )
-                            );
+                            var gained as int = dTag.getInt("RefineLimitGained.DIM" ~ id);
+                            var gainLimit as int = rewardMap.memberGet("DIM" ~ id).asInt();
+                            var message as ITextComponent = ITextComponent.fromTranslation("crafttweaker.refine_info.dim" ~ id);
+                            if (gainLimit > 0) message += ITextComponent.fromString(": " ~ color(gained, gainLimit) ~ gained ~ "/" ~ gainLimit);
+                            player.sendRichTextMessage(message);
                         }
-                        player.sendRichTextMessage(ITextComponent.fromTranslation(
-                                "crafttweaker.refine_info.sum", 
-                                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
-                            )
+                        
+                        var refineCurrent as int = dTag.getInt("RepairCounter");
+                        var refineLimitCurrent as int = dTag.getInt("RefineLimit");
+                        player.sendRichTextMessage(
+                            ITextComponent.fromTranslation("crafttweaker.refine_info.sum") +
+                            ITextComponent.fromString(": " ~ color(refineCurrent, refineLimitCurrent) ~ refineCurrent ~ "/" ~ refineLimitCurrent)
                         );
                     } else {
                     // 初始化
@@ -132,20 +134,20 @@ events.onPlayerInteractEntity(function (event as PlayerInteractEntityEvent) {
                                 "RefineLimit": refineLimit                             
                             }
                         }
-                    });
-                    
+                    });                    
                     player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.refine_info.title"));
                     for id in dimID {
-                        player.sendRichTextMessage(ITextComponent.fromTranslation(
-                                ("crafttweaker.refine_info.dim" ~ id),
-                                ("" ~ dTag.getInt("RefineLimitGained.DIM" ~ id) ~ "/" ~ rewardMap.memberGet("DIM" ~ id).asInt())
-                            )
-                        );
+                        var gained as int = dTag.getInt("RefineLimitGained.DIM" ~ id);
+                        var gainLimit as int = rewardMap.memberGet("DIM" ~ id).asInt();
+                        var message as ITextComponent = ITextComponent.fromTranslation("crafttweaker.refine_info.dim" ~ id);
+                        if (gainLimit > 0) message += ITextComponent.fromString(": " ~ color(gained, gainLimit) ~ gained ~ "/" ~ gainLimit);
+                        player.sendRichTextMessage(message);
                     }
-                    player.sendRichTextMessage(ITextComponent.fromTranslation(
-                            "crafttweaker.refine_info.sum", 
-                            ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
-                        )
+                    var refineCurrent as int = dTag.getInt("RepairCounter");
+                    var refineLimitCurrent as int = dTag.getInt("RefineLimit");
+                    player.sendRichTextMessage(
+                        ITextComponent.fromTranslation("crafttweaker.refine_info.sum") +
+                        ITextComponent.fromString(": " ~ color(refineCurrent, refineLimitCurrent) ~ refineCurrent ~ "/" ~ refineLimitCurrent)
                     );
                 }
             }
@@ -164,16 +166,18 @@ function bladeInfo(player as IPlayer, blade as IItemStack) as void {
     if (dTag.check("RefineLimitGained")) {
         player.sendRichTextMessage(ITextComponent.fromTranslation("crafttweaker.refine_info.title"));
         for id in dimID {
-            player.sendRichTextMessage(ITextComponent.fromTranslation(
-                    ("crafttweaker.refine_info.dim" ~ id),
-                    ("" ~ dTag.getInt("RefineLimitGained.DIM" ~ id) ~ "/" ~ GlobalVars.rewardMap.memberGet("DIM" ~ id).asInt())
-                )
-            );
+            var gained as int = dTag.getInt("RefineLimitGained.DIM" ~ id);
+            var gainLimit as int = rewardMap.memberGet("DIM" ~ id).asInt();
+            var message as ITextComponent = ITextComponent.fromTranslation("crafttweaker.refine_info.dim" ~ id);
+            if (gainLimit > 0) message += ITextComponent.fromString(": " ~ color(gained, gainLimit) ~ gained ~ "/" ~ gainLimit);
+            player.sendRichTextMessage(message);
         }
-        player.sendRichTextMessage(ITextComponent.fromTranslation(
-                "crafttweaker.refine_info.sum", 
-                ("\u00A7c" ~ dTag.getInt("RepairCounter") ~ "/" ~ dTag.getInt("RefineLimit"))
-            )
+        
+        var refineCurrent as int = dTag.getInt("RepairCounter");
+        var refineLimitCurrent as int = dTag.getInt("RefineLimit");
+        player.sendRichTextMessage(
+            ITextComponent.fromTranslation("crafttweaker.refine_info.sum") +
+            ITextComponent.fromString(": " ~ color(refineCurrent, refineLimitCurrent) ~ refineCurrent ~ "/" ~ refineLimitCurrent)
         );
     } else {
         // 初始化
@@ -200,4 +204,13 @@ function isSameAnvilAction(player as IPlayer, timeStamp as long) as bool {
         player.update({"last_anvil_action": timeStamp});
     }    
     return true;
+}
+
+// 工具函数：满值、过半、未过半用不同颜色
+function color(value as int, limit as int) as string {
+    if (value < 0.5f * limit) {
+        return "§a";
+    } else if (value >= limit) {
+        return value > limit ? "§c§l" : "§c";
+    } else return "§6";
 }

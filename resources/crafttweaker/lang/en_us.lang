@@ -166,24 +166,26 @@ crafttweaker.can_be_refined.1=This blade can be refined %s times more
 crafttweaker.can_be_refined.2=Refine it and make it more powerful
 crafttweaker.cannot_be_refined.1=This blade can't be refined now
 crafttweaker.cannot_be_refined.2=See the chat for Refine Limits it has gained
-crafttweaker.refine_limit_gained.1=Blade in your hand clanked!
-crafttweaker.refine_limit_gained.2=§61 more time refining chance gained
+crafttweaker.refine_limit_gained.1=One more refine chance gained!
+crafttweaker.refine_limit_gained.2=§6%s more refine chance wating to acquire!
+crafttweaker.refine_limit_gained.full.1=Your blade is fully cultivated in this dimension!
+crafttweaker.refine_limit_gained.full.2=§6Explore more dimensions for new foes!
 
 crafttweaker.nbsword_cannot_be_refined.1=This sword cannot be repaired.
 crafttweaker.nbsword_cannot_be_refined.2=Never a tangible sword prevail over a brave heart!
 
 crafttweaker.refine_info.title=§e--- Refine Limits this SlashBlade has gained ---§r
 crafttweaker.refine_info.dim0=Overworld: §mCannot get Refine Limits in this dimension§r
-crafttweaker.refine_info.dim-1=§cNether: §r%s
-crafttweaker.refine_info.dim1=§dThe End: §r%s
-crafttweaker.refine_info.dim56=§bTofu World: §r%s
-crafttweaker.refine_info.dim7=§2Twilight Forest: §r%s
-crafttweaker.refine_info.dim28885=§9Hunting Dimension: §r%s
-crafttweaker.refine_info.dim50=§5Abyss the First Stage: §r%s
-crafttweaker.refine_info.dim51=§5Abyss the Second Stage: §r%s
-crafttweaker.refine_info.dim52=§5Abyss the Third Stage: §r%s
-crafttweaker.refine_info.dim53=§5Abyss the Fourth Stage: §r%s
-crafttweaker.refine_info.sum=§eMaximum of this SlashBlade's Refine: §r%s
+crafttweaker.refine_info.dim-1=§cNether§r
+crafttweaker.refine_info.dim1=§dThe End§r
+crafttweaker.refine_info.dim56=§bTofu World§r
+crafttweaker.refine_info.dim7=§2Twilight Forest§r
+crafttweaker.refine_info.dim28885=§9Hunting Dimension§r
+crafttweaker.refine_info.dim50=§5Abyss the First Stage§r
+crafttweaker.refine_info.dim51=§5Abyss the Second Stage§r
+crafttweaker.refine_info.dim52=§5Abyss the Third Stage§r
+crafttweaker.refine_info.dim53=§5Abyss the Fourth Stage§r
+crafttweaker.refine_info.sum=§eMaximum of this SlashBlade's Refine§r
 
 # Slayer Rewards
 crafttweaker.slayer_counter_result.1=%s enemies wiped out!

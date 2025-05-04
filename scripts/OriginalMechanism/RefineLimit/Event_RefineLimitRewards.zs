@@ -54,10 +54,16 @@ events.onEntityLivingDeath(
                 item.mutable().updateTag({"RefineLimitGained": initMap, "RefineLimit": refineLimit});
             } else {
                 var gainedMap as IData = dTag.get("RefineLimitGained");
-                if (D(gainedMap).getInt("DIM" ~ world.dimension) < D(rewardMap).getInt("DIM" ~ world.dimension) && world.random.nextFloat() < prob) {
+                var gained as int = D(gainedMap).getInt("DIM" ~ world.dimension);
+                var gainLimit as int = D(rewardMap).getInt("DIM" ~ world.dimension);
+                if (gained < gainLimit && world.random.nextFloat() < prob) {
                     var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
                     var refineLimit = 1 + dTag.getInt("RefineLimit", baseRefineLimit);
-                    player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "", item);
+                    var last as int = gainLimit - gained;
+                    if (last <= 1) {  // if filled
+                        player.sendToast("crafttweaker.refine_limit_gained.full.1", "", "crafttweaker.refine_limit_gained.full.2", "", item);
+                    }
+                    else player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "\u00A7e\u00A7l" ~ last, item);
                     server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
                     item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
                 }
@@ -100,4 +106,13 @@ function entityMatch(types as string[], definition as IEntityDefinition) as bool
         if (definition.id.toLowerCase().contains(type)) return true;
     }
     return false;
+}
+
+// 工具函数：满值、过半、未过半用不同颜色
+function color(value as int, limit as int) as string {
+    if (value < 0.5f * limit) {
+        return "\u00A7a";
+    } else if (value >= limit) {
+        return value > limit ? "\u00A7c\u00A7l" : "\u00A7c";
+    } else return "\u00A76";
 }
