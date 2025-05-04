@@ -56,16 +56,20 @@ events.onEntityLivingDeath(
                 var gainedMap as IData = dTag.get("RefineLimitGained");
                 var gained as int = D(gainedMap).getInt("DIM" ~ world.dimension);
                 var gainLimit as int = D(rewardMap).getInt("DIM" ~ world.dimension);
-                if (gained < gainLimit && world.random.nextFloat() < prob) {
-                    var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
-                    var refineLimit = 1 + dTag.getInt("RefineLimit", baseRefineLimit);
-                    var last as int = gainLimit - gained;
-                    if (last <= 1) {  // if filled
+                if (world.random.nextFloat() < prob) {                
+                    if (gained < gainLimit) {
+                        var newMap as IData = gainedMap + {("DIM" ~ world.dimension): D(gainedMap).getInt("DIM" ~ world.dimension) + 1};
+                        var refineLimit = 1 + dTag.getInt("RefineLimit", baseRefineLimit);
+                        var last as int = gainLimit - gained;
+                        if (last <= 1) {  // if filled
+                            player.sendToast("crafttweaker.refine_limit_gained.full.1", "", "crafttweaker.refine_limit_gained.full.2", "", item);
+                        }
+                        else player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "\u00A7e\u00A7l" ~ last, item);
+                        server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
+                        item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
+                    } else {
                         player.sendToast("crafttweaker.refine_limit_gained.full.1", "", "crafttweaker.refine_limit_gained.full.2", "", item);
-                    }
-                    else player.sendToast("crafttweaker.refine_limit_gained.1", "", "crafttweaker.refine_limit_gained.2", "\u00A7e\u00A7l" ~ last, item);
-                    server.commandManager.executeCommand(server, "playsound minecraft:block.anvil.use player " ~ player.name ~ " " ~ player.posX ~" "~  player.posY~" "~ player.posZ ~ " 0.6 1.4 0.0");
-                    item.mutable().updateTag({"RefineLimitGained": newMap, "RefineLimit": refineLimit});
+                    }                    
                 }
             }
         }

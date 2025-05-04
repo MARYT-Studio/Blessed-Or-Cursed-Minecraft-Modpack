@@ -209,8 +209,8 @@ function isSameAnvilAction(player as IPlayer, timeStamp as long) as bool {
 // 工具函数：满值、过半、未过半用不同颜色
 function color(value as int, limit as int) as string {
     if (value < 0.5f * limit) {
-        return "§a";
+        return "\u00A7a";
     } else if (value >= limit) {
-        return value > limit ? "§c§l" : "§c";
-    } else return "§6";
+        return value > limit ? "\u00A7c\u00A7l" : "\u00A7c";
+    } else return "\u00A76";
 }
