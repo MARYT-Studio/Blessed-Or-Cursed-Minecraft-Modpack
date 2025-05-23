@@ -81,7 +81,7 @@
   "servertabinfo": "1.2.6",
   "tofucraft": "0.1.0.9",
   "wailaharvestability": "1.1.12",
-  "betteradvancements": "1.12.2-0.3.0.0",
+  "betteradvancements": "1.12.2-0.3.1.0",
   "configanytime": "1.0",
   "clienttweaks": "3.1.11",
   "ctgui": "1.0.0",
