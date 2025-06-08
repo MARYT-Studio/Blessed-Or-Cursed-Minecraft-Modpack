@@ -10,9 +10,10 @@ events.onPlayerPickupItem(
                 var itemEntity = event.item;
                 var errorItemStack = event.item.item;
                 var amount = errorItemStack.amount;
+                var meta = errorItemStack.metadata;
                 event.cancel();
                 itemEntity.setDead();
-                event.player.give(errorItemStack.definition.defaultInstance * amount);
+                event.player.give(errorItemStack.definition.defaultInstance.withDamage(meta) * amount);
             }
         }
     }
