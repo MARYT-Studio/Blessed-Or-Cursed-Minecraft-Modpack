@@ -101,6 +101,11 @@ events.onPlayerInteractEntity(function (event as PlayerInteractEntityEvent) {
 
     if (player.isSneaking) {
             var target = event.target;
+
+            if (event.entity instanceof IPlayer) return;
+            if (isNull(event.entity.definition)) return; 
+            if (isNull(event.entity.definition.id)) return;
+
             if (target.definition.id.endsWith("slashblade:bladestand")) {
                 var bladeStandTags = D(target.nbt);
                 if (bladeStandTags.check("Blade.tag")) {
