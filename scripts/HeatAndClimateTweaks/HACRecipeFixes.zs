@@ -64,3 +64,7 @@ recipes.addShapeless("dcs_magic_new_blazepowder", <minecraft:blaze_powder>, [<dc
 <ore:listAlltofu>.add(<dcs_climate:dcs_food_noentity:3>);
 // and furnace recipe
 furnace.addRecipe(<tofucraft:tofu_food:3>, <dcs_climate:dcs_food_noentity:3>, 0.3);
+
+// Sync 2 food oil oredict
+<ore:foodOil>.add(<dcs_climate:dcs_food_pack:4>);
+<ore:foodOliveoil>.add(<dcs_climate:dcs_food_drop_oil>);
