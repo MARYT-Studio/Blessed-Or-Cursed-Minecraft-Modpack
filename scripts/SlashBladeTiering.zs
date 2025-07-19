@@ -1,3 +1,4 @@
+#priority 10000
 // Package importing
 import crafttweaker.data.IData;
 import crafttweaker.item.IItemCondition;
@@ -44,6 +45,12 @@ val fourthKillcountToken as IItemStack = <contenttweaker:fourth_killcount_token>
 fourthKillcountToken.addTooltip(game.localize("crafttweaker.fourth_killcount_token.tooltip"));
 fourthKillcountToken.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 
+// Ore Dict
+<ore:killCountT1>.add(firstKillcountToken);
+<ore:killCountT2>.add(secondKillcountToken);
+<ore:killCountT3>.add(thirdKillcountToken);
+<ore:killCountT4>.add(fourthKillcountToken);
+
 // Proudsoul Bottles
 val firstProudsoulBottle as IItemStack = <contenttweaker:first_proudsoul_bottle>;
 firstProudsoulBottle.addTooltip(game.localize("crafttweaker.first_proudsoul_bottle.tooltip"));
@@ -59,6 +66,11 @@ thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.third_proudsoul_bott
 thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.third_proudsoul_bottle_2.tooltip"));
 thirdProudsoulBottle.addTooltip(game.localize("crafttweaker.general_tokens.tooltip"));
 thirdProudsoulBottle.addShiftTooltip(game.localize("crafttweaker.general_proudsoul.tooltip"));
+
+// Ore Dict
+<ore:proudSoulT1>.add(firstProudsoulBottle);
+<ore:proudSoulT2>.add(secondProudsoulBottle);
+<ore:proudSoulT3>.add(thirdProudsoulBottle);
 
 // Forging Hammers variables claiming
 val T1Hammer = <sakura:stone_hammer>;
