@@ -1,0 +1,23 @@
+{
+	title: "娜迦",
+	x: 3.0d,
+	y: 0.0d,
+	description: "蒙星芒的花园大蛇。",
+	text: [
+		"游荡在古老庭院里的巨蛇。",
+		"被冠以娜迦之名，却没有石化所见之物的邪力。",
+		"",
+		"群星之力微弱地眷顾着它，以至于它的鳞片能突破某个已死之人的魔法壁垒。"
+	],
+	dependencies: [
+		"265b1d8b"
+	],
+	hide: true,
+	tasks: [{
+		uid: "22a0868e",
+		type: "item",
+		items: [{
+			item: "twilightforest:trophy"
+		}]
+	}]
+}

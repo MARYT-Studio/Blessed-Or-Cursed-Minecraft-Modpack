@@ -7,7 +7,8 @@
 	text: [
 		"{ftbquests.chapter.7a8938a8.text.1}",
 		"",
-		"{ftbquests.chapter.7a8938a8.text.3}"
+		"{ftbquests.chapter.7a8938a8.text.3}",
+		"{ftbquests.chapter.7a8938a8.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [
@@ -16,7 +17,12 @@
 	],
 	dependency_requirement: "one_completed",
 	tasks: [{
-		uid: "5918addc",
-		type: "checkmark"
+		uid: "8ab07a8b",
+		type: "item",
+		items: [{
+			item: "ic2:te 1 86"
+		}],
+		consume_items: true,
+		ignore_nbt: 1b
 	}]
 }

@@ -1,0 +1,31 @@
+{
+	x: 13.5d,
+	y: 0.0d,
+	description: "阿拉丁许愿焚尽一切，向着违逆的灯神。",
+	text: [
+		"藏在巨魔洞穴深处的明灯。",
+		"材质不明，但倾倒壶嘴时会喷涌出类似九头蛇的汹涌烈焰。",
+		"",
+		"烧光荆棘是次要的，重要的是它会蒸发落在你头顶的酸雨。",
+		"准确来说，你附近方圆百里的水汽都会被它蒸发掉，可惜只在这个世界里有用。"
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"f8b461bc"
+	],
+	hide: true,
+	tasks: [{
+		uid: "04d29baf",
+		type: "item",
+		items: [{
+			item: "twilightforest:lamp_of_cinders"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "382d3196",
+		type: "ftbmoney:money",
+		ftb_money: 0L
+	}]
+}
