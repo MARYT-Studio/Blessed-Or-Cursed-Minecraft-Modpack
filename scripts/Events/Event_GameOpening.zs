@@ -19,9 +19,9 @@ val newbieItems as IItemStack[] = [giftSword, giftAxe, giftBread, giftHammer, <c
 // 礼物的名称变量为 updateGift + 版本号去点，礼物的 NBT 标签名为 updateGift_v + 版本号去点
 // 发礼物的版本结束后，将旧的礼物变量注释掉
 
-// v1.19.4 版本结束，停发该版本的更新礼物
-// var updateGift1194 = <contenttweaker:red_envelope_lubang> * 3;
-var updateGift1195 = <contenttweaker:red_envelope_lubang> * 3;
+// v1.19.5 版本结束，停发该版本的更新礼物
+// var updateGift1195 = <contenttweaker:red_envelope_lubang> * 3;
+var updateGift1196 = <contenttweaker:red_envelope_lubang> * 3;
 
 // Event
 events.onPlayerLoggedIn(
@@ -51,14 +51,14 @@ events.onPlayerLoggedIn(
                 }
             }
             // 更新礼物
-            if(!(data.check("PlayerPersisted.updateGift_v1195"))) {
+            if(!(data.check("PlayerPersisted.updateGift_v1196"))) {
                 player.update(
                     {
                         PlayerPersisted: {
-                            updateGift_v1195: 1
+                            updateGift_v1196: 1
                         }
                     });
-                player.give(updateGift1195);                
+                player.give(updateGift1196);                
             }
         }
     }
