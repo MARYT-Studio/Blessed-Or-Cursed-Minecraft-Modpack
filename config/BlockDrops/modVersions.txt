@@ -80,6 +80,7 @@
   "scalinghealth": "1.3.37",
   "servertabinfo": "1.2.6",
   "tofucraft": "0.1.0.9",
+  "exuslashblade": "1.12.2-1.0.0",
   "wailaharvestability": "1.1.12",
   "betteradvancements": "1.12.2-0.3.1.2",
   "configanytime": "1.0",
