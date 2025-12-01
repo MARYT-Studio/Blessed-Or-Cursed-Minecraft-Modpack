@@ -7,7 +7,7 @@
         "itemcount": "0-1/0-1/0-1"
     },
     {
-        "mob": "minecraft:evoker",
+        "mob": "minecraft:evocation_illager",
         "remove": "minecraft:totem_of_undying"
     },
     {
@@ -15,5 +15,5 @@
         "player": true,
         "item": "minecraft:emerald",
         "itemcount": "1-3/2-4/3-5"
-      }
+    }
 ]
