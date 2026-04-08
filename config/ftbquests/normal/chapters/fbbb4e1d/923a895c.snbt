@@ -16,10 +16,5 @@
 		items: [{
 			item: "sakura:hydra_ramen"
 		}]
-	}],
-	rewards: [{
-		uid: "d58f6112",
-		type: "ftbmoney:money",
-		ftb_money: 6L
 	}]
 }

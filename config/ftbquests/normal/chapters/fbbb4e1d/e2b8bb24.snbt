@@ -15,10 +15,5 @@
 		items: [{
 			item: "twilightforest:cooked_meef"
 		}]
-	}],
-	rewards: [{
-		uid: "aacded19",
-		type: "ftbmoney:money",
-		ftb_money: 6L
 	}]
 }

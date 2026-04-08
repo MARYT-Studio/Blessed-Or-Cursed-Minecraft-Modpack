@@ -18,10 +18,5 @@
 		items: [{
 			item: "twilightforest:maze_wafer"
 		}]
-	}],
-	rewards: [{
-		uid: "abe97587",
-		type: "ftbmoney:money",
-		ftb_money: 6L
 	}]
 }

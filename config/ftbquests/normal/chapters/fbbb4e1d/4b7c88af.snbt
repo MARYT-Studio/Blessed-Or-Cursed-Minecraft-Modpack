@@ -17,10 +17,5 @@
 		items: [{
 			item: "twilightforest:hydra_chop"
 		}]
-	}],
-	rewards: [{
-		uid: "ac4825a0",
-		type: "ftbmoney:money",
-		ftb_money: 6L
 	}]
 }

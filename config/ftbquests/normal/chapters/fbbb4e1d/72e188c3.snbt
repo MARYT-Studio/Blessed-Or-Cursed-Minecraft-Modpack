@@ -26,10 +26,5 @@
 			item: "twilightforest:castle_rune_brick"
 		}],
 		count: 8L
-	}],
-	rewards: [{
-		uid: "af327e31",
-		type: "ftbmoney:money",
-		ftb_money: 4L
 	}]
 }

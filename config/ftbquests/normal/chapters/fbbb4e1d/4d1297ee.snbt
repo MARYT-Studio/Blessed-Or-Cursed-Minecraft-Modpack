@@ -22,10 +22,5 @@
 			item: "twilightforest:experiment_115"
 		}],
 		count: 8L
-	}],
-	rewards: [{
-		uid: "e1f16bf9",
-		type: "ftbmoney:money",
-		ftb_money: 6L
 	}]
 }

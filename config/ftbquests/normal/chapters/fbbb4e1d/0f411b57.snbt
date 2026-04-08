@@ -1,16 +1,16 @@
 {
-	title: "巫妖",
+	title: "{ftbquests.chapter.0f411b57.title}",
 	x: 4.5d,
 	y: 0.0d,
-	description: "曾经的伟大者，现在的腐臭尸骨。",
+	description: "{ftbquests.chapter.0f411b57.description}",
 	text: [
-		"曾经神秘而奇幻的巫妖塔，现在破烂腐败的废墟。",
+		"{ftbquests.chapter.0f411b57.text.1}",
 		"",
-		"我对这个世界的来历稍有眉目了。",
-		"这位......应该不是你所熟悉的人物吧？",
-		"在我的世界里，它是个民间传说。",
+		"{ftbquests.chapter.0f411b57.text.3}",
+		"{ftbquests.chapter.0f411b57.text.4}",
+		"{ftbquests.chapter.0f411b57.text.5}",
 		"",
-		"......先送这一个它成佛吧，剩下的无数个副本就算了......."
+		"{ftbquests.chapter.0f411b57.text.7}"
 	],
 	dependencies: [
 		"1169e542"

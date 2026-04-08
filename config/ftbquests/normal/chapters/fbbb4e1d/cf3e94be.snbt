@@ -18,10 +18,5 @@
 			item: "twilightforest:giant_obsidian"
 		}],
 		count: 3L
-	}],
-	rewards: [{
-		uid: "975b28b7",
-		type: "ftbmoney:money",
-		ftb_money: 4L
 	}]
 }

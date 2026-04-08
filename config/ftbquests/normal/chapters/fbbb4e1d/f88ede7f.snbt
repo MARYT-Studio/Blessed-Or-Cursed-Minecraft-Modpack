@@ -22,10 +22,5 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
-	}],
-	rewards: [{
-		uid: "382d3196",
-		type: "ftbmoney:money",
-		ftb_money: 0L
 	}]
 }
