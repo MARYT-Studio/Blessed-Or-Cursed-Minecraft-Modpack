@@ -1,12 +1,12 @@
 {
 	x: 8.0d,
 	y: 1.0d,
-	description: "凝集的冰雪。",
+	description: "{ftbquests.chapter.49d9d649.description}",
 	text: [
-		"她的产物。",
-		"暗含着特殊的力量，也许有朝一日能用作与她出生的世界联络的基础？",
+		"{ftbquests.chapter.49d9d649.text.1}",
+		"{ftbquests.chapter.49d9d649.text.2}",
 		"",
-		".......还是不要抱希望的好。"
+		"{ftbquests.chapter.49d9d649.text.4}"
 	],
 	dependencies: [
 		"1d0bef17"

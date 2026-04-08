@@ -2,13 +2,13 @@
 	x: 9.5d,
 	y: -4.0d,
 	text: [
-		"奇怪的血肉，虽然看上去有点像蛋糕。",
-		"仍然活着，却是恰适入口的温度，口感软糯如上好的年糕，搭配鲜甜的汁水能称得上美味，如果忽略这东西是活的的话。",
+		"{ftbquests.chapter.4d1297ee.text.1}",
+		"{ftbquests.chapter.4d1297ee.text.2}",
 		"",
-		"可以摆在地上，摆满八块再撒上红石粉，可以让它更像蛋糕一点，吃起来的反胃感减小一点......",
+		"{ftbquests.chapter.4d1297ee.text.4}",
 		"",
 		"",
-		"woc怎么越吃越多了"
+		"{ftbquests.chapter.4d1297ee.text.7}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

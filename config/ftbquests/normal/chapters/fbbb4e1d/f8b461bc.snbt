@@ -1,15 +1,15 @@
 {
-	title: "巨人",
+	title: "{ftbquests.chapter.f8b461bc.title}",
 	x: 11.5d,
 	y: 0.0d,
-	description: "你。",
+	description: "{ftbquests.chapter.f8b461bc.description}",
 	text: [
-		"当了一回杰克，还夺了巨人的装备。",
-		"是的，我知道，它们长得和你一模一样......",
-		"相信我，比这还令人仿徨不安的还有更多......",
+		"{ftbquests.chapter.f8b461bc.text.1}",
+		"{ftbquests.chapter.f8b461bc.text.2}",
+		"{ftbquests.chapter.f8b461bc.text.3}",
 		"",
 		"",
-		"我有预感接下来它不会给我们更多惊喜了......."
+		"{ftbquests.chapter.f8b461bc.text.6}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

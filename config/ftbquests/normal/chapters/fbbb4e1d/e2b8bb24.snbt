@@ -2,7 +2,7 @@
 	x: 5.5d,
 	y: -4.0d,
 	text: [
-		"虽然只能看着你吃，但看上去完全比得上上好的牛排。"
+		"{ftbquests.chapter.e2b8bb24.text}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

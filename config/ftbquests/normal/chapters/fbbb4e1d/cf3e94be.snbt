@@ -1,11 +1,11 @@
 {
-	title: "等比缩放。",
+	title: "{ftbquests.chapter.cf3e94be.title}",
 	x: 11.5d,
 	y: -1.0d,
-	description: "恰好是你的四倍.....",
+	description: "{ftbquests.chapter.cf3e94be.description}",
 	text: [
-		"......",
-		"别问我为什么。"
+		"{ftbquests.chapter.cf3e94be.text.1}",
+		"{ftbquests.chapter.cf3e94be.text.2}"
 	],
 	dependencies: [
 		"f8b461bc"

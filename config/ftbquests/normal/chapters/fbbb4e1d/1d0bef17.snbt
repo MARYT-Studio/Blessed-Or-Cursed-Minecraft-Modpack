@@ -1,13 +1,13 @@
 {
-	title: "冰雪女王",
+	title: "{ftbquests.chapter.1d0bef17.title}",
 	x: 7.0d,
 	y: 1.5d,
-	description: "遗世独立的寒冰。",
+	description: "{ftbquests.chapter.1d0bef17.description}",
 	text: [
-		"她将自己隐于冰川之上，鸟儿也飞不到的地方。",
+		"{ftbquests.chapter.1d0bef17.text.1}",
 		"",
-		"也许她本来是可以交流的，只是语言不通......",
-		"不，我想多了，有复数个复制品的她只是没有灵魂，被粗糙糅合进这个世界的碎片罢了。"
+		"{ftbquests.chapter.1d0bef17.text.3}",
+		"{ftbquests.chapter.1d0bef17.text.4}"
 	],
 	dependencies: [
 		"9395be54"

@@ -1,10 +1,10 @@
 {
-	title: "城堡符文砖",
+	title: "{ftbquests.chapter.72e188c3.title}",
 	x: 13.5d,
 	y: 1.0d,
-	description: "开启深层世界的钥匙。",
+	description: "{ftbquests.chapter.72e188c3.description}",
 	text: [
-		"别问我为什么。"
+		"{ftbquests.chapter.72e188c3.text}"
 	],
 	dependencies: [
 		"f88ede7f"

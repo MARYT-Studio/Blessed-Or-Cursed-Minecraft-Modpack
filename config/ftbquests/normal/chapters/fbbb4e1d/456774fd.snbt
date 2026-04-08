@@ -1,13 +1,11 @@
 {
-	title: "暮初恶魂",
+	title: "{ftbquests.chapter.456774fd.title}",
 	x: 7.5d,
 	y: 0.0d,
-	description: "灾难的遗子与继任者，永远悲伤永远炽热的怨灵。",
+	description: "{ftbquests.chapter.456774fd.description}",
 	text: [
-		"没人知道在过去发生了什么，这片森林只是伴随着一场灾难永远地成为了文明的遗迹。",
-		"如今被称作暮初恶魂的生物盘踞在黑暗高塔顶部，终日徘徊在破碎不堪的塔楼遗址上空，毫不珍惜昔日曾属于自己的高塔。",
-		"",
-		"（暮色恶魂属错误译名，高版本已更正为暮初恶魂）"
+		"{ftbquests.chapter.456774fd.text.1}",
+		"{ftbquests.chapter.456774fd.text.2}"
 	],
 	dependencies: [
 		"f8b61061"

@@ -2,10 +2,10 @@
 	x: 4.0d,
 	y: -2.5d,
 	text: [
-		"相当高效的干粮。",
-		"事实上，不是很好吃。即便是很小心地控制火候也只落得个发柴的下场，而且不花上些盐腌渍一下就索然无味，还有嚼不烂的问题。",
+		"{ftbquests.chapter.76d97702.text.1}",
+		"{ftbquests.chapter.76d97702.text.2}",
 		"",
-		"但是真的很顶饿。"
+		"{ftbquests.chapter.76d97702.text.4}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

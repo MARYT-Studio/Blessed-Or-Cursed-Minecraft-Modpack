@@ -1,16 +1,16 @@
 {
-	title: "洞穴巨魔",
+	title: "{ftbquests.chapter.007fad43.title}",
 	x: 10.0d,
 	y: 0.0d,
-	description: "活动的石像。",
+	description: "{ftbquests.chapter.007fad43.description}",
 	text: [
-		"它们与那种特大号火炬浆果似乎是伴生关系，就是关系不太好。",
-		"至少关系好的不会等人家死了才绽放。",
+		"{ftbquests.chapter.007fad43.text.1}",
+		"{ftbquests.chapter.007fad43.text.2}",
 		"",
-		"挖开那些小型黑曜石堆，里面可以找到这种能够长出千丈的神奇豆子。",
-		"应该不能吃也不能做豆浆.......",
+		"{ftbquests.chapter.007fad43.text.4}",
+		"{ftbquests.chapter.007fad43.text.5}",
 		"",
-		"注意一下那些超大号黑曜石，记住它们的位置，等下还得回来。"
+		"{ftbquests.chapter.007fad43.text.7}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

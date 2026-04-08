@@ -1,17 +1,17 @@
 {
-	title: "炽热之物",
+	title: "{ftbquests.chapter.c5862978.title}",
 	x: 8.0d,
 	y: -1.0d,
-	description: "浴火的九头大蛇，抑或灾难的号哭怨灵。",
+	description: "{ftbquests.chapter.c5862978.description}",
 	text: [
-		"虽名带炽热，触碰也确有温热之感，却并非真的带有温度。",
-		"这份炽热更像是魔法产物，抑或所谓“炽热的心灵”。",
+		"{ftbquests.chapter.c5862978.text.1}",
+		"{ftbquests.chapter.c5862978.text.2}",
 		"",
-		"“炽热的铁锭”，融入这种魔法素材的材料。",
-		"内里有着足以引燃木柴的高温，却矛盾地止步于薄薄一层外壳。",
-		"即便是轻微的擦磨都会导致烫伤，用作刀刃更是足以点燃敌人。",
+		"{ftbquests.chapter.c5862978.text.4}",
+		"{ftbquests.chapter.c5862978.text.5}",
+		"{ftbquests.chapter.c5862978.text.6}",
 		"",
-		"或许可以用来锻刀？"
+		"{ftbquests.chapter.c5862978.text.8}"
 	],
 	dependencies: [
 		"220a4864",

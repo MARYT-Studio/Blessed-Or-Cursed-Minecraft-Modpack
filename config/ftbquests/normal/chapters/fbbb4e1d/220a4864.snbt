@@ -1,13 +1,13 @@
 {
-	title: "九头蛇",
+	title: "{ftbquests.chapter.220a4864.title}",
 	x: 7.0d,
 	y: -1.5d,
-	description: "神话中的古老大蛇，炽热的血与火。",
+	description: "{ftbquests.chapter.220a4864.description}",
 	text: [
-		"虽然名为九头蛇，却只有七头七颈。",
-		"受众星之力眷顾的宠儿。",
+		"{ftbquests.chapter.220a4864.text.1}",
+		"{ftbquests.chapter.220a4864.text.2}",
 		"",
-		"只有这把刀才是真迹。"
+		"{ftbquests.chapter.220a4864.text.4}"
 	],
 	dependencies: [
 		"d9f90468"

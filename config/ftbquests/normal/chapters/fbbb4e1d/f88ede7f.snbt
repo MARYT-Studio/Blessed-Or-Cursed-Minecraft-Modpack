@@ -1,13 +1,13 @@
 {
 	x: 13.5d,
 	y: 0.0d,
-	description: "阿拉丁许愿焚尽一切，向着违逆的灯神。",
+	description: "{ftbquests.chapter.f88ede7f.description}",
 	text: [
-		"藏在巨魔洞穴深处的明灯。",
-		"材质不明，但倾倒壶嘴时会喷涌出类似九头蛇的汹涌烈焰。",
+		"{ftbquests.chapter.f88ede7f.text.1}",
+		"{ftbquests.chapter.f88ede7f.text.2}",
 		"",
-		"烧光荆棘是次要的，重要的是它会蒸发落在你头顶的酸雨。",
-		"准确来说，你附近方圆百里的水汽都会被它蒸发掉，可惜只在这个世界里有用。"
+		"{ftbquests.chapter.f88ede7f.text.4}",
+		"{ftbquests.chapter.f88ede7f.text.5}"
 	],
 	hide_dependency_lines: true,
 	dependencies: [

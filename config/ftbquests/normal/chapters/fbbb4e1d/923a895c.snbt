@@ -2,9 +2,9 @@
 	x: 9.5d,
 	y: -3.0d,
 	text: [
-		"你可真会享受......",
+		"{ftbquests.chapter.923a895c.text.1}",
 		"",
-		"满溢的饱腹感。"
+		"{ftbquests.chapter.923a895c.text.3}"
 	],
 	dependencies: [
 		"4b7c88af"
